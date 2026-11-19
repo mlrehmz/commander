@@ -1,0 +1,1708 @@
+{
+  "annotation_version": 1,
+  "canonical_sha256": "667da77ec4ae908b62e595c577f002118a134c2bdfd6d9653547c353f55b71e8",
+  "command_path": [
+    "tox"
+  ],
+  "source": {
+    "raw_sha256": "667da77ec4ae908b62e595c577f002118a134c2bdfd6d9653547c353f55b71e8",
+    "canonical_sha256": "667da77ec4ae908b62e595c577f002118a134c2bdfd6d9653547c353f55b71e8",
+    "canonical_text": "ROOT: No loadable tox.ini or setup.cfg or pyproject.toml or tox.toml found, assuming empty tox.ini at /tmp\nusage: tox [-h] [--colored {yes,no}] [--stderr-color {BLACK,BLUE,CYAN,GREEN,LIGHTBLACK_EX,LIGHTBLUE_EX,LIGHTCYAN_EX,LIGHTGREEN_EX,LIGHTMAGENTA_EX,LIGHTRED_EX,LIGHTWHITE_EX,LIGHTYELLOW_EX,MAGENTA,RED,RESET,WHITE,YELLOW}] [-v | -q]\n           [--exit-and-dump-after seconds] [-c file] [--workdir dir] [--root dir] [--runner {virtualenv}] [--version] [--no-provision [REQ_JSON]] [--no-recreate-provision] [-r] [-x OVERRIDE]\n           {run,r,run-parallel,p,depends,de,list,l,devenv,d,schema,config,c,quickstart,q,exec,e,legacy,le} ...\n\ncreate and set up environments to run command(s) in them\n\noptions:\n  -h, --help                  show this help message and exit\n  --colored {yes,no}          should output be enriched with colors, default is yes unless TERM=dumb or NO_COLOR is defined. (default: no)\n  --stderr-color {BLACK,BLUE,CYAN,GREEN,LIGHTBLACK_EX,LIGHTBLUE_EX,LIGHTCYAN_EX,LIGHTGREEN_EX,LIGHTMAGENTA_EX,LIGHTRED_EX,LIGHTWHITE_EX,LIGHTYELLOW_EX,MAGENTA,RED,RESET,WHITE,YELLOW}\n                              color for stderr output, use RESET for terminal defaults. (default: RED)\n  --exit-and-dump-after seconds\n                              dump tox threads after n seconds and exit the app - useful to debug when tox hangs, 0 means disabled (default: 0)\n  -c file, --conf file        configuration file/folder for tox (if not specified will discover one) (default: None)\n  --workdir dir               tox working directory (if not specified will be the folder of the config file) (default: None)\n  --root dir                  project root directory (if not specified will be the folder of the config file) (default: None)\n  --runner {virtualenv}       the tox run engine to use when not explicitly stated in tox env configuration (default: virtualenv)\n  --version                   show program's and plugins version number and exit\n  --no-provision [REQ_JSON]   do not perform provision, but fail and if a path was provided write provision metadata as JSON to it (default: False)\n  --no-recreate-provision     if recreate is set do not recreate provision tox environment (default: False)\n  -r, --recreate              recreate the tox environments (default: False)\n  -x OVERRIDE, --override OVERRIDE\n                              configuration override(s), e.g., -x testenv:pypy3.ignore_errors=True (default: [])\n\nverbosity:\n  every -v increases, every -q decreases verbosity level, default WARNING, map 0=CRITICAL|1=ERROR|2=WARNING|3=INFO|4=DEBUG|5=NOTSET\n\n  -v, --verbose               increase verbosity (default: 2)\n  -q, --quiet                 decrease verbosity (default: 0)\n\nsubcommands:\n  tox command to execute (by default legacy)\n\n  {run,r,run-parallel,p,depends,de,list,l,devenv,d,schema,config,c,quickstart,q,exec,e,legacy,le}\n    run (r)                   run environments\n    run-parallel (p)          run environments in parallel\n    depends (de)              visualize tox environment dependencies\n    list (l)                  list environments\n    devenv (d)                sets up a development environment at ENVDIR based on the tox configuration specified\n    schema                    Generate schema for tox configuration\n    config (c)                show tox configuration\n    quickstart (q)            Command line script to quickly create a tox config file for a Python project\n    exec (e)                  execute an arbitrary command within a tox environment\n    legacy (le)               legacy entry-point command\n\nconfig file '/tmp/.config/tox/config.ini' missing (change via env var TOX_USER_CONFIG_FILE)\n",
+    "normalization_version": "1.0",
+    "capture_metadata": {}
+  },
+  "annotator": "codex-blind-2026-11-19",
+  "producer": "agent",
+  "blind": true,
+  "labels": [
+    "other",
+    "usage",
+    "usage",
+    "usage",
+    "blank",
+    "prose",
+    "blank",
+    "section_heading",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "description_continuation",
+    "blank",
+    "section_heading",
+    "prose",
+    "blank",
+    "option_declaration",
+    "option_declaration",
+    "blank",
+    "section_heading",
+    "prose",
+    "blank",
+    "other",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "blank",
+    "other",
+    "blank"
+  ],
+  "reference": {
+    "schema_version": "1.0",
+    "command_path": [
+      "tox"
+    ],
+    "source": {
+      "raw_sha256": "667da77ec4ae908b62e595c577f002118a134c2bdfd6d9653547c353f55b71e8",
+      "canonical_sha256": "667da77ec4ae908b62e595c577f002118a134c2bdfd6d9653547c353f55b71e8",
+      "canonical_text": "ROOT: No loadable tox.ini or setup.cfg or pyproject.toml or tox.toml found, assuming empty tox.ini at /tmp\nusage: tox [-h] [--colored {yes,no}] [--stderr-color {BLACK,BLUE,CYAN,GREEN,LIGHTBLACK_EX,LIGHTBLUE_EX,LIGHTCYAN_EX,LIGHTGREEN_EX,LIGHTMAGENTA_EX,LIGHTRED_EX,LIGHTWHITE_EX,LIGHTYELLOW_EX,MAGENTA,RED,RESET,WHITE,YELLOW}] [-v | -q]\n           [--exit-and-dump-after seconds] [-c file] [--workdir dir] [--root dir] [--runner {virtualenv}] [--version] [--no-provision [REQ_JSON]] [--no-recreate-provision] [-r] [-x OVERRIDE]\n           {run,r,run-parallel,p,depends,de,list,l,devenv,d,schema,config,c,quickstart,q,exec,e,legacy,le} ...\n\ncreate and set up environments to run command(s) in them\n\noptions:\n  -h, --help                  show this help message and exit\n  --colored {yes,no}          should output be enriched with colors, default is yes unless TERM=dumb or NO_COLOR is defined. (default: no)\n  --stderr-color {BLACK,BLUE,CYAN,GREEN,LIGHTBLACK_EX,LIGHTBLUE_EX,LIGHTCYAN_EX,LIGHTGREEN_EX,LIGHTMAGENTA_EX,LIGHTRED_EX,LIGHTWHITE_EX,LIGHTYELLOW_EX,MAGENTA,RED,RESET,WHITE,YELLOW}\n                              color for stderr output, use RESET for terminal defaults. (default: RED)\n  --exit-and-dump-after seconds\n                              dump tox threads after n seconds and exit the app - useful to debug when tox hangs, 0 means disabled (default: 0)\n  -c file, --conf file        configuration file/folder for tox (if not specified will discover one) (default: None)\n  --workdir dir               tox working directory (if not specified will be the folder of the config file) (default: None)\n  --root dir                  project root directory (if not specified will be the folder of the config file) (default: None)\n  --runner {virtualenv}       the tox run engine to use when not explicitly stated in tox env configuration (default: virtualenv)\n  --version                   show program's and plugins version number and exit\n  --no-provision [REQ_JSON]   do not perform provision, but fail and if a path was provided write provision metadata as JSON to it (default: False)\n  --no-recreate-provision     if recreate is set do not recreate provision tox environment (default: False)\n  -r, --recreate              recreate the tox environments (default: False)\n  -x OVERRIDE, --override OVERRIDE\n                              configuration override(s), e.g., -x testenv:pypy3.ignore_errors=True (default: [])\n\nverbosity:\n  every -v increases, every -q decreases verbosity level, default WARNING, map 0=CRITICAL|1=ERROR|2=WARNING|3=INFO|4=DEBUG|5=NOTSET\n\n  -v, --verbose               increase verbosity (default: 2)\n  -q, --quiet                 decrease verbosity (default: 0)\n\nsubcommands:\n  tox command to execute (by default legacy)\n\n  {run,r,run-parallel,p,depends,de,list,l,devenv,d,schema,config,c,quickstart,q,exec,e,legacy,le}\n    run (r)                   run environments\n    run-parallel (p)          run environments in parallel\n    depends (de)              visualize tox environment dependencies\n    list (l)                  list environments\n    devenv (d)                sets up a development environment at ENVDIR based on the tox configuration specified\n    schema                    Generate schema for tox configuration\n    config (c)                show tox configuration\n    quickstart (q)            Command line script to quickly create a tox config file for a Python project\n    exec (e)                  execute an arbitrary command within a tox environment\n    legacy (le)               legacy entry-point command\n\nconfig file '/tmp/.config/tox/config.ini' missing (change via env var TOX_USER_CONFIG_FILE)\n",
+      "normalization_version": "1.0",
+      "capture_metadata": {}
+    },
+    "flags": [
+      {
+        "aliases": [
+          {
+            "value": "-h",
+            "literal": "-h",
+            "evidence": [
+              {
+                "line": 9,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--help",
+            "literal": "--help",
+            "evidence": [
+              {
+                "line": 9,
+                "start": 6,
+                "end": 12
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "show this help message and exit",
+          "literal": "show this help message and exit",
+          "evidence": [
+            {
+              "line": 9,
+              "start": 30,
+              "end": 61
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--colored",
+            "literal": "--colored",
+            "evidence": [
+              {
+                "line": 10,
+                "start": 2,
+                "end": 11
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "{yes,no}",
+          "literal": "{yes,no}",
+          "evidence": [
+            {
+              "line": 10,
+              "start": 12,
+              "end": 20
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "{yes,no}",
+          "evidence": [
+            {
+              "line": 10,
+              "start": 12,
+              "end": 20
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": {
+          "value": "no",
+          "literal": "no",
+          "evidence": [
+            {
+              "line": 10,
+              "start": 135,
+              "end": 137
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "choices": {
+          "value": "yes,no",
+          "literal": "yes,no",
+          "evidence": [
+            {
+              "line": 10,
+              "start": 13,
+              "end": 19
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "should output be enriched with colors, default is yes unless TERM=dumb or NO_COLOR is defined. (default: no)",
+          "literal": "should output be enriched with colors, default is yes unless TERM=dumb or NO_COLOR is defined. (default: no)",
+          "evidence": [
+            {
+              "line": 10,
+              "start": 30,
+              "end": 138
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--stderr-color",
+            "literal": "--stderr-color",
+            "evidence": [
+              {
+                "line": 11,
+                "start": 2,
+                "end": 16
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "{BLACK,BLUE,CYAN,GREEN,LIGHTBLACK_EX,LIGHTBLUE_EX,LIGHTCYAN_EX,LIGHTGREEN_EX,LIGHTMAGENTA_EX,LIGHTRED_EX,LIGHTWHITE_EX,LIGHTYELLOW_EX,MAGENTA,RED,RESET,WHITE,YELLOW}",
+          "literal": "{BLACK,BLUE,CYAN,GREEN,LIGHTBLACK_EX,LIGHTBLUE_EX,LIGHTCYAN_EX,LIGHTGREEN_EX,LIGHTMAGENTA_EX,LIGHTRED_EX,LIGHTWHITE_EX,LIGHTYELLOW_EX,MAGENTA,RED,RESET,WHITE,YELLOW}",
+          "evidence": [
+            {
+              "line": 11,
+              "start": 17,
+              "end": 182
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "{BLACK,BLUE,CYAN,GREEN,LIGHTBLACK_EX,LIGHTBLUE_EX,LIGHTCYAN_EX,LIGHTGREEN_EX,LIGHTMAGENTA_EX,LIGHTRED_EX,LIGHTWHITE_EX,LIGHTYELLOW_EX,MAGENTA,RED,RESET,WHITE,YELLOW}",
+          "evidence": [
+            {
+              "line": 11,
+              "start": 17,
+              "end": 182
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": {
+          "value": "RED",
+          "literal": "RED",
+          "evidence": [
+            {
+              "line": 12,
+              "start": 98,
+              "end": 101
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "choices": {
+          "value": "BLACK,BLUE,CYAN,GREEN,LIGHTBLACK_EX,LIGHTBLUE_EX,LIGHTCYAN_EX,LIGHTGREEN_EX,LIGHTMAGENTA_EX,LIGHTRED_EX,LIGHTWHITE_EX,LIGHTYELLOW_EX,MAGENTA,RED,RESET,WHITE,YELLOW",
+          "literal": "BLACK,BLUE,CYAN,GREEN,LIGHTBLACK_EX,LIGHTBLUE_EX,LIGHTCYAN_EX,LIGHTGREEN_EX,LIGHTMAGENTA_EX,LIGHTRED_EX,LIGHTWHITE_EX,LIGHTYELLOW_EX,MAGENTA,RED,RESET,WHITE,YELLOW",
+          "evidence": [
+            {
+              "line": 11,
+              "start": 18,
+              "end": 181
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "color for stderr output, use RESET for terminal defaults. (default: RED)",
+          "literal": "color for stderr output, use RESET for terminal defaults. (default: RED)",
+          "evidence": [
+            {
+              "line": 12,
+              "start": 30,
+              "end": 102
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--exit-and-dump-after",
+            "literal": "--exit-and-dump-after",
+            "evidence": [
+              {
+                "line": 13,
+                "start": 2,
+                "end": 23
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "seconds",
+          "literal": "seconds",
+          "evidence": [
+            {
+              "line": 13,
+              "start": 24,
+              "end": 31
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "seconds",
+          "evidence": [
+            {
+              "line": 13,
+              "start": 24,
+              "end": 31
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": {
+          "value": "0",
+          "literal": "0",
+          "evidence": [
+            {
+              "line": 14,
+              "start": 141,
+              "end": 142
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "choices": null,
+        "description": {
+          "value": "dump tox threads after n seconds and exit the app - useful to debug when tox hangs, 0 means disabled (default: 0)",
+          "literal": "dump tox threads after n seconds and exit the app - useful to debug when tox hangs, 0 means disabled (default: 0)",
+          "evidence": [
+            {
+              "line": 14,
+              "start": 30,
+              "end": 143
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-c",
+            "literal": "-c",
+            "evidence": [
+              {
+                "line": 15,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--conf",
+            "literal": "--conf",
+            "evidence": [
+              {
+                "line": 15,
+                "start": 11,
+                "end": 17
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "file",
+          "literal": "file",
+          "evidence": [
+            {
+              "line": 15,
+              "start": 18,
+              "end": 22
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "file",
+          "evidence": [
+            {
+              "line": 15,
+              "start": 18,
+              "end": 22
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": {
+          "value": "None",
+          "literal": "None",
+          "evidence": [
+            {
+              "line": 15,
+              "start": 111,
+              "end": 115
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "choices": null,
+        "description": {
+          "value": "configuration file/folder for tox (if not specified will discover one) (default: None)",
+          "literal": "configuration file/folder for tox (if not specified will discover one) (default: None)",
+          "evidence": [
+            {
+              "line": 15,
+              "start": 30,
+              "end": 116
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--workdir",
+            "literal": "--workdir",
+            "evidence": [
+              {
+                "line": 16,
+                "start": 2,
+                "end": 11
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "dir",
+          "literal": "dir",
+          "evidence": [
+            {
+              "line": 16,
+              "start": 12,
+              "end": 15
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "dir",
+          "evidence": [
+            {
+              "line": 16,
+              "start": 12,
+              "end": 15
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": {
+          "value": "None",
+          "literal": "None",
+          "evidence": [
+            {
+              "line": 16,
+              "start": 119,
+              "end": 123
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "choices": null,
+        "description": {
+          "value": "tox working directory (if not specified will be the folder of the config file) (default: None)",
+          "literal": "tox working directory (if not specified will be the folder of the config file) (default: None)",
+          "evidence": [
+            {
+              "line": 16,
+              "start": 30,
+              "end": 124
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--root",
+            "literal": "--root",
+            "evidence": [
+              {
+                "line": 17,
+                "start": 2,
+                "end": 8
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "dir",
+          "literal": "dir",
+          "evidence": [
+            {
+              "line": 17,
+              "start": 9,
+              "end": 12
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "dir",
+          "evidence": [
+            {
+              "line": 17,
+              "start": 9,
+              "end": 12
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": {
+          "value": "None",
+          "literal": "None",
+          "evidence": [
+            {
+              "line": 17,
+              "start": 120,
+              "end": 124
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "choices": null,
+        "description": {
+          "value": "project root directory (if not specified will be the folder of the config file) (default: None)",
+          "literal": "project root directory (if not specified will be the folder of the config file) (default: None)",
+          "evidence": [
+            {
+              "line": 17,
+              "start": 30,
+              "end": 125
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--runner",
+            "literal": "--runner",
+            "evidence": [
+              {
+                "line": 18,
+                "start": 2,
+                "end": 10
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "{virtualenv}",
+          "literal": "{virtualenv}",
+          "evidence": [
+            {
+              "line": 18,
+              "start": 11,
+              "end": 23
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "{virtualenv}",
+          "evidence": [
+            {
+              "line": 18,
+              "start": 11,
+              "end": 23
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": {
+          "value": "virtualenv",
+          "literal": "virtualenv",
+          "evidence": [
+            {
+              "line": 18,
+              "start": 118,
+              "end": 128
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "choices": {
+          "value": "virtualenv",
+          "literal": "virtualenv",
+          "evidence": [
+            {
+              "line": 18,
+              "start": 12,
+              "end": 22
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "the tox run engine to use when not explicitly stated in tox env configuration (default: virtualenv)",
+          "literal": "the tox run engine to use when not explicitly stated in tox env configuration (default: virtualenv)",
+          "evidence": [
+            {
+              "line": 18,
+              "start": 30,
+              "end": 129
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--version",
+            "literal": "--version",
+            "evidence": [
+              {
+                "line": 19,
+                "start": 2,
+                "end": 11
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "show program's and plugins version number and exit",
+          "literal": "show program's and plugins version number and exit",
+          "evidence": [
+            {
+              "line": 19,
+              "start": 30,
+              "end": 80
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--no-provision",
+            "literal": "--no-provision",
+            "evidence": [
+              {
+                "line": 20,
+                "start": 2,
+                "end": 16
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "[REQ_JSON]",
+          "literal": "[REQ_JSON]",
+          "evidence": [
+            {
+              "line": 20,
+              "start": 17,
+              "end": 27
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "optional",
+          "literal": "[REQ_JSON]",
+          "evidence": [
+            {
+              "line": 20,
+              "start": 17,
+              "end": 27
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": {
+          "value": "False",
+          "literal": "False",
+          "evidence": [
+            {
+              "line": 20,
+              "start": 141,
+              "end": 146
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "choices": null,
+        "description": {
+          "value": "do not perform provision, but fail and if a path was provided write provision metadata as JSON to it (default: False)",
+          "literal": "do not perform provision, but fail and if a path was provided write provision metadata as JSON to it (default: False)",
+          "evidence": [
+            {
+              "line": 20,
+              "start": 30,
+              "end": 147
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--no-recreate-provision",
+            "literal": "--no-recreate-provision",
+            "evidence": [
+              {
+                "line": 21,
+                "start": 2,
+                "end": 25
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": {
+          "value": "False",
+          "literal": "False",
+          "evidence": [
+            {
+              "line": 21,
+              "start": 101,
+              "end": 106
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "choices": null,
+        "description": {
+          "value": "if recreate is set do not recreate provision tox environment (default: False)",
+          "literal": "if recreate is set do not recreate provision tox environment (default: False)",
+          "evidence": [
+            {
+              "line": 21,
+              "start": 30,
+              "end": 107
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-r",
+            "literal": "-r",
+            "evidence": [
+              {
+                "line": 22,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--recreate",
+            "literal": "--recreate",
+            "evidence": [
+              {
+                "line": 22,
+                "start": 6,
+                "end": 16
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": {
+          "value": "False",
+          "literal": "False",
+          "evidence": [
+            {
+              "line": 22,
+              "start": 70,
+              "end": 75
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "choices": null,
+        "description": {
+          "value": "recreate the tox environments (default: False)",
+          "literal": "recreate the tox environments (default: False)",
+          "evidence": [
+            {
+              "line": 22,
+              "start": 30,
+              "end": 76
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-x",
+            "literal": "-x",
+            "evidence": [
+              {
+                "line": 23,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--override",
+            "literal": "--override",
+            "evidence": [
+              {
+                "line": 23,
+                "start": 15,
+                "end": 25
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "OVERRIDE",
+          "literal": "OVERRIDE",
+          "evidence": [
+            {
+              "line": 23,
+              "start": 26,
+              "end": 34
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "OVERRIDE",
+          "evidence": [
+            {
+              "line": 23,
+              "start": 26,
+              "end": 34
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": {
+          "value": "[]",
+          "literal": "[]",
+          "evidence": [
+            {
+              "line": 24,
+              "start": 109,
+              "end": 111
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "choices": null,
+        "description": {
+          "value": "configuration override(s), e.g., -x testenv:pypy3.ignore_errors=True (default: [])",
+          "literal": "configuration override(s), e.g., -x testenv:pypy3.ignore_errors=True (default: [])",
+          "evidence": [
+            {
+              "line": 24,
+              "start": 30,
+              "end": 112
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-v",
+            "literal": "-v",
+            "evidence": [
+              {
+                "line": 29,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--verbose",
+            "literal": "--verbose",
+            "evidence": [
+              {
+                "line": 29,
+                "start": 6,
+                "end": 15
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": {
+          "value": "2",
+          "literal": "2",
+          "evidence": [
+            {
+              "line": 29,
+              "start": 59,
+              "end": 60
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "choices": null,
+        "description": {
+          "value": "increase verbosity (default: 2)",
+          "literal": "increase verbosity (default: 2)",
+          "evidence": [
+            {
+              "line": 29,
+              "start": 30,
+              "end": 61
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-q",
+            "literal": "-q",
+            "evidence": [
+              {
+                "line": 30,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--quiet",
+            "literal": "--quiet",
+            "evidence": [
+              {
+                "line": 30,
+                "start": 6,
+                "end": 13
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": {
+          "value": "0",
+          "literal": "0",
+          "evidence": [
+            {
+              "line": 30,
+              "start": 59,
+              "end": 60
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "choices": null,
+        "description": {
+          "value": "decrease verbosity (default: 0)",
+          "literal": "decrease verbosity (default: 0)",
+          "evidence": [
+            {
+              "line": 30,
+              "start": 30,
+              "end": 61
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      }
+    ],
+    "subcommands": [
+      {
+        "name": {
+          "value": "run",
+          "literal": "run",
+          "evidence": [
+            {
+              "line": 36,
+              "start": 4,
+              "end": 7
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "run environments",
+          "literal": "run environments",
+          "evidence": [
+            {
+              "line": 36,
+              "start": 30,
+              "end": 46
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "r",
+          "literal": "r",
+          "evidence": [
+            {
+              "line": 36,
+              "start": 9,
+              "end": 10
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "run environments",
+          "literal": "run environments",
+          "evidence": [
+            {
+              "line": 36,
+              "start": 30,
+              "end": 46
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "run-parallel",
+          "literal": "run-parallel",
+          "evidence": [
+            {
+              "line": 37,
+              "start": 4,
+              "end": 16
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "run environments in parallel",
+          "literal": "run environments in parallel",
+          "evidence": [
+            {
+              "line": 37,
+              "start": 30,
+              "end": 58
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "p",
+          "literal": "p",
+          "evidence": [
+            {
+              "line": 37,
+              "start": 18,
+              "end": 19
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "run environments in parallel",
+          "literal": "run environments in parallel",
+          "evidence": [
+            {
+              "line": 37,
+              "start": 30,
+              "end": 58
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "depends",
+          "literal": "depends",
+          "evidence": [
+            {
+              "line": 38,
+              "start": 4,
+              "end": 11
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "visualize tox environment dependencies",
+          "literal": "visualize tox environment dependencies",
+          "evidence": [
+            {
+              "line": 38,
+              "start": 30,
+              "end": 68
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "de",
+          "literal": "de",
+          "evidence": [
+            {
+              "line": 38,
+              "start": 13,
+              "end": 15
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "visualize tox environment dependencies",
+          "literal": "visualize tox environment dependencies",
+          "evidence": [
+            {
+              "line": 38,
+              "start": 30,
+              "end": 68
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "list",
+          "literal": "list",
+          "evidence": [
+            {
+              "line": 39,
+              "start": 4,
+              "end": 8
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "list environments",
+          "literal": "list environments",
+          "evidence": [
+            {
+              "line": 39,
+              "start": 30,
+              "end": 47
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "l",
+          "literal": "l",
+          "evidence": [
+            {
+              "line": 39,
+              "start": 10,
+              "end": 11
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "list environments",
+          "literal": "list environments",
+          "evidence": [
+            {
+              "line": 39,
+              "start": 30,
+              "end": 47
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "devenv",
+          "literal": "devenv",
+          "evidence": [
+            {
+              "line": 40,
+              "start": 4,
+              "end": 10
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "sets up a development environment at ENVDIR based on the tox configuration specified",
+          "literal": "sets up a development environment at ENVDIR based on the tox configuration specified",
+          "evidence": [
+            {
+              "line": 40,
+              "start": 30,
+              "end": 114
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "d",
+          "literal": "d",
+          "evidence": [
+            {
+              "line": 40,
+              "start": 12,
+              "end": 13
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "sets up a development environment at ENVDIR based on the tox configuration specified",
+          "literal": "sets up a development environment at ENVDIR based on the tox configuration specified",
+          "evidence": [
+            {
+              "line": 40,
+              "start": 30,
+              "end": 114
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "schema",
+          "literal": "schema",
+          "evidence": [
+            {
+              "line": 41,
+              "start": 4,
+              "end": 10
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Generate schema for tox configuration",
+          "literal": "Generate schema for tox configuration",
+          "evidence": [
+            {
+              "line": 41,
+              "start": 30,
+              "end": 67
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "config",
+          "literal": "config",
+          "evidence": [
+            {
+              "line": 42,
+              "start": 4,
+              "end": 10
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "show tox configuration",
+          "literal": "show tox configuration",
+          "evidence": [
+            {
+              "line": 42,
+              "start": 30,
+              "end": 52
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "c",
+          "literal": "c",
+          "evidence": [
+            {
+              "line": 42,
+              "start": 12,
+              "end": 13
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "show tox configuration",
+          "literal": "show tox configuration",
+          "evidence": [
+            {
+              "line": 42,
+              "start": 30,
+              "end": 52
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "quickstart",
+          "literal": "quickstart",
+          "evidence": [
+            {
+              "line": 43,
+              "start": 4,
+              "end": 14
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Command line script to quickly create a tox config file for a Python project",
+          "literal": "Command line script to quickly create a tox config file for a Python project",
+          "evidence": [
+            {
+              "line": 43,
+              "start": 30,
+              "end": 106
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "q",
+          "literal": "q",
+          "evidence": [
+            {
+              "line": 43,
+              "start": 16,
+              "end": 17
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Command line script to quickly create a tox config file for a Python project",
+          "literal": "Command line script to quickly create a tox config file for a Python project",
+          "evidence": [
+            {
+              "line": 43,
+              "start": 30,
+              "end": 106
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "exec",
+          "literal": "exec",
+          "evidence": [
+            {
+              "line": 44,
+              "start": 4,
+              "end": 8
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "execute an arbitrary command within a tox environment",
+          "literal": "execute an arbitrary command within a tox environment",
+          "evidence": [
+            {
+              "line": 44,
+              "start": 30,
+              "end": 83
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "e",
+          "literal": "e",
+          "evidence": [
+            {
+              "line": 44,
+              "start": 10,
+              "end": 11
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "execute an arbitrary command within a tox environment",
+          "literal": "execute an arbitrary command within a tox environment",
+          "evidence": [
+            {
+              "line": 44,
+              "start": 30,
+              "end": 83
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "legacy",
+          "literal": "legacy",
+          "evidence": [
+            {
+              "line": 45,
+              "start": 4,
+              "end": 10
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "legacy entry-point command",
+          "literal": "legacy entry-point command",
+          "evidence": [
+            {
+              "line": 45,
+              "start": 30,
+              "end": 56
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "le",
+          "literal": "le",
+          "evidence": [
+            {
+              "line": 45,
+              "start": 12,
+              "end": 14
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "legacy entry-point command",
+          "literal": "legacy entry-point command",
+          "evidence": [
+            {
+              "line": 45,
+              "start": 30,
+              "end": 56
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      }
+    ],
+    "positionals": [],
+    "status": "ok",
+    "diagnostics": [],
+    "engine": {
+      "name": "manual-agent-annotation",
+      "version": "primary-1",
+      "threshold": 0,
+      "calibrated": false
+    }
+  },
+  "adjudicated": false,
+  "notes": [
+    "Independent source-only agent annotation. No primary/adjudicated annotations, parser/tagger/model code, or predictions consulted.",
+    "Unknown semantic fields remain null; flags without explicit value notation have unknown arity and takes_value.",
+    "Startup and trailing missing-config diagnostics are other. The repeated brace grammar is other.",
+    "Parenthesized command aliases are separate explicitly advertised command names with the same description; schema has no command-alias grouping field. No hierarchy inferred.",
+    "Bracketed REQ_JSON explicitly allows optional value arity. Brace-delimited choice tokens indicate required value arity. Choices retain exact comma-separated interior text."
+  ]
+}

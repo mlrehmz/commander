@@ -1,0 +1,17 @@
+{
+  "canonical_sha256": "ad072f620e653eea599586a07eb1d4d84db0f4cdb83f138cd823b3c9de1f74c9",
+  "annotators": [
+    "codex-primary-2026-11-19",
+    "codex-blind-2026-11-19"
+  ],
+  "disagreements": [],
+  "adjudicated": true,
+  "producer": "agent",
+  "adjudicator": "codex-primary-2026-11-19",
+  "primary_sha256": "055e620c144a4fc3edc9441ad668296dbf453a41de3be9889d05cb3d5711221f",
+  "blind_sha256": "3f83e3715eaa6641f1bfd5c7c2d7e5a9b6eb97fd181f607f5d88f4daaff594ff",
+  "decisions": [],
+  "primary_audit_issues": [],
+  "blind_audit_issues": [],
+  "adjudicated_audit_issues": []
+}

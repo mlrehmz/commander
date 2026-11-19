@@ -34,7 +34,7 @@ def test_adjudicated_pilot_has_auditable_distinct_blind_passes():
     from helpcat.corpus import load_manifest
 
     data, pages = load_manifest("corpus/manifests/pilot.json")
-    assert len(pages) == 2
+    assert len(pages) == 10
     assert not data["frozen"]
     assert all(entry["split"] == "train" for entry, _, _ in pages)
     for entry, source, annotation in pages:

@@ -38,3 +38,21 @@ configuration and code revision. A restart must reject mismatched configuration.
 Tests cover byte truncation vs intact evidence, window boundaries, cache changes,
 actual model inference into the assembler and checkpoint recovery. No test result
 will be represented as the eight-page overfit gate or three-seed experiment.
+
+## Pilot annotation audit scaffold
+
+Finish the ten-page source-only pilot before scaling collection. Preserve both
+passes and every disagreement; adjudication records per-field choices and source
+reasons. Literal default/choice values may be annotated directly without guessing
+Python types. Bracketed pipe alternatives leave arity unknown without formatter
+knowledge. Prefer actual separately advertised aliases over substrings of a long
+flag. Wrapped descriptions collapse all whitespace in normalized values while
+preserving exact source literals and spans.
+
+The new reference-audit seam takes a schema-valid catalog and returns issues
+without mutating it. It checks token boundaries, documented transformations and
+provenance. Invalid drafts remain reproducible historical evidence; adjudicated
+references must pass audit before admission. Test with an alias span that matches
+a substring but not a separate token, and with a wrong whitespace transformation.
+Only after source adjudication/audit may pilot assembler diagnostics run. They
+are training-pilot diagnostics, not the preregistered development gate.

@@ -1,0 +1,2052 @@
+{
+  "canonical_sha256": "667da77ec4ae908b62e595c577f002118a134c2bdfd6d9653547c353f55b71e8",
+  "annotators": [
+    "codex-primary-2026-11-19",
+    "codex-blind-2026-11-19"
+  ],
+  "disagreements": [
+    {
+      "kind": "line_label",
+      "line": 1,
+      "primary": "prose",
+      "blind": "other"
+    },
+    {
+      "kind": "line_label",
+      "line": 47,
+      "primary": "prose",
+      "blind": "other"
+    },
+    {
+      "kind": "flags",
+      "primary": [
+        {
+          "aliases": [
+            {
+              "value": "-h",
+              "literal": "-h",
+              "evidence": [
+                {
+                  "line": 9,
+                  "start": 2,
+                  "end": 4
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            },
+            {
+              "value": "--help",
+              "literal": "--help",
+              "evidence": [
+                {
+                  "line": 9,
+                  "start": 6,
+                  "end": 12
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": null,
+          "arity": null,
+          "takes_value": null,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "show this help message and exit",
+            "literal": "show this help message and exit",
+            "evidence": [
+              {
+                "line": 9,
+                "start": 30,
+                "end": 61
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        },
+        {
+          "aliases": [
+            {
+              "value": "--colored",
+              "literal": "--colored",
+              "evidence": [
+                {
+                  "line": 10,
+                  "start": 2,
+                  "end": 11
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": {
+            "value": "{yes,no}",
+            "literal": "{yes,no}",
+            "evidence": [
+              {
+                "line": 10,
+                "start": 12,
+                "end": 20
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "arity": {
+            "value": "required",
+            "literal": "{yes,no}",
+            "evidence": [
+              {
+                "line": 10,
+                "start": 12,
+                "end": 20
+              }
+            ],
+            "rule": "declaration-value-notation",
+            "provenance": "deterministic_inference"
+          },
+          "takes_value": true,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "should output be enriched with colors, default is yes unless TERM=dumb or NO_COLOR is defined. (default: no)",
+            "literal": "should output be enriched with colors, default is yes unless TERM=dumb or NO_COLOR is defined. (default: no)",
+            "evidence": [
+              {
+                "line": 10,
+                "start": 30,
+                "end": 138
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        },
+        {
+          "aliases": [
+            {
+              "value": "--stderr-color",
+              "literal": "--stderr-color",
+              "evidence": [
+                {
+                  "line": 11,
+                  "start": 2,
+                  "end": 16
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": {
+            "value": "{BLACK,BLUE,CYAN,GREEN,LIGHTBLACK_EX,LIGHTBLUE_EX,LIGHTCYAN_EX,LIGHTGREEN_EX,LIGHTMAGENTA_EX,LIGHTRED_EX,LIGHTWHITE_EX,LIGHTYELLOW_EX,MAGENTA,RED,RESET,WHITE,YELLOW}",
+            "literal": "{BLACK,BLUE,CYAN,GREEN,LIGHTBLACK_EX,LIGHTBLUE_EX,LIGHTCYAN_EX,LIGHTGREEN_EX,LIGHTMAGENTA_EX,LIGHTRED_EX,LIGHTWHITE_EX,LIGHTYELLOW_EX,MAGENTA,RED,RESET,WHITE,YELLOW}",
+            "evidence": [
+              {
+                "line": 11,
+                "start": 17,
+                "end": 182
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "arity": {
+            "value": "required",
+            "literal": "{BLACK,BLUE,CYAN,GREEN,LIGHTBLACK_EX,LIGHTBLUE_EX,LIGHTCYAN_EX,LIGHTGREEN_EX,LIGHTMAGENTA_EX,LIGHTRED_EX,LIGHTWHITE_EX,LIGHTYELLOW_EX,MAGENTA,RED,RESET,WHITE,YELLOW}",
+            "evidence": [
+              {
+                "line": 11,
+                "start": 17,
+                "end": 182
+              }
+            ],
+            "rule": "declaration-value-notation",
+            "provenance": "deterministic_inference"
+          },
+          "takes_value": true,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "color for stderr output, use RESET for terminal defaults. (default: RED)",
+            "literal": "color for stderr output, use RESET for terminal defaults. (default: RED)",
+            "evidence": [
+              {
+                "line": 12,
+                "start": 30,
+                "end": 102
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        },
+        {
+          "aliases": [
+            {
+              "value": "--exit-and-dump-after",
+              "literal": "--exit-and-dump-after",
+              "evidence": [
+                {
+                  "line": 13,
+                  "start": 2,
+                  "end": 23
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": {
+            "value": "seconds",
+            "literal": "seconds",
+            "evidence": [
+              {
+                "line": 13,
+                "start": 24,
+                "end": 31
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "arity": {
+            "value": "required",
+            "literal": "seconds",
+            "evidence": [
+              {
+                "line": 13,
+                "start": 24,
+                "end": 31
+              }
+            ],
+            "rule": "declaration-value-notation",
+            "provenance": "deterministic_inference"
+          },
+          "takes_value": true,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "dump tox threads after n seconds and exit the app - useful to debug when tox hangs, 0 means disabled (default: 0)",
+            "literal": "dump tox threads after n seconds and exit the app - useful to debug when tox hangs, 0 means disabled (default: 0)",
+            "evidence": [
+              {
+                "line": 14,
+                "start": 30,
+                "end": 143
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        },
+        {
+          "aliases": [
+            {
+              "value": "-c",
+              "literal": "-c",
+              "evidence": [
+                {
+                  "line": 15,
+                  "start": 2,
+                  "end": 4
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            },
+            {
+              "value": "--conf",
+              "literal": "--conf",
+              "evidence": [
+                {
+                  "line": 15,
+                  "start": 11,
+                  "end": 17
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": {
+            "value": "file",
+            "literal": "file",
+            "evidence": [
+              {
+                "line": 15,
+                "start": 18,
+                "end": 22
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "arity": {
+            "value": "required",
+            "literal": "file",
+            "evidence": [
+              {
+                "line": 15,
+                "start": 18,
+                "end": 22
+              }
+            ],
+            "rule": "declaration-value-notation",
+            "provenance": "deterministic_inference"
+          },
+          "takes_value": true,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "configuration file/folder for tox (if not specified will discover one) (default: None)",
+            "literal": "configuration file/folder for tox (if not specified will discover one) (default: None)",
+            "evidence": [
+              {
+                "line": 15,
+                "start": 30,
+                "end": 116
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        },
+        {
+          "aliases": [
+            {
+              "value": "--workdir",
+              "literal": "--workdir",
+              "evidence": [
+                {
+                  "line": 16,
+                  "start": 2,
+                  "end": 11
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": {
+            "value": "dir",
+            "literal": "dir",
+            "evidence": [
+              {
+                "line": 16,
+                "start": 12,
+                "end": 15
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "arity": {
+            "value": "required",
+            "literal": "dir",
+            "evidence": [
+              {
+                "line": 16,
+                "start": 12,
+                "end": 15
+              }
+            ],
+            "rule": "declaration-value-notation",
+            "provenance": "deterministic_inference"
+          },
+          "takes_value": true,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "tox working directory (if not specified will be the folder of the config file) (default: None)",
+            "literal": "tox working directory (if not specified will be the folder of the config file) (default: None)",
+            "evidence": [
+              {
+                "line": 16,
+                "start": 30,
+                "end": 124
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        },
+        {
+          "aliases": [
+            {
+              "value": "--root",
+              "literal": "--root",
+              "evidence": [
+                {
+                  "line": 17,
+                  "start": 2,
+                  "end": 8
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": {
+            "value": "dir",
+            "literal": "dir",
+            "evidence": [
+              {
+                "line": 17,
+                "start": 9,
+                "end": 12
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "arity": {
+            "value": "required",
+            "literal": "dir",
+            "evidence": [
+              {
+                "line": 17,
+                "start": 9,
+                "end": 12
+              }
+            ],
+            "rule": "declaration-value-notation",
+            "provenance": "deterministic_inference"
+          },
+          "takes_value": true,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "project root directory (if not specified will be the folder of the config file) (default: None)",
+            "literal": "project root directory (if not specified will be the folder of the config file) (default: None)",
+            "evidence": [
+              {
+                "line": 17,
+                "start": 30,
+                "end": 125
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        },
+        {
+          "aliases": [
+            {
+              "value": "--runner",
+              "literal": "--runner",
+              "evidence": [
+                {
+                  "line": 18,
+                  "start": 2,
+                  "end": 10
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": {
+            "value": "{virtualenv}",
+            "literal": "{virtualenv}",
+            "evidence": [
+              {
+                "line": 18,
+                "start": 11,
+                "end": 23
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "arity": {
+            "value": "required",
+            "literal": "{virtualenv}",
+            "evidence": [
+              {
+                "line": 18,
+                "start": 11,
+                "end": 23
+              }
+            ],
+            "rule": "declaration-value-notation",
+            "provenance": "deterministic_inference"
+          },
+          "takes_value": true,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "the tox run engine to use when not explicitly stated in tox env configuration (default: virtualenv)",
+            "literal": "the tox run engine to use when not explicitly stated in tox env configuration (default: virtualenv)",
+            "evidence": [
+              {
+                "line": 18,
+                "start": 30,
+                "end": 129
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        },
+        {
+          "aliases": [
+            {
+              "value": "--version",
+              "literal": "--version",
+              "evidence": [
+                {
+                  "line": 19,
+                  "start": 2,
+                  "end": 11
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": null,
+          "arity": null,
+          "takes_value": null,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "show program's and plugins version number and exit",
+            "literal": "show program's and plugins version number and exit",
+            "evidence": [
+              {
+                "line": 19,
+                "start": 30,
+                "end": 80
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        },
+        {
+          "aliases": [
+            {
+              "value": "--no-provision",
+              "literal": "--no-provision",
+              "evidence": [
+                {
+                  "line": 20,
+                  "start": 2,
+                  "end": 16
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": {
+            "value": "[REQ_JSON]",
+            "literal": "[REQ_JSON]",
+            "evidence": [
+              {
+                "line": 20,
+                "start": 17,
+                "end": 27
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "arity": {
+            "value": "optional",
+            "literal": "[REQ_JSON]",
+            "evidence": [
+              {
+                "line": 20,
+                "start": 17,
+                "end": 27
+              }
+            ],
+            "rule": "declaration-value-notation",
+            "provenance": "deterministic_inference"
+          },
+          "takes_value": true,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "do not perform provision, but fail and if a path was provided write provision metadata as JSON to it (default: False)",
+            "literal": "do not perform provision, but fail and if a path was provided write provision metadata as JSON to it (default: False)",
+            "evidence": [
+              {
+                "line": 20,
+                "start": 30,
+                "end": 147
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        },
+        {
+          "aliases": [
+            {
+              "value": "--no-recreate-provision",
+              "literal": "--no-recreate-provision",
+              "evidence": [
+                {
+                  "line": 21,
+                  "start": 2,
+                  "end": 25
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": null,
+          "arity": null,
+          "takes_value": null,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "if recreate is set do not recreate provision tox environment (default: False)",
+            "literal": "if recreate is set do not recreate provision tox environment (default: False)",
+            "evidence": [
+              {
+                "line": 21,
+                "start": 30,
+                "end": 107
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        },
+        {
+          "aliases": [
+            {
+              "value": "-r",
+              "literal": "-r",
+              "evidence": [
+                {
+                  "line": 22,
+                  "start": 2,
+                  "end": 4
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            },
+            {
+              "value": "--recreate",
+              "literal": "--recreate",
+              "evidence": [
+                {
+                  "line": 22,
+                  "start": 6,
+                  "end": 16
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": null,
+          "arity": null,
+          "takes_value": null,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "recreate the tox environments (default: False)",
+            "literal": "recreate the tox environments (default: False)",
+            "evidence": [
+              {
+                "line": 22,
+                "start": 30,
+                "end": 76
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        },
+        {
+          "aliases": [
+            {
+              "value": "-x",
+              "literal": "-x",
+              "evidence": [
+                {
+                  "line": 23,
+                  "start": 2,
+                  "end": 4
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            },
+            {
+              "value": "--override",
+              "literal": "--override",
+              "evidence": [
+                {
+                  "line": 23,
+                  "start": 15,
+                  "end": 25
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": {
+            "value": "OVERRIDE",
+            "literal": "OVERRIDE",
+            "evidence": [
+              {
+                "line": 23,
+                "start": 26,
+                "end": 34
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "arity": {
+            "value": "required",
+            "literal": "OVERRIDE",
+            "evidence": [
+              {
+                "line": 23,
+                "start": 26,
+                "end": 34
+              }
+            ],
+            "rule": "declaration-value-notation",
+            "provenance": "deterministic_inference"
+          },
+          "takes_value": true,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "configuration override(s), e.g., -x testenv:pypy3.ignore_errors=True (default: [])",
+            "literal": "configuration override(s), e.g., -x testenv:pypy3.ignore_errors=True (default: [])",
+            "evidence": [
+              {
+                "line": 24,
+                "start": 30,
+                "end": 112
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        },
+        {
+          "aliases": [
+            {
+              "value": "-v",
+              "literal": "-v",
+              "evidence": [
+                {
+                  "line": 29,
+                  "start": 2,
+                  "end": 4
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            },
+            {
+              "value": "--verbose",
+              "literal": "--verbose",
+              "evidence": [
+                {
+                  "line": 29,
+                  "start": 6,
+                  "end": 15
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": null,
+          "arity": null,
+          "takes_value": null,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "increase verbosity (default: 2)",
+            "literal": "increase verbosity (default: 2)",
+            "evidence": [
+              {
+                "line": 29,
+                "start": 30,
+                "end": 61
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        },
+        {
+          "aliases": [
+            {
+              "value": "-q",
+              "literal": "-q",
+              "evidence": [
+                {
+                  "line": 30,
+                  "start": 2,
+                  "end": 4
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            },
+            {
+              "value": "--quiet",
+              "literal": "--quiet",
+              "evidence": [
+                {
+                  "line": 30,
+                  "start": 6,
+                  "end": 13
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": null,
+          "arity": null,
+          "takes_value": null,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "decrease verbosity (default: 0)",
+            "literal": "decrease verbosity (default: 0)",
+            "evidence": [
+              {
+                "line": 30,
+                "start": 30,
+                "end": 61
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        }
+      ],
+      "blind": [
+        {
+          "aliases": [
+            {
+              "value": "-h",
+              "literal": "-h",
+              "evidence": [
+                {
+                  "line": 9,
+                  "start": 2,
+                  "end": 4
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            },
+            {
+              "value": "--help",
+              "literal": "--help",
+              "evidence": [
+                {
+                  "line": 9,
+                  "start": 6,
+                  "end": 12
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": null,
+          "arity": null,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "show this help message and exit",
+            "literal": "show this help message and exit",
+            "evidence": [
+              {
+                "line": 9,
+                "start": 30,
+                "end": 61
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "takes_value": null
+        },
+        {
+          "aliases": [
+            {
+              "value": "--colored",
+              "literal": "--colored",
+              "evidence": [
+                {
+                  "line": 10,
+                  "start": 2,
+                  "end": 11
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": {
+            "value": "{yes,no}",
+            "literal": "{yes,no}",
+            "evidence": [
+              {
+                "line": 10,
+                "start": 12,
+                "end": 20
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "arity": {
+            "value": "required",
+            "literal": "{yes,no}",
+            "evidence": [
+              {
+                "line": 10,
+                "start": 12,
+                "end": 20
+              }
+            ],
+            "rule": "declaration-value-notation",
+            "provenance": "deterministic_inference"
+          },
+          "required_presence": null,
+          "type": null,
+          "default": {
+            "value": "no",
+            "literal": "no",
+            "evidence": [
+              {
+                "line": 10,
+                "start": 135,
+                "end": 137
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "choices": {
+            "value": "yes,no",
+            "literal": "yes,no",
+            "evidence": [
+              {
+                "line": 10,
+                "start": 13,
+                "end": 19
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "description": {
+            "value": "should output be enriched with colors, default is yes unless TERM=dumb or NO_COLOR is defined. (default: no)",
+            "literal": "should output be enriched with colors, default is yes unless TERM=dumb or NO_COLOR is defined. (default: no)",
+            "evidence": [
+              {
+                "line": 10,
+                "start": 30,
+                "end": 138
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "takes_value": true
+        },
+        {
+          "aliases": [
+            {
+              "value": "--stderr-color",
+              "literal": "--stderr-color",
+              "evidence": [
+                {
+                  "line": 11,
+                  "start": 2,
+                  "end": 16
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": {
+            "value": "{BLACK,BLUE,CYAN,GREEN,LIGHTBLACK_EX,LIGHTBLUE_EX,LIGHTCYAN_EX,LIGHTGREEN_EX,LIGHTMAGENTA_EX,LIGHTRED_EX,LIGHTWHITE_EX,LIGHTYELLOW_EX,MAGENTA,RED,RESET,WHITE,YELLOW}",
+            "literal": "{BLACK,BLUE,CYAN,GREEN,LIGHTBLACK_EX,LIGHTBLUE_EX,LIGHTCYAN_EX,LIGHTGREEN_EX,LIGHTMAGENTA_EX,LIGHTRED_EX,LIGHTWHITE_EX,LIGHTYELLOW_EX,MAGENTA,RED,RESET,WHITE,YELLOW}",
+            "evidence": [
+              {
+                "line": 11,
+                "start": 17,
+                "end": 182
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "arity": {
+            "value": "required",
+            "literal": "{BLACK,BLUE,CYAN,GREEN,LIGHTBLACK_EX,LIGHTBLUE_EX,LIGHTCYAN_EX,LIGHTGREEN_EX,LIGHTMAGENTA_EX,LIGHTRED_EX,LIGHTWHITE_EX,LIGHTYELLOW_EX,MAGENTA,RED,RESET,WHITE,YELLOW}",
+            "evidence": [
+              {
+                "line": 11,
+                "start": 17,
+                "end": 182
+              }
+            ],
+            "rule": "declaration-value-notation",
+            "provenance": "deterministic_inference"
+          },
+          "required_presence": null,
+          "type": null,
+          "default": {
+            "value": "RED",
+            "literal": "RED",
+            "evidence": [
+              {
+                "line": 12,
+                "start": 98,
+                "end": 101
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "choices": {
+            "value": "BLACK,BLUE,CYAN,GREEN,LIGHTBLACK_EX,LIGHTBLUE_EX,LIGHTCYAN_EX,LIGHTGREEN_EX,LIGHTMAGENTA_EX,LIGHTRED_EX,LIGHTWHITE_EX,LIGHTYELLOW_EX,MAGENTA,RED,RESET,WHITE,YELLOW",
+            "literal": "BLACK,BLUE,CYAN,GREEN,LIGHTBLACK_EX,LIGHTBLUE_EX,LIGHTCYAN_EX,LIGHTGREEN_EX,LIGHTMAGENTA_EX,LIGHTRED_EX,LIGHTWHITE_EX,LIGHTYELLOW_EX,MAGENTA,RED,RESET,WHITE,YELLOW",
+            "evidence": [
+              {
+                "line": 11,
+                "start": 18,
+                "end": 181
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "description": {
+            "value": "color for stderr output, use RESET for terminal defaults. (default: RED)",
+            "literal": "color for stderr output, use RESET for terminal defaults. (default: RED)",
+            "evidence": [
+              {
+                "line": 12,
+                "start": 30,
+                "end": 102
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "takes_value": true
+        },
+        {
+          "aliases": [
+            {
+              "value": "--exit-and-dump-after",
+              "literal": "--exit-and-dump-after",
+              "evidence": [
+                {
+                  "line": 13,
+                  "start": 2,
+                  "end": 23
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": {
+            "value": "seconds",
+            "literal": "seconds",
+            "evidence": [
+              {
+                "line": 13,
+                "start": 24,
+                "end": 31
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "arity": {
+            "value": "required",
+            "literal": "seconds",
+            "evidence": [
+              {
+                "line": 13,
+                "start": 24,
+                "end": 31
+              }
+            ],
+            "rule": "declaration-value-notation",
+            "provenance": "deterministic_inference"
+          },
+          "required_presence": null,
+          "type": null,
+          "default": {
+            "value": "0",
+            "literal": "0",
+            "evidence": [
+              {
+                "line": 14,
+                "start": 141,
+                "end": 142
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "choices": null,
+          "description": {
+            "value": "dump tox threads after n seconds and exit the app - useful to debug when tox hangs, 0 means disabled (default: 0)",
+            "literal": "dump tox threads after n seconds and exit the app - useful to debug when tox hangs, 0 means disabled (default: 0)",
+            "evidence": [
+              {
+                "line": 14,
+                "start": 30,
+                "end": 143
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "takes_value": true
+        },
+        {
+          "aliases": [
+            {
+              "value": "-c",
+              "literal": "-c",
+              "evidence": [
+                {
+                  "line": 15,
+                  "start": 2,
+                  "end": 4
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            },
+            {
+              "value": "--conf",
+              "literal": "--conf",
+              "evidence": [
+                {
+                  "line": 15,
+                  "start": 11,
+                  "end": 17
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": {
+            "value": "file",
+            "literal": "file",
+            "evidence": [
+              {
+                "line": 15,
+                "start": 18,
+                "end": 22
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "arity": {
+            "value": "required",
+            "literal": "file",
+            "evidence": [
+              {
+                "line": 15,
+                "start": 18,
+                "end": 22
+              }
+            ],
+            "rule": "declaration-value-notation",
+            "provenance": "deterministic_inference"
+          },
+          "required_presence": null,
+          "type": null,
+          "default": {
+            "value": "None",
+            "literal": "None",
+            "evidence": [
+              {
+                "line": 15,
+                "start": 111,
+                "end": 115
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "choices": null,
+          "description": {
+            "value": "configuration file/folder for tox (if not specified will discover one) (default: None)",
+            "literal": "configuration file/folder for tox (if not specified will discover one) (default: None)",
+            "evidence": [
+              {
+                "line": 15,
+                "start": 30,
+                "end": 116
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "takes_value": true
+        },
+        {
+          "aliases": [
+            {
+              "value": "--workdir",
+              "literal": "--workdir",
+              "evidence": [
+                {
+                  "line": 16,
+                  "start": 2,
+                  "end": 11
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": {
+            "value": "dir",
+            "literal": "dir",
+            "evidence": [
+              {
+                "line": 16,
+                "start": 12,
+                "end": 15
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "arity": {
+            "value": "required",
+            "literal": "dir",
+            "evidence": [
+              {
+                "line": 16,
+                "start": 12,
+                "end": 15
+              }
+            ],
+            "rule": "declaration-value-notation",
+            "provenance": "deterministic_inference"
+          },
+          "required_presence": null,
+          "type": null,
+          "default": {
+            "value": "None",
+            "literal": "None",
+            "evidence": [
+              {
+                "line": 16,
+                "start": 119,
+                "end": 123
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "choices": null,
+          "description": {
+            "value": "tox working directory (if not specified will be the folder of the config file) (default: None)",
+            "literal": "tox working directory (if not specified will be the folder of the config file) (default: None)",
+            "evidence": [
+              {
+                "line": 16,
+                "start": 30,
+                "end": 124
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "takes_value": true
+        },
+        {
+          "aliases": [
+            {
+              "value": "--root",
+              "literal": "--root",
+              "evidence": [
+                {
+                  "line": 17,
+                  "start": 2,
+                  "end": 8
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": {
+            "value": "dir",
+            "literal": "dir",
+            "evidence": [
+              {
+                "line": 17,
+                "start": 9,
+                "end": 12
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "arity": {
+            "value": "required",
+            "literal": "dir",
+            "evidence": [
+              {
+                "line": 17,
+                "start": 9,
+                "end": 12
+              }
+            ],
+            "rule": "declaration-value-notation",
+            "provenance": "deterministic_inference"
+          },
+          "required_presence": null,
+          "type": null,
+          "default": {
+            "value": "None",
+            "literal": "None",
+            "evidence": [
+              {
+                "line": 17,
+                "start": 120,
+                "end": 124
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "choices": null,
+          "description": {
+            "value": "project root directory (if not specified will be the folder of the config file) (default: None)",
+            "literal": "project root directory (if not specified will be the folder of the config file) (default: None)",
+            "evidence": [
+              {
+                "line": 17,
+                "start": 30,
+                "end": 125
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "takes_value": true
+        },
+        {
+          "aliases": [
+            {
+              "value": "--runner",
+              "literal": "--runner",
+              "evidence": [
+                {
+                  "line": 18,
+                  "start": 2,
+                  "end": 10
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": {
+            "value": "{virtualenv}",
+            "literal": "{virtualenv}",
+            "evidence": [
+              {
+                "line": 18,
+                "start": 11,
+                "end": 23
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "arity": {
+            "value": "required",
+            "literal": "{virtualenv}",
+            "evidence": [
+              {
+                "line": 18,
+                "start": 11,
+                "end": 23
+              }
+            ],
+            "rule": "declaration-value-notation",
+            "provenance": "deterministic_inference"
+          },
+          "required_presence": null,
+          "type": null,
+          "default": {
+            "value": "virtualenv",
+            "literal": "virtualenv",
+            "evidence": [
+              {
+                "line": 18,
+                "start": 118,
+                "end": 128
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "choices": {
+            "value": "virtualenv",
+            "literal": "virtualenv",
+            "evidence": [
+              {
+                "line": 18,
+                "start": 12,
+                "end": 22
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "description": {
+            "value": "the tox run engine to use when not explicitly stated in tox env configuration (default: virtualenv)",
+            "literal": "the tox run engine to use when not explicitly stated in tox env configuration (default: virtualenv)",
+            "evidence": [
+              {
+                "line": 18,
+                "start": 30,
+                "end": 129
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "takes_value": true
+        },
+        {
+          "aliases": [
+            {
+              "value": "--version",
+              "literal": "--version",
+              "evidence": [
+                {
+                  "line": 19,
+                  "start": 2,
+                  "end": 11
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": null,
+          "arity": null,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "show program's and plugins version number and exit",
+            "literal": "show program's and plugins version number and exit",
+            "evidence": [
+              {
+                "line": 19,
+                "start": 30,
+                "end": 80
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "takes_value": null
+        },
+        {
+          "aliases": [
+            {
+              "value": "--no-provision",
+              "literal": "--no-provision",
+              "evidence": [
+                {
+                  "line": 20,
+                  "start": 2,
+                  "end": 16
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": {
+            "value": "[REQ_JSON]",
+            "literal": "[REQ_JSON]",
+            "evidence": [
+              {
+                "line": 20,
+                "start": 17,
+                "end": 27
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "arity": {
+            "value": "optional",
+            "literal": "[REQ_JSON]",
+            "evidence": [
+              {
+                "line": 20,
+                "start": 17,
+                "end": 27
+              }
+            ],
+            "rule": "declaration-value-notation",
+            "provenance": "deterministic_inference"
+          },
+          "required_presence": null,
+          "type": null,
+          "default": {
+            "value": "False",
+            "literal": "False",
+            "evidence": [
+              {
+                "line": 20,
+                "start": 141,
+                "end": 146
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "choices": null,
+          "description": {
+            "value": "do not perform provision, but fail and if a path was provided write provision metadata as JSON to it (default: False)",
+            "literal": "do not perform provision, but fail and if a path was provided write provision metadata as JSON to it (default: False)",
+            "evidence": [
+              {
+                "line": 20,
+                "start": 30,
+                "end": 147
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "takes_value": true
+        },
+        {
+          "aliases": [
+            {
+              "value": "--no-recreate-provision",
+              "literal": "--no-recreate-provision",
+              "evidence": [
+                {
+                  "line": 21,
+                  "start": 2,
+                  "end": 25
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": null,
+          "arity": null,
+          "required_presence": null,
+          "type": null,
+          "default": {
+            "value": "False",
+            "literal": "False",
+            "evidence": [
+              {
+                "line": 21,
+                "start": 101,
+                "end": 106
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "choices": null,
+          "description": {
+            "value": "if recreate is set do not recreate provision tox environment (default: False)",
+            "literal": "if recreate is set do not recreate provision tox environment (default: False)",
+            "evidence": [
+              {
+                "line": 21,
+                "start": 30,
+                "end": 107
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "takes_value": null
+        },
+        {
+          "aliases": [
+            {
+              "value": "-r",
+              "literal": "-r",
+              "evidence": [
+                {
+                  "line": 22,
+                  "start": 2,
+                  "end": 4
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            },
+            {
+              "value": "--recreate",
+              "literal": "--recreate",
+              "evidence": [
+                {
+                  "line": 22,
+                  "start": 6,
+                  "end": 16
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": null,
+          "arity": null,
+          "required_presence": null,
+          "type": null,
+          "default": {
+            "value": "False",
+            "literal": "False",
+            "evidence": [
+              {
+                "line": 22,
+                "start": 70,
+                "end": 75
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "choices": null,
+          "description": {
+            "value": "recreate the tox environments (default: False)",
+            "literal": "recreate the tox environments (default: False)",
+            "evidence": [
+              {
+                "line": 22,
+                "start": 30,
+                "end": 76
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "takes_value": null
+        },
+        {
+          "aliases": [
+            {
+              "value": "-x",
+              "literal": "-x",
+              "evidence": [
+                {
+                  "line": 23,
+                  "start": 2,
+                  "end": 4
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            },
+            {
+              "value": "--override",
+              "literal": "--override",
+              "evidence": [
+                {
+                  "line": 23,
+                  "start": 15,
+                  "end": 25
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": {
+            "value": "OVERRIDE",
+            "literal": "OVERRIDE",
+            "evidence": [
+              {
+                "line": 23,
+                "start": 26,
+                "end": 34
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "arity": {
+            "value": "required",
+            "literal": "OVERRIDE",
+            "evidence": [
+              {
+                "line": 23,
+                "start": 26,
+                "end": 34
+              }
+            ],
+            "rule": "declaration-value-notation",
+            "provenance": "deterministic_inference"
+          },
+          "required_presence": null,
+          "type": null,
+          "default": {
+            "value": "[]",
+            "literal": "[]",
+            "evidence": [
+              {
+                "line": 24,
+                "start": 109,
+                "end": 111
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "choices": null,
+          "description": {
+            "value": "configuration override(s), e.g., -x testenv:pypy3.ignore_errors=True (default: [])",
+            "literal": "configuration override(s), e.g., -x testenv:pypy3.ignore_errors=True (default: [])",
+            "evidence": [
+              {
+                "line": 24,
+                "start": 30,
+                "end": 112
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "takes_value": true
+        },
+        {
+          "aliases": [
+            {
+              "value": "-v",
+              "literal": "-v",
+              "evidence": [
+                {
+                  "line": 29,
+                  "start": 2,
+                  "end": 4
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            },
+            {
+              "value": "--verbose",
+              "literal": "--verbose",
+              "evidence": [
+                {
+                  "line": 29,
+                  "start": 6,
+                  "end": 15
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": null,
+          "arity": null,
+          "required_presence": null,
+          "type": null,
+          "default": {
+            "value": "2",
+            "literal": "2",
+            "evidence": [
+              {
+                "line": 29,
+                "start": 59,
+                "end": 60
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "choices": null,
+          "description": {
+            "value": "increase verbosity (default: 2)",
+            "literal": "increase verbosity (default: 2)",
+            "evidence": [
+              {
+                "line": 29,
+                "start": 30,
+                "end": 61
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "takes_value": null
+        },
+        {
+          "aliases": [
+            {
+              "value": "-q",
+              "literal": "-q",
+              "evidence": [
+                {
+                  "line": 30,
+                  "start": 2,
+                  "end": 4
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            },
+            {
+              "value": "--quiet",
+              "literal": "--quiet",
+              "evidence": [
+                {
+                  "line": 30,
+                  "start": 6,
+                  "end": 13
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": null,
+          "arity": null,
+          "required_presence": null,
+          "type": null,
+          "default": {
+            "value": "0",
+            "literal": "0",
+            "evidence": [
+              {
+                "line": 30,
+                "start": 59,
+                "end": 60
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "choices": null,
+          "description": {
+            "value": "decrease verbosity (default: 0)",
+            "literal": "decrease verbosity (default: 0)",
+            "evidence": [
+              {
+                "line": 30,
+                "start": 30,
+                "end": 61
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "takes_value": null
+        }
+      ]
+    }
+  ],
+  "adjudicated": true,
+  "producer": "agent",
+  "adjudicator": "codex-primary-2026-11-19",
+  "primary_sha256": "7005ee57f66834a7c959f29f93e8fb2b184cc9bd7eb560a150973dc2947d0b38",
+  "blind_sha256": "91b43da7d8ba16505e66766933d538e7ce5c1ed91ecf82f38e06892975e86152",
+  "decisions": [
+    {
+      "kind": "line_label",
+      "line": 1,
+      "decision": "other",
+      "justification": "Runtime/config notices are other; the trailing HTTPie suggestions sentence is prose, not a help section."
+    },
+    {
+      "kind": "line_label",
+      "line": 47,
+      "decision": "other",
+      "justification": "Runtime/config notices are other; the trailing HTTPie suggestions sentence is prose, not a help section."
+    },
+    {
+      "kind": "flags",
+      "record": 1,
+      "field": "default",
+      "decision": "blind",
+      "justification": "The source explicitly advertises this literal default. Preserve its string value; do not infer a Python type or reinterpret explicit None as unknown."
+    },
+    {
+      "kind": "flags",
+      "record": 1,
+      "field": "choices",
+      "decision": "blind",
+      "justification": "The source explicitly lists these alternatives. Preserve the literal list with its evidence; do not infer value optionality from square-bracketed alternatives."
+    },
+    {
+      "kind": "flags",
+      "record": 2,
+      "field": "default",
+      "decision": "blind",
+      "justification": "The source explicitly advertises this literal default. Preserve its string value; do not infer a Python type or reinterpret explicit None as unknown."
+    },
+    {
+      "kind": "flags",
+      "record": 2,
+      "field": "choices",
+      "decision": "blind",
+      "justification": "The source explicitly lists these alternatives. Preserve the literal list with its evidence; do not infer value optionality from square-bracketed alternatives."
+    },
+    {
+      "kind": "flags",
+      "record": 3,
+      "field": "default",
+      "decision": "blind",
+      "justification": "The source explicitly advertises this literal default. Preserve its string value; do not infer a Python type or reinterpret explicit None as unknown."
+    },
+    {
+      "kind": "flags",
+      "record": 4,
+      "field": "default",
+      "decision": "blind",
+      "justification": "The source explicitly advertises this literal default. Preserve its string value; do not infer a Python type or reinterpret explicit None as unknown."
+    },
+    {
+      "kind": "flags",
+      "record": 5,
+      "field": "default",
+      "decision": "blind",
+      "justification": "The source explicitly advertises this literal default. Preserve its string value; do not infer a Python type or reinterpret explicit None as unknown."
+    },
+    {
+      "kind": "flags",
+      "record": 6,
+      "field": "default",
+      "decision": "blind",
+      "justification": "The source explicitly advertises this literal default. Preserve its string value; do not infer a Python type or reinterpret explicit None as unknown."
+    },
+    {
+      "kind": "flags",
+      "record": 7,
+      "field": "default",
+      "decision": "blind",
+      "justification": "The source explicitly advertises this literal default. Preserve its string value; do not infer a Python type or reinterpret explicit None as unknown."
+    },
+    {
+      "kind": "flags",
+      "record": 7,
+      "field": "choices",
+      "decision": "blind",
+      "justification": "The source explicitly lists these alternatives. Preserve the literal list with its evidence; do not infer value optionality from square-bracketed alternatives."
+    },
+    {
+      "kind": "flags",
+      "record": 9,
+      "field": "default",
+      "decision": "blind",
+      "justification": "The source explicitly advertises this literal default. Preserve its string value; do not infer a Python type or reinterpret explicit None as unknown."
+    },
+    {
+      "kind": "flags",
+      "record": 10,
+      "field": "default",
+      "decision": "blind",
+      "justification": "The source explicitly advertises this literal default. Preserve its string value; do not infer a Python type or reinterpret explicit None as unknown."
+    },
+    {
+      "kind": "flags",
+      "record": 11,
+      "field": "default",
+      "decision": "blind",
+      "justification": "The source explicitly advertises this literal default. Preserve its string value; do not infer a Python type or reinterpret explicit None as unknown."
+    },
+    {
+      "kind": "flags",
+      "record": 12,
+      "field": "default",
+      "decision": "blind",
+      "justification": "The source explicitly advertises this literal default. Preserve its string value; do not infer a Python type or reinterpret explicit None as unknown."
+    },
+    {
+      "kind": "flags",
+      "record": 13,
+      "field": "default",
+      "decision": "blind",
+      "justification": "The source explicitly advertises this literal default. Preserve its string value; do not infer a Python type or reinterpret explicit None as unknown."
+    },
+    {
+      "kind": "flags",
+      "record": 14,
+      "field": "default",
+      "decision": "blind",
+      "justification": "The source explicitly advertises this literal default. Preserve its string value; do not infer a Python type or reinterpret explicit None as unknown."
+    }
+  ],
+  "primary_audit_issues": [],
+  "blind_audit_issues": [],
+  "adjudicated_audit_issues": []
+}

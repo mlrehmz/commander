@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "pages": {
+    "black-root": {
+      "primary_sha256": "b5b63ca025fc90e0bba0e9eefcdf5d216ea03e1704689d2695cb4a7b7071cd98",
+      "blind_sha256": "56b7c94835325f438ed518d5a06fde5a465545746f0745ac95c1337b50780ba5",
+      "line_decisions": {},
+      "field_decisions": {
+        "default": "blind",
+        "choices": "blind",
+        "arity": "primary",
+        "takes_value": "primary",
+        "description": "primary"
+      }
+    },
+    "pipx-root": {
+      "primary_sha256": "4b2abcc2b9ce255822b03a2fcd77fbb0a370d076df0c47955e72906e66048488",
+      "blind_sha256": "092002d6e15071028bf6e1a28fd30ea832c0ad029a4e959fc1e583227f12cb78",
+      "line_decisions": {},
+      "field_decisions": {
+        "aliases": "primary"
+      }
+    },
+    "pipenv-root": {
+      "primary_sha256": "a096812bb8110c08f5057de8109da69405dba918ce0712756a3768c4aaf19348",
+      "blind_sha256": "049f773610a79645e518b82aa2058323eed21355311919ee1d7b791c95f889fe",
+      "line_decisions": {},
+      "field_decisions": {}
+    },
+    "tox-root": {
+      "primary_sha256": "7005ee57f66834a7c959f29f93e8fb2b184cc9bd7eb560a150973dc2947d0b38",
+      "blind_sha256": "91b43da7d8ba16505e66766933d538e7ce5c1ed91ecf82f38e06892975e86152",
+      "line_decisions": {
+        "1": "other",
+        "47": "other"
+      },
+      "field_decisions": {
+        "default": "blind",
+        "choices": "blind"
+      }
+    },
+    "virtualenv-root": {
+      "primary_sha256": "4e3e770d914b608b565eccb84f98a3f7c661f1983cd806c056269e014b69ed6f",
+      "blind_sha256": "3a99e2ec455798b26ece7e916605dd432d407ed7d98bb7ccceefe7cbf56e3222",
+      "line_decisions": {
+        "62": "other"
+      },
+      "field_decisions": {
+        "default": "blind",
+        "choices": "blind",
+        "description": "primary"
+      }
+    },
+    "httpie-root": {
+      "primary_sha256": "c4a9dcb30395b31069b49acafcb7a414890fcd1b0c316fe4265c32654fcda158",
+      "blind_sha256": "2f03c329c56174cb79c7b515791859b34ffe5045a518c4404e4dd21cd0b66e2a",
+      "line_decisions": {
+        "406": "prose"
+      },
+      "field_decisions": {
+        "default": "blind",
+        "choices": "blind",
+        "aliases": "primary",
+        "metavar": "primary",
+        "arity": "primary",
+        "description": "primary"
+      }
+    },
+    "rich-cli-root": {
+      "primary_sha256": "b9d6faabdec39137b74f23120b28cf745437242bed0196fb3439796bf635b558",
+      "blind_sha256": "7edfe6d7da8d087c33ab374fbf7d2bb4cf4d0da928cd73c3e6f0ca9d3b5979b8",
+      "line_decisions": {},
+      "field_decisions": {}
+    },
+    "datasette-root": {
+      "primary_sha256": "055e620c144a4fc3edc9441ad668296dbf453a41de3be9889d05cb3d5711221f",
+      "blind_sha256": "3f83e3715eaa6641f1bfd5c7c2d7e5a9b6eb97fd181f607f5d88f4daaff594ff",
+      "line_decisions": {},
+      "field_decisions": {}
+    }
+  }
+}

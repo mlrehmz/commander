@@ -1,0 +1,41 @@
+{
+  "audit_version": 1,
+  "auditor": "codex-source-audit-2026-11-19",
+  "producer": "agent",
+  "date": "2026-11-19",
+  "no_model_predictions_used": true,
+  "independence_statement": "Source-only audit of final adjudicated packets. Auditor previously performed the distinct blind agent annotations and used that manually constructed source inventory for completeness cross-checks. This audit is not human gold or an independently sampled statistical accuracy evaluation.",
+  "source_report_sha256": "31dfc49389d23d7a211c3e7696e9837f5af2c08c016b26ac0025cb8eb24af1ff",
+  "page": {
+    "id": "datasette-root",
+    "source_path": "corpus/intake/datasette-root.txt",
+    "adjudicated_packet_path": "corpus/annotations/adjudicated/datasette-root.json",
+    "canonical_sha256": "ad072f620e653eea599586a07eb1d4d84db0f4cdb83f138cd823b3c9de1f74c9",
+    "adjudicated_packet_sha256": "70a22f55fa116722a6c73892c6afb76aa0258dc48e42772aebebe0091c8dd818",
+    "counts": {
+      "canonical_lines_including_final_empty": 20,
+      "flags": 2,
+      "advertised_command_spellings": 7,
+      "positionals": 0
+    },
+    "checks": {
+      "raw_source_canonicalization_and_hash": "pass",
+      "packet_validation": "pass",
+      "evidence_bounds_and_literal_fidelity": "pass",
+      "alias_token_boundaries": "pass",
+      "transformations_and_provenance": "pass",
+      "description_whitespace_and_nonempty_spans": "pass",
+      "direct_default_choices_fidelity": "pass",
+      "explicit_declarations_and_advertised_entries": "pass",
+      "all_line_labels_and_final_empty_line": "pass",
+      "description_continuation_coverage": "pass"
+    },
+    "source_checks": [
+      "All seven advertised command rows and two option rows are represented.",
+      "serve* is retained as the exact advertised name without stripping its marker or inferring default-command semantics.",
+      "Printed trailing ellipses remain literal truncated descriptions; no missing text is reconstructed."
+    ],
+    "findings": [],
+    "remaining_source_evidence_omissions_detected": false
+  }
+}

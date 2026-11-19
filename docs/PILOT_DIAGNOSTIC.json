@@ -1,0 +1,396 @@
+{
+  "report_version": 1,
+  "training_pilot_only": true,
+  "release_qualified": false,
+  "development_gate_evaluated": false,
+  "pages": 10,
+  "reference_records": 205,
+  "reference_spellings": 290,
+  "limitations": [
+    "Training examples were used to fix the assembler; this is a regression diagnostic.",
+    "No development/test track, calibrated model, confidence interval or release selection is evaluated."
+  ],
+  "oracle": {
+    "counts": {
+      "tp": 290,
+      "fp": 0,
+      "fn": 0
+    },
+    "flag_records": 205,
+    "exact_alias_groups": 205,
+    "evidence_audit_issues": 0,
+    "metrics": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "accepted_spellings": 290
+    }
+  },
+  "rules": {
+    "counts": {
+      "tp": 290,
+      "fp": 0,
+      "fn": 0
+    },
+    "flag_records": 205,
+    "exact_alias_groups": 205,
+    "evidence_audit_issues": 0,
+    "metrics": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "accepted_spellings": 290
+    }
+  },
+  "per_page": [
+    {
+      "id": "black-root",
+      "canonical_sha256": "53c38abad5c39cde9986dfa0efe66b2bef572deefdf48f5d9e3fdaf00b23b970",
+      "reference_records": 29,
+      "reference_spellings": 41,
+      "oracle": {
+        "counts": {
+          "tp": 41,
+          "fp": 0,
+          "fn": 0
+        },
+        "status": "ok",
+        "flag_records": 29,
+        "exact_alias_groups": 29,
+        "missed_spellings": [],
+        "false_spellings": [],
+        "diagnostics": [],
+        "evidence_audit_issues": []
+      },
+      "rules": {
+        "counts": {
+          "tp": 41,
+          "fp": 0,
+          "fn": 0
+        },
+        "status": "ok",
+        "flag_records": 29,
+        "exact_alias_groups": 29,
+        "missed_spellings": [],
+        "false_spellings": [],
+        "diagnostics": [],
+        "evidence_audit_issues": []
+      }
+    },
+    {
+      "id": "datasette-root",
+      "canonical_sha256": "ad072f620e653eea599586a07eb1d4d84db0f4cdb83f138cd823b3c9de1f74c9",
+      "reference_records": 2,
+      "reference_spellings": 2,
+      "oracle": {
+        "counts": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "status": "ok",
+        "flag_records": 2,
+        "exact_alias_groups": 2,
+        "missed_spellings": [],
+        "false_spellings": [],
+        "diagnostics": [],
+        "evidence_audit_issues": []
+      },
+      "rules": {
+        "counts": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "status": "ok",
+        "flag_records": 2,
+        "exact_alias_groups": 2,
+        "missed_spellings": [],
+        "false_spellings": [],
+        "diagnostics": [],
+        "evidence_audit_issues": []
+      }
+    },
+    {
+      "id": "hatch-root",
+      "canonical_sha256": "794aff42717b5795f66a2aaf12e3ebb59dc36b40161fb1e1330745a15d2d3849",
+      "reference_records": 11,
+      "reference_spellings": 18,
+      "oracle": {
+        "counts": {
+          "tp": 18,
+          "fp": 0,
+          "fn": 0
+        },
+        "status": "ok",
+        "flag_records": 11,
+        "exact_alias_groups": 11,
+        "missed_spellings": [],
+        "false_spellings": [],
+        "diagnostics": [],
+        "evidence_audit_issues": []
+      },
+      "rules": {
+        "counts": {
+          "tp": 18,
+          "fp": 0,
+          "fn": 0
+        },
+        "status": "ok",
+        "flag_records": 11,
+        "exact_alias_groups": 11,
+        "missed_spellings": [],
+        "false_spellings": [],
+        "diagnostics": [],
+        "evidence_audit_issues": []
+      }
+    },
+    {
+      "id": "httpie-root",
+      "canonical_sha256": "afe5f966d4fd89163d59cdec24c11d60b4d6026dc5c95c55528dca973cf69d1c",
+      "reference_records": 51,
+      "reference_spellings": 69,
+      "oracle": {
+        "counts": {
+          "tp": 69,
+          "fp": 0,
+          "fn": 0
+        },
+        "status": "ok",
+        "flag_records": 51,
+        "exact_alias_groups": 51,
+        "missed_spellings": [],
+        "false_spellings": [],
+        "diagnostics": [],
+        "evidence_audit_issues": []
+      },
+      "rules": {
+        "counts": {
+          "tp": 69,
+          "fp": 0,
+          "fn": 0
+        },
+        "status": "ok",
+        "flag_records": 51,
+        "exact_alias_groups": 51,
+        "missed_spellings": [],
+        "false_spellings": [],
+        "diagnostics": [],
+        "evidence_audit_issues": []
+      }
+    },
+    {
+      "id": "pipenv-root",
+      "canonical_sha256": "b1d2c8c05c6ececcfa4593c3d7d6505413268f35784dc6fe6cffc43ed926415b",
+      "reference_records": 16,
+      "reference_spellings": 20,
+      "oracle": {
+        "counts": {
+          "tp": 20,
+          "fp": 0,
+          "fn": 0
+        },
+        "status": "ok",
+        "flag_records": 16,
+        "exact_alias_groups": 16,
+        "missed_spellings": [],
+        "false_spellings": [],
+        "diagnostics": [],
+        "evidence_audit_issues": []
+      },
+      "rules": {
+        "counts": {
+          "tp": 20,
+          "fp": 0,
+          "fn": 0
+        },
+        "status": "ok",
+        "flag_records": 16,
+        "exact_alias_groups": 16,
+        "missed_spellings": [],
+        "false_spellings": [],
+        "diagnostics": [],
+        "evidence_audit_issues": []
+      }
+    },
+    {
+      "id": "pipx-root",
+      "canonical_sha256": "208e393ce95f2c5da69bc3f10529319ca03a1581ac345920ef8bc74936cd00bf",
+      "reference_records": 5,
+      "reference_spellings": 8,
+      "oracle": {
+        "counts": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "status": "ok",
+        "flag_records": 5,
+        "exact_alias_groups": 5,
+        "missed_spellings": [],
+        "false_spellings": [],
+        "diagnostics": [],
+        "evidence_audit_issues": []
+      },
+      "rules": {
+        "counts": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "status": "ok",
+        "flag_records": 5,
+        "exact_alias_groups": 5,
+        "missed_spellings": [],
+        "false_spellings": [],
+        "diagnostics": [],
+        "evidence_audit_issues": []
+      }
+    },
+    {
+      "id": "rich-cli-root",
+      "canonical_sha256": "adeff8e0238d9e819b726b92f66bdf1dc8039fe683dca05179c179c36879e333",
+      "reference_records": 43,
+      "reference_spellings": 70,
+      "oracle": {
+        "counts": {
+          "tp": 70,
+          "fp": 0,
+          "fn": 0
+        },
+        "status": "ok",
+        "flag_records": 43,
+        "exact_alias_groups": 43,
+        "missed_spellings": [],
+        "false_spellings": [],
+        "diagnostics": [],
+        "evidence_audit_issues": []
+      },
+      "rules": {
+        "counts": {
+          "tp": 70,
+          "fp": 0,
+          "fn": 0
+        },
+        "status": "ok",
+        "flag_records": 43,
+        "exact_alias_groups": 43,
+        "missed_spellings": [],
+        "false_spellings": [],
+        "diagnostics": [],
+        "evidence_audit_issues": []
+      }
+    },
+    {
+      "id": "sqlfluff-root",
+      "canonical_sha256": "a25526f4b18f911614ca5c3a124fdcbf95d0054667c2c3611a28c05880cf6dec",
+      "reference_records": 2,
+      "reference_spellings": 3,
+      "oracle": {
+        "counts": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "status": "ok",
+        "flag_records": 2,
+        "exact_alias_groups": 2,
+        "missed_spellings": [],
+        "false_spellings": [],
+        "diagnostics": [],
+        "evidence_audit_issues": []
+      },
+      "rules": {
+        "counts": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "status": "ok",
+        "flag_records": 2,
+        "exact_alias_groups": 2,
+        "missed_spellings": [],
+        "false_spellings": [],
+        "diagnostics": [],
+        "evidence_audit_issues": []
+      }
+    },
+    {
+      "id": "tox-root",
+      "canonical_sha256": "667da77ec4ae908b62e595c577f002118a134c2bdfd6d9653547c353f55b71e8",
+      "reference_records": 15,
+      "reference_spellings": 21,
+      "oracle": {
+        "counts": {
+          "tp": 21,
+          "fp": 0,
+          "fn": 0
+        },
+        "status": "ok",
+        "flag_records": 15,
+        "exact_alias_groups": 15,
+        "missed_spellings": [],
+        "false_spellings": [],
+        "diagnostics": [],
+        "evidence_audit_issues": []
+      },
+      "rules": {
+        "counts": {
+          "tp": 21,
+          "fp": 0,
+          "fn": 0
+        },
+        "status": "ok",
+        "flag_records": 15,
+        "exact_alias_groups": 15,
+        "missed_spellings": [],
+        "false_spellings": [],
+        "diagnostics": [],
+        "evidence_audit_issues": []
+      }
+    },
+    {
+      "id": "virtualenv-root",
+      "canonical_sha256": "0dbcac85307251266ffc9a0ce6d6f6e84a539fd06c6096868348d099d22a2595",
+      "reference_records": 31,
+      "reference_spellings": 38,
+      "oracle": {
+        "counts": {
+          "tp": 38,
+          "fp": 0,
+          "fn": 0
+        },
+        "status": "ok",
+        "flag_records": 31,
+        "exact_alias_groups": 31,
+        "missed_spellings": [],
+        "false_spellings": [],
+        "diagnostics": [],
+        "evidence_audit_issues": []
+      },
+      "rules": {
+        "counts": {
+          "tp": 38,
+          "fp": 0,
+          "fn": 0
+        },
+        "status": "partial",
+        "flag_records": 31,
+        "exact_alias_groups": 31,
+        "missed_spellings": [],
+        "false_spellings": [],
+        "diagnostics": [
+          "line 33: uncertain continuation omitted"
+        ],
+        "evidence_audit_issues": []
+      }
+    }
+  ],
+  "manifest_sha256": "920d587feebcdec92c094ec7ad9c282d23124e4443a9a18cc9983dceecdf9fda",
+  "code_sha256": {
+    "core.py": "bb5613cc029e3adf4300636a41db6bb17c70dcf41e22b4d7fd4026004f2d65ca",
+    "parser.py": "427bfe882f2bc1f67e15f9056036e924b88b6a6507db0d157e22ec6f3058b491",
+    "audit.py": "a6f08a69821190f3ad0594e42967eb0063526c158c6f0fe2151f80cae112f549",
+    "experiment.py": "f2ed2dc362f447cd75bd3afd9fc90ff48d6100f43943991e915b9d1453d3a8ce"
+  },
+  "base_revision": "cd3698cdac6c0500daf1a8610b75529e728f5857",
+  "working_tree_dirty": true
+}

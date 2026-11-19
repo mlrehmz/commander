@@ -6,16 +6,39 @@ import re
 from .core import LABELS, canonicalize, field, validate_catalog
 
 TOKEN = re.compile(r"--(?:\[no-\])?[A-Za-z0-9][\w-]*|-[A-Za-z0-9?]")
+META_ATOM = r"[A-Za-z_][A-Za-z0-9_:.-]*(?:,[A-Za-z0-9_:.-]+)*(?:\[[^\[\]]+\])?"
 META = re.compile(
     r"<[^<>\s]+>|\{[^{}]+\}|\[[^\[\]]+\]|"
-    r"[A-Za-z][A-Za-z0-9_-]*(?: +\[[^\]]+\])?(?=$| {2,}|\t|\s*[,|/]\s*-)"
+    + META_ATOM
+    + r"(?: +RANGE| +\[[^\]]+\]| +\| +"
+    + META_ATOM
+    + r")?"
+    + r"(?=$| {2,}|\t|\s*[,|/]\s*-)"
 )
 HEADING = re.compile(r"^\s*([A-Za-z][\w /-]*):\s*$")
+
+ENTRY = re.compile(r"^\s*([A-Za-z0-9_][\w.*-]*)(?: +\(([\w,-]+)\))?(?:(?: {2,}|\t+)(\S.*))?\s*$")
+BOX_HEADING = re.compile(r"^\s*[╭┌┏][─━ -]*([A-Za-z][A-Za-z ]*?)[─━ -]*[╮┐┓]\s*$")
+
+
+def content_bounds(line):
+    start = len(line) - len(line.lstrip())
+    end = len(line.rstrip())
+    boxed = (
+        start < end and line[start] in "│┃|" and line[end - 1] == line[start] and end - start > 1
+    )
+    if boxed:
+        start += 1
+        end -= 1
+        start += len(line[start:end]) - len(line[start:end].lstrip())
+        end = len(line[:end].rstrip())
+    return start, end, boxed
 
 
 def tokenize(line):
     """Read a declaration prefix; leave prose to the assembler."""
-    pos = len(line) - len(line.lstrip())
+    pos, content_end, boxed = content_bounds(line)
+    line = line[:content_end]
     tokens, meta, arity = [], None, "unknown"
     end = pos
     while True:
@@ -38,14 +61,26 @@ def tokenize(line):
                 value_pos += 1
             elif line[pos : pos + 1] == " " and line[pos : pos + 2] != "  ":
                 value_pos += 1
-            m = META.match(line, value_pos)
+            m = (
+                META.match(line, value_pos)
+                if value_pos > pos or line[pos : pos + 1] in "<[{"
+                else None
+            )
             if m:
                 value = (m.start(), m.end())
                 end = pos = m.end()
-                arity = "optional" if m.group().startswith("[") else "required"
+                arity = "required"
+                if m.group().startswith("["):
+                    arity = (
+                        "optional" if re.fullmatch(r"\[[A-Z][A-Z0-9_]*\]", m.group()) else "unknown"
+                    )
         if value:
             meta = value
-        separator = re.match(r"(?:\s*[,|/]\s*| )(?=-)", line[pos:])
+        separator = (
+            re.match(r"(?:\s*[,|/]\s*| +)(?=-)", line[pos:])
+            if boxed
+            else re.match(r"(?:\s*[,|/]\s*| )(?=-)", line[pos:])
+        )
         if separator:
             pos += separator.end()
             continue
@@ -64,34 +99,51 @@ class RulesTagger:
 
     def predict(self, lines):
         output, section, active = [], "", False
+        declaration_indent = 0
+        usage_active = False
         for line in lines:
-            stripped = line.strip()
-            heading = HEADING.match(line)
+            start, end, boxed = content_bounds(line)
+            stripped = line[start:end]
+            indent = len(line[:start].expandtabs())
+            heading = HEADING.match(line) or BOX_HEADING.match(line)
+            entry = ENTRY.fullmatch(line.rstrip())
             if not stripped:
-                label, active = "blank", False
-            elif stripped.lower().startswith("usage:"):
-                label, active = "usage", False
-            elif heading:
-                section = heading[1].lower()
-                label, active = "section_heading", False
+                label = "blank"
+                usage_active = False
+            elif stripped.lower().startswith("usage:") or (usage_active and line[:1].isspace()):
+                label, active, usage_active = "usage", False, True
+            elif heading and (
+                not active or indent <= declaration_indent or BOX_HEADING.match(line)
+            ):
+                section = heading[1].strip().lower()
+                label, active, usage_active = "section_heading", False, False
+            elif active and indent > declaration_indent and not boxed:
+                label = "description_continuation"
             elif (
-                line[:1].isspace()
+                (line[:1].isspace() or boxed)
                 and tokenize(line.rstrip().removesuffix(","))
-                and section not in ("examples", "example")
+                and section not in ("examples", "example", "usage examples")
             ):
                 label, active = "option_declaration", True
-            elif section in ("commands", "subcommands", "available commands") and re.match(
-                r"^\s+\S+\s{2,}\S", line
+                declaration_indent = indent
+            elif (
+                entry
+                and line[:1].isspace()
+                and section in ("commands", "subcommands", "available commands")
             ):
                 label, active = "subcommand_declaration", True
-            elif section in ("arguments", "positionals", "positional arguments") and re.match(
-                r"^\s+\S+\s{2,}\S", line
+                declaration_indent = indent
+            elif (
+                entry
+                and line[:1].isspace()
+                and section in ("arguments", "positionals", "positional arguments")
             ):
                 label, active = "positional_declaration", True
-            elif active and line[:1].isspace():
+                declaration_indent = indent
+            elif active and (line[:1].isspace() or boxed):
                 label = "description_continuation"
             else:
-                label, active = "prose", False
+                label, active, usage_active = "prose", False, False
             output.append((label, 1.0))
         return output
 
@@ -100,12 +152,40 @@ class RulesTagger:
 class ParserEngine:
     tagger: object = dc_field(default_factory=RulesTagger)
     threshold: float = 0.0
-    version: str = "rules-1"
+    version: str = "rules-2"
     calibrated: bool = False
 
     def __post_init__(self):
         if not 0 <= self.threshold <= 1:
             raise ValueError("threshold must be in [0,1]")
+
+
+def literal_semantics(lines, record):
+    meta = record["metavar"]
+    if meta and len(meta["evidence"]) == 1:
+        literal = meta["literal"]
+        delimiters = literal[:1], literal[-1:]
+        inner = literal[1:-1]
+        comma = delimiters == ("{", "}") and re.fullmatch(r"[\w.+-]+(?:,[\w.+-]+)+", inner)
+        pipe = delimiters == ("[", "]") and re.fullmatch(r"[\w.+-]+(?:\|[\w.+-]+)+", inner)
+        if comma or pipe:
+            span = meta["evidence"][0]
+            record["choices"] = field(lines, [(span["line"], span["start"] + 1, span["end"] - 1)])
+    description = record["description"]
+    if not description:
+        return
+    defaults = []
+    for span in description["evidence"]:
+        text = lines[span["line"] - 1][span["start"] : span["end"]]
+        for pattern in (r"\(default: *([^()\n]+)\)", r"\[default: *([^\[\]\n]+)\]"):
+            for match in re.finditer(pattern, text, flags=re.IGNORECASE):
+                literal = match[1]
+                start = span["start"] + match.start(1) + len(literal) - len(literal.lstrip())
+                end = span["start"] + match.start(1) + len(literal.rstrip())
+                if start < end:
+                    defaults.append(field(lines, [(span["line"], start, end)]))
+    if len(defaults) == 1:
+        record["default"] = defaults[0]
 
 
 def assemble(source, command_path, predictions, engine):
@@ -131,6 +211,7 @@ def assemble(source, command_path, predictions, engine):
         },
     }
     active = None
+    active_records = []
     declaration_indent = 0
     seen = {}
     pending = []
@@ -151,6 +232,7 @@ def assemble(source, command_path, predictions, engine):
                 active = None
                 continue
             tokens, meta, arity, desc = parsed
+            _, content_end, _ = content_bounds(line)
             aliases, pending = pending, []
             for value, start, end in tokens:
                 if "[no-]" in value:
@@ -178,8 +260,8 @@ def assemble(source, command_path, predictions, engine):
                 "type": None,
                 "default": None,
                 "choices": None,
-                "description": field(lines, [(idx, desc, len(line.rstrip()))])
-                if desc < len(line.rstrip())
+                "description": field(lines, [(idx, desc, content_end)])
+                if desc < content_end
                 else None,
                 "selection_score": score,
             }
@@ -206,28 +288,41 @@ def assemble(source, command_path, predictions, engine):
             for name in names:
                 seen[name] = record
             active = record
-            declaration_indent = len(line.expandtabs()) - len(line.expandtabs().lstrip())
+            active_records = [record]
+            declaration_indent = len(line[: content_bounds(line)[0]].expandtabs())
             recognized = True
         elif label in ("subcommand_declaration", "positional_declaration"):
-            m = re.match(r"\s*(\S+)\s{2,}(\S.*)", line)
+            m = ENTRY.fullmatch(line.rstrip())
             if not m or score < engine.threshold:
                 cat["diagnostics"].append(f"line {idx}: rejected advertised entry")
                 active = None
                 continue
-            active = {
-                "name": field(lines, [(idx, m.start(1), m.end(1))]),
-                "description": field(lines, [(idx, m.start(2), m.end(2))]),
-                "selection_score": score,
-            }
-            cat["subcommands" if label == "subcommand_declaration" else "positionals"].append(
-                active
-            )
-            declaration_indent = len(line) - len(line.lstrip())
+            spans = [(m.start(1), m.end(1))]
+            if m.group(2) and label == "subcommand_declaration":
+                spans.extend(
+                    (m.start(2) + part.start(), m.start(2) + part.end())
+                    for part in re.finditer(r"[\w-]+", m.group(2))
+                )
+            active_records = []
+            for start, end in spans:
+                record = {
+                    "name": field(lines, [(idx, start, end)]),
+                    "description": field(lines, [(idx, m.start(3), m.end(3))])
+                    if m.group(3)
+                    else None,
+                    "selection_score": score,
+                }
+                cat["subcommands" if label == "subcommand_declaration" else "positionals"].append(
+                    record
+                )
+                active_records.append(record)
+            active = active_records[0]
+            declaration_indent = len(line[: content_bounds(line)[0]].expandtabs())
             recognized = True
         elif label == "description_continuation" and active:
-            start, end = len(line) - len(line.lstrip()), len(line.rstrip())
-            indent = len(line.expandtabs()) - len(line.expandtabs().lstrip())
-            if indent <= declaration_indent or line.lstrip().startswith("-"):
+            start, end, _ = content_bounds(line)
+            indent = len(line[:start].expandtabs())
+            if indent <= declaration_indent:
                 cat["diagnostics"].append(f"line {idx}: uncertain continuation omitted")
                 active = None
                 continue
@@ -241,12 +336,18 @@ def assemble(source, command_path, predictions, engine):
                 )
                 spans.append((idx, start, end))
                 literal = "\n".join(lines[n - 1][a:b] for n, a, b in spans)
-                active["description"] = field(
+                description = field(
                     lines,
                     spans,
                     value=" ".join(literal.split()),
                     rule="join-description-whitespace",
                 )
+                for record in active_records:
+                    record["description"] = description
+        elif label == "blank":
+            if pending:
+                cat["diagnostics"].append(f"line {idx}: incomplete wrapped declaration")
+                pending = []
         else:
             if pending:
                 cat["diagnostics"].append(f"line {idx}: incomplete wrapped declaration")
@@ -259,6 +360,8 @@ def assemble(source, command_path, predictions, engine):
     cat["status"] = ("partial" if cat["diagnostics"] else "ok") if recognized else "failed"
     if not recognized:
         cat["diagnostics"].append("no recognizable help structure")
+    for record in cat["flags"]:
+        literal_semantics(lines, record)
     return validate_catalog(cat)
 
 

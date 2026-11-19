@@ -1,0 +1,42 @@
+{
+  "audit_version": 1,
+  "auditor": "codex-source-audit-2026-11-19",
+  "producer": "agent",
+  "date": "2026-11-19",
+  "no_model_predictions_used": true,
+  "independence_statement": "Source-only audit of final adjudicated packets. Auditor previously performed the distinct blind agent annotations and used that manually constructed source inventory for completeness cross-checks. This audit is not human gold or an independently sampled statistical accuracy evaluation.",
+  "source_report_sha256": "31dfc49389d23d7a211c3e7696e9837f5af2c08c016b26ac0025cb8eb24af1ff",
+  "page": {
+    "id": "virtualenv-root",
+    "source_path": "corpus/intake/virtualenv-root.txt",
+    "adjudicated_packet_path": "corpus/annotations/adjudicated/virtualenv-root.json",
+    "canonical_sha256": "0dbcac85307251266ffc9a0ce6d6f6e84a539fd06c6096868348d099d22a2595",
+    "adjudicated_packet_sha256": "321449a170f0acd53809ea92c0c1fe5f31c18db043a1af950281095d25dc0d83",
+    "counts": {
+      "canonical_lines_including_final_empty": 63,
+      "flags": 31,
+      "advertised_command_spellings": 0,
+      "positionals": 1
+    },
+    "checks": {
+      "raw_source_canonicalization_and_hash": "pass",
+      "packet_validation": "pass",
+      "evidence_bounds_and_literal_fidelity": "pass",
+      "alias_token_boundaries": "pass",
+      "transformations_and_provenance": "pass",
+      "description_whitespace_and_nonempty_spans": "pass",
+      "direct_default_choices_fidelity": "pass",
+      "explicit_declarations_and_advertised_entries": "pass",
+      "all_line_labels_and_final_empty_line": "pass",
+      "description_continuation_coverage": "pass"
+    },
+    "source_checks": [
+      "All 31 option declaration rows and the actual dest positional declaration are represented; option-group headings do not create subcommands.",
+      "All printed aliases, brace choices, and literal defaults have direct source evidence; metavar evidence selects value tokens rather than substrings within option names.",
+      "The activators description starts at the actual prose text on line 59, column 32, excluding the option token and metavar.",
+      "Extra-search-dir preserves d [d ...] as required value notation; missing-config diagnostic is other."
+    ],
+    "findings": [],
+    "remaining_source_evidence_omissions_detected": false
+  }
+}

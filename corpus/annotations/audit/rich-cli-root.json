@@ -1,0 +1,41 @@
+{
+  "audit_version": 1,
+  "auditor": "codex-source-audit-2026-11-19",
+  "producer": "agent",
+  "date": "2026-11-19",
+  "no_model_predictions_used": true,
+  "independence_statement": "Source-only audit of final adjudicated packets. Auditor previously performed the distinct blind agent annotations and used that manually constructed source inventory for completeness cross-checks. This audit is not human gold or an independently sampled statistical accuracy evaluation.",
+  "source_report_sha256": "31dfc49389d23d7a211c3e7696e9837f5af2c08c016b26ac0025cb8eb24af1ff",
+  "page": {
+    "id": "rich-cli-root",
+    "source_path": "corpus/intake/rich-cli-root.txt",
+    "adjudicated_packet_path": "corpus/annotations/adjudicated/rich-cli-root.json",
+    "canonical_sha256": "adeff8e0238d9e819b726b92f66bdf1dc8039fe683dca05179c179c36879e333",
+    "adjudicated_packet_sha256": "50d133381f9bf624b8544f45590fada59162c50d49e38d01ad281db3741566d8",
+    "counts": {
+      "canonical_lines_including_final_empty": 69,
+      "flags": 43,
+      "advertised_command_spellings": 0,
+      "positionals": 0
+    },
+    "checks": {
+      "raw_source_canonicalization_and_hash": "pass",
+      "packet_validation": "pass",
+      "evidence_bounds_and_literal_fidelity": "pass",
+      "alias_token_boundaries": "pass",
+      "transformations_and_provenance": "pass",
+      "description_whitespace_and_nonempty_spans": "pass",
+      "direct_default_choices_fidelity": "pass",
+      "explicit_declarations_and_advertised_entries": "pass",
+      "all_line_labels_and_final_empty_line": "pass",
+      "description_continuation_coverage": "pass"
+    },
+    "source_checks": [
+      "All 43 boxed option declaration rows are represented; space-aligned short and long names on the same row are grouped explicitly.",
+      "Evidence uses Unicode code-point columns in the original bordered text; descriptions exclude border/padding and retain the printed truncated URL.",
+      "Box header is section_heading, bottom border is other, and all continuation rows are description_continuation. Usage-only input alternatives are not inferred as positional declarations."
+    ],
+    "findings": [],
+    "remaining_source_evidence_omissions_detected": false
+  }
+}

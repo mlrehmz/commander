@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 
 from .core import LABELS, canonicalize, validate_catalog
+from .audit import audit_catalog
 
 SPLITS = {"train", "dev", "familiar_test", "cobra_test", "clap_test"}
 
@@ -93,6 +94,39 @@ def load_manifest(path, *, splits=("train", "dev")):
         reference = validate_catalog(annotation["reference"])
         if reference["source"] != source or reference["command_path"] != entry["command_path"]:
             raise ValueError("reference source or scope mismatch")
+        issues = audit_catalog(reference)
+        if issues:
+            raise ValueError(f"reference audit failed: {issues}")
+        if data.get("require_source_audit"):
+            audit_path = resolve(entry["source_audit"])
+            audit_bytes = audit_path.read_bytes()
+            if hashlib.sha256(audit_bytes).hexdigest() != entry["source_audit_sha256"]:
+                raise ValueError("source audit hash mismatch")
+            audit = json.loads(audit_bytes)
+            page = audit["page"]
+            if (
+                audit.get("no_model_predictions_used") is not True
+                or not audit.get("auditor")
+                or page["id"] != entry["id"]
+                or page["canonical_sha256"] != source["canonical_sha256"]
+                or page["adjudicated_packet_sha256"]
+                != hashlib.sha256(resolve(entry["annotation"]).read_bytes()).hexdigest()
+                or audit.get("audit_version") != 1
+                or audit.get("producer") not in ("human", "agent")
+                or page.get("remaining_source_evidence_omissions_detected") is not False
+                or not {
+                    "packet_validation",
+                    "evidence_bounds_and_literal_fidelity",
+                    "alias_token_boundaries",
+                    "transformations_and_provenance",
+                    "explicit_declarations_and_advertised_entries",
+                    "all_line_labels_and_final_empty_line",
+                }
+                <= page["checks"].keys()
+                or page["findings"]
+                or any(v != "pass" for v in page["checks"].values())
+            ):
+                raise ValueError("source audit does not cover this reference")
         result.append((entry, source, annotation))
     return data, result
 

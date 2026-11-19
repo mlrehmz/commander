@@ -37,3 +37,12 @@ The generic collector limits combined stdout/stderr to 1 MiB and each help proce
 to 20 seconds. It records nonzero exits explicitly, removes containers on failure,
 and atomically writes authoritative captures. Its process tests use only locally
 authored fake runtime scripts. Actual Podman execution was checked separately.
+
+All ten captures now have primary/blind agent annotations, recorded source
+adjudications and a source-only audit. The adjudicator corrected draft errors;
+drafts remain immutable. Reproduce the eight additional primary packets and
+recorded decisions with `materialize_remaining.py` and `adjudicate_remaining.py`.
+`curate_pilot.py` verifies the audit, creates per-page audit shards and updates the
+training-only manifest. It cannot update a frozen manifest. Corpus loading checks
+both audit and exact annotation hashes; edits require re-audit. Unknown formatter
+families remain unknown; this is not the completed 100-project survey.

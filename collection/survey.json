@@ -17,9 +17,9 @@
       "machine_readable_surfaces": null,
       "source_url": "https://pypi.org/project/black/25.9.0/",
       "license_evidence": "collection/licenses.json",
-      "primary_annotation": null,
-      "annotation_status": "pending",
-      "split": null,
+      "primary_annotation": "corpus/annotations/primary/black-root.json",
+      "annotation_status": "independently_audited_agent_reference",
+      "split": "train",
       "synthetic": false
     },
     {
@@ -37,9 +37,9 @@
       "machine_readable_surfaces": null,
       "source_url": "https://pypi.org/project/datasette/0.65.1/",
       "license_evidence": "collection/licenses.json",
-      "primary_annotation": null,
-      "annotation_status": "pending",
-      "split": null,
+      "primary_annotation": "corpus/annotations/primary/datasette-root.json",
+      "annotation_status": "independently_audited_agent_reference",
+      "split": "train",
       "synthetic": false
     },
     {
@@ -58,7 +58,7 @@
       "source_url": "https://pypi.org/project/hatch/1.14.2/",
       "license_evidence": "collection/licenses.json",
       "primary_annotation": "corpus/annotations/primary/hatch-root.json",
-      "annotation_status": "adjudicated_pending_final_audit",
+      "annotation_status": "independently_audited_agent_reference",
       "split": "train",
       "synthetic": false
     },
@@ -77,9 +77,9 @@
       "machine_readable_surfaces": null,
       "source_url": "https://pypi.org/project/httpie/3.2.4/",
       "license_evidence": "collection/licenses.json",
-      "primary_annotation": null,
-      "annotation_status": "pending",
-      "split": null,
+      "primary_annotation": "corpus/annotations/primary/httpie-root.json",
+      "annotation_status": "independently_audited_agent_reference",
+      "split": "train",
       "synthetic": false
     },
     {
@@ -97,9 +97,9 @@
       "machine_readable_surfaces": null,
       "source_url": "https://pypi.org/project/pipenv/2025.0.4/",
       "license_evidence": "collection/licenses.json",
-      "primary_annotation": null,
-      "annotation_status": "pending",
-      "split": null,
+      "primary_annotation": "corpus/annotations/primary/pipenv-root.json",
+      "annotation_status": "independently_audited_agent_reference",
+      "split": "train",
       "synthetic": false
     },
     {
@@ -117,9 +117,9 @@
       "machine_readable_surfaces": null,
       "source_url": "https://pypi.org/project/pipx/1.8.0/",
       "license_evidence": "collection/licenses.json",
-      "primary_annotation": null,
-      "annotation_status": "pending",
-      "split": null,
+      "primary_annotation": "corpus/annotations/primary/pipx-root.json",
+      "annotation_status": "independently_audited_agent_reference",
+      "split": "train",
       "synthetic": false
     },
     {
@@ -137,9 +137,9 @@
       "machine_readable_surfaces": null,
       "source_url": "https://pypi.org/project/rich-cli/1.8.1/",
       "license_evidence": "collection/licenses.json",
-      "primary_annotation": null,
-      "annotation_status": "pending",
-      "split": null,
+      "primary_annotation": "corpus/annotations/primary/rich-cli-root.json",
+      "annotation_status": "independently_audited_agent_reference",
+      "split": "train",
       "synthetic": false
     },
     {
@@ -158,7 +158,7 @@
       "source_url": "https://pypi.org/project/sqlfluff/3.4.2/",
       "license_evidence": "collection/licenses.json",
       "primary_annotation": "corpus/annotations/primary/sqlfluff-root.json",
-      "annotation_status": "adjudicated_pending_final_audit",
+      "annotation_status": "independently_audited_agent_reference",
       "split": "train",
       "synthetic": false
     },
@@ -177,9 +177,9 @@
       "machine_readable_surfaces": null,
       "source_url": "https://pypi.org/project/tox/4.30.2/",
       "license_evidence": "collection/licenses.json",
-      "primary_annotation": null,
-      "annotation_status": "pending",
-      "split": null,
+      "primary_annotation": "corpus/annotations/primary/tox-root.json",
+      "annotation_status": "independently_audited_agent_reference",
+      "split": "train",
       "synthetic": false
     },
     {
@@ -197,9 +197,9 @@
       "machine_readable_surfaces": null,
       "source_url": "https://pypi.org/project/virtualenv/20.34.0/",
       "license_evidence": "collection/licenses.json",
-      "primary_annotation": null,
-      "annotation_status": "pending",
-      "split": null,
+      "primary_annotation": "corpus/annotations/primary/virtualenv-root.json",
+      "annotation_status": "independently_audited_agent_reference",
+      "split": "train",
       "synthetic": false
     }
   ]

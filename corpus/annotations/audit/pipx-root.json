@@ -1,0 +1,41 @@
+{
+  "audit_version": 1,
+  "auditor": "codex-source-audit-2026-11-19",
+  "producer": "agent",
+  "date": "2026-11-19",
+  "no_model_predictions_used": true,
+  "independence_statement": "Source-only audit of final adjudicated packets. Auditor previously performed the distinct blind agent annotations and used that manually constructed source inventory for completeness cross-checks. This audit is not human gold or an independently sampled statistical accuracy evaluation.",
+  "source_report_sha256": "31dfc49389d23d7a211c3e7696e9837f5af2c08c016b26ac0025cb8eb24af1ff",
+  "page": {
+    "id": "pipx-root",
+    "source_path": "corpus/intake/pipx-root.txt",
+    "adjudicated_packet_path": "corpus/annotations/adjudicated/pipx-root.json",
+    "canonical_sha256": "208e393ce95f2c5da69bc3f10529319ca03a1581ac345920ef8bc74936cd00bf",
+    "adjudicated_packet_sha256": "e9c76a11d4cef3ac50fd24b16ebea9a6c4a7f974f35210c13e1433ce7ca03764",
+    "counts": {
+      "canonical_lines_including_final_empty": 77,
+      "flags": 5,
+      "advertised_command_spellings": 20,
+      "positionals": 0
+    },
+    "checks": {
+      "raw_source_canonicalization_and_hash": "pass",
+      "packet_validation": "pass",
+      "evidence_bounds_and_literal_fidelity": "pass",
+      "alias_token_boundaries": "pass",
+      "transformations_and_provenance": "pass",
+      "description_whitespace_and_nonempty_spans": "pass",
+      "direct_default_choices_fidelity": "pass",
+      "explicit_declarations_and_advertised_entries": "pass",
+      "all_line_labels_and_final_empty_line": "pass",
+      "description_continuation_coverage": "pass"
+    },
+    "source_checks": [
+      "All five option rows and 20 individually advertised command rows are represented, including wrapped descriptions.",
+      "-q and -v evidence selects the separate printed short aliases rather than suffixes of --quiet or --verbose.",
+      "Environment-variable listings remain prose, and repeated brace grammar is other rather than an extra positional or command."
+    ],
+    "findings": [],
+    "remaining_source_evidence_omissions_detected": false
+  }
+}

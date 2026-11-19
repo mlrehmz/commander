@@ -41,11 +41,34 @@ The comparison checks source/scope, distinct identities, labels, complete record
 values and exact evidence, ignoring selection scores. It produces disagreement
 details and does not adjudicate automatically. Record a source-based decision for
 each disagreement before setting adjudicated. Identity fields cannot prove that a
-pass was genuinely blind; that is an audit obligation. The two current primary
+pass was genuinely blind; that is an audit obligation. The initial two primary
 packets were transcribed by an agent without parser predictions. Their source
 transcriptions can be reproduced with `uv run python collection/materialize_primary.py`.
 Their independent blind passes are in `corpus/annotations/blind`; source-based
 adjudications and reports are preserved separately. Reproduce decisions with
 `uv run python collection/adjudicate_pilot.py`. The original primary drafts stay
 unchanged. Adjudicated packets are training-pilot references, pending the final
-independent audit; they are not human gold or final evaluation data.
+full-dataset audit; they are not human gold or final evaluation data.
+
+## Completed ten-page pilot
+
+`collection/materialize_remaining.py` preserves the eight additional source-only
+primary transcriptions. The independent blind files were produced separately,
+without primary drafts or parser predictions. Adjudicate with
+`collection/adjudicate_remaining.py` and its draft-hash-bound decision file; changed
+drafts require new source review. Original drafts are never overwritten.
+
+The pilot exposed alias spans that match `-q` inside `--quiet` rather than the
+separately printed `-q`. Substring fidelity is necessary but insufficient: use
+`audit_catalog` for token boundaries, transformations and provenance. Delimited
+literal defaults/choices can be annotated directly as strings. `None` as printed
+is distinct from unknown. Bracketed pipe alternatives leave value arity unknown
+without formatter knowledge. Wrapped description normalization collapses all
+whitespace, not just newlines. Keep exact literals and discontinuous spans.
+
+The source-only audit covers all ten final packets. The auditor had performed the
+blind pass and used no model predictions; this relationship is recorded rather
+than presented as a third blind annotator. `collection/curate_pilot.py` creates
+per-page audit shards and admits only training references. Source-audit hashes and
+packet hashes prevent edits from silently reusing stale audit approval. The final
+100-project dataset still needs its own full audit and frozen splits.

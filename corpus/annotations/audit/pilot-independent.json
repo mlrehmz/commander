@@ -1,0 +1,342 @@
+{
+  "audit_version": 1,
+  "auditor": "codex-source-audit-2026-11-19",
+  "producer": "agent",
+  "date": "2026-11-19",
+  "scope": "Ten-page HelpCat training pilot only; not the final 100-project evaluation corpus.",
+  "independence_statement": "Source-only audit of final adjudicated packets. Auditor previously performed the distinct blind agent annotations and used that manually constructed source inventory for completeness cross-checks. This audit is not human gold or an independently sampled statistical accuracy evaluation.",
+  "no_model_predictions_used": true,
+  "method": "Read raw intake captures and final adjudicated packet fields; inspect exact declaration-token boundaries, literals/spans, transformation/provenance rules, default/choices fidelity, advertised entries, positional declarations and all canonical-line labels. Run allowed canonicalize/validate_pass/audit_catalog helpers only; no parser/tagger/model code or predictions used. No model-comparison results included.",
+  "pages": [
+    {
+      "id": "black-root",
+      "source_path": "corpus/intake/black-root.txt",
+      "adjudicated_packet_path": "corpus/annotations/adjudicated/black-root.json",
+      "canonical_sha256": "53c38abad5c39cde9986dfa0efe66b2bef572deefdf48f5d9e3fdaf00b23b970",
+      "adjudicated_packet_sha256": "4de7b86b40cec6dad9c7e78636af7414cf34bbbdc2bdf4b68b99e69391c23860",
+      "counts": {
+        "canonical_lines_including_final_empty": 136,
+        "flags": 29,
+        "advertised_command_spellings": 0,
+        "positionals": 0
+      },
+      "checks": {
+        "raw_source_canonicalization_and_hash": "pass",
+        "packet_validation": "pass",
+        "evidence_bounds_and_literal_fidelity": "pass",
+        "alias_token_boundaries": "pass",
+        "transformations_and_provenance": "pass",
+        "description_whitespace_and_nonempty_spans": "pass",
+        "direct_default_choices_fidelity": "pass",
+        "explicit_declarations_and_advertised_entries": "pass",
+        "all_line_labels_and_final_empty_line": "pass",
+        "description_continuation_coverage": "pass"
+      },
+      "source_checks": [
+        "All 29 printed option declaration rows and their explicitly grouped aliases are represented; SRC appears only in usage and is not added as a positional.",
+        "Bracketed pipe-separated alternatives retain literal metavar and choices text, with arity/takes_value null. INTEGER RANGE is retained literally without inferring semantic type/range.",
+        "Explicit literal defaults 88, --safe, and the include regex retain direct source spans. The wrapped exclude regex is retained in description and its semantic default remains null rather than reconstructing a value.",
+        "Description spans preserve printed hyphenation and exact literals; normalized values collapse all whitespace, including doubled spaces."
+      ],
+      "findings": [],
+      "remaining_source_evidence_omissions_detected": false
+    },
+    {
+      "id": "datasette-root",
+      "source_path": "corpus/intake/datasette-root.txt",
+      "adjudicated_packet_path": "corpus/annotations/adjudicated/datasette-root.json",
+      "canonical_sha256": "ad072f620e653eea599586a07eb1d4d84db0f4cdb83f138cd823b3c9de1f74c9",
+      "adjudicated_packet_sha256": "70a22f55fa116722a6c73892c6afb76aa0258dc48e42772aebebe0091c8dd818",
+      "counts": {
+        "canonical_lines_including_final_empty": 20,
+        "flags": 2,
+        "advertised_command_spellings": 7,
+        "positionals": 0
+      },
+      "checks": {
+        "raw_source_canonicalization_and_hash": "pass",
+        "packet_validation": "pass",
+        "evidence_bounds_and_literal_fidelity": "pass",
+        "alias_token_boundaries": "pass",
+        "transformations_and_provenance": "pass",
+        "description_whitespace_and_nonempty_spans": "pass",
+        "direct_default_choices_fidelity": "pass",
+        "explicit_declarations_and_advertised_entries": "pass",
+        "all_line_labels_and_final_empty_line": "pass",
+        "description_continuation_coverage": "pass"
+      },
+      "source_checks": [
+        "All seven advertised command rows and two option rows are represented.",
+        "serve* is retained as the exact advertised name without stripping its marker or inferring default-command semantics.",
+        "Printed trailing ellipses remain literal truncated descriptions; no missing text is reconstructed."
+      ],
+      "findings": [],
+      "remaining_source_evidence_omissions_detected": false
+    },
+    {
+      "id": "hatch-root",
+      "source_path": "corpus/intake/hatch-root.txt",
+      "adjudicated_packet_path": "corpus/annotations/adjudicated/hatch-root.json",
+      "canonical_sha256": "794aff42717b5795f66a2aaf12e3ebb59dc36b40161fb1e1330745a15d2d3849",
+      "adjudicated_packet_sha256": "14007ed1ddcc554dec9e202c33c1982a646e53ded08dca402053d5b79a3e50c2",
+      "counts": {
+        "canonical_lines_including_final_empty": 52,
+        "flags": 11,
+        "advertised_command_spellings": 16,
+        "positionals": 0
+      },
+      "checks": {
+        "raw_source_canonicalization_and_hash": "pass",
+        "packet_validation": "pass",
+        "evidence_bounds_and_literal_fidelity": "pass",
+        "alias_token_boundaries": "pass",
+        "transformations_and_provenance": "pass",
+        "description_whitespace_and_nonempty_spans": "pass",
+        "direct_default_choices_fidelity": "pass",
+        "explicit_declarations_and_advertised_entries": "pass",
+        "all_line_labels_and_final_empty_line": "pass",
+        "description_continuation_coverage": "pass"
+      },
+      "source_checks": [
+        "All 11 option rows and 16 command rows are represented; explicit slash-separated flags are grouped.",
+        "The five TEXT declarations have required value arity. Other arity and takes_value fields remain null.",
+        "ASCII art is other, environment annotations continue descriptions, and wrapped auto- detection remains printed rather than being dehyphenated. Descriptive defaults remain unknown."
+      ],
+      "findings": [],
+      "remaining_source_evidence_omissions_detected": false
+    },
+    {
+      "id": "httpie-root",
+      "source_path": "corpus/intake/httpie-root.txt",
+      "adjudicated_packet_path": "corpus/annotations/adjudicated/httpie-root.json",
+      "canonical_sha256": "afe5f966d4fd89163d59cdec24c11d60b4d6026dc5c95c55528dca973cf69d1c",
+      "adjudicated_packet_sha256": "2d2cf1ecc493674702f13488cbb0fba1075142de9fdfbae9ebe741f37890f470",
+      "counts": {
+        "canonical_lines_including_final_empty": 408,
+        "flags": 51,
+        "advertised_command_spellings": 0,
+        "positionals": 3
+      },
+      "checks": {
+        "raw_source_canonicalization_and_hash": "pass",
+        "packet_validation": "pass",
+        "evidence_bounds_and_literal_fidelity": "pass",
+        "alias_token_boundaries": "pass",
+        "transformations_and_provenance": "pass",
+        "description_whitespace_and_nonempty_spans": "pass",
+        "direct_default_choices_fidelity": "pass",
+        "explicit_declarations_and_advertised_entries": "pass",
+        "all_line_labels_and_final_empty_line": "pass",
+        "description_continuation_coverage": "pass"
+      },
+      "source_checks": [
+        "All 51 option declaration rows and three actual positional declarations METHOD, URL, REQUEST_ITEM are represented.",
+        "Short aliases select their separately printed declaration tokens, including -j, -f, -s, -p, -h, -m, -b, -v, -o, -d, -c, -q, -a, and -A; none selects an interior suffix of a long flag.",
+        "Auth preserves USER[:PASS] | TOKEN as a required value notation; optional password syntax is not confused with optional option arity.",
+        "Examples, lists, URLs and later paragraphs belonging to argument/option descriptions retain description_continuation labels and nonempty evidence spans; blank lines are excluded from evidence.",
+        "Literal defaults and explicit choices retain exact source text. Conditional pretty/print defaults remain unknown; generic --no-OPTION prose is not expanded into invented declarations."
+      ],
+      "findings": [],
+      "remaining_source_evidence_omissions_detected": false
+    },
+    {
+      "id": "pipenv-root",
+      "source_path": "corpus/intake/pipenv-root.txt",
+      "adjudicated_packet_path": "corpus/annotations/adjudicated/pipenv-root.json",
+      "canonical_sha256": "b1d2c8c05c6ececcfa4593c3d7d6505413268f35784dc6fe6cffc43ed926415b",
+      "adjudicated_packet_sha256": "f498d9dad451e38ecbede4e7a9d58d174530548af2185cff8324c1d3b5b1af52",
+      "counts": {
+        "canonical_lines_including_final_empty": 70,
+        "flags": 16,
+        "advertised_command_spellings": 15,
+        "positionals": 0
+      },
+      "checks": {
+        "raw_source_canonicalization_and_hash": "pass",
+        "packet_validation": "pass",
+        "evidence_bounds_and_literal_fidelity": "pass",
+        "alias_token_boundaries": "pass",
+        "transformations_and_provenance": "pass",
+        "description_whitespace_and_nonempty_spans": "pass",
+        "direct_default_choices_fidelity": "pass",
+        "explicit_declarations_and_advertised_entries": "pass",
+        "all_line_labels_and_final_empty_line": "pass",
+        "description_continuation_coverage": "pass"
+      },
+      "source_checks": [
+        "All 16 option rows and 15 advertised command rows are represented. Slash-separated site-packages names are explicitly grouped.",
+        "Wrapped command and option descriptions are retained. Example invocations are other, their explanatory text is prose, and whitespace-only line 15 is blank.",
+        "Only the two TEXT option declarations establish required arity; no usage placeholders are added as positionals."
+      ],
+      "findings": [],
+      "remaining_source_evidence_omissions_detected": false
+    },
+    {
+      "id": "pipx-root",
+      "source_path": "corpus/intake/pipx-root.txt",
+      "adjudicated_packet_path": "corpus/annotations/adjudicated/pipx-root.json",
+      "canonical_sha256": "208e393ce95f2c5da69bc3f10529319ca03a1581ac345920ef8bc74936cd00bf",
+      "adjudicated_packet_sha256": "e9c76a11d4cef3ac50fd24b16ebea9a6c4a7f974f35210c13e1433ce7ca03764",
+      "counts": {
+        "canonical_lines_including_final_empty": 77,
+        "flags": 5,
+        "advertised_command_spellings": 20,
+        "positionals": 0
+      },
+      "checks": {
+        "raw_source_canonicalization_and_hash": "pass",
+        "packet_validation": "pass",
+        "evidence_bounds_and_literal_fidelity": "pass",
+        "alias_token_boundaries": "pass",
+        "transformations_and_provenance": "pass",
+        "description_whitespace_and_nonempty_spans": "pass",
+        "direct_default_choices_fidelity": "pass",
+        "explicit_declarations_and_advertised_entries": "pass",
+        "all_line_labels_and_final_empty_line": "pass",
+        "description_continuation_coverage": "pass"
+      },
+      "source_checks": [
+        "All five option rows and 20 individually advertised command rows are represented, including wrapped descriptions.",
+        "-q and -v evidence selects the separate printed short aliases rather than suffixes of --quiet or --verbose.",
+        "Environment-variable listings remain prose, and repeated brace grammar is other rather than an extra positional or command."
+      ],
+      "findings": [],
+      "remaining_source_evidence_omissions_detected": false
+    },
+    {
+      "id": "rich-cli-root",
+      "source_path": "corpus/intake/rich-cli-root.txt",
+      "adjudicated_packet_path": "corpus/annotations/adjudicated/rich-cli-root.json",
+      "canonical_sha256": "adeff8e0238d9e819b726b92f66bdf1dc8039fe683dca05179c179c36879e333",
+      "adjudicated_packet_sha256": "50d133381f9bf624b8544f45590fada59162c50d49e38d01ad281db3741566d8",
+      "counts": {
+        "canonical_lines_including_final_empty": 69,
+        "flags": 43,
+        "advertised_command_spellings": 0,
+        "positionals": 0
+      },
+      "checks": {
+        "raw_source_canonicalization_and_hash": "pass",
+        "packet_validation": "pass",
+        "evidence_bounds_and_literal_fidelity": "pass",
+        "alias_token_boundaries": "pass",
+        "transformations_and_provenance": "pass",
+        "description_whitespace_and_nonempty_spans": "pass",
+        "direct_default_choices_fidelity": "pass",
+        "explicit_declarations_and_advertised_entries": "pass",
+        "all_line_labels_and_final_empty_line": "pass",
+        "description_continuation_coverage": "pass"
+      },
+      "source_checks": [
+        "All 43 boxed option declaration rows are represented; space-aligned short and long names on the same row are grouped explicitly.",
+        "Evidence uses Unicode code-point columns in the original bordered text; descriptions exclude border/padding and retain the printed truncated URL.",
+        "Box header is section_heading, bottom border is other, and all continuation rows are description_continuation. Usage-only input alternatives are not inferred as positional declarations."
+      ],
+      "findings": [],
+      "remaining_source_evidence_omissions_detected": false
+    },
+    {
+      "id": "sqlfluff-root",
+      "source_path": "corpus/intake/sqlfluff-root.txt",
+      "adjudicated_packet_path": "corpus/annotations/adjudicated/sqlfluff-root.json",
+      "canonical_sha256": "a25526f4b18f911614ca5c3a124fdcbf95d0054667c2c3611a28c05880cf6dec",
+      "adjudicated_packet_sha256": "a2b5bb530c81d4f8e7f54d46167bcefff585fdeb14910f30a80e1b2cd6a7adea",
+      "counts": {
+        "canonical_lines_including_final_empty": 30,
+        "flags": 2,
+        "advertised_command_spellings": 8,
+        "positionals": 0
+      },
+      "checks": {
+        "raw_source_canonicalization_and_hash": "pass",
+        "packet_validation": "pass",
+        "evidence_bounds_and_literal_fidelity": "pass",
+        "alias_token_boundaries": "pass",
+        "transformations_and_provenance": "pass",
+        "description_whitespace_and_nonempty_spans": "pass",
+        "direct_default_choices_fidelity": "pass",
+        "explicit_declarations_and_advertised_entries": "pass",
+        "all_line_labels_and_final_empty_line": "pass",
+        "description_continuation_coverage": "pass"
+      },
+      "source_checks": [
+        "Both option rows and all eight advertised command rows are represented.",
+        "Examples heading is section_heading; code-block directive and shell examples are other, with no additional commands inferred.",
+        "Usage COMMAND and ARGS are grammar placeholders rather than separately advertised positionals; valueless-looking flags retain unknown arity."
+      ],
+      "findings": [],
+      "remaining_source_evidence_omissions_detected": false
+    },
+    {
+      "id": "tox-root",
+      "source_path": "corpus/intake/tox-root.txt",
+      "adjudicated_packet_path": "corpus/annotations/adjudicated/tox-root.json",
+      "canonical_sha256": "667da77ec4ae908b62e595c577f002118a134c2bdfd6d9653547c353f55b71e8",
+      "adjudicated_packet_sha256": "d9bab0cf0c04b1faed2fbe9730624e1ffd0c341fdf6b8c0e0c96e28510727997",
+      "counts": {
+        "canonical_lines_including_final_empty": 48,
+        "flags": 15,
+        "advertised_command_spellings": 19,
+        "positionals": 0
+      },
+      "checks": {
+        "raw_source_canonicalization_and_hash": "pass",
+        "packet_validation": "pass",
+        "evidence_bounds_and_literal_fidelity": "pass",
+        "alias_token_boundaries": "pass",
+        "transformations_and_provenance": "pass",
+        "description_whitespace_and_nonempty_spans": "pass",
+        "direct_default_choices_fidelity": "pass",
+        "explicit_declarations_and_advertised_entries": "pass",
+        "all_line_labels_and_final_empty_line": "pass",
+        "description_continuation_coverage": "pass"
+      },
+      "source_checks": [
+        "All 15 option rows and 19 explicitly advertised command spellings are represented; parenthesized command aliases have their own exact name spans and shared source descriptions.",
+        "Brace choices and literal printed defaults retain direct evidence. REQ_JSON brackets establish optional value arity; semantic type and required presence remain unknown.",
+        "Startup/trailing config diagnostics and repeated brace grammar are other; descriptive group headings do not create command hierarchy."
+      ],
+      "findings": [],
+      "remaining_source_evidence_omissions_detected": false
+    },
+    {
+      "id": "virtualenv-root",
+      "source_path": "corpus/intake/virtualenv-root.txt",
+      "adjudicated_packet_path": "corpus/annotations/adjudicated/virtualenv-root.json",
+      "canonical_sha256": "0dbcac85307251266ffc9a0ce6d6f6e84a539fd06c6096868348d099d22a2595",
+      "adjudicated_packet_sha256": "321449a170f0acd53809ea92c0c1fe5f31c18db043a1af950281095d25dc0d83",
+      "counts": {
+        "canonical_lines_including_final_empty": 63,
+        "flags": 31,
+        "advertised_command_spellings": 0,
+        "positionals": 1
+      },
+      "checks": {
+        "raw_source_canonicalization_and_hash": "pass",
+        "packet_validation": "pass",
+        "evidence_bounds_and_literal_fidelity": "pass",
+        "alias_token_boundaries": "pass",
+        "transformations_and_provenance": "pass",
+        "description_whitespace_and_nonempty_spans": "pass",
+        "direct_default_choices_fidelity": "pass",
+        "explicit_declarations_and_advertised_entries": "pass",
+        "all_line_labels_and_final_empty_line": "pass",
+        "description_continuation_coverage": "pass"
+      },
+      "source_checks": [
+        "All 31 option declaration rows and the actual dest positional declaration are represented; option-group headings do not create subcommands.",
+        "All printed aliases, brace choices, and literal defaults have direct source evidence; metavar evidence selects value tokens rather than substrings within option names.",
+        "The activators description starts at the actual prose text on line 59, column 32, excluding the option token and metavar.",
+        "Extra-search-dir preserves d [d ...] as required value notation; missing-config diagnostic is other."
+      ],
+      "findings": [],
+      "remaining_source_evidence_omissions_detected": false
+    }
+  ],
+  "summary": {
+    "pages_audited": 10,
+    "substantive_findings": 0,
+    "remaining_source_evidence_omissions_detected": false,
+    "conclusion": "No remaining source/evidence omissions detected in the ten final adjudicated pilot packets under the documented conservative annotation decisions. This is an agent source audit, not a human-gold or statistical accuracy claim."
+  }
+}

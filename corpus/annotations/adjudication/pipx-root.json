@@ -1,0 +1,539 @@
+{
+  "canonical_sha256": "208e393ce95f2c5da69bc3f10529319ca03a1581ac345920ef8bc74936cd00bf",
+  "annotators": [
+    "codex-primary-2026-11-19",
+    "codex-blind-2026-11-19"
+  ],
+  "disagreements": [
+    {
+      "kind": "flags",
+      "primary": [
+        {
+          "aliases": [
+            {
+              "value": "-h",
+              "literal": "-h",
+              "evidence": [
+                {
+                  "line": 33,
+                  "start": 2,
+                  "end": 4
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            },
+            {
+              "value": "--help",
+              "literal": "--help",
+              "evidence": [
+                {
+                  "line": 33,
+                  "start": 6,
+                  "end": 12
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": null,
+          "arity": null,
+          "takes_value": null,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "show this help message and exit",
+            "literal": "show this help message and exit",
+            "evidence": [
+              {
+                "line": 33,
+                "start": 24,
+                "end": 55
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        },
+        {
+          "aliases": [
+            {
+              "value": "--quiet",
+              "literal": "--quiet",
+              "evidence": [
+                {
+                  "line": 34,
+                  "start": 2,
+                  "end": 9
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            },
+            {
+              "value": "-q",
+              "literal": "-q",
+              "evidence": [
+                {
+                  "line": 34,
+                  "start": 11,
+                  "end": 13
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": null,
+          "arity": null,
+          "takes_value": null,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "Give less output. May be used multiple times corresponding to the ERROR and CRITICAL logging levels. The count maxes out at 2.",
+            "literal": "Give less output. May be used multiple times\ncorresponding to the ERROR and CRITICAL logging\nlevels. The count maxes out at 2.",
+            "evidence": [
+              {
+                "line": 34,
+                "start": 24,
+                "end": 68
+              },
+              {
+                "line": 35,
+                "start": 24,
+                "end": 71
+              },
+              {
+                "line": 36,
+                "start": 24,
+                "end": 57
+              }
+            ],
+            "rule": "join-description-whitespace",
+            "provenance": "deterministic_inference"
+          }
+        },
+        {
+          "aliases": [
+            {
+              "value": "--verbose",
+              "literal": "--verbose",
+              "evidence": [
+                {
+                  "line": 37,
+                  "start": 2,
+                  "end": 11
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            },
+            {
+              "value": "-v",
+              "literal": "-v",
+              "evidence": [
+                {
+                  "line": 37,
+                  "start": 13,
+                  "end": 15
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": null,
+          "arity": null,
+          "takes_value": null,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "Give more output. May be used multiple times corresponding to the INFO, DEBUG and NOTSET logging levels. The count maxes out at 3.",
+            "literal": "Give more output. May be used multiple times\ncorresponding to the INFO, DEBUG and NOTSET logging\nlevels. The count maxes out at 3.",
+            "evidence": [
+              {
+                "line": 37,
+                "start": 24,
+                "end": 68
+              },
+              {
+                "line": 38,
+                "start": 24,
+                "end": 75
+              },
+              {
+                "line": 39,
+                "start": 24,
+                "end": 57
+              }
+            ],
+            "rule": "join-description-whitespace",
+            "provenance": "deterministic_inference"
+          }
+        },
+        {
+          "aliases": [
+            {
+              "value": "--global",
+              "literal": "--global",
+              "evidence": [
+                {
+                  "line": 40,
+                  "start": 2,
+                  "end": 10
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": null,
+          "arity": null,
+          "takes_value": null,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "Perform action globally for all users.",
+            "literal": "Perform action globally for all users.",
+            "evidence": [
+              {
+                "line": 40,
+                "start": 24,
+                "end": 62
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        },
+        {
+          "aliases": [
+            {
+              "value": "--version",
+              "literal": "--version",
+              "evidence": [
+                {
+                  "line": 41,
+                  "start": 2,
+                  "end": 11
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": null,
+          "arity": null,
+          "takes_value": null,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "Print version and exit",
+            "literal": "Print version and exit",
+            "evidence": [
+              {
+                "line": 41,
+                "start": 24,
+                "end": 46
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        }
+      ],
+      "blind": [
+        {
+          "aliases": [
+            {
+              "value": "-h",
+              "literal": "-h",
+              "evidence": [
+                {
+                  "line": 33,
+                  "start": 2,
+                  "end": 4
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            },
+            {
+              "value": "--help",
+              "literal": "--help",
+              "evidence": [
+                {
+                  "line": 33,
+                  "start": 6,
+                  "end": 12
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": null,
+          "arity": null,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "show this help message and exit",
+            "literal": "show this help message and exit",
+            "evidence": [
+              {
+                "line": 33,
+                "start": 24,
+                "end": 55
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "takes_value": null
+        },
+        {
+          "aliases": [
+            {
+              "value": "--quiet",
+              "literal": "--quiet",
+              "evidence": [
+                {
+                  "line": 34,
+                  "start": 2,
+                  "end": 9
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            },
+            {
+              "value": "-q",
+              "literal": "-q",
+              "evidence": [
+                {
+                  "line": 34,
+                  "start": 3,
+                  "end": 5
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": null,
+          "arity": null,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "Give less output. May be used multiple times corresponding to the ERROR and CRITICAL logging levels. The count maxes out at 2.",
+            "literal": "Give less output. May be used multiple times\ncorresponding to the ERROR and CRITICAL logging\nlevels. The count maxes out at 2.",
+            "evidence": [
+              {
+                "line": 34,
+                "start": 24,
+                "end": 68
+              },
+              {
+                "line": 35,
+                "start": 24,
+                "end": 71
+              },
+              {
+                "line": 36,
+                "start": 24,
+                "end": 57
+              }
+            ],
+            "rule": "join-description-whitespace",
+            "provenance": "deterministic_inference"
+          },
+          "takes_value": null
+        },
+        {
+          "aliases": [
+            {
+              "value": "--verbose",
+              "literal": "--verbose",
+              "evidence": [
+                {
+                  "line": 37,
+                  "start": 2,
+                  "end": 11
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            },
+            {
+              "value": "-v",
+              "literal": "-v",
+              "evidence": [
+                {
+                  "line": 37,
+                  "start": 3,
+                  "end": 5
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": null,
+          "arity": null,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "Give more output. May be used multiple times corresponding to the INFO, DEBUG and NOTSET logging levels. The count maxes out at 3.",
+            "literal": "Give more output. May be used multiple times\ncorresponding to the INFO, DEBUG and NOTSET logging\nlevels. The count maxes out at 3.",
+            "evidence": [
+              {
+                "line": 37,
+                "start": 24,
+                "end": 68
+              },
+              {
+                "line": 38,
+                "start": 24,
+                "end": 75
+              },
+              {
+                "line": 39,
+                "start": 24,
+                "end": 57
+              }
+            ],
+            "rule": "join-description-whitespace",
+            "provenance": "deterministic_inference"
+          },
+          "takes_value": null
+        },
+        {
+          "aliases": [
+            {
+              "value": "--global",
+              "literal": "--global",
+              "evidence": [
+                {
+                  "line": 40,
+                  "start": 2,
+                  "end": 10
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": null,
+          "arity": null,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "Perform action globally for all users.",
+            "literal": "Perform action globally for all users.",
+            "evidence": [
+              {
+                "line": 40,
+                "start": 24,
+                "end": 62
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "takes_value": null
+        },
+        {
+          "aliases": [
+            {
+              "value": "--version",
+              "literal": "--version",
+              "evidence": [
+                {
+                  "line": 41,
+                  "start": 2,
+                  "end": 11
+                }
+              ],
+              "rule": "identity",
+              "provenance": "direct"
+            }
+          ],
+          "metavar": null,
+          "arity": null,
+          "required_presence": null,
+          "type": null,
+          "default": null,
+          "choices": null,
+          "description": {
+            "value": "Print version and exit",
+            "literal": "Print version and exit",
+            "evidence": [
+              {
+                "line": 41,
+                "start": 24,
+                "end": 46
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          "takes_value": null
+        }
+      ]
+    }
+  ],
+  "adjudicated": true,
+  "producer": "agent",
+  "adjudicator": "codex-primary-2026-11-19",
+  "primary_sha256": "4b2abcc2b9ce255822b03a2fcd77fbb0a370d076df0c47955e72906e66048488",
+  "blind_sha256": "092002d6e15071028bf6e1a28fd30ea832c0ad029a4e959fc1e583227f12cb78",
+  "decisions": [
+    {
+      "kind": "flags",
+      "record": 1,
+      "field": "aliases",
+      "decision": "primary",
+      "justification": "The primary spans select separately advertised tokens. Matching a short alias inside a long flag is not evidence for the short declaration."
+    },
+    {
+      "kind": "flags",
+      "record": 2,
+      "field": "aliases",
+      "decision": "primary",
+      "justification": "The primary spans select separately advertised tokens. Matching a short alias inside a long flag is not evidence for the short declaration."
+    }
+  ],
+  "primary_audit_issues": [],
+  "blind_audit_issues": [
+    {
+      "path": "/flags/1/aliases/1",
+      "code": "alias_token_boundary",
+      "message": "Span selects part of another token, not an advertised alias."
+    },
+    {
+      "path": "/flags/2/aliases/1",
+      "code": "alias_token_boundary",
+      "message": "Span selects part of another token, not an advertised alias."
+    }
+  ],
+  "adjudicated_audit_issues": []
+}

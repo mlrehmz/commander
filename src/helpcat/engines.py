@@ -40,6 +40,6 @@ def load_engine(name="rules", *, model=None, policy=None):
     return ParserEngine(
         tagger=tagger,
         threshold=config.get("threshold", 0.0),
-        version=config.get("version", f"{name}-1"),
+        version=config.get("version", "rules-2" if name == "rules" else f"{name}-1"),
         calibrated=False,
     )

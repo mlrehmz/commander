@@ -1,7 +1,50 @@
 {
   "version": 1,
   "frozen": false,
+  "require_source_audit": true,
   "entries": [
+    {
+      "id": "black-root",
+      "project": "black",
+      "leakage_group": "black",
+      "family": "unknown",
+      "command_path": [
+        "black"
+      ],
+      "tool_version": "25.9.0",
+      "source_url": "https://pypi.org/project/black/25.9.0/",
+      "locale": "C.UTF-8",
+      "terminal_width": 80,
+      "synthetic": false,
+      "split": "train",
+      "input": "../intake/black-root.txt",
+      "annotation": "../annotations/adjudicated/black-root.json",
+      "raw_sha256": "53c38abad5c39cde9986dfa0efe66b2bef572deefdf48f5d9e3fdaf00b23b970",
+      "license_evidence": "../../collection/licenses.json",
+      "source_audit": "../annotations/audit/black-root.json",
+      "source_audit_sha256": "be4af4cdf6c5a9d5b623f7840621b407284305d8b1f92a67244a95567fdf8eea"
+    },
+    {
+      "id": "datasette-root",
+      "project": "datasette",
+      "leakage_group": "datasette",
+      "family": "unknown",
+      "command_path": [
+        "datasette"
+      ],
+      "tool_version": "0.65.1",
+      "source_url": "https://pypi.org/project/datasette/0.65.1/",
+      "locale": "C.UTF-8",
+      "terminal_width": 80,
+      "synthetic": false,
+      "split": "train",
+      "input": "../intake/datasette-root.txt",
+      "annotation": "../annotations/adjudicated/datasette-root.json",
+      "raw_sha256": "ad072f620e653eea599586a07eb1d4d84db0f4cdb83f138cd823b3c9de1f74c9",
+      "license_evidence": "../../collection/licenses.json",
+      "source_audit": "../annotations/audit/datasette-root.json",
+      "source_audit_sha256": "f315cca6ee05ddca0de858bdba799c46737039724b27bd47f842ffda4068b0be"
+    },
     {
       "id": "hatch-root",
       "project": "hatch",
@@ -19,7 +62,93 @@
       "input": "../intake/hatch-root.txt",
       "annotation": "../annotations/adjudicated/hatch-root.json",
       "raw_sha256": "794aff42717b5795f66a2aaf12e3ebb59dc36b40161fb1e1330745a15d2d3849",
-      "license_evidence": "../../collection/licenses.json"
+      "license_evidence": "../../collection/licenses.json",
+      "source_audit": "../annotations/audit/hatch-root.json",
+      "source_audit_sha256": "5c7a0f00fd6549b3953f6994c73e4f7e3713087c6ab37b1d046156179b3b9862"
+    },
+    {
+      "id": "httpie-root",
+      "project": "httpie",
+      "leakage_group": "httpie",
+      "family": "unknown",
+      "command_path": [
+        "http"
+      ],
+      "tool_version": "3.2.4",
+      "source_url": "https://pypi.org/project/httpie/3.2.4/",
+      "locale": "C.UTF-8",
+      "terminal_width": 80,
+      "synthetic": false,
+      "split": "train",
+      "input": "../intake/httpie-root.txt",
+      "annotation": "../annotations/adjudicated/httpie-root.json",
+      "raw_sha256": "afe5f966d4fd89163d59cdec24c11d60b4d6026dc5c95c55528dca973cf69d1c",
+      "license_evidence": "../../collection/licenses.json",
+      "source_audit": "../annotations/audit/httpie-root.json",
+      "source_audit_sha256": "c450b7dabb045eb77d41efc81a1072dd69c5079bf5caedcbd08515557cc440b8"
+    },
+    {
+      "id": "pipenv-root",
+      "project": "pipenv",
+      "leakage_group": "pipenv",
+      "family": "unknown",
+      "command_path": [
+        "pipenv"
+      ],
+      "tool_version": "2025.0.4",
+      "source_url": "https://pypi.org/project/pipenv/2025.0.4/",
+      "locale": "C.UTF-8",
+      "terminal_width": 80,
+      "synthetic": false,
+      "split": "train",
+      "input": "../intake/pipenv-root.txt",
+      "annotation": "../annotations/adjudicated/pipenv-root.json",
+      "raw_sha256": "b1d2c8c05c6ececcfa4593c3d7d6505413268f35784dc6fe6cffc43ed926415b",
+      "license_evidence": "../../collection/licenses.json",
+      "source_audit": "../annotations/audit/pipenv-root.json",
+      "source_audit_sha256": "a9c3104f90c331a57e8158280b4f76e1a44c06f428911e8bb8432163bcb9cdd5"
+    },
+    {
+      "id": "pipx-root",
+      "project": "pipx",
+      "leakage_group": "pipx",
+      "family": "unknown",
+      "command_path": [
+        "pipx"
+      ],
+      "tool_version": "1.8.0",
+      "source_url": "https://pypi.org/project/pipx/1.8.0/",
+      "locale": "C.UTF-8",
+      "terminal_width": 80,
+      "synthetic": false,
+      "split": "train",
+      "input": "../intake/pipx-root.txt",
+      "annotation": "../annotations/adjudicated/pipx-root.json",
+      "raw_sha256": "208e393ce95f2c5da69bc3f10529319ca03a1581ac345920ef8bc74936cd00bf",
+      "license_evidence": "../../collection/licenses.json",
+      "source_audit": "../annotations/audit/pipx-root.json",
+      "source_audit_sha256": "a1f002bd1ba33fba328363aceada4dcae209b2b0fde1f7bc7c3e4adaaf6fb1bf"
+    },
+    {
+      "id": "rich-cli-root",
+      "project": "rich-cli",
+      "leakage_group": "rich-cli",
+      "family": "unknown",
+      "command_path": [
+        "rich"
+      ],
+      "tool_version": "1.8.1",
+      "source_url": "https://pypi.org/project/rich-cli/1.8.1/",
+      "locale": "C.UTF-8",
+      "terminal_width": 80,
+      "synthetic": false,
+      "split": "train",
+      "input": "../intake/rich-cli-root.txt",
+      "annotation": "../annotations/adjudicated/rich-cli-root.json",
+      "raw_sha256": "adeff8e0238d9e819b726b92f66bdf1dc8039fe683dca05179c179c36879e333",
+      "license_evidence": "../../collection/licenses.json",
+      "source_audit": "../annotations/audit/rich-cli-root.json",
+      "source_audit_sha256": "b1e1d746c9a74b016ac39a27fb9dd6a2a728773894b1fac662b6903349aa08f8"
     },
     {
       "id": "sqlfluff-root",
@@ -38,7 +167,51 @@
       "input": "../intake/sqlfluff-root.txt",
       "annotation": "../annotations/adjudicated/sqlfluff-root.json",
       "raw_sha256": "a25526f4b18f911614ca5c3a124fdcbf95d0054667c2c3611a28c05880cf6dec",
-      "license_evidence": "../../collection/licenses.json"
+      "license_evidence": "../../collection/licenses.json",
+      "source_audit": "../annotations/audit/sqlfluff-root.json",
+      "source_audit_sha256": "f7b4e3141fd3060b4c5ac0385c10d1915ded402c88a9f0311b063c848f772da8"
+    },
+    {
+      "id": "tox-root",
+      "project": "tox",
+      "leakage_group": "tox",
+      "family": "unknown",
+      "command_path": [
+        "tox"
+      ],
+      "tool_version": "4.30.2",
+      "source_url": "https://pypi.org/project/tox/4.30.2/",
+      "locale": "C.UTF-8",
+      "terminal_width": 80,
+      "synthetic": false,
+      "split": "train",
+      "input": "../intake/tox-root.txt",
+      "annotation": "../annotations/adjudicated/tox-root.json",
+      "raw_sha256": "667da77ec4ae908b62e595c577f002118a134c2bdfd6d9653547c353f55b71e8",
+      "license_evidence": "../../collection/licenses.json",
+      "source_audit": "../annotations/audit/tox-root.json",
+      "source_audit_sha256": "c07f57142302deb53e50fa7c68801ba2c191e0bccab21c821131f02b21be66fc"
+    },
+    {
+      "id": "virtualenv-root",
+      "project": "virtualenv",
+      "leakage_group": "virtualenv",
+      "family": "unknown",
+      "command_path": [
+        "virtualenv"
+      ],
+      "tool_version": "20.34.0",
+      "source_url": "https://pypi.org/project/virtualenv/20.34.0/",
+      "locale": "C.UTF-8",
+      "terminal_width": 80,
+      "synthetic": false,
+      "split": "train",
+      "input": "../intake/virtualenv-root.txt",
+      "annotation": "../annotations/adjudicated/virtualenv-root.json",
+      "raw_sha256": "0dbcac85307251266ffc9a0ce6d6f6e84a539fd06c6096868348d099d22a2595",
+      "license_evidence": "../../collection/licenses.json",
+      "source_audit": "../annotations/audit/virtualenv-root.json",
+      "source_audit_sha256": "009991face0bab10e22a1f452cffbfa300f66b132afd94816606ba6b24951a06"
     }
   ]
 }

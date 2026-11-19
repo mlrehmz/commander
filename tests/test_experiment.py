@@ -101,5 +101,22 @@ def test_identical_test_captures_need_same_leakage_group(tmp_path):
 def test_pilot_validation_reports_training_separately_from_development(capsys):
     assert main(["validate"]) == 0
     report = json.loads(capsys.readouterr().out)
-    assert report["training_pages"] == 2
+    assert report["training_pages"] == 10
     assert report["development_pages"] == 0
+
+
+def test_pilot_diagnostic_is_training_only_and_does_not_qualify_release():
+    from helpcat.experiment import pilot_diagnostic
+
+    _, pages = load_manifest("corpus/manifests/pilot.json")
+    report = pilot_diagnostic(pages)
+    assert report["training_pilot_only"]
+    assert not report["release_qualified"]
+    assert report["pages"] == 10
+    assert report["reference_records"] == 205
+    assert report["reference_spellings"] == 290
+    assert report["oracle"]["counts"] == {"tp": 290, "fp": 0, "fn": 0}
+    assert report["rules"]["counts"] == {"tp": 290, "fp": 0, "fn": 0}
+    entry, source, annotation = pages[0]
+    with pytest.raises(ValueError, match="training"):
+        pilot_diagnostic([(dict(entry, split="dev"), source, annotation)])

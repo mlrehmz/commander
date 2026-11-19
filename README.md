@@ -1,8 +1,8 @@
 # HelpCat
 
-Experimental evidence-based parsing of **supplied CLI help**. This is the first
-implementation phase of [the research protocol](docs/SPEC.md), not a completed
-model comparison. See [comparison status](docs/COMPARISON.md) for remaining gates.
+Experimental evidence-based parsing of **supplied CLI help**. This implements the parser and
+training-pilot stages of [the research protocol](docs/SPEC.md); the full model
+comparison remains incomplete. See [comparison status](docs/COMPARISON.md) for remaining gates.
 
 Python 3.12 or 3.13 and uv are required.
 
@@ -34,6 +34,7 @@ canonical interpretation and use an empty canonical text plus a diagnostic.
 
 ```sh
 make check                         # Tests, properties, style, manifest validation
+make pilot-diagnostic              # Training-only regression report; no qualification
 make assembler-gate                # Nonzero until actual dev references pass
 make final-evaluation              # Guarded: experiment is not yet ready
 uv run --group research python -m helpcat.experiment train-crf
@@ -46,8 +47,10 @@ the policy must explicitly be experimental (`calibrated: false`) and name engine
 `crf` or `neural` as selected. No trained weights are bundled. Runtime rules do not import CRF or neural
 libraries. Calibrated release artifacts will need a separate validated loader.
 
-The collection pilot now has ten offline captures and two independently
-annotated/adjudicated agent references in training. See [collection workflow](collection/README.md).
+The collection pilot now has ten offline captures and ten independently
+annotated, adjudicated and source-audited agent references in training. See [collection workflow](collection/README.md).
+The rules parser handles generic bordered layouts, compound metavars, wrapped
+entries and direct literal defaults/choices ([rules](docs/SEMANTIC_RULES.md)).
 The CPU neural implementation, cache and checkpoint recovery are smoke tested;
 substantial training and final evaluation remain gated on the full corpus.
 

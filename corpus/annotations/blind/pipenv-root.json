@@ -1,0 +1,1289 @@
+{
+  "annotation_version": 1,
+  "canonical_sha256": "b1d2c8c05c6ececcfa4593c3d7d6505413268f35784dc6fe6cffc43ed926415b",
+  "command_path": [
+    "pipenv"
+  ],
+  "source": {
+    "raw_sha256": "b1d2c8c05c6ececcfa4593c3d7d6505413268f35784dc6fe6cffc43ed926415b",
+    "canonical_sha256": "b1d2c8c05c6ececcfa4593c3d7d6505413268f35784dc6fe6cffc43ed926415b",
+    "canonical_text": "Usage: pipenv [OPTIONS] COMMAND [ARGS]...\n\nOptions:\n  --where                         Output project home information.\n  --venv                          Output virtualenv information.\n  --py                            Output Python interpreter information.\n  --envs                          Output Environment Variable options.\n  --rm                            Remove the virtualenv.\n  --bare                          Minimal output.\n  --man                           Display manpage.\n  --support                       Output diagnostic information for use in\n                                  GitHub issues.\n  --site-packages / --no-site-packages\n                                  Enable site-packages for the virtualenv.\n                                  \n  --python TEXT                   Specify which version of Python virtualenv\n                                  should use.\n  --clear                         Clears caches (pipenv, pip).  \n  -q, --quiet                     Quiet mode.\n  -v, --verbose                   Verbose mode.\n  --pypi-mirror TEXT              Specify a PyPI mirror.\n  --version                       Show the version and exit.\n  -h, --help                      Show this message and exit.\n\n\nUsage Examples:\n   Create a new project using Python 3.7, specifically:\n   $ pipenv --python 3.7\n\n   Remove project virtualenv (inferred from current directory):\n   $ pipenv --rm\n\n   Install all dependencies for a project (including dev):\n   $ pipenv install --dev\n\n   Create a lockfile containing pre-releases:\n   $ pipenv lock --pre\n\n   Show a graph of your installed dependencies:\n   $ pipenv graph\n\n   Check your installed dependencies for security vulnerabilities:\n   $ pipenv check\n\n   Install a local setup.py into your virtual environment/Pipfile:\n   $ pipenv install -e .\n\n   Use a lower-level pip command:\n   $ pipenv run pip freeze\n\nCommands:\n  check         Checks for PyUp Safety security vulnerabilities and against\n                PEP 508 markers provided in Pipfile.\n  clean         Uninstalls all packages not specified in Pipfile.lock.\n  graph         Displays currently-installed dependency graph information.\n  install       Installs provided packages and adds them to Pipfile, or (if no\n                packages are given), installs all packages from Pipfile.\n  lock          Generates Pipfile.lock.\n  open          View a given module in your editor.\n  requirements  Generate a requirements.txt from Pipfile.lock.\n  run           Spawns a command installed into the virtualenv.\n  scripts       Lists scripts in current environment config.\n  shell         Spawns a shell within the virtualenv.\n  sync          Installs all packages specified in Pipfile.lock.\n  uninstall     Uninstalls a provided package and removes it from Pipfile.\n  update        Runs lock, then sync.\n  upgrade       Resolves provided packages and adds them to Pipfile, or (if no\n                packages are given), merges results to Pipfile.lock\n  verify        Verify the hash in Pipfile.lock is up-to-date.\n",
+    "normalization_version": "1.0",
+    "capture_metadata": {}
+  },
+  "annotator": "codex-blind-2026-11-19",
+  "producer": "agent",
+  "blind": true,
+  "labels": [
+    "usage",
+    "blank",
+    "section_heading",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "description_continuation",
+    "blank",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "blank",
+    "blank",
+    "section_heading",
+    "prose",
+    "other",
+    "blank",
+    "prose",
+    "other",
+    "blank",
+    "prose",
+    "other",
+    "blank",
+    "prose",
+    "other",
+    "blank",
+    "prose",
+    "other",
+    "blank",
+    "prose",
+    "other",
+    "blank",
+    "prose",
+    "other",
+    "blank",
+    "prose",
+    "other",
+    "blank",
+    "section_heading",
+    "subcommand_declaration",
+    "description_continuation",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "description_continuation",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "description_continuation",
+    "subcommand_declaration",
+    "blank"
+  ],
+  "reference": {
+    "schema_version": "1.0",
+    "command_path": [
+      "pipenv"
+    ],
+    "source": {
+      "raw_sha256": "b1d2c8c05c6ececcfa4593c3d7d6505413268f35784dc6fe6cffc43ed926415b",
+      "canonical_sha256": "b1d2c8c05c6ececcfa4593c3d7d6505413268f35784dc6fe6cffc43ed926415b",
+      "canonical_text": "Usage: pipenv [OPTIONS] COMMAND [ARGS]...\n\nOptions:\n  --where                         Output project home information.\n  --venv                          Output virtualenv information.\n  --py                            Output Python interpreter information.\n  --envs                          Output Environment Variable options.\n  --rm                            Remove the virtualenv.\n  --bare                          Minimal output.\n  --man                           Display manpage.\n  --support                       Output diagnostic information for use in\n                                  GitHub issues.\n  --site-packages / --no-site-packages\n                                  Enable site-packages for the virtualenv.\n                                  \n  --python TEXT                   Specify which version of Python virtualenv\n                                  should use.\n  --clear                         Clears caches (pipenv, pip).  \n  -q, --quiet                     Quiet mode.\n  -v, --verbose                   Verbose mode.\n  --pypi-mirror TEXT              Specify a PyPI mirror.\n  --version                       Show the version and exit.\n  -h, --help                      Show this message and exit.\n\n\nUsage Examples:\n   Create a new project using Python 3.7, specifically:\n   $ pipenv --python 3.7\n\n   Remove project virtualenv (inferred from current directory):\n   $ pipenv --rm\n\n   Install all dependencies for a project (including dev):\n   $ pipenv install --dev\n\n   Create a lockfile containing pre-releases:\n   $ pipenv lock --pre\n\n   Show a graph of your installed dependencies:\n   $ pipenv graph\n\n   Check your installed dependencies for security vulnerabilities:\n   $ pipenv check\n\n   Install a local setup.py into your virtual environment/Pipfile:\n   $ pipenv install -e .\n\n   Use a lower-level pip command:\n   $ pipenv run pip freeze\n\nCommands:\n  check         Checks for PyUp Safety security vulnerabilities and against\n                PEP 508 markers provided in Pipfile.\n  clean         Uninstalls all packages not specified in Pipfile.lock.\n  graph         Displays currently-installed dependency graph information.\n  install       Installs provided packages and adds them to Pipfile, or (if no\n                packages are given), installs all packages from Pipfile.\n  lock          Generates Pipfile.lock.\n  open          View a given module in your editor.\n  requirements  Generate a requirements.txt from Pipfile.lock.\n  run           Spawns a command installed into the virtualenv.\n  scripts       Lists scripts in current environment config.\n  shell         Spawns a shell within the virtualenv.\n  sync          Installs all packages specified in Pipfile.lock.\n  uninstall     Uninstalls a provided package and removes it from Pipfile.\n  update        Runs lock, then sync.\n  upgrade       Resolves provided packages and adds them to Pipfile, or (if no\n                packages are given), merges results to Pipfile.lock\n  verify        Verify the hash in Pipfile.lock is up-to-date.\n",
+      "normalization_version": "1.0",
+      "capture_metadata": {}
+    },
+    "flags": [
+      {
+        "aliases": [
+          {
+            "value": "--where",
+            "literal": "--where",
+            "evidence": [
+              {
+                "line": 4,
+                "start": 2,
+                "end": 9
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Output project home information.",
+          "literal": "Output project home information.",
+          "evidence": [
+            {
+              "line": 4,
+              "start": 34,
+              "end": 66
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--venv",
+            "literal": "--venv",
+            "evidence": [
+              {
+                "line": 5,
+                "start": 2,
+                "end": 8
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Output virtualenv information.",
+          "literal": "Output virtualenv information.",
+          "evidence": [
+            {
+              "line": 5,
+              "start": 34,
+              "end": 64
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--py",
+            "literal": "--py",
+            "evidence": [
+              {
+                "line": 6,
+                "start": 2,
+                "end": 6
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Output Python interpreter information.",
+          "literal": "Output Python interpreter information.",
+          "evidence": [
+            {
+              "line": 6,
+              "start": 34,
+              "end": 72
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--envs",
+            "literal": "--envs",
+            "evidence": [
+              {
+                "line": 7,
+                "start": 2,
+                "end": 8
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Output Environment Variable options.",
+          "literal": "Output Environment Variable options.",
+          "evidence": [
+            {
+              "line": 7,
+              "start": 34,
+              "end": 70
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--rm",
+            "literal": "--rm",
+            "evidence": [
+              {
+                "line": 8,
+                "start": 2,
+                "end": 6
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Remove the virtualenv.",
+          "literal": "Remove the virtualenv.",
+          "evidence": [
+            {
+              "line": 8,
+              "start": 34,
+              "end": 56
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--bare",
+            "literal": "--bare",
+            "evidence": [
+              {
+                "line": 9,
+                "start": 2,
+                "end": 8
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Minimal output.",
+          "literal": "Minimal output.",
+          "evidence": [
+            {
+              "line": 9,
+              "start": 34,
+              "end": 49
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--man",
+            "literal": "--man",
+            "evidence": [
+              {
+                "line": 10,
+                "start": 2,
+                "end": 7
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Display manpage.",
+          "literal": "Display manpage.",
+          "evidence": [
+            {
+              "line": 10,
+              "start": 34,
+              "end": 50
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--support",
+            "literal": "--support",
+            "evidence": [
+              {
+                "line": 11,
+                "start": 2,
+                "end": 11
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Output diagnostic information for use in GitHub issues.",
+          "literal": "Output diagnostic information for use in\nGitHub issues.",
+          "evidence": [
+            {
+              "line": 11,
+              "start": 34,
+              "end": 74
+            },
+            {
+              "line": 12,
+              "start": 34,
+              "end": 48
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--site-packages",
+            "literal": "--site-packages",
+            "evidence": [
+              {
+                "line": 13,
+                "start": 2,
+                "end": 17
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--no-site-packages",
+            "literal": "--no-site-packages",
+            "evidence": [
+              {
+                "line": 13,
+                "start": 20,
+                "end": 38
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Enable site-packages for the virtualenv.",
+          "literal": "Enable site-packages for the virtualenv.",
+          "evidence": [
+            {
+              "line": 14,
+              "start": 34,
+              "end": 74
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--python",
+            "literal": "--python",
+            "evidence": [
+              {
+                "line": 16,
+                "start": 2,
+                "end": 10
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "TEXT",
+          "literal": "TEXT",
+          "evidence": [
+            {
+              "line": 16,
+              "start": 11,
+              "end": 15
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "TEXT",
+          "evidence": [
+            {
+              "line": 16,
+              "start": 11,
+              "end": 15
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Specify which version of Python virtualenv should use.",
+          "literal": "Specify which version of Python virtualenv\nshould use.",
+          "evidence": [
+            {
+              "line": 16,
+              "start": 34,
+              "end": 76
+            },
+            {
+              "line": 17,
+              "start": 34,
+              "end": 45
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--clear",
+            "literal": "--clear",
+            "evidence": [
+              {
+                "line": 18,
+                "start": 2,
+                "end": 9
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Clears caches (pipenv, pip).",
+          "literal": "Clears caches (pipenv, pip).",
+          "evidence": [
+            {
+              "line": 18,
+              "start": 34,
+              "end": 62
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-q",
+            "literal": "-q",
+            "evidence": [
+              {
+                "line": 19,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--quiet",
+            "literal": "--quiet",
+            "evidence": [
+              {
+                "line": 19,
+                "start": 6,
+                "end": 13
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Quiet mode.",
+          "literal": "Quiet mode.",
+          "evidence": [
+            {
+              "line": 19,
+              "start": 34,
+              "end": 45
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-v",
+            "literal": "-v",
+            "evidence": [
+              {
+                "line": 20,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--verbose",
+            "literal": "--verbose",
+            "evidence": [
+              {
+                "line": 20,
+                "start": 6,
+                "end": 15
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Verbose mode.",
+          "literal": "Verbose mode.",
+          "evidence": [
+            {
+              "line": 20,
+              "start": 34,
+              "end": 47
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--pypi-mirror",
+            "literal": "--pypi-mirror",
+            "evidence": [
+              {
+                "line": 21,
+                "start": 2,
+                "end": 15
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "TEXT",
+          "literal": "TEXT",
+          "evidence": [
+            {
+              "line": 21,
+              "start": 16,
+              "end": 20
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "TEXT",
+          "evidence": [
+            {
+              "line": 21,
+              "start": 16,
+              "end": 20
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Specify a PyPI mirror.",
+          "literal": "Specify a PyPI mirror.",
+          "evidence": [
+            {
+              "line": 21,
+              "start": 34,
+              "end": 56
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--version",
+            "literal": "--version",
+            "evidence": [
+              {
+                "line": 22,
+                "start": 2,
+                "end": 11
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Show the version and exit.",
+          "literal": "Show the version and exit.",
+          "evidence": [
+            {
+              "line": 22,
+              "start": 34,
+              "end": 60
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-h",
+            "literal": "-h",
+            "evidence": [
+              {
+                "line": 23,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--help",
+            "literal": "--help",
+            "evidence": [
+              {
+                "line": 23,
+                "start": 6,
+                "end": 12
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Show this message and exit.",
+          "literal": "Show this message and exit.",
+          "evidence": [
+            {
+              "line": 23,
+              "start": 34,
+              "end": 61
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      }
+    ],
+    "subcommands": [
+      {
+        "name": {
+          "value": "check",
+          "literal": "check",
+          "evidence": [
+            {
+              "line": 52,
+              "start": 2,
+              "end": 7
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Checks for PyUp Safety security vulnerabilities and against PEP 508 markers provided in Pipfile.",
+          "literal": "Checks for PyUp Safety security vulnerabilities and against\nPEP 508 markers provided in Pipfile.",
+          "evidence": [
+            {
+              "line": 52,
+              "start": 16,
+              "end": 75
+            },
+            {
+              "line": 53,
+              "start": 16,
+              "end": 52
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "clean",
+          "literal": "clean",
+          "evidence": [
+            {
+              "line": 54,
+              "start": 2,
+              "end": 7
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Uninstalls all packages not specified in Pipfile.lock.",
+          "literal": "Uninstalls all packages not specified in Pipfile.lock.",
+          "evidence": [
+            {
+              "line": 54,
+              "start": 16,
+              "end": 70
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "graph",
+          "literal": "graph",
+          "evidence": [
+            {
+              "line": 55,
+              "start": 2,
+              "end": 7
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Displays currently-installed dependency graph information.",
+          "literal": "Displays currently-installed dependency graph information.",
+          "evidence": [
+            {
+              "line": 55,
+              "start": 16,
+              "end": 74
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "install",
+          "literal": "install",
+          "evidence": [
+            {
+              "line": 56,
+              "start": 2,
+              "end": 9
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Installs provided packages and adds them to Pipfile, or (if no packages are given), installs all packages from Pipfile.",
+          "literal": "Installs provided packages and adds them to Pipfile, or (if no\npackages are given), installs all packages from Pipfile.",
+          "evidence": [
+            {
+              "line": 56,
+              "start": 16,
+              "end": 78
+            },
+            {
+              "line": 57,
+              "start": 16,
+              "end": 72
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "lock",
+          "literal": "lock",
+          "evidence": [
+            {
+              "line": 58,
+              "start": 2,
+              "end": 6
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Generates Pipfile.lock.",
+          "literal": "Generates Pipfile.lock.",
+          "evidence": [
+            {
+              "line": 58,
+              "start": 16,
+              "end": 39
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "open",
+          "literal": "open",
+          "evidence": [
+            {
+              "line": 59,
+              "start": 2,
+              "end": 6
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "View a given module in your editor.",
+          "literal": "View a given module in your editor.",
+          "evidence": [
+            {
+              "line": 59,
+              "start": 16,
+              "end": 51
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "requirements",
+          "literal": "requirements",
+          "evidence": [
+            {
+              "line": 60,
+              "start": 2,
+              "end": 14
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Generate a requirements.txt from Pipfile.lock.",
+          "literal": "Generate a requirements.txt from Pipfile.lock.",
+          "evidence": [
+            {
+              "line": 60,
+              "start": 16,
+              "end": 62
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "run",
+          "literal": "run",
+          "evidence": [
+            {
+              "line": 61,
+              "start": 2,
+              "end": 5
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Spawns a command installed into the virtualenv.",
+          "literal": "Spawns a command installed into the virtualenv.",
+          "evidence": [
+            {
+              "line": 61,
+              "start": 16,
+              "end": 63
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "scripts",
+          "literal": "scripts",
+          "evidence": [
+            {
+              "line": 62,
+              "start": 2,
+              "end": 9
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Lists scripts in current environment config.",
+          "literal": "Lists scripts in current environment config.",
+          "evidence": [
+            {
+              "line": 62,
+              "start": 16,
+              "end": 60
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "shell",
+          "literal": "shell",
+          "evidence": [
+            {
+              "line": 63,
+              "start": 2,
+              "end": 7
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Spawns a shell within the virtualenv.",
+          "literal": "Spawns a shell within the virtualenv.",
+          "evidence": [
+            {
+              "line": 63,
+              "start": 16,
+              "end": 53
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "sync",
+          "literal": "sync",
+          "evidence": [
+            {
+              "line": 64,
+              "start": 2,
+              "end": 6
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Installs all packages specified in Pipfile.lock.",
+          "literal": "Installs all packages specified in Pipfile.lock.",
+          "evidence": [
+            {
+              "line": 64,
+              "start": 16,
+              "end": 64
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "uninstall",
+          "literal": "uninstall",
+          "evidence": [
+            {
+              "line": 65,
+              "start": 2,
+              "end": 11
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Uninstalls a provided package and removes it from Pipfile.",
+          "literal": "Uninstalls a provided package and removes it from Pipfile.",
+          "evidence": [
+            {
+              "line": 65,
+              "start": 16,
+              "end": 74
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "update",
+          "literal": "update",
+          "evidence": [
+            {
+              "line": 66,
+              "start": 2,
+              "end": 8
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Runs lock, then sync.",
+          "literal": "Runs lock, then sync.",
+          "evidence": [
+            {
+              "line": 66,
+              "start": 16,
+              "end": 37
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "upgrade",
+          "literal": "upgrade",
+          "evidence": [
+            {
+              "line": 67,
+              "start": 2,
+              "end": 9
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Resolves provided packages and adds them to Pipfile, or (if no packages are given), merges results to Pipfile.lock",
+          "literal": "Resolves provided packages and adds them to Pipfile, or (if no\npackages are given), merges results to Pipfile.lock",
+          "evidence": [
+            {
+              "line": 67,
+              "start": 16,
+              "end": 78
+            },
+            {
+              "line": 68,
+              "start": 16,
+              "end": 67
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "verify",
+          "literal": "verify",
+          "evidence": [
+            {
+              "line": 69,
+              "start": 2,
+              "end": 8
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Verify the hash in Pipfile.lock is up-to-date.",
+          "literal": "Verify the hash in Pipfile.lock is up-to-date.",
+          "evidence": [
+            {
+              "line": 69,
+              "start": 16,
+              "end": 62
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      }
+    ],
+    "positionals": [],
+    "status": "ok",
+    "diagnostics": [],
+    "engine": {
+      "name": "manual-agent-annotation",
+      "version": "primary-1",
+      "threshold": 0,
+      "calibrated": false
+    }
+  },
+  "adjudicated": false,
+  "notes": [
+    "Independent source-only agent annotation. No primary/adjudicated annotations, parser/tagger/model code, or predictions consulted.",
+    "Unknown semantic fields remain null; flags without explicit value notation have unknown arity and takes_value.",
+    "Example shell invocations are other and accompanying explanations are prose; only Commands rows advertise subcommands. Whitespace-only line 15 is blank."
+  ]
+}

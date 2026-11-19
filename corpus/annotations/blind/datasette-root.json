@@ -1,0 +1,351 @@
+{
+  "annotation_version": 1,
+  "canonical_sha256": "ad072f620e653eea599586a07eb1d4d84db0f4cdb83f138cd823b3c9de1f74c9",
+  "command_path": [
+    "datasette"
+  ],
+  "source": {
+    "raw_sha256": "ad072f620e653eea599586a07eb1d4d84db0f4cdb83f138cd823b3c9de1f74c9",
+    "canonical_sha256": "ad072f620e653eea599586a07eb1d4d84db0f4cdb83f138cd823b3c9de1f74c9",
+    "canonical_text": "Usage: datasette [OPTIONS] COMMAND [ARGS]...\n\n  Datasette is an open source multi-tool for exploring and publishing data\n\n  About Datasette: https://datasette.io/\n  Full documentation: https://docs.datasette.io/\n\nOptions:\n  --version  Show the version and exit.\n  --help     Show this message and exit.\n\nCommands:\n  serve*     Serve up specified SQLite database files with a web UI\n  inspect    Generate JSON summary of provided database files\n  install    Install plugins and packages from PyPI into the same...\n  package    Package SQLite files into a Datasette Docker container\n  plugins    List currently installed plugins\n  publish    Publish specified SQLite database files to the internet...\n  uninstall  Uninstall plugins and Python packages from the Datasette...\n",
+    "normalization_version": "1.0",
+    "capture_metadata": {}
+  },
+  "annotator": "codex-blind-2026-11-19",
+  "producer": "agent",
+  "blind": true,
+  "labels": [
+    "usage",
+    "blank",
+    "prose",
+    "blank",
+    "prose",
+    "prose",
+    "blank",
+    "section_heading",
+    "option_declaration",
+    "option_declaration",
+    "blank",
+    "section_heading",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "blank"
+  ],
+  "reference": {
+    "schema_version": "1.0",
+    "command_path": [
+      "datasette"
+    ],
+    "source": {
+      "raw_sha256": "ad072f620e653eea599586a07eb1d4d84db0f4cdb83f138cd823b3c9de1f74c9",
+      "canonical_sha256": "ad072f620e653eea599586a07eb1d4d84db0f4cdb83f138cd823b3c9de1f74c9",
+      "canonical_text": "Usage: datasette [OPTIONS] COMMAND [ARGS]...\n\n  Datasette is an open source multi-tool for exploring and publishing data\n\n  About Datasette: https://datasette.io/\n  Full documentation: https://docs.datasette.io/\n\nOptions:\n  --version  Show the version and exit.\n  --help     Show this message and exit.\n\nCommands:\n  serve*     Serve up specified SQLite database files with a web UI\n  inspect    Generate JSON summary of provided database files\n  install    Install plugins and packages from PyPI into the same...\n  package    Package SQLite files into a Datasette Docker container\n  plugins    List currently installed plugins\n  publish    Publish specified SQLite database files to the internet...\n  uninstall  Uninstall plugins and Python packages from the Datasette...\n",
+      "normalization_version": "1.0",
+      "capture_metadata": {}
+    },
+    "flags": [
+      {
+        "aliases": [
+          {
+            "value": "--version",
+            "literal": "--version",
+            "evidence": [
+              {
+                "line": 9,
+                "start": 2,
+                "end": 11
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Show the version and exit.",
+          "literal": "Show the version and exit.",
+          "evidence": [
+            {
+              "line": 9,
+              "start": 13,
+              "end": 39
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--help",
+            "literal": "--help",
+            "evidence": [
+              {
+                "line": 10,
+                "start": 2,
+                "end": 8
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Show this message and exit.",
+          "literal": "Show this message and exit.",
+          "evidence": [
+            {
+              "line": 10,
+              "start": 13,
+              "end": 40
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      }
+    ],
+    "subcommands": [
+      {
+        "name": {
+          "value": "serve*",
+          "literal": "serve*",
+          "evidence": [
+            {
+              "line": 13,
+              "start": 2,
+              "end": 8
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Serve up specified SQLite database files with a web UI",
+          "literal": "Serve up specified SQLite database files with a web UI",
+          "evidence": [
+            {
+              "line": 13,
+              "start": 13,
+              "end": 67
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "inspect",
+          "literal": "inspect",
+          "evidence": [
+            {
+              "line": 14,
+              "start": 2,
+              "end": 9
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Generate JSON summary of provided database files",
+          "literal": "Generate JSON summary of provided database files",
+          "evidence": [
+            {
+              "line": 14,
+              "start": 13,
+              "end": 61
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "install",
+          "literal": "install",
+          "evidence": [
+            {
+              "line": 15,
+              "start": 2,
+              "end": 9
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Install plugins and packages from PyPI into the same...",
+          "literal": "Install plugins and packages from PyPI into the same...",
+          "evidence": [
+            {
+              "line": 15,
+              "start": 13,
+              "end": 68
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "package",
+          "literal": "package",
+          "evidence": [
+            {
+              "line": 16,
+              "start": 2,
+              "end": 9
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Package SQLite files into a Datasette Docker container",
+          "literal": "Package SQLite files into a Datasette Docker container",
+          "evidence": [
+            {
+              "line": 16,
+              "start": 13,
+              "end": 67
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "plugins",
+          "literal": "plugins",
+          "evidence": [
+            {
+              "line": 17,
+              "start": 2,
+              "end": 9
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "List currently installed plugins",
+          "literal": "List currently installed plugins",
+          "evidence": [
+            {
+              "line": 17,
+              "start": 13,
+              "end": 45
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "publish",
+          "literal": "publish",
+          "evidence": [
+            {
+              "line": 18,
+              "start": 2,
+              "end": 9
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Publish specified SQLite database files to the internet...",
+          "literal": "Publish specified SQLite database files to the internet...",
+          "evidence": [
+            {
+              "line": 18,
+              "start": 13,
+              "end": 71
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "uninstall",
+          "literal": "uninstall",
+          "evidence": [
+            {
+              "line": 19,
+              "start": 2,
+              "end": 11
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Uninstall plugins and Python packages from the Datasette...",
+          "literal": "Uninstall plugins and Python packages from the Datasette...",
+          "evidence": [
+            {
+              "line": 19,
+              "start": 13,
+              "end": 72
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      }
+    ],
+    "positionals": [],
+    "status": "ok",
+    "diagnostics": [],
+    "engine": {
+      "name": "manual-agent-annotation",
+      "version": "primary-1",
+      "threshold": 0,
+      "calibrated": false
+    }
+  },
+  "adjudicated": false,
+  "notes": [
+    "Independent source-only agent annotation. No primary/adjudicated annotations, parser/tagger/model code, or predictions consulted.",
+    "Unknown semantic fields remain null; flags without explicit value notation have unknown arity and takes_value.",
+    "The serve* command marker is preserved verbatim as its name because no schema rule authorizes stripping the star. It likely denotes a default command, but that interpretation is not encoded as certain semantics.",
+    "Ellipses in descriptions are literal printed truncation; missing text is not reconstructed."
+  ]
+}

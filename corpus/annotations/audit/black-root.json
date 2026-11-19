@@ -1,0 +1,42 @@
+{
+  "audit_version": 1,
+  "auditor": "codex-source-audit-2026-11-19",
+  "producer": "agent",
+  "date": "2026-11-19",
+  "no_model_predictions_used": true,
+  "independence_statement": "Source-only audit of final adjudicated packets. Auditor previously performed the distinct blind agent annotations and used that manually constructed source inventory for completeness cross-checks. This audit is not human gold or an independently sampled statistical accuracy evaluation.",
+  "source_report_sha256": "31dfc49389d23d7a211c3e7696e9837f5af2c08c016b26ac0025cb8eb24af1ff",
+  "page": {
+    "id": "black-root",
+    "source_path": "corpus/intake/black-root.txt",
+    "adjudicated_packet_path": "corpus/annotations/adjudicated/black-root.json",
+    "canonical_sha256": "53c38abad5c39cde9986dfa0efe66b2bef572deefdf48f5d9e3fdaf00b23b970",
+    "adjudicated_packet_sha256": "4de7b86b40cec6dad9c7e78636af7414cf34bbbdc2bdf4b68b99e69391c23860",
+    "counts": {
+      "canonical_lines_including_final_empty": 136,
+      "flags": 29,
+      "advertised_command_spellings": 0,
+      "positionals": 0
+    },
+    "checks": {
+      "raw_source_canonicalization_and_hash": "pass",
+      "packet_validation": "pass",
+      "evidence_bounds_and_literal_fidelity": "pass",
+      "alias_token_boundaries": "pass",
+      "transformations_and_provenance": "pass",
+      "description_whitespace_and_nonempty_spans": "pass",
+      "direct_default_choices_fidelity": "pass",
+      "explicit_declarations_and_advertised_entries": "pass",
+      "all_line_labels_and_final_empty_line": "pass",
+      "description_continuation_coverage": "pass"
+    },
+    "source_checks": [
+      "All 29 printed option declaration rows and their explicitly grouped aliases are represented; SRC appears only in usage and is not added as a positional.",
+      "Bracketed pipe-separated alternatives retain literal metavar and choices text, with arity/takes_value null. INTEGER RANGE is retained literally without inferring semantic type/range.",
+      "Explicit literal defaults 88, --safe, and the include regex retain direct source spans. The wrapped exclude regex is retained in description and its semantic default remains null rather than reconstructing a value.",
+      "Description spans preserve printed hyphenation and exact literals; normalized values collapse all whitespace, including doubled spaces."
+    ],
+    "findings": [],
+    "remaining_source_evidence_omissions_detected": false
+  }
+}

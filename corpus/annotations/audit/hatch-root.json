@@ -1,0 +1,41 @@
+{
+  "audit_version": 1,
+  "auditor": "codex-source-audit-2026-11-19",
+  "producer": "agent",
+  "date": "2026-11-19",
+  "no_model_predictions_used": true,
+  "independence_statement": "Source-only audit of final adjudicated packets. Auditor previously performed the distinct blind agent annotations and used that manually constructed source inventory for completeness cross-checks. This audit is not human gold or an independently sampled statistical accuracy evaluation.",
+  "source_report_sha256": "31dfc49389d23d7a211c3e7696e9837f5af2c08c016b26ac0025cb8eb24af1ff",
+  "page": {
+    "id": "hatch-root",
+    "source_path": "corpus/intake/hatch-root.txt",
+    "adjudicated_packet_path": "corpus/annotations/adjudicated/hatch-root.json",
+    "canonical_sha256": "794aff42717b5795f66a2aaf12e3ebb59dc36b40161fb1e1330745a15d2d3849",
+    "adjudicated_packet_sha256": "14007ed1ddcc554dec9e202c33c1982a646e53ded08dca402053d5b79a3e50c2",
+    "counts": {
+      "canonical_lines_including_final_empty": 52,
+      "flags": 11,
+      "advertised_command_spellings": 16,
+      "positionals": 0
+    },
+    "checks": {
+      "raw_source_canonicalization_and_hash": "pass",
+      "packet_validation": "pass",
+      "evidence_bounds_and_literal_fidelity": "pass",
+      "alias_token_boundaries": "pass",
+      "transformations_and_provenance": "pass",
+      "description_whitespace_and_nonempty_spans": "pass",
+      "direct_default_choices_fidelity": "pass",
+      "explicit_declarations_and_advertised_entries": "pass",
+      "all_line_labels_and_final_empty_line": "pass",
+      "description_continuation_coverage": "pass"
+    },
+    "source_checks": [
+      "All 11 option rows and 16 command rows are represented; explicit slash-separated flags are grouped.",
+      "The five TEXT declarations have required value arity. Other arity and takes_value fields remain null.",
+      "ASCII art is other, environment annotations continue descriptions, and wrapped auto- detection remains printed rather than being dehyphenated. Descriptive defaults remain unknown."
+    ],
+    "findings": [],
+    "remaining_source_evidence_omissions_detected": false
+  }
+}

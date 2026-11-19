@@ -3,13 +3,19 @@
 Ten distinct projects have root-help captures in `corpus/intake` (973 canonical
 lines, counting the final empty lines). All captures have hashes and receipts.
 Exact publisher license notices are preserved in `collection/licenses.json`.
-SQLFluff and Hatch each have independent primary and blind agent annotations.
-Their extracted records and evidence agree exactly. Five SQLFluff markup/example
-label disagreements were resolved against source with recorded decisions; Hatch
-has no disagreements. Both adjudicated references are in the training pilot
-manifest. The other eight intake pages await primary annotation. Final independent
-dataset audit, full grouping and split freeze remain open. These are agent
-references, not human gold; no development or test examples are admitted yet.
+All ten projects now have separate primary and blind agent annotations, source-based
+adjudications and an independent-of-model-predictions source audit. The auditor had
+performed the blind pass; this relationship is explicit in the audit report.
+Both sets of drafts remain unchanged even where their evidence was wrong. Final
+references correct short-alias substring errors, description boundaries, whitespace
+normalization and conservative semantics through recorded decisions.
+
+The training pilot manifest contains ten audited references: 205 flag records,
+290 advertised flag spellings, 85 advertised command spellings, and four positional
+records. All 973 canonical lines have labels. The manifest is unfrozen and training
+only; no development or test pages are admitted. Family labels remain unknown
+pending source verification and the wider survey. These are agent references, not
+human gold. Final full-dataset grouping, review and split freeze remain open.
 The pilot does not establish accuracy, family transfer or any experimental gate.
 Tests also use original miniature strings. The full target remains 100 projects.
 
@@ -23,7 +29,7 @@ wheel downloads occur during environment preparation. A sandbox probe verified
 actual cgroup/mount/UID/network settings (collection/sandbox-verification.json).
 Datasette's first attempt failed due to missing pkg_resources; its receipt is
 retained and a Setuptools-pinned retry succeeded. Family verification, remaining
-surface survey fields, eight remaining primary annotations, final audit, leakage
+surface survey fields, the rest of the 100-project corpus, full-dataset audit, leakage
 review and split freeze remain open. Rich CLI's banner says v1.8.0 although the
 installed wheel metadata says 1.8.1; both are preserved. COLUMNS=80 is requested;
 renderer output widths can differ because captures have no TTY.

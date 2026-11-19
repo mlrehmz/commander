@@ -1,0 +1,1675 @@
+{
+  "annotation_version": 1,
+  "canonical_sha256": "0dbcac85307251266ffc9a0ce6d6f6e84a539fd06c6096868348d099d22a2595",
+  "command_path": [
+    "virtualenv"
+  ],
+  "source": {
+    "raw_sha256": "0dbcac85307251266ffc9a0ce6d6f6e84a539fd06c6096868348d099d22a2595",
+    "canonical_sha256": "0dbcac85307251266ffc9a0ce6d6f6e84a539fd06c6096868348d099d22a2595",
+    "canonical_text": "usage: virtualenv [--version] [--with-traceback] [-v | -q] [--read-only-app-data] [--app-data APP_DATA] [--reset-app-data] [--upgrade-embed-wheels] [--discovery {builtin}] [-p py] [--try-first-with py_exe]\n                  [--creator {builtin,cpython3-posix,venv}] [--seeder {app-data,pip}] [--no-seed] [--activators comma_sep_list] [--clear] [--no-vcs-ignore] [--system-site-packages] [--symlinks | --copies] [--no-download | --download]\n                  [--extra-search-dir d [d ...]] [--pip version] [--setuptools version] [--no-pip] [--no-setuptools] [--no-periodic-update] [--symlink-app-data] [--prompt prompt] [-h]\n                  dest\n\noptions:\n  --version                     display the version of the virtualenv package and its location, then exit\n  --with-traceback              on failure also display the stacktrace internals of virtualenv (default: False)\n  --read-only-app-data          use app data folder in read-only mode (write operations will fail with error) (default: False)\n  --app-data APP_DATA           a data folder used as cache by the virtualenv (default: /tmp/.local/share/virtualenv)\n  --reset-app-data              start with empty app data folder (default: False)\n  --upgrade-embed-wheels        trigger a manual update of the embedded wheels (default: False)\n  -h, --help                    show this help message and exit\n\nverbosity:\n  verbosity = verbose - quiet, default INFO, mapping => CRITICAL=0, ERROR=1, WARNING=2, INFO=3, DEBUG=4, NOTSET=5\n\n  -v, --verbose                 increase verbosity (default: 2)\n  -q, --quiet                   decrease verbosity (default: 0)\n\ndiscovery:\n  discover and provide a target interpreter\n\n  --discovery {builtin}         interpreter discovery method (default: builtin)\n  -p py, --python py            interpreter based on what to create environment (path/identifier) - by default use the interpreter where the tool is installed - first found wins (default: [])\n  --try-first-with py_exe       try first these interpreters before starting the discovery (default: [])\n\ncreator:\n  options for creator builtin\n\n  --creator {builtin,cpython3-posix,venv}\n                                create environment via (builtin = cpython3-posix) (default: builtin)\n  dest                          directory to create virtualenv at\n  --clear                       remove the destination directory if exist before starting (will overwrite files otherwise) (default: False)\n  --no-vcs-ignore               don't create VCS ignore directive in the destination directory (default: False)\n  --system-site-packages        give the virtual environment access to the system site-packages dir (default: False)\n  --symlinks                    try to use symlinks rather than copies, when symlinks are not the default for the platform (default: True)\n  --copies, --always-copy       try to use copies rather than symlinks, even when symlinks are the default for the platform (default: False)\n\nseeder:\n  options for seeder app-data\n\n  --seeder {app-data,pip}       seed packages install method (default: app-data)\n  --no-seed, --without-pip      do not install seed packages (default: False)\n  --no-download, --never-download\n                                pass to disable download of the latest pip/setuptools/wheel from PyPI (default: True)\n  --download                    pass to enable download of the latest pip/setuptools/wheel from PyPI (default: False)\n  --extra-search-dir d [d ...]  a path containing wheels to extend the internal wheel list (can be set 1+ times) (default: [])\n  --pip version                 version of pip to install as seed: embed, bundle, none or exact version (default: bundle)\n  --setuptools version          version of setuptools to install as seed: embed, bundle, none or exact version (default: none)\n  --no-pip                      do not install pip (default: False)\n  --no-setuptools               do not install setuptools (default: False)\n  --no-periodic-update          disable the periodic (once every 14 days) update of the embedded wheels (default: False)\n  --symlink-app-data            symlink the python packages from the app-data folder (requires seed pip>=19.3) (default: False)\n\nactivators:\n  options for activation scripts\n\n  --activators comma_sep_list   activators to generate - default is all supported (default: bash,cshell,fish,nushell,powershell,python)\n  --prompt prompt               provides an alternative prompt prefix for this environment (value of . means name of the current working directory) (default: None)\n\nconfig file /tmp/.config/virtualenv/virtualenv.ini missing (change via env var VIRTUALENV_CONFIG_FILE)\n",
+    "normalization_version": "1.0",
+    "capture_metadata": {}
+  },
+  "annotator": "codex-primary-2026-11-19",
+  "producer": "agent",
+  "blind": false,
+  "labels": [
+    "usage",
+    "usage",
+    "usage",
+    "usage",
+    "blank",
+    "section_heading",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "blank",
+    "section_heading",
+    "prose",
+    "blank",
+    "option_declaration",
+    "option_declaration",
+    "blank",
+    "section_heading",
+    "prose",
+    "blank",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "blank",
+    "section_heading",
+    "prose",
+    "blank",
+    "option_declaration",
+    "description_continuation",
+    "positional_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "blank",
+    "section_heading",
+    "prose",
+    "blank",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "blank",
+    "section_heading",
+    "prose",
+    "blank",
+    "option_declaration",
+    "option_declaration",
+    "blank",
+    "prose",
+    "blank"
+  ],
+  "reference": {
+    "schema_version": "1.0",
+    "source": {
+      "raw_sha256": "0dbcac85307251266ffc9a0ce6d6f6e84a539fd06c6096868348d099d22a2595",
+      "canonical_sha256": "0dbcac85307251266ffc9a0ce6d6f6e84a539fd06c6096868348d099d22a2595",
+      "canonical_text": "usage: virtualenv [--version] [--with-traceback] [-v | -q] [--read-only-app-data] [--app-data APP_DATA] [--reset-app-data] [--upgrade-embed-wheels] [--discovery {builtin}] [-p py] [--try-first-with py_exe]\n                  [--creator {builtin,cpython3-posix,venv}] [--seeder {app-data,pip}] [--no-seed] [--activators comma_sep_list] [--clear] [--no-vcs-ignore] [--system-site-packages] [--symlinks | --copies] [--no-download | --download]\n                  [--extra-search-dir d [d ...]] [--pip version] [--setuptools version] [--no-pip] [--no-setuptools] [--no-periodic-update] [--symlink-app-data] [--prompt prompt] [-h]\n                  dest\n\noptions:\n  --version                     display the version of the virtualenv package and its location, then exit\n  --with-traceback              on failure also display the stacktrace internals of virtualenv (default: False)\n  --read-only-app-data          use app data folder in read-only mode (write operations will fail with error) (default: False)\n  --app-data APP_DATA           a data folder used as cache by the virtualenv (default: /tmp/.local/share/virtualenv)\n  --reset-app-data              start with empty app data folder (default: False)\n  --upgrade-embed-wheels        trigger a manual update of the embedded wheels (default: False)\n  -h, --help                    show this help message and exit\n\nverbosity:\n  verbosity = verbose - quiet, default INFO, mapping => CRITICAL=0, ERROR=1, WARNING=2, INFO=3, DEBUG=4, NOTSET=5\n\n  -v, --verbose                 increase verbosity (default: 2)\n  -q, --quiet                   decrease verbosity (default: 0)\n\ndiscovery:\n  discover and provide a target interpreter\n\n  --discovery {builtin}         interpreter discovery method (default: builtin)\n  -p py, --python py            interpreter based on what to create environment (path/identifier) - by default use the interpreter where the tool is installed - first found wins (default: [])\n  --try-first-with py_exe       try first these interpreters before starting the discovery (default: [])\n\ncreator:\n  options for creator builtin\n\n  --creator {builtin,cpython3-posix,venv}\n                                create environment via (builtin = cpython3-posix) (default: builtin)\n  dest                          directory to create virtualenv at\n  --clear                       remove the destination directory if exist before starting (will overwrite files otherwise) (default: False)\n  --no-vcs-ignore               don't create VCS ignore directive in the destination directory (default: False)\n  --system-site-packages        give the virtual environment access to the system site-packages dir (default: False)\n  --symlinks                    try to use symlinks rather than copies, when symlinks are not the default for the platform (default: True)\n  --copies, --always-copy       try to use copies rather than symlinks, even when symlinks are the default for the platform (default: False)\n\nseeder:\n  options for seeder app-data\n\n  --seeder {app-data,pip}       seed packages install method (default: app-data)\n  --no-seed, --without-pip      do not install seed packages (default: False)\n  --no-download, --never-download\n                                pass to disable download of the latest pip/setuptools/wheel from PyPI (default: True)\n  --download                    pass to enable download of the latest pip/setuptools/wheel from PyPI (default: False)\n  --extra-search-dir d [d ...]  a path containing wheels to extend the internal wheel list (can be set 1+ times) (default: [])\n  --pip version                 version of pip to install as seed: embed, bundle, none or exact version (default: bundle)\n  --setuptools version          version of setuptools to install as seed: embed, bundle, none or exact version (default: none)\n  --no-pip                      do not install pip (default: False)\n  --no-setuptools               do not install setuptools (default: False)\n  --no-periodic-update          disable the periodic (once every 14 days) update of the embedded wheels (default: False)\n  --symlink-app-data            symlink the python packages from the app-data folder (requires seed pip>=19.3) (default: False)\n\nactivators:\n  options for activation scripts\n\n  --activators comma_sep_list   activators to generate - default is all supported (default: bash,cshell,fish,nushell,powershell,python)\n  --prompt prompt               provides an alternative prompt prefix for this environment (value of . means name of the current working directory) (default: None)\n\nconfig file /tmp/.config/virtualenv/virtualenv.ini missing (change via env var VIRTUALENV_CONFIG_FILE)\n",
+      "normalization_version": "1.0",
+      "capture_metadata": {}
+    },
+    "command_path": [
+      "virtualenv"
+    ],
+    "flags": [
+      {
+        "aliases": [
+          {
+            "value": "--version",
+            "literal": "--version",
+            "evidence": [
+              {
+                "line": 7,
+                "start": 2,
+                "end": 11
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "display the version of the virtualenv package and its location, then exit",
+          "literal": "display the version of the virtualenv package and its location, then exit",
+          "evidence": [
+            {
+              "line": 7,
+              "start": 32,
+              "end": 105
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--with-traceback",
+            "literal": "--with-traceback",
+            "evidence": [
+              {
+                "line": 8,
+                "start": 2,
+                "end": 18
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "on failure also display the stacktrace internals of virtualenv (default: False)",
+          "literal": "on failure also display the stacktrace internals of virtualenv (default: False)",
+          "evidence": [
+            {
+              "line": 8,
+              "start": 32,
+              "end": 111
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--read-only-app-data",
+            "literal": "--read-only-app-data",
+            "evidence": [
+              {
+                "line": 9,
+                "start": 2,
+                "end": 22
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "use app data folder in read-only mode (write operations will fail with error) (default: False)",
+          "literal": "use app data folder in read-only mode (write operations will fail with error) (default: False)",
+          "evidence": [
+            {
+              "line": 9,
+              "start": 32,
+              "end": 126
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--app-data",
+            "literal": "--app-data",
+            "evidence": [
+              {
+                "line": 10,
+                "start": 2,
+                "end": 12
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "APP_DATA",
+          "literal": "APP_DATA",
+          "evidence": [
+            {
+              "line": 10,
+              "start": 13,
+              "end": 21
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "APP_DATA",
+          "evidence": [
+            {
+              "line": 10,
+              "start": 13,
+              "end": 21
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "a data folder used as cache by the virtualenv (default: /tmp/.local/share/virtualenv)",
+          "literal": "a data folder used as cache by the virtualenv (default: /tmp/.local/share/virtualenv)",
+          "evidence": [
+            {
+              "line": 10,
+              "start": 32,
+              "end": 117
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--reset-app-data",
+            "literal": "--reset-app-data",
+            "evidence": [
+              {
+                "line": 11,
+                "start": 2,
+                "end": 18
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "start with empty app data folder (default: False)",
+          "literal": "start with empty app data folder (default: False)",
+          "evidence": [
+            {
+              "line": 11,
+              "start": 32,
+              "end": 81
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--upgrade-embed-wheels",
+            "literal": "--upgrade-embed-wheels",
+            "evidence": [
+              {
+                "line": 12,
+                "start": 2,
+                "end": 24
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "trigger a manual update of the embedded wheels (default: False)",
+          "literal": "trigger a manual update of the embedded wheels (default: False)",
+          "evidence": [
+            {
+              "line": 12,
+              "start": 32,
+              "end": 95
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "-h",
+            "literal": "-h",
+            "evidence": [
+              {
+                "line": 13,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--help",
+            "literal": "--help",
+            "evidence": [
+              {
+                "line": 13,
+                "start": 6,
+                "end": 12
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "show this help message and exit",
+          "literal": "show this help message and exit",
+          "evidence": [
+            {
+              "line": 13,
+              "start": 32,
+              "end": 63
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "-v",
+            "literal": "-v",
+            "evidence": [
+              {
+                "line": 18,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--verbose",
+            "literal": "--verbose",
+            "evidence": [
+              {
+                "line": 18,
+                "start": 6,
+                "end": 15
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "increase verbosity (default: 2)",
+          "literal": "increase verbosity (default: 2)",
+          "evidence": [
+            {
+              "line": 18,
+              "start": 32,
+              "end": 63
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "-q",
+            "literal": "-q",
+            "evidence": [
+              {
+                "line": 19,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--quiet",
+            "literal": "--quiet",
+            "evidence": [
+              {
+                "line": 19,
+                "start": 6,
+                "end": 13
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "decrease verbosity (default: 0)",
+          "literal": "decrease verbosity (default: 0)",
+          "evidence": [
+            {
+              "line": 19,
+              "start": 32,
+              "end": 63
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--discovery",
+            "literal": "--discovery",
+            "evidence": [
+              {
+                "line": 24,
+                "start": 2,
+                "end": 13
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "{builtin}",
+          "literal": "{builtin}",
+          "evidence": [
+            {
+              "line": 24,
+              "start": 14,
+              "end": 23
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "{builtin}",
+          "evidence": [
+            {
+              "line": 24,
+              "start": 14,
+              "end": 23
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "interpreter discovery method (default: builtin)",
+          "literal": "interpreter discovery method (default: builtin)",
+          "evidence": [
+            {
+              "line": 24,
+              "start": 32,
+              "end": 79
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "-p",
+            "literal": "-p",
+            "evidence": [
+              {
+                "line": 25,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--python",
+            "literal": "--python",
+            "evidence": [
+              {
+                "line": 25,
+                "start": 9,
+                "end": 17
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "py",
+          "literal": "py",
+          "evidence": [
+            {
+              "line": 25,
+              "start": 18,
+              "end": 20
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "py",
+          "evidence": [
+            {
+              "line": 25,
+              "start": 18,
+              "end": 20
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "interpreter based on what to create environment (path/identifier) - by default use the interpreter where the tool is installed - first found wins (default: [])",
+          "literal": "interpreter based on what to create environment (path/identifier) - by default use the interpreter where the tool is installed - first found wins (default: [])",
+          "evidence": [
+            {
+              "line": 25,
+              "start": 32,
+              "end": 191
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--try-first-with",
+            "literal": "--try-first-with",
+            "evidence": [
+              {
+                "line": 26,
+                "start": 2,
+                "end": 18
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "py_exe",
+          "literal": "py_exe",
+          "evidence": [
+            {
+              "line": 26,
+              "start": 19,
+              "end": 25
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "py_exe",
+          "evidence": [
+            {
+              "line": 26,
+              "start": 19,
+              "end": 25
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "try first these interpreters before starting the discovery (default: [])",
+          "literal": "try first these interpreters before starting the discovery (default: [])",
+          "evidence": [
+            {
+              "line": 26,
+              "start": 32,
+              "end": 104
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--creator",
+            "literal": "--creator",
+            "evidence": [
+              {
+                "line": 31,
+                "start": 2,
+                "end": 11
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "{builtin,cpython3-posix,venv}",
+          "literal": "{builtin,cpython3-posix,venv}",
+          "evidence": [
+            {
+              "line": 31,
+              "start": 12,
+              "end": 41
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "{builtin,cpython3-posix,venv}",
+          "evidence": [
+            {
+              "line": 31,
+              "start": 12,
+              "end": 41
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "create environment via (builtin = cpython3-posix) (default: builtin)",
+          "literal": "create environment via (builtin = cpython3-posix) (default: builtin)",
+          "evidence": [
+            {
+              "line": 32,
+              "start": 32,
+              "end": 100
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--clear",
+            "literal": "--clear",
+            "evidence": [
+              {
+                "line": 34,
+                "start": 2,
+                "end": 9
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "remove the destination directory if exist before starting (will overwrite files otherwise) (default: False)",
+          "literal": "remove the destination directory if exist before starting (will overwrite files otherwise) (default: False)",
+          "evidence": [
+            {
+              "line": 34,
+              "start": 32,
+              "end": 139
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--no-vcs-ignore",
+            "literal": "--no-vcs-ignore",
+            "evidence": [
+              {
+                "line": 35,
+                "start": 2,
+                "end": 17
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "don't create VCS ignore directive in the destination directory (default: False)",
+          "literal": "don't create VCS ignore directive in the destination directory (default: False)",
+          "evidence": [
+            {
+              "line": 35,
+              "start": 32,
+              "end": 111
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--system-site-packages",
+            "literal": "--system-site-packages",
+            "evidence": [
+              {
+                "line": 36,
+                "start": 2,
+                "end": 24
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "give the virtual environment access to the system site-packages dir (default: False)",
+          "literal": "give the virtual environment access to the system site-packages dir (default: False)",
+          "evidence": [
+            {
+              "line": 36,
+              "start": 32,
+              "end": 116
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--symlinks",
+            "literal": "--symlinks",
+            "evidence": [
+              {
+                "line": 37,
+                "start": 2,
+                "end": 12
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "try to use symlinks rather than copies, when symlinks are not the default for the platform (default: True)",
+          "literal": "try to use symlinks rather than copies, when symlinks are not the default for the platform (default: True)",
+          "evidence": [
+            {
+              "line": 37,
+              "start": 32,
+              "end": 138
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--copies",
+            "literal": "--copies",
+            "evidence": [
+              {
+                "line": 38,
+                "start": 2,
+                "end": 10
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--always-copy",
+            "literal": "--always-copy",
+            "evidence": [
+              {
+                "line": 38,
+                "start": 12,
+                "end": 25
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "try to use copies rather than symlinks, even when symlinks are the default for the platform (default: False)",
+          "literal": "try to use copies rather than symlinks, even when symlinks are the default for the platform (default: False)",
+          "evidence": [
+            {
+              "line": 38,
+              "start": 32,
+              "end": 140
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--seeder",
+            "literal": "--seeder",
+            "evidence": [
+              {
+                "line": 43,
+                "start": 2,
+                "end": 10
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "{app-data,pip}",
+          "literal": "{app-data,pip}",
+          "evidence": [
+            {
+              "line": 43,
+              "start": 11,
+              "end": 25
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "{app-data,pip}",
+          "evidence": [
+            {
+              "line": 43,
+              "start": 11,
+              "end": 25
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "seed packages install method (default: app-data)",
+          "literal": "seed packages install method (default: app-data)",
+          "evidence": [
+            {
+              "line": 43,
+              "start": 32,
+              "end": 80
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--no-seed",
+            "literal": "--no-seed",
+            "evidence": [
+              {
+                "line": 44,
+                "start": 2,
+                "end": 11
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--without-pip",
+            "literal": "--without-pip",
+            "evidence": [
+              {
+                "line": 44,
+                "start": 13,
+                "end": 26
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "do not install seed packages (default: False)",
+          "literal": "do not install seed packages (default: False)",
+          "evidence": [
+            {
+              "line": 44,
+              "start": 32,
+              "end": 77
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--no-download",
+            "literal": "--no-download",
+            "evidence": [
+              {
+                "line": 45,
+                "start": 2,
+                "end": 15
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--never-download",
+            "literal": "--never-download",
+            "evidence": [
+              {
+                "line": 45,
+                "start": 17,
+                "end": 33
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "pass to disable download of the latest pip/setuptools/wheel from PyPI (default: True)",
+          "literal": "pass to disable download of the latest pip/setuptools/wheel from PyPI (default: True)",
+          "evidence": [
+            {
+              "line": 46,
+              "start": 32,
+              "end": 117
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--download",
+            "literal": "--download",
+            "evidence": [
+              {
+                "line": 47,
+                "start": 2,
+                "end": 12
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "pass to enable download of the latest pip/setuptools/wheel from PyPI (default: False)",
+          "literal": "pass to enable download of the latest pip/setuptools/wheel from PyPI (default: False)",
+          "evidence": [
+            {
+              "line": 47,
+              "start": 32,
+              "end": 117
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--extra-search-dir",
+            "literal": "--extra-search-dir",
+            "evidence": [
+              {
+                "line": 48,
+                "start": 2,
+                "end": 20
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "d [d ...]",
+          "literal": "d [d ...]",
+          "evidence": [
+            {
+              "line": 48,
+              "start": 21,
+              "end": 30
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "d [d ...]",
+          "evidence": [
+            {
+              "line": 48,
+              "start": 21,
+              "end": 30
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "a path containing wheels to extend the internal wheel list (can be set 1+ times) (default: [])",
+          "literal": "a path containing wheels to extend the internal wheel list (can be set 1+ times) (default: [])",
+          "evidence": [
+            {
+              "line": 48,
+              "start": 32,
+              "end": 126
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--pip",
+            "literal": "--pip",
+            "evidence": [
+              {
+                "line": 49,
+                "start": 2,
+                "end": 7
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "version",
+          "literal": "version",
+          "evidence": [
+            {
+              "line": 49,
+              "start": 8,
+              "end": 15
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "version",
+          "evidence": [
+            {
+              "line": 49,
+              "start": 8,
+              "end": 15
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "version of pip to install as seed: embed, bundle, none or exact version (default: bundle)",
+          "literal": "version of pip to install as seed: embed, bundle, none or exact version (default: bundle)",
+          "evidence": [
+            {
+              "line": 49,
+              "start": 32,
+              "end": 121
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--setuptools",
+            "literal": "--setuptools",
+            "evidence": [
+              {
+                "line": 50,
+                "start": 2,
+                "end": 14
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "version",
+          "literal": "version",
+          "evidence": [
+            {
+              "line": 50,
+              "start": 15,
+              "end": 22
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "version",
+          "evidence": [
+            {
+              "line": 50,
+              "start": 15,
+              "end": 22
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "version of setuptools to install as seed: embed, bundle, none or exact version (default: none)",
+          "literal": "version of setuptools to install as seed: embed, bundle, none or exact version (default: none)",
+          "evidence": [
+            {
+              "line": 50,
+              "start": 32,
+              "end": 126
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--no-pip",
+            "literal": "--no-pip",
+            "evidence": [
+              {
+                "line": 51,
+                "start": 2,
+                "end": 10
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "do not install pip (default: False)",
+          "literal": "do not install pip (default: False)",
+          "evidence": [
+            {
+              "line": 51,
+              "start": 32,
+              "end": 67
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--no-setuptools",
+            "literal": "--no-setuptools",
+            "evidence": [
+              {
+                "line": 52,
+                "start": 2,
+                "end": 17
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "do not install setuptools (default: False)",
+          "literal": "do not install setuptools (default: False)",
+          "evidence": [
+            {
+              "line": 52,
+              "start": 32,
+              "end": 74
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--no-periodic-update",
+            "literal": "--no-periodic-update",
+            "evidence": [
+              {
+                "line": 53,
+                "start": 2,
+                "end": 22
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "disable the periodic (once every 14 days) update of the embedded wheels (default: False)",
+          "literal": "disable the periodic (once every 14 days) update of the embedded wheels (default: False)",
+          "evidence": [
+            {
+              "line": 53,
+              "start": 32,
+              "end": 120
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--symlink-app-data",
+            "literal": "--symlink-app-data",
+            "evidence": [
+              {
+                "line": 54,
+                "start": 2,
+                "end": 20
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "symlink the python packages from the app-data folder (requires seed pip>=19.3) (default: False)",
+          "literal": "symlink the python packages from the app-data folder (requires seed pip>=19.3) (default: False)",
+          "evidence": [
+            {
+              "line": 54,
+              "start": 32,
+              "end": 127
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--activators",
+            "literal": "--activators",
+            "evidence": [
+              {
+                "line": 59,
+                "start": 2,
+                "end": 14
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "comma_sep_list",
+          "literal": "comma_sep_list",
+          "evidence": [
+            {
+              "line": 59,
+              "start": 15,
+              "end": 29
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "comma_sep_list",
+          "evidence": [
+            {
+              "line": 59,
+              "start": 15,
+              "end": 29
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "activators to generate - default is all supported (default: bash,cshell,fish,nushell,powershell,python)",
+          "literal": "activators to generate - default is all supported (default: bash,cshell,fish,nushell,powershell,python)",
+          "evidence": [
+            {
+              "line": 59,
+              "start": 32,
+              "end": 135
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--prompt",
+            "literal": "--prompt",
+            "evidence": [
+              {
+                "line": 60,
+                "start": 2,
+                "end": 10
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "prompt",
+          "literal": "prompt",
+          "evidence": [
+            {
+              "line": 60,
+              "start": 11,
+              "end": 17
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "prompt",
+          "evidence": [
+            {
+              "line": 60,
+              "start": 11,
+              "end": 17
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "provides an alternative prompt prefix for this environment (value of . means name of the current working directory) (default: None)",
+          "literal": "provides an alternative prompt prefix for this environment (value of . means name of the current working directory) (default: None)",
+          "evidence": [
+            {
+              "line": 60,
+              "start": 32,
+              "end": 163
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      }
+    ],
+    "subcommands": [],
+    "positionals": [
+      {
+        "name": {
+          "value": "dest",
+          "literal": "dest",
+          "evidence": [
+            {
+              "line": 33,
+              "start": 2,
+              "end": 6
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "directory to create virtualenv at",
+          "literal": "directory to create virtualenv at",
+          "evidence": [
+            {
+              "line": 33,
+              "start": 32,
+              "end": 65
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      }
+    ],
+    "status": "ok",
+    "diagnostics": [],
+    "engine": {
+      "name": "manual-agent-annotation",
+      "version": "primary-1",
+      "threshold": 0.0,
+      "calibrated": false
+    }
+  },
+  "adjudicated": false,
+  "notes": [
+    "Primary agent source pass; no parser/tagger outputs read.",
+    "Optional semantics without a documented supported interpretation stay unknown. Blind comparison pending."
+  ]
+}

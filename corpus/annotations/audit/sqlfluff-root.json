@@ -1,0 +1,41 @@
+{
+  "audit_version": 1,
+  "auditor": "codex-source-audit-2026-11-19",
+  "producer": "agent",
+  "date": "2026-11-19",
+  "no_model_predictions_used": true,
+  "independence_statement": "Source-only audit of final adjudicated packets. Auditor previously performed the distinct blind agent annotations and used that manually constructed source inventory for completeness cross-checks. This audit is not human gold or an independently sampled statistical accuracy evaluation.",
+  "source_report_sha256": "31dfc49389d23d7a211c3e7696e9837f5af2c08c016b26ac0025cb8eb24af1ff",
+  "page": {
+    "id": "sqlfluff-root",
+    "source_path": "corpus/intake/sqlfluff-root.txt",
+    "adjudicated_packet_path": "corpus/annotations/adjudicated/sqlfluff-root.json",
+    "canonical_sha256": "a25526f4b18f911614ca5c3a124fdcbf95d0054667c2c3611a28c05880cf6dec",
+    "adjudicated_packet_sha256": "a2b5bb530c81d4f8e7f54d46167bcefff585fdeb14910f30a80e1b2cd6a7adea",
+    "counts": {
+      "canonical_lines_including_final_empty": 30,
+      "flags": 2,
+      "advertised_command_spellings": 8,
+      "positionals": 0
+    },
+    "checks": {
+      "raw_source_canonicalization_and_hash": "pass",
+      "packet_validation": "pass",
+      "evidence_bounds_and_literal_fidelity": "pass",
+      "alias_token_boundaries": "pass",
+      "transformations_and_provenance": "pass",
+      "description_whitespace_and_nonempty_spans": "pass",
+      "direct_default_choices_fidelity": "pass",
+      "explicit_declarations_and_advertised_entries": "pass",
+      "all_line_labels_and_final_empty_line": "pass",
+      "description_continuation_coverage": "pass"
+    },
+    "source_checks": [
+      "Both option rows and all eight advertised command rows are represented.",
+      "Examples heading is section_heading; code-block directive and shell examples are other, with no additional commands inferred.",
+      "Usage COMMAND and ARGS are grammar placeholders rather than separately advertised positionals; valueless-looking flags retain unknown arity."
+    ],
+    "findings": [],
+    "remaining_source_evidence_omissions_detected": false
+  }
+}

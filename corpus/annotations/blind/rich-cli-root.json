@@ -1,0 +1,2564 @@
+{
+  "annotation_version": 1,
+  "canonical_sha256": "adeff8e0238d9e819b726b92f66bdf1dc8039fe683dca05179c179c36879e333",
+  "command_path": [
+    "rich"
+  ],
+  "source": {
+    "raw_sha256": "adeff8e0238d9e819b726b92f66bdf1dc8039fe683dca05179c179c36879e333",
+    "canonical_sha256": "adeff8e0238d9e819b726b92f66bdf1dc8039fe683dca05179c179c36879e333",
+    "canonical_text": "                               Rich CLI v1.8.0 🤑                               \n                                                                                \n                    Rich text and formatting in the terminal                    \n                                                                                \nUsage: rich [OPTIONS] <PATH,TEXT,URL, or '-'>\n\n╭─ Options ────────────────────────────────────────────────────────────────────╮\n│  -p  --print                          Print console markup. See              │\n│                                       https://rich.readthedocs.io/en/lates…  │\n│  -u  --rule                           Display a horizontal rule.             │\n│  -J  --json                           Display as JSON.                       │\n│  -m  --markdown                       Display as markdown.                   │\n│      --rst                            Display restructured text.             │\n│      --csv                            Display CSV as a table.                │\n│      --ipynb                          Display Jupyter notebook.              │\n│      --syntax                         Syntax highlighting.                   │\n│      --inspect                        Inspect a python object.               │\n│  -h  --head LINES                     Display first LINES of the file        │\n│                                       (requires --syntax or --csv).          │\n│  -t  --tail LINES                     Display last LINES of the file         │\n│                                       (requires --syntax or --csv).          │\n│  -j  --emoji                          Enable emoji code. e.g. :sparkle:      │\n│  -l  --left                           Align to left.                         │\n│  -r  --right                          Align to right.                        │\n│  -c  --center                         Align to center.                       │\n│  -L  --text-left                      Justify text to left.                  │\n│  -R  --text-right                     Justify text to right.                 │\n│  -C  --text-center                    Justify text to center.                │\n│  -F  --text-full                      Justify text to both left and right    │\n│                                       edges.                                 │\n│      --soft                           Enable soft wrapping of text           │\n│                                       (requires --print).                    │\n│  -e  --expand                         Expand to full width (requires         │\n│                                       --panel).                              │\n│  -w  --width SIZE                     Fit output to SIZE characters.         │\n│  -W  --max-width SIZE                 Set maximum width to SIZE characters.  │\n│  -s  --style STYLE                    Set text style to STYLE.               │\n│      --rule-style STYLE               Set rule style to STYLE.               │\n│      --rule-char CHARACTER            Use CHARACTER to generate a line with  │\n│                                       --rule.                                │\n│  -d  --padding TOP,RIGHT,BOTTOM,LEFT  Padding around output. 1, 2 or 4       │\n│                                       comma separated integers, e.g. 2,4     │\n│  -a  --panel BOX                      Set panel type to BOX. ascii, ascii2,  │\n│                                       double, heavy, none, rounded, square   │\n│  -S  --panel-style STYLE              Set the panel style to STYLE           │\n│                                       (requires --panel).                    │\n│      --theme THEME                    Set syntax theme to THEME. See         │\n│                                       https://pygments.org/styles/           │\n│  -n  --line-numbers                   Enable line number in syntax.          │\n│  -g  --guides                         Enable indentation guides in syntax    │\n│                                       highlighting                           │\n│  -x  --lexer LEXER                    Use LEXER for syntax highlighting.     │\n│                                       See https://pygments.org/docs/lexers/  │\n│  -y  --hyperlinks                     Render hyperlinks in markdown.         │\n│      --no-wrap                        Don't word wrap syntax highlighted     │\n│                                       files.                                 │\n│      --title TEXT                     Set panel title to TEXT.               │\n│      --caption TEXT                   Set panel caption to TEXT.             │\n│      --force-terminal                 Force terminal output when not         │\n│                                       writing to a terminal.                 │\n│  -o  --export-html PATH               Write HTML to PATH.                    │\n│      --export-svg PATH                Write SVG to PATH.                     │\n│      --pager                          Display in an interactive pager.       │\n│  -v  --version                        Print version and exit.                │\n│      --help                           Show this message and exit.            │\n╰──────────────────────────────────────────────────────────────────────────────╯\n♥ https://www.textualize.io                                                     \n\n",
+    "normalization_version": "1.0",
+    "capture_metadata": {}
+  },
+  "annotator": "codex-blind-2026-11-19",
+  "producer": "agent",
+  "blind": true,
+  "labels": [
+    "prose",
+    "blank",
+    "prose",
+    "blank",
+    "usage",
+    "blank",
+    "section_heading",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "other",
+    "prose",
+    "blank",
+    "blank"
+  ],
+  "reference": {
+    "schema_version": "1.0",
+    "command_path": [
+      "rich"
+    ],
+    "source": {
+      "raw_sha256": "adeff8e0238d9e819b726b92f66bdf1dc8039fe683dca05179c179c36879e333",
+      "canonical_sha256": "adeff8e0238d9e819b726b92f66bdf1dc8039fe683dca05179c179c36879e333",
+      "canonical_text": "                               Rich CLI v1.8.0 🤑                               \n                                                                                \n                    Rich text and formatting in the terminal                    \n                                                                                \nUsage: rich [OPTIONS] <PATH,TEXT,URL, or '-'>\n\n╭─ Options ────────────────────────────────────────────────────────────────────╮\n│  -p  --print                          Print console markup. See              │\n│                                       https://rich.readthedocs.io/en/lates…  │\n│  -u  --rule                           Display a horizontal rule.             │\n│  -J  --json                           Display as JSON.                       │\n│  -m  --markdown                       Display as markdown.                   │\n│      --rst                            Display restructured text.             │\n│      --csv                            Display CSV as a table.                │\n│      --ipynb                          Display Jupyter notebook.              │\n│      --syntax                         Syntax highlighting.                   │\n│      --inspect                        Inspect a python object.               │\n│  -h  --head LINES                     Display first LINES of the file        │\n│                                       (requires --syntax or --csv).          │\n│  -t  --tail LINES                     Display last LINES of the file         │\n│                                       (requires --syntax or --csv).          │\n│  -j  --emoji                          Enable emoji code. e.g. :sparkle:      │\n│  -l  --left                           Align to left.                         │\n│  -r  --right                          Align to right.                        │\n│  -c  --center                         Align to center.                       │\n│  -L  --text-left                      Justify text to left.                  │\n│  -R  --text-right                     Justify text to right.                 │\n│  -C  --text-center                    Justify text to center.                │\n│  -F  --text-full                      Justify text to both left and right    │\n│                                       edges.                                 │\n│      --soft                           Enable soft wrapping of text           │\n│                                       (requires --print).                    │\n│  -e  --expand                         Expand to full width (requires         │\n│                                       --panel).                              │\n│  -w  --width SIZE                     Fit output to SIZE characters.         │\n│  -W  --max-width SIZE                 Set maximum width to SIZE characters.  │\n│  -s  --style STYLE                    Set text style to STYLE.               │\n│      --rule-style STYLE               Set rule style to STYLE.               │\n│      --rule-char CHARACTER            Use CHARACTER to generate a line with  │\n│                                       --rule.                                │\n│  -d  --padding TOP,RIGHT,BOTTOM,LEFT  Padding around output. 1, 2 or 4       │\n│                                       comma separated integers, e.g. 2,4     │\n│  -a  --panel BOX                      Set panel type to BOX. ascii, ascii2,  │\n│                                       double, heavy, none, rounded, square   │\n│  -S  --panel-style STYLE              Set the panel style to STYLE           │\n│                                       (requires --panel).                    │\n│      --theme THEME                    Set syntax theme to THEME. See         │\n│                                       https://pygments.org/styles/           │\n│  -n  --line-numbers                   Enable line number in syntax.          │\n│  -g  --guides                         Enable indentation guides in syntax    │\n│                                       highlighting                           │\n│  -x  --lexer LEXER                    Use LEXER for syntax highlighting.     │\n│                                       See https://pygments.org/docs/lexers/  │\n│  -y  --hyperlinks                     Render hyperlinks in markdown.         │\n│      --no-wrap                        Don't word wrap syntax highlighted     │\n│                                       files.                                 │\n│      --title TEXT                     Set panel title to TEXT.               │\n│      --caption TEXT                   Set panel caption to TEXT.             │\n│      --force-terminal                 Force terminal output when not         │\n│                                       writing to a terminal.                 │\n│  -o  --export-html PATH               Write HTML to PATH.                    │\n│      --export-svg PATH                Write SVG to PATH.                     │\n│      --pager                          Display in an interactive pager.       │\n│  -v  --version                        Print version and exit.                │\n│      --help                           Show this message and exit.            │\n╰──────────────────────────────────────────────────────────────────────────────╯\n♥ https://www.textualize.io                                                     \n\n",
+      "normalization_version": "1.0",
+      "capture_metadata": {}
+    },
+    "flags": [
+      {
+        "aliases": [
+          {
+            "value": "-p",
+            "literal": "-p",
+            "evidence": [
+              {
+                "line": 8,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--print",
+            "literal": "--print",
+            "evidence": [
+              {
+                "line": 8,
+                "start": 7,
+                "end": 14
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Print console markup. See https://rich.readthedocs.io/en/lates…",
+          "literal": "Print console markup. See\nhttps://rich.readthedocs.io/en/lates…",
+          "evidence": [
+            {
+              "line": 8,
+              "start": 40,
+              "end": 65
+            },
+            {
+              "line": 9,
+              "start": 40,
+              "end": 77
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-u",
+            "literal": "-u",
+            "evidence": [
+              {
+                "line": 10,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--rule",
+            "literal": "--rule",
+            "evidence": [
+              {
+                "line": 10,
+                "start": 7,
+                "end": 13
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Display a horizontal rule.",
+          "literal": "Display a horizontal rule.",
+          "evidence": [
+            {
+              "line": 10,
+              "start": 40,
+              "end": 66
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-J",
+            "literal": "-J",
+            "evidence": [
+              {
+                "line": 11,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--json",
+            "literal": "--json",
+            "evidence": [
+              {
+                "line": 11,
+                "start": 7,
+                "end": 13
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Display as JSON.",
+          "literal": "Display as JSON.",
+          "evidence": [
+            {
+              "line": 11,
+              "start": 40,
+              "end": 56
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-m",
+            "literal": "-m",
+            "evidence": [
+              {
+                "line": 12,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--markdown",
+            "literal": "--markdown",
+            "evidence": [
+              {
+                "line": 12,
+                "start": 7,
+                "end": 17
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Display as markdown.",
+          "literal": "Display as markdown.",
+          "evidence": [
+            {
+              "line": 12,
+              "start": 40,
+              "end": 60
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--rst",
+            "literal": "--rst",
+            "evidence": [
+              {
+                "line": 13,
+                "start": 7,
+                "end": 12
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Display restructured text.",
+          "literal": "Display restructured text.",
+          "evidence": [
+            {
+              "line": 13,
+              "start": 40,
+              "end": 66
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--csv",
+            "literal": "--csv",
+            "evidence": [
+              {
+                "line": 14,
+                "start": 7,
+                "end": 12
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Display CSV as a table.",
+          "literal": "Display CSV as a table.",
+          "evidence": [
+            {
+              "line": 14,
+              "start": 40,
+              "end": 63
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--ipynb",
+            "literal": "--ipynb",
+            "evidence": [
+              {
+                "line": 15,
+                "start": 7,
+                "end": 14
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Display Jupyter notebook.",
+          "literal": "Display Jupyter notebook.",
+          "evidence": [
+            {
+              "line": 15,
+              "start": 40,
+              "end": 65
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--syntax",
+            "literal": "--syntax",
+            "evidence": [
+              {
+                "line": 16,
+                "start": 7,
+                "end": 15
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Syntax highlighting.",
+          "literal": "Syntax highlighting.",
+          "evidence": [
+            {
+              "line": 16,
+              "start": 40,
+              "end": 60
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--inspect",
+            "literal": "--inspect",
+            "evidence": [
+              {
+                "line": 17,
+                "start": 7,
+                "end": 16
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Inspect a python object.",
+          "literal": "Inspect a python object.",
+          "evidence": [
+            {
+              "line": 17,
+              "start": 40,
+              "end": 64
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-h",
+            "literal": "-h",
+            "evidence": [
+              {
+                "line": 18,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--head",
+            "literal": "--head",
+            "evidence": [
+              {
+                "line": 18,
+                "start": 7,
+                "end": 13
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "LINES",
+          "literal": "LINES",
+          "evidence": [
+            {
+              "line": 18,
+              "start": 14,
+              "end": 19
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "LINES",
+          "evidence": [
+            {
+              "line": 18,
+              "start": 14,
+              "end": 19
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Display first LINES of the file (requires --syntax or --csv).",
+          "literal": "Display first LINES of the file\n(requires --syntax or --csv).",
+          "evidence": [
+            {
+              "line": 18,
+              "start": 40,
+              "end": 71
+            },
+            {
+              "line": 19,
+              "start": 40,
+              "end": 69
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-t",
+            "literal": "-t",
+            "evidence": [
+              {
+                "line": 20,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--tail",
+            "literal": "--tail",
+            "evidence": [
+              {
+                "line": 20,
+                "start": 7,
+                "end": 13
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "LINES",
+          "literal": "LINES",
+          "evidence": [
+            {
+              "line": 20,
+              "start": 14,
+              "end": 19
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "LINES",
+          "evidence": [
+            {
+              "line": 20,
+              "start": 14,
+              "end": 19
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Display last LINES of the file (requires --syntax or --csv).",
+          "literal": "Display last LINES of the file\n(requires --syntax or --csv).",
+          "evidence": [
+            {
+              "line": 20,
+              "start": 40,
+              "end": 70
+            },
+            {
+              "line": 21,
+              "start": 40,
+              "end": 69
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-j",
+            "literal": "-j",
+            "evidence": [
+              {
+                "line": 22,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--emoji",
+            "literal": "--emoji",
+            "evidence": [
+              {
+                "line": 22,
+                "start": 7,
+                "end": 14
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Enable emoji code. e.g. :sparkle:",
+          "literal": "Enable emoji code. e.g. :sparkle:",
+          "evidence": [
+            {
+              "line": 22,
+              "start": 40,
+              "end": 73
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-l",
+            "literal": "-l",
+            "evidence": [
+              {
+                "line": 23,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--left",
+            "literal": "--left",
+            "evidence": [
+              {
+                "line": 23,
+                "start": 7,
+                "end": 13
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Align to left.",
+          "literal": "Align to left.",
+          "evidence": [
+            {
+              "line": 23,
+              "start": 40,
+              "end": 54
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-r",
+            "literal": "-r",
+            "evidence": [
+              {
+                "line": 24,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--right",
+            "literal": "--right",
+            "evidence": [
+              {
+                "line": 24,
+                "start": 7,
+                "end": 14
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Align to right.",
+          "literal": "Align to right.",
+          "evidence": [
+            {
+              "line": 24,
+              "start": 40,
+              "end": 55
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-c",
+            "literal": "-c",
+            "evidence": [
+              {
+                "line": 25,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--center",
+            "literal": "--center",
+            "evidence": [
+              {
+                "line": 25,
+                "start": 7,
+                "end": 15
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Align to center.",
+          "literal": "Align to center.",
+          "evidence": [
+            {
+              "line": 25,
+              "start": 40,
+              "end": 56
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-L",
+            "literal": "-L",
+            "evidence": [
+              {
+                "line": 26,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--text-left",
+            "literal": "--text-left",
+            "evidence": [
+              {
+                "line": 26,
+                "start": 7,
+                "end": 18
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Justify text to left.",
+          "literal": "Justify text to left.",
+          "evidence": [
+            {
+              "line": 26,
+              "start": 40,
+              "end": 61
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-R",
+            "literal": "-R",
+            "evidence": [
+              {
+                "line": 27,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--text-right",
+            "literal": "--text-right",
+            "evidence": [
+              {
+                "line": 27,
+                "start": 7,
+                "end": 19
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Justify text to right.",
+          "literal": "Justify text to right.",
+          "evidence": [
+            {
+              "line": 27,
+              "start": 40,
+              "end": 62
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-C",
+            "literal": "-C",
+            "evidence": [
+              {
+                "line": 28,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--text-center",
+            "literal": "--text-center",
+            "evidence": [
+              {
+                "line": 28,
+                "start": 7,
+                "end": 20
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Justify text to center.",
+          "literal": "Justify text to center.",
+          "evidence": [
+            {
+              "line": 28,
+              "start": 40,
+              "end": 63
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-F",
+            "literal": "-F",
+            "evidence": [
+              {
+                "line": 29,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--text-full",
+            "literal": "--text-full",
+            "evidence": [
+              {
+                "line": 29,
+                "start": 7,
+                "end": 18
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Justify text to both left and right edges.",
+          "literal": "Justify text to both left and right\nedges.",
+          "evidence": [
+            {
+              "line": 29,
+              "start": 40,
+              "end": 75
+            },
+            {
+              "line": 30,
+              "start": 40,
+              "end": 46
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--soft",
+            "literal": "--soft",
+            "evidence": [
+              {
+                "line": 31,
+                "start": 7,
+                "end": 13
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Enable soft wrapping of text (requires --print).",
+          "literal": "Enable soft wrapping of text\n(requires --print).",
+          "evidence": [
+            {
+              "line": 31,
+              "start": 40,
+              "end": 68
+            },
+            {
+              "line": 32,
+              "start": 40,
+              "end": 59
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-e",
+            "literal": "-e",
+            "evidence": [
+              {
+                "line": 33,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--expand",
+            "literal": "--expand",
+            "evidence": [
+              {
+                "line": 33,
+                "start": 7,
+                "end": 15
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Expand to full width (requires --panel).",
+          "literal": "Expand to full width (requires\n--panel).",
+          "evidence": [
+            {
+              "line": 33,
+              "start": 40,
+              "end": 70
+            },
+            {
+              "line": 34,
+              "start": 40,
+              "end": 49
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-w",
+            "literal": "-w",
+            "evidence": [
+              {
+                "line": 35,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--width",
+            "literal": "--width",
+            "evidence": [
+              {
+                "line": 35,
+                "start": 7,
+                "end": 14
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "SIZE",
+          "literal": "SIZE",
+          "evidence": [
+            {
+              "line": 35,
+              "start": 15,
+              "end": 19
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "SIZE",
+          "evidence": [
+            {
+              "line": 35,
+              "start": 15,
+              "end": 19
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Fit output to SIZE characters.",
+          "literal": "Fit output to SIZE characters.",
+          "evidence": [
+            {
+              "line": 35,
+              "start": 40,
+              "end": 70
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-W",
+            "literal": "-W",
+            "evidence": [
+              {
+                "line": 36,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--max-width",
+            "literal": "--max-width",
+            "evidence": [
+              {
+                "line": 36,
+                "start": 7,
+                "end": 18
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "SIZE",
+          "literal": "SIZE",
+          "evidence": [
+            {
+              "line": 36,
+              "start": 19,
+              "end": 23
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "SIZE",
+          "evidence": [
+            {
+              "line": 36,
+              "start": 19,
+              "end": 23
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Set maximum width to SIZE characters.",
+          "literal": "Set maximum width to SIZE characters.",
+          "evidence": [
+            {
+              "line": 36,
+              "start": 40,
+              "end": 77
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-s",
+            "literal": "-s",
+            "evidence": [
+              {
+                "line": 37,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--style",
+            "literal": "--style",
+            "evidence": [
+              {
+                "line": 37,
+                "start": 7,
+                "end": 14
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "STYLE",
+          "literal": "STYLE",
+          "evidence": [
+            {
+              "line": 37,
+              "start": 15,
+              "end": 20
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "STYLE",
+          "evidence": [
+            {
+              "line": 37,
+              "start": 15,
+              "end": 20
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Set text style to STYLE.",
+          "literal": "Set text style to STYLE.",
+          "evidence": [
+            {
+              "line": 37,
+              "start": 40,
+              "end": 64
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--rule-style",
+            "literal": "--rule-style",
+            "evidence": [
+              {
+                "line": 38,
+                "start": 7,
+                "end": 19
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "STYLE",
+          "literal": "STYLE",
+          "evidence": [
+            {
+              "line": 38,
+              "start": 20,
+              "end": 25
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "STYLE",
+          "evidence": [
+            {
+              "line": 38,
+              "start": 20,
+              "end": 25
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Set rule style to STYLE.",
+          "literal": "Set rule style to STYLE.",
+          "evidence": [
+            {
+              "line": 38,
+              "start": 40,
+              "end": 64
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--rule-char",
+            "literal": "--rule-char",
+            "evidence": [
+              {
+                "line": 39,
+                "start": 7,
+                "end": 18
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "CHARACTER",
+          "literal": "CHARACTER",
+          "evidence": [
+            {
+              "line": 39,
+              "start": 19,
+              "end": 28
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "CHARACTER",
+          "evidence": [
+            {
+              "line": 39,
+              "start": 19,
+              "end": 28
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Use CHARACTER to generate a line with --rule.",
+          "literal": "Use CHARACTER to generate a line with\n--rule.",
+          "evidence": [
+            {
+              "line": 39,
+              "start": 40,
+              "end": 77
+            },
+            {
+              "line": 40,
+              "start": 40,
+              "end": 47
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-d",
+            "literal": "-d",
+            "evidence": [
+              {
+                "line": 41,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--padding",
+            "literal": "--padding",
+            "evidence": [
+              {
+                "line": 41,
+                "start": 7,
+                "end": 16
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "TOP,RIGHT,BOTTOM,LEFT",
+          "literal": "TOP,RIGHT,BOTTOM,LEFT",
+          "evidence": [
+            {
+              "line": 41,
+              "start": 17,
+              "end": 38
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "TOP,RIGHT,BOTTOM,LEFT",
+          "evidence": [
+            {
+              "line": 41,
+              "start": 17,
+              "end": 38
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Padding around output. 1, 2 or 4 comma separated integers, e.g. 2,4",
+          "literal": "Padding around output. 1, 2 or 4\ncomma separated integers, e.g. 2,4",
+          "evidence": [
+            {
+              "line": 41,
+              "start": 40,
+              "end": 72
+            },
+            {
+              "line": 42,
+              "start": 40,
+              "end": 74
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-a",
+            "literal": "-a",
+            "evidence": [
+              {
+                "line": 43,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--panel",
+            "literal": "--panel",
+            "evidence": [
+              {
+                "line": 43,
+                "start": 7,
+                "end": 14
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "BOX",
+          "literal": "BOX",
+          "evidence": [
+            {
+              "line": 43,
+              "start": 15,
+              "end": 18
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "BOX",
+          "evidence": [
+            {
+              "line": 43,
+              "start": 15,
+              "end": 18
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Set panel type to BOX. ascii, ascii2, double, heavy, none, rounded, square",
+          "literal": "Set panel type to BOX. ascii, ascii2,\ndouble, heavy, none, rounded, square",
+          "evidence": [
+            {
+              "line": 43,
+              "start": 40,
+              "end": 77
+            },
+            {
+              "line": 44,
+              "start": 40,
+              "end": 76
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-S",
+            "literal": "-S",
+            "evidence": [
+              {
+                "line": 45,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--panel-style",
+            "literal": "--panel-style",
+            "evidence": [
+              {
+                "line": 45,
+                "start": 7,
+                "end": 20
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "STYLE",
+          "literal": "STYLE",
+          "evidence": [
+            {
+              "line": 45,
+              "start": 21,
+              "end": 26
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "STYLE",
+          "evidence": [
+            {
+              "line": 45,
+              "start": 21,
+              "end": 26
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Set the panel style to STYLE (requires --panel).",
+          "literal": "Set the panel style to STYLE\n(requires --panel).",
+          "evidence": [
+            {
+              "line": 45,
+              "start": 40,
+              "end": 68
+            },
+            {
+              "line": 46,
+              "start": 40,
+              "end": 59
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--theme",
+            "literal": "--theme",
+            "evidence": [
+              {
+                "line": 47,
+                "start": 7,
+                "end": 14
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "THEME",
+          "literal": "THEME",
+          "evidence": [
+            {
+              "line": 47,
+              "start": 15,
+              "end": 20
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "THEME",
+          "evidence": [
+            {
+              "line": 47,
+              "start": 15,
+              "end": 20
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Set syntax theme to THEME. See https://pygments.org/styles/",
+          "literal": "Set syntax theme to THEME. See\nhttps://pygments.org/styles/",
+          "evidence": [
+            {
+              "line": 47,
+              "start": 40,
+              "end": 70
+            },
+            {
+              "line": 48,
+              "start": 40,
+              "end": 68
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-n",
+            "literal": "-n",
+            "evidence": [
+              {
+                "line": 49,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--line-numbers",
+            "literal": "--line-numbers",
+            "evidence": [
+              {
+                "line": 49,
+                "start": 7,
+                "end": 21
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Enable line number in syntax.",
+          "literal": "Enable line number in syntax.",
+          "evidence": [
+            {
+              "line": 49,
+              "start": 40,
+              "end": 69
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-g",
+            "literal": "-g",
+            "evidence": [
+              {
+                "line": 50,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--guides",
+            "literal": "--guides",
+            "evidence": [
+              {
+                "line": 50,
+                "start": 7,
+                "end": 15
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Enable indentation guides in syntax highlighting",
+          "literal": "Enable indentation guides in syntax\nhighlighting",
+          "evidence": [
+            {
+              "line": 50,
+              "start": 40,
+              "end": 75
+            },
+            {
+              "line": 51,
+              "start": 40,
+              "end": 52
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-x",
+            "literal": "-x",
+            "evidence": [
+              {
+                "line": 52,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--lexer",
+            "literal": "--lexer",
+            "evidence": [
+              {
+                "line": 52,
+                "start": 7,
+                "end": 14
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "LEXER",
+          "literal": "LEXER",
+          "evidence": [
+            {
+              "line": 52,
+              "start": 15,
+              "end": 20
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "LEXER",
+          "evidence": [
+            {
+              "line": 52,
+              "start": 15,
+              "end": 20
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Use LEXER for syntax highlighting. See https://pygments.org/docs/lexers/",
+          "literal": "Use LEXER for syntax highlighting.\nSee https://pygments.org/docs/lexers/",
+          "evidence": [
+            {
+              "line": 52,
+              "start": 40,
+              "end": 74
+            },
+            {
+              "line": 53,
+              "start": 40,
+              "end": 77
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-y",
+            "literal": "-y",
+            "evidence": [
+              {
+                "line": 54,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--hyperlinks",
+            "literal": "--hyperlinks",
+            "evidence": [
+              {
+                "line": 54,
+                "start": 7,
+                "end": 19
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Render hyperlinks in markdown.",
+          "literal": "Render hyperlinks in markdown.",
+          "evidence": [
+            {
+              "line": 54,
+              "start": 40,
+              "end": 70
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--no-wrap",
+            "literal": "--no-wrap",
+            "evidence": [
+              {
+                "line": 55,
+                "start": 7,
+                "end": 16
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Don't word wrap syntax highlighted files.",
+          "literal": "Don't word wrap syntax highlighted\nfiles.",
+          "evidence": [
+            {
+              "line": 55,
+              "start": 40,
+              "end": 74
+            },
+            {
+              "line": 56,
+              "start": 40,
+              "end": 46
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--title",
+            "literal": "--title",
+            "evidence": [
+              {
+                "line": 57,
+                "start": 7,
+                "end": 14
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "TEXT",
+          "literal": "TEXT",
+          "evidence": [
+            {
+              "line": 57,
+              "start": 15,
+              "end": 19
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "TEXT",
+          "evidence": [
+            {
+              "line": 57,
+              "start": 15,
+              "end": 19
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Set panel title to TEXT.",
+          "literal": "Set panel title to TEXT.",
+          "evidence": [
+            {
+              "line": 57,
+              "start": 40,
+              "end": 64
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--caption",
+            "literal": "--caption",
+            "evidence": [
+              {
+                "line": 58,
+                "start": 7,
+                "end": 16
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "TEXT",
+          "literal": "TEXT",
+          "evidence": [
+            {
+              "line": 58,
+              "start": 17,
+              "end": 21
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "TEXT",
+          "evidence": [
+            {
+              "line": 58,
+              "start": 17,
+              "end": 21
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Set panel caption to TEXT.",
+          "literal": "Set panel caption to TEXT.",
+          "evidence": [
+            {
+              "line": 58,
+              "start": 40,
+              "end": 66
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--force-terminal",
+            "literal": "--force-terminal",
+            "evidence": [
+              {
+                "line": 59,
+                "start": 7,
+                "end": 23
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Force terminal output when not writing to a terminal.",
+          "literal": "Force terminal output when not\nwriting to a terminal.",
+          "evidence": [
+            {
+              "line": 59,
+              "start": 40,
+              "end": 70
+            },
+            {
+              "line": 60,
+              "start": 40,
+              "end": 62
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-o",
+            "literal": "-o",
+            "evidence": [
+              {
+                "line": 61,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--export-html",
+            "literal": "--export-html",
+            "evidence": [
+              {
+                "line": 61,
+                "start": 7,
+                "end": 20
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "PATH",
+          "literal": "PATH",
+          "evidence": [
+            {
+              "line": 61,
+              "start": 21,
+              "end": 25
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "PATH",
+          "evidence": [
+            {
+              "line": 61,
+              "start": 21,
+              "end": 25
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Write HTML to PATH.",
+          "literal": "Write HTML to PATH.",
+          "evidence": [
+            {
+              "line": 61,
+              "start": 40,
+              "end": 59
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--export-svg",
+            "literal": "--export-svg",
+            "evidence": [
+              {
+                "line": 62,
+                "start": 7,
+                "end": 19
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "PATH",
+          "literal": "PATH",
+          "evidence": [
+            {
+              "line": 62,
+              "start": 20,
+              "end": 24
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "PATH",
+          "evidence": [
+            {
+              "line": 62,
+              "start": 20,
+              "end": 24
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Write SVG to PATH.",
+          "literal": "Write SVG to PATH.",
+          "evidence": [
+            {
+              "line": 62,
+              "start": 40,
+              "end": 58
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": true,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--pager",
+            "literal": "--pager",
+            "evidence": [
+              {
+                "line": 63,
+                "start": 7,
+                "end": 14
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Display in an interactive pager.",
+          "literal": "Display in an interactive pager.",
+          "evidence": [
+            {
+              "line": 63,
+              "start": 40,
+              "end": 72
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-v",
+            "literal": "-v",
+            "evidence": [
+              {
+                "line": 64,
+                "start": 3,
+                "end": 5
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--version",
+            "literal": "--version",
+            "evidence": [
+              {
+                "line": 64,
+                "start": 7,
+                "end": 16
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Print version and exit.",
+          "literal": "Print version and exit.",
+          "evidence": [
+            {
+              "line": 64,
+              "start": 40,
+              "end": 63
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "--help",
+            "literal": "--help",
+            "evidence": [
+              {
+                "line": 65,
+                "start": 7,
+                "end": 13
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Show this message and exit.",
+          "literal": "Show this message and exit.",
+          "evidence": [
+            {
+              "line": 65,
+              "start": 40,
+              "end": 67
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      }
+    ],
+    "subcommands": [],
+    "positionals": [],
+    "status": "ok",
+    "diagnostics": [],
+    "engine": {
+      "name": "manual-agent-annotation",
+      "version": "primary-1",
+      "threshold": 0,
+      "calibrated": false
+    }
+  },
+  "adjudicated": false,
+  "notes": [
+    "Independent source-only agent annotation. No primary/adjudicated annotations, parser/tagger/model code, or predictions consulted.",
+    "Unknown semantic fields remain null; flags without explicit value notation have unknown arity and takes_value.",
+    "Space-aligned short and long names in the same box row explicitly co-declare aliases. Evidence Unicode columns include the original borders; selected spans exclude borders and padding.",
+    "Usage-only PATH/TEXT/URL input is not separately advertised as a positional declaration. Printed URL ellipsis is retained verbatim. Panel examples in prose are not an explicit exhaustive choice declaration."
+  ]
+}
