@@ -1,0 +1,11 @@
+black==25.9.0
+pipx==1.8.0
+pipenv==2025.0.4
+tox==4.30.2
+virtualenv==20.34.0
+httpie==3.2.4
+rich-cli==1.8.1
+sqlfluff==3.4.2
+hatch==1.14.2
+datasette==0.65.1
+setuptools==80.9.0

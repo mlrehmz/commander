@@ -6,7 +6,10 @@ import re
 from .core import LABELS, canonicalize, field, validate_catalog
 
 TOKEN = re.compile(r"--(?:\[no-\])?[A-Za-z0-9][\w-]*|-[A-Za-z0-9?]")
-META = re.compile(r"<[^<>\s]+>|\{[^{}]+\}|[A-Z][A-Z0-9_-]*")
+META = re.compile(
+    r"<[^<>\s]+>|\{[^{}]+\}|\[[^\[\]]+\]|"
+    r"[A-Za-z][A-Za-z0-9_-]*(?: +\[[^\]]+\])?(?=$| {2,}|\t|\s*[,|/]\s*-)"
+)
 HEADING = re.compile(r"^\s*([A-Za-z][\w /-]*):\s*$")
 
 
@@ -39,7 +42,7 @@ def tokenize(line):
             if m:
                 value = (m.start(), m.end())
                 end = pos = m.end()
-                arity = "required"
+                arity = "optional" if m.group().startswith("[") else "required"
         if value:
             meta = value
         separator = re.match(r"(?:\s*[,|/]\s*| )(?=-)", line[pos:])
@@ -249,7 +252,7 @@ def assemble(source, command_path, predictions, engine):
                 cat["diagnostics"].append(f"line {idx}: incomplete wrapped declaration")
                 pending = []
             active = None
-            if line.lstrip().startswith("-") and label not in ("blank", "usage"):
+            if re.match(r"^\s*(?:[│┃|]\s*)?-", line) and label not in ("blank", "usage"):
                 cat["diagnostics"].append(f"line {idx}: unsupported flag-like candidate")
     if pending:
         cat["diagnostics"].append("incomplete wrapped declaration")

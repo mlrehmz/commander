@@ -47,3 +47,52 @@ def test_metadata_leakage_detected_without_opening_test_files(tmp_path):
     manifest.write_text(json.dumps({"version": 1, "entries": [base, other]}))
     with pytest.raises(ValueError, match="split leakage"):
         load_manifest(manifest)
+
+
+def test_test_tracks_require_verified_family_without_opening_files(tmp_path):
+    base = dict(
+        id="a",
+        project="a",
+        leakage_group="a",
+        family="unknown",
+        split="cobra_test",
+        input="missing",
+        annotation="missing",
+        raw_sha256="a" * 64,
+        command_path=["a"],
+        tool_version="1",
+        source_url="url",
+        license_evidence="url",
+        locale=None,
+        terminal_width=None,
+        synthetic=False,
+    )
+    manifest = tmp_path / "manifest.json"
+    manifest.write_text(json.dumps({"version": 1, "entries": [base]}))
+    with pytest.raises(ValueError, match="verified family"):
+        load_manifest(manifest)
+
+
+def test_identical_test_captures_need_same_leakage_group(tmp_path):
+    base = dict(
+        id="a",
+        project="a",
+        leakage_group="a",
+        family="unknown",
+        split="familiar_test",
+        input="missing",
+        annotation="missing",
+        raw_sha256="a" * 64,
+        command_path=["a"],
+        tool_version="1",
+        source_url="url",
+        license_evidence="url",
+        locale=None,
+        terminal_width=None,
+        synthetic=False,
+    )
+    other = dict(base, id="b", project="b", leakage_group="b")
+    manifest = tmp_path / "manifest.json"
+    manifest.write_text(json.dumps({"version": 1, "entries": [base, other]}))
+    with pytest.raises(ValueError, match="duplicate content"):
+        load_manifest(manifest)

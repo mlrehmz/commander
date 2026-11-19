@@ -1,0 +1,14 @@
+{
+  "canonical_sha256": "794aff42717b5795f66a2aaf12e3ebb59dc36b40161fb1e1330745a15d2d3849",
+  "annotators": [
+    "codex-primary-2026-11-19",
+    "codex-blind-2026-11-19"
+  ],
+  "disagreements": [],
+  "adjudicated": true,
+  "adjudicator": "codex-primary-2026-11-19",
+  "primary_sha256": "d2bbc8e205a279a0416eb8a596b3d3f212212791a66c3bb5cc503bcfd9930c73",
+  "blind_sha256": "d5607433f148fc9b760a45b39050cbd388a202feef47b7c9888cf1fb4746e651",
+  "record_agreement": "All flag, advertised-entry, semantic and evidence fields match.",
+  "producer": "agent"
+}

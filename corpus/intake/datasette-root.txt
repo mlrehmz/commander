@@ -1,0 +1,19 @@
+Usage: datasette [OPTIONS] COMMAND [ARGS]...
+
+  Datasette is an open source multi-tool for exploring and publishing data
+
+  About Datasette: https://datasette.io/
+  Full documentation: https://docs.datasette.io/
+
+Options:
+  --version  Show the version and exit.
+  --help     Show this message and exit.
+
+Commands:
+  serve*     Serve up specified SQLite database files with a web UI
+  inspect    Generate JSON summary of provided database files
+  install    Install plugins and packages from PyPI into the same...
+  package    Package SQLite files into a Datasette Docker container
+  plugins    List currently installed plugins
+  publish    Publish specified SQLite database files to the internet...
+  uninstall  Uninstall plugins and Python packages from the Datasette...

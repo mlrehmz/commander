@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "image": "sha256:e9e4a40dd2f71ea2af66784a770918196fc554cbe0d0a09d3cd62646c9b058c5",
+  "timeout_seconds": 20,
+  "output_limit_bytes": 1048576,
+  "captures": [
+    {
+      "id": "datasette-root",
+      "project": "datasette",
+      "package": "datasette",
+      "tool_version": "0.65.1",
+      "invocation": [
+        "datasette",
+        "--help"
+      ],
+      "command_path": [
+        "datasette"
+      ],
+      "family": "unknown",
+      "leakage_group": "datasette",
+      "source_url": "https://pypi.org/project/datasette/0.65.1/",
+      "license_evidence": "collection/package-metadata.json",
+      "synthetic": false
+    }
+  ]
+}

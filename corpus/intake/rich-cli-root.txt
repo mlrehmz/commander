@@ -1,0 +1,68 @@
+                               Rich CLI v1.8.0 🤑                               
+                                                                                
+                    Rich text and formatting in the terminal                    
+                                                                                
+Usage: rich [OPTIONS] <PATH,TEXT,URL, or '-'>
+
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│  -p  --print                          Print console markup. See              │
+│                                       https://rich.readthedocs.io/en/lates…  │
+│  -u  --rule                           Display a horizontal rule.             │
+│  -J  --json                           Display as JSON.                       │
+│  -m  --markdown                       Display as markdown.                   │
+│      --rst                            Display restructured text.             │
+│      --csv                            Display CSV as a table.                │
+│      --ipynb                          Display Jupyter notebook.              │
+│      --syntax                         Syntax highlighting.                   │
+│      --inspect                        Inspect a python object.               │
+│  -h  --head LINES                     Display first LINES of the file        │
+│                                       (requires --syntax or --csv).          │
+│  -t  --tail LINES                     Display last LINES of the file         │
+│                                       (requires --syntax or --csv).          │
+│  -j  --emoji                          Enable emoji code. e.g. :sparkle:      │
+│  -l  --left                           Align to left.                         │
+│  -r  --right                          Align to right.                        │
+│  -c  --center                         Align to center.                       │
+│  -L  --text-left                      Justify text to left.                  │
+│  -R  --text-right                     Justify text to right.                 │
+│  -C  --text-center                    Justify text to center.                │
+│  -F  --text-full                      Justify text to both left and right    │
+│                                       edges.                                 │
+│      --soft                           Enable soft wrapping of text           │
+│                                       (requires --print).                    │
+│  -e  --expand                         Expand to full width (requires         │
+│                                       --panel).                              │
+│  -w  --width SIZE                     Fit output to SIZE characters.         │
+│  -W  --max-width SIZE                 Set maximum width to SIZE characters.  │
+│  -s  --style STYLE                    Set text style to STYLE.               │
+│      --rule-style STYLE               Set rule style to STYLE.               │
+│      --rule-char CHARACTER            Use CHARACTER to generate a line with  │
+│                                       --rule.                                │
+│  -d  --padding TOP,RIGHT,BOTTOM,LEFT  Padding around output. 1, 2 or 4       │
+│                                       comma separated integers, e.g. 2,4     │
+│  -a  --panel BOX                      Set panel type to BOX. ascii, ascii2,  │
+│                                       double, heavy, none, rounded, square   │
+│  -S  --panel-style STYLE              Set the panel style to STYLE           │
+│                                       (requires --panel).                    │
+│      --theme THEME                    Set syntax theme to THEME. See         │
+│                                       https://pygments.org/styles/           │
+│  -n  --line-numbers                   Enable line number in syntax.          │
+│  -g  --guides                         Enable indentation guides in syntax    │
+│                                       highlighting                           │
+│  -x  --lexer LEXER                    Use LEXER for syntax highlighting.     │
+│                                       See https://pygments.org/docs/lexers/  │
+│  -y  --hyperlinks                     Render hyperlinks in markdown.         │
+│      --no-wrap                        Don't word wrap syntax highlighted     │
+│                                       files.                                 │
+│      --title TEXT                     Set panel title to TEXT.               │
+│      --caption TEXT                   Set panel caption to TEXT.             │
+│      --force-terminal                 Force terminal output when not         │
+│                                       writing to a terminal.                 │
+│  -o  --export-html PATH               Write HTML to PATH.                    │
+│      --export-svg PATH                Write SVG to PATH.                     │
+│      --pager                          Display in an interactive pager.       │
+│  -v  --version                        Print version and exit.                │
+│      --help                           Show this message and exit.            │
+╰──────────────────────────────────────────────────────────────────────────────╯
+♥ https://www.textualize.io                                                     
+

@@ -1,0 +1,403 @@
+{
+  "annotation_version": 1,
+  "canonical_sha256": "a25526f4b18f911614ca5c3a124fdcbf95d0054667c2c3611a28c05880cf6dec",
+  "command_path": [
+    "sqlfluff"
+  ],
+  "source": {
+    "raw_sha256": "a25526f4b18f911614ca5c3a124fdcbf95d0054667c2c3611a28c05880cf6dec",
+    "canonical_sha256": "a25526f4b18f911614ca5c3a124fdcbf95d0054667c2c3611a28c05880cf6dec",
+    "canonical_text": "Usage: sqlfluff [OPTIONS] COMMAND [ARGS]...\n\n  SQLFluff is a modular SQL linter for humans.\n\nOptions:\n  --version   Show the version and exit.\n  -h, --help  Show this message and exit.\n\nCommands:\n  dialects  Show the current dialects available.\n  fix       Fix SQL files.\n  format    Autoformat SQL files.\n  lint      Lint SQL files via passing a list of files or using stdin.\n  parse     Parse SQL files and just spit out the result.\n  render    Render SQL files and just spit out the result.\n  rules     Show the current rules in use.\n  version   Show the version of sqlfluff.\n\n  Examples:\n\n  .. code-block:: sh\n\n     sqlfluff lint --dialect postgres .\n\n     sqlfluff lint --dialect mysql --rules ST05 my_query.sql\n\n     sqlfluff fix --dialect sqlite --rules LT10,ST05 src/queries\n\n     sqlfluff parse --dialect duckdb --templater jinja path/my_query.sql\n",
+    "normalization_version": "1.0",
+    "capture_metadata": {}
+  },
+  "annotator": "codex-blind-2026-11-19",
+  "producer": "agent",
+  "blind": true,
+  "labels": [
+    "usage",
+    "blank",
+    "prose",
+    "blank",
+    "section_heading",
+    "option_declaration",
+    "option_declaration",
+    "blank",
+    "section_heading",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "blank",
+    "section_heading",
+    "blank",
+    "other",
+    "blank",
+    "other",
+    "blank",
+    "other",
+    "blank",
+    "other",
+    "blank",
+    "other",
+    "blank"
+  ],
+  "reference": {
+    "schema_version": "1.0",
+    "command_path": [
+      "sqlfluff"
+    ],
+    "source": {
+      "raw_sha256": "a25526f4b18f911614ca5c3a124fdcbf95d0054667c2c3611a28c05880cf6dec",
+      "canonical_sha256": "a25526f4b18f911614ca5c3a124fdcbf95d0054667c2c3611a28c05880cf6dec",
+      "canonical_text": "Usage: sqlfluff [OPTIONS] COMMAND [ARGS]...\n\n  SQLFluff is a modular SQL linter for humans.\n\nOptions:\n  --version   Show the version and exit.\n  -h, --help  Show this message and exit.\n\nCommands:\n  dialects  Show the current dialects available.\n  fix       Fix SQL files.\n  format    Autoformat SQL files.\n  lint      Lint SQL files via passing a list of files or using stdin.\n  parse     Parse SQL files and just spit out the result.\n  render    Render SQL files and just spit out the result.\n  rules     Show the current rules in use.\n  version   Show the version of sqlfluff.\n\n  Examples:\n\n  .. code-block:: sh\n\n     sqlfluff lint --dialect postgres .\n\n     sqlfluff lint --dialect mysql --rules ST05 my_query.sql\n\n     sqlfluff fix --dialect sqlite --rules LT10,ST05 src/queries\n\n     sqlfluff parse --dialect duckdb --templater jinja path/my_query.sql\n",
+      "normalization_version": "1.0",
+      "capture_metadata": {}
+    },
+    "flags": [
+      {
+        "aliases": [
+          {
+            "value": "--version",
+            "literal": "--version",
+            "evidence": [
+              {
+                "line": 6,
+                "start": 2,
+                "end": 11
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Show the version and exit.",
+          "literal": "Show the version and exit.",
+          "evidence": [
+            {
+              "line": 6,
+              "start": 14,
+              "end": 40
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      },
+      {
+        "aliases": [
+          {
+            "value": "-h",
+            "literal": "-h",
+            "evidence": [
+              {
+                "line": 7,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--help",
+            "literal": "--help",
+            "evidence": [
+              {
+                "line": 7,
+                "start": 6,
+                "end": 12
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Show this message and exit.",
+          "literal": "Show this message and exit.",
+          "evidence": [
+            {
+              "line": 7,
+              "start": 14,
+              "end": 41
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "takes_value": null,
+        "selection_score": 1
+      }
+    ],
+    "subcommands": [
+      {
+        "name": {
+          "value": "dialects",
+          "literal": "dialects",
+          "evidence": [
+            {
+              "line": 10,
+              "start": 2,
+              "end": 10
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Show the current dialects available.",
+          "literal": "Show the current dialects available.",
+          "evidence": [
+            {
+              "line": 10,
+              "start": 12,
+              "end": 48
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "fix",
+          "literal": "fix",
+          "evidence": [
+            {
+              "line": 11,
+              "start": 2,
+              "end": 5
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Fix SQL files.",
+          "literal": "Fix SQL files.",
+          "evidence": [
+            {
+              "line": 11,
+              "start": 12,
+              "end": 26
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "format",
+          "literal": "format",
+          "evidence": [
+            {
+              "line": 12,
+              "start": 2,
+              "end": 8
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Autoformat SQL files.",
+          "literal": "Autoformat SQL files.",
+          "evidence": [
+            {
+              "line": 12,
+              "start": 12,
+              "end": 33
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "lint",
+          "literal": "lint",
+          "evidence": [
+            {
+              "line": 13,
+              "start": 2,
+              "end": 6
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Lint SQL files via passing a list of files or using stdin.",
+          "literal": "Lint SQL files via passing a list of files or using stdin.",
+          "evidence": [
+            {
+              "line": 13,
+              "start": 12,
+              "end": 70
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "parse",
+          "literal": "parse",
+          "evidence": [
+            {
+              "line": 14,
+              "start": 2,
+              "end": 7
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Parse SQL files and just spit out the result.",
+          "literal": "Parse SQL files and just spit out the result.",
+          "evidence": [
+            {
+              "line": 14,
+              "start": 12,
+              "end": 57
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "render",
+          "literal": "render",
+          "evidence": [
+            {
+              "line": 15,
+              "start": 2,
+              "end": 8
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Render SQL files and just spit out the result.",
+          "literal": "Render SQL files and just spit out the result.",
+          "evidence": [
+            {
+              "line": 15,
+              "start": 12,
+              "end": 58
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "rules",
+          "literal": "rules",
+          "evidence": [
+            {
+              "line": 16,
+              "start": 2,
+              "end": 7
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Show the current rules in use.",
+          "literal": "Show the current rules in use.",
+          "evidence": [
+            {
+              "line": 16,
+              "start": 12,
+              "end": 42
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      },
+      {
+        "name": {
+          "value": "version",
+          "literal": "version",
+          "evidence": [
+            {
+              "line": 17,
+              "start": 2,
+              "end": 9
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Show the version of sqlfluff.",
+          "literal": "Show the version of sqlfluff.",
+          "evidence": [
+            {
+              "line": 17,
+              "start": 12,
+              "end": 41
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1
+      }
+    ],
+    "positionals": [],
+    "status": "ok",
+    "diagnostics": [],
+    "engine": {
+      "name": "manual-agent-annotation",
+      "version": "primary-1",
+      "threshold": 0,
+      "calibrated": false
+    }
+  },
+  "adjudicated": false,
+  "notes": [
+    "Independent source-only agent annotation; no primary annotations, parser, model, or predictions consulted.",
+    "Examples heading is a section heading. The reStructuredText code-block directive and shell examples are other, not command advertisements.",
+    "Usage COMMAND and ARGS are grammar placeholders, not separately advertised positional entries.",
+    "No explicit arity for valueless-looking flags; arity and takes_value remain unknown."
+  ]
+}

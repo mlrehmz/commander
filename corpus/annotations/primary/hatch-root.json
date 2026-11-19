@@ -1,0 +1,1250 @@
+{
+  "annotation_version": 1,
+  "canonical_sha256": "794aff42717b5795f66a2aaf12e3ebb59dc36b40161fb1e1330745a15d2d3849",
+  "command_path": [
+    "hatch"
+  ],
+  "source": {
+    "raw_sha256": "794aff42717b5795f66a2aaf12e3ebb59dc36b40161fb1e1330745a15d2d3849",
+    "canonical_sha256": "794aff42717b5795f66a2aaf12e3ebb59dc36b40161fb1e1330745a15d2d3849",
+    "canonical_text": "Usage: hatch [OPTIONS] COMMAND [ARGS]...\n\n   _   _       _       _\n  | | | |     | |     | |\n  | |_| | __ _| |_ ___| |__\n  |  _  |/ _` | __/ __| '_ \\\n  | | | | (_| | || (__| | | |\n  \\_| |_/\\__,_|\\__\\___|_| |_|\n\nOptions:\n  -e, --env TEXT                  The name of the environment to use [env var:\n                                  `HATCH_ENV`]\n  -p, --project TEXT              The name of the project to work on [env var:\n                                  `HATCH_PROJECT`]\n  -v, --verbose                   Increase verbosity (can be used additively)\n                                  [env var: `HATCH_VERBOSE`]\n  -q, --quiet                     Decrease verbosity (can be used additively)\n                                  [env var: `HATCH_QUIET`]\n  --color / --no-color            Whether or not to display colored output\n                                  (default is auto-detection) [env vars:\n                                  `FORCE_COLOR`/`NO_COLOR`]\n  --interactive / --no-interactive\n                                  Whether or not to allow features like\n                                  prompts and progress bars (default is auto-\n                                  detection) [env var: `HATCH_INTERACTIVE`]\n  --data-dir TEXT                 The path to a custom directory used to\n                                  persist data [env var: `HATCH_DATA_DIR`]\n  --cache-dir TEXT                The path to a custom directory used to cache\n                                  data [env var: `HATCH_CACHE_DIR`]\n  --config TEXT                   The path to a custom config file to use [env\n                                  var: `HATCH_CONFIG`]\n  --version                       Show the version and exit.\n  -h, --help                      Show this message and exit.\n\nCommands:\n  build    Build a project\n  clean    Remove build artifacts\n  config   Manage the config file\n  dep      Manage environment dependencies\n  env      Manage project environments\n  fmt      Format and lint source code\n  new      Create or initialize a project\n  project  View project information\n  publish  Publish build artifacts\n  python   Manage Python installations\n  run      Run commands within project environments\n  self     Manage Hatch\n  shell    Enter a shell within a project's environment\n  status   Show information about the current environment\n  test     Run tests\n  version  View or set a project's version\n",
+    "normalization_version": "1.0",
+    "capture_metadata": {}
+  },
+  "annotator": "codex-primary-2026-11-19",
+  "producer": "agent",
+  "blind": false,
+  "labels": [
+    "usage",
+    "blank",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "blank",
+    "section_heading",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "description_continuation",
+    "description_continuation",
+    "option_declaration",
+    "description_continuation",
+    "description_continuation",
+    "description_continuation",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "option_declaration",
+    "blank",
+    "section_heading",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "blank"
+  ],
+  "reference": {
+    "schema_version": "1.0",
+    "source": {
+      "raw_sha256": "794aff42717b5795f66a2aaf12e3ebb59dc36b40161fb1e1330745a15d2d3849",
+      "canonical_sha256": "794aff42717b5795f66a2aaf12e3ebb59dc36b40161fb1e1330745a15d2d3849",
+      "canonical_text": "Usage: hatch [OPTIONS] COMMAND [ARGS]...\n\n   _   _       _       _\n  | | | |     | |     | |\n  | |_| | __ _| |_ ___| |__\n  |  _  |/ _` | __/ __| '_ \\\n  | | | | (_| | || (__| | | |\n  \\_| |_/\\__,_|\\__\\___|_| |_|\n\nOptions:\n  -e, --env TEXT                  The name of the environment to use [env var:\n                                  `HATCH_ENV`]\n  -p, --project TEXT              The name of the project to work on [env var:\n                                  `HATCH_PROJECT`]\n  -v, --verbose                   Increase verbosity (can be used additively)\n                                  [env var: `HATCH_VERBOSE`]\n  -q, --quiet                     Decrease verbosity (can be used additively)\n                                  [env var: `HATCH_QUIET`]\n  --color / --no-color            Whether or not to display colored output\n                                  (default is auto-detection) [env vars:\n                                  `FORCE_COLOR`/`NO_COLOR`]\n  --interactive / --no-interactive\n                                  Whether or not to allow features like\n                                  prompts and progress bars (default is auto-\n                                  detection) [env var: `HATCH_INTERACTIVE`]\n  --data-dir TEXT                 The path to a custom directory used to\n                                  persist data [env var: `HATCH_DATA_DIR`]\n  --cache-dir TEXT                The path to a custom directory used to cache\n                                  data [env var: `HATCH_CACHE_DIR`]\n  --config TEXT                   The path to a custom config file to use [env\n                                  var: `HATCH_CONFIG`]\n  --version                       Show the version and exit.\n  -h, --help                      Show this message and exit.\n\nCommands:\n  build    Build a project\n  clean    Remove build artifacts\n  config   Manage the config file\n  dep      Manage environment dependencies\n  env      Manage project environments\n  fmt      Format and lint source code\n  new      Create or initialize a project\n  project  View project information\n  publish  Publish build artifacts\n  python   Manage Python installations\n  run      Run commands within project environments\n  self     Manage Hatch\n  shell    Enter a shell within a project's environment\n  status   Show information about the current environment\n  test     Run tests\n  version  View or set a project's version\n",
+      "normalization_version": "1.0",
+      "capture_metadata": {}
+    },
+    "command_path": [
+      "hatch"
+    ],
+    "flags": [
+      {
+        "aliases": [
+          {
+            "value": "-e",
+            "literal": "-e",
+            "evidence": [
+              {
+                "line": 11,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--env",
+            "literal": "--env",
+            "evidence": [
+              {
+                "line": 11,
+                "start": 6,
+                "end": 11
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "TEXT",
+          "literal": "TEXT",
+          "evidence": [
+            {
+              "line": 11,
+              "start": 12,
+              "end": 16
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "TEXT",
+          "evidence": [
+            {
+              "line": 11,
+              "start": 12,
+              "end": 16
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "The name of the environment to use [env var: `HATCH_ENV`]",
+          "literal": "The name of the environment to use [env var:\n`HATCH_ENV`]",
+          "evidence": [
+            {
+              "line": 11,
+              "start": 34,
+              "end": 78
+            },
+            {
+              "line": 12,
+              "start": 34,
+              "end": 46
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "-p",
+            "literal": "-p",
+            "evidence": [
+              {
+                "line": 13,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--project",
+            "literal": "--project",
+            "evidence": [
+              {
+                "line": 13,
+                "start": 6,
+                "end": 15
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "TEXT",
+          "literal": "TEXT",
+          "evidence": [
+            {
+              "line": 13,
+              "start": 16,
+              "end": 20
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "TEXT",
+          "evidence": [
+            {
+              "line": 13,
+              "start": 16,
+              "end": 20
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "The name of the project to work on [env var: `HATCH_PROJECT`]",
+          "literal": "The name of the project to work on [env var:\n`HATCH_PROJECT`]",
+          "evidence": [
+            {
+              "line": 13,
+              "start": 34,
+              "end": 78
+            },
+            {
+              "line": 14,
+              "start": 34,
+              "end": 50
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "-v",
+            "literal": "-v",
+            "evidence": [
+              {
+                "line": 15,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--verbose",
+            "literal": "--verbose",
+            "evidence": [
+              {
+                "line": 15,
+                "start": 6,
+                "end": 15
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Increase verbosity (can be used additively) [env var: `HATCH_VERBOSE`]",
+          "literal": "Increase verbosity (can be used additively)\n[env var: `HATCH_VERBOSE`]",
+          "evidence": [
+            {
+              "line": 15,
+              "start": 34,
+              "end": 77
+            },
+            {
+              "line": 16,
+              "start": 34,
+              "end": 60
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "-q",
+            "literal": "-q",
+            "evidence": [
+              {
+                "line": 17,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--quiet",
+            "literal": "--quiet",
+            "evidence": [
+              {
+                "line": 17,
+                "start": 6,
+                "end": 13
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Decrease verbosity (can be used additively) [env var: `HATCH_QUIET`]",
+          "literal": "Decrease verbosity (can be used additively)\n[env var: `HATCH_QUIET`]",
+          "evidence": [
+            {
+              "line": 17,
+              "start": 34,
+              "end": 77
+            },
+            {
+              "line": 18,
+              "start": 34,
+              "end": 58
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--color",
+            "literal": "--color",
+            "evidence": [
+              {
+                "line": 19,
+                "start": 2,
+                "end": 9
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--no-color",
+            "literal": "--no-color",
+            "evidence": [
+              {
+                "line": 19,
+                "start": 12,
+                "end": 22
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Whether or not to display colored output (default is auto-detection) [env vars: `FORCE_COLOR`/`NO_COLOR`]",
+          "literal": "Whether or not to display colored output\n(default is auto-detection) [env vars:\n`FORCE_COLOR`/`NO_COLOR`]",
+          "evidence": [
+            {
+              "line": 19,
+              "start": 34,
+              "end": 74
+            },
+            {
+              "line": 20,
+              "start": 34,
+              "end": 72
+            },
+            {
+              "line": 21,
+              "start": 34,
+              "end": 59
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--interactive",
+            "literal": "--interactive",
+            "evidence": [
+              {
+                "line": 22,
+                "start": 2,
+                "end": 15
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--no-interactive",
+            "literal": "--no-interactive",
+            "evidence": [
+              {
+                "line": 22,
+                "start": 18,
+                "end": 34
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Whether or not to allow features like prompts and progress bars (default is auto- detection) [env var: `HATCH_INTERACTIVE`]",
+          "literal": "Whether or not to allow features like\nprompts and progress bars (default is auto-\ndetection) [env var: `HATCH_INTERACTIVE`]",
+          "evidence": [
+            {
+              "line": 23,
+              "start": 34,
+              "end": 71
+            },
+            {
+              "line": 24,
+              "start": 34,
+              "end": 77
+            },
+            {
+              "line": 25,
+              "start": 34,
+              "end": 75
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--data-dir",
+            "literal": "--data-dir",
+            "evidence": [
+              {
+                "line": 26,
+                "start": 2,
+                "end": 12
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "TEXT",
+          "literal": "TEXT",
+          "evidence": [
+            {
+              "line": 26,
+              "start": 13,
+              "end": 17
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "TEXT",
+          "evidence": [
+            {
+              "line": 26,
+              "start": 13,
+              "end": 17
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "The path to a custom directory used to persist data [env var: `HATCH_DATA_DIR`]",
+          "literal": "The path to a custom directory used to\npersist data [env var: `HATCH_DATA_DIR`]",
+          "evidence": [
+            {
+              "line": 26,
+              "start": 34,
+              "end": 72
+            },
+            {
+              "line": 27,
+              "start": 34,
+              "end": 74
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--cache-dir",
+            "literal": "--cache-dir",
+            "evidence": [
+              {
+                "line": 28,
+                "start": 2,
+                "end": 13
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "TEXT",
+          "literal": "TEXT",
+          "evidence": [
+            {
+              "line": 28,
+              "start": 14,
+              "end": 18
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "TEXT",
+          "evidence": [
+            {
+              "line": 28,
+              "start": 14,
+              "end": 18
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "The path to a custom directory used to cache data [env var: `HATCH_CACHE_DIR`]",
+          "literal": "The path to a custom directory used to cache\ndata [env var: `HATCH_CACHE_DIR`]",
+          "evidence": [
+            {
+              "line": 28,
+              "start": 34,
+              "end": 78
+            },
+            {
+              "line": 29,
+              "start": 34,
+              "end": 67
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--config",
+            "literal": "--config",
+            "evidence": [
+              {
+                "line": 30,
+                "start": 2,
+                "end": 10
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "TEXT",
+          "literal": "TEXT",
+          "evidence": [
+            {
+              "line": 30,
+              "start": 11,
+              "end": 15
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "TEXT",
+          "evidence": [
+            {
+              "line": 30,
+              "start": 11,
+              "end": 15
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "The path to a custom config file to use [env var: `HATCH_CONFIG`]",
+          "literal": "The path to a custom config file to use [env\nvar: `HATCH_CONFIG`]",
+          "evidence": [
+            {
+              "line": 30,
+              "start": 34,
+              "end": 78
+            },
+            {
+              "line": 31,
+              "start": 34,
+              "end": 54
+            }
+          ],
+          "rule": "join-description-whitespace",
+          "provenance": "deterministic_inference"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "--version",
+            "literal": "--version",
+            "evidence": [
+              {
+                "line": 32,
+                "start": 2,
+                "end": 11
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Show the version and exit.",
+          "literal": "Show the version and exit.",
+          "evidence": [
+            {
+              "line": 32,
+              "start": 34,
+              "end": 60
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "-h",
+            "literal": "-h",
+            "evidence": [
+              {
+                "line": 33,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--help",
+            "literal": "--help",
+            "evidence": [
+              {
+                "line": 33,
+                "start": 6,
+                "end": 12
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Show this message and exit.",
+          "literal": "Show this message and exit.",
+          "evidence": [
+            {
+              "line": 33,
+              "start": 34,
+              "end": 61
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      }
+    ],
+    "subcommands": [
+      {
+        "name": {
+          "value": "build",
+          "literal": "build",
+          "evidence": [
+            {
+              "line": 36,
+              "start": 2,
+              "end": 7
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Build a project",
+          "literal": "Build a project",
+          "evidence": [
+            {
+              "line": 36,
+              "start": 11,
+              "end": 26
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "clean",
+          "literal": "clean",
+          "evidence": [
+            {
+              "line": 37,
+              "start": 2,
+              "end": 7
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Remove build artifacts",
+          "literal": "Remove build artifacts",
+          "evidence": [
+            {
+              "line": 37,
+              "start": 11,
+              "end": 33
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "config",
+          "literal": "config",
+          "evidence": [
+            {
+              "line": 38,
+              "start": 2,
+              "end": 8
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Manage the config file",
+          "literal": "Manage the config file",
+          "evidence": [
+            {
+              "line": 38,
+              "start": 11,
+              "end": 33
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "dep",
+          "literal": "dep",
+          "evidence": [
+            {
+              "line": 39,
+              "start": 2,
+              "end": 5
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Manage environment dependencies",
+          "literal": "Manage environment dependencies",
+          "evidence": [
+            {
+              "line": 39,
+              "start": 11,
+              "end": 42
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "env",
+          "literal": "env",
+          "evidence": [
+            {
+              "line": 40,
+              "start": 2,
+              "end": 5
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Manage project environments",
+          "literal": "Manage project environments",
+          "evidence": [
+            {
+              "line": 40,
+              "start": 11,
+              "end": 38
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "fmt",
+          "literal": "fmt",
+          "evidence": [
+            {
+              "line": 41,
+              "start": 2,
+              "end": 5
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Format and lint source code",
+          "literal": "Format and lint source code",
+          "evidence": [
+            {
+              "line": 41,
+              "start": 11,
+              "end": 38
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "new",
+          "literal": "new",
+          "evidence": [
+            {
+              "line": 42,
+              "start": 2,
+              "end": 5
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Create or initialize a project",
+          "literal": "Create or initialize a project",
+          "evidence": [
+            {
+              "line": 42,
+              "start": 11,
+              "end": 41
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "project",
+          "literal": "project",
+          "evidence": [
+            {
+              "line": 43,
+              "start": 2,
+              "end": 9
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "View project information",
+          "literal": "View project information",
+          "evidence": [
+            {
+              "line": 43,
+              "start": 11,
+              "end": 35
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "publish",
+          "literal": "publish",
+          "evidence": [
+            {
+              "line": 44,
+              "start": 2,
+              "end": 9
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Publish build artifacts",
+          "literal": "Publish build artifacts",
+          "evidence": [
+            {
+              "line": 44,
+              "start": 11,
+              "end": 34
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "python",
+          "literal": "python",
+          "evidence": [
+            {
+              "line": 45,
+              "start": 2,
+              "end": 8
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Manage Python installations",
+          "literal": "Manage Python installations",
+          "evidence": [
+            {
+              "line": 45,
+              "start": 11,
+              "end": 38
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "run",
+          "literal": "run",
+          "evidence": [
+            {
+              "line": 46,
+              "start": 2,
+              "end": 5
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Run commands within project environments",
+          "literal": "Run commands within project environments",
+          "evidence": [
+            {
+              "line": 46,
+              "start": 11,
+              "end": 51
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "self",
+          "literal": "self",
+          "evidence": [
+            {
+              "line": 47,
+              "start": 2,
+              "end": 6
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Manage Hatch",
+          "literal": "Manage Hatch",
+          "evidence": [
+            {
+              "line": 47,
+              "start": 11,
+              "end": 23
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "shell",
+          "literal": "shell",
+          "evidence": [
+            {
+              "line": 48,
+              "start": 2,
+              "end": 7
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Enter a shell within a project's environment",
+          "literal": "Enter a shell within a project's environment",
+          "evidence": [
+            {
+              "line": 48,
+              "start": 11,
+              "end": 55
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "status",
+          "literal": "status",
+          "evidence": [
+            {
+              "line": 49,
+              "start": 2,
+              "end": 8
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Show information about the current environment",
+          "literal": "Show information about the current environment",
+          "evidence": [
+            {
+              "line": 49,
+              "start": 11,
+              "end": 57
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "test",
+          "literal": "test",
+          "evidence": [
+            {
+              "line": 50,
+              "start": 2,
+              "end": 6
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Run tests",
+          "literal": "Run tests",
+          "evidence": [
+            {
+              "line": 50,
+              "start": 11,
+              "end": 20
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "version",
+          "literal": "version",
+          "evidence": [
+            {
+              "line": 51,
+              "start": 2,
+              "end": 9
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "View or set a project's version",
+          "literal": "View or set a project's version",
+          "evidence": [
+            {
+              "line": 51,
+              "start": 11,
+              "end": 42
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      }
+    ],
+    "positionals": [],
+    "status": "ok",
+    "diagnostics": [],
+    "engine": {
+      "name": "manual-agent-annotation",
+      "version": "primary-1",
+      "threshold": 0.0,
+      "calibrated": false
+    }
+  },
+  "adjudicated": false,
+  "notes": [
+    "Single primary source pass. No parser predictions used.",
+    "Unknown semantic fields remain unknown; no blind pass or adjudication yet."
+  ]
+}

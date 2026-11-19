@@ -1,0 +1,188 @@
+{
+  "version": 1,
+  "image": "sha256:cbaa10bd1d9bf77e577de88d3e5e2947670adcc5db07580cd9e182659a14e63f",
+  "timeout_seconds": 20,
+  "output_limit_bytes": 1048576,
+  "captures": [
+    {
+      "id": "black-root",
+      "project": "black",
+      "package": "black",
+      "tool_version": "25.9.0",
+      "invocation": [
+        "black",
+        "--help"
+      ],
+      "command_path": [
+        "black"
+      ],
+      "family": "unknown",
+      "leakage_group": "black",
+      "source_url": "https://pypi.org/project/black/25.9.0/",
+      "license_evidence": "collection/package-metadata.json",
+      "synthetic": false
+    },
+    {
+      "id": "pipx-root",
+      "project": "pipx",
+      "package": "pipx",
+      "tool_version": "1.8.0",
+      "invocation": [
+        "pipx",
+        "--help"
+      ],
+      "command_path": [
+        "pipx"
+      ],
+      "family": "unknown",
+      "leakage_group": "pipx",
+      "source_url": "https://pypi.org/project/pipx/1.8.0/",
+      "license_evidence": "collection/package-metadata.json",
+      "synthetic": false
+    },
+    {
+      "id": "pipenv-root",
+      "project": "pipenv",
+      "package": "pipenv",
+      "tool_version": "2025.0.4",
+      "invocation": [
+        "pipenv",
+        "--help"
+      ],
+      "command_path": [
+        "pipenv"
+      ],
+      "family": "unknown",
+      "leakage_group": "pipenv",
+      "source_url": "https://pypi.org/project/pipenv/2025.0.4/",
+      "license_evidence": "collection/package-metadata.json",
+      "synthetic": false
+    },
+    {
+      "id": "tox-root",
+      "project": "tox",
+      "package": "tox",
+      "tool_version": "4.30.2",
+      "invocation": [
+        "tox",
+        "--help"
+      ],
+      "command_path": [
+        "tox"
+      ],
+      "family": "unknown",
+      "leakage_group": "tox",
+      "source_url": "https://pypi.org/project/tox/4.30.2/",
+      "license_evidence": "collection/package-metadata.json",
+      "synthetic": false
+    },
+    {
+      "id": "virtualenv-root",
+      "project": "virtualenv",
+      "package": "virtualenv",
+      "tool_version": "20.34.0",
+      "invocation": [
+        "virtualenv",
+        "--help"
+      ],
+      "command_path": [
+        "virtualenv"
+      ],
+      "family": "unknown",
+      "leakage_group": "virtualenv",
+      "source_url": "https://pypi.org/project/virtualenv/20.34.0/",
+      "license_evidence": "collection/package-metadata.json",
+      "synthetic": false
+    },
+    {
+      "id": "httpie-root",
+      "project": "httpie",
+      "package": "httpie",
+      "tool_version": "3.2.4",
+      "invocation": [
+        "http",
+        "--help"
+      ],
+      "command_path": [
+        "http"
+      ],
+      "family": "unknown",
+      "leakage_group": "httpie",
+      "source_url": "https://pypi.org/project/httpie/3.2.4/",
+      "license_evidence": "collection/package-metadata.json",
+      "synthetic": false
+    },
+    {
+      "id": "rich-cli-root",
+      "project": "rich-cli",
+      "package": "rich-cli",
+      "tool_version": "1.8.1",
+      "invocation": [
+        "rich",
+        "--help"
+      ],
+      "command_path": [
+        "rich"
+      ],
+      "family": "unknown",
+      "leakage_group": "rich-cli",
+      "source_url": "https://pypi.org/project/rich-cli/1.8.1/",
+      "license_evidence": "collection/package-metadata.json",
+      "synthetic": false
+    },
+    {
+      "id": "sqlfluff-root",
+      "project": "sqlfluff",
+      "package": "sqlfluff",
+      "tool_version": "3.4.2",
+      "invocation": [
+        "sqlfluff",
+        "--help"
+      ],
+      "command_path": [
+        "sqlfluff"
+      ],
+      "family": "unknown",
+      "leakage_group": "sqlfluff",
+      "source_url": "https://pypi.org/project/sqlfluff/3.4.2/",
+      "license_evidence": "collection/package-metadata.json",
+      "synthetic": false
+    },
+    {
+      "id": "hatch-root",
+      "project": "hatch",
+      "package": "hatch",
+      "tool_version": "1.14.2",
+      "invocation": [
+        "hatch",
+        "--help"
+      ],
+      "command_path": [
+        "hatch"
+      ],
+      "family": "unknown",
+      "leakage_group": "hatch",
+      "source_url": "https://pypi.org/project/hatch/1.14.2/",
+      "license_evidence": "collection/package-metadata.json",
+      "synthetic": false
+    },
+    {
+      "id": "datasette-root",
+      "project": "datasette",
+      "package": "datasette",
+      "tool_version": "0.65.1",
+      "invocation": [
+        "datasette",
+        "--help"
+      ],
+      "command_path": [
+        "datasette"
+      ],
+      "family": "unknown",
+      "leakage_group": "datasette",
+      "source_url": "https://pypi.org/project/datasette/0.65.1/",
+      "license_evidence": "collection/package-metadata.json",
+      "synthetic": false
+    }
+  ]
+}

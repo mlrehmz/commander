@@ -1,1 +1,44 @@
-{"version":1,"frozen":false,"entries":[]}
+{
+  "version": 1,
+  "frozen": false,
+  "entries": [
+    {
+      "id": "hatch-root",
+      "project": "hatch",
+      "leakage_group": "hatch",
+      "family": "unknown",
+      "command_path": [
+        "hatch"
+      ],
+      "tool_version": "1.14.2",
+      "source_url": "https://pypi.org/project/hatch/1.14.2/",
+      "locale": "C.UTF-8",
+      "terminal_width": 80,
+      "synthetic": false,
+      "split": "train",
+      "input": "../intake/hatch-root.txt",
+      "annotation": "../annotations/adjudicated/hatch-root.json",
+      "raw_sha256": "794aff42717b5795f66a2aaf12e3ebb59dc36b40161fb1e1330745a15d2d3849",
+      "license_evidence": "../../collection/licenses.json"
+    },
+    {
+      "id": "sqlfluff-root",
+      "project": "sqlfluff",
+      "leakage_group": "sqlfluff",
+      "family": "unknown",
+      "command_path": [
+        "sqlfluff"
+      ],
+      "tool_version": "3.4.2",
+      "source_url": "https://pypi.org/project/sqlfluff/3.4.2/",
+      "locale": "C.UTF-8",
+      "terminal_width": 80,
+      "synthetic": false,
+      "split": "train",
+      "input": "../intake/sqlfluff-root.txt",
+      "annotation": "../annotations/adjudicated/sqlfluff-root.json",
+      "raw_sha256": "a25526f4b18f911614ca5c3a124fdcbf95d0054667c2c3611a28c05880cf6dec",
+      "license_evidence": "../../collection/licenses.json"
+    }
+  ]
+}

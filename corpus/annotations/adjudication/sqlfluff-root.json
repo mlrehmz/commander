@@ -1,0 +1,55 @@
+{
+  "canonical_sha256": "a25526f4b18f911614ca5c3a124fdcbf95d0054667c2c3611a28c05880cf6dec",
+  "annotators": [
+    "codex-primary-2026-11-19",
+    "codex-blind-2026-11-19"
+  ],
+  "disagreements": [
+    {
+      "kind": "line_label",
+      "line": 21,
+      "primary": "prose",
+      "blind": "other",
+      "decision": "other",
+      "justification": "The RST code-block directive is markup, not prose: label other."
+    },
+    {
+      "kind": "line_label",
+      "line": 23,
+      "primary": "prose",
+      "blind": "other",
+      "decision": "other",
+      "justification": "This is a shell invocation example, not prose: label other."
+    },
+    {
+      "kind": "line_label",
+      "line": 25,
+      "primary": "prose",
+      "blind": "other",
+      "decision": "other",
+      "justification": "This is a shell invocation example, not prose: label other."
+    },
+    {
+      "kind": "line_label",
+      "line": 27,
+      "primary": "prose",
+      "blind": "other",
+      "decision": "other",
+      "justification": "This is a shell invocation example, not prose: label other."
+    },
+    {
+      "kind": "line_label",
+      "line": 29,
+      "primary": "prose",
+      "blind": "other",
+      "decision": "other",
+      "justification": "This is a shell invocation example, not prose: label other."
+    }
+  ],
+  "adjudicated": true,
+  "adjudicator": "codex-primary-2026-11-19",
+  "primary_sha256": "2a98282a1769b0ffc254066049d7668a7d2c1608adc81e4fe35f6b0bb9947674",
+  "blind_sha256": "c41becf4c1e3a88d81a490c4bd39c79967b659c15aadc7009f9910c8fda8a46c",
+  "record_agreement": "All flag, advertised-entry, semantic and evidence fields match.",
+  "producer": "agent"
+}

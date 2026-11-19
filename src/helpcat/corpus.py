@@ -4,7 +4,7 @@ import hashlib
 import json
 from pathlib import Path
 
-from .core import LABELS, canonicalize
+from .core import LABELS, canonicalize, validate_catalog
 
 SPLITS = {"train", "dev", "familiar_test", "cobra_test", "clap_test"}
 
@@ -14,7 +14,7 @@ def load_manifest(path, *, splits=("train", "dev")):
     data = json.loads(path.read_text())
     if data.get("version") != 1 or not isinstance(data.get("entries"), list):
         raise ValueError("unsupported manifest")
-    groups, counts, hashes = {}, {}, {}
+    groups, counts, hashes, raw_hashes = {}, {}, {}, {}
     required = {
         "id",
         "project",
@@ -51,6 +51,14 @@ def load_manifest(path, *, splits=("train", "dev")):
             raise ValueError("more than three invocations per project")
         if entry["family"] in ("cobra", "clap") and entry["split"] != entry["family"] + "_test":
             raise ValueError("held-out family leakage")
+        if entry["split"] in ("cobra_test", "clap_test") and entry["family"] != entry[
+            "split"
+        ].removesuffix("_test"):
+            raise ValueError("held-out track requires verified family")
+        raw_hash = entry["raw_sha256"]
+        if raw_hash in raw_hashes and raw_hashes[raw_hash] != entry["leakage_group"]:
+            raise ValueError("duplicate content in different leakage groups")
+        raw_hashes[raw_hash] = entry["leakage_group"]
         # Test files stay closed in routine development.
         if entry["split"] not in splits:
             continue
@@ -82,6 +90,9 @@ def load_manifest(path, *, splits=("train", "dev")):
             raise ValueError("annotation identity missing")
         if not annotation.get("adjudicated") or "reference" not in annotation:
             raise ValueError("reference not adjudicated")
+        reference = validate_catalog(annotation["reference"])
+        if reference["source"] != source or reference["command_path"] != entry["command_path"]:
+            raise ValueError("reference source or scope mismatch")
         result.append((entry, source, annotation))
     return data, result
 

@@ -1,0 +1,2 @@
+# Keep captured bytes unchanged, including terminal padding.
+corpus/intake/*.txt -text -whitespace

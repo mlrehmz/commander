@@ -21,3 +21,20 @@ synthetic unit fixtures. Framework adapters require the separate survey gate.
 
 Remaining authority: captures and adjudicated annotation files, then frozen split
 manifests. Features and models are derived and must carry configuration hashes.
+
+## Neural implementation scaffold
+
+The next independent code seam is a CPU line tagger plus versioned feature cache,
+window merge and resumable checkpoints. This is implementation/smoke testing only;
+substantial training remains behind corpus and assembler gates. Canonical lines
+remain full length; only the CNN sees first 48 UTF-8 bytes. Windows have 256 lines
+with 32 overlap; choose the prediction with maximal context, with earlier-window
+tie breaking. Packed sequences exclude padding from both GRU directions.
+
+The model owns tensors and optimizer state. A training session owns elapsed CPU
+budget, RNG state and atomic checkpoints. Cache identity includes canonical hash
+and complete feature config. Checkpoints carry seed, model/optimizer/RNG states,
+configuration and code revision. A restart must reject mismatched configuration.
+Tests cover byte truncation vs intact evidence, window boundaries, cache changes,
+actual model inference into the assembler and checkpoint recovery. No test result
+will be represented as the eight-page overfit gate or three-seed experiment.

@@ -1,0 +1,14 @@
+{
+  "image": "sha256:cbaa10bd1d9bf77e577de88d3e5e2947670adcc5db07580cd9e182659a14e63f",
+  "checks": {
+    "uid": 65534,
+    "root_read_only": true,
+    "temporary_storage": true,
+    "network_interfaces": [
+      "lo"
+    ],
+    "memory_max": "536870912",
+    "cpu_max": "100000 100000",
+    "pids_max": "64"
+  }
+}

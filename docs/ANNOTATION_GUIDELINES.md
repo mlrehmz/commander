@@ -23,3 +23,29 @@ command_path, tool_version, source_url, license_evidence, locale, terminal_width
 and synthetic. Paths are relative to the manifest directory, inside corpus/.
 Document missing capture metadata explicitly as null. Project identity must be
 stable across forks and template descendants; put those in one leakage group.
+
+## Source-only packet workflow
+
+Prepare each pass separately, with a distinct annotator. The preparer never loads
+a tagger or fills labels or reference records. Start the blind pass from the
+capture, not from the primary packet. Set `blind: true` on that separate packet.
+
+```sh
+uv run python -m helpcat.annotation prepare corpus/intake/hatch-root.txt \
+  --command hatch --annotator reviewer-id --producer human --output /tmp/hatch-review.json
+uv run python -m helpcat.annotation compare \
+  corpus/annotations/primary/hatch-root.json /tmp/hatch-review.json
+```
+
+The comparison checks source/scope, distinct identities, labels, complete record
+values and exact evidence, ignoring selection scores. It produces disagreement
+details and does not adjudicate automatically. Record a source-based decision for
+each disagreement before setting adjudicated. Identity fields cannot prove that a
+pass was genuinely blind; that is an audit obligation. The two current primary
+packets were transcribed by an agent without parser predictions. Their source
+transcriptions can be reproduced with `uv run python collection/materialize_primary.py`.
+Their independent blind passes are in `corpus/annotations/blind`; source-based
+adjudications and reports are preserved separately. Reproduce decisions with
+`uv run python collection/adjudicate_pilot.py`. The original primary drafts stay
+unchanged. Adjudicated packets are training-pilot references, pending the final
+independent audit; they are not human gold or final evaluation data.
