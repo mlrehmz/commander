@@ -1,0 +1,374 @@
+{
+  "annotation_version": 1,
+  "canonical_sha256": "15fc44afc5befa2b7221ec7e43462cf8f52843a7d43118527ca1c8531e68915c",
+  "command_path": [
+    "gofmt"
+  ],
+  "source": {
+    "raw_sha256": "15fc44afc5befa2b7221ec7e43462cf8f52843a7d43118527ca1c8531e68915c",
+    "canonical_sha256": "15fc44afc5befa2b7221ec7e43462cf8f52843a7d43118527ca1c8531e68915c",
+    "canonical_text": "usage: gofmt [flags] [path ...]\n  -cpuprofile string\n    \twrite cpu profile to this file\n  -d\tdisplay diffs instead of rewriting files\n  -e\treport all errors (not just the first 10 on different lines)\n  -l\tlist files whose formatting differs from gofmt's\n  -r string\n    \trewrite rule (e.g., 'a[b:len(a)] -> a[b:]')\n  -s\tsimplify code\n  -w\twrite result to (source) file instead of stdout\n",
+    "normalization_version": "1.0",
+    "capture_metadata": {}
+  },
+  "annotator": "codex-primary-2026-11-19",
+  "producer": "agent",
+  "blind": false,
+  "labels": [
+    "usage",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "option_declaration",
+    "description_continuation",
+    "option_declaration",
+    "option_declaration",
+    "blank"
+  ],
+  "reference": {
+    "schema_version": "1.0",
+    "source": {
+      "raw_sha256": "15fc44afc5befa2b7221ec7e43462cf8f52843a7d43118527ca1c8531e68915c",
+      "canonical_sha256": "15fc44afc5befa2b7221ec7e43462cf8f52843a7d43118527ca1c8531e68915c",
+      "canonical_text": "usage: gofmt [flags] [path ...]\n  -cpuprofile string\n    \twrite cpu profile to this file\n  -d\tdisplay diffs instead of rewriting files\n  -e\treport all errors (not just the first 10 on different lines)\n  -l\tlist files whose formatting differs from gofmt's\n  -r string\n    \trewrite rule (e.g., 'a[b:len(a)] -> a[b:]')\n  -s\tsimplify code\n  -w\twrite result to (source) file instead of stdout\n",
+      "normalization_version": "1.0",
+      "capture_metadata": {}
+    },
+    "command_path": [
+      "gofmt"
+    ],
+    "flags": [
+      {
+        "aliases": [
+          {
+            "value": "-cpuprofile",
+            "literal": "-cpuprofile",
+            "evidence": [
+              {
+                "line": 2,
+                "start": 2,
+                "end": 13
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "string",
+          "literal": "string",
+          "evidence": [
+            {
+              "line": 2,
+              "start": 14,
+              "end": 20
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "string",
+          "evidence": [
+            {
+              "line": 2,
+              "start": 14,
+              "end": 20
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "write cpu profile to this file",
+          "literal": "write cpu profile to this file",
+          "evidence": [
+            {
+              "line": 3,
+              "start": 5,
+              "end": 35
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "-d",
+            "literal": "-d",
+            "evidence": [
+              {
+                "line": 4,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "display diffs instead of rewriting files",
+          "literal": "display diffs instead of rewriting files",
+          "evidence": [
+            {
+              "line": 4,
+              "start": 5,
+              "end": 45
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "-e",
+            "literal": "-e",
+            "evidence": [
+              {
+                "line": 5,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "report all errors (not just the first 10 on different lines)",
+          "literal": "report all errors (not just the first 10 on different lines)",
+          "evidence": [
+            {
+              "line": 5,
+              "start": 5,
+              "end": 65
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "-l",
+            "literal": "-l",
+            "evidence": [
+              {
+                "line": 6,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "list files whose formatting differs from gofmt's",
+          "literal": "list files whose formatting differs from gofmt's",
+          "evidence": [
+            {
+              "line": 6,
+              "start": 5,
+              "end": 53
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "-r",
+            "literal": "-r",
+            "evidence": [
+              {
+                "line": 7,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": {
+          "value": "string",
+          "literal": "string",
+          "evidence": [
+            {
+              "line": 7,
+              "start": 5,
+              "end": 11
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "arity": {
+          "value": "required",
+          "literal": "string",
+          "evidence": [
+            {
+              "line": 7,
+              "start": 5,
+              "end": 11
+            }
+          ],
+          "rule": "declaration-value-notation",
+          "provenance": "deterministic_inference"
+        },
+        "takes_value": true,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "rewrite rule (e.g., 'a[b:len(a)] -> a[b:]')",
+          "literal": "rewrite rule (e.g., 'a[b:len(a)] -> a[b:]')",
+          "evidence": [
+            {
+              "line": 8,
+              "start": 5,
+              "end": 48
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "-s",
+            "literal": "-s",
+            "evidence": [
+              {
+                "line": 9,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "simplify code",
+          "literal": "simplify code",
+          "evidence": [
+            {
+              "line": 9,
+              "start": 5,
+              "end": 18
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "-w",
+            "literal": "-w",
+            "evidence": [
+              {
+                "line": 10,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "write result to (source) file instead of stdout",
+          "literal": "write result to (source) file instead of stdout",
+          "evidence": [
+            {
+              "line": 10,
+              "start": 5,
+              "end": 52
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      }
+    ],
+    "subcommands": [],
+    "positionals": [],
+    "status": "ok",
+    "diagnostics": [],
+    "engine": {
+      "name": "manual-agent-annotation",
+      "version": "primary-1",
+      "threshold": 0.0,
+      "calibrated": false
+    }
+  },
+  "adjudicated": false,
+  "notes": [
+    "Primary agent source pass; no parser/tagger outputs read.",
+    "Optional semantics without a documented supported interpretation stay unknown. Blind comparison pending."
+  ]
+}

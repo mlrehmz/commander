@@ -411,8 +411,8 @@ def token_span(line, token):
     return match.start(), match.end()
 
 
-def materialize(identifier, spec):
-    text = Path(f"corpus/intake/{identifier}.txt").read_bytes().decode("utf-8")
+def materialize(identifier, spec, *, input_directory=Path("corpus/intake")):
+    text = (input_directory / f"{identifier}.txt").read_bytes().decode("utf-8")
     packet = annotation_packet(
         text, tuple(spec["command"]), annotator="codex-primary-2026-11-19", producer="agent"
     )

@@ -1,0 +1,739 @@
+{
+  "annotation_version": 1,
+  "canonical_sha256": "c46a8b8050ce235d401386b2b64e4529c7fad76a191e7970935136e543939979",
+  "command_path": [
+    "llm"
+  ],
+  "source": {
+    "raw_sha256": "c46a8b8050ce235d401386b2b64e4529c7fad76a191e7970935136e543939979",
+    "canonical_sha256": "c46a8b8050ce235d401386b2b64e4529c7fad76a191e7970935136e543939979",
+    "canonical_text": "Usage: llm [OPTIONS] COMMAND [ARGS]...\n\n  Access Large Language Models from the command-line\n\n  Documentation: https://llm.datasette.io/\n\n  LLM can run models from many different providers. Consult the plugin\n  directory for a list of available models:\n\n  https://llm.datasette.io/en/stable/plugins/directory.html\n\n  To get started with OpenAI, obtain an API key from them and:\n\n      $ llm keys set openai\n      Enter key: ...\n\n  Then execute a prompt like this:\n\n      llm 'Five outrageous names for a pet pelican'\n\n  For a full list of prompting options run:\n\n      llm prompt --help\n\nOptions:\n  --version   Show the version and exit.\n  -h, --help  Show this message and exit.\n\nCommands:\n  prompt*       Execute a prompt\n  aliases       Manage model aliases\n  chat          Hold an ongoing chat with a model.\n  collections   View and manage collections of embeddings\n  embed         Embed text and store or return the result\n  embed-models  Manage available embedding models\n  embed-multi   Store embeddings for multiple strings at once in the...\n  fragments     Manage fragments that are stored in the database\n  install       Install packages from PyPI into the same environment as LLM\n  keys          Manage stored API keys for different models\n  logs          Tools for exploring logged prompts and responses\n  models        Manage available models\n  openai        Commands for working with OpenAI and OpenAI-compatible APIs\n  plugins       List installed plugins\n  schemas       Manage stored schemas\n  similar       Return top N similar IDs from a collection using cosine...\n  templates     Manage stored prompt templates\n  tools         Manage tools that can be made available to LLMs\n  uninstall     Uninstall Python packages from the LLM environment\n",
+    "normalization_version": "1.0",
+    "capture_metadata": {}
+  },
+  "annotator": "codex-primary-2026-11-19",
+  "producer": "agent",
+  "blind": false,
+  "labels": [
+    "usage",
+    "blank",
+    "prose",
+    "blank",
+    "prose",
+    "blank",
+    "prose",
+    "prose",
+    "blank",
+    "prose",
+    "blank",
+    "prose",
+    "blank",
+    "other",
+    "other",
+    "blank",
+    "prose",
+    "blank",
+    "other",
+    "blank",
+    "prose",
+    "blank",
+    "other",
+    "blank",
+    "section_heading",
+    "option_declaration",
+    "option_declaration",
+    "blank",
+    "section_heading",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "subcommand_declaration",
+    "blank"
+  ],
+  "reference": {
+    "schema_version": "1.0",
+    "source": {
+      "raw_sha256": "c46a8b8050ce235d401386b2b64e4529c7fad76a191e7970935136e543939979",
+      "canonical_sha256": "c46a8b8050ce235d401386b2b64e4529c7fad76a191e7970935136e543939979",
+      "canonical_text": "Usage: llm [OPTIONS] COMMAND [ARGS]...\n\n  Access Large Language Models from the command-line\n\n  Documentation: https://llm.datasette.io/\n\n  LLM can run models from many different providers. Consult the plugin\n  directory for a list of available models:\n\n  https://llm.datasette.io/en/stable/plugins/directory.html\n\n  To get started with OpenAI, obtain an API key from them and:\n\n      $ llm keys set openai\n      Enter key: ...\n\n  Then execute a prompt like this:\n\n      llm 'Five outrageous names for a pet pelican'\n\n  For a full list of prompting options run:\n\n      llm prompt --help\n\nOptions:\n  --version   Show the version and exit.\n  -h, --help  Show this message and exit.\n\nCommands:\n  prompt*       Execute a prompt\n  aliases       Manage model aliases\n  chat          Hold an ongoing chat with a model.\n  collections   View and manage collections of embeddings\n  embed         Embed text and store or return the result\n  embed-models  Manage available embedding models\n  embed-multi   Store embeddings for multiple strings at once in the...\n  fragments     Manage fragments that are stored in the database\n  install       Install packages from PyPI into the same environment as LLM\n  keys          Manage stored API keys for different models\n  logs          Tools for exploring logged prompts and responses\n  models        Manage available models\n  openai        Commands for working with OpenAI and OpenAI-compatible APIs\n  plugins       List installed plugins\n  schemas       Manage stored schemas\n  similar       Return top N similar IDs from a collection using cosine...\n  templates     Manage stored prompt templates\n  tools         Manage tools that can be made available to LLMs\n  uninstall     Uninstall Python packages from the LLM environment\n",
+      "normalization_version": "1.0",
+      "capture_metadata": {}
+    },
+    "command_path": [
+      "llm"
+    ],
+    "flags": [
+      {
+        "aliases": [
+          {
+            "value": "--version",
+            "literal": "--version",
+            "evidence": [
+              {
+                "line": 26,
+                "start": 2,
+                "end": 11
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Show the version and exit.",
+          "literal": "Show the version and exit.",
+          "evidence": [
+            {
+              "line": 26,
+              "start": 14,
+              "end": 40
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "aliases": [
+          {
+            "value": "-h",
+            "literal": "-h",
+            "evidence": [
+              {
+                "line": 27,
+                "start": 2,
+                "end": 4
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          },
+          {
+            "value": "--help",
+            "literal": "--help",
+            "evidence": [
+              {
+                "line": 27,
+                "start": 6,
+                "end": 12
+              }
+            ],
+            "rule": "identity",
+            "provenance": "direct"
+          }
+        ],
+        "metavar": null,
+        "arity": null,
+        "takes_value": null,
+        "required_presence": null,
+        "type": null,
+        "default": null,
+        "choices": null,
+        "description": {
+          "value": "Show this message and exit.",
+          "literal": "Show this message and exit.",
+          "evidence": [
+            {
+              "line": 27,
+              "start": 14,
+              "end": 41
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      }
+    ],
+    "subcommands": [
+      {
+        "name": {
+          "value": "prompt*",
+          "literal": "prompt*",
+          "evidence": [
+            {
+              "line": 30,
+              "start": 2,
+              "end": 9
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Execute a prompt",
+          "literal": "Execute a prompt",
+          "evidence": [
+            {
+              "line": 30,
+              "start": 16,
+              "end": 32
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "aliases",
+          "literal": "aliases",
+          "evidence": [
+            {
+              "line": 31,
+              "start": 2,
+              "end": 9
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Manage model aliases",
+          "literal": "Manage model aliases",
+          "evidence": [
+            {
+              "line": 31,
+              "start": 16,
+              "end": 36
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "chat",
+          "literal": "chat",
+          "evidence": [
+            {
+              "line": 32,
+              "start": 2,
+              "end": 6
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Hold an ongoing chat with a model.",
+          "literal": "Hold an ongoing chat with a model.",
+          "evidence": [
+            {
+              "line": 32,
+              "start": 16,
+              "end": 50
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "collections",
+          "literal": "collections",
+          "evidence": [
+            {
+              "line": 33,
+              "start": 2,
+              "end": 13
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "View and manage collections of embeddings",
+          "literal": "View and manage collections of embeddings",
+          "evidence": [
+            {
+              "line": 33,
+              "start": 16,
+              "end": 57
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "embed",
+          "literal": "embed",
+          "evidence": [
+            {
+              "line": 34,
+              "start": 2,
+              "end": 7
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Embed text and store or return the result",
+          "literal": "Embed text and store or return the result",
+          "evidence": [
+            {
+              "line": 34,
+              "start": 16,
+              "end": 57
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "embed-models",
+          "literal": "embed-models",
+          "evidence": [
+            {
+              "line": 35,
+              "start": 2,
+              "end": 14
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Manage available embedding models",
+          "literal": "Manage available embedding models",
+          "evidence": [
+            {
+              "line": 35,
+              "start": 16,
+              "end": 49
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "embed-multi",
+          "literal": "embed-multi",
+          "evidence": [
+            {
+              "line": 36,
+              "start": 2,
+              "end": 13
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Store embeddings for multiple strings at once in the...",
+          "literal": "Store embeddings for multiple strings at once in the...",
+          "evidence": [
+            {
+              "line": 36,
+              "start": 16,
+              "end": 71
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "fragments",
+          "literal": "fragments",
+          "evidence": [
+            {
+              "line": 37,
+              "start": 2,
+              "end": 11
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Manage fragments that are stored in the database",
+          "literal": "Manage fragments that are stored in the database",
+          "evidence": [
+            {
+              "line": 37,
+              "start": 16,
+              "end": 64
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "install",
+          "literal": "install",
+          "evidence": [
+            {
+              "line": 38,
+              "start": 2,
+              "end": 9
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Install packages from PyPI into the same environment as LLM",
+          "literal": "Install packages from PyPI into the same environment as LLM",
+          "evidence": [
+            {
+              "line": 38,
+              "start": 16,
+              "end": 75
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "keys",
+          "literal": "keys",
+          "evidence": [
+            {
+              "line": 39,
+              "start": 2,
+              "end": 6
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Manage stored API keys for different models",
+          "literal": "Manage stored API keys for different models",
+          "evidence": [
+            {
+              "line": 39,
+              "start": 16,
+              "end": 59
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "logs",
+          "literal": "logs",
+          "evidence": [
+            {
+              "line": 40,
+              "start": 2,
+              "end": 6
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Tools for exploring logged prompts and responses",
+          "literal": "Tools for exploring logged prompts and responses",
+          "evidence": [
+            {
+              "line": 40,
+              "start": 16,
+              "end": 64
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "models",
+          "literal": "models",
+          "evidence": [
+            {
+              "line": 41,
+              "start": 2,
+              "end": 8
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Manage available models",
+          "literal": "Manage available models",
+          "evidence": [
+            {
+              "line": 41,
+              "start": 16,
+              "end": 39
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "openai",
+          "literal": "openai",
+          "evidence": [
+            {
+              "line": 42,
+              "start": 2,
+              "end": 8
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Commands for working with OpenAI and OpenAI-compatible APIs",
+          "literal": "Commands for working with OpenAI and OpenAI-compatible APIs",
+          "evidence": [
+            {
+              "line": 42,
+              "start": 16,
+              "end": 75
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "plugins",
+          "literal": "plugins",
+          "evidence": [
+            {
+              "line": 43,
+              "start": 2,
+              "end": 9
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "List installed plugins",
+          "literal": "List installed plugins",
+          "evidence": [
+            {
+              "line": 43,
+              "start": 16,
+              "end": 38
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "schemas",
+          "literal": "schemas",
+          "evidence": [
+            {
+              "line": 44,
+              "start": 2,
+              "end": 9
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Manage stored schemas",
+          "literal": "Manage stored schemas",
+          "evidence": [
+            {
+              "line": 44,
+              "start": 16,
+              "end": 37
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "similar",
+          "literal": "similar",
+          "evidence": [
+            {
+              "line": 45,
+              "start": 2,
+              "end": 9
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Return top N similar IDs from a collection using cosine...",
+          "literal": "Return top N similar IDs from a collection using cosine...",
+          "evidence": [
+            {
+              "line": 45,
+              "start": 16,
+              "end": 74
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "templates",
+          "literal": "templates",
+          "evidence": [
+            {
+              "line": 46,
+              "start": 2,
+              "end": 11
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Manage stored prompt templates",
+          "literal": "Manage stored prompt templates",
+          "evidence": [
+            {
+              "line": 46,
+              "start": 16,
+              "end": 46
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "tools",
+          "literal": "tools",
+          "evidence": [
+            {
+              "line": 47,
+              "start": 2,
+              "end": 7
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Manage tools that can be made available to LLMs",
+          "literal": "Manage tools that can be made available to LLMs",
+          "evidence": [
+            {
+              "line": 47,
+              "start": 16,
+              "end": 63
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      },
+      {
+        "name": {
+          "value": "uninstall",
+          "literal": "uninstall",
+          "evidence": [
+            {
+              "line": 48,
+              "start": 2,
+              "end": 11
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "description": {
+          "value": "Uninstall Python packages from the LLM environment",
+          "literal": "Uninstall Python packages from the LLM environment",
+          "evidence": [
+            {
+              "line": 48,
+              "start": 16,
+              "end": 66
+            }
+          ],
+          "rule": "identity",
+          "provenance": "direct"
+        },
+        "selection_score": 1.0
+      }
+    ],
+    "positionals": [],
+    "status": "ok",
+    "diagnostics": [],
+    "engine": {
+      "name": "manual-agent-annotation",
+      "version": "primary-1",
+      "threshold": 0.0,
+      "calibrated": false
+    }
+  },
+  "adjudicated": false,
+  "notes": [
+    "Primary agent source pass; no parser/tagger outputs read.",
+    "Optional semantics without a documented supported interpretation stay unknown. Blind comparison pending."
+  ]
+}
