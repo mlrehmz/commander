@@ -1,0 +1,108 @@
+{
+  "project": "rsync",
+  "repository": "https://github.com/RsyncProject/rsync",
+  "upstream_ref": "v3.4.1",
+  "tool_version": "3.4.1",
+  "cli": "rsync",
+  "family": "gnu-style",
+  "family_basis": "The popt option table drives both ordinary and daemon help branches. The ordinary help branch calls the dedicated usage renderer.",
+  "upstream_source_archive": null,
+  "code_evidence": [
+    {
+      "path": "options.c",
+      "url": "https://github.com/RsyncProject/rsync/blob/v3.4.1/options.c",
+      "sha256": "8422e7bff07aca5da457d9cb35735e46aab25436e0ccec592e72191a90be26af",
+      "raw_url": "https://raw.githubusercontent.com/RsyncProject/rsync/v3.4.1/options.c",
+      "excerpts": [
+        {
+          "line": 592,
+          "code": "{\"help\",             0,  POPT_ARG_NONE,   0, OPT_HELP, 0, 0 },",
+          "url": "https://github.com/RsyncProject/rsync/blob/v3.4.1/options.c#L592"
+        },
+        {
+          "line": 1378,
+          "code": "while ((opt = poptGetNextOpt(pc)) != -1) {",
+          "url": "https://github.com/RsyncProject/rsync/blob/v3.4.1/options.c#L1378"
+        },
+        {
+          "line": 1838,
+          "code": "case OPT_HELP:",
+          "url": "https://github.com/RsyncProject/rsync/blob/v3.4.1/options.c#L1838"
+        },
+        {
+          "line": 1839,
+          "code": "usage(FINFO);",
+          "url": "https://github.com/RsyncProject/rsync/blob/v3.4.1/options.c#L1839"
+        }
+      ],
+      "debian_orig": {
+        "path": "options.c",
+        "url": "https://deb.debian.org/debian/pool/main/r/rsync/rsync_3.4.1+ds1.orig.tar.xz",
+        "archive_member": "rsync-3.4.1/options.c",
+        "sha256": "8422e7bff07aca5da457d9cb35735e46aab25436e0ccec592e72191a90be26af",
+        "same_bytes": true
+      }
+    },
+    {
+      "path": "usage.c",
+      "url": "https://github.com/RsyncProject/rsync/blob/v3.4.1/usage.c",
+      "sha256": "b13f1608f86135eb1ecff9ed9b3f1dd0e58a825e16c846d3cad552311ee91cfd",
+      "raw_url": "https://raw.githubusercontent.com/RsyncProject/rsync/v3.4.1/usage.c",
+      "excerpts": [
+        {
+          "line": 319,
+          "code": "void usage(enum logcode F)",
+          "url": "https://github.com/RsyncProject/rsync/blob/v3.4.1/usage.c#L319"
+        }
+      ],
+      "debian_orig": {
+        "path": "usage.c",
+        "url": "https://deb.debian.org/debian/pool/main/r/rsync/rsync_3.4.1+ds1.orig.tar.xz",
+        "archive_member": "rsync-3.4.1/usage.c",
+        "sha256": "b13f1608f86135eb1ecff9ed9b3f1dd0e58a825e16c846d3cad552311ee91cfd",
+        "same_bytes": true
+      }
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "GPL-3.0-or-later",
+    "scope": "CLI source",
+    "license_files": [
+      {
+        "path": "COPYING",
+        "url": "https://github.com/RsyncProject/rsync/blob/v3.4.1/COPYING",
+        "sha256": "85c19ea50a224c2d0067a69c083584e5717b40b76610ec1218f91385775067dd",
+        "raw_url": "https://raw.githubusercontent.com/RsyncProject/rsync/v3.4.1/COPYING"
+      }
+    ],
+    "observed_terms": "The CLI source and Debian copyright specify GPL-3.0-or-later. Debian excludes bundled copies of popt and zlib.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "debian": {
+    "index_url": "https://deb.debian.org/debian/dists/trixie/main/source/Sources.xz",
+    "index_sha256": "6002f81f463a2d976d84b34170367cc16da2d60bd0ba9ab9d868d6e1c1a935d9",
+    "source_package": "rsync",
+    "version": "3.4.1+ds1-5+deb13u4",
+    "vcs": "https://salsa.debian.org/debian/rsync",
+    "orig": {
+      "url": "https://deb.debian.org/debian/pool/main/r/rsync/rsync_3.4.1+ds1.orig.tar.xz",
+      "sha256": "bb9e2dda7e79d9639bc04bdafff6bb0b06a606ed915358b574696384215c9e5c",
+      "filename": "rsync_3.4.1+ds1.orig.tar.xz"
+    },
+    "debian": {
+      "url": "https://deb.debian.org/debian/pool/main/r/rsync/rsync_3.4.1+ds1-5+deb13u4.debian.tar.xz",
+      "sha256": "86b4e90cf40346b77858074a615381d249503e45cd5128b9dfe4ae5a31221eeb",
+      "filename": "rsync_3.4.1+ds1-5+deb13u4.debian.tar.xz"
+    },
+    "binary_package": "rsync",
+    "package_url": "https://packages.debian.org/trixie/rsync",
+    "distribution": "Debian trixie",
+    "copyright": {
+      "path": "debian/copyright",
+      "url": "https://deb.debian.org/debian/pool/main/r/rsync/rsync_3.4.1+ds1-5+deb13u4.debian.tar.xz",
+      "archive_member": "debian/copyright",
+      "sha256": "db06f26463e84e6c155f5c22d09841b2f4ffedce26d03efa233925e90aee94cc"
+    }
+  },
+  "provisional_grouping_concerns": []
+}

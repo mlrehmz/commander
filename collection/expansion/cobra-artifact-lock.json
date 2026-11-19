@@ -1,0 +1,709 @@
+{
+  "version": 1,
+  "scope": "Archive and selected Linux x86_64 CLI byte identities. Paths refer to temporary files. CLI binaries have no execute permissions. No CLI ran and no help, man, or completion content was read.",
+  "archive_limit_bytes": 268435456,
+  "verified_binary_count": 20,
+  "publisher_digest_match_count": 19,
+  "records": [
+    {
+      "id": "helm-helm",
+      "project": "helm/helm",
+      "cli": "helm",
+      "tool_version": "3.17.3",
+      "upstream_ref": "v3.17.3",
+      "survey_asset_url": "https://get.helm.sh/helm-v3.17.3-linux-amd64.tar.gz",
+      "asset_url": "https://get.helm.sh/helm-v3.17.3-linux-amd64.tar.gz",
+      "package_version": null,
+      "archive": {
+        "path": "/tmp/helpcat-cobra-assets/helm-helm/helm-v3.17.3-linux-amd64.tar.gz",
+        "bytes": 17491989,
+        "sha256": "ee88b3c851ae6466a3de507f7be73fe94d54cbf2987cbaa3d1a3832ea331f2cd"
+      },
+      "publisher_digest": {
+        "status": "matched_publisher_checksum",
+        "expected_sha256": "ee88b3c851ae6466a3de507f7be73fe94d54cbf2987cbaa3d1a3832ea331f2cd",
+        "checked_sources": [
+          {
+            "url": "https://get.helm.sh/helm-v3.17.3-linux-amd64.tar.gz.sha256sum",
+            "expected_sha256": "ee88b3c851ae6466a3de507f7be73fe94d54cbf2987cbaa3d1a3832ea331f2cd",
+            "status": "matched"
+          }
+        ]
+      },
+      "selected_cli": {
+        "member": "linux-amd64/helm",
+        "selection_type": "regular_archive_member",
+        "path": "/tmp/helpcat-cobra-binaries/helm-helm",
+        "bytes": 58155160,
+        "sha256": "c16af303055cfe1c1e64652b547cfdbed924e89fd2a20d8632d797978c14def3",
+        "mode": "0600"
+      },
+      "runtime_status": "unverified",
+      "errors": []
+    },
+    {
+      "id": "kubernetes-sigs-kind",
+      "project": "kubernetes-sigs/kind",
+      "cli": "kind",
+      "tool_version": "0.27.0",
+      "upstream_ref": "v0.27.0",
+      "survey_asset_url": "https://github.com/kubernetes-sigs/kind/releases/download/v0.27.0/kind-linux-amd64",
+      "asset_url": "https://github.com/kubernetes-sigs/kind/releases/download/v0.27.0/kind-linux-amd64",
+      "package_version": null,
+      "archive": {
+        "path": "/tmp/helpcat-cobra-assets/kubernetes-sigs-kind/kind-linux-amd64",
+        "bytes": 10458985,
+        "sha256": "a6875aaea358acf0ac07786b1a6755d08fd640f4c79b7a2e46681cc13f49a04b"
+      },
+      "publisher_digest": {
+        "status": "matched_publisher_checksum",
+        "expected_sha256": "a6875aaea358acf0ac07786b1a6755d08fd640f4c79b7a2e46681cc13f49a04b",
+        "checked_sources": [
+          {
+            "url": "https://github.com/kubernetes-sigs/kind/releases/download/v0.27.0/kind-linux-amd64.sha256sum",
+            "expected_sha256": "a6875aaea358acf0ac07786b1a6755d08fd640f4c79b7a2e46681cc13f49a04b",
+            "status": "matched"
+          }
+        ]
+      },
+      "selected_cli": {
+        "member": null,
+        "selection_type": "standalone_binary",
+        "path": "/tmp/helpcat-cobra-binaries/kubernetes-sigs-kind",
+        "bytes": 10458985,
+        "sha256": "a6875aaea358acf0ac07786b1a6755d08fd640f4c79b7a2e46681cc13f49a04b",
+        "mode": "0600"
+      },
+      "runtime_status": "unverified",
+      "errors": []
+    },
+    {
+      "id": "goreleaser-goreleaser",
+      "project": "goreleaser/goreleaser",
+      "cli": "goreleaser",
+      "tool_version": "2.8.2",
+      "upstream_ref": "v2.8.2",
+      "survey_asset_url": "https://github.com/goreleaser/goreleaser/releases/download/v2.8.2/goreleaser_Linux_x86_64.tar.gz",
+      "asset_url": "https://github.com/goreleaser/goreleaser/releases/download/v2.8.2/goreleaser_Linux_x86_64.tar.gz",
+      "package_version": null,
+      "archive": {
+        "path": "/tmp/helpcat-cobra-assets/goreleaser-goreleaser/goreleaser_Linux_x86_64.tar.gz",
+        "bytes": 24845343,
+        "sha256": "847e2105d50da9133e567cf5450cd437ae29181cabf13ad42683151ba0f5b587"
+      },
+      "publisher_digest": {
+        "status": "matched_publisher_checksum",
+        "expected_sha256": "847e2105d50da9133e567cf5450cd437ae29181cabf13ad42683151ba0f5b587",
+        "checked_sources": [
+          {
+            "url": "https://github.com/goreleaser/goreleaser/releases/download/v2.8.2/checksums.txt",
+            "expected_sha256": "847e2105d50da9133e567cf5450cd437ae29181cabf13ad42683151ba0f5b587",
+            "status": "matched"
+          }
+        ]
+      },
+      "selected_cli": {
+        "member": "goreleaser",
+        "selection_type": "regular_archive_member",
+        "path": "/tmp/helpcat-cobra-binaries/goreleaser-goreleaser",
+        "bytes": 82104504,
+        "sha256": "0beca01603c62cbf77a26ddccf718ee679abadbc7f019c1147aea3d5773bdd44",
+        "mode": "0600"
+      },
+      "runtime_status": "unverified",
+      "errors": []
+    },
+    {
+      "id": "cli-cli",
+      "project": "cli/cli",
+      "cli": "gh",
+      "tool_version": "2.70.0",
+      "upstream_ref": "v2.70.0",
+      "survey_asset_url": "https://github.com/cli/cli/releases/download/v2.70.0/gh_2.70.0_linux_amd64.tar.gz",
+      "asset_url": "https://github.com/cli/cli/releases/download/v2.70.0/gh_2.70.0_linux_amd64.tar.gz",
+      "package_version": null,
+      "archive": {
+        "path": "/tmp/helpcat-cobra-assets/cli-cli/gh_2.70.0_linux_amd64.tar.gz",
+        "bytes": 13702058,
+        "sha256": "664b70c80aaddf7b45c4df890324d3876762e630cffb429971791b8e2fb2e04b"
+      },
+      "publisher_digest": {
+        "status": "matched_publisher_checksum",
+        "expected_sha256": "664b70c80aaddf7b45c4df890324d3876762e630cffb429971791b8e2fb2e04b",
+        "checked_sources": [
+          {
+            "url": "https://github.com/cli/cli/releases/download/v2.70.0/gh_2.70.0_checksums.txt",
+            "expected_sha256": "664b70c80aaddf7b45c4df890324d3876762e630cffb429971791b8e2fb2e04b",
+            "status": "matched"
+          }
+        ]
+      },
+      "selected_cli": {
+        "member": "gh_2.70.0_linux_amd64/bin/gh",
+        "selection_type": "regular_archive_member",
+        "path": "/tmp/helpcat-cobra-binaries/cli-cli",
+        "bytes": 37949592,
+        "sha256": "d2c22fcdb510e312385701f0fcbbc37930b899b55102ab7430a9e441d142c748",
+        "mode": "0600"
+      },
+      "runtime_status": "unverified",
+      "errors": []
+    },
+    {
+      "id": "docker-cli",
+      "project": "docker/cli",
+      "cli": "docker",
+      "tool_version": "28.1.1",
+      "upstream_ref": "v28.1.1",
+      "survey_asset_url": null,
+      "asset_url": "https://download.docker.com/linux/static/stable/x86_64/docker-28.1.1.tgz",
+      "package_version": null,
+      "archive": {
+        "path": "/tmp/helpcat-cobra-assets/docker-cli/docker-28.1.1.tgz",
+        "bytes": 78865677,
+        "sha256": "ff34bd799b5e4c3738a3b1a383cf4067c672add48c7203fcd003fcb0aacebc94"
+      },
+      "publisher_digest": {
+        "status": "local_only",
+        "expected_sha256": null,
+        "checked_url": "https://download.docker.com/linux/static/stable/x86_64/docker-28.1.1.tgz.sha256",
+        "notes": "Matches the independently computed follow-up hash. Docker sidecar returned HTTP 404."
+      },
+      "selected_cli": {
+        "member": "docker/docker",
+        "selection_type": "regular_archive_member",
+        "path": "/tmp/helpcat-cobra-binaries/docker-cli",
+        "bytes": 41681944,
+        "sha256": "a1e26e03d5c80c72092ad1a68e39177319e1b6e4a296910b2b550cb3906b90aa",
+        "mode": "0600"
+      },
+      "runtime_status": "unverified",
+      "errors": []
+    },
+    {
+      "id": "containers-podman",
+      "project": "containers/podman",
+      "cli": "podman",
+      "tool_version": "5.4.2",
+      "upstream_ref": "v5.4.2",
+      "survey_asset_url": null,
+      "asset_url": "https://deb.debian.org/debian/pool/main/p/podman/podman_5.4.2+ds1-2+b2_amd64.deb",
+      "package_version": "5.4.2+ds1-2+b2",
+      "archive": {
+        "path": "/tmp/helpcat-cobra-assets/containers-podman/podman_5.4.2+ds1-2+b2_amd64.deb",
+        "bytes": 24686200,
+        "sha256": "e3987a9d1e6d46cbd4ee11bd067927a5f7f886e41c7a2dbe5b89a436905d44a0"
+      },
+      "publisher_digest": {
+        "status": "verified_debian_signed_index",
+        "expected_sha256": "e3987a9d1e6d46cbd4ee11bd067927a5f7f886e41c7a2dbe5b89a436905d44a0",
+        "url": "https://deb.debian.org/debian/dists/trixie/main/binary-amd64/Packages.xz"
+      },
+      "selected_cli": {
+        "member": "./usr/bin/podman",
+        "selection_type": "regular_archive_member",
+        "path": "/tmp/helpcat-cobra-binaries/containers-podman",
+        "bytes": 45138544,
+        "sha256": "6e4993e061eb88205003892252e2e13bbf49c12a6f67f519881b9b3c94e980e6",
+        "mode": "0600"
+      },
+      "runtime_status": "debian_trixie_dependencies_pending",
+      "errors": [],
+      "debian_depends": "conmon, crun | runc, golang-github-containers-common, netavark, init-system-helpers (>= 1.52), libc6 (>= 2.38), libgpgme11t64 (>= 1.23.2), libseccomp2 (>= 2.5.0), libsqlite3-0 (>= 3.36.0), libsubid5 (>= 1:4.16.0)"
+    },
+    {
+      "id": "containers-buildah",
+      "project": "containers/buildah",
+      "cli": "buildah",
+      "tool_version": "1.39.3",
+      "upstream_ref": "v1.39.3",
+      "survey_asset_url": null,
+      "asset_url": "https://deb.debian.org/debian/pool/main/g/golang-github-containers-buildah/buildah_1.39.3+ds1-1+b7_amd64.deb",
+      "package_version": "1.39.3+ds1-1+b7",
+      "archive": {
+        "path": "/tmp/helpcat-cobra-assets/containers-buildah/buildah_1.39.3+ds1-1+b7_amd64.deb",
+        "bytes": 36308764,
+        "sha256": "7a3e35194f2664aa1c32be79647da3c7c532ff44e47c53247ab31672442c6fc3"
+      },
+      "publisher_digest": {
+        "status": "verified_debian_signed_index",
+        "expected_sha256": "7a3e35194f2664aa1c32be79647da3c7c532ff44e47c53247ab31672442c6fc3",
+        "url": "https://deb.debian.org/debian/dists/trixie/main/binary-amd64/Packages.xz"
+      },
+      "selected_cli": {
+        "member": "./usr/bin/buildah",
+        "selection_type": "regular_archive_member",
+        "path": "/tmp/helpcat-cobra-binaries/containers-buildah",
+        "bytes": 33362608,
+        "sha256": "17ce870d84b45de68416990a2515e0e0a42152524211c4bf315b379cf03d374a",
+        "mode": "0600"
+      },
+      "runtime_status": "debian_trixie_dependencies_pending",
+      "errors": [],
+      "debian_depends": "golang-github-containers-common (>> 0.57), uidmap, libc6 (>= 2.38), libgpgme11t64 (>= 1.23.2), libseccomp2 (>= 2.5.0), libsqlite3-0 (>= 3.36.0), libsubid5 (>= 1:4.16.0)"
+    },
+    {
+      "id": "containers-skopeo",
+      "project": "containers/skopeo",
+      "cli": "skopeo",
+      "tool_version": "1.18.0",
+      "upstream_ref": "v1.18.0",
+      "survey_asset_url": null,
+      "asset_url": "https://deb.debian.org/debian/pool/main/s/skopeo/skopeo_1.18.0+ds1-1+b5_amd64.deb",
+      "package_version": "1.18.0+ds1-1+b5",
+      "archive": {
+        "path": "/tmp/helpcat-cobra-assets/containers-skopeo/skopeo_1.18.0+ds1-1+b5_amd64.deb",
+        "bytes": 7556560,
+        "sha256": "7ca44a3f31f3cddca9d9dc858029dd08c30faf6e93456753825509e6a59192e2"
+      },
+      "publisher_digest": {
+        "status": "verified_debian_signed_index",
+        "expected_sha256": "7ca44a3f31f3cddca9d9dc858029dd08c30faf6e93456753825509e6a59192e2",
+        "url": "https://deb.debian.org/debian/dists/trixie/main/binary-amd64/Packages.xz"
+      },
+      "selected_cli": {
+        "member": "./usr/bin/skopeo",
+        "selection_type": "regular_archive_member",
+        "path": "/tmp/helpcat-cobra-binaries/containers-skopeo",
+        "bytes": 27385968,
+        "sha256": "cd21ffca595f2cc926b7181249f8a08ca3d3f6b01242b1d520485cfafd5fed23",
+        "mode": "0600"
+      },
+      "runtime_status": "debian_trixie_dependencies_pending",
+      "errors": [],
+      "debian_depends": "golang-github-containers-common (>> 0.49), libc6 (>= 2.38), libgpgme11t64 (>= 1.23.2), libsqlite3-0 (>= 3.36.0)"
+    },
+    {
+      "id": "anchore-syft",
+      "project": "anchore/syft",
+      "cli": "syft",
+      "tool_version": "1.23.1",
+      "upstream_ref": "v1.23.1",
+      "survey_asset_url": "https://github.com/anchore/syft/releases/download/v1.23.1/syft_1.23.1_linux_amd64.tar.gz",
+      "asset_url": "https://github.com/anchore/syft/releases/download/v1.23.1/syft_1.23.1_linux_amd64.tar.gz",
+      "package_version": null,
+      "archive": {
+        "path": "/tmp/helpcat-cobra-assets/anchore-syft/syft_1.23.1_linux_amd64.tar.gz",
+        "bytes": 18256361,
+        "sha256": "42f3e01b64f054d0caee42073cb94e3ac3e61be6f0100e7ecda96e6a2abf7e22"
+      },
+      "publisher_digest": {
+        "status": "matched_publisher_checksum",
+        "expected_sha256": "42f3e01b64f054d0caee42073cb94e3ac3e61be6f0100e7ecda96e6a2abf7e22",
+        "checked_sources": [
+          {
+            "url": "https://github.com/anchore/syft/releases/download/v1.23.1/syft_1.23.1_checksums.txt",
+            "expected_sha256": "42f3e01b64f054d0caee42073cb94e3ac3e61be6f0100e7ecda96e6a2abf7e22",
+            "status": "matched"
+          }
+        ]
+      },
+      "selected_cli": {
+        "member": "syft",
+        "selection_type": "regular_archive_member",
+        "path": "/tmp/helpcat-cobra-binaries/anchore-syft",
+        "bytes": 49242296,
+        "sha256": "d2265dc5556f4d805344151b9833ab8f3492e6570de41129a4e14576ad67573f",
+        "mode": "0600"
+      },
+      "runtime_status": "unverified",
+      "errors": []
+    },
+    {
+      "id": "anchore-grype",
+      "project": "anchore/grype",
+      "cli": "grype",
+      "tool_version": "0.91.2",
+      "upstream_ref": "v0.91.2",
+      "survey_asset_url": "https://github.com/anchore/grype/releases/download/v0.91.2/grype_0.91.2_linux_amd64.tar.gz",
+      "asset_url": "https://github.com/anchore/grype/releases/download/v0.91.2/grype_0.91.2_linux_amd64.tar.gz",
+      "package_version": null,
+      "archive": {
+        "path": "/tmp/helpcat-cobra-assets/anchore-grype/grype_0.91.2_linux_amd64.tar.gz",
+        "bytes": 23833674,
+        "sha256": "9cb14a9e9de4a73fa684ad51a137c8ffb5647ed62799ff2a56ddd2225c13fd62"
+      },
+      "publisher_digest": {
+        "status": "matched_publisher_checksum",
+        "expected_sha256": "9cb14a9e9de4a73fa684ad51a137c8ffb5647ed62799ff2a56ddd2225c13fd62",
+        "checked_sources": [
+          {
+            "url": "https://github.com/anchore/grype/releases/download/v0.91.2/grype_0.91.2_checksums.txt",
+            "expected_sha256": "9cb14a9e9de4a73fa684ad51a137c8ffb5647ed62799ff2a56ddd2225c13fd62",
+            "status": "matched"
+          }
+        ]
+      },
+      "selected_cli": {
+        "member": "grype",
+        "selection_type": "regular_archive_member",
+        "path": "/tmp/helpcat-cobra-binaries/anchore-grype",
+        "bytes": 71721144,
+        "sha256": "6cac8b291985494c71f19271bd83853e6b94f54fbc512660f092fb7fe66127b9",
+        "mode": "0600"
+      },
+      "runtime_status": "unverified",
+      "errors": []
+    },
+    {
+      "id": "fluxcd-flux2",
+      "project": "fluxcd/flux2",
+      "cli": "flux",
+      "tool_version": "2.5.1",
+      "upstream_ref": "v2.5.1",
+      "survey_asset_url": "https://github.com/fluxcd/flux2/releases/download/v2.5.1/flux_2.5.1_linux_amd64.tar.gz",
+      "asset_url": "https://github.com/fluxcd/flux2/releases/download/v2.5.1/flux_2.5.1_linux_amd64.tar.gz",
+      "package_version": null,
+      "archive": {
+        "path": "/tmp/helpcat-cobra-assets/fluxcd-flux2/flux_2.5.1_linux_amd64.tar.gz",
+        "bytes": 21155785,
+        "sha256": "f64c85db4b94aefcdf6e0f2825c32573fc2bd234e5489ff332fee62776973ec3"
+      },
+      "publisher_digest": {
+        "status": "matched_publisher_checksum",
+        "expected_sha256": "f64c85db4b94aefcdf6e0f2825c32573fc2bd234e5489ff332fee62776973ec3",
+        "checked_sources": [
+          {
+            "url": "https://github.com/fluxcd/flux2/releases/download/v2.5.1/flux_2.5.1_checksums.txt",
+            "expected_sha256": "f64c85db4b94aefcdf6e0f2825c32573fc2bd234e5489ff332fee62776973ec3",
+            "status": "matched"
+          }
+        ]
+      },
+      "selected_cli": {
+        "member": "flux",
+        "selection_type": "regular_archive_member",
+        "path": "/tmp/helpcat-cobra-binaries/fluxcd-flux2",
+        "bytes": 65945752,
+        "sha256": "6183c4f13c73ca7c2281a0f3b6978cb647c0f1be4c8eca09335443cb505bde0a",
+        "mode": "0600"
+      },
+      "runtime_status": "unverified",
+      "errors": []
+    },
+    {
+      "id": "argoproj-argo-cd",
+      "project": "argoproj/argo-cd",
+      "cli": "argocd",
+      "tool_version": "2.14.11",
+      "upstream_ref": "v2.14.11",
+      "survey_asset_url": "https://github.com/argoproj/argo-cd/releases/download/v2.14.11/argocd-linux-amd64",
+      "asset_url": "https://github.com/argoproj/argo-cd/releases/download/v2.14.11/argocd-linux-amd64",
+      "package_version": null,
+      "archive": {
+        "path": "/tmp/helpcat-cobra-assets/argoproj-argo-cd/argocd-linux-amd64",
+        "bytes": 187414048,
+        "sha256": "78438cfffeb56b34dae868c16154a481b177af68ee6fcb5e11730ae476a1b252"
+      },
+      "publisher_digest": {
+        "status": "matched_publisher_checksum",
+        "expected_sha256": "78438cfffeb56b34dae868c16154a481b177af68ee6fcb5e11730ae476a1b252",
+        "checked_sources": [
+          {
+            "url": "https://github.com/argoproj/argo-cd/releases/download/v2.14.11/cli_checksums.txt",
+            "expected_sha256": "78438cfffeb56b34dae868c16154a481b177af68ee6fcb5e11730ae476a1b252",
+            "status": "matched"
+          }
+        ]
+      },
+      "selected_cli": {
+        "member": null,
+        "selection_type": "standalone_binary",
+        "path": "/tmp/helpcat-cobra-binaries/argoproj-argo-cd",
+        "bytes": 187414048,
+        "sha256": "78438cfffeb56b34dae868c16154a481b177af68ee6fcb5e11730ae476a1b252",
+        "mode": "0600"
+      },
+      "runtime_status": "unverified",
+      "errors": []
+    },
+    {
+      "id": "tektoncd-cli",
+      "project": "tektoncd/cli",
+      "cli": "tkn",
+      "tool_version": "0.40.0",
+      "upstream_ref": "v0.40.0",
+      "survey_asset_url": "https://github.com/tektoncd/cli/releases/download/v0.40.0/tkn_0.40.0_Linux_x86_64.tar.gz",
+      "asset_url": "https://github.com/tektoncd/cli/releases/download/v0.40.0/tkn_0.40.0_Linux_x86_64.tar.gz",
+      "package_version": null,
+      "archive": {
+        "path": "/tmp/helpcat-cobra-assets/tektoncd-cli/tkn_0.40.0_Linux_x86_64.tar.gz",
+        "bytes": 35584801,
+        "sha256": "98cf4fa939b0ad391074f9ad72188197cb50f2e8efa8f3fbbff5815094998354"
+      },
+      "publisher_digest": {
+        "status": "matched_publisher_checksum",
+        "expected_sha256": "98cf4fa939b0ad391074f9ad72188197cb50f2e8efa8f3fbbff5815094998354",
+        "checked_sources": [
+          {
+            "url": "https://github.com/tektoncd/cli/releases/download/v0.40.0/checksums.txt",
+            "expected_sha256": "98cf4fa939b0ad391074f9ad72188197cb50f2e8efa8f3fbbff5815094998354",
+            "status": "matched"
+          }
+        ]
+      },
+      "selected_cli": {
+        "member": "tkn",
+        "selection_type": "regular_archive_member",
+        "path": "/tmp/helpcat-cobra-binaries/tektoncd-cli",
+        "bytes": 134090371,
+        "sha256": "4cb22623624a675dd4947cddc1f8a2f8d036ed7ee95ceee33f7da09bf61c4e44",
+        "mode": "0600"
+      },
+      "runtime_status": "unverified",
+      "errors": []
+    },
+    {
+      "id": "loft-sh-vcluster",
+      "project": "loft-sh/vcluster",
+      "cli": "vcluster",
+      "tool_version": "0.24.1",
+      "upstream_ref": "v0.24.1",
+      "survey_asset_url": "https://github.com/loft-sh/vcluster/releases/download/v0.24.1/vcluster-linux-amd64",
+      "asset_url": "https://github.com/loft-sh/vcluster/releases/download/v0.24.1/vcluster-linux-amd64",
+      "package_version": null,
+      "archive": {
+        "path": "/tmp/helpcat-cobra-assets/loft-sh-vcluster/vcluster-linux-amd64",
+        "bytes": 84078744,
+        "sha256": "5943c6a01e930f94a52b36ec706014251537bacd35502c96ee8972ce04779191"
+      },
+      "publisher_digest": {
+        "status": "matched_publisher_checksum",
+        "expected_sha256": "5943c6a01e930f94a52b36ec706014251537bacd35502c96ee8972ce04779191",
+        "checked_sources": [
+          {
+            "url": "https://github.com/loft-sh/vcluster/releases/download/v0.24.1/checksums.txt",
+            "expected_sha256": "5943c6a01e930f94a52b36ec706014251537bacd35502c96ee8972ce04779191",
+            "status": "matched"
+          }
+        ]
+      },
+      "selected_cli": {
+        "member": null,
+        "selection_type": "standalone_binary",
+        "path": "/tmp/helpcat-cobra-binaries/loft-sh-vcluster",
+        "bytes": 84078744,
+        "sha256": "5943c6a01e930f94a52b36ec706014251537bacd35502c96ee8972ce04779191",
+        "mode": "0600"
+      },
+      "runtime_status": "unverified",
+      "errors": []
+    },
+    {
+      "id": "restic-restic",
+      "project": "restic/restic",
+      "cli": "restic",
+      "tool_version": "0.18.0",
+      "upstream_ref": "v0.18.0",
+      "survey_asset_url": "https://github.com/restic/restic/releases/download/v0.18.0/restic_0.18.0_linux_amd64.bz2",
+      "asset_url": "https://github.com/restic/restic/releases/download/v0.18.0/restic_0.18.0_linux_amd64.bz2",
+      "package_version": null,
+      "archive": {
+        "path": "/tmp/helpcat-cobra-assets/restic-restic/restic_0.18.0_linux_amd64.bz2",
+        "bytes": 9806593,
+        "sha256": "98f6dd8bf5b59058d04bfd8dab58e196cc2a680666ccee90275a3b722374438e"
+      },
+      "publisher_digest": {
+        "status": "matched_publisher_checksum",
+        "expected_sha256": "98f6dd8bf5b59058d04bfd8dab58e196cc2a680666ccee90275a3b722374438e",
+        "checked_sources": [
+          {
+            "url": "https://github.com/restic/restic/releases/download/v0.18.0/SHA256SUMS",
+            "expected_sha256": "98f6dd8bf5b59058d04bfd8dab58e196cc2a680666ccee90275a3b722374438e",
+            "status": "matched"
+          }
+        ]
+      },
+      "selected_cli": {
+        "member": null,
+        "selection_type": "bzip2_single_stream",
+        "path": "/tmp/helpcat-cobra-binaries/restic-restic",
+        "bytes": 29765816,
+        "sha256": "a77b8f59af4da23256edf1f768bc363c224b259082da8f6cc7fc7913535626d3",
+        "mode": "0600"
+      },
+      "runtime_status": "unverified",
+      "errors": []
+    },
+    {
+      "id": "sigstore-cosign",
+      "project": "sigstore/cosign",
+      "cli": "cosign",
+      "tool_version": "2.5.0",
+      "upstream_ref": "v2.5.0",
+      "survey_asset_url": "https://github.com/sigstore/cosign/releases/download/v2.5.0/cosign-linux-amd64",
+      "asset_url": "https://github.com/sigstore/cosign/releases/download/v2.5.0/cosign-linux-amd64",
+      "package_version": null,
+      "archive": {
+        "path": "/tmp/helpcat-cobra-assets/sigstore-cosign/cosign-linux-amd64",
+        "bytes": 119620110,
+        "sha256": "1f6c194dd0891eb345b436bb71ff9f996768355f5e0ce02dde88567029ac2188"
+      },
+      "publisher_digest": {
+        "status": "matched_publisher_checksum",
+        "expected_sha256": "1f6c194dd0891eb345b436bb71ff9f996768355f5e0ce02dde88567029ac2188",
+        "checked_sources": [
+          {
+            "url": "https://github.com/sigstore/cosign/releases/download/v2.5.0/cosign_checksums.txt",
+            "expected_sha256": "1f6c194dd0891eb345b436bb71ff9f996768355f5e0ce02dde88567029ac2188",
+            "status": "matched"
+          }
+        ]
+      },
+      "selected_cli": {
+        "member": null,
+        "selection_type": "standalone_binary",
+        "path": "/tmp/helpcat-cobra-binaries/sigstore-cosign",
+        "bytes": 119620110,
+        "sha256": "1f6c194dd0891eb345b436bb71ff9f996768355f5e0ce02dde88567029ac2188",
+        "mode": "0600"
+      },
+      "runtime_status": "unverified",
+      "errors": []
+    },
+    {
+      "id": "sigstore-rekor",
+      "project": "sigstore/rekor",
+      "cli": "rekor-cli",
+      "tool_version": "1.3.10",
+      "upstream_ref": "v1.3.10",
+      "survey_asset_url": "https://github.com/sigstore/rekor/releases/download/v1.3.10/rekor-cli-linux-amd64",
+      "asset_url": "https://github.com/sigstore/rekor/releases/download/v1.3.10/rekor-cli-linux-amd64",
+      "package_version": null,
+      "archive": {
+        "path": "/tmp/helpcat-cobra-assets/sigstore-rekor/rekor-cli-linux-amd64",
+        "bytes": 50242534,
+        "sha256": "cf87be059e7e69230c4f958e6f70f332a8027ff0731ccc750c509fca17baa12d"
+      },
+      "publisher_digest": {
+        "status": "matched_publisher_checksum",
+        "expected_sha256": "cf87be059e7e69230c4f958e6f70f332a8027ff0731ccc750c509fca17baa12d",
+        "checked_sources": [
+          {
+            "url": "https://github.com/sigstore/rekor/releases/download/v1.3.10/rekor_checksums.txt",
+            "expected_sha256": "cf87be059e7e69230c4f958e6f70f332a8027ff0731ccc750c509fca17baa12d",
+            "status": "matched"
+          }
+        ]
+      },
+      "selected_cli": {
+        "member": null,
+        "selection_type": "standalone_binary",
+        "path": "/tmp/helpcat-cobra-binaries/sigstore-rekor",
+        "bytes": 50242534,
+        "sha256": "cf87be059e7e69230c4f958e6f70f332a8027ff0731ccc750c509fca17baa12d",
+        "mode": "0600"
+      },
+      "runtime_status": "unverified",
+      "errors": []
+    },
+    {
+      "id": "googlecontainertools-skaffold",
+      "project": "GoogleContainerTools/skaffold",
+      "cli": "skaffold",
+      "tool_version": "2.15.0",
+      "upstream_ref": "v2.15.0",
+      "survey_asset_url": "https://github.com/GoogleContainerTools/skaffold/releases/download/v2.15.0/skaffold-linux-amd64",
+      "asset_url": "https://github.com/GoogleContainerTools/skaffold/releases/download/v2.15.0/skaffold-linux-amd64",
+      "package_version": null,
+      "archive": {
+        "path": "/tmp/helpcat-cobra-assets/googlecontainertools-skaffold/skaffold-linux-amd64",
+        "bytes": 122908648,
+        "sha256": "089d45bca89437ef47739cf01f1d50c50855ccb483bf18b43a8303d12005c8c5"
+      },
+      "publisher_digest": {
+        "status": "matched_publisher_checksum",
+        "expected_sha256": "089d45bca89437ef47739cf01f1d50c50855ccb483bf18b43a8303d12005c8c5",
+        "checked_sources": [
+          {
+            "url": "https://github.com/GoogleContainerTools/skaffold/releases/download/v2.15.0/skaffold-linux-amd64.sha256",
+            "expected_sha256": "089d45bca89437ef47739cf01f1d50c50855ccb483bf18b43a8303d12005c8c5",
+            "status": "matched"
+          }
+        ]
+      },
+      "selected_cli": {
+        "member": null,
+        "selection_type": "standalone_binary",
+        "path": "/tmp/helpcat-cobra-binaries/googlecontainertools-skaffold",
+        "bytes": 122908648,
+        "sha256": "089d45bca89437ef47739cf01f1d50c50855ccb483bf18b43a8303d12005c8c5",
+        "mode": "0600"
+      },
+      "runtime_status": "unverified",
+      "errors": []
+    },
+    {
+      "id": "containerd-nerdctl",
+      "project": "containerd/nerdctl",
+      "cli": "nerdctl",
+      "tool_version": "2.0.4",
+      "upstream_ref": "v2.0.4",
+      "survey_asset_url": "https://github.com/containerd/nerdctl/releases/download/v2.0.4/nerdctl-2.0.4-linux-amd64.tar.gz",
+      "asset_url": "https://github.com/containerd/nerdctl/releases/download/v2.0.4/nerdctl-2.0.4-linux-amd64.tar.gz",
+      "package_version": null,
+      "archive": {
+        "path": "/tmp/helpcat-cobra-assets/containerd-nerdctl/nerdctl-2.0.4-linux-amd64.tar.gz",
+        "bytes": 10307435,
+        "sha256": "2f9d22179868db4f0a1daf2fd65f58a24f8a78efd2d9b17659f56bcdce85efd0"
+      },
+      "publisher_digest": {
+        "status": "matched_publisher_checksum",
+        "expected_sha256": "2f9d22179868db4f0a1daf2fd65f58a24f8a78efd2d9b17659f56bcdce85efd0",
+        "checked_sources": [
+          {
+            "url": "https://github.com/containerd/nerdctl/releases/download/v2.0.4/SHA256SUMS",
+            "expected_sha256": "2f9d22179868db4f0a1daf2fd65f58a24f8a78efd2d9b17659f56bcdce85efd0",
+            "status": "matched"
+          }
+        ]
+      },
+      "selected_cli": {
+        "member": "nerdctl",
+        "selection_type": "regular_archive_member",
+        "path": "/tmp/helpcat-cobra-binaries/containerd-nerdctl",
+        "bytes": 27721912,
+        "sha256": "b6db18d0bbb2af197f06ebf2deb5b4d290ceaa60154751cc03e150451c030c4f",
+        "mode": "0600"
+      },
+      "runtime_status": "unverified",
+      "errors": []
+    },
+    {
+      "id": "knative-client",
+      "project": "knative/client",
+      "cli": "kn",
+      "tool_version": "1.17.0",
+      "upstream_ref": "knative-v1.17.0",
+      "survey_asset_url": "https://github.com/knative/client/releases/download/knative-v1.17.0/kn-linux-amd64",
+      "asset_url": "https://github.com/knative/client/releases/download/knative-v1.17.0/kn-linux-amd64",
+      "package_version": null,
+      "archive": {
+        "path": "/tmp/helpcat-cobra-assets/knative-client/kn-linux-amd64",
+        "bytes": 85261285,
+        "sha256": "e9c1dc399e2f5feddd6220a3a7a5c1537f709508ea99799a07d565a5ac08268f"
+      },
+      "publisher_digest": {
+        "status": "matched_publisher_checksum",
+        "expected_sha256": "e9c1dc399e2f5feddd6220a3a7a5c1537f709508ea99799a07d565a5ac08268f",
+        "checked_sources": [
+          {
+            "url": "https://github.com/knative/client/releases/download/knative-v1.17.0/checksums.txt",
+            "expected_sha256": "e9c1dc399e2f5feddd6220a3a7a5c1537f709508ea99799a07d565a5ac08268f",
+            "status": "matched"
+          }
+        ]
+      },
+      "selected_cli": {
+        "member": null,
+        "selection_type": "standalone_binary",
+        "path": "/tmp/helpcat-cobra-binaries/knative-client",
+        "bytes": 85261285,
+        "sha256": "e9c1dc399e2f5feddd6220a3a7a5c1537f709508ea99799a07d565a5ac08268f",
+        "mode": "0600"
+      },
+      "runtime_status": "unverified",
+      "errors": []
+    }
+  ]
+}

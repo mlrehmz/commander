@@ -1,0 +1,4 @@
+FROM docker.io/library/python@sha256:05a994d2344eb364cc186910f4fc8786a38215f39f00d0acc25bff33a08f4177
+COPY locks /opt/helpcat/locks
+RUN set -eu; for lock in /opt/helpcat/locks/*.lock; do name="${lock##*/}"; name="${name%.lock}"; python -m venv "/opt/tools/$name"; "/opt/tools/$name/bin/python" -m pip install --disable-pip-version-check --cache-dir=/tmp/pip-cache --only-binary=:all: --require-hashes --no-compile -r "$lock"; done; rm -rf /tmp/pip-cache
+ENV PYTHONDONTWRITEBYTECODE=1

@@ -1,0 +1,6 @@
+FROM d15556188c66cd24470a132b56a71aa93465b971b574823efec969752b196df5 AS native
+FROM d758e2017be2e40f275740bc13af3b14defd3932ef49362a5282aa6160a28082
+COPY --from=native /usr/ /usr/
+COPY --from=native /etc/groff/ /etc/groff/
+COPY --from=native /opt/helpcat/native-lock.json /opt/helpcat/native-lock.json
+ENV PYTHONDONTWRITEBYTECODE=1

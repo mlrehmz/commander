@@ -1,0 +1,117 @@
+{
+  "project": "xz",
+  "repository": "https://github.com/tukaani-project/xz",
+  "upstream_ref": "v5.8.1",
+  "tool_version": "5.8.1",
+  "cli": "xz",
+  "family": "gnu-style",
+  "family_basis": "GNU-style getopt_long parsing dispatches to a message_help function whose boolean argument selects short or long help.",
+  "upstream_source_archive": null,
+  "code_evidence": [
+    {
+      "path": "src/xz/args.c",
+      "url": "https://github.com/tukaani-project/xz/blob/v5.8.1/src/xz/args.c",
+      "sha256": "e5a7e73a7261bb984171e6b4e9e3a2b7ddcfb29f0abfbf7f8f49bd076e2d8f63",
+      "raw_url": "https://raw.githubusercontent.com/tukaani-project/xz/v5.8.1/src/xz/args.c",
+      "excerpts": [
+        {
+          "line": 320,
+          "code": "while ((c = getopt_long(argc, argv, short_opts, long_opts, NULL))",
+          "url": "https://github.com/tukaani-project/xz/blob/v5.8.1/src/xz/args.c#L320"
+        },
+        {
+          "line": 412,
+          "code": "message_help(false);",
+          "url": "https://github.com/tukaani-project/xz/blob/v5.8.1/src/xz/args.c#L412"
+        },
+        {
+          "line": 417,
+          "code": "message_help(true);",
+          "url": "https://github.com/tukaani-project/xz/blob/v5.8.1/src/xz/args.c#L417"
+        }
+      ],
+      "debian_orig": {
+        "path": "src/xz/args.c",
+        "url": "https://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1.orig.tar.xz",
+        "archive_member": "xz-5.8.1/src/xz/args.c",
+        "sha256": "e5a7e73a7261bb984171e6b4e9e3a2b7ddcfb29f0abfbf7f8f49bd076e2d8f63",
+        "same_bytes": true
+      }
+    },
+    {
+      "path": "src/xz/message.c",
+      "url": "https://github.com/tukaani-project/xz/blob/v5.8.1/src/xz/message.c",
+      "sha256": "0db62fd942976ead07d2426a3b707fc9ddfe6bb32b1551905b8011ca3b71d6bb",
+      "raw_url": "https://raw.githubusercontent.com/tukaani-project/xz/v5.8.1/src/xz/message.c",
+      "excerpts": [
+        {
+          "line": 960,
+          "code": "message_help(bool long_help)",
+          "url": "https://github.com/tukaani-project/xz/blob/v5.8.1/src/xz/message.c#L960"
+        }
+      ],
+      "debian_orig": {
+        "path": "src/xz/message.c",
+        "url": "https://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1.orig.tar.xz",
+        "archive_member": "xz-5.8.1/src/xz/message.c",
+        "sha256": "0db62fd942976ead07d2426a3b707fc9ddfe6bb32b1551905b8011ca3b71d6bb",
+        "same_bytes": true
+      }
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "0BSD",
+    "scope": "CLI source",
+    "license_files": [
+      {
+        "path": "COPYING",
+        "url": "https://github.com/tukaani-project/xz/blob/v5.8.1/COPYING",
+        "sha256": "616a3ad264ce29b8f1cb97e53037b139d406899ca8d1f799651e17bfa09830b8",
+        "raw_url": "https://raw.githubusercontent.com/tukaani-project/xz/v5.8.1/COPYING"
+      },
+      {
+        "path": "COPYING.0BSD",
+        "url": "https://github.com/tukaani-project/xz/blob/v5.8.1/COPYING.0BSD",
+        "sha256": "0b01625d853911cd0e2e088dcfb743261034a091bb379246cb25a14cc4c74bf1",
+        "raw_url": "https://raw.githubusercontent.com/tukaani-project/xz/v5.8.1/COPYING.0BSD"
+      },
+      {
+        "path": "COPYING.LGPLv2.1",
+        "url": "https://github.com/tukaani-project/xz/blob/v5.8.1/COPYING.LGPLv2.1",
+        "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551",
+        "raw_url": "https://raw.githubusercontent.com/tukaani-project/xz/v5.8.1/COPYING.LGPLv2.1"
+      }
+    ],
+    "observed_terms": "The xz CLI source is 0BSD. The upstream summary records an LGPL-2.1-or-later fallback getopt_long and other licenses for other files.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "debian": {
+    "index_url": "https://deb.debian.org/debian/dists/trixie/main/source/Sources.xz",
+    "index_sha256": "6002f81f463a2d976d84b34170367cc16da2d60bd0ba9ab9d868d6e1c1a935d9",
+    "source_package": "xz-utils",
+    "version": "5.8.1-1+deb13u1",
+    "vcs": "https://salsa.debian.org/debian/xz-utils",
+    "orig": {
+      "url": "https://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1.orig.tar.xz",
+      "sha256": "0b54f79df85912504de0b14aec7971e3f964491af1812d83447005807513cd9e",
+      "filename": "xz-utils_5.8.1.orig.tar.xz"
+    },
+    "debian": {
+      "url": "https://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1-1+deb13u1.debian.tar.xz",
+      "sha256": "0e48427971a9ce674ddbba26e34ac1dd009c683f3816ce17852d99dc7b0a8e46",
+      "filename": "xz-utils_5.8.1-1+deb13u1.debian.tar.xz"
+    },
+    "binary_package": "xz-utils",
+    "package_url": "https://packages.debian.org/trixie/xz-utils",
+    "distribution": "Debian trixie",
+    "copyright": {
+      "path": "debian/copyright",
+      "url": "https://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1-1+deb13u1.debian.tar.xz",
+      "archive_member": "debian/copyright",
+      "sha256": "d755588e2d89d7845d0d4e718ac45d49ae9fc53cec4540af105963c20598f9d7"
+    }
+  },
+  "provisional_grouping_concerns": [
+    "XZ Utils licenses several companion scripts adapted from GNU gzip. Keep the candidate commands gzip and xz distinct pending review of their actual rendered surfaces. Do not count helper scripts as separate projects."
+  ]
+}

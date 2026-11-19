@@ -1,0 +1,8 @@
+{
+  "id": "awscli-root",
+  "raw_sha256": "6be785ccd228bc55226b5334d8e6f75e5d42d7daa33e397c97cf610826edfbf7",
+  "matches_original_receipt": true,
+  "selected_stream_file": "corpus/intake/expansion/dev/failures/awscli-root.selected-stream.bin",
+  "original_receipt": "corpus/intake/expansion/dev/failures/awscli-root-d9877c722ea84edb919200ca907ffcfd.json",
+  "unsupported_backspace_count": 437
+}

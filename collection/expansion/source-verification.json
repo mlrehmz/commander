@@ -1,0 +1,1009 @@
+{
+  "version": 1,
+  "scope": "Primary source bytes and cited excerpts only; no CLI help or binary execution.",
+  "projects": 40,
+  "all_verified": true,
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/helm/helm/v3.17.3/cmd/helm/helm.go",
+      "sha256": "80f567429c3d446a1ac41ad9897afbf7e407318b95603832f799cee9fa2ae72d",
+      "status": "verified",
+      "excerpt_count": 3,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/helm/helm/v3.17.3/cmd/helm/root.go",
+      "sha256": "959aa96ca001e7554b83fdbffcf3a215f5cfb96ee8793b23fdb6642c307614f0",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/helm/helm/v3.17.3/LICENSE",
+      "sha256": "881467e52efeb1807406134b0ec04b1c6f52dc9dc49382713ef9ac4e0cae42f8",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/kubernetes-sigs/kind/v0.27.0/cmd/kind/main.go",
+      "sha256": "5c17bf68192a147975a500115a74624623a31947d2731b970283a9edc4859d40",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/kubernetes-sigs/kind/v0.27.0/cmd/kind/app/main.go",
+      "sha256": "151f302b41529a85fc3d03fb5adf8fb9a320876abb0149512b953a0f792e0de5",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/kubernetes-sigs/kind/v0.27.0/pkg/cmd/kind/root.go",
+      "sha256": "4524591d2bf29ebc58fec173bfbd82b9293d3a7ca10c9ad43a125626b676554d",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/kubernetes-sigs/kind/v0.27.0/LICENSE",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/goreleaser/goreleaser/v2.8.2/main.go",
+      "sha256": "51a9098289d260ba0ff6deb2d60855ee6734afaa07c933f90345956e2a3e9d4b",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/goreleaser/goreleaser/v2.8.2/cmd/root.go",
+      "sha256": "7695067c06e3877bdd37145997ba2743c28e0d1047b058299d270dcfffbbedb5",
+      "status": "verified",
+      "excerpt_count": 3,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/goreleaser/goreleaser/v2.8.2/LICENSE.md",
+      "sha256": "940cc82da228046306f5068f0adf22c8f161211999c8e96adbb29c670617852c",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/cli/cli/v2.70.0/cmd/gh/main.go",
+      "sha256": "cb5651bc0b702e28adac867f130729b351b8cbc51af7013c528f178a3ce4f593",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/cli/cli/v2.70.0/internal/ghcmd/cmd.go",
+      "sha256": "467a6ca1342877f3d5ccadd0eff52f59d02eea201abc80406772c6d5349f9deb",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/cli/cli/v2.70.0/pkg/cmd/root/root.go",
+      "sha256": "569a5d2d20555fc5ca5919b9631d17e53c9d2ff0c248289bf7f9e22a05f1f9cb",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/cli/cli/v2.70.0/LICENSE",
+      "sha256": "6da4adc42392c8485e40b4251c7e332fc3352df1947c9ffade71dd60b14a7a4f",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/docker/cli/v28.1.1/cmd/docker/docker.go",
+      "sha256": "f7ec6a500d90c41694b8aae99c20ba0b505c91be098d2ea360c1eafdabc5bf1d",
+      "status": "verified",
+      "excerpt_count": 4,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/docker/cli/v28.1.1/LICENSE",
+      "sha256": "2d81ea060825006fc8f3fe28aa5dc0ffeb80faf325b612c955229157b8c10dc0",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/docker/cli/v28.1.1/NOTICE",
+      "sha256": "a8c869fbda819afb8d80e0ac19bac52e766bc6c19cb38cf94f52d64c4be2aab6",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/containers/podman/v5.4.2/cmd/podman/main.go",
+      "sha256": "ca4e1ab5a86cd867a3a393bb6ab7c9ee4fad758c8bc805d50d6587120168b083",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/containers/podman/v5.4.2/cmd/podman/root.go",
+      "sha256": "296744d0be5c2924adf2cd0ef5e98cda63383e0fc1807a73fe0b167e573e27dd",
+      "status": "verified",
+      "excerpt_count": 3,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/containers/podman/v5.4.2/LICENSE",
+      "sha256": "62fb8a3a9621dc2388174caaabe9c2317b694bb9a1d46c98bcf5655b68f51be3",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/containers/buildah/v1.39.3/cmd/buildah/main.go",
+      "sha256": "7cfd6cb1d5ff3aec9599784ed2e3f6d0e882e63664f88ef340e0c388954d9146",
+      "status": "verified",
+      "excerpt_count": 3,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/containers/buildah/v1.39.3/LICENSE",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/containers/skopeo/v1.18.0/cmd/skopeo/main.go",
+      "sha256": "4052a486fd6b10dbb37d4b0beaeee6679cfce4e827a8483f8ecbd197f83217ed",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/containers/skopeo/v1.18.0/LICENSE",
+      "sha256": "716a8b80635c394681e652823e1e42e411ad2d254e1f202403422d74f4b0b106",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/anchore/syft/v1.23.1/cmd/syft/main.go",
+      "sha256": "e9bf166c4a0a622da045635441dd26a447ba22696e9e1734d743d682fbf3d3a1",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/anchore/syft/v1.23.1/cmd/syft/cli/cli.go",
+      "sha256": "8f4e4c92aa1f467ffc82bdaebfe613fc7cb4b08c492bda7606ab0af20d69c8fc",
+      "status": "verified",
+      "excerpt_count": 3,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/anchore/syft/v1.23.1/cmd/syft/internal/commands/root.go",
+      "sha256": "fc3735ce8acf8750c3f3b193f762c0a614764ca8a9c6ad566da29653cd0d25b3",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/anchore/clio/2cfe4b0cb716/application.go",
+      "sha256": "982cdb952f342bfea3ebc95413cf0ad3251c7af8aed8908917db806526ad0209",
+      "status": "verified",
+      "excerpt_count": 5,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/anchore/syft/v1.23.1/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/anchore/grype/v0.91.2/cmd/grype/main.go",
+      "sha256": "1e838dc376cd7df6f1542dfb6d8200add06ead65e2e161de6b4c93f274917f85",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/anchore/grype/v0.91.2/cmd/grype/cli/cli.go",
+      "sha256": "d3c45062501a9b83a9bb4c112352129adac2b7242b497db5cb46c641448a1ec6",
+      "status": "verified",
+      "excerpt_count": 3,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/anchore/grype/v0.91.2/cmd/grype/cli/commands/root.go",
+      "sha256": "36296dc8e44a5bb7cf747c8acc2a6f70cdfa8b3f7b637001b10b70780ecd29cc",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/anchore/clio/4c1d6bd1e872/application.go",
+      "sha256": "c33f6a3cc0f35b504c3f5eabb466436d993ef800cd8d0ad5517853940ab6fb8b",
+      "status": "verified",
+      "excerpt_count": 5,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/anchore/grype/v0.91.2/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/fluxcd/flux2/v2.5.1/cmd/flux/main.go",
+      "sha256": "85f8e1887bad8008f4a441a9860c7c02d0e07847c303da998b098a1e982258e7",
+      "status": "verified",
+      "excerpt_count": 3,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/fluxcd/flux2/v2.5.1/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/argoproj/argo-cd/v2.14.11/cmd/main.go",
+      "sha256": "f53a8a65d2eae911619f0d517e5b12c1b78c84b7b74d598dd6b52763fd674ca5",
+      "status": "verified",
+      "excerpt_count": 3,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/argoproj/argo-cd/v2.14.11/cmd/argocd/commands/root.go",
+      "sha256": "e16e8184419ab5ff8c0c61e527d42d11752734eb8a90f730f9c6f8c2e16e4fe5",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/argoproj/argo-cd/v2.14.11/LICENSE",
+      "sha256": "c996fc213c94f4a4a838407d355b081226caa7b103a4f239bb87fb8f1d8e3a60",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tektoncd/cli/v0.40.0/cmd/tkn/main.go",
+      "sha256": "b7b8c6def289549f82528fdf21f52df79a9d6bf933e6b5a18cbe0e42b9f6f114",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tektoncd/cli/v0.40.0/pkg/cmd/root.go",
+      "sha256": "bbd8acb412f44d4eb97f8b4a18a16f870302e7cc7834c27f67c713a8b13af844",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tektoncd/cli/v0.40.0/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/loft-sh/vcluster/v0.24.1/cmd/vcluster/main.go",
+      "sha256": "4e3e1fa18b4a07b7398faa70be58e1607c07117dafd9d54cc9d1859dba43b0fd",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/loft-sh/vcluster/v0.24.1/cmd/vcluster/cmd/root.go",
+      "sha256": "00adcf317193c00c11145d883ff4b3516b80c9c34f1d933dede55c45abcc8d77",
+      "status": "verified",
+      "excerpt_count": 3,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/loft-sh/vcluster/v0.24.1/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/restic/restic/v0.18.0/cmd/restic/main.go",
+      "sha256": "6d44c8e114ec808e79b4636495d516f019bf1525a43ea89335421cc4679a2aae",
+      "status": "verified",
+      "excerpt_count": 3,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/restic/restic/v0.18.0/LICENSE",
+      "sha256": "6f08a01a9fab5b24e139a09f15cc24a73087c7bc09e3bacf099fdf2d767bf897",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sigstore/cosign/v2.5.0/cmd/cosign/main.go",
+      "sha256": "7b42159995078fe1fb6ff37e0dc46512e0fde24ad16b8d7d291a6c5731c8921b",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sigstore/cosign/v2.5.0/cmd/cosign/cli/commands.go",
+      "sha256": "744b43e60963a98310684e365e089d475782615c8462dad25d3ceaa9ba7e6cd7",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sigstore/cosign/v2.5.0/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sigstore/rekor/v1.3.10/cmd/rekor-cli/main.go",
+      "sha256": "ca82a2f28c17ccd0bda980130ad20b85c1c3be05a0154cdd184bdd0b876b1b3f",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sigstore/rekor/v1.3.10/cmd/rekor-cli/app/root.go",
+      "sha256": "19d9595368fe7859e869454e4917a365ccea78ad99bbd14d7df76f0bbcc20819",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sigstore/rekor/v1.3.10/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/GoogleContainerTools/skaffold/v2.15.0/cmd/skaffold/skaffold.go",
+      "sha256": "14ac0edf5a0b5ca26fbcee3a9fbe2ae111db43193a7ec87d9d49a3595419a150",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/GoogleContainerTools/skaffold/v2.15.0/cmd/skaffold/app/skaffold.go",
+      "sha256": "215828952f523f6178c1d8190ae834fc0ee2efe3d82334ac9f47c9576d448b31",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/GoogleContainerTools/skaffold/v2.15.0/cmd/skaffold/app/cmd/cmd.go",
+      "sha256": "56340b1d6471bdd54792d57277caac1c8699961ac485d7c47f95c9578efb0d39",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/GoogleContainerTools/skaffold/v2.15.0/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/containerd/nerdctl/v2.0.4/cmd/nerdctl/main.go",
+      "sha256": "56395394f854afaa3fa0eeb3e33f99e467801f55e16968ab62783a734cc8d8ba",
+      "status": "verified",
+      "excerpt_count": 4,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/containerd/nerdctl/v2.0.4/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/containerd/nerdctl/v2.0.4/NOTICE",
+      "sha256": "ff833970ecea8008091acd1b4d3eb5d87561acb7d4a364eab48ff8a1f2b759a6",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/knative/client/knative-v1.17.0/cmd/kn/main.go",
+      "sha256": "f8a855269258ed742d7c287b5b20d7eb36a9db1ec812cdf15b9bbf582a070aa1",
+      "status": "verified",
+      "excerpt_count": 3,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/knative/client/knative-v1.17.0/pkg/root/root.go",
+      "sha256": "2e37d3afb3777ebfd8e64d4591b0a7be3ae960d0d9db3e4e3c3f6c7153fd8c69",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/knative/client/knative-v1.17.0/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sharkdp/bat/979ba22628bc9d8171f2cffca2bd5c90c9fc0a9e/src/bin/bat/clap_app.rs",
+      "sha256": "de4c87018e0a239afd11bd2e522f2cd0285935b3990a75503c3e704f5b57a325",
+      "status": "verified",
+      "excerpt_count": 5,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sharkdp/bat/979ba22628bc9d8171f2cffca2bd5c90c9fc0a9e/src/bin/bat/app.rs",
+      "sha256": "87d7f569e73523f9bc9889dd73ae7c5b985cf30522d55c9ea6e7c889027cb3d2",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sharkdp/bat/979ba22628bc9d8171f2cffca2bd5c90c9fc0a9e/src/bin/bat/main.rs",
+      "sha256": "4ee5d5f08d511b1a928c945957a110110d9e5474877d23c5554e785d16b956fd",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sharkdp/bat/979ba22628bc9d8171f2cffca2bd5c90c9fc0a9e/Cargo.toml",
+      "sha256": "235ab95201df5e339012295f439bb1cb5e488e16d8d133ff4fa7b3c6be3080f9",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sharkdp/bat/979ba22628bc9d8171f2cffca2bd5c90c9fc0a9e/LICENSE-APACHE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sharkdp/bat/979ba22628bc9d8171f2cffca2bd5c90c9fc0a9e/LICENSE-MIT",
+      "sha256": "dccda9eb9533f5c65624a1106536c6cfde46008d58e60b3faf154e8b9fd5b46e",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sharkdp/bat/979ba22628bc9d8171f2cffca2bd5c90c9fc0a9e/NOTICE",
+      "sha256": "dd46bdeebfdf5e0e55dd0b4636eff2bfbb8f8efeaea018ed86814710a23c1bda",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sharkdp/fd/b2a287b3993768e0ec52f0852916917f23fb2a38/src/main.rs",
+      "sha256": "9fe43ca855d465365632769c1b6441ea5a676aa923405863bd5ff161a0e88d57",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sharkdp/fd/b2a287b3993768e0ec52f0852916917f23fb2a38/Cargo.toml",
+      "sha256": "a9c3e7ffb7c74509ecd1292b73a8a17434714b8da6a32c642991216c5ff92b17",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sharkdp/fd/b2a287b3993768e0ec52f0852916917f23fb2a38/LICENSE-APACHE",
+      "sha256": "73c83c60d817e7df1943cb3f0af81e4939a8352c9a96c2fd00451b1116fa635c",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sharkdp/fd/b2a287b3993768e0ec52f0852916917f23fb2a38/LICENSE-MIT",
+      "sha256": "322cfc7aa0c774d0eca3b2610f1d414de3ddbd7d8dd4b9dea941a13a6eb07455",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/lsd-rs/lsd/d5a4e1cb80626d5ec94b237f6b77f7280d0f2fc9/src/main.rs",
+      "sha256": "a4179e809a2272a420e75a79a2cbc06cfc9b6f2195702e9fbc6578012df7a679",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/lsd-rs/lsd/d5a4e1cb80626d5ec94b237f6b77f7280d0f2fc9/Cargo.toml",
+      "sha256": "67aed69f4e784f464e81ccb4d1d499b71f46b7995fdebbc6c2f6611bb65f6acd",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/lsd-rs/lsd/d5a4e1cb80626d5ec94b237f6b77f7280d0f2fc9/LICENSE",
+      "sha256": "600cc67cc4cb2f5ea317dcfc687ad1c74dc4bec8782bbe9db0afd83513b935b7",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sharkdp/hyperfine/b33755fe1fca8bcc1f182c773ca3ab040bfe517d/src/cli.rs",
+      "sha256": "5247aa96996477238e2b4e2565cf91dc118ee9c02c764fb8e0c55e6091189788",
+      "status": "verified",
+      "excerpt_count": 8,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sharkdp/hyperfine/b33755fe1fca8bcc1f182c773ca3ab040bfe517d/src/main.rs",
+      "sha256": "43dee1e9056db5e1eaff29b73698ac464bd4e760fecc22ed5026b34c0f45a00b",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sharkdp/hyperfine/b33755fe1fca8bcc1f182c773ca3ab040bfe517d/Cargo.toml",
+      "sha256": "0073da9ab06c2d547622e8043fd5d1d2ef7dacb64628b982083e01f1154f5250",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sharkdp/hyperfine/b33755fe1fca8bcc1f182c773ca3ab040bfe517d/LICENSE-APACHE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sharkdp/hyperfine/b33755fe1fca8bcc1f182c773ca3ab040bfe517d/LICENSE-MIT",
+      "sha256": "1dfee18c2ff07ce551de4d6a1d2db158c0380746b488a7f0d08c8e0d3568b7c3",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sharkdp/hexyl/8eb6d4771ce1ec7af65d06bd335457783b77d557/src/main.rs",
+      "sha256": "4d3712519f131f826ab0b45d8bdb6d1c773d4e9ec6e54b86e3331e1bbbebb5a1",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sharkdp/hexyl/8eb6d4771ce1ec7af65d06bd335457783b77d557/Cargo.toml",
+      "sha256": "da6100d14c9d19c5c9659ac7d050149156c063cedc83b50c2f11e74dccdb6ddb",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sharkdp/hexyl/8eb6d4771ce1ec7af65d06bd335457783b77d557/LICENSE-APACHE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/sharkdp/hexyl/8eb6d4771ce1ec7af65d06bd335457783b77d557/LICENSE-MIT",
+      "sha256": "f9c4c77baa3828004ee54b8a4f2db2e88ed44a6237a493965bf551fac0fcb62d",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bootandy/dust/079c55266917387e416e0f871c97c06da52df12d/src/main.rs",
+      "sha256": "366c442148c5d400cf67bc2d95f6a74a34e824869aa83d51cbb75bb80d46a6a7",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bootandy/dust/079c55266917387e416e0f871c97c06da52df12d/src/cli.rs",
+      "sha256": "a26feacedd7d100082ba3c72d89706e266d0e3ae603c39578f7af3354d6c49cc",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bootandy/dust/079c55266917387e416e0f871c97c06da52df12d/Cargo.toml",
+      "sha256": "5e24da0e110f59b31bd90eeada5d5bbc4e01635ff6f52f84872584c8ca71ff17",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bootandy/dust/079c55266917387e416e0f871c97c06da52df12d/LICENSE",
+      "sha256": "aee6e2d13d3a55c7881630c09b41ca7b3b44bb1437b5d36695d22decc3655160",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/dalance/procs/8ad5da5ef0c33a7c9dbe30625548469f88e824d8/src/main.rs",
+      "sha256": "2aebdc0178629af5664818c8d03d5183bc980c4817ceb50df2654b539aab9597",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/dalance/procs/8ad5da5ef0c33a7c9dbe30625548469f88e824d8/Cargo.toml",
+      "sha256": "7906b78149a9dcddfcdf62f58726470eabfc9eac5c24a5c32727a9d60057e3db",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/dalance/procs/8ad5da5ef0c33a7c9dbe30625548469f88e824d8/LICENSE",
+      "sha256": "feb87a2e0c305de3464cc44077da5393c52d8ca6362d37427157d04ec6f4510d",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ClementTsang/bottom/4b6a033f430728a882c40588cd96499ed550a3f1/src/options/args.rs",
+      "sha256": "31560990a7653fd7bdbdc26ed44c9eda680177a89c37f4e487ccd0d7f3987c4a",
+      "status": "verified",
+      "excerpt_count": 5,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ClementTsang/bottom/4b6a033f430728a882c40588cd96499ed550a3f1/src/lib.rs",
+      "sha256": "37f7beaf4410b83ee7f87a8f377265593d057c6eac2a0de29406062a3be7c8d7",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ClementTsang/bottom/4b6a033f430728a882c40588cd96499ed550a3f1/src/bin/main.rs",
+      "sha256": "b3c8c56ad9e04dd3e6ec3084068c08c253c57869f6f24e128f580f3bc8a7514d",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ClementTsang/bottom/4b6a033f430728a882c40588cd96499ed550a3f1/Cargo.toml",
+      "sha256": "6c3153bee19cff393832400bbc78e15d64e444b2efd3ebbf0da2c69b9011bc88",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ClementTsang/bottom/4b6a033f430728a882c40588cd96499ed550a3f1/LICENSE",
+      "sha256": "89855774cfcb4b828306549bdb9d3424c15bebf01d60a59e6c98ff0e2896da9e",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/starship/starship/f8e4e2155542cc84f49b342122d371f74e0ad253/src/main.rs",
+      "sha256": "dfd37a78c760b644b79a2c5354bfb668dc1d25e17f209c379183304a87b90686",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/starship/starship/f8e4e2155542cc84f49b342122d371f74e0ad253/Cargo.toml",
+      "sha256": "3d40efa77dd5727da751803ab001964f8b4242fecfd127b206de5fe7a256acc5",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/starship/starship/f8e4e2155542cc84f49b342122d371f74e0ad253/LICENSE",
+      "sha256": "2587580d0ec4ddc43d1534745a19ffeec0b63186497c2ed4bc36832da91b13e2",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/atuinsh/atuin/b178f009db237db378de0360f9a6ac5cc7bdf7f5/crates/atuin/src/main.rs",
+      "sha256": "e2ac433569fa4879264768185d493a65ef42d53dc70218d03f373c056e9227c3",
+      "status": "verified",
+      "excerpt_count": 6,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/atuinsh/atuin/b178f009db237db378de0360f9a6ac5cc7bdf7f5/Cargo.toml",
+      "sha256": "26ce38e32c3fb7e91bd59b572517e03da508b79677222d246f2608a427752131",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/atuinsh/atuin/b178f009db237db378de0360f9a6ac5cc7bdf7f5/LICENSE",
+      "sha256": "23ee4dd12c9fc8c59303caeb0f8ac300bf57e549d052f44f00d98c1edb11be91",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/astral-sh/uv/6b2d39dcc390293d51c9c0d2bbcd650f4bcbfdce/crates/uv/src/lib.rs",
+      "sha256": "3ccf524667e21c7fe92b160cf155e75a616852c3a2af4fb0ea79b9d7d0618a3b",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/astral-sh/uv/6b2d39dcc390293d51c9c0d2bbcd650f4bcbfdce/crates/uv-cli/src/lib.rs",
+      "sha256": "e866626c27868daf60577c0f548caeb8986690f4eebe59552548adda573aa2fe",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/astral-sh/uv/6b2d39dcc390293d51c9c0d2bbcd650f4bcbfdce/Cargo.toml",
+      "sha256": "990a1fc9f9774fda232b7809bce0deec5c4ef33b9b973fcee5130df1e45a768d",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/astral-sh/uv/6b2d39dcc390293d51c9c0d2bbcd650f4bcbfdce/LICENSE-APACHE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/astral-sh/uv/6b2d39dcc390293d51c9c0d2bbcd650f4bcbfdce/LICENSE-MIT",
+      "sha256": "860e3d7a86b84e6a7012c7a635fc64df475cebc6cce34dfeb73a5982ec58176c",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/astral-sh/ruff/c91de8a012cb87efe279b762020a0d28dd75ddb5/crates/ruff/src/main.rs",
+      "sha256": "86e708be2e31f82d453530226637e4d54ef8a7c251ccdaf0801b67e573d692e3",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/astral-sh/ruff/c91de8a012cb87efe279b762020a0d28dd75ddb5/Cargo.toml",
+      "sha256": "936ebd63a5bc306492f898d31b2768bb2fb20ed199803f05ef2d5ac8d6c647bb",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/astral-sh/ruff/c91de8a012cb87efe279b762020a0d28dd75ddb5/LICENSE",
+      "sha256": "2597d854122b77ddc71971564ca2350a37608575ce324adc5650a2b2051c8f18",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gitui-org/gitui/e24fb45df1584ee8d8ebdc4258531b4a91ca975d/src/args.rs",
+      "sha256": "e06fd5a51fac1f2a7ed3e795ad6929e3466fd26c9defcb67e69e253a7181abd1",
+      "status": "verified",
+      "excerpt_count": 8,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gitui-org/gitui/e24fb45df1584ee8d8ebdc4258531b4a91ca975d/src/main.rs",
+      "sha256": "e0e3b702ff2c9fd494070d218e1b9f04c1affa6b8188697049cd7c96e74bc6bc",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gitui-org/gitui/e24fb45df1584ee8d8ebdc4258531b4a91ca975d/Cargo.toml",
+      "sha256": "354ce4e4b5e7ea534f50d3c64cc312b856d61af548af12723935e553b13c818f",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gitui-org/gitui/e24fb45df1584ee8d8ebdc4258531b4a91ca975d/LICENSE.md",
+      "sha256": "58f97f31594eb38847063a2c7bd98c4b5cceca3a3b15671fb74f1324e92ae652",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zellij-org/zellij/aedee21cb0d58d716496e7f6c66ba0b6f08045d8/zellij-utils/src/cli.rs",
+      "sha256": "3002eba7a5adadd91f4b4cddcda47903708cd7aee7097d4dfecc594c2e56cc5f",
+      "status": "verified",
+      "excerpt_count": 6,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zellij-org/zellij/aedee21cb0d58d716496e7f6c66ba0b6f08045d8/src/lib.rs",
+      "sha256": "f3285e414da3070a125567d91be2ba59f710f235e8bebcb0a848814dd162877c",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zellij-org/zellij/aedee21cb0d58d716496e7f6c66ba0b6f08045d8/Cargo.toml",
+      "sha256": "f608de10c53eb29738121d2225e6b0d4188eafdf16a7d29dda329497bd5b45d1",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zellij-org/zellij/aedee21cb0d58d716496e7f6c66ba0b6f08045d8/LICENSE.md",
+      "sha256": "9aa6c363b18a48eeecbffe13ff390c76ede2c90eb37ba17dfbbaffc42892d87d",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ajeetdsouza/zoxide/f84f9a3e1d16fabf3e34b199ec7d552993b41f29/src/main.rs",
+      "sha256": "a8af2cf12c087f0c11c4ac73b4e33b8402c0df1968f770ab90109e52cd58387a",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ajeetdsouza/zoxide/f84f9a3e1d16fabf3e34b199ec7d552993b41f29/Cargo.toml",
+      "sha256": "08faf2dc1df58fb16f3f5961a29a4daa678db3fb81a0b47b4971304d7719f126",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ajeetdsouza/zoxide/f84f9a3e1d16fabf3e34b199ec7d552993b41f29/LICENSE",
+      "sha256": "23aa3b08366e4ed6050f3d9950070201802aadbe5675fa1c19f24f4de91cf294",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mozilla/sccache/965c01943a40c9df96264474bbe28ba98f2e1487/src/cmdline.rs",
+      "sha256": "6777684ba35da8f9424cd37fa790f2660df742b074618bee8f1c6df74231d14b",
+      "status": "verified",
+      "excerpt_count": 4,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mozilla/sccache/965c01943a40c9df96264474bbe28ba98f2e1487/src/lib.rs",
+      "sha256": "293b063e5812f65175184057157f5f5c3b6cc4d7f12067ee6561f11cb36ef575",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mozilla/sccache/965c01943a40c9df96264474bbe28ba98f2e1487/Cargo.toml",
+      "sha256": "d93cf9f76efa9919a8aa4fa0b9c40727da40851e3205ceccef4a5ae4369bd659",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mozilla/sccache/965c01943a40c9df96264474bbe28ba98f2e1487/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/svenstaro/genact/ad54eba035dcc6569333a0ad93c2486cfc2ed55a/src/args.rs",
+      "sha256": "79afd8c5b57cfd3a6b50de31bdeebf1cdc5f9129caa61e1d16a8ef4c17bfe027",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/svenstaro/genact/ad54eba035dcc6569333a0ad93c2486cfc2ed55a/src/main.rs",
+      "sha256": "30bcdf2c28c2347e06f62c3b8d784063857acbe52cebad3c547a255ac0f41288",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/svenstaro/genact/ad54eba035dcc6569333a0ad93c2486cfc2ed55a/Cargo.toml",
+      "sha256": "3fa2c1a6fc4a7129db9100f9cd084d7fe56d4da61df466c39995b45e6c75204f",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/svenstaro/genact/ad54eba035dcc6569333a0ad93c2486cfc2ed55a/LICENSE",
+      "sha256": "4367524e5000757d2fe3660ebfa9efbfdfb69df3a7a46e3b8bc52ad78244781f",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/svenstaro/miniserve/2cd9c495ef25f2fcef505615f603e9de8f981915/src/main.rs",
+      "sha256": "81801156aed991b60414aa321f24adf979bbb6f14fe618521fcd61e201638cbc",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/svenstaro/miniserve/2cd9c495ef25f2fcef505615f603e9de8f981915/Cargo.toml",
+      "sha256": "1f991386abb56330741478a4f3283f8158bbe1ac927ecf70513e1904aa5793de",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/svenstaro/miniserve/2cd9c495ef25f2fcef505615f603e9de8f981915/LICENSE",
+      "sha256": "bedb87f0760796c7be677651eb10ad949410e90c55bc7f607d848e8e9d65375a",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rust-lang/mdBook/2ea30c00f00647d2b3f4c0f79b3e0e1eabc0b66d/src/main.rs",
+      "sha256": "8f9feacf4fdfc2f99442f25915f436ad29c149b7e32f0b0d2582fb77bf5d3ee7",
+      "status": "verified",
+      "excerpt_count": 2,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rust-lang/mdBook/2ea30c00f00647d2b3f4c0f79b3e0e1eabc0b66d/Cargo.toml",
+      "sha256": "2209d24199d75a4c0fc6af42fcd41e81894bda546f97e00461207cf117cd1bfb",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rust-lang/mdBook/2ea30c00f00647d2b3f4c0f79b3e0e1eabc0b66d/LICENSE",
+      "sha256": "af175b9d96ee93c21a036152e1b905b0b95304d4ae8c2c921c7609100ba8df7e",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/casey/just/2638e9c0941edb1f409da7426fa7842887656973/src/lib.rs",
+      "sha256": "11a3aded20ded88692132bf6f733f002ac8f54ab080130c47759a1a672313f7f",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/casey/just/2638e9c0941edb1f409da7426fa7842887656973/src/arguments.rs",
+      "sha256": "fa8d63beb1d4a68e474e4d667889723b682241c7dd15cbe301ad794f5e90c0e6",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/casey/just/2638e9c0941edb1f409da7426fa7842887656973/src/run.rs",
+      "sha256": "fe030fce9db0faa6f9a4cd6e3b5cee22fdc8da8ec2f0b682794ba95a0ef9a414",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/casey/just/2638e9c0941edb1f409da7426fa7842887656973/src/main.rs",
+      "sha256": "36d85ea51597a6d32de4cb36520f17d381d1f3f8ff0c0ef3f52455b338415258",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/casey/just/2638e9c0941edb1f409da7426fa7842887656973/Cargo.toml",
+      "sha256": "a942f39d7a4653001686b6490f5280892928d46c7c02db8b591babdf08b31a3f",
+      "status": "verified",
+      "excerpt_count": 1,
+      "archived_notice_count": 0
+    },
+    {
+      "url": "https://raw.githubusercontent.com/casey/just/2638e9c0941edb1f409da7426fa7842887656973/LICENSE",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "status": "verified",
+      "excerpt_count": 0,
+      "archived_notice_count": 1
+    }
+  ]
+}

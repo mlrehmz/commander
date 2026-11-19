@@ -1,0 +1,259 @@
+{
+  "version": 1,
+  "new_attempts": 50,
+  "new_valid_captures": 46,
+  "existing_valid_pilot_captures": 10,
+  "total_valid_captures": 56,
+  "attempts": [
+    {
+      "id": "pip-root",
+      "status": "ok",
+      "sha256": "f496b63d04cded170f4aa077a1ae84a8c342b969ff97c5947726eec0d4f334aa"
+    },
+    {
+      "id": "pip-tools-root",
+      "status": "invalid_text",
+      "sha256": "676091ab063f8e7325c8789ffbf5889dc21428a69181b4e8e59a0ee871d63fcb"
+    },
+    {
+      "id": "pre-commit-root",
+      "status": "ok",
+      "sha256": "1999256fdef45c79630c92e1a91f77976eacca0cfed9b1669784e06cf622742a"
+    },
+    {
+      "id": "cookiecutter-root",
+      "status": "ok",
+      "sha256": "14cd2ec42168f4f7f6283ce4c2648f9e0062ce382b0da6d2fc696d90e129b7a9"
+    },
+    {
+      "id": "mkdocs-root",
+      "status": "ok",
+      "sha256": "7203763413d69c176cbf3c3f38831550ffb210903d41d4f2435100f17fac12a2"
+    },
+    {
+      "id": "sphinx-root",
+      "status": "ok",
+      "sha256": "34e9eb6b19b3b57c6cac8b0b3a99ab8a482a200323280abba391b4b0fb4e4cad"
+    },
+    {
+      "id": "autopep8-root",
+      "status": "ok",
+      "sha256": "1185ef173b62bb8ce00c1945121a518d39eaa17456e1bbcda58b032a9f148de5"
+    },
+    {
+      "id": "flake8-root",
+      "status": "ok",
+      "sha256": "c6ee86443c2a8c99a5ea3da5f0a20c8f620e66ea44a0f97474abaebf3ca8d408"
+    },
+    {
+      "id": "yamllint-root",
+      "status": "ok",
+      "sha256": "fbbfed1d4ca9dd88f498decd2486ce3ada6536e76f351697a953c395cae60bc4"
+    },
+    {
+      "id": "codespell-root",
+      "status": "ok",
+      "sha256": "a8fb5571bebce0f82e249daff05a66acbe13fb97c72a5ee54d4d92cced195182"
+    },
+    {
+      "id": "twine-root",
+      "status": "ok",
+      "sha256": "93e99f1767bbf994e4e0459f50c3d3f0f2c91ea0e8ed202db41e22bcd5737bce"
+    },
+    {
+      "id": "build-root",
+      "status": "ok",
+      "sha256": "a9d598c67c9628caef3c34afb5a5456df7a9b6948f41585c425000af84439a5d"
+    },
+    {
+      "id": "wheel-root",
+      "status": "ok",
+      "sha256": "c40fcdab9c14a5ec6c62d101d0eefa221a9e761e39756e7ed35aaa590cc6e1c9"
+    },
+    {
+      "id": "nox-root",
+      "status": "ok",
+      "sha256": "d1d4813488c9fa55fb16442f7aecc6fa6aa583739df46c1827641ae02d506ea5"
+    },
+    {
+      "id": "invoke-root",
+      "status": "ok",
+      "sha256": "88b6f925a02c2cd53ab7e8998af274bc1639131af265dc6e4f2694773ae3bf01"
+    },
+    {
+      "id": "fabric-root",
+      "status": "ok",
+      "sha256": "bf2eebb59e6555b1406e72213308a1cacdc44c0d651b60c51db25e2d48742201"
+    },
+    {
+      "id": "yt-dlp-root",
+      "status": "ok",
+      "sha256": "7758bd79e72274b1827a636075813cb0cf6129d089930f5d3cf53c3e9b16ccca"
+    },
+    {
+      "id": "grep-root",
+      "status": "ok",
+      "sha256": "e5ab81dfe2b3bd7cd6369f5876289b4cc41f0b12fca9e6afb87026d787a483a4"
+    },
+    {
+      "id": "sed-root",
+      "status": "ok",
+      "sha256": "e178547c504ae3d5354967ca7988fd13675b592dc142c1b6dc554e53a1508120"
+    },
+    {
+      "id": "diffutils-root",
+      "status": "ok",
+      "sha256": "6349899c5038b7633b2d15e61bcf82595386d3407d3b3f06567aa43e3fb8204b"
+    },
+    {
+      "id": "xz-root",
+      "status": "ok",
+      "sha256": "b59d43f210e5047114003e918eca81066d3a08b2c0cd05faef56e6eebd62f6fe"
+    },
+    {
+      "id": "make-root",
+      "status": "ok",
+      "sha256": "99126d7425ce92b37a662c2d03ed889532abcdc46bd4b7591b49c7bac01d0752"
+    },
+    {
+      "id": "patch-root",
+      "status": "ok",
+      "sha256": "124d9f4e179200c0b02448a709b5a4791a49aee859a36ae6ae1e7f230f79ca16"
+    },
+    {
+      "id": "tmux-root",
+      "status": "ok",
+      "sha256": "3302cd54c7bdffa9fb8231c2e219939ba0c81e926676cb0edb82d4c7bca74cd3"
+    },
+    {
+      "id": "htop-root",
+      "status": "ok",
+      "sha256": "c972535450a070621304a71ceadaf96cd724fceb0d2bbe0a8888a7030b0fd035"
+    },
+    {
+      "id": "file-root",
+      "status": "ok",
+      "sha256": "84b342c43b9f38755a477919307552ed291880e9355216845edcee096e99bd1a"
+    },
+    {
+      "id": "pytest-root",
+      "status": "ok",
+      "sha256": "64f15a9364f99b3a7560bc74ec3e384c46f3a05f08d4f02e362fd0b331ec4027"
+    },
+    {
+      "id": "poetry-root",
+      "status": "ok",
+      "sha256": "e9264e25a7d911f9203941b631821fb689c084cd9865d211768d54f7b5f83169"
+    },
+    {
+      "id": "ansible-core-root",
+      "status": "ok",
+      "sha256": "e2dbee66e53b7414923166bcbeaade578b925ca03d2035430038bae54bf61f70"
+    },
+    {
+      "id": "awscli-root",
+      "status": "invalid_text",
+      "sha256": "6be785ccd228bc55226b5334d8e6f75e5d42d7daa33e397c97cf610826edfbf7"
+    },
+    {
+      "id": "mypy-root",
+      "status": "ok",
+      "sha256": "afbf38c1fa23f467cd7460f13ff5e07c608ae1858441701dcdd1dff0842b9d4f"
+    },
+    {
+      "id": "isort-root",
+      "status": "ok",
+      "sha256": "5ee62dfb96c271b3a718f61f94e1cc4d9093d1812cc679846217aa19ff21819c"
+    },
+    {
+      "id": "llm-root",
+      "status": "ok",
+      "sha256": "c46a8b8050ce235d401386b2b64e4529c7fad76a191e7970935136e543939979"
+    },
+    {
+      "id": "curl-root",
+      "status": "ok",
+      "sha256": "6f4dd3652c09ed7b96071cd1e86da78d0d2985f7e28bf505bf8acdae3ed90923"
+    },
+    {
+      "id": "tar-root",
+      "status": "ok",
+      "sha256": "8f059f7ebc89167f0c36732831081e6b67fed7dd4218ac55ad046f281049cb60"
+    },
+    {
+      "id": "gawk-root",
+      "status": "ok",
+      "sha256": "1aded61bfd11d247b9e17dc591ffc6ef69a98ab02936e7ca3d41433fde40fcaf"
+    },
+    {
+      "id": "less-root",
+      "status": "invalid_text",
+      "sha256": "8f929f24047cda1776e8a44835106e26cd32e21d4fa6cb411b287fbf800aad88"
+    },
+    {
+      "id": "golang-root",
+      "status": "ok",
+      "sha256": "15fc44afc5befa2b7221ec7e43462cf8f52843a7d43118527ca1c8531e68915c"
+    },
+    {
+      "id": "coverage-root",
+      "status": "ok",
+      "sha256": "e1703b7501e29c0883ac8a1e1ced290285d6cce008397f920e062cdce09ffd74"
+    },
+    {
+      "id": "docutils-root",
+      "status": "ok",
+      "sha256": "abd7bd5f074ca2921de5976e9003a9bcdc641cd086a8e946382453dee43fe98f"
+    },
+    {
+      "id": "pylint-root",
+      "status": "ok",
+      "sha256": "1a6f49647db0dc1a5d57ec84514b42dd2149101dbcaf6c5e3364c2d247fa95cb"
+    },
+    {
+      "id": "bandit-root",
+      "status": "ok",
+      "sha256": "9e1c64bd3b53c0b7e6a43ae7d8f4b915102a2011e303b7f72f0762fdf916d406"
+    },
+    {
+      "id": "streamlink-root",
+      "status": "ok",
+      "sha256": "58f6f796570d4e12ad4e463e0541537942d285ba27dc6b5745a89c1f775561e4"
+    },
+    {
+      "id": "httpx-root",
+      "status": "nonzero_exit",
+      "sha256": "6a68a9e4e6ae57e47ae256cbf20eb18ef6d77276d273d87082f4e4888868512f"
+    },
+    {
+      "id": "wget-root",
+      "status": "ok",
+      "sha256": "32309a7719a558adbe28f38e37456b4a295c221992b27430b9b65c663170972b"
+    },
+    {
+      "id": "findutils-root",
+      "status": "ok",
+      "sha256": "a98114d8367c775904a6057e4d7f37e118ba61daaa6524d6a3ef9a730ec64dd3"
+    },
+    {
+      "id": "gzip-root",
+      "status": "ok",
+      "sha256": "8b08b5c4095d6c0968828d698873557602ba969a952860c0188b1ba2760b08e6"
+    },
+    {
+      "id": "m4-root",
+      "status": "ok",
+      "sha256": "5de4d81f5cc89bb7fa3a7094faa0225b8557822435712fef50792564742352d5"
+    },
+    {
+      "id": "nano-root",
+      "status": "ok",
+      "sha256": "98392a85f30f747e339d9a1c0756f7cd9d527833a50f50859e3127f6f98c8726"
+    },
+    {
+      "id": "rsync-root",
+      "status": "ok",
+      "sha256": "5fb5fabd139c7f3e2f951ea6b2c8e45ee6f390ebf02d224ab954391a9c2f86e7"
+    }
+  ]
+}

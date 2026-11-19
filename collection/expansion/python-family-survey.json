@@ -1,0 +1,4456 @@
+{
+  "version": 1,
+  "status": "upstream-source-survey",
+  "project_count": 40,
+  "family_counts": {
+    "click": 11,
+    "argparse": 23,
+    "optparse": 3,
+    "cleo": 1,
+    "irregular": 2
+  },
+  "scope": "Offline static tracing of listed installed command entrypoints. Family identifies the parser implementation, and formatter_family records specific formatter or dispatch variants. These are not runtime output checks or final split assignments. Alternate entrypoints only share the cited classification when listed under commands_traced.",
+  "evidence_method": "Installed source read as data via the Python standard library in the pinned images, with no app imports or executions. Recorded AST symbols omit content strings and preserve file paths, line numbers, and SHA-256 of exact source files. No help captures, annotations, predictions, man pages, or completion contents read.",
+  "ancestry_notes": [
+    "pip-tools exposes Click commands, and calls pip internal commands and parser code for package management. pip exposes its own optparse CLI. pipenv exposes vendored Click and ships patched pip. These repositories should be considered together when screening ancestry overlap.",
+    "Visual formatter variants for HTTPie, rich-cli, and HTTPX reflect project-specific Rich integration. This survey does not assign them to the rich-click package family.",
+    "Invoke and Fabric share Invoke Program and parser code. Datasette and LLM both use click-default-group on top of Click.",
+    "AWS CLI command help has a separate documentation renderer. Docutils front controller and publisher have separate parser implementations. Review each invocation scope before grouping help formatters."
+  ],
+  "projects": [
+    {
+      "project": "black",
+      "tool_version": "25.9.0",
+      "image": "sha256:cbaa10bd1d9bf77e577de88d3e5e2947670adcc5db07580cd9e182659a14e63f",
+      "environment_evidence": {
+        "path": "collection/expansion/python/pilot-environment-evidence.json",
+        "sha256": "da9c6f6f24ef4a70da43649eea637f3a6ffe0a4cfd854aa544c2bbe2f4e527de"
+      },
+      "commands_traced": [
+        "black"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "black",
+          "value": "black:patched_main"
+        }
+      ],
+      "family": "click",
+      "formatter_family": "click",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/usr/local/lib/python3.12/site-packages/black/__init__.py",
+          "sha256": "b9dd0eac8a583153b9d8583287aad18ec428f54253b2c0dc884297965af84d66",
+          "ast_events": [
+            {
+              "line": 25,
+              "scope": null,
+              "kind": "import",
+              "symbol": "click"
+            },
+            {
+              "line": 236,
+              "scope": null,
+              "kind": "decorates",
+              "symbol": "main=click.command()"
+            },
+            {
+              "line": 1647,
+              "scope": null,
+              "kind": "function",
+              "symbol": "patched_main"
+            },
+            {
+              "line": 1655,
+              "scope": "patched_main",
+              "kind": "call",
+              "symbol": "main"
+            }
+          ]
+        }
+      ],
+      "limitations": "Entry wrapper calls the Click-decorated main. blackd is a distinct entrypoint and was outside this trace."
+    },
+    {
+      "project": "pipx",
+      "tool_version": "1.8.0",
+      "image": "sha256:cbaa10bd1d9bf77e577de88d3e5e2947670adcc5db07580cd9e182659a14e63f",
+      "environment_evidence": {
+        "path": "collection/expansion/python/pilot-environment-evidence.json",
+        "sha256": "da9c6f6f24ef4a70da43649eea637f3a6ffe0a4cfd854aa544c2bbe2f4e527de"
+      },
+      "commands_traced": [
+        "pipx"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "pipx",
+          "value": "pipx.main:cli"
+        }
+      ],
+      "family": "argparse",
+      "formatter_family": "argparse_custom_formatter",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/usr/local/lib/python3.12/site-packages/pipx/main.py",
+          "sha256": "241aa77308535b2d750e70e9d70a5e214add810291c177747b4b196446cee0c1",
+          "ast_events": [
+            {
+              "line": 155,
+              "scope": null,
+              "kind": "class",
+              "symbol": "LineWrapRawTextHelpFormatter(argparse.RawDescriptionHelpFormatter)"
+            },
+            {
+              "line": 973,
+              "scope": "get_command_parser",
+              "kind": "bind",
+              "symbol": "parser=argparse.ArgumentParser()"
+            },
+            {
+              "line": 973,
+              "scope": "get_command_parser",
+              "kind": "call",
+              "symbol": "argparse.ArgumentParser formatter_class=LineWrapRawTextHelpFormatter"
+            },
+            {
+              "line": 1173,
+              "scope": "cli",
+              "kind": "bind",
+              "symbol": "(parser,subparsers)=get_command_parser()"
+            },
+            {
+              "line": 1173,
+              "scope": "cli",
+              "kind": "call",
+              "symbol": "get_command_parser"
+            },
+            {
+              "line": 1175,
+              "scope": "cli",
+              "kind": "bind",
+              "symbol": "parsed_pipx_args=parser.parse_args()"
+            },
+            {
+              "line": 1175,
+              "scope": "cli",
+              "kind": "call",
+              "symbol": "parser.parse_args"
+            }
+          ]
+        }
+      ],
+      "limitations": "Root parser and several subparsers explicitly select LineWrapRawTextHelpFormatter."
+    },
+    {
+      "project": "pipenv",
+      "tool_version": "2025.0.4",
+      "image": "sha256:cbaa10bd1d9bf77e577de88d3e5e2947670adcc5db07580cd9e182659a14e63f",
+      "environment_evidence": {
+        "path": "collection/expansion/python/pilot-environment-evidence.json",
+        "sha256": "da9c6f6f24ef4a70da43649eea637f3a6ffe0a4cfd854aa544c2bbe2f4e527de"
+      },
+      "commands_traced": [
+        "pipenv"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "pipenv",
+          "value": "pipenv:cli"
+        }
+      ],
+      "family": "click",
+      "formatter_family": "vendored_click_custom_help",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/usr/local/lib/python3.12/site-packages/pipenv/__init__.py",
+          "sha256": "a37bedec6575c291da4d5fbaee7ee010bb09c7b0900f9e60f49ac5e04c31b15a",
+          "ast_events": [
+            {
+              "line": 32,
+              "scope": null,
+              "kind": "from",
+              "symbol": "pipenv.cli:cli"
+            }
+          ]
+        },
+        {
+          "path": "/usr/local/lib/python3.12/site-packages/pipenv/cli/__init__.py",
+          "sha256": "09538bfab9e56923328908bd06c58e449a77f54149dcb349f26965e55aeb62cc",
+          "ast_events": [
+            {
+              "line": 1,
+              "scope": null,
+              "kind": "from",
+              "symbol": ".command:cli"
+            }
+          ]
+        },
+        {
+          "path": "/usr/local/lib/python3.12/site-packages/pipenv/cli/command.py",
+          "sha256": "9cd429099337cff0401ff0a863fd4298447653f8e2c720d298277b3516a63067",
+          "ast_events": [
+            {
+              "line": 28,
+              "scope": null,
+              "kind": "from",
+              "symbol": "pipenv.vendor.click:Choice"
+            },
+            {
+              "line": 28,
+              "scope": null,
+              "kind": "from",
+              "symbol": "pipenv.vendor.click:argument"
+            },
+            {
+              "line": 28,
+              "scope": null,
+              "kind": "from",
+              "symbol": "pipenv.vendor.click:edit"
+            },
+            {
+              "line": 28,
+              "scope": null,
+              "kind": "from",
+              "symbol": "pipenv.vendor.click:group"
+            },
+            {
+              "line": 28,
+              "scope": null,
+              "kind": "from",
+              "symbol": "pipenv.vendor.click:option"
+            },
+            {
+              "line": 28,
+              "scope": null,
+              "kind": "from",
+              "symbol": "pipenv.vendor.click:pass_context"
+            },
+            {
+              "line": 28,
+              "scope": null,
+              "kind": "from",
+              "symbol": "pipenv.vendor.click:version_option"
+            },
+            {
+              "line": 49,
+              "scope": null,
+              "kind": "decorates",
+              "symbol": "cli=group()"
+            },
+            {
+              "line": 49,
+              "scope": null,
+              "kind": "decorator_keyword",
+              "symbol": "cli:cls=PipenvGroup"
+            }
+          ]
+        },
+        {
+          "path": "/usr/local/lib/python3.12/site-packages/pipenv/cli/options.py",
+          "sha256": "99302af065956bb47fa552e0733a43e0a2ea7541617d3a11ffcfcb22d6cf87b2",
+          "ast_events": [
+            {
+              "line": 8,
+              "scope": null,
+              "kind": "from",
+              "symbol": "pipenv.vendor.click:BadArgumentUsage"
+            },
+            {
+              "line": 8,
+              "scope": null,
+              "kind": "from",
+              "symbol": "pipenv.vendor.click:BadParameter"
+            },
+            {
+              "line": 8,
+              "scope": null,
+              "kind": "from",
+              "symbol": "pipenv.vendor.click:Group"
+            },
+            {
+              "line": 8,
+              "scope": null,
+              "kind": "from",
+              "symbol": "pipenv.vendor.click:Option"
+            },
+            {
+              "line": 8,
+              "scope": null,
+              "kind": "from",
+              "symbol": "pipenv.vendor.click:argument"
+            },
+            {
+              "line": 8,
+              "scope": null,
+              "kind": "from",
+              "symbol": "pipenv.vendor.click:make_pass_decorator"
+            },
+            {
+              "line": 8,
+              "scope": null,
+              "kind": "from",
+              "symbol": "pipenv.vendor.click:option"
+            },
+            {
+              "line": 23,
+              "scope": null,
+              "kind": "class",
+              "symbol": "PipenvGroup(DYMMixin,Group)"
+            },
+            {
+              "line": 26,
+              "scope": "PipenvGroup",
+              "kind": "function",
+              "symbol": "get_help_option"
+            },
+            {
+              "line": 34,
+              "scope": "PipenvGroup.get_help_option.show_help",
+              "kind": "call",
+              "symbol": "console.print"
+            },
+            {
+              "line": 34,
+              "scope": "PipenvGroup.get_help_option.show_help",
+              "kind": "call",
+              "symbol": "format_help"
+            },
+            {
+              "line": 34,
+              "scope": "PipenvGroup.get_help_option.show_help",
+              "kind": "call",
+              "symbol": "ctx.get_help"
+            }
+          ]
+        },
+        {
+          "path": "/usr/local/lib/python3.12/site-packages/pipenv/utils/display.py",
+          "sha256": "31b11e4b01f63f7e56b337b43085d330e8f90c36a9a589ed320e6fda63fb4c8f",
+          "ast_events": [
+            {
+              "line": 54,
+              "scope": "format_help",
+              "kind": "return",
+              "symbol": "help"
+            }
+          ]
+        }
+      ],
+      "limitations": "The root PipenvGroup subclasses vendored Click Group and wraps context-generated help in its own format_help. The wheel also contains patched pip, which is a shared ancestry risk, and pipenv-resolver is a separate entrypoint."
+    },
+    {
+      "project": "tox",
+      "tool_version": "4.30.2",
+      "image": "sha256:cbaa10bd1d9bf77e577de88d3e5e2947670adcc5db07580cd9e182659a14e63f",
+      "environment_evidence": {
+        "path": "collection/expansion/python/pilot-environment-evidence.json",
+        "sha256": "da9c6f6f24ef4a70da43649eea637f3a6ffe0a4cfd854aa544c2bbe2f4e527de"
+      },
+      "commands_traced": [
+        "tox"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "tox",
+          "value": "tox.run:run"
+        }
+      ],
+      "family": "argparse",
+      "formatter_family": "argparse_custom_parser",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/usr/local/lib/python3.12/site-packages/tox/run.py",
+          "sha256": "335c7ff09c69e0e56dde45672772d71ebce4622db559cd5dc1d1d418e44b117c",
+          "ast_events": [
+            {
+              "line": 20,
+              "scope": "run",
+              "kind": "bind",
+              "symbol": "result=main()"
+            },
+            {
+              "line": 20,
+              "scope": "run",
+              "kind": "call",
+              "symbol": "main"
+            },
+            {
+              "line": 39,
+              "scope": "main",
+              "kind": "bind",
+              "symbol": "state=setup_state()"
+            },
+            {
+              "line": 39,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "setup_state"
+            },
+            {
+              "line": 53,
+              "scope": "setup_state",
+              "kind": "bind",
+              "symbol": "options=get_options()"
+            },
+            {
+              "line": 53,
+              "scope": "setup_state",
+              "kind": "call",
+              "symbol": "get_options"
+            }
+          ]
+        },
+        {
+          "path": "/usr/local/lib/python3.12/site-packages/tox/config/cli/parse.py",
+          "sha256": "c8686f26d052bfc422ecd62277c686aa6a84b05b5a13d2c941f97e910f3b8a88",
+          "ast_events": [
+            {
+              "line": 39,
+              "scope": "get_options",
+              "kind": "bind",
+              "symbol": "(parsed,cmd_handlers)=_get_all()"
+            },
+            {
+              "line": 69,
+              "scope": "_get_all",
+              "kind": "bind",
+              "symbol": "tox_parser=_get_parser()"
+            },
+            {
+              "line": 69,
+              "scope": "_get_all",
+              "kind": "call",
+              "symbol": "_get_parser"
+            },
+            {
+              "line": 70,
+              "scope": "_get_all",
+              "kind": "bind",
+              "symbol": "parsed=cast()"
+            },
+            {
+              "line": 70,
+              "scope": "_get_all",
+              "kind": "call",
+              "symbol": "tox_parser.parse_args"
+            },
+            {
+              "line": 76,
+              "scope": "_get_parser",
+              "kind": "bind",
+              "symbol": "tox_parser=ToxParser.core()"
+            },
+            {
+              "line": 76,
+              "scope": "_get_parser",
+              "kind": "call",
+              "symbol": "ToxParser.core"
+            },
+            {
+              "line": 80,
+              "scope": "_get_parser",
+              "kind": "call",
+              "symbol": "MANAGER.tox_add_option"
+            }
+          ]
+        },
+        {
+          "path": "/usr/local/lib/python3.12/site-packages/tox/config/cli/parser.py",
+          "sha256": "de00de80d9a4002d887533f3d37508f9b94839f0908b3ac18b13e6dc41f5c676",
+          "ast_events": [
+            {
+              "line": 10,
+              "scope": null,
+              "kind": "from",
+              "symbol": "argparse:SUPPRESS"
+            },
+            {
+              "line": 10,
+              "scope": null,
+              "kind": "from",
+              "symbol": "argparse:Action"
+            },
+            {
+              "line": 10,
+              "scope": null,
+              "kind": "from",
+              "symbol": "argparse:ArgumentDefaultsHelpFormatter"
+            },
+            {
+              "line": 10,
+              "scope": null,
+              "kind": "from",
+              "symbol": "argparse:ArgumentError"
+            },
+            {
+              "line": 10,
+              "scope": null,
+              "kind": "from",
+              "symbol": "argparse:ArgumentParser"
+            },
+            {
+              "line": 10,
+              "scope": null,
+              "kind": "from",
+              "symbol": "argparse:Namespace"
+            },
+            {
+              "line": 32,
+              "scope": null,
+              "kind": "class",
+              "symbol": "ArgumentParserWithEnvAndConfig(ArgumentParser)"
+            },
+            {
+              "line": 95,
+              "scope": null,
+              "kind": "class",
+              "symbol": "HelpFormatter(ArgumentDefaultsHelpFormatter)"
+            },
+            {
+              "line": 141,
+              "scope": null,
+              "kind": "class",
+              "symbol": "ToxParser(ArgumentParserWithEnvAndConfig)"
+            },
+            {
+              "line": 170,
+              "scope": "ToxParser.add_command",
+              "kind": "call",
+              "symbol": "self._cmd.add_parser formatter_class=HelpFormatter"
+            }
+          ]
+        }
+      ],
+      "limitations": "ToxParser subclasses an argparse wrapper that incorporates environment and config values. tox plugin hooks augment the parser and subcommands can select tox's HelpFormatter."
+    },
+    {
+      "project": "virtualenv",
+      "tool_version": "20.34.0",
+      "image": "sha256:cbaa10bd1d9bf77e577de88d3e5e2947670adcc5db07580cd9e182659a14e63f",
+      "environment_evidence": {
+        "path": "collection/expansion/python/pilot-environment-evidence.json",
+        "sha256": "da9c6f6f24ef4a70da43649eea637f3a6ffe0a4cfd854aa544c2bbe2f4e527de"
+      },
+      "commands_traced": [
+        "virtualenv"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "virtualenv",
+          "value": "virtualenv.__main__:run_with_catch"
+        }
+      ],
+      "family": "argparse",
+      "formatter_family": "argparse_custom_formatter",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/usr/local/lib/python3.12/site-packages/virtualenv/__main__.py",
+          "sha256": "b56c5ec3fc32aff545adf0e28a778b3e65bd26e270658562b4c589c7fcd5a41a",
+          "ast_events": [
+            {
+              "line": 21,
+              "scope": "run",
+              "kind": "bind",
+              "symbol": "session=cli_run()"
+            },
+            {
+              "line": 21,
+              "scope": "run",
+              "kind": "call",
+              "symbol": "cli_run"
+            },
+            {
+              "line": 68,
+              "scope": "run_with_catch",
+              "kind": "call",
+              "symbol": "run"
+            }
+          ]
+        },
+        {
+          "path": "/usr/local/lib/python3.12/site-packages/virtualenv/run/__init__.py",
+          "sha256": "c644c7bd5264e4d67512231e790c9ce757df7f51250b914cedee7d81f04ecbfc",
+          "ast_events": [
+            {
+              "line": 31,
+              "scope": "cli_run",
+              "kind": "bind",
+              "symbol": "of_session=session_via_cli()"
+            },
+            {
+              "line": 31,
+              "scope": "cli_run",
+              "kind": "call",
+              "symbol": "session_via_cli"
+            },
+            {
+              "line": 50,
+              "scope": "session_via_cli",
+              "kind": "bind",
+              "symbol": "options=parser.parse_args()"
+            },
+            {
+              "line": 50,
+              "scope": "session_via_cli",
+              "kind": "call",
+              "symbol": "parser.parse_args"
+            },
+            {
+              "line": 64,
+              "scope": "build_parser",
+              "kind": "bind",
+              "symbol": "parser=VirtualEnvConfigParser()"
+            },
+            {
+              "line": 64,
+              "scope": "build_parser",
+              "kind": "call",
+              "symbol": "VirtualEnvConfigParser"
+            }
+          ]
+        },
+        {
+          "path": "/usr/local/lib/python3.12/site-packages/virtualenv/config/cli/parser.py",
+          "sha256": "6f94becf01a4710b719237514e1afc1ce950341d9238941bdc3862584b73d53d",
+          "ast_events": [
+            {
+              "line": 42,
+              "scope": null,
+              "kind": "class",
+              "symbol": "VirtualEnvConfigParser(ArgumentParser)"
+            },
+            {
+              "line": 52,
+              "scope": "VirtualEnvConfigParser.__init__",
+              "kind": "bind",
+              "symbol": "kwargs[]=HelpFormatter"
+            },
+            {
+              "line": 104,
+              "scope": "VirtualEnvConfigParser.parse_known_args",
+              "kind": "return",
+              "symbol": "super().parse_known_args()"
+            },
+            {
+              "line": 104,
+              "scope": "VirtualEnvConfigParser.parse_known_args",
+              "kind": "call",
+              "symbol": "super().parse_known_args"
+            },
+            {
+              "line": 109,
+              "scope": null,
+              "kind": "class",
+              "symbol": "HelpFormatter(ArgumentDefaultsHelpFormatter)"
+            }
+          ]
+        }
+      ],
+      "limitations": "The entry wrapper reaches a programmatically built VirtualEnvConfigParser with a custom defaults formatter and component registration."
+    },
+    {
+      "project": "httpie",
+      "tool_version": "3.2.4",
+      "image": "sha256:cbaa10bd1d9bf77e577de88d3e5e2947670adcc5db07580cd9e182659a14e63f",
+      "environment_evidence": {
+        "path": "collection/expansion/python/pilot-environment-evidence.json",
+        "sha256": "da9c6f6f24ef4a70da43649eea637f3a6ffe0a4cfd854aa544c2bbe2f4e527de"
+      },
+      "commands_traced": [
+        "http"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "http",
+          "value": "httpie.__main__:main"
+        }
+      ],
+      "family": "argparse",
+      "formatter_family": "argparse_custom_formatter_rich_pager",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/usr/local/lib/python3.12/site-packages/httpie/__main__.py",
+          "sha256": "1f4ef5eabd7995fd48cf0fdb71d2f61582f49f2daac49d97f0055aa69b005fed",
+          "ast_events": [
+            {
+              "line": 8,
+              "scope": "main",
+              "kind": "from",
+              "symbol": "httpie.core:main"
+            }
+          ]
+        },
+        {
+          "path": "/usr/local/lib/python3.12/site-packages/httpie/core.py",
+          "sha256": "12a78934cd277bdba722574319048213d417c9bc549145ca8bd851c123444d5b",
+          "ast_events": [
+            {
+              "line": 77,
+              "scope": "raw_main",
+              "kind": "bind",
+              "symbol": "parsed_args=parser.parse_args()"
+            },
+            {
+              "line": 77,
+              "scope": "raw_main",
+              "kind": "call",
+              "symbol": "parser.parse_args"
+            },
+            {
+              "line": 160,
+              "scope": "main",
+              "kind": "from",
+              "symbol": ".cli.definition:parser"
+            },
+            {
+              "line": 162,
+              "scope": "main",
+              "kind": "return",
+              "symbol": "raw_main()"
+            },
+            {
+              "line": 162,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "raw_main parser=parser"
+            }
+          ]
+        },
+        {
+          "path": "/usr/local/lib/python3.12/site-packages/httpie/cli/definition.py",
+          "sha256": "c5efca2df0b6f4018a50623bfc1bf170826c790d1340e2e9c47fd1e0e66e2fc1",
+          "ast_events": [
+            {
+              "line": 956,
+              "scope": null,
+              "kind": "bind",
+              "symbol": "parser=to_argparse()"
+            },
+            {
+              "line": 956,
+              "scope": null,
+              "kind": "call",
+              "symbol": "to_argparse"
+            }
+          ]
+        },
+        {
+          "path": "/usr/local/lib/python3.12/site-packages/httpie/cli/options.py",
+          "sha256": "4abd2f61bbe6b4b9894f96f5632ec7999ab9576d5247e7c76c2c75415ba9ad9e",
+          "ast_events": [
+            {
+              "line": 8,
+              "scope": null,
+              "kind": "from",
+              "symbol": "httpie.cli.argparser:HTTPieArgumentParser"
+            },
+            {
+              "line": 193,
+              "scope": null,
+              "kind": "function",
+              "symbol": "to_argparse"
+            },
+            {
+              "line": 197,
+              "scope": "to_argparse",
+              "kind": "bind",
+              "symbol": "concrete_parser=parser_type()"
+            },
+            {
+              "line": 197,
+              "scope": "to_argparse",
+              "kind": "call",
+              "symbol": "parser_type"
+            }
+          ]
+        },
+        {
+          "path": "/usr/local/lib/python3.12/site-packages/httpie/cli/argparser.py",
+          "sha256": "6f2408a5e917e3d0fc5ad5c725252d98022990299b1ec5182b2237749d513077",
+          "ast_events": [
+            {
+              "line": 32,
+              "scope": null,
+              "kind": "class",
+              "symbol": "HTTPieHelpFormatter(RawDescriptionHelpFormatter)"
+            },
+            {
+              "line": 81,
+              "scope": null,
+              "kind": "class",
+              "symbol": "BaseHTTPieArgumentParser(argparse.ArgumentParser)"
+            },
+            {
+              "line": 138,
+              "scope": null,
+              "kind": "class",
+              "symbol": "HTTPieArgumentParser(BaseHTTPieArgumentParser)"
+            },
+            {
+              "line": 147,
+              "scope": "HTTPieArgumentParser.__init__",
+              "kind": "call",
+              "symbol": "kwargs.setdefault"
+            },
+            {
+              "line": 159,
+              "scope": "HTTPieArgumentParser.parse_args",
+              "kind": "bind",
+              "symbol": "(self.args,no_options)=super().parse_known_args()"
+            },
+            {
+              "line": 159,
+              "scope": "HTTPieArgumentParser.parse_args",
+              "kind": "call",
+              "symbol": "super().parse_known_args"
+            },
+            {
+              "line": 568,
+              "scope": "HTTPieArgumentParser.print_manual",
+              "kind": "bind",
+              "symbol": "text=self.format_help()"
+            },
+            {
+              "line": 569,
+              "scope": "HTTPieArgumentParser.print_manual",
+              "kind": "call",
+              "symbol": "self.env.rich_console.pager"
+            },
+            {
+              "line": 570,
+              "scope": "HTTPieArgumentParser.print_manual",
+              "kind": "call",
+              "symbol": "self.env.rich_console.print"
+            }
+          ]
+        }
+      ],
+      "limitations": "The http and https entrypoints share HTTPieArgumentParser. Its print_manual uses argparse format_help, then outputs through a Rich pager. The httpie management entrypoint is a separate CLI and was not equated with http."
+    },
+    {
+      "project": "rich-cli",
+      "tool_version": "1.8.1",
+      "image": "sha256:cbaa10bd1d9bf77e577de88d3e5e2947670adcc5db07580cd9e182659a14e63f",
+      "environment_evidence": {
+        "path": "collection/expansion/python/pilot-environment-evidence.json",
+        "sha256": "da9c6f6f24ef4a70da43649eea637f3a6ffe0a4cfd854aa544c2bbe2f4e527de"
+      },
+      "commands_traced": [
+        "rich"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "rich",
+          "value": "rich_cli.__main__:run"
+        }
+      ],
+      "family": "click",
+      "formatter_family": "click_custom_rich_formatter",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/usr/local/lib/python3.12/site-packages/rich_cli/__main__.py",
+          "sha256": "d9e86132f0a8d7d65a34afd3dc8f2a7519d93432d6995144ce19a354849bb2c4",
+          "ast_events": [
+            {
+              "line": 5,
+              "scope": null,
+              "kind": "import",
+              "symbol": "click"
+            },
+            {
+              "line": 163,
+              "scope": null,
+              "kind": "class",
+              "symbol": "RichCommand(click.Command)"
+            },
+            {
+              "line": 168,
+              "scope": "RichCommand",
+              "kind": "function",
+              "symbol": "format_help"
+            },
+            {
+              "line": 183,
+              "scope": "RichCommand.format_help",
+              "kind": "bind",
+              "symbol": "console=Console()"
+            },
+            {
+              "line": 183,
+              "scope": "RichCommand.format_help",
+              "kind": "call",
+              "symbol": "Console"
+            },
+            {
+              "line": 202,
+              "scope": "RichCommand.format_help",
+              "kind": "bind",
+              "symbol": "options_table=Table()"
+            },
+            {
+              "line": 247,
+              "scope": null,
+              "kind": "decorates",
+              "symbol": "main=click.command()"
+            },
+            {
+              "line": 247,
+              "scope": null,
+              "kind": "decorator_keyword",
+              "symbol": "main:cls=RichCommand"
+            },
+            {
+              "line": 935,
+              "scope": "run",
+              "kind": "call",
+              "symbol": "main"
+            }
+          ]
+        }
+      ],
+      "limitations": "RichCommand subclasses Click Command and overrides format_help to render Rich Console and Table objects. This is project-specific Click plus Rich code."
+    },
+    {
+      "project": "sqlfluff",
+      "tool_version": "3.4.2",
+      "image": "sha256:cbaa10bd1d9bf77e577de88d3e5e2947670adcc5db07580cd9e182659a14e63f",
+      "environment_evidence": {
+        "path": "collection/expansion/python/pilot-environment-evidence.json",
+        "sha256": "da9c6f6f24ef4a70da43649eea637f3a6ffe0a4cfd854aa544c2bbe2f4e527de"
+      },
+      "commands_traced": [
+        "sqlfluff"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "sqlfluff",
+          "value": "sqlfluff.cli.commands:cli"
+        }
+      ],
+      "family": "click",
+      "formatter_family": "click",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/usr/local/lib/python3.12/site-packages/sqlfluff/cli/commands.py",
+          "sha256": "5dd422cc9760dae8025db3a61ea0b2b5ad9d2cfe91a597fd044295f7aee4c663",
+          "ast_events": [
+            {
+              "line": 12,
+              "scope": null,
+              "kind": "import",
+              "symbol": "click"
+            },
+            {
+              "line": 465,
+              "scope": null,
+              "kind": "decorates",
+              "symbol": "cli=click.group()"
+            }
+          ]
+        }
+      ],
+      "limitations": "The executable targets the Click-decorated CLI group. Other SQLFluff formatting code is separate from root help wiring."
+    },
+    {
+      "project": "hatch",
+      "tool_version": "1.14.2",
+      "image": "sha256:cbaa10bd1d9bf77e577de88d3e5e2947670adcc5db07580cd9e182659a14e63f",
+      "environment_evidence": {
+        "path": "collection/expansion/python/pilot-environment-evidence.json",
+        "sha256": "da9c6f6f24ef4a70da43649eea637f3a6ffe0a4cfd854aa544c2bbe2f4e527de"
+      },
+      "commands_traced": [
+        "hatch"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "hatch",
+          "value": "hatch.cli:main"
+        }
+      ],
+      "family": "click",
+      "formatter_family": "click",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/usr/local/lib/python3.12/site-packages/hatch/cli/__init__.py",
+          "sha256": "09d1956a35da52f8fe2d6f4b64034fe9e60cd89650e7fcde020ea6563a926a6b",
+          "ast_events": [
+            {
+              "line": 3,
+              "scope": null,
+              "kind": "import",
+              "symbol": "click"
+            },
+            {
+              "line": 29,
+              "scope": null,
+              "kind": "decorates",
+              "symbol": "hatch=click.group()"
+            },
+            {
+              "line": 201,
+              "scope": null,
+              "kind": "call",
+              "symbol": "hatch.add_command"
+            },
+            {
+              "line": 219,
+              "scope": null,
+              "kind": "function",
+              "symbol": "main"
+            },
+            {
+              "line": 221,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "hatch"
+            }
+          ]
+        }
+      ],
+      "limitations": "main invokes the Click group hatch and the group registers additional commands."
+    },
+    {
+      "project": "datasette",
+      "tool_version": "0.65.1",
+      "image": "sha256:cbaa10bd1d9bf77e577de88d3e5e2947670adcc5db07580cd9e182659a14e63f",
+      "environment_evidence": {
+        "path": "collection/expansion/python/pilot-environment-evidence.json",
+        "sha256": "da9c6f6f24ef4a70da43649eea637f3a6ffe0a4cfd854aa544c2bbe2f4e527de"
+      },
+      "commands_traced": [
+        "datasette"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "datasette",
+          "value": "datasette.cli:cli"
+        }
+      ],
+      "family": "click",
+      "formatter_family": "click_default_group",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/usr/local/lib/python3.12/site-packages/datasette/cli.py",
+          "sha256": "f43710b4ffc2ff86cc22747b0e7951ef85614b2e90e9752e655ab724a00bbf48",
+          "ast_events": [
+            {
+              "line": 3,
+              "scope": null,
+              "kind": "import",
+              "symbol": "click"
+            },
+            {
+              "line": 6,
+              "scope": null,
+              "kind": "from",
+              "symbol": "click_default_group:DefaultGroup"
+            },
+            {
+              "line": 161,
+              "scope": null,
+              "kind": "decorates",
+              "symbol": "cli=click.group()"
+            },
+            {
+              "line": 161,
+              "scope": null,
+              "kind": "decorator_keyword",
+              "symbol": "cli:cls=DefaultGroup"
+            },
+            {
+              "line": 525,
+              "scope": "serve",
+              "kind": "bind",
+              "symbol": "formatter=formatting.HelpFormatter()"
+            },
+            {
+              "line": 525,
+              "scope": "serve",
+              "kind": "call",
+              "symbol": "formatting.HelpFormatter"
+            }
+          ]
+        }
+      ],
+      "limitations": "Root command uses the click-default-group wrapper. The serve command also creates a Click HelpFormatter explicitly. Additional plugin commands can modify the command graph."
+    },
+    {
+      "project": "pytest",
+      "tool_version": "9.2.0",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "pytest",
+        "py.test"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "py.test",
+          "value": "_pytest.config:_console_main"
+        },
+        {
+          "name": "pytest",
+          "value": "_pytest.config:_console_main"
+        }
+      ],
+      "family": "argparse",
+      "formatter_family": "argparse_custom_parser_plugin_options",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/pytest/lib/python3.12/site-packages/_pytest/config/__init__.py",
+          "sha256": "d297eaeba8f6ecfeb73acaa8eef2092203aa49343eb7c77ffedb8ef95b5717ab",
+          "ast_events": [
+            {
+              "line": 253,
+              "scope": "_main",
+              "kind": "bind",
+              "symbol": "config=_prepareconfig()"
+            },
+            {
+              "line": 253,
+              "scope": "_main",
+              "kind": "call",
+              "symbol": "_prepareconfig"
+            },
+            {
+              "line": 286,
+              "scope": "_console_main",
+              "kind": "bind",
+              "symbol": "code=_main()"
+            },
+            {
+              "line": 286,
+              "scope": "_console_main",
+              "kind": "call",
+              "symbol": "_main"
+            },
+            {
+              "line": 443,
+              "scope": "_prepareconfig",
+              "kind": "call",
+              "symbol": "pluginmanager.hook.pytest_cmdline_parse"
+            },
+            {
+              "line": 1240,
+              "scope": "Config.__init__",
+              "kind": "bind",
+              "symbol": "self._parser=Parser()"
+            },
+            {
+              "line": 1240,
+              "scope": "Config.__init__",
+              "kind": "call",
+              "symbol": "Parser"
+            },
+            {
+              "line": 1397,
+              "scope": "Config.pytest_cmdline_parse",
+              "kind": "call",
+              "symbol": "self.parse"
+            },
+            {
+              "line": 1411,
+              "scope": "Config.pytest_cmdline_parse",
+              "kind": "call",
+              "symbol": "self._parser.optparser.print_help"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/pytest/lib/python3.12/site-packages/_pytest/config/argparsing.py",
+          "sha256": "acde823d39ddfca971ae16978e540e6737e69b1e82348eab2f44e788c780be72",
+          "ast_events": [
+            {
+              "line": 133,
+              "scope": "Parser.__init__",
+              "kind": "bind",
+              "symbol": "self.optparser=PytestArgumentParser()"
+            },
+            {
+              "line": 133,
+              "scope": "Parser.__init__",
+              "kind": "call",
+              "symbol": "PytestArgumentParser"
+            },
+            {
+              "line": 228,
+              "scope": "Parser.parse",
+              "kind": "return",
+              "symbol": "self.optparser.parse_intermixed_args()"
+            },
+            {
+              "line": 228,
+              "scope": "Parser.parse",
+              "kind": "call",
+              "symbol": "self.optparser.parse_intermixed_args"
+            },
+            {
+              "line": 495,
+              "scope": null,
+              "kind": "class",
+              "symbol": "PytestArgumentParser(argparse.ArgumentParser)"
+            }
+          ]
+        }
+      ],
+      "limitations": "Entry goes through pytest_cmdline_parse hooks and PytestArgumentParser. Root help invokes the argparse parser; installed plugins can add options."
+    },
+    {
+      "project": "coverage",
+      "tool_version": "7.17.3",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "coverage"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "coverage",
+          "value": "coverage.cmdline:main"
+        }
+      ],
+      "family": "optparse",
+      "formatter_family": "optparse_custom_formatter",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/coverage/lib/python3.12/site-packages/coverage/cmdline.py",
+          "sha256": "07c65d03f9693143a560f672dc7fa0799668a8b721e493853f8e3bf9b0db6313",
+          "ast_events": [
+            {
+              "line": 9,
+              "scope": null,
+              "kind": "import",
+              "symbol": "optparse"
+            },
+            {
+              "line": 379,
+              "scope": null,
+              "kind": "class",
+              "symbol": "CoverageOptionParser(optparse.OptionParser)"
+            },
+            {
+              "line": 390,
+              "scope": "CoverageOptionParser.__init__",
+              "kind": "call",
+              "symbol": "MultiParaHelpFormatter"
+            },
+            {
+              "line": 442,
+              "scope": "CoverageOptionParser.parse_args_ok",
+              "kind": "bind",
+              "symbol": "(options,args)=super().parse_args()"
+            },
+            {
+              "line": 442,
+              "scope": "CoverageOptionParser.parse_args_ok",
+              "kind": "call",
+              "symbol": "super().parse_args"
+            },
+            {
+              "line": 453,
+              "scope": null,
+              "kind": "class",
+              "symbol": "GlobalOptionParser(CoverageOptionParser)"
+            },
+            {
+              "line": 480,
+              "scope": null,
+              "kind": "class",
+              "symbol": "CmdOptionParser(CoverageOptionParser)"
+            },
+            {
+              "line": 808,
+              "scope": "CoverageScript.command_line",
+              "kind": "bind",
+              "symbol": "parser=GlobalOptionParser()"
+            },
+            {
+              "line": 808,
+              "scope": "CoverageScript.command_line",
+              "kind": "call",
+              "symbol": "GlobalOptionParser"
+            },
+            {
+              "line": 816,
+              "scope": "CoverageScript.command_line",
+              "kind": "bind",
+              "symbol": "(ok,options,args)=parser.parse_args_ok()"
+            },
+            {
+              "line": 816,
+              "scope": "CoverageScript.command_line",
+              "kind": "call",
+              "symbol": "parser.parse_args_ok"
+            },
+            {
+              "line": 1169,
+              "scope": "main",
+              "kind": "bind",
+              "symbol": "status=CoverageScript().command_line()"
+            },
+            {
+              "line": 1169,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "CoverageScript().command_line"
+            }
+          ]
+        }
+      ],
+      "limitations": "CoverageOptionParser and its GlobalOptionParser and CmdOptionParser subclasses use custom multi-paragraph formatting. Versioned aliases target main_deprecated."
+    },
+    {
+      "project": "poetry",
+      "tool_version": "2.5.1",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "poetry"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "poetry",
+          "value": "poetry.console.application:main"
+        }
+      ],
+      "family": "cleo",
+      "formatter_family": "cleo_styled_formatter",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/poetry/lib/python3.12/site-packages/poetry/console/application.py",
+          "sha256": "3a3a5b97307bef12237def649ea8a3cfc2acf8571e57adabcdd308f6360de284",
+          "ast_events": [
+            {
+              "line": 13,
+              "scope": null,
+              "kind": "from",
+              "symbol": "cleo.application:Application as BaseApplication"
+            },
+            {
+              "line": 124,
+              "scope": null,
+              "kind": "class",
+              "symbol": "Application(BaseApplication)"
+            },
+            {
+              "line": 234,
+              "scope": "Application.create_io",
+              "kind": "bind",
+              "symbol": "formatter=io.output.formatter"
+            },
+            {
+              "line": 248,
+              "scope": "Application.create_io",
+              "kind": "call",
+              "symbol": "io.output.set_formatter"
+            },
+            {
+              "line": 650,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "Application().run"
+            },
+            {
+              "line": 650,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "Application"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/poetry/lib/python3.12/site-packages/cleo/application.py",
+          "sha256": "d31a91069af4f6791ba1b073a50288c4b296b202757183f5807c1892637e0e51",
+          "ast_events": [
+            {
+              "line": 327,
+              "scope": "Application.run",
+              "kind": "bind",
+              "symbol": "exit_code=self._run()"
+            },
+            {
+              "line": 327,
+              "scope": "Application.run",
+              "kind": "call",
+              "symbol": "self._run"
+            },
+            {
+              "line": 376,
+              "scope": "Application._run",
+              "kind": "call",
+              "symbol": "io.input.bind"
+            },
+            {
+              "line": 484,
+              "scope": "Application.create_io",
+              "kind": "bind",
+              "symbol": "input=ArgvInput()"
+            },
+            {
+              "line": 484,
+              "scope": "Application.create_io",
+              "kind": "call",
+              "symbol": "ArgvInput"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/poetry/lib/python3.12/site-packages/cleo/io/inputs/argv_input.py",
+          "sha256": "40681183c5573bdfd6e9995d9c87b9b6cb15b757fd55536f585b958c9c2dc102",
+          "ast_events": [
+            {
+              "line": 140,
+              "scope": "ArgvInput",
+              "kind": "function",
+              "symbol": "_parse"
+            },
+            {
+              "line": 155,
+              "scope": "ArgvInput._parse",
+              "kind": "call",
+              "symbol": "self._parse_long_option"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/poetry/lib/python3.12/site-packages/cleo/commands/help_command.py",
+          "sha256": "a228f454b43cddaa8678627ac4b2e1e47818329ce5e4b4da7526a7c992b15659",
+          "ast_events": [
+            {
+              "line": 42,
+              "scope": "HelpCommand.handle",
+              "kind": "from",
+              "symbol": "cleo.descriptors.text_descriptor:TextDescriptor"
+            }
+          ]
+        }
+      ],
+      "limitations": "Poetry subclasses Cleo Application, invokes it at the entrypoint, and sets its output styles. Cleo parses argv and supplies the help command."
+    },
+    {
+      "project": "ansible-core",
+      "tool_version": "2.21.6",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "ansible"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "ansible",
+          "value": "ansible.cli.adhoc:main"
+        }
+      ],
+      "family": "argparse",
+      "formatter_family": "argparse_custom_formatter",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/ansible-core/lib/python3.12/site-packages/ansible/cli/adhoc.py",
+          "sha256": "aa463bbeb345fe9ac0746dbbbbd48e0b90d8877842825a8a884a8f18ca29fc43",
+          "ast_events": [
+            {
+              "line": 29,
+              "scope": null,
+              "kind": "class",
+              "symbol": "AdHocCLI(CLI)"
+            },
+            {
+              "line": 40,
+              "scope": "AdHocCLI.init_parser",
+              "kind": "call",
+              "symbol": "super().init_parser"
+            },
+            {
+              "line": 112,
+              "scope": "AdHocCLI.run",
+              "kind": "call",
+              "symbol": "super().run"
+            },
+            {
+              "line": 213,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "AdHocCLI.cli_executor"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/ansible-core/lib/python3.12/site-packages/ansible/cli/__init__.py",
+          "sha256": "32c084ae071b55d48106e8a74c18027df8a4212fdb26f9239d0a18127597f874",
+          "ast_events": [
+            {
+              "line": 389,
+              "scope": "CLI.init_parser",
+              "kind": "bind",
+              "symbol": "self.parser=opt_help.create_base_parser()"
+            },
+            {
+              "line": 389,
+              "scope": "CLI.init_parser",
+              "kind": "call",
+              "symbol": "opt_help.create_base_parser"
+            },
+            {
+              "line": 462,
+              "scope": "CLI.parse",
+              "kind": "call",
+              "symbol": "self.init_parser"
+            },
+            {
+              "line": 468,
+              "scope": "CLI.parse",
+              "kind": "bind",
+              "symbol": "options=self.parser.parse_args()"
+            },
+            {
+              "line": 468,
+              "scope": "CLI.parse",
+              "kind": "call",
+              "symbol": "self.parser.parse_args"
+            },
+            {
+              "line": 662,
+              "scope": "CLI.cli_executor",
+              "kind": "bind",
+              "symbol": "cli=cls()"
+            },
+            {
+              "line": 663,
+              "scope": "CLI.cli_executor",
+              "kind": "bind",
+              "symbol": "exit_code=cli.run()"
+            },
+            {
+              "line": 663,
+              "scope": "CLI.cli_executor",
+              "kind": "call",
+              "symbol": "cli.run"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/ansible-core/lib/python3.12/site-packages/ansible/cli/arguments/option_helpers.py",
+          "sha256": "772f57b4de9454023a2f5202cf145cbc994bd60783c0f5037ffb9addeb1e257a",
+          "ast_events": [
+            {
+              "line": 33,
+              "scope": null,
+              "kind": "class",
+              "symbol": "SortingHelpFormatter(argparse.HelpFormatter)"
+            },
+            {
+              "line": 68,
+              "scope": null,
+              "kind": "class",
+              "symbol": "ArgumentParser(argparse.ArgumentParser)"
+            },
+            {
+              "line": 334,
+              "scope": "create_base_parser",
+              "kind": "bind",
+              "symbol": "parser=ArgumentParser()"
+            },
+            {
+              "line": 334,
+              "scope": "create_base_parser",
+              "kind": "call",
+              "symbol": "ArgumentParser formatter_class=SortingHelpFormatter"
+            }
+          ]
+        }
+      ],
+      "limitations": "ansible targets AdHocCLI and its shared parser factory specifies SortingHelpFormatter. The wheel installs multiple independent front ends, including ansible-test, and they were not all traced."
+    },
+    {
+      "project": "awscli",
+      "tool_version": "1.46.3",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "aws"
+      ],
+      "declared_console_scripts_traced": [],
+      "family": "argparse",
+      "formatter_family": "custom_documentation_renderer",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/awscli/bin/aws",
+          "sha256": "1963097ce4b914a09891aaa746d163f0a0969301aa16408a8d609fd295c85a49",
+          "ast_events": [
+            {
+              "line": 23,
+              "scope": "main",
+              "kind": "return",
+              "symbol": "awscli.clidriver.main()"
+            },
+            {
+              "line": 23,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "awscli.clidriver.main"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/awscli/lib/python3.12/site-packages/awscli/clidriver.py",
+          "sha256": "4449c1c4b416a8f8f186468da528c266e20e17487176478104c11678c00c6bfc",
+          "ast_events": [
+            {
+              "line": 73,
+              "scope": "main",
+              "kind": "bind",
+              "symbol": "driver=create_clidriver()"
+            },
+            {
+              "line": 73,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "create_clidriver"
+            },
+            {
+              "line": 74,
+              "scope": "main",
+              "kind": "bind",
+              "symbol": "rc=driver.main()"
+            },
+            {
+              "line": 74,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "driver.main"
+            },
+            {
+              "line": 187,
+              "scope": "CLIDriver.create_help_command",
+              "kind": "return",
+              "symbol": "ProviderHelpCommand()"
+            },
+            {
+              "line": 187,
+              "scope": "CLIDriver.create_help_command",
+              "kind": "call",
+              "symbol": "ProviderHelpCommand"
+            },
+            {
+              "line": 198,
+              "scope": "CLIDriver._create_parser",
+              "kind": "bind",
+              "symbol": "command_table[]=self.create_help_command()"
+            },
+            {
+              "line": 198,
+              "scope": "CLIDriver._create_parser",
+              "kind": "call",
+              "symbol": "self.create_help_command"
+            },
+            {
+              "line": 200,
+              "scope": "CLIDriver._create_parser",
+              "kind": "bind",
+              "symbol": "parser=MainArgParser()"
+            },
+            {
+              "line": 200,
+              "scope": "CLIDriver._create_parser",
+              "kind": "call",
+              "symbol": "MainArgParser"
+            },
+            {
+              "line": 220,
+              "scope": "CLIDriver.main",
+              "kind": "bind",
+              "symbol": "parser=self._create_parser()"
+            },
+            {
+              "line": 220,
+              "scope": "CLIDriver.main",
+              "kind": "call",
+              "symbol": "self._create_parser"
+            },
+            {
+              "line": 222,
+              "scope": "CLIDriver.main",
+              "kind": "bind",
+              "symbol": "(parsed_args,remaining)=parser.parse_known_args()"
+            },
+            {
+              "line": 222,
+              "scope": "CLIDriver.main",
+              "kind": "call",
+              "symbol": "parser.parse_known_args"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/awscli/lib/python3.12/site-packages/awscli/argparser.py",
+          "sha256": "dcfc71faf5b2b5d57df3963a30897d0debad517c9e848bc0088b3f3c36f2f062",
+          "ast_events": [
+            {
+              "line": 70,
+              "scope": null,
+              "kind": "class",
+              "symbol": "CLIArgParser(argparse.ArgumentParser)"
+            },
+            {
+              "line": 71,
+              "scope": "CLIArgParser",
+              "kind": "bind",
+              "symbol": "Formatter=argparse.RawTextHelpFormatter"
+            },
+            {
+              "line": 123,
+              "scope": null,
+              "kind": "class",
+              "symbol": "MainArgParser(CLIArgParser)"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/awscli/lib/python3.12/site-packages/awscli/help.py",
+          "sha256": "faed8eb40756f57f3cf7514103bd31502e4acbd9618e25a0b5b878866f83a16f",
+          "ast_events": [
+            {
+              "line": 248,
+              "scope": "HelpCommand.__init__",
+              "kind": "bind",
+              "symbol": "self.renderer=get_renderer()"
+            },
+            {
+              "line": 248,
+              "scope": "HelpCommand.__init__",
+              "kind": "call",
+              "symbol": "get_renderer"
+            },
+            {
+              "line": 301,
+              "scope": "HelpCommand.__call__",
+              "kind": "call",
+              "symbol": "self.renderer.render"
+            }
+          ]
+        }
+      ],
+      "limitations": "The installed aws script calls awscli.clidriver.main, which creates MainArgParser. Explicit help is dispatched through a separate HelpCommand renderer. Treat parser heritage and observed-format eligibility separately.",
+      "entrypoint_provenance": "The distribution has no console_scripts entry for aws. Evidence traces the installed bin/aws script."
+    },
+    {
+      "project": "pip",
+      "tool_version": "26.3",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "pip",
+        "pip3"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "pip",
+          "value": "pip._internal.cli.main:cli"
+        },
+        {
+          "name": "pip3",
+          "value": "pip._internal.cli.main:cli"
+        }
+      ],
+      "family": "optparse",
+      "formatter_family": "optparse_custom_formatter",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/pip/lib/python3.12/site-packages/pip/_internal/cli/main.py",
+          "sha256": "f1bab0f7ef0607e3d77c9697f3640721f5efcf0a5b60a8e4a9db7d0109f80822",
+          "ast_events": [
+            {
+              "line": 41,
+              "scope": null,
+              "kind": "function",
+              "symbol": "cli"
+            },
+            {
+              "line": 43,
+              "scope": "cli",
+              "kind": "return",
+              "symbol": "_main()"
+            },
+            {
+              "line": 43,
+              "scope": "cli",
+              "kind": "call",
+              "symbol": "_main"
+            },
+            {
+              "line": 79,
+              "scope": "_main",
+              "kind": "bind",
+              "symbol": "(cmd_name,cmd_args)=parse_command()"
+            },
+            {
+              "line": 79,
+              "scope": "_main",
+              "kind": "call",
+              "symbol": "parse_command"
+            },
+            {
+              "line": 94,
+              "scope": "_main",
+              "kind": "bind",
+              "symbol": "command=create_command()"
+            },
+            {
+              "line": 94,
+              "scope": "_main",
+              "kind": "call",
+              "symbol": "create_command"
+            },
+            {
+              "line": 97,
+              "scope": "_main",
+              "kind": "return",
+              "symbol": "command.main()"
+            },
+            {
+              "line": 97,
+              "scope": "_main",
+              "kind": "call",
+              "symbol": "command.main"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/pip/lib/python3.12/site-packages/pip/_internal/cli/main_parser.py",
+          "sha256": "1fe4a1d13ad0440e7c64e82c064313863bb188a04e8826a82e46036222906750",
+          "ast_events": [
+            {
+              "line": 23,
+              "scope": "create_main_parser",
+              "kind": "bind",
+              "symbol": "parser=ConfigOptionParser()"
+            },
+            {
+              "line": 23,
+              "scope": "create_main_parser",
+              "kind": "call",
+              "symbol": "ConfigOptionParser add_help_option=False,formatter=UpdatingDefaultsHelpFormatter()"
+            },
+            {
+              "line": 72,
+              "scope": "parse_command",
+              "kind": "bind",
+              "symbol": "parser=create_main_parser()"
+            },
+            {
+              "line": 72,
+              "scope": "parse_command",
+              "kind": "call",
+              "symbol": "create_main_parser"
+            },
+            {
+              "line": 81,
+              "scope": "parse_command",
+              "kind": "bind",
+              "symbol": "(general_options,args_else)=parser.parse_args()"
+            },
+            {
+              "line": 81,
+              "scope": "parse_command",
+              "kind": "call",
+              "symbol": "parser.parse_args"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/pip/lib/python3.12/site-packages/pip/_internal/cli/parser.py",
+          "sha256": "e7a03d341cf1f5a55cb4fb5b6cc80cafed3b21d901cc5e1cd675f2613baa3d84",
+          "ast_events": [
+            {
+              "line": 29,
+              "scope": null,
+              "kind": "class",
+              "symbol": "PrettyHelpFormatter(optparse.IndentedHelpFormatter)"
+            },
+            {
+              "line": 150,
+              "scope": null,
+              "kind": "class",
+              "symbol": "UpdatingDefaultsHelpFormatter(PrettyHelpFormatter)"
+            },
+            {
+              "line": 182,
+              "scope": null,
+              "kind": "class",
+              "symbol": "CustomOptionParser(optparse.OptionParser)"
+            },
+            {
+              "line": 204,
+              "scope": null,
+              "kind": "class",
+              "symbol": "ConfigOptionParser(CustomOptionParser)"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/pip/lib/python3.12/site-packages/pip/_internal/cli/base_command.py",
+          "sha256": "f63ec80df95d76069139bec7f855466fdbed3abed4b97bb580646db535595828",
+          "ast_events": [
+            {
+              "line": 58,
+              "scope": "Command.__init__",
+              "kind": "bind",
+              "symbol": "self.parser=ConfigOptionParser()"
+            },
+            {
+              "line": 58,
+              "scope": "Command.__init__",
+              "kind": "call",
+              "symbol": "ConfigOptionParser formatter=UpdatingDefaultsHelpFormatter(),add_help_option=False"
+            }
+          ]
+        }
+      ],
+      "limitations": "Entrypoint passes into the custom optparse ConfigOptionParser. Root and subcommands use UpdatingDefaultsHelpFormatter. pip internals are reused by pip-tools and pipenv vendors patched pip."
+    },
+    {
+      "project": "pip-tools",
+      "tool_version": "7.7.0",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "pip-compile",
+        "pip-sync"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "pip-compile",
+          "value": "piptools.scripts.compile:cli"
+        },
+        {
+          "name": "pip-sync",
+          "value": "piptools.scripts.sync:cli"
+        }
+      ],
+      "family": "click",
+      "formatter_family": "click_custom_help",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/pip-tools/lib/python3.12/site-packages/piptools/scripts/compile.py",
+          "sha256": "a0f5b17233cf2272e0002a73d30abbe6d66051e7127e149f41ebc1c82bda6e5e",
+          "ast_events": [
+            {
+              "line": 10,
+              "scope": null,
+              "kind": "import",
+              "symbol": "click"
+            },
+            {
+              "line": 101,
+              "scope": null,
+              "kind": "decorates",
+              "symbol": "cli=click.command()"
+            },
+            {
+              "line": 103,
+              "scope": null,
+              "kind": "decorates",
+              "symbol": "cli=options.help_option()"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/pip-tools/lib/python3.12/site-packages/piptools/scripts/sync.py",
+          "sha256": "0578de5c3612ac0c9963fbf6a84de6918848dbb789e4359f722774808737df31",
+          "ast_events": [
+            {
+              "line": 12,
+              "scope": null,
+              "kind": "from",
+              "symbol": "pip._internal.commands:create_command"
+            },
+            {
+              "line": 13,
+              "scope": null,
+              "kind": "from",
+              "symbol": "pip._internal.commands.install:InstallCommand"
+            },
+            {
+              "line": 50,
+              "scope": null,
+              "kind": "decorates",
+              "symbol": "cli=click.command()"
+            },
+            {
+              "line": 51,
+              "scope": null,
+              "kind": "decorates",
+              "symbol": "cli=options.help_option()"
+            },
+            {
+              "line": 121,
+              "scope": "cli",
+              "kind": "bind",
+              "symbol": "(options,_)=install_command.parse_args()"
+            },
+            {
+              "line": 121,
+              "scope": "cli",
+              "kind": "call",
+              "symbol": "install_command.parse_args"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/pip-tools/lib/python3.12/site-packages/piptools/scripts/options.py",
+          "sha256": "50d9965c37230a14c3511f4e73ba761c5b8aab7cd0e881c26a2c8a02b1c6d56d",
+          "ast_events": [
+            {
+              "line": 6,
+              "scope": null,
+              "kind": "from",
+              "symbol": "pip._internal.commands:create_command"
+            },
+            {
+              "line": 22,
+              "scope": null,
+              "kind": "function",
+              "symbol": "help_option"
+            },
+            {
+              "line": 32,
+              "scope": "help_option.show_help",
+              "kind": "call",
+              "symbol": "click.echo"
+            },
+            {
+              "line": 32,
+              "scope": "help_option.show_help",
+              "kind": "call",
+              "symbol": "ctx.get_help"
+            },
+            {
+              "line": 34,
+              "scope": "help_option.show_help",
+              "kind": "bind",
+              "symbol": "formatter=ctx.make_formatter()"
+            },
+            {
+              "line": 34,
+              "scope": "help_option.show_help",
+              "kind": "call",
+              "symbol": "ctx.make_formatter"
+            },
+            {
+              "line": 39,
+              "scope": "help_option",
+              "kind": "return",
+              "symbol": "click.option()"
+            },
+            {
+              "line": 39,
+              "scope": "help_option",
+              "kind": "call",
+              "symbol": "click.option callback=show_help"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/pip-tools/lib/python3.12/site-packages/piptools/repositories/pypi.py",
+          "sha256": "8441724f3b09b4e83396c0473cc749128d9a3c8eab6cc266445f83891f25323b",
+          "ast_events": [
+            {
+              "line": 16,
+              "scope": null,
+              "kind": "from",
+              "symbol": "pip._internal.commands:create_command"
+            },
+            {
+              "line": 70,
+              "scope": "PyPIRepository.__init__",
+              "kind": "bind",
+              "symbol": "(options,_)=self.command.parse_args()"
+            },
+            {
+              "line": 70,
+              "scope": "PyPIRepository.__init__",
+              "kind": "call",
+              "symbol": "self.command.parse_args"
+            }
+          ]
+        }
+      ],
+      "limitations": "Both public commands are Click commands with a custom Click help option. They reuse pip internals for dependency and install operations, so different public parser families do not remove ancestry concerns."
+    },
+    {
+      "project": "pre-commit",
+      "tool_version": "4.7.0",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "pre-commit"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "pre-commit",
+          "value": "pre_commit.main:main"
+        }
+      ],
+      "family": "argparse",
+      "formatter_family": "argparse",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/pre-commit/lib/python3.12/site-packages/pre_commit/main.py",
+          "sha256": "43cec538a6683e1fb243319a06de6d5f1ffe5c4f52cfa585789d9d39bce079bb",
+          "ast_events": [
+            {
+              "line": 204,
+              "scope": "main",
+              "kind": "bind",
+              "symbol": "parser=argparse.ArgumentParser()"
+            },
+            {
+              "line": 204,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "argparse.ArgumentParser"
+            },
+            {
+              "line": 370,
+              "scope": "main",
+              "kind": "bind",
+              "symbol": "args=parser.parse_args()"
+            },
+            {
+              "line": 370,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "parser.parse_args"
+            },
+            {
+              "line": 373,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "parser.parse_args"
+            },
+            {
+              "line": 375,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "parser.parse_args"
+            }
+          ]
+        }
+      ],
+      "limitations": "The entry main directly constructs and parses an argparse parser."
+    },
+    {
+      "project": "cookiecutter",
+      "tool_version": "2.7.1",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "cookiecutter"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "cookiecutter",
+          "value": "cookiecutter.__main__:main"
+        }
+      ],
+      "family": "click",
+      "formatter_family": "click",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/cookiecutter/lib/python3.12/site-packages/cookiecutter/__main__.py",
+          "sha256": "28d05324591691d6d3126b2087910b98a45d6f167d02bb806f2201dad76e0f9f",
+          "ast_events": [
+            {
+              "line": 3,
+              "scope": null,
+              "kind": "from",
+              "symbol": "cookiecutter.cli:main"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/cookiecutter/lib/python3.12/site-packages/cookiecutter/cli.py",
+          "sha256": "5457091a2db63f5d40ff558b64e428bafa0fb0e4e4888e1c6aaa6030f50de0da",
+          "ast_events": [
+            {
+              "line": 18,
+              "scope": null,
+              "kind": "import",
+              "symbol": "click"
+            },
+            {
+              "line": 87,
+              "scope": null,
+              "kind": "decorates",
+              "symbol": "main=click.command()"
+            },
+            {
+              "line": 203,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "click.echo"
+            },
+            {
+              "line": 203,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "click.get_current_context().get_help"
+            },
+            {
+              "line": 203,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "click.get_current_context"
+            }
+          ]
+        }
+      ],
+      "limitations": "The entry module reexports the Click-decorated main."
+    },
+    {
+      "project": "mkdocs",
+      "tool_version": "1.6.1",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "mkdocs"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "mkdocs",
+          "value": "mkdocs.__main__:cli"
+        }
+      ],
+      "family": "click",
+      "formatter_family": "click",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/mkdocs/lib/python3.12/site-packages/mkdocs/__main__.py",
+          "sha256": "196ebf71cd7be90ee752410705cd65b0dd1a30602e19750ff1ccdbc205f93799",
+          "ast_events": [
+            {
+              "line": 13,
+              "scope": null,
+              "kind": "import",
+              "symbol": "click"
+            },
+            {
+              "line": 82,
+              "scope": "ColorFormatter.format",
+              "kind": "bind",
+              "symbol": "prefix=click.style()"
+            },
+            {
+              "line": 82,
+              "scope": "ColorFormatter.format",
+              "kind": "call",
+              "symbol": "click.style"
+            },
+            {
+              "line": 240,
+              "scope": null,
+              "kind": "decorates",
+              "symbol": "cli=click.group()"
+            }
+          ]
+        }
+      ],
+      "limitations": "The console entry directly targets a Click group. ColorFormatter in the same module is logging-related."
+    },
+    {
+      "project": "sphinx",
+      "tool_version": "9.1.1",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "sphinx-build"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "sphinx-build",
+          "value": "sphinx.cmd.build:main"
+        }
+      ],
+      "family": "argparse",
+      "formatter_family": "argparse",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/sphinx/lib/python3.12/site-packages/sphinx/cmd/build.py",
+          "sha256": "75241ef18c7fa3edd3e730fe0fb3edb9f1c72c884923c525f46211e5378933b9",
+          "ast_events": [
+            {
+              "line": 71,
+              "scope": "get_parser",
+              "kind": "bind",
+              "symbol": "parser=argparse.ArgumentParser()"
+            },
+            {
+              "line": 71,
+              "scope": "get_parser",
+              "kind": "call",
+              "symbol": "argparse.ArgumentParser"
+            },
+            {
+              "line": 301,
+              "scope": "_parse_arguments",
+              "kind": "bind",
+              "symbol": "args=parser.parse_args()"
+            },
+            {
+              "line": 301,
+              "scope": "_parse_arguments",
+              "kind": "call",
+              "symbol": "parser.parse_args"
+            },
+            {
+              "line": 397,
+              "scope": "build_main",
+              "kind": "bind",
+              "symbol": "parser=get_parser()"
+            },
+            {
+              "line": 397,
+              "scope": "build_main",
+              "kind": "call",
+              "symbol": "get_parser"
+            },
+            {
+              "line": 398,
+              "scope": "build_main",
+              "kind": "bind",
+              "symbol": "args=_parse_arguments()"
+            },
+            {
+              "line": 398,
+              "scope": "build_main",
+              "kind": "call",
+              "symbol": "_parse_arguments"
+            },
+            {
+              "line": 491,
+              "scope": "main",
+              "kind": "return",
+              "symbol": "make_mode.run_make_mode()"
+            },
+            {
+              "line": 491,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "make_mode.run_make_mode"
+            },
+            {
+              "line": 493,
+              "scope": "main",
+              "kind": "return",
+              "symbol": "build_main()"
+            },
+            {
+              "line": 493,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "build_main"
+            }
+          ]
+        }
+      ],
+      "limitations": "The ordinary sphinx-build path reaches the stdlib parser. Alternate make mode and separately installed front ends were not used to assign this family."
+    },
+    {
+      "project": "docutils",
+      "tool_version": "0.23",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "docutils",
+        "rst2html"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "docutils",
+          "value": "docutils.__main__:main"
+        },
+        {
+          "name": "rst2html",
+          "value": "docutils.core:rst2html"
+        }
+      ],
+      "family": "argparse",
+      "formatter_family": "layered_argparse_optparse",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/docutils/lib/python3.12/site-packages/docutils/__main__.py",
+          "sha256": "22abb9a237da9a0a617803ad4a3a6e5a700e770145f0ab173df937c21b576035",
+          "ast_events": [
+            {
+              "line": 75,
+              "scope": "main",
+              "kind": "bind",
+              "symbol": "argparser=argparse.ArgumentParser()"
+            },
+            {
+              "line": 75,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "argparse.ArgumentParser"
+            },
+            {
+              "line": 80,
+              "scope": "main",
+              "kind": "bind",
+              "symbol": "(args,remainder)=argparser.parse_known_args()"
+            },
+            {
+              "line": 80,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "argparser.parse_known_args"
+            },
+            {
+              "line": 85,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "publish_cmdline parser=args.parser"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/docutils/lib/python3.12/site-packages/docutils/core.py",
+          "sha256": "12900fa44d6eadf925ce62f853cd692589d591fbbbafecfb5a64bbad4ee6cbf1",
+          "ast_events": [
+            {
+              "line": 145,
+              "scope": "Publisher._setup_settings_parser",
+              "kind": "return",
+              "symbol": "OptionParser()"
+            },
+            {
+              "line": 145,
+              "scope": "Publisher._setup_settings_parser",
+              "kind": "call",
+              "symbol": "OptionParser"
+            },
+            {
+              "line": 190,
+              "scope": "Publisher.process_command_line",
+              "kind": "bind",
+              "symbol": "option_parser=self._setup_settings_parser()"
+            },
+            {
+              "line": 190,
+              "scope": "Publisher.process_command_line",
+              "kind": "call",
+              "symbol": "self._setup_settings_parser"
+            },
+            {
+              "line": 194,
+              "scope": "Publisher.process_command_line",
+              "kind": "bind",
+              "symbol": "self.settings=option_parser.parse_args()"
+            },
+            {
+              "line": 194,
+              "scope": "Publisher.process_command_line",
+              "kind": "call",
+              "symbol": "option_parser.parse_args"
+            },
+            {
+              "line": 264,
+              "scope": "Publisher.publish",
+              "kind": "call",
+              "symbol": "self.process_command_line"
+            },
+            {
+              "line": 442,
+              "scope": "publish_cmdline",
+              "kind": "bind",
+              "symbol": "output=publisher.publish()"
+            },
+            {
+              "line": 442,
+              "scope": "publish_cmdline",
+              "kind": "call",
+              "symbol": "publisher.publish"
+            },
+            {
+              "line": 815,
+              "scope": "rst2something",
+              "kind": "call",
+              "symbol": "publish_cmdline"
+            },
+            {
+              "line": 818,
+              "scope": null,
+              "kind": "function",
+              "symbol": "rst2html"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/docutils/lib/python3.12/site-packages/docutils/frontend.py",
+          "sha256": "ea58e3c93b7786458bf2c53e2c67f2275eb5ee382e01db48b199cd78d7284321",
+          "ast_events": [
+            {
+              "line": 646,
+              "scope": null,
+              "kind": "class",
+              "symbol": "OptionParser(optparse.OptionParser,docutils.SettingsSpec)"
+            },
+            {
+              "line": 907,
+              "scope": "OptionParser.__init__",
+              "kind": "call",
+              "symbol": "optparse.TitledHelpFormatter"
+            }
+          ]
+        }
+      ],
+      "limitations": "The docutils front controller uses argparse for initial routing while its publisher and rst2html use Docutils' optparse parser and TitledHelpFormatter. Family denotes the front controller only.",
+      "command_parser_families": {
+        "docutils": [
+          "argparse",
+          "optparse"
+        ],
+        "rst2html": [
+          "optparse"
+        ]
+      }
+    },
+    {
+      "project": "mypy",
+      "tool_version": "2.4.1",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "mypy"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "mypy",
+          "value": "mypy.__main__:console_entry"
+        }
+      ],
+      "family": "argparse",
+      "formatter_family": "argparse_custom_formatter",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/mypy/lib/python3.12/site-packages/mypy/__main__.py",
+          "sha256": "fa454ca53a2a1db120742a9750ce4a7a7a40c68a5d30b4b21d66a98e3d632f33",
+          "ast_events": [
+            {
+              "line": 16,
+              "scope": "console_entry",
+              "kind": "call",
+              "symbol": "main"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/mypy/lib/python3.12/site-packages/mypy/main.py",
+          "sha256": "13c5661811f3d11d51ce2c7a4cc9a8451a3c72f1f7629adf61198d0b0bef8ace",
+          "ast_events": [
+            {
+              "line": 97,
+              "scope": "main",
+              "kind": "bind",
+              "symbol": "(sources,options)=process_options()"
+            },
+            {
+              "line": 97,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "process_options"
+            },
+            {
+              "line": 281,
+              "scope": null,
+              "kind": "class",
+              "symbol": "AugmentedHelpFormatter(argparse.RawDescriptionHelpFormatter)"
+            },
+            {
+              "line": 413,
+              "scope": null,
+              "kind": "class",
+              "symbol": "CapturableArgumentParser(argparse.ArgumentParser)"
+            },
+            {
+              "line": 433,
+              "scope": "CapturableArgumentParser",
+              "kind": "function",
+              "symbol": "print_help"
+            },
+            {
+              "line": 517,
+              "scope": "define_options",
+              "kind": "bind",
+              "symbol": "parser=CapturableArgumentParser()"
+            },
+            {
+              "line": 517,
+              "scope": "define_options",
+              "kind": "call",
+              "symbol": "CapturableArgumentParser formatter_class=AugmentedHelpFormatter"
+            },
+            {
+              "line": 1500,
+              "scope": "process_options",
+              "kind": "call",
+              "symbol": "parser.parse_args"
+            }
+          ]
+        }
+      ],
+      "limitations": "The main mypy executable reaches CapturableArgumentParser with AugmentedHelpFormatter. Distinct entrypoints such as dmypy are outside this trace."
+    },
+    {
+      "project": "pylint",
+      "tool_version": "4.1.4",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "pylint"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "pylint",
+          "value": "pylint:run_pylint"
+        }
+      ],
+      "family": "argparse",
+      "formatter_family": "argparse_custom_formatter_plugin_options",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/pylint/lib/python3.12/site-packages/pylint/__init__.py",
+          "sha256": "aca14c14b4a402a4489e744179561be3f1c9e5a769712b533d6ff323b1ae55a6",
+          "ast_events": [
+            {
+              "line": 31,
+              "scope": "run_pylint",
+              "kind": "from",
+              "symbol": "pylint.lint:Run as PylintRun"
+            },
+            {
+              "line": 34,
+              "scope": "run_pylint",
+              "kind": "call",
+              "symbol": "PylintRun"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/pylint/lib/python3.12/site-packages/pylint/lint/run.py",
+          "sha256": "78048e698e983f8e957f5c1c0fa717474d75eea81b291a0bd759a126baeb6088",
+          "ast_events": [
+            {
+              "line": 186,
+              "scope": "Run.__init__",
+              "kind": "call",
+              "symbol": "_config_initialization"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/pylint/lib/python3.12/site-packages/pylint/lint/pylinter.py",
+          "sha256": "9308d9cc901fd08fb1fb7c07c38f4d43bca4b3b019f2cc628dbd215d6cd62ab6",
+          "ast_events": [
+            {
+              "line": 321,
+              "scope": null,
+              "kind": "class",
+              "symbol": "PyLinter(_ArgumentsManager,_MessageStateHandler,reporters.ReportsHandlerMixIn,checkers.BaseChecker)"
+            },
+            {
+              "line": 360,
+              "scope": "PyLinter.__init__",
+              "kind": "call",
+              "symbol": "_ArgumentsManager.__init__"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/pylint/lib/python3.12/site-packages/pylint/config/config_initialization.py",
+          "sha256": "07476205806ba1f236832260692f90ccec24cf565fc6f03e30433dcbc0ae015c",
+          "ast_events": [
+            {
+              "line": 100,
+              "scope": "_config_initialization",
+              "kind": "bind",
+              "symbol": "parsed_args_list=linter._parse_command_line_configuration()"
+            },
+            {
+              "line": 100,
+              "scope": "_config_initialization",
+              "kind": "call",
+              "symbol": "linter._parse_command_line_configuration"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/pylint/lib/python3.12/site-packages/pylint/config/arguments_manager.py",
+          "sha256": "2a0f7abed1a8af0aa2d41cc6ad0fdb10a1456c310cdcddb0f2930f58e6fe6913",
+          "ast_events": [
+            {
+              "line": 64,
+              "scope": "_ArgumentsManager.__init__",
+              "kind": "bind",
+              "symbol": "self._arg_parser=argparse.ArgumentParser()"
+            },
+            {
+              "line": 64,
+              "scope": "_ArgumentsManager.__init__",
+              "kind": "call",
+              "symbol": "argparse.ArgumentParser formatter_class=_HelpFormatter"
+            },
+            {
+              "line": 232,
+              "scope": "_ArgumentsManager._parse_command_line_configuration",
+              "kind": "bind",
+              "symbol": "(self.config,parsed_args)=self._arg_parser.parse_known_args()"
+            },
+            {
+              "line": 232,
+              "scope": "_ArgumentsManager._parse_command_line_configuration",
+              "kind": "call",
+              "symbol": "self._arg_parser.parse_known_args"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/pylint/lib/python3.12/site-packages/pylint/config/help_formatter.py",
+          "sha256": "19de19602545bb95609c89412c74e6dde941ca8d3e517368d6540b266dc9b86a",
+          "ast_events": [
+            {
+              "line": 13,
+              "scope": null,
+              "kind": "class",
+              "symbol": "_HelpFormatter(argparse.RawDescriptionHelpFormatter)"
+            }
+          ]
+        }
+      ],
+      "limitations": "The entry calls PylintRun, which initializes a plugin-capable argument manager. That manager uses argparse and a custom formatter."
+    },
+    {
+      "project": "isort",
+      "tool_version": "9.0.2",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "isort"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "isort",
+          "value": "isort.main:main"
+        }
+      ],
+      "family": "argparse",
+      "formatter_family": "argparse",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/isort/lib/python3.12/site-packages/isort/main.py",
+          "sha256": "3e462f119ff631ee5a75455d1d79496e03f686f37c87492e23fcbf9574268d9f",
+          "ast_events": [
+            {
+              "line": 137,
+              "scope": "_build_arg_parser",
+              "kind": "bind",
+              "symbol": "parser=argparse.ArgumentParser()"
+            },
+            {
+              "line": 137,
+              "scope": "_build_arg_parser",
+              "kind": "call",
+              "symbol": "argparse.ArgumentParser"
+            },
+            {
+              "line": 892,
+              "scope": null,
+              "kind": "function",
+              "symbol": "parse_args"
+            },
+            {
+              "line": 896,
+              "scope": "parse_args",
+              "kind": "call",
+              "symbol": "parser.parse_args"
+            },
+            {
+              "line": 935,
+              "scope": "identify_imports_main",
+              "kind": "bind",
+              "symbol": "parser=argparse.ArgumentParser()"
+            },
+            {
+              "line": 935,
+              "scope": "identify_imports_main",
+              "kind": "call",
+              "symbol": "argparse.ArgumentParser"
+            },
+            {
+              "line": 1022,
+              "scope": "main",
+              "kind": "bind",
+              "symbol": "arguments=parse_args()"
+            },
+            {
+              "line": 1022,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "parse_args"
+            }
+          ]
+        }
+      ],
+      "limitations": "Main delegates to construction and use of a stdlib ArgumentParser. The auxiliary identify-imports command has a distinct parser."
+    },
+    {
+      "project": "autopep8",
+      "tool_version": "2.3.2",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "autopep8"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "autopep8",
+          "value": "autopep8:main"
+        }
+      ],
+      "family": "argparse",
+      "formatter_family": "argparse",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/autopep8/lib/python3.12/site-packages/autopep8.py",
+          "sha256": "bf2887f7d468b0d1d174cdb55caaa9550a3fcca9b610912ec35f916bc2a9616e",
+          "ast_events": [
+            {
+              "line": 3767,
+              "scope": "create_parser",
+              "kind": "bind",
+              "symbol": "parser=argparse.ArgumentParser()"
+            },
+            {
+              "line": 3767,
+              "scope": "create_parser",
+              "kind": "call",
+              "symbol": "argparse.ArgumentParser"
+            },
+            {
+              "line": 3886,
+              "scope": "parse_args",
+              "kind": "bind",
+              "symbol": "parser=create_parser()"
+            },
+            {
+              "line": 3886,
+              "scope": "parse_args",
+              "kind": "call",
+              "symbol": "create_parser"
+            },
+            {
+              "line": 3887,
+              "scope": "parse_args",
+              "kind": "bind",
+              "symbol": "args=parser.parse_args()"
+            },
+            {
+              "line": 3887,
+              "scope": "parse_args",
+              "kind": "call",
+              "symbol": "parser.parse_args"
+            },
+            {
+              "line": 4579,
+              "scope": "main",
+              "kind": "bind",
+              "symbol": "args=parse_args()"
+            },
+            {
+              "line": 4579,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "parse_args"
+            }
+          ]
+        }
+      ],
+      "limitations": "The single-file distribution defines the executable target and builds its argparse parser directly."
+    },
+    {
+      "project": "flake8",
+      "tool_version": "7.5.0",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "flake8"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "flake8",
+          "value": "flake8.main.cli:main"
+        }
+      ],
+      "family": "argparse",
+      "formatter_family": "argparse_plugin_options",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/flake8/lib/python3.12/site-packages/flake8/main/cli.py",
+          "sha256": "2fc29f072e402a0022dfb2086a8d8131ddfb19f4a3a6db63d8a3758992774fbd",
+          "ast_events": [
+            {
+              "line": 22,
+              "scope": "main",
+              "kind": "bind",
+              "symbol": "app=application.Application()"
+            },
+            {
+              "line": 22,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "application.Application"
+            },
+            {
+              "line": 23,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "app.run"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/flake8/lib/python3.12/site-packages/flake8/main/application.py",
+          "sha256": "df566128ae1cf7065336c0a34000f6ecd2d06faa0ac3292218a82389744200bd",
+          "ast_events": [
+            {
+              "line": 165,
+              "scope": "Application.initialize",
+              "kind": "bind",
+              "symbol": "(self.plugins,self.options)=parse_args()"
+            },
+            {
+              "line": 165,
+              "scope": "Application.initialize",
+              "kind": "call",
+              "symbol": "parse_args"
+            },
+            {
+              "line": 186,
+              "scope": "Application._run",
+              "kind": "call",
+              "symbol": "self.initialize"
+            },
+            {
+              "line": 198,
+              "scope": "Application.run",
+              "kind": "call",
+              "symbol": "self._run"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/flake8/lib/python3.12/site-packages/flake8/options/parse_args.py",
+          "sha256": "043668a4f006712b5eadc87acd92e43ff678f2ed0ecd843dc0665ca9ac704759",
+          "ast_events": [
+            {
+              "line": 19,
+              "scope": "parse_args",
+              "kind": "bind",
+              "symbol": "prelim_parser=options.stage1_arg_parser()"
+            },
+            {
+              "line": 19,
+              "scope": "parse_args",
+              "kind": "call",
+              "symbol": "options.stage1_arg_parser"
+            },
+            {
+              "line": 21,
+              "scope": "parse_args",
+              "kind": "bind",
+              "symbol": "(args0,rest)=prelim_parser.parse_known_args()"
+            },
+            {
+              "line": 21,
+              "scope": "parse_args",
+              "kind": "call",
+              "symbol": "prelim_parser.parse_known_args"
+            },
+            {
+              "line": 44,
+              "scope": "parse_args",
+              "kind": "bind",
+              "symbol": "option_manager=manager.OptionManager()"
+            },
+            {
+              "line": 44,
+              "scope": "parse_args",
+              "kind": "call",
+              "symbol": "manager.OptionManager"
+            },
+            {
+              "line": 53,
+              "scope": "parse_args",
+              "kind": "bind",
+              "symbol": "opts=aggregator.aggregate_options()"
+            },
+            {
+              "line": 53,
+              "scope": "parse_args",
+              "kind": "call",
+              "symbol": "aggregator.aggregate_options"
+            },
+            {
+              "line": 56,
+              "scope": "parse_args",
+              "kind": "bind",
+              "symbol": "parse_options=getattr()"
+            },
+            {
+              "line": 68,
+              "scope": "parse_args",
+              "kind": "call",
+              "symbol": "parse_options"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/flake8/lib/python3.12/site-packages/flake8/main/options.py",
+          "sha256": "49c6bc32df6c8b9da9340d42505ce3fcaf65f4814ff1a0703b325b8125983be6",
+          "ast_events": [
+            {
+              "line": 22,
+              "scope": "stage1_arg_parser",
+              "kind": "bind",
+              "symbol": "parser=argparse.ArgumentParser()"
+            },
+            {
+              "line": 22,
+              "scope": "stage1_arg_parser",
+              "kind": "call",
+              "symbol": "argparse.ArgumentParser"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/flake8/lib/python3.12/site-packages/flake8/options/manager.py",
+          "sha256": "4eb959c21a25bd26ff5553ae627b35b016b5916a69c12fa4104bd93fc4dd1350",
+          "ast_events": [
+            {
+              "line": 220,
+              "scope": "OptionManager.__init__",
+              "kind": "bind",
+              "symbol": "self.parser=argparse.ArgumentParser()"
+            },
+            {
+              "line": 220,
+              "scope": "OptionManager.__init__",
+              "kind": "call",
+              "symbol": "argparse.ArgumentParser"
+            },
+            {
+              "line": 320,
+              "scope": "OptionManager.parse_args",
+              "kind": "return",
+              "symbol": "self.parser.parse_args()"
+            },
+            {
+              "line": 320,
+              "scope": "OptionManager.parse_args",
+              "kind": "call",
+              "symbol": "self.parser.parse_args"
+            }
+          ]
+        }
+      ],
+      "limitations": "The entry creates Application. Preliminary parsing and its plugin-aware OptionManager both use argparse."
+    },
+    {
+      "project": "bandit",
+      "tool_version": "1.9.4",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "bandit"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "bandit",
+          "value": "bandit.cli.main:main"
+        }
+      ],
+      "family": "argparse",
+      "formatter_family": "argparse_raw_description_formatter",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/bandit/lib/python3.12/site-packages/bandit/cli/main.py",
+          "sha256": "5f614122b738a6507feae7ad454afa98de6a676ee5c9e15fb2f1599de735f3be",
+          "ast_events": [
+            {
+              "line": 154,
+              "scope": "main",
+              "kind": "bind",
+              "symbol": "parser=argparse.ArgumentParser()"
+            },
+            {
+              "line": 154,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "argparse.ArgumentParser formatter_class=argparse.RawDescriptionHelpFormatter"
+            },
+            {
+              "line": 429,
+              "scope": "main",
+              "kind": "bind",
+              "symbol": "args=parser.parse_args()"
+            },
+            {
+              "line": 429,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "parser.parse_args"
+            }
+          ]
+        }
+      ],
+      "limitations": "Main directly constructs argparse with RawDescriptionHelpFormatter and parses its options. Other console scripts were not used to assign the family."
+    },
+    {
+      "project": "yamllint",
+      "tool_version": "1.38.0",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "yamllint"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "yamllint",
+          "value": "yamllint.cli:run"
+        }
+      ],
+      "family": "argparse",
+      "formatter_family": "argparse",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/yamllint/lib/python3.12/site-packages/yamllint/cli.py",
+          "sha256": "b6239583bcd8451f49be2b37f5c526711dc54c88586d5d9f83de29c9b8f7537d",
+          "ast_events": [
+            {
+              "line": 147,
+              "scope": "run",
+              "kind": "bind",
+              "symbol": "parser=argparse.ArgumentParser()"
+            },
+            {
+              "line": 147,
+              "scope": "run",
+              "kind": "call",
+              "symbol": "argparse.ArgumentParser"
+            },
+            {
+              "line": 178,
+              "scope": "run",
+              "kind": "bind",
+              "symbol": "args=parser.parse_args()"
+            },
+            {
+              "line": 178,
+              "scope": "run",
+              "kind": "call",
+              "symbol": "parser.parse_args"
+            }
+          ]
+        }
+      ],
+      "limitations": "The entry function builds and invokes its argparse parser."
+    },
+    {
+      "project": "codespell",
+      "tool_version": "2.4.3",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "codespell"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "codespell",
+          "value": "codespell_lib:_script_main"
+        }
+      ],
+      "family": "argparse",
+      "formatter_family": "argparse_custom_formatter",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/codespell/lib/python3.12/site-packages/codespell_lib/__init__.py",
+          "sha256": "19448a945efd3503dde191332d3303c80393dee0dc6502a48339bedd6e38236b",
+          "ast_events": [
+            {
+              "line": 1,
+              "scope": null,
+              "kind": "from",
+              "symbol": "._codespell:_script_main"
+            },
+            {
+              "line": 1,
+              "scope": null,
+              "kind": "from",
+              "symbol": "._codespell:main"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/codespell/lib/python3.12/site-packages/codespell_lib/_codespell.py",
+          "sha256": "c7d51df2fad3ea830080abb9d9bd258a24c4375b5913a948db5fe816e1409821",
+          "ast_events": [
+            {
+              "line": 339,
+              "scope": null,
+              "kind": "class",
+              "symbol": "NewlineHelpFormatter(argparse.HelpFormatter)"
+            },
+            {
+              "line": 406,
+              "scope": "parse_options",
+              "kind": "class",
+              "symbol": "ArgumentParser2(argparse.ArgumentParser)"
+            },
+            {
+              "line": 419,
+              "scope": "parse_options",
+              "kind": "bind",
+              "symbol": "parser=ArgumentParser2()"
+            },
+            {
+              "line": 419,
+              "scope": "parse_options",
+              "kind": "call",
+              "symbol": "ArgumentParser2 formatter_class=NewlineHelpFormatter"
+            },
+            {
+              "line": 682,
+              "scope": "parse_options",
+              "kind": "bind",
+              "symbol": "options=parser.parse_args()"
+            },
+            {
+              "line": 682,
+              "scope": "parse_options",
+              "kind": "call",
+              "symbol": "parser.parse_args"
+            },
+            {
+              "line": 1294,
+              "scope": "_script_main",
+              "kind": "return",
+              "symbol": "main()"
+            },
+            {
+              "line": 1294,
+              "scope": "_script_main",
+              "kind": "call",
+              "symbol": "main"
+            },
+            {
+              "line": 1331,
+              "scope": "main",
+              "kind": "bind",
+              "symbol": "(options,parser,used_cfg_files)=parse_options()"
+            },
+            {
+              "line": 1331,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "parse_options"
+            }
+          ]
+        }
+      ],
+      "limitations": "The entry reexports _script_main, which reaches parse_options and a local ArgumentParser subclass with NewlineHelpFormatter."
+    },
+    {
+      "project": "twine",
+      "tool_version": "7.0.0",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "twine"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "twine",
+          "value": "twine.__main__:main"
+        }
+      ],
+      "family": "argparse",
+      "formatter_family": "argparse",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/twine/lib/python3.12/site-packages/twine/__main__.py",
+          "sha256": "0f9ee07ab045ea4a0407a9ef9c4211113688bf8dcda77031fd3bf4688df7075f",
+          "ast_events": [
+            {
+              "line": 33,
+              "scope": "main",
+              "kind": "bind",
+              "symbol": "error=cli.dispatch()"
+            },
+            {
+              "line": 33,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "cli.dispatch"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/twine/lib/python3.12/site-packages/twine/cli.py",
+          "sha256": "c61ea85b905ac99e7714b5d2d5961842f6466a3a75e395470d69ac5937c70dca",
+          "ast_events": [
+            {
+              "line": 107,
+              "scope": "dispatch",
+              "kind": "bind",
+              "symbol": "parser=argparse.ArgumentParser()"
+            },
+            {
+              "line": 107,
+              "scope": "dispatch",
+              "kind": "call",
+              "symbol": "argparse.ArgumentParser"
+            },
+            {
+              "line": 129,
+              "scope": "dispatch",
+              "kind": "call",
+              "symbol": "parser.parse_args"
+            }
+          ]
+        }
+      ],
+      "limitations": "main delegates to Twine's argparse dispatch, which parses before calling the selected subcommand."
+    },
+    {
+      "project": "build",
+      "tool_version": "1.6.1",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "pyproject-build"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "pyproject-build",
+          "value": "build.__main__:entrypoint"
+        }
+      ],
+      "family": "argparse",
+      "formatter_family": "argparse_raw_description_formatter",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/build/lib/python3.12/site-packages/build/__main__.py",
+          "sha256": "4ea6636f67c1710f085924050b8bca2543386e4e923fddb57b5ef1ebb722c300",
+          "ast_events": [
+            {
+              "line": 531,
+              "scope": "main_parser",
+              "kind": "bind",
+              "symbol": "make_parser=partial()"
+            },
+            {
+              "line": 531,
+              "scope": "main_parser",
+              "kind": "call",
+              "symbol": "partial formatter_class=argparse.RawDescriptionHelpFormatter"
+            },
+            {
+              "line": 531,
+              "scope": "main_parser",
+              "kind": "partial_target",
+              "symbol": "argparse.ArgumentParser"
+            },
+            {
+              "line": 547,
+              "scope": "main_parser",
+              "kind": "bind",
+              "symbol": "make_parser=partial()"
+            },
+            {
+              "line": 547,
+              "scope": "main_parser",
+              "kind": "call",
+              "symbol": "partial"
+            },
+            {
+              "line": 547,
+              "scope": "main_parser",
+              "kind": "partial_target",
+              "symbol": "make_parser"
+            },
+            {
+              "line": 549,
+              "scope": "main_parser",
+              "kind": "bind",
+              "symbol": "parser=make_parser()"
+            },
+            {
+              "line": 549,
+              "scope": "main_parser",
+              "kind": "call",
+              "symbol": "make_parser"
+            },
+            {
+              "line": 719,
+              "scope": "main",
+              "kind": "bind",
+              "symbol": "parser=main_parser()"
+            },
+            {
+              "line": 719,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "main_parser"
+            },
+            {
+              "line": 722,
+              "scope": "main",
+              "kind": "bind",
+              "symbol": "args=parser.parse_args()"
+            },
+            {
+              "line": 722,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "parser.parse_args"
+            },
+            {
+              "line": 722,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "_CliArgs"
+            },
+            {
+              "line": 903,
+              "scope": "entrypoint",
+              "kind": "call",
+              "symbol": "main"
+            }
+          ]
+        }
+      ],
+      "limitations": "entrypoint calls main, which builds its parser via a partial of argparse.ArgumentParser with RawDescriptionHelpFormatter."
+    },
+    {
+      "project": "wheel",
+      "tool_version": "0.48.0",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "wheel"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "wheel",
+          "value": "wheel._commands:main"
+        }
+      ],
+      "family": "argparse",
+      "formatter_family": "argparse",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/wheel/lib/python3.12/site-packages/wheel/_commands/__init__.py",
+          "sha256": "3b5ef331ee8dc0f4728a849effc4742223df02de0f25196215b67fa8cb32bad2",
+          "ast_events": [
+            {
+              "line": 86,
+              "scope": "parser",
+              "kind": "bind",
+              "symbol": "p=argparse.ArgumentParser()"
+            },
+            {
+              "line": 86,
+              "scope": "parser",
+              "kind": "call",
+              "symbol": "argparse.ArgumentParser"
+            },
+            {
+              "line": 155,
+              "scope": "parser",
+              "kind": "call",
+              "symbol": "help_parser.set_defaults"
+            },
+            {
+              "line": 155,
+              "scope": "parser",
+              "kind": "call",
+              "symbol": "p.print_help"
+            },
+            {
+              "line": 162,
+              "scope": "main",
+              "kind": "bind",
+              "symbol": "args=p.parse_args()"
+            },
+            {
+              "line": 162,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "p.parse_args"
+            },
+            {
+              "line": 164,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "p.print_help"
+            }
+          ]
+        }
+      ],
+      "limitations": "The installed main calls the parser factory and uses its argparse parse and help methods."
+    },
+    {
+      "project": "nox",
+      "tool_version": "2026.10.20",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "nox"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "nox",
+          "value": "nox.__main__:main"
+        }
+      ],
+      "family": "argparse",
+      "formatter_family": "argparse_option_wrapper",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/nox/lib/python3.12/site-packages/nox/__main__.py",
+          "sha256": "3ff92395384d68581780f289ebd947184486b5564552b6f9aebed1836b8ee445",
+          "ast_events": [
+            {
+              "line": 24,
+              "scope": null,
+              "kind": "from",
+              "symbol": "nox._cli:nox_main as main"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/nox/lib/python3.12/site-packages/nox/_cli.py",
+          "sha256": "8b9a0cc388f7273c02a06a5a96cf961e621338483ccf55e3b3eefd1060b36a05",
+          "ast_events": [
+            {
+              "line": 385,
+              "scope": "nox_main",
+              "kind": "call",
+              "symbol": "_main"
+            },
+            {
+              "line": 389,
+              "scope": "_main",
+              "kind": "bind",
+              "symbol": "args=_options.options.parse_args()"
+            },
+            {
+              "line": 389,
+              "scope": "_main",
+              "kind": "call",
+              "symbol": "_options.options.parse_args"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/nox/lib/python3.12/site-packages/nox/_options.py",
+          "sha256": "49cd1d48b61f4b6886f79cb2942e3b11c382fb6ef6fa582ab345dee4dc5dc22e",
+          "ast_events": [
+            {
+              "line": 646,
+              "scope": null,
+              "kind": "bind",
+              "symbol": "options=_option_set.Options()"
+            },
+            {
+              "line": 646,
+              "scope": null,
+              "kind": "call",
+              "symbol": "_option_set.Options"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/nox/lib/python3.12/site-packages/nox/_option_set.py",
+          "sha256": "0b0f0df773367e8da9852fd2d07900655d601f8c2b54bc14cba7245bf1b3d9b6",
+          "ast_events": [
+            {
+              "line": 293,
+              "scope": "Options.parser",
+              "kind": "bind",
+              "symbol": "parser=argparse.ArgumentParser()"
+            },
+            {
+              "line": 293,
+              "scope": "Options.parser",
+              "kind": "call",
+              "symbol": "argparse.ArgumentParser"
+            },
+            {
+              "line": 336,
+              "scope": "Options.print_help",
+              "kind": "call",
+              "symbol": "self.parser().print_help"
+            },
+            {
+              "line": 336,
+              "scope": "Options.print_help",
+              "kind": "call",
+              "symbol": "self.parser"
+            },
+            {
+              "line": 367,
+              "scope": "Options.parse_args",
+              "kind": "bind",
+              "symbol": "parser=self.parser()"
+            },
+            {
+              "line": 367,
+              "scope": "Options.parse_args",
+              "kind": "call",
+              "symbol": "self.parser"
+            },
+            {
+              "line": 369,
+              "scope": "Options.parse_args",
+              "kind": "bind",
+              "symbol": "namespace=parser.parse_args()"
+            },
+            {
+              "line": 369,
+              "scope": "Options.parse_args",
+              "kind": "call",
+              "symbol": "parser.parse_args"
+            }
+          ]
+        }
+      ],
+      "limitations": "The entry reexports nox_main. It uses a typed Options wrapper backed by argparse. The tox-to-nox converter is outside this trace."
+    },
+    {
+      "project": "invoke",
+      "tool_version": "3.0.3",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "invoke",
+        "inv"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "inv",
+          "value": "invoke.main:program.run"
+        },
+        {
+          "name": "invoke",
+          "value": "invoke.main:program.run"
+        }
+      ],
+      "family": "irregular",
+      "formatter_family": "invoke_custom_parser",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/invoke/lib/python3.12/site-packages/invoke/main.py",
+          "sha256": "9e3618a366a72b892b004e26095f59f48d5b44915a382a7e5012f5bd113e5aae",
+          "ast_events": [
+            {
+              "line": 9,
+              "scope": null,
+              "kind": "bind",
+              "symbol": "program=Program()"
+            },
+            {
+              "line": 9,
+              "scope": null,
+              "kind": "call",
+              "symbol": "Program"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/invoke/lib/python3.12/site-packages/invoke/program.py",
+          "sha256": "6bbdff7de79c7593fc126e9562416eb0c1ff39c4115d3380dc67b8c77ef3a5eb",
+          "ast_events": [
+            {
+              "line": 22,
+              "scope": null,
+              "kind": "from",
+              "symbol": ".parser:Argument"
+            },
+            {
+              "line": 22,
+              "scope": null,
+              "kind": "from",
+              "symbol": ".parser:Parser"
+            },
+            {
+              "line": 22,
+              "scope": null,
+              "kind": "from",
+              "symbol": ".parser:ParserContext"
+            },
+            {
+              "line": 385,
+              "scope": "Program.run",
+              "kind": "call",
+              "symbol": "self.parse_core"
+            },
+            {
+              "line": 676,
+              "scope": "Program",
+              "kind": "function",
+              "symbol": "print_help"
+            },
+            {
+              "line": 684,
+              "scope": "Program.print_help",
+              "kind": "call",
+              "symbol": "self.initial_context.help_tuples"
+            },
+            {
+              "line": 697,
+              "scope": "Program.parse_core_args",
+              "kind": "bind",
+              "symbol": "parser=Parser()"
+            },
+            {
+              "line": 697,
+              "scope": "Program.parse_core_args",
+              "kind": "call",
+              "symbol": "Parser"
+            },
+            {
+              "line": 698,
+              "scope": "Program.parse_core_args",
+              "kind": "bind",
+              "symbol": "self.core=parser.parse_argv()"
+            },
+            {
+              "line": 698,
+              "scope": "Program.parse_core_args",
+              "kind": "call",
+              "symbol": "parser.parse_argv"
+            },
+            {
+              "line": 766,
+              "scope": "Program.parse_tasks",
+              "kind": "bind",
+              "symbol": "result=self.parser.parse_argv()"
+            },
+            {
+              "line": 766,
+              "scope": "Program.parse_tasks",
+              "kind": "call",
+              "symbol": "self.parser.parse_argv"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/invoke/lib/python3.12/site-packages/invoke/parser/parser.py",
+          "sha256": "83df4d720cc719f123b0dcf0c85980a3f31186a9467fcd925d70733995ebe91c",
+          "ast_events": [
+            {
+              "line": 47,
+              "scope": null,
+              "kind": "class",
+              "symbol": "Parser()"
+            },
+            {
+              "line": 90,
+              "scope": "Parser",
+              "kind": "function",
+              "symbol": "parse_argv"
+            },
+            {
+              "line": 114,
+              "scope": "Parser.parse_argv",
+              "kind": "bind",
+              "symbol": "machine=ParseMachine()"
+            },
+            {
+              "line": 114,
+              "scope": "Parser.parse_argv",
+              "kind": "call",
+              "symbol": "ParseMachine"
+            }
+          ]
+        }
+      ],
+      "limitations": "The console target is a Program.run bound method. Invoke supplies its own Parser and ParseMachine, and Program renders its help. Fabric shares Invoke ancestry."
+    },
+    {
+      "project": "fabric",
+      "tool_version": "3.2.3",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "fab"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "fab",
+          "value": "fabric.main:program.run"
+        }
+      ],
+      "family": "irregular",
+      "formatter_family": "invoke_custom_parser",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/fabric/lib/python3.12/site-packages/fabric/main.py",
+          "sha256": "4bc68764e7298d35d6878097e203b0528f949bfaab5a7b645d1f57aa34b4f3fb",
+          "ast_events": [
+            {
+              "line": 10,
+              "scope": null,
+              "kind": "from",
+              "symbol": "invoke:Argument"
+            },
+            {
+              "line": 10,
+              "scope": null,
+              "kind": "from",
+              "symbol": "invoke:Collection"
+            },
+            {
+              "line": 10,
+              "scope": null,
+              "kind": "from",
+              "symbol": "invoke:Exit"
+            },
+            {
+              "line": 10,
+              "scope": null,
+              "kind": "from",
+              "symbol": "invoke:Program"
+            },
+            {
+              "line": 18,
+              "scope": null,
+              "kind": "class",
+              "symbol": "Fab(Program)"
+            },
+            {
+              "line": 185,
+              "scope": "make_program",
+              "kind": "return",
+              "symbol": "Fab()"
+            },
+            {
+              "line": 185,
+              "scope": "make_program",
+              "kind": "call",
+              "symbol": "Fab"
+            },
+            {
+              "line": 193,
+              "scope": null,
+              "kind": "bind",
+              "symbol": "program=make_program()"
+            },
+            {
+              "line": 193,
+              "scope": null,
+              "kind": "call",
+              "symbol": "make_program"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/fabric/lib/python3.12/site-packages/invoke/program.py",
+          "sha256": "a01aed0a3b40772733dd40c224ce6f4eb747137ed22fb50fc3e033cdcc16b115",
+          "ast_events": [
+            {
+              "line": 22,
+              "scope": null,
+              "kind": "from",
+              "symbol": ".exceptions:ParseError"
+            },
+            {
+              "line": 385,
+              "scope": "Program.run",
+              "kind": "call",
+              "symbol": "self.parse_core"
+            },
+            {
+              "line": 676,
+              "scope": "Program",
+              "kind": "function",
+              "symbol": "print_help"
+            },
+            {
+              "line": 697,
+              "scope": "Program.parse_core_args",
+              "kind": "bind",
+              "symbol": "parser=Parser()"
+            },
+            {
+              "line": 697,
+              "scope": "Program.parse_core_args",
+              "kind": "call",
+              "symbol": "Parser"
+            },
+            {
+              "line": 698,
+              "scope": "Program.parse_core_args",
+              "kind": "bind",
+              "symbol": "self.core=parser.parse_argv()"
+            },
+            {
+              "line": 698,
+              "scope": "Program.parse_core_args",
+              "kind": "call",
+              "symbol": "parser.parse_argv"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/fabric/lib/python3.12/site-packages/invoke/parser/parser.py",
+          "sha256": "83df4d720cc719f123b0dcf0c85980a3f31186a9467fcd925d70733995ebe91c",
+          "ast_events": [
+            {
+              "line": 47,
+              "scope": null,
+              "kind": "class",
+              "symbol": "Parser()"
+            },
+            {
+              "line": 114,
+              "scope": "Parser.parse_argv",
+              "kind": "bind",
+              "symbol": "machine=ParseMachine()"
+            },
+            {
+              "line": 114,
+              "scope": "Parser.parse_argv",
+              "kind": "call",
+              "symbol": "ParseMachine"
+            }
+          ]
+        }
+      ],
+      "limitations": "The console target is Fab.run inherited from Invoke Program. It shares Invoke's parser and formatter ancestry."
+    },
+    {
+      "project": "streamlink",
+      "tool_version": "8.6.3",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "streamlink"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "streamlink",
+          "value": "streamlink_cli.main:main"
+        }
+      ],
+      "family": "argparse",
+      "formatter_family": "argparse_custom_formatter",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/streamlink/lib/python3.12/site-packages/streamlink_cli/main.py",
+          "sha256": "8c3a4f936786827775e629e14e1bf2dd95480b578bd6bf29b0373ea50f066959",
+          "ast_events": [
+            {
+              "line": 771,
+              "scope": "setup_args",
+              "kind": "bind",
+              "symbol": "(args,unknown)=parser.parse_known_args()"
+            },
+            {
+              "line": 771,
+              "scope": "setup_args",
+              "kind": "call",
+              "symbol": "parser.parse_known_args"
+            },
+            {
+              "line": 998,
+              "scope": "setup",
+              "kind": "call",
+              "symbol": "setup_args"
+            },
+            {
+              "line": 1038,
+              "scope": "run",
+              "kind": "bind",
+              "symbol": "helptext=parser.format_help()"
+            },
+            {
+              "line": 1057,
+              "scope": "main",
+              "kind": "bind",
+              "symbol": "parser=build_parser()"
+            },
+            {
+              "line": 1057,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "build_parser"
+            },
+            {
+              "line": 1065,
+              "scope": "main",
+              "kind": "bind",
+              "symbol": "exit_code=run()"
+            },
+            {
+              "line": 1065,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "run"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/streamlink/lib/python3.12/site-packages/streamlink_cli/argparser.py",
+          "sha256": "eed29d8d0a4f0b8341f7986822f38df0cf1a0ba7e641d97a50fbfc4995fb534c",
+          "ast_events": [
+            {
+              "line": 40,
+              "scope": null,
+              "kind": "class",
+              "symbol": "ArgumentParser(argparse.ArgumentParser)"
+            },
+            {
+              "line": 132,
+              "scope": "ArgumentParser",
+              "kind": "function",
+              "symbol": "format_help"
+            },
+            {
+              "line": 158,
+              "scope": "ArgumentParser.format_help",
+              "kind": "return",
+              "symbol": "formatter.format_help()"
+            },
+            {
+              "line": 161,
+              "scope": null,
+              "kind": "class",
+              "symbol": "HelpFormatter(argparse.RawDescriptionHelpFormatter)"
+            },
+            {
+              "line": 181,
+              "scope": "build_parser",
+              "kind": "bind",
+              "symbol": "parser=ArgumentParser()"
+            },
+            {
+              "line": 181,
+              "scope": "build_parser",
+              "kind": "call",
+              "symbol": "ArgumentParser formatter_class=HelpFormatter"
+            }
+          ]
+        }
+      ],
+      "limitations": "The entry constructs a local argparse subclass and format_help override. Its option set is grouped by the project's parser and can include plugin options."
+    },
+    {
+      "project": "httpx",
+      "tool_version": "0.28.1",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "httpx"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "httpx",
+          "value": "httpx:main"
+        }
+      ],
+      "family": "click",
+      "formatter_family": "click_custom_rich_formatter",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/httpx/lib/python3.12/site-packages/httpx/__init__.py",
+          "sha256": "0ac6997bac998f4ac783adf6d8058a587193315afdb718047c3e4fdff46bcfad",
+          "ast_events": [
+            {
+              "line": 15,
+              "scope": null,
+              "kind": "from",
+              "symbol": "._main:main"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/httpx/lib/python3.12/site-packages/httpx/_main.py",
+          "sha256": "0a0f4631a6e24d3fecc1a0df5202118ad4b0c4b44c4b05033a6ecb7521aa940e",
+          "ast_events": [
+            {
+              "line": 8,
+              "scope": null,
+              "kind": "import",
+              "symbol": "click"
+            },
+            {
+              "line": 27,
+              "scope": "print_help",
+              "kind": "bind",
+              "symbol": "console=rich.console.Console()"
+            },
+            {
+              "line": 27,
+              "scope": "print_help",
+              "kind": "call",
+              "symbol": "rich.console.Console"
+            },
+            {
+              "line": 301,
+              "scope": null,
+              "kind": "function",
+              "symbol": "handle_help"
+            },
+            {
+              "line": 309,
+              "scope": "handle_help",
+              "kind": "call",
+              "symbol": "print_help"
+            },
+            {
+              "line": 313,
+              "scope": null,
+              "kind": "decorates",
+              "symbol": "main=click.command()"
+            },
+            {
+              "line": 313,
+              "scope": null,
+              "kind": "decorator_keyword",
+              "symbol": "main:add_help_option=False"
+            },
+            {
+              "line": 444,
+              "scope": null,
+              "kind": "decorator_keyword",
+              "symbol": "main:callback=handle_help"
+            }
+          ]
+        }
+      ],
+      "limitations": "The entry reexports a Click command, whose custom help callback calls the project Rich renderer instead of Click's default help option. This is project-specific Click plus Rich code."
+    },
+    {
+      "project": "llm",
+      "tool_version": "0.38",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "llm"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "llm",
+          "value": "llm.cli:cli"
+        }
+      ],
+      "family": "click",
+      "formatter_family": "click_default_group_plugin_options",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/llm/lib/python3.12/site-packages/llm/cli.py",
+          "sha256": "463c9cbc9c3dea3110a70b149b78d3e30d86011d125f324cdf06a6ac69f1811b",
+          "ast_events": [
+            {
+              "line": 21,
+              "scope": null,
+              "kind": "import",
+              "symbol": "click"
+            },
+            {
+              "line": 26,
+              "scope": null,
+              "kind": "from",
+              "symbol": "click_default_group:DefaultGroup"
+            },
+            {
+              "line": 563,
+              "scope": null,
+              "kind": "decorates",
+              "symbol": "cli=click.group()"
+            },
+            {
+              "line": 563,
+              "scope": null,
+              "kind": "decorator_keyword",
+              "symbol": "cli:cls=DefaultGroup"
+            }
+          ]
+        }
+      ],
+      "limitations": "Root Click group uses click-default-group. Plugins can extend the command graph."
+    },
+    {
+      "project": "yt-dlp",
+      "tool_version": "2026.10.26",
+      "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+      "environment_evidence": {
+        "path": "collection/expansion/python/environment-evidence.json",
+        "sha256": "e271560a7cd925844b24b2cab44ac85051c3cee232ca887a8e7c4b89aec69b6e"
+      },
+      "commands_traced": [
+        "yt-dlp"
+      ],
+      "declared_console_scripts_traced": [
+        {
+          "name": "yt-dlp",
+          "value": "yt_dlp:main"
+        }
+      ],
+      "family": "optparse",
+      "formatter_family": "optparse_custom_formatter",
+      "status": "source_verified",
+      "source_evidence": [
+        {
+          "path": "/opt/tools/yt-dlp/lib/python3.12/site-packages/yt_dlp/__init__.py",
+          "sha256": "17a973557d2add12472b1b2b045d9d29db8ead6b16908c3f2888df04515790df",
+          "ast_events": [
+            {
+              "line": 744,
+              "scope": "parse_options",
+              "kind": "bind",
+              "symbol": "(parser,opts,urls)=parseOpts()"
+            },
+            {
+              "line": 744,
+              "scope": "parse_options",
+              "kind": "call",
+              "symbol": "parseOpts"
+            },
+            {
+              "line": 967,
+              "scope": "_real_main",
+              "kind": "bind",
+              "symbol": "(parser,opts,all_urls,ydl_opts)=parse_options()"
+            },
+            {
+              "line": 967,
+              "scope": "_real_main",
+              "kind": "call",
+              "symbol": "parse_options"
+            },
+            {
+              "line": 1080,
+              "scope": "main",
+              "kind": "call",
+              "symbol": "_real_main"
+            }
+          ]
+        },
+        {
+          "path": "/opt/tools/yt-dlp/lib/python3.12/site-packages/yt_dlp/options.py",
+          "sha256": "3c4f75696a3c7a2528c5bcec38bed4919469f00a6e4e401026ca8b60bb6971f5",
+          "ast_events": [
+            {
+              "line": 3,
+              "scope": null,
+              "kind": "import",
+              "symbol": "optparse"
+            },
+            {
+              "line": 46,
+              "scope": "parseOpts",
+              "kind": "bind",
+              "symbol": "root=Config()"
+            },
+            {
+              "line": 46,
+              "scope": "parseOpts",
+              "kind": "call",
+              "symbol": "Config"
+            },
+            {
+              "line": 46,
+              "scope": "parseOpts",
+              "kind": "call",
+              "symbol": "create_parser"
+            },
+            {
+              "line": 113,
+              "scope": "parseOpts",
+              "kind": "bind",
+              "symbol": "(opts,args)=root.parse_args()"
+            },
+            {
+              "line": 113,
+              "scope": "parseOpts",
+              "kind": "call",
+              "symbol": "root.parse_args"
+            },
+            {
+              "line": 134,
+              "scope": null,
+              "kind": "class",
+              "symbol": "_YoutubeDLHelpFormatter(optparse.IndentedHelpFormatter)"
+            },
+            {
+              "line": 162,
+              "scope": null,
+              "kind": "class",
+              "symbol": "_YoutubeDLOptionParser(optparse.OptionParser)"
+            },
+            {
+              "line": 173,
+              "scope": "_YoutubeDLOptionParser.__init__",
+              "kind": "call",
+              "symbol": "_YoutubeDLHelpFormatter"
+            },
+            {
+              "line": 312,
+              "scope": "create_parser",
+              "kind": "bind",
+              "symbol": "parser=_YoutubeDLOptionParser()"
+            },
+            {
+              "line": 312,
+              "scope": "create_parser",
+              "kind": "call",
+              "symbol": "_YoutubeDLOptionParser"
+            }
+          ]
+        }
+      ],
+      "limitations": "main delegates to parse_options, whose factory makes the custom optparse class. The parser initializes a custom indented HelpFormatter and incorporates configuration."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "repository": "argoproj/argo-cd",
+  "upstream_ref": "v2.14.11",
+  "cli": "argocd",
+  "family": "cobra",
+  "code_evidence": [
+    {
+      "path": "cmd/main.go",
+      "repository": "argoproj/argo-cd",
+      "ref": "v2.14.11",
+      "raw_url": "https://raw.githubusercontent.com/argoproj/argo-cd/v2.14.11/cmd/main.go",
+      "sha256": "f53a8a65d2eae911619f0d517e5b12c1b78c84b7b74d598dd6b52763fd674ca5",
+      "excerpts": [
+        {
+          "line": 9,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/argoproj/argo-cd/blob/v2.14.11/cmd/main.go#L9"
+        },
+        {
+          "line": 39,
+          "code": "command = cli.NewCommand()",
+          "url": "https://github.com/argoproj/argo-cd/blob/v2.14.11/cmd/main.go#L39"
+        },
+        {
+          "line": 70,
+          "code": "if err := command.Execute(); err != nil {",
+          "url": "https://github.com/argoproj/argo-cd/blob/v2.14.11/cmd/main.go#L70"
+        }
+      ]
+    },
+    {
+      "path": "cmd/argocd/commands/root.go",
+      "repository": "argoproj/argo-cd",
+      "ref": "v2.14.11",
+      "raw_url": "https://raw.githubusercontent.com/argoproj/argo-cd/v2.14.11/cmd/argocd/commands/root.go",
+      "sha256": "e16e8184419ab5ff8c0c61e527d42d11752734eb8a90f730f9c6f8c2e16e4fe5",
+      "excerpts": [
+        {
+          "line": 6,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/argoproj/argo-cd/blob/v2.14.11/cmd/argocd/commands/root.go#L6"
+        },
+        {
+          "line": 32,
+          "code": "func NewCommand() *cobra.Command {",
+          "url": "https://github.com/argoproj/argo-cd/blob/v2.14.11/cmd/argocd/commands/root.go#L32"
+        }
+      ]
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "Apache-2.0",
+    "license": {
+      "path": "LICENSE",
+      "repository": "argoproj/argo-cd",
+      "ref": "v2.14.11",
+      "raw_url": "https://raw.githubusercontent.com/argoproj/argo-cd/v2.14.11/LICENSE",
+      "sha256": "c996fc213c94f4a4a838407d355b081226caa7b103a4f239bb87fb8f1d8e3a60"
+    },
+    "redistribution_conditions": "Section 4 permits source and object-form redistribution subject to providing the license, marking changes, retaining applicable notices and carrying forward applicable NOTICE attribution.",
+    "notice_files": [],
+    "notice_search": "Common repository-root NOTICE filenames checked. Binary and dependency notices require separate review.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "release": {
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v2.14.11",
+    "metadata_url": "https://api.github.com/repos/argoproj/argo-cd/releases/tags/v2.14.11",
+    "published_at": "2025-04-22T16:19:13Z",
+    "linux_x86_64_asset_url": "https://github.com/argoproj/argo-cd/releases/download/v2.14.11/argocd-linux-amd64",
+    "asset_metadata_url": "https://api.github.com/repos/argoproj/argo-cd/releases/tags/v2.14.11",
+    "asset_status": "listed_by_upstream_unfetched"
+  },
+  "provisional_grouping_concerns": []
+}

@@ -1,0 +1,70 @@
+{
+  "repository": "docker/cli",
+  "upstream_ref": "v28.1.1",
+  "cli": "docker",
+  "family": "cobra",
+  "code_evidence": [
+    {
+      "path": "cmd/docker/docker.go",
+      "repository": "docker/cli",
+      "ref": "v28.1.1",
+      "raw_url": "https://raw.githubusercontent.com/docker/cli/v28.1.1/cmd/docker/docker.go",
+      "sha256": "f7ec6a500d90c41694b8aae99c20ba0b505c91be098d2ea360c1eafdabc5bf1d",
+      "excerpts": [
+        {
+          "line": 26,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/docker/cli/blob/v28.1.1/cmd/docker/docker.go#L26"
+        },
+        {
+          "line": 125,
+          "code": "cmd := &cobra.Command{",
+          "url": "https://github.com/docker/cli/blob/v28.1.1/cmd/docker/docker.go#L125"
+        },
+        {
+          "line": 408,
+          "code": "tcmd := newDockerCommand(dockerCli)",
+          "url": "https://github.com/docker/cli/blob/v28.1.1/cmd/docker/docker.go#L408"
+        },
+        {
+          "line": 476,
+          "code": "err = cmd.ExecuteContext(ctx)",
+          "url": "https://github.com/docker/cli/blob/v28.1.1/cmd/docker/docker.go#L476"
+        }
+      ]
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "Apache-2.0",
+    "license": {
+      "path": "LICENSE",
+      "repository": "docker/cli",
+      "ref": "v28.1.1",
+      "raw_url": "https://raw.githubusercontent.com/docker/cli/v28.1.1/LICENSE",
+      "sha256": "2d81ea060825006fc8f3fe28aa5dc0ffeb80faf325b612c955229157b8c10dc0"
+    },
+    "redistribution_conditions": "Section 4 permits source and object-form redistribution subject to providing the license, marking changes, retaining applicable notices and carrying forward applicable NOTICE attribution.",
+    "notice_files": [
+      {
+        "path": "NOTICE",
+        "repository": "docker/cli",
+        "ref": "v28.1.1",
+        "raw_url": "https://raw.githubusercontent.com/docker/cli/v28.1.1/NOTICE",
+        "sha256": "a8c869fbda819afb8d80e0ac19bac52e766bc6c19cb38cf94f52d64c4be2aab6"
+      }
+    ],
+    "notice_search": "Common repository-root NOTICE filenames checked. Binary and dependency notices require separate review.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "release": {
+    "url": null,
+    "metadata_url": null,
+    "published_at": null,
+    "linux_x86_64_asset_url": null,
+    "asset_metadata_url": null,
+    "asset_status": "unverified"
+  },
+  "provisional_grouping_concerns": [
+    "container-cli-compatibility"
+  ]
+}

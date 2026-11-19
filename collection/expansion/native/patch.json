@@ -1,0 +1,88 @@
+{
+  "project": "patch",
+  "repository": "https://savannah.gnu.org/projects/patch/",
+  "upstream_ref": "2.8",
+  "tool_version": "2.8",
+  "cli": "patch",
+  "family": "gnu-style",
+  "family_basis": "GNU getopt_long dispatches to the usage function, which iterates the option-help table.",
+  "upstream_source_archive": {
+    "url": "https://ftp.gnu.org/gnu/patch/patch-2.8.tar.xz",
+    "sha256": "f87cee69eec2b4fcbf60a396b030ad6aa3415f192aa5f7ee84cad5e11f7f5ae3"
+  },
+  "code_evidence": [
+    {
+      "path": "src/patch.c",
+      "url": "https://ftp.gnu.org/gnu/patch/patch-2.8.tar.xz",
+      "archive_member": "patch-2.8/src/patch.c",
+      "sha256": "ca20b87c33247159560d896283c7ac506f71304bdc3249d9826c8bfb92417106",
+      "excerpts": [
+        {
+          "line": 914,
+          "code": "while (0 <= (optc = getopt_long (argc, argv, shortopts, longopts, nullptr)))",
+          "url": "https://ftp.gnu.org/gnu/patch/patch-2.8.tar.xz"
+        },
+        {
+          "line": 1052,
+          "code": "usage (stdout, EXIT_SUCCESS);",
+          "url": "https://ftp.gnu.org/gnu/patch/patch-2.8.tar.xz"
+        },
+        {
+          "line": 892,
+          "code": "for (p = option_help;  *p;  p++)",
+          "url": "https://ftp.gnu.org/gnu/patch/patch-2.8.tar.xz"
+        }
+      ],
+      "debian_orig": {
+        "path": "src/patch.c",
+        "url": "https://deb.debian.org/debian/pool/main/p/patch/patch_2.8.orig.tar.xz",
+        "archive_member": "patch-2.8/src/patch.c",
+        "sha256": "ca20b87c33247159560d896283c7ac506f71304bdc3249d9826c8bfb92417106",
+        "same_bytes": true
+      }
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "GPL-3.0-or-later",
+    "scope": "CLI source",
+    "license_files": [
+      {
+        "path": "COPYING",
+        "url": "https://ftp.gnu.org/gnu/patch/patch-2.8.tar.xz",
+        "archive_member": "patch-2.8/COPYING",
+        "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+      }
+    ],
+    "observed_terms": "The CLI source file and Debian copyright identify GPL-3.0-or-later.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "debian": {
+    "index_url": "https://deb.debian.org/debian/dists/trixie/main/source/Sources.xz",
+    "index_sha256": "6002f81f463a2d976d84b34170367cc16da2d60bd0ba9ab9d868d6e1c1a935d9",
+    "source_package": "patch",
+    "version": "2.8-2",
+    "vcs": null,
+    "orig": {
+      "url": "https://deb.debian.org/debian/pool/main/p/patch/patch_2.8.orig.tar.xz",
+      "sha256": "f87cee69eec2b4fcbf60a396b030ad6aa3415f192aa5f7ee84cad5e11f7f5ae3",
+      "filename": "patch_2.8.orig.tar.xz"
+    },
+    "debian": {
+      "url": "https://deb.debian.org/debian/pool/main/p/patch/patch_2.8-2.debian.tar.xz",
+      "sha256": "9a740460988c910c5538e4d24df00d9961d19dee014c63e92f5d60e611fa60c4",
+      "filename": "patch_2.8-2.debian.tar.xz"
+    },
+    "binary_package": "patch",
+    "package_url": "https://packages.debian.org/trixie/patch",
+    "distribution": "Debian trixie",
+    "copyright": {
+      "path": "debian/copyright",
+      "url": "https://deb.debian.org/debian/pool/main/p/patch/patch_2.8-2.debian.tar.xz",
+      "archive_member": "debian/copyright",
+      "sha256": "442ce445d7f35f171386790e8d637c1c5ae3e50bffdc9c3785a030654da2905c"
+    }
+  },
+  "provisional_grouping_concerns": [
+    "Shared GNU/Gnulib formatting idioms may repeat standard diagnostic and reporting lines across upstream projects. Review actual template overlap before assigning leakage groups."
+  ]
+}

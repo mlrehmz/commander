@@ -1,0 +1,69 @@
+{
+  "repository": "goreleaser/goreleaser",
+  "upstream_ref": "v2.8.2",
+  "cli": "goreleaser",
+  "family": "cobra",
+  "code_evidence": [
+    {
+      "path": "main.go",
+      "repository": "goreleaser/goreleaser",
+      "ref": "v2.8.2",
+      "raw_url": "https://raw.githubusercontent.com/goreleaser/goreleaser/v2.8.2/main.go",
+      "sha256": "51a9098289d260ba0ff6deb2d60855ee6734afaa07c933f90345956e2a3e9d4b",
+      "excerpts": [
+        {
+          "line": 38,
+          "code": "cmd.Execute(",
+          "url": "https://github.com/goreleaser/goreleaser/blob/v2.8.2/main.go#L38"
+        }
+      ]
+    },
+    {
+      "path": "cmd/root.go",
+      "repository": "goreleaser/goreleaser",
+      "ref": "v2.8.2",
+      "raw_url": "https://raw.githubusercontent.com/goreleaser/goreleaser/v2.8.2/cmd/root.go",
+      "sha256": "7695067c06e3877bdd37145997ba2743c28e0d1047b058299d270dcfffbbedb5",
+      "excerpts": [
+        {
+          "line": 14,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/goreleaser/goreleaser/blob/v2.8.2/cmd/root.go#L14"
+        },
+        {
+          "line": 37,
+          "code": "if err := cmd.cmd.Execute(); err != nil {",
+          "url": "https://github.com/goreleaser/goreleaser/blob/v2.8.2/cmd/root.go#L37"
+        },
+        {
+          "line": 57,
+          "code": "cmd     *cobra.Command",
+          "url": "https://github.com/goreleaser/goreleaser/blob/v2.8.2/cmd/root.go#L57"
+        }
+      ]
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "MIT",
+    "license": {
+      "path": "LICENSE.md",
+      "repository": "goreleaser/goreleaser",
+      "ref": "v2.8.2",
+      "raw_url": "https://raw.githubusercontent.com/goreleaser/goreleaser/v2.8.2/LICENSE.md",
+      "sha256": "940cc82da228046306f5068f0adf22c8f161211999c8e96adbb29c670617852c"
+    },
+    "redistribution_conditions": "The text grants distribution subject to including the copyright and permission notices in copies or substantial portions.",
+    "notice_files": [],
+    "notice_search": "Common repository-root NOTICE filenames checked. Binary and dependency notices require separate review.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "release": {
+    "url": "https://github.com/goreleaser/goreleaser/releases/tag/v2.8.2",
+    "metadata_url": "https://api.github.com/repos/goreleaser/goreleaser/releases/tags/v2.8.2",
+    "published_at": "2025-04-01T02:21:52Z",
+    "linux_x86_64_asset_url": "https://github.com/goreleaser/goreleaser/releases/download/v2.8.2/goreleaser_Linux_x86_64.tar.gz",
+    "asset_metadata_url": "https://api.github.com/repos/goreleaser/goreleaser/releases/tags/v2.8.2",
+    "asset_status": "listed_by_upstream_unfetched"
+  },
+  "provisional_grouping_concerns": []
+}

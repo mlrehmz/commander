@@ -1,0 +1,5 @@
+FROM docker.io/library/python@sha256:05a994d2344eb364cc186910f4fc8786a38215f39f00d0acc25bff33a08f4177
+COPY inventory_debs.py /opt/helpcat/inventory_debs.py
+RUN python -c "from pathlib import Path; p=Path('/etc/apt/sources.list.d/debian.sources'); p.write_text(p.read_text().replace('http://','https://'))"
+RUN apt-get update && apt-get --yes --download-only --no-install-recommends install curl wget tar grep sed gawk diffutils findutils gzip xz-utils make patch m4 less nano tmux htop rsync file golang-go groff-base && python /opt/helpcat/inventory_debs.py && for deb in /var/cache/apt/archives/*.deb; do dpkg-deb --extract "$deb" /; done && rm -rf /var/cache/apt/archives/*.deb /var/lib/apt/lists/*
+ENV PYTHONDONTWRITEBYTECODE=1

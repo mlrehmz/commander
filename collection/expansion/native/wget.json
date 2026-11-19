@@ -1,0 +1,96 @@
+{
+  "project": "wget",
+  "repository": "https://www.gnu.org/software/wget/",
+  "upstream_ref": "1.25.0",
+  "tool_version": "1.25.0",
+  "cli": "wget",
+  "family": "gnu-style",
+  "family_basis": "The option data associates help with print_help, and the CLI reads the generated option table through getopt_long.",
+  "upstream_source_archive": {
+    "url": "https://mirrors.kernel.org/gnu/wget/wget-1.25.0.tar.gz",
+    "sha256": "766e48423e79359ea31e41db9e5c289675947a7fcf2efdcedb726ac9d0da3784"
+  },
+  "code_evidence": [
+    {
+      "path": "src/main.c",
+      "url": "https://mirrors.kernel.org/gnu/wget/wget-1.25.0.tar.gz",
+      "archive_member": "wget-1.25.0/src/main.c",
+      "sha256": "d5805682944ae9fe0f914441b7a3b3937b1babb89e921f8fa09e512dd92dcf2e",
+      "excerpts": [
+        {
+          "line": 335,
+          "code": "{ \"help\", 'h', OPT_FUNCALL, (void *)print_help, no_argument },",
+          "url": "https://mirrors.kernel.org/gnu/wget/wget-1.25.0.tar.gz"
+        },
+        {
+          "line": 236,
+          "code": "_Noreturn static void print_help (void);",
+          "url": "https://mirrors.kernel.org/gnu/wget/wget-1.25.0.tar.gz"
+        },
+        {
+          "line": 1467,
+          "code": "while ((ret = getopt_long (argc, argv,",
+          "url": "https://mirrors.kernel.org/gnu/wget/wget-1.25.0.tar.gz"
+        }
+      ],
+      "debian_orig": {
+        "path": "src/main.c",
+        "url": "https://deb.debian.org/debian/pool/main/w/wget/wget_1.25.0.orig.tar.gz",
+        "archive_member": "wget-1.25.0/src/main.c",
+        "sha256": "d5805682944ae9fe0f914441b7a3b3937b1babb89e921f8fa09e512dd92dcf2e",
+        "same_bytes": true
+      }
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": null,
+    "scope": "CLI source",
+    "license_files": [
+      {
+        "path": "COPYING",
+        "url": "https://mirrors.kernel.org/gnu/wget/wget-1.25.0.tar.gz",
+        "archive_member": "wget-1.25.0/COPYING",
+        "sha256": "f7dc7522e7e1be9227f3dc8de8b39a4d1d2471968c893af15f00c1a2076a0eec"
+      }
+    ],
+    "additional_license_basis": {
+      "path": "src/main.c",
+      "url": "https://deb.debian.org/debian/pool/main/w/wget/wget_1.25.0.orig.tar.gz",
+      "archive_member": "wget-1.25.0/src/main.c",
+      "sha256": "d5805682944ae9fe0f914441b7a3b3937b1babb89e921f8fa09e512dd92dcf2e",
+      "line": 22,
+      "topic": "OpenSSL linking and redistribution exception"
+    },
+    "observed_terms": "GPL-3.0-or-later with a project-specific OpenSSL linking exception in src/main.c and README. COPYING contains the GPLv3 text.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "debian": {
+    "index_url": "https://deb.debian.org/debian/dists/trixie/main/source/Sources.xz",
+    "index_sha256": "6002f81f463a2d976d84b34170367cc16da2d60bd0ba9ab9d868d6e1c1a935d9",
+    "source_package": "wget",
+    "version": "1.25.0-2",
+    "vcs": "https://salsa.debian.org/debian/wget",
+    "orig": {
+      "url": "https://deb.debian.org/debian/pool/main/w/wget/wget_1.25.0.orig.tar.gz",
+      "sha256": "766e48423e79359ea31e41db9e5c289675947a7fcf2efdcedb726ac9d0da3784",
+      "filename": "wget_1.25.0.orig.tar.gz"
+    },
+    "debian": {
+      "url": "https://deb.debian.org/debian/pool/main/w/wget/wget_1.25.0-2.debian.tar.xz",
+      "sha256": "45d4411e892d12af710ddff536d2daf430031387e336153f5f996cf536487b90",
+      "filename": "wget_1.25.0-2.debian.tar.xz"
+    },
+    "binary_package": "wget",
+    "package_url": "https://packages.debian.org/trixie/wget",
+    "distribution": "Debian trixie",
+    "copyright": {
+      "path": "debian/copyright",
+      "url": "https://deb.debian.org/debian/pool/main/w/wget/wget_1.25.0-2.debian.tar.xz",
+      "archive_member": "debian/copyright",
+      "sha256": "289d796794edf8c547691e415ddd7ba3396e6e6d8de03397bd69ce9515914bf8"
+    }
+  },
+  "provisional_grouping_concerns": [
+    "Shared GNU/Gnulib formatting idioms may repeat standard diagnostic and reporting lines across upstream projects. Review actual template overlap before assigning leakage groups."
+  ]
+}

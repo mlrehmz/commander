@@ -1,0 +1,52 @@
+{
+  "repository": "containers/skopeo",
+  "upstream_ref": "v1.18.0",
+  "cli": "skopeo",
+  "family": "cobra",
+  "code_evidence": [
+    {
+      "path": "cmd/skopeo/main.go",
+      "repository": "containers/skopeo",
+      "ref": "v1.18.0",
+      "raw_url": "https://raw.githubusercontent.com/containers/skopeo/v1.18.0/cmd/skopeo/main.go",
+      "sha256": "4052a486fd6b10dbb37d4b0beaeee6679cfce4e827a8483f8ecbd197f83217ed",
+      "excerpts": [
+        {
+          "line": 15,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/containers/skopeo/blob/v1.18.0/cmd/skopeo/main.go#L15"
+        },
+        {
+          "line": 131,
+          "code": "if err := rootCmd.Execute(); err != nil {",
+          "url": "https://github.com/containers/skopeo/blob/v1.18.0/cmd/skopeo/main.go#L131"
+        }
+      ]
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "Apache-2.0",
+    "license": {
+      "path": "LICENSE",
+      "repository": "containers/skopeo",
+      "ref": "v1.18.0",
+      "raw_url": "https://raw.githubusercontent.com/containers/skopeo/v1.18.0/LICENSE",
+      "sha256": "716a8b80635c394681e652823e1e42e411ad2d254e1f202403422d74f4b0b106"
+    },
+    "redistribution_conditions": "Section 4 permits source and object-form redistribution subject to providing the license, marking changes, retaining applicable notices and carrying forward applicable NOTICE attribution.",
+    "notice_files": [],
+    "notice_search": "Common repository-root NOTICE filenames checked. Binary and dependency notices require separate review.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "release": {
+    "url": "https://github.com/podman-container-tools/skopeo/releases/tag/v1.18.0",
+    "metadata_url": "https://api.github.com/repos/containers/skopeo/releases/tags/v1.18.0",
+    "published_at": "2025-02-12T23:50:20Z",
+    "linux_x86_64_asset_url": null,
+    "asset_metadata_url": null,
+    "asset_status": "unverified"
+  },
+  "provisional_grouping_concerns": [
+    "containers"
+  ]
+}

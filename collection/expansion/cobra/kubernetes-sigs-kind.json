@@ -1,0 +1,83 @@
+{
+  "repository": "kubernetes-sigs/kind",
+  "upstream_ref": "v0.27.0",
+  "cli": "kind",
+  "family": "cobra",
+  "code_evidence": [
+    {
+      "path": "cmd/kind/main.go",
+      "repository": "kubernetes-sigs/kind",
+      "ref": "v0.27.0",
+      "raw_url": "https://raw.githubusercontent.com/kubernetes-sigs/kind/v0.27.0/cmd/kind/main.go",
+      "sha256": "5c17bf68192a147975a500115a74624623a31947d2731b970283a9edc4859d40",
+      "excerpts": [
+        {
+          "line": 24,
+          "code": "app.Main()",
+          "url": "https://github.com/kubernetes-sigs/kind/blob/v0.27.0/cmd/kind/main.go#L24"
+        }
+      ]
+    },
+    {
+      "path": "cmd/kind/app/main.go",
+      "repository": "kubernetes-sigs/kind",
+      "ref": "v0.27.0",
+      "raw_url": "https://raw.githubusercontent.com/kubernetes-sigs/kind/v0.27.0/cmd/kind/app/main.go",
+      "sha256": "151f302b41529a85fc3d03fb5adf8fb9a320876abb0149512b953a0f792e0de5",
+      "excerpts": [
+        {
+          "line": 51,
+          "code": "c := kind.NewCommand(logger, streams)",
+          "url": "https://github.com/kubernetes-sigs/kind/blob/v0.27.0/cmd/kind/app/main.go#L51"
+        },
+        {
+          "line": 53,
+          "code": "if err := c.Execute(); err != nil {",
+          "url": "https://github.com/kubernetes-sigs/kind/blob/v0.27.0/cmd/kind/app/main.go#L53"
+        }
+      ]
+    },
+    {
+      "path": "pkg/cmd/kind/root.go",
+      "repository": "kubernetes-sigs/kind",
+      "ref": "v0.27.0",
+      "raw_url": "https://raw.githubusercontent.com/kubernetes-sigs/kind/v0.27.0/pkg/cmd/kind/root.go",
+      "sha256": "4524591d2bf29ebc58fec173bfbd82b9293d3a7ca10c9ad43a125626b676554d",
+      "excerpts": [
+        {
+          "line": 23,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/kubernetes-sigs/kind/blob/v0.27.0/pkg/cmd/kind/root.go#L23"
+        },
+        {
+          "line": 43,
+          "code": "func NewCommand(logger log.Logger, streams cmd.IOStreams) *cobra.Command {",
+          "url": "https://github.com/kubernetes-sigs/kind/blob/v0.27.0/pkg/cmd/kind/root.go#L43"
+        }
+      ]
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "Apache-2.0",
+    "license": {
+      "path": "LICENSE",
+      "repository": "kubernetes-sigs/kind",
+      "ref": "v0.27.0",
+      "raw_url": "https://raw.githubusercontent.com/kubernetes-sigs/kind/v0.27.0/LICENSE",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    "redistribution_conditions": "Section 4 permits source and object-form redistribution subject to providing the license, marking changes, retaining applicable notices and carrying forward applicable NOTICE attribution.",
+    "notice_files": [],
+    "notice_search": "Common repository-root NOTICE filenames checked. Binary and dependency notices require separate review.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "release": {
+    "url": "https://github.com/kubernetes-sigs/kind/releases/tag/v0.27.0",
+    "metadata_url": "https://api.github.com/repos/kubernetes-sigs/kind/releases/tags/v0.27.0",
+    "published_at": "2025-02-15T00:54:08Z",
+    "linux_x86_64_asset_url": "https://github.com/kubernetes-sigs/kind/releases/download/v0.27.0/kind-linux-amd64",
+    "asset_metadata_url": "https://api.github.com/repos/kubernetes-sigs/kind/releases/tags/v0.27.0",
+    "asset_status": "listed_by_upstream_unfetched"
+  },
+  "provisional_grouping_concerns": []
+}

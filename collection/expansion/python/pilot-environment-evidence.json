@@ -1,0 +1,3927 @@
+{
+  "image": "sha256:cbaa10bd1d9bf77e577de88d3e5e2947670adcc5db07580cd9e182659a14e63f",
+  "projects": [
+    {
+      "package": "black",
+      "version": "25.9.0",
+      "prefix": "/usr/local",
+      "entrypoints": [
+        {
+          "name": "black",
+          "value": "black:patched_main"
+        },
+        {
+          "name": "blackd",
+          "value": "blackd:patched_main [d]"
+        }
+      ],
+      "bin_files": [
+        "2to3",
+        "2to3-3.12",
+        "activate-global-python-argcomplete",
+        "black",
+        "blackd",
+        "cffi-gen-src",
+        "chardetect",
+        "cmark",
+        "datasette",
+        "diff-cover",
+        "diff-quality",
+        "docutils",
+        "hatch",
+        "hatchling",
+        "http",
+        "httpie",
+        "https",
+        "httpx",
+        "hupper",
+        "idle",
+        "idle3",
+        "idle3.12",
+        "idna",
+        "keyring",
+        "normalizer",
+        "pip",
+        "pip3",
+        "pip3.12",
+        "pipenv",
+        "pipenv-resolver",
+        "pipx",
+        "py.test",
+        "pydoc",
+        "pydoc3",
+        "pydoc3.12",
+        "pygmentize",
+        "pytest",
+        "python",
+        "python-config",
+        "python3",
+        "python3-config",
+        "python3.12",
+        "python3.12-config",
+        "register-python-argcomplete",
+        "rich",
+        "rst2html",
+        "rst2html4",
+        "rst2html5",
+        "rst2latex",
+        "rst2man",
+        "rst2odt",
+        "rst2pseudoxml",
+        "rst2s5",
+        "rst2xetex",
+        "rst2xml",
+        "sqlfluff",
+        "tox",
+        "tqdm",
+        "trove-classifiers",
+        "userpath",
+        "uv",
+        "uvicorn",
+        "uvx",
+        "virtualenv"
+      ],
+      "notices": [
+        {
+          "path": "black-25.9.0.dist-info/licenses/AUTHORS.md",
+          "sha256": "ab82e1037e927fb5fa7b9c7356aedd14297254a7712b6cfb829a2cfd8b06ac88",
+          "text": "# Authors\n\nGlued together by [\u0141ukasz Langa](mailto:lukasz@langa.pl).\n\nMaintained with:\n\n- [Carol Willing](mailto:carolcode@willingconsulting.com)\n- [Carl Meyer](mailto:carl@oddbird.net)\n- [Jelle Zijlstra](mailto:jelle.zijlstra@gmail.com)\n- [Mika Naylor](mailto:mail@autophagy.io)\n- [Zsolt Dollenstein](mailto:zsol.zsol@gmail.com)\n- [Cooper Lees](mailto:me@cooperlees.com)\n- [Richard Si](mailto:sichard26@gmail.com)\n- [Felix Hild\u00e9n](mailto:felix.hilden@gmail.com)\n- [Batuhan Taskaya](mailto:batuhan@python.org)\n- [Shantanu Jain](mailto:hauntsaninja@gmail.com)\n\nMultiple contributions by:\n\n- [Abdur-Rahmaan Janhangeer](mailto:arj.python@gmail.com)\n- [Adam Johnson](mailto:me@adamj.eu)\n- [Adam Williamson](mailto:adamw@happyassassin.net)\n- [Alexander Huynh](mailto:ahrex-gh-psf-black@e.sc)\n- [Alexandr Artemyev](mailto:mogost@gmail.com)\n- [Alex Vandiver](mailto:github@chmrr.net)\n- [Allan Simon](mailto:allan.simon@supinfo.com)\n- Anders-Petter Ljungquist\n- [Amethyst Reese](mailto:amy@n7.gg)\n- [Andrew Thorp](mailto:andrew.thorp.dev@gmail.com)\n- [Andrew Zhou](mailto:andrewfzhou@gmail.com)\n- [Andrey](mailto:dyuuus@yandex.ru)\n- [Andy Freeland](mailto:andy@andyfreeland.net)\n- [Anthony Sottile](mailto:asottile@umich.edu)\n- [Antonio Ossa Guerra](mailto:aaossa+black@uc.cl)\n- [Arjaan Buijk](mailto:arjaan.buijk@gmail.com)\n- [Arnav Borbornah](mailto:arnavborborah11@gmail.com)\n- [Artem Malyshev](mailto:proofit404@gmail.com)\n- [Asger Hautop Drewsen](mailto:asgerdrewsen@gmail.com)\n- [Augie Fackler](mailto:raf@durin42.com)\n- [Aviskar KC](mailto:aviskarkc10@gmail.com)\n- Batuhan Ta\u015fkaya\n- [Benjamin Wohlwend](mailto:bw@piquadrat.ch)\n- [Benjamin Woodruff](mailto:github@benjam.info)\n- [Bharat Raghunathan](mailto:bharatraghunthan9767@gmail.com)\n- [Brandt Bucher](mailto:brandtbucher@gmail.com)\n- [Brett Cannon](mailto:brett@python.org)\n- [Bryan Bugyi](mailto:bryan.bugyi@rutgers.edu)\n- [Bryan Forbes](mailto:bryan@reigndropsfall.net)\n- [Calum Lind](mailto:calumlind@gmail.com)\n- [Charles](mailto:peacech@gmail.com)\n- Charles Reid\n- [Christian Clauss](mailto:cclauss@bluewin.ch)\n- [Christian Heimes](mailto:christian@python.org)\n- [Chuck Wooters](mailto:chuck.wooters@microsoft.com)\n- [Chris Rose](mailto:offline@offby1.net)\n- Codey Oxley\n- [Cong](mailto:congusbongus@gmail.com)\n- [Cooper Ry Lees](mailto:me@cooperlees.com)\n- [Dan Davison](mailto:dandavison7@gmail.com)\n- [Daniel Hahler](mailto:github@thequod.de)\n- [Daniel M. Capella](mailto:polycitizen@gmail.com)\n- Daniele Esposti\n- [David Hotham](mailto:david.hotham@metaswitch.com)\n- [David Lukes](mailto:dafydd.lukes@gmail.com)\n- [David Szotten](mailto:davidszotten@gmail.com)\n- [Denis Laxalde](mailto:denis@laxalde.org)\n- [Douglas Thor](mailto:dthor@transphormusa.com)\n- dylanjblack\n- [Eli Treuherz](mailto:eli@treuherz.com)\n- [Emil Hessman](mailto:emil@hessman.se)\n- [Felix Kohlgr\u00fcber](mailto:felix.kohlgrueber@gmail.com)\n- [Florent Thiery](mailto:fthiery@gmail.com)\n- Francisco\n- [Giacomo Tagliabue](mailto:giacomo.tag@gmail.com)\n- [Greg Gandenberger](mailto:ggandenberger@shoprunner.com)\n- [Gregory P. Smith](mailto:greg@krypto.org)\n- Gustavo Camargo\n- hauntsaninja\n- [Hadi Alqattan](mailto:alqattanhadizaki@gmail.com)\n- [Hassan Abouelela](mailto:hassan@hassanamr.com)\n- [Heaford](mailto:dan@heaford.com)\n- [Hugo Barrera](mailto::hugo@barrera.io)\n- Hugo van Kemenade\n- [Hynek Schlawack](mailto:hs@ox.cx)\n- [Ionite](mailto:dev@ionite.io)\n- [Ivan Katani\u0107](mailto:ivan.katanic@gmail.com)\n- [Jakub Kadlubiec](mailto:jakub.kadlubiec@skyscanner.net)\n- [Jakub Warczarek](mailto:jakub.warczarek@gmail.com)\n- [Jan Hn\u00e1tek](mailto:jan.hnatek@gmail.com)\n- [Jason Fried](mailto:me@jasonfried.info)\n- [Jason Friedland](mailto:jason@friedland.id.au)\n- [jgirardet](mailto:ijkl@netc.fr)\n- Jim Br\u00e4nnlund\n- [Jimmy Jia](mailto:tesrin@gmail.com)\n- [Joe Antonakakis](mailto:jma353@cornell.edu)\n- [Jon Dufresne](mailto:jon.dufresne@gmail.com)\n- [Jonas Obrist](mailto:ojiidotch@gmail.com)\n- [Jonty Wareing](mailto:jonty@jonty.co.uk)\n- [Jose Nazario](mailto:jose.monkey.org@gmail.com)\n- [Joseph Larson](mailto:larson.joseph@gmail.com)\n- [Josh Bode](mailto:joshbode@fastmail.com)\n- [Josh Holland](mailto:anowlcalledjosh@gmail.com)\n- [Joshua Cannon](mailto:joshdcannon@gmail.com)\n- [Jos\u00e9 Padilla](mailto:jpadilla@webapplicate.com)\n- [Juan Luis Cano Rodr\u00edguez](mailto:hello@juanlu.space)\n- [kaiix](mailto:kvn.hou@gmail.com)\n- [Katie McLaughlin](mailto:katie@glasnt.com)\n- Katrin Leinweber\n- [Keith Smiley](mailto:keithbsmiley@gmail.com)\n- [Kenyon Ralph](mailto:kenyon@kenyonralph.com)\n- [Kevin Kirsche](mailto:Kev.Kirsche+GitHub@gmail.com)\n- [Kyle Hausmann](mailto:kyle.hausmann@gmail.com)\n- [Kyle Sunden](mailto:sunden@wisc.edu)\n- Lawrence Chan\n- [Linus Groh](mailto:mail@linusgroh.de)\n- [Loren Carvalho](mailto:comradeloren@gmail.com)\n- [Luka Sterbic](mailto:luka.sterbic@gmail.com)\n- [LukasDrude](mailto:mail@lukas-drude.de)\n- Mahmoud Hossam\n- Mariatta\n- [Matt VanEseltine](mailto:vaneseltine@gmail.com)\n- [Matthew Clapp](mailto:itsayellow+dev@gmail.com)\n- [Matthew Walster](mailto:matthew@walster.org)\n- Max Smolens\n- [Michael Aquilina](mailto:michaelaquilina@gmail.com)\n- [Michael Flaxman](mailto:michael.flaxman@gmail.com)\n- [Michael J. Sullivan](mailto:sully@msully.net)\n- [Michael McClimon](mailto:michael@mcclimon.org)\n- [Miguel Gaiowski](mailto:miggaiowski@gmail.com)\n- [Mike](mailto:roshi@fedoraproject.org)\n- [mikehoyio](mailto:mikehoy@gmail.com)\n- [Min ho Kim](mailto:minho42@gmail.com)\n- [Miroslav Shubernetskiy](mailto:miroslav@miki725.com)\n- MomIsBestFriend\n- [Nathan Goldbaum](mailto:ngoldbau@illinois.edu)\n- [Nathan Hunt](mailto:neighthan.hunt@gmail.com)\n- [Neraste](mailto:neraste.herr10@gmail.com)\n- [Nikolaus Waxweiler](mailto:madigens@gmail.com)\n- [Ofek Lev](mailto:ofekmeister@gmail.com)\n- [Osaetin Daniel](mailto:osaetindaniel@gmail.com)\n- [otstrel](mailto:otstrel@gmail.com)\n- [Pablo Galindo](mailto:Pablogsal@gmail.com)\n- [Paul Ganssle](mailto:p.ganssle@gmail.com)\n- [Paul Meinhardt](mailto:mnhrdt@gmail.com)\n- [Peter Bengtsson](mailto:mail@peterbe.com)\n- [Peter Grayson](mailto:pete@jpgrayson.net)\n- [Peter Stensmyr](mailto:peter.stensmyr@gmail.com)\n- pmacosta\n- [Quentin Pradet](mailto:quentin@pradet.me)\n- [Ralf Schmitt](mailto:ralf@systemexit.de)\n- [Ram\u00f3n Valles](mailto:mroutis@protonmail.com)\n- [Richard Fearn](mailto:richardfearn@gmail.com)\n- [Rishikesh Jha](mailto:rishijha424@gmail.com)\n- [Rupert Bedford](mailto:rupert@rupertb.com)\n- Russell Davis\n- [Sagi Shadur](mailto:saroad2@gmail.com)\n- [R\u00e9mi Verschelde](mailto:rverschelde@gmail.com)\n- [Sami Salonen](mailto:sakki@iki.fi)\n- [Samuel Cormier-Iijima](mailto:samuel@cormier-iijima.com)\n- [Sanket Dasgupta](mailto:sanketdasgupta@gmail.com)\n- Sergi\n- [Scott Stevenson](mailto:scott@stevenson.io)\n- Shantanu\n- [shaoran](mailto:shaoran@sakuranohana.org)\n- [Shinya Fujino](mailto:shf0811@gmail.com)\n- springstan\n- [Stavros Korokithakis](mailto:hi@stavros.io)\n- [Stephen Rosen](mailto:sirosen@globus.org)\n- [Steven M. Vascellaro](mailto:S.Vascellaro@gmail.com)\n- [Sunil Kapil](mailto:snlkapil@gmail.com)\n- [S\u00e9bastien Eustace](mailto:sebastien.eustace@gmail.com)\n- [Tal Amuyal](mailto:TalAmuyal@gmail.com)\n- [Terrance](mailto:git@terrance.allofti.me)\n- [Thom Lu](mailto:thomas.c.lu@gmail.com)\n- [Thomas Grainger](mailto:tagrain@gmail.com)\n- [Tim Gates](mailto:tim.gates@iress.com)\n- [Tim Swast](mailto:swast@google.com)\n- [Timo](mailto:timo_tk@hotmail.com)\n- Toby Fleming\n- [Tom Christie](mailto:tom@tomchristie.com)\n- [Tony Narlock](mailto:tony@git-pull.com)\n- [Tsuyoshi Hombashi](mailto:tsuyoshi.hombashi@gmail.com)\n- [Tushar Chandra](mailto:tusharchandra2018@u.northwestern.edu)\n- [Tushar Sadhwani](mailto:tushar.sadhwani000@gmail.com)\n- [Tzu-ping Chung](mailto:uranusjr@gmail.com)\n- [Utsav Shah](mailto:ukshah2@illinois.edu)\n- utsav-dbx\n- vezeli\n- [Ville Skytt\u00e4](mailto:ville.skytta@iki.fi)\n- [Vishwas B Sharma](mailto:sharma.vishwas88@gmail.com)\n- [Vlad Emelianov](mailto:volshebnyi@gmail.com)\n- [williamfzc](mailto:178894043@qq.com)\n- [wouter bolsterlee](mailto:wouter@bolsterl.ee)\n- Yazdan\n- [Yngve H\u00f8iseth](mailto:yngve@hoiseth.net)\n- [Yurii Karabas](mailto:1998uriyyo@gmail.com)\n- [Zac Hatfield-Dodds](mailto:zac@zhd.dev)\n"
+        },
+        {
+          "path": "black-25.9.0.dist-info/licenses/LICENSE",
+          "sha256": "9c0428f0c3b4779850cf5bd96e11aaa8afc72d4a86d4a36223d7aba2e58d6e00",
+          "text": "The MIT License (MIT)\n\nCopyright (c) 2018 \u0141ukasz Langa\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+        }
+      ],
+      "family_source_candidates": [
+        {
+          "path": "black/__init__.py",
+          "sha256": "b9dd0eac8a583153b9d8583287aad18ec428f54253b2c0dc884297965af84d66",
+          "imports": [
+            {
+              "line": 25,
+              "text": "import click"
+            },
+            {
+              "line": 26,
+              "text": "from click.core import ParameterSource"
+            }
+          ],
+          "calls": [
+            {
+              "line": 236,
+              "family": "click",
+              "text": "@click.command("
+            },
+            {
+              "line": 242,
+              "family": "click",
+              "text": "@click.option(\"-c\", \"--code\", type=str, help=\"Format the code passed in as a string.\")"
+            },
+            {
+              "line": 243,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 251,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 264,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 272,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 280,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 290,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 296,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 302,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 308,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 316,
+              "family": "click",
+              "text": "@click.option("
+            }
+          ]
+        },
+        {
+          "path": "black/output.py",
+          "sha256": "cfcbecf9b5800e89b11dabf8b32fd8a57fd0a5ab86169e525ebdc68fb9100ca2",
+          "imports": [
+            {
+              "line": 11,
+              "text": "from click import echo, style"
+            }
+          ],
+          "calls": [
+            {
+              "line": 21,
+              "family": "click",
+              "text": "echo(message, nl=nl, err=True)"
+            },
+            {
+              "line": 30,
+              "family": "click",
+              "text": "echo(message, nl=nl, err=True)"
+            },
+            {
+              "line": 20,
+              "family": "click",
+              "text": "message = style(message, **styles)"
+            },
+            {
+              "line": 29,
+              "family": "click",
+              "text": "message = style(message, **styles)"
+            }
+          ]
+        },
+        {
+          "path": "black/report.py",
+          "sha256": "8a090d8bc891e45a926b5b1775d4be1e7a2a5bb0aaecfbde0a61427ddfa937ac",
+          "imports": [
+            {
+              "line": 9,
+              "text": "from click import style"
+            }
+          ],
+          "calls": [
+            {
+              "line": 106,
+              "family": "click",
+              "text": "report.append(style(f\"{self.failure_count} file{s} {failed}\", fg=\"red\"))"
+            },
+            {
+              "line": 97,
+              "family": "click",
+              "text": "style(f\"{self.change_count} file{s} \", bold=True, fg=\"blue\")"
+            },
+            {
+              "line": 98,
+              "family": "click",
+              "text": "+ style(f\"{reformatted}\", bold=True)"
+            },
+            {
+              "line": 103,
+              "family": "click",
+              "text": "report.append(style(f\"{self.same_count} file{s} \", fg=\"blue\") + unchanged)"
+            }
+          ]
+        },
+        {
+          "path": "blackd/__init__.py",
+          "sha256": "4bf24e74e5b8ebcf46fb32d23350fb33b3cd56f988a4e94b469615cce2b2b452",
+          "imports": [
+            {
+              "line": 20,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 69,
+              "family": "click",
+              "text": "@click.command(context_settings={\"help_option_names\": [\"-h\", \"--help\"]})"
+            },
+            {
+              "line": 70,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 77,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 80,
+              "family": "click",
+              "text": "@click.version_option(version=black.__version__)"
+            }
+          ]
+        }
+      ],
+      "wheel_man_files": [],
+      "wheel_completion_files": [],
+      "machine_readable_spec_surface": null
+    },
+    {
+      "package": "pipx",
+      "version": "1.8.0",
+      "prefix": "/usr/local",
+      "entrypoints": [
+        {
+          "name": "pipx",
+          "value": "pipx.main:cli"
+        }
+      ],
+      "bin_files": [
+        "2to3",
+        "2to3-3.12",
+        "activate-global-python-argcomplete",
+        "black",
+        "blackd",
+        "cffi-gen-src",
+        "chardetect",
+        "cmark",
+        "datasette",
+        "diff-cover",
+        "diff-quality",
+        "docutils",
+        "hatch",
+        "hatchling",
+        "http",
+        "httpie",
+        "https",
+        "httpx",
+        "hupper",
+        "idle",
+        "idle3",
+        "idle3.12",
+        "idna",
+        "keyring",
+        "normalizer",
+        "pip",
+        "pip3",
+        "pip3.12",
+        "pipenv",
+        "pipenv-resolver",
+        "pipx",
+        "py.test",
+        "pydoc",
+        "pydoc3",
+        "pydoc3.12",
+        "pygmentize",
+        "pytest",
+        "python",
+        "python-config",
+        "python3",
+        "python3-config",
+        "python3.12",
+        "python3.12-config",
+        "register-python-argcomplete",
+        "rich",
+        "rst2html",
+        "rst2html4",
+        "rst2html5",
+        "rst2latex",
+        "rst2man",
+        "rst2odt",
+        "rst2pseudoxml",
+        "rst2s5",
+        "rst2xetex",
+        "rst2xml",
+        "sqlfluff",
+        "tox",
+        "tqdm",
+        "trove-classifiers",
+        "userpath",
+        "uv",
+        "uvicorn",
+        "uvx",
+        "virtualenv"
+      ],
+      "notices": [
+        {
+          "path": "pipx-1.8.0.dist-info/licenses/LICENSE",
+          "sha256": "2e142cbef6acf436d47d8fe1412439c442eeb6c48d5ef73d6b91fffbbf1cdf89",
+          "text": "MIT License\n\nCopyright (c) 2018 Chad Smith and contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+        }
+      ],
+      "family_source_candidates": [
+        {
+          "path": "pipx/main.py",
+          "sha256": "241aa77308535b2d750e70e9d70a5e214add810291c177747b4b196446cee0c1",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import argparse"
+            }
+          ],
+          "calls": [
+            {
+              "line": 155,
+              "family": "argparse",
+              "text": "class LineWrapRawTextHelpFormatter(argparse.RawDescriptionHelpFormatter):"
+            },
+            {
+              "line": 941,
+              "family": "argparse",
+              "text": "shared_parser = argparse.ArgumentParser(add_help=False)"
+            },
+            {
+              "line": 973,
+              "family": "argparse",
+              "text": "parser = argparse.ArgumentParser("
+            }
+          ]
+        }
+      ],
+      "wheel_man_files": [],
+      "wheel_completion_files": [],
+      "machine_readable_spec_surface": null
+    },
+    {
+      "package": "pipenv",
+      "version": "2025.0.4",
+      "prefix": "/usr/local",
+      "entrypoints": [
+        {
+          "name": "pipenv",
+          "value": "pipenv:cli"
+        },
+        {
+          "name": "pipenv-resolver",
+          "value": "pipenv.resolver:main"
+        }
+      ],
+      "bin_files": [
+        "2to3",
+        "2to3-3.12",
+        "activate-global-python-argcomplete",
+        "black",
+        "blackd",
+        "cffi-gen-src",
+        "chardetect",
+        "cmark",
+        "datasette",
+        "diff-cover",
+        "diff-quality",
+        "docutils",
+        "hatch",
+        "hatchling",
+        "http",
+        "httpie",
+        "https",
+        "httpx",
+        "hupper",
+        "idle",
+        "idle3",
+        "idle3.12",
+        "idna",
+        "keyring",
+        "normalizer",
+        "pip",
+        "pip3",
+        "pip3.12",
+        "pipenv",
+        "pipenv-resolver",
+        "pipx",
+        "py.test",
+        "pydoc",
+        "pydoc3",
+        "pydoc3.12",
+        "pygmentize",
+        "pytest",
+        "python",
+        "python-config",
+        "python3",
+        "python3-config",
+        "python3.12",
+        "python3.12-config",
+        "register-python-argcomplete",
+        "rich",
+        "rst2html",
+        "rst2html4",
+        "rst2html5",
+        "rst2latex",
+        "rst2man",
+        "rst2odt",
+        "rst2pseudoxml",
+        "rst2s5",
+        "rst2xetex",
+        "rst2xml",
+        "sqlfluff",
+        "tox",
+        "tqdm",
+        "trove-classifiers",
+        "userpath",
+        "uv",
+        "uvicorn",
+        "uvx",
+        "virtualenv"
+      ],
+      "notices": [
+        {
+          "path": "pipenv-2025.0.4.dist-info/licenses/LICENSE",
+          "sha256": "5ecf69f0af47ec65cec838d45efa5099246b36561a1590e33c278a14fb130e2c",
+          "text": "The MIT License (MIT)\n\nCopyright 2020-2022 Python Packaging Authority\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+        },
+        {
+          "path": "pipenv-2025.0.4.dist-info/licenses/NOTICES",
+          "sha256": "371861e07c8354d285ee46b566e8aff69393a0beac4a46c4a4b6c299bcc0a7dc",
+          "text": "The contents of the vendor and patched directories are subject to different licenses\nthan the rest of this project.\n\nTheir respective licenses can be looked up at pypi.python.org or in their\ncorresponding LICENSE files.\n"
+        }
+      ],
+      "family_source_candidates": [
+        {
+          "path": "pipenv/cli/command.py",
+          "sha256": "9cd429099337cff0401ff0a863fd4298447653f8e2c720d298277b3516a63067",
+          "imports": [
+            {
+              "line": 28,
+              "text": "from pipenv.vendor.click import ("
+            }
+          ],
+          "calls": [
+            {
+              "line": 49,
+              "family": "click",
+              "text": "@group(cls=PipenvGroup, invoke_without_command=True, context_settings=CONTEXT_SETTINGS)"
+            },
+            {
+              "line": 50,
+              "family": "click",
+              "text": "@option(\"--where\", is_flag=True, default=False, help=\"Output project home information.\")"
+            },
+            {
+              "line": 51,
+              "family": "click",
+              "text": "@option(\"--venv\", is_flag=True, default=False, help=\"Output virtualenv information.\")"
+            },
+            {
+              "line": 52,
+              "family": "click",
+              "text": "@option("
+            },
+            {
+              "line": 55,
+              "family": "click",
+              "text": "@option("
+            },
+            {
+              "line": 58,
+              "family": "click",
+              "text": "@option(\"--rm\", is_flag=True, default=False, help=\"Remove the virtualenv.\")"
+            },
+            {
+              "line": 59,
+              "family": "click",
+              "text": "@option(\"--bare\", is_flag=True, default=False, help=\"Minimal output.\")"
+            },
+            {
+              "line": 60,
+              "family": "click",
+              "text": "@option(\"--man\", is_flag=True, default=False, help=\"Display manpage.\")"
+            },
+            {
+              "line": 61,
+              "family": "click",
+              "text": "@option("
+            },
+            {
+              "line": 67,
+              "family": "click",
+              "text": "@version_option(prog_name=prog_name, version=__version__)"
+            },
+            {
+              "line": 268,
+              "family": "click",
+              "text": "@option("
+            },
+            {
+              "line": 274,
+              "family": "click",
+              "text": "@option("
+            }
+          ]
+        },
+        {
+          "path": "pipenv/cli/options.py",
+          "sha256": "99302af065956bb47fa552e0733a43e0a2ea7541617d3a11ffcfcb22d6cf87b2",
+          "imports": [
+            {
+              "line": 8,
+              "text": "from pipenv.vendor.click import ("
+            },
+            {
+              "line": 17,
+              "text": "from pipenv.vendor.click import types as click_types"
+            }
+          ],
+          "calls": [
+            {
+              "line": 23,
+              "family": "click",
+              "text": "class PipenvGroup(DYMMixin, Group):"
+            },
+            {
+              "line": 89,
+              "family": "click",
+              "text": "pass_state = make_pass_decorator(State, ensure=True)"
+            },
+            {
+              "line": 37,
+              "family": "click",
+              "text": "return Option("
+            },
+            {
+              "line": 98,
+              "family": "click",
+              "text": "return option("
+            },
+            {
+              "line": 115,
+              "family": "click",
+              "text": "return option("
+            },
+            {
+              "line": 132,
+              "family": "click",
+              "text": "return option("
+            },
+            {
+              "line": 150,
+              "family": "click",
+              "text": "return option("
+            },
+            {
+              "line": 170,
+              "family": "click",
+              "text": "return option("
+            },
+            {
+              "line": 200,
+              "family": "click",
+              "text": "return option("
+            },
+            {
+              "line": 217,
+              "family": "click",
+              "text": "return argument("
+            },
+            {
+              "line": 233,
+              "family": "click",
+              "text": "return option("
+            },
+            {
+              "line": 250,
+              "family": "click",
+              "text": "return option("
+            }
+          ]
+        },
+        {
+          "path": "pipenv/exceptions.py",
+          "sha256": "3fd65278e05f9a4b3a258c60a3be5cf9337bc9ee73e3e11063c26f5f9e32752d",
+          "imports": [
+            {
+              "line": 9,
+              "text": "from pipenv.vendor import click"
+            },
+            {
+              "line": 10,
+              "text": "from pipenv.vendor.click.exceptions import ClickException, FileError, UsageError"
+            }
+          ],
+          "calls": [
+            {
+              "line": 64,
+              "family": "click",
+              "text": "class PipenvException(ClickException):"
+            },
+            {
+              "line": 119,
+              "family": "click",
+              "text": "class PipenvUsageError(UsageError):"
+            },
+            {
+              "line": 142,
+              "family": "click",
+              "text": "class PipenvFileError(FileError):"
+            },
+            {
+              "line": 127,
+              "family": "click",
+              "text": "UsageError.__init__(self, message, ctx)"
+            },
+            {
+              "line": 152,
+              "family": "click",
+              "text": "FileError.__init__(self, filename=filename, hint=message, **kwargs)"
+            },
+            {
+              "line": 359,
+              "family": "click",
+              "text": "message = click.style("
+            },
+            {
+              "line": 299,
+              "family": "click",
+              "text": "click.style(\"The operation failed...\", bold=True, fg=\"red\"),"
+            },
+            {
+              "line": 300,
+              "family": "click",
+              "text": "click.style("
+            }
+          ]
+        },
+        {
+          "path": "pipenv/patched/pip/_internal/cli/base_command.py",
+          "sha256": "e5adff9e162aac8c1591754f3b6d6aef34cc52355471aece60205fdbbe8700e1",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import optparse"
+            },
+            {
+              "line": 9,
+              "text": "from optparse import Values"
+            }
+          ],
+          "calls": [
+            {
+              "line": 67,
+              "family": "optparse",
+              "text": "self.cmd_opts = optparse.OptionGroup(self.parser, optgroup_name)"
+            }
+          ]
+        },
+        {
+          "path": "pipenv/patched/pip/_internal/cli/cmdoptions.py",
+          "sha256": "5117ed3cde014161f8b885b88a9e6f0dd73a59b3daad9faa1b96cbd1f3de23da",
+          "imports": [
+            {
+              "line": 19,
+              "text": "from optparse import SUPPRESS_HELP, Option, OptionGroup, OptionParser, Values"
+            }
+          ],
+          "calls": [
+            {
+              "line": 111,
+              "family": "optparse",
+              "text": "class PipOption(Option):"
+            },
+            {
+              "line": 57,
+              "family": "optparse",
+              "text": "option_group = OptionGroup(parser, group[\"name\"])"
+            },
+            {
+              "line": 113,
+              "family": "optparse",
+              "text": "TYPE_CHECKER = Option.TYPE_CHECKER.copy()"
+            },
+            {
+              "line": 310,
+              "family": "optparse",
+              "text": "return Option("
+            },
+            {
+              "line": 365,
+              "family": "optparse",
+              "text": "return Option("
+            },
+            {
+              "line": 388,
+              "family": "optparse",
+              "text": "return Option("
+            },
+            {
+              "line": 404,
+              "family": "optparse",
+              "text": "return Option("
+            },
+            {
+              "line": 416,
+              "family": "optparse",
+              "text": "return Option("
+            },
+            {
+              "line": 429,
+              "family": "optparse",
+              "text": "return Option("
+            },
+            {
+              "line": 442,
+              "family": "optparse",
+              "text": "return Option("
+            },
+            {
+              "line": 508,
+              "family": "optparse",
+              "text": "return Option("
+            },
+            {
+              "line": 526,
+              "family": "optparse",
+              "text": "return Option("
+            }
+          ]
+        },
+        {
+          "path": "pipenv/patched/pip/_internal/cli/parser.py",
+          "sha256": "d38220a31bc702faa396254f757519691e5330231b6b28ef250d273ac3e26ad3",
+          "imports": [
+            {
+              "line": 4,
+              "text": "import optparse"
+            }
+          ],
+          "calls": [
+            {
+              "line": 18,
+              "family": "optparse",
+              "text": "class PrettyHelpFormatter(optparse.IndentedHelpFormatter):"
+            },
+            {
+              "line": 132,
+              "family": "optparse",
+              "text": "class CustomOptionParser(optparse.OptionParser):"
+            },
+            {
+              "line": 212,
+              "family": "optparse",
+              "text": "self.values = optparse.Values(self.defaults)"
+            },
+            {
+              "line": 290,
+              "family": "optparse",
+              "text": "return optparse.Values(defaults)"
+            },
+            {
+              "line": 275,
+              "family": "optparse",
+              "text": "return optparse.Values(self.defaults)"
+            }
+          ]
+        },
+        {
+          "path": "pipenv/patched/pip/_internal/req/req_file.py",
+          "sha256": "e1e2bd051ee520f71d55afea07d42a31be8c58e15c78b6491be155843a17d551",
+          "imports": [
+            {
+              "line": 8,
+              "text": "import optparse"
+            },
+            {
+              "line": 15,
+              "text": "from optparse import Values"
+            }
+          ],
+          "calls": [
+            {
+              "line": 479,
+              "family": "optparse",
+              "text": "parser = optparse.OptionParser(add_help_option=False)"
+            }
+          ]
+        },
+        {
+          "path": "pipenv/patched/pip/_vendor/cachecontrol/_cmd.py",
+          "sha256": "3c2fdacae9ccc9ce884d6f64dec59710084a4d67c3cb917a5fc5469893d69f43",
+          "imports": [
+            {
+              "line": 7,
+              "text": "from argparse import ArgumentParser"
+            },
+            {
+              "line": 17,
+              "text": "from argparse import Namespace"
+            }
+          ],
+          "calls": [
+            {
+              "line": 41,
+              "family": "argparse",
+              "text": "parser = ArgumentParser()"
+            }
+          ]
+        },
+        {
+          "path": "pipenv/patched/pip/_vendor/certifi/__main__.py",
+          "sha256": "1e7a2ddf2d976feff04b061e199104bcd672832072d49a84979539be9bd01c00",
+          "imports": [
+            {
+              "line": 1,
+              "text": "import argparse"
+            }
+          ],
+          "calls": [
+            {
+              "line": 5,
+              "family": "argparse",
+              "text": "parser = argparse.ArgumentParser()"
+            }
+          ]
+        },
+        {
+          "path": "pipenv/patched/pip/_vendor/dependency_groups/__main__.py",
+          "sha256": "50d4ccecfe667d5b53ef00e2f643935d6815ddfbb77bc6d3aedd50a758ef8caa",
+          "imports": [
+            {
+              "line": 1,
+              "text": "import argparse"
+            }
+          ],
+          "calls": [
+            {
+              "line": 16,
+              "family": "argparse",
+              "text": "parser = argparse.ArgumentParser("
+            }
+          ]
+        },
+        {
+          "path": "pipenv/patched/pip/_vendor/dependency_groups/_lint_dependency_groups.py",
+          "sha256": "ca9f830ea297b5b9034cd6b489f6be166380f2b6b6e253d91177ed5be47902e2",
+          "imports": [
+            {
+              "line": 3,
+              "text": "import argparse"
+            }
+          ],
+          "calls": [
+            {
+              "line": 18,
+              "family": "argparse",
+              "text": "parser = argparse.ArgumentParser("
+            }
+          ]
+        },
+        {
+          "path": "pipenv/patched/pip/_vendor/dependency_groups/_pip_wrapper.py",
+          "sha256": "9ee556ff0fe7b55c69136e842c4be780c634374e2c14bb228d747265944e146f",
+          "imports": [
+            {
+              "line": 3,
+              "text": "import argparse"
+            }
+          ],
+          "calls": [
+            {
+              "line": 23,
+              "family": "argparse",
+              "text": "parser = argparse.ArgumentParser(description=\"Install Dependency Groups.\")"
+            }
+          ]
+        },
+        {
+          "path": "pipenv/patched/pip/_vendor/distro/distro.py",
+          "sha256": "5ea6de7da7008434f8cebfedae76c0d79798f2f74ae064e08609af506ac433fe",
+          "imports": [
+            {
+              "line": 31,
+              "text": "import argparse"
+            }
+          ],
+          "calls": [
+            {
+              "line": 1367,
+              "family": "argparse",
+              "text": "parser = argparse.ArgumentParser(description=\"OS distro info tool\")"
+            }
+          ]
+        },
+        {
+          "path": "pipenv/patched/pip/_vendor/rich/default_styles.py",
+          "sha256": "672198962f06d1776936f64a1d86aae5d1370c6f2f6d9a342c6d5d8f2e03fb2f",
+          "imports": [
+            {
+              "line": 173,
+              "text": "import argparse"
+            }
+          ],
+          "calls": [
+            {
+              "line": 180,
+              "family": "argparse",
+              "text": "parser = argparse.ArgumentParser()"
+            }
+          ]
+        },
+        {
+          "path": "pipenv/patched/pip/_vendor/rich/json.py",
+          "sha256": "6a902f443c3d274525a6689f72a11484752698c807adf454b77c136aa575a649",
+          "imports": [
+            {
+              "line": 106,
+              "text": "import argparse"
+            }
+          ],
+          "calls": [
+            {
+              "line": 109,
+              "family": "argparse",
+              "text": "parser = argparse.ArgumentParser(description=\"Pretty print json\")"
+            }
+          ]
+        },
+        {
+          "path": "pipenv/patched/pip/_vendor/rich/syntax.py",
+          "sha256": "88abc43e7ebcc53517dde5ce0a512d8c2cf2e3827b144e735e92322080a62014",
+          "imports": [
+            {
+              "line": 850,
+              "text": "import argparse"
+            }
+          ],
+          "calls": [
+            {
+              "line": 853,
+              "family": "argparse",
+              "text": "parser = argparse.ArgumentParser("
+            }
+          ]
+        },
+        {
+          "path": "pipenv/resolver.py",
+          "sha256": "80a6c5fe46f4f41d86e4544bcec6b3df0648fea845267e7dca92155dbd38db5a",
+          "imports": [
+            {
+              "line": 30,
+              "text": "from argparse import ArgumentParser"
+            }
+          ],
+          "calls": [
+            {
+              "line": 32,
+              "family": "argparse",
+              "text": "parser = ArgumentParser(\"pipenv-resolver\")"
+            }
+          ]
+        },
+        {
+          "path": "pipenv/routines/check.py",
+          "sha256": "5c1020b81eb823eebf9514822ece9a4814044e30bcb34860a401e1b649de82a9",
+          "imports": [
+            {
+              "line": 12,
+              "text": "from pipenv.vendor import click, plette"
+            }
+          ],
+          "calls": [
+            {
+              "line": 158,
+              "family": "click",
+              "text": "install = click.confirm("
+            }
+          ]
+        },
+        {
+          "path": "pipenv/routines/scan.py",
+          "sha256": "b803199d8ab80946b53eb94ee7fb938a29f3817a98fc2ff53631518af29dfdfc",
+          "imports": [
+            {
+              "line": 13,
+              "text": "from pipenv.vendor import click, plette"
+            }
+          ],
+          "calls": [
+            {
+              "line": 247,
+              "family": "click",
+              "text": "install = click.confirm("
+            }
+          ]
+        },
+        {
+          "path": "pipenv/utils/indexes.py",
+          "sha256": "03b8f11849f4c6b188e7f2ffcb94f20a316652891ded23ebfa8768f27409a388",
+          "imports": [
+            {
+              "line": 104,
+              "text": "from argparse import ArgumentParser"
+            }
+          ],
+          "calls": [
+            {
+              "line": 108,
+              "family": "argparse",
+              "text": "parser = ArgumentParser(\"indexes\", allow_abbrev=False)"
+            }
+          ]
+        },
+        {
+          "path": "pipenv/utils/shell.py",
+          "sha256": "0406d253e14897fcdf893bf55148c7201ab426e96721d12de21c1dd3b7c0046a",
+          "imports": [
+            {
+              "line": 15,
+              "text": "from pipenv.vendor import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 465,
+              "family": "click",
+              "text": "return click.style(text, **kwargs)"
+            },
+            {
+              "line": 464,
+              "family": "click",
+              "text": "return click.original_style(text, **kwargs)"
+            }
+          ]
+        },
+        {
+          "path": "pipenv/vendor/click/core.py",
+          "sha256": "c42032d98350636139a30fc0c75fcb2e19c1a0fef345e142e95e5168b79e6268",
+          "imports": [
+            {
+              "line": 972,
+              "text": "from pipenv.vendor.click.shell_completion import CompletionItem"
+            },
+            {
+              "line": 1445,
+              "text": "from pipenv.vendor.click.shell_completion import CompletionItem"
+            },
+            {
+              "line": 1771,
+              "text": "from pipenv.vendor.click.shell_completion import CompletionItem"
+            },
+            {
+              "line": 2440,
+              "text": "from pipenv.vendor.click.shell_completion import CompletionItem"
+            }
+          ],
+          "calls": [
+            {
+              "line": 1774,
+              "family": "click",
+              "text": "CompletionItem(name, help=command.get_short_help_str())"
+            },
+            {
+              "line": 2442,
+              "family": "click",
+              "text": "results = [CompletionItem(c) for c in results]"
+            },
+            {
+              "line": 981,
+              "family": "click",
+              "text": "CompletionItem(name, help=command.get_short_help_str())"
+            },
+            {
+              "line": 1463,
+              "family": "click",
+              "text": "CompletionItem(name, help=param.help)"
+            }
+          ]
+        },
+        {
+          "path": "pipenv/vendor/click/types.py",
+          "sha256": "6721764df50ed46764869225f1c55debc8b7888cca0827530f8bcee2b97dae45",
+          "imports": [
+            {
+              "line": 320,
+              "text": "from pipenv.vendor.click.shell_completion import CompletionItem"
+            },
+            {
+              "line": 755,
+              "text": "from pipenv.vendor.click.shell_completion import CompletionItem"
+            },
+            {
+              "line": 943,
+              "text": "from pipenv.vendor.click.shell_completion import CompletionItem"
+            }
+          ],
+          "calls": [
+            {
+              "line": 330,
+              "family": "click",
+              "text": "return [CompletionItem(c) for c in matched]"
+            },
+            {
+              "line": 757,
+              "family": "click",
+              "text": "return [CompletionItem(incomplete, type=\"file\")]"
+            },
+            {
+              "line": 946,
+              "family": "click",
+              "text": "return [CompletionItem(incomplete, type=type)]"
+            }
+          ]
+        },
+        {
+          "path": "pipenv/vendor/pipdeptree/_cli.py",
+          "sha256": "96b55dd320c329fb7242268999815bb9ddb6b04612cd32f9672a4140c90e97fb",
+          "imports": [
+            {
+              "line": 5,
+              "text": "from argparse import Action, ArgumentDefaultsHelpFormatter, ArgumentParser, Namespace"
+            }
+          ],
+          "calls": [
+            {
+              "line": 13,
+              "family": "argparse",
+              "text": "class Options(Namespace):"
+            },
+            {
+              "line": 32,
+              "family": "argparse",
+              "text": "class _Formatter(ArgumentDefaultsHelpFormatter):"
+            },
+            {
+              "line": 164,
+              "family": "argparse",
+              "text": "class EnumAction(Action):"
+            },
+            {
+              "line": 38,
+              "family": "argparse",
+              "text": "parser = ArgumentParser(description=\"Dependency tree of the installed python packages\", formatter_class=_Formatter)"
+            }
+          ]
+        }
+      ],
+      "wheel_man_files": [],
+      "wheel_completion_files": [
+        "pipenv/patched/pip/_internal/cli/__pycache__/autocompletion.cpython-312.pyc",
+        "pipenv/patched/pip/_internal/cli/autocompletion.py",
+        "pipenv/patched/pip/_internal/commands/__pycache__/completion.cpython-312.pyc",
+        "pipenv/patched/pip/_internal/commands/completion.py",
+        "pipenv/vendor/click/__pycache__/shell_completion.cpython-312.pyc",
+        "pipenv/vendor/click/shell_completion.py"
+      ],
+      "machine_readable_spec_surface": null
+    },
+    {
+      "package": "tox",
+      "version": "4.30.2",
+      "prefix": "/usr/local",
+      "entrypoints": [
+        {
+          "name": "tox",
+          "value": "tox.run:run"
+        }
+      ],
+      "bin_files": [
+        "2to3",
+        "2to3-3.12",
+        "activate-global-python-argcomplete",
+        "black",
+        "blackd",
+        "cffi-gen-src",
+        "chardetect",
+        "cmark",
+        "datasette",
+        "diff-cover",
+        "diff-quality",
+        "docutils",
+        "hatch",
+        "hatchling",
+        "http",
+        "httpie",
+        "https",
+        "httpx",
+        "hupper",
+        "idle",
+        "idle3",
+        "idle3.12",
+        "idna",
+        "keyring",
+        "normalizer",
+        "pip",
+        "pip3",
+        "pip3.12",
+        "pipenv",
+        "pipenv-resolver",
+        "pipx",
+        "py.test",
+        "pydoc",
+        "pydoc3",
+        "pydoc3.12",
+        "pygmentize",
+        "pytest",
+        "python",
+        "python-config",
+        "python3",
+        "python3-config",
+        "python3.12",
+        "python3.12-config",
+        "register-python-argcomplete",
+        "rich",
+        "rst2html",
+        "rst2html4",
+        "rst2html5",
+        "rst2latex",
+        "rst2man",
+        "rst2odt",
+        "rst2pseudoxml",
+        "rst2s5",
+        "rst2xetex",
+        "rst2xml",
+        "sqlfluff",
+        "tox",
+        "tqdm",
+        "trove-classifiers",
+        "userpath",
+        "uv",
+        "uvicorn",
+        "uvx",
+        "virtualenv"
+      ],
+      "notices": [
+        {
+          "path": "tox-4.30.2.dist-info/licenses/LICENSE",
+          "sha256": "90e25e1faf2a4aaea8d95ee8e7f5738b052a1acc0c9c58068101f931a86bd588",
+          "text": "Permission is hereby granted, free of charge, to any person obtaining a\ncopy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n"
+        }
+      ],
+      "family_source_candidates": [
+        {
+          "path": "tox/config/cli/parser.py",
+          "sha256": "de00de80d9a4002d887533f3d37508f9b94839f0908b3ac18b13e6dc41f5c676",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import argparse"
+            },
+            {
+              "line": 10,
+              "text": "from argparse import SUPPRESS, Action, ArgumentDefaultsHelpFormatter, ArgumentError, ArgumentParser, Namespace"
+            }
+          ],
+          "calls": [
+            {
+              "line": 32,
+              "family": "argparse",
+              "text": "class ArgumentParserWithEnvAndConfig(ArgumentParser):"
+            },
+            {
+              "line": 95,
+              "family": "argparse",
+              "text": "class HelpFormatter(ArgumentDefaultsHelpFormatter):"
+            },
+            {
+              "line": 121,
+              "family": "argparse",
+              "text": "class Parsed(Namespace):"
+            },
+            {
+              "line": 203,
+              "family": "argparse",
+              "text": "class SeedAction(Action):"
+            },
+            {
+              "line": 220,
+              "family": "argparse",
+              "text": "raise ArgumentError(self, str(exc)) from exc"
+            }
+          ]
+        },
+        {
+          "path": "tox/config/loader/api.py",
+          "sha256": "ccba2eb7898a052a8b339a1bf64eb111feea01fb8d24e63eb3d0c43b1b5af008",
+          "imports": [
+            {
+              "line": 4,
+              "text": "from argparse import ArgumentTypeError"
+            }
+          ],
+          "calls": [
+            {
+              "line": 27,
+              "family": "argparse",
+              "text": "raise ArgumentTypeError(msg)"
+            }
+          ]
+        },
+        {
+          "path": "tox/session/cmd/run/common.py",
+          "sha256": "0c891617b54916c97a2495f7c9d9d0b202faf5992097501e7765783327293b98",
+          "imports": [
+            {
+              "line": 8,
+              "text": "from argparse import Action, ArgumentError, ArgumentParser, Namespace"
+            }
+          ],
+          "calls": [
+            {
+              "line": 30,
+              "family": "argparse",
+              "text": "class SkipMissingInterpreterAction(Action):"
+            },
+            {
+              "line": 44,
+              "family": "argparse",
+              "text": "class InstallPackageAction(Action):"
+            },
+            {
+              "line": 40,
+              "family": "argparse",
+              "text": "raise ArgumentError(self, f\"value must be 'config', 'true', or 'false' (got {value!r})\")"
+            },
+            {
+              "line": 53,
+              "family": "argparse",
+              "text": "raise ArgumentError(self, \"cannot be empty\")"
+            },
+            {
+              "line": 56,
+              "family": "argparse",
+              "text": "raise ArgumentError(self, f\"{path} does not exist\")"
+            },
+            {
+              "line": 58,
+              "family": "argparse",
+              "text": "raise ArgumentError(self, f\"{path} is not a file\")"
+            }
+          ]
+        },
+        {
+          "path": "tox/session/cmd/run/parallel.py",
+          "sha256": "246d35532f7008392b62aee6f2dcd3d77c429786d87351a3a66ede56db65c393",
+          "imports": [
+            {
+              "line": 6,
+              "text": "from argparse import ArgumentParser, ArgumentTypeError"
+            }
+          ],
+          "calls": [
+            {
+              "line": 47,
+              "family": "argparse",
+              "text": "raise ArgumentTypeError(msg)"
+            },
+            {
+              "line": 44,
+              "family": "argparse",
+              "text": "raise ArgumentTypeError(msg) from exc"
+            }
+          ]
+        },
+        {
+          "path": "tox/session/cmd/version_flag.py",
+          "sha256": "3e31ace90e73467368955d70bff1dd2e180a902568cd97d6e6fec6ff66dda19d",
+          "imports": [
+            {
+              "line": 6,
+              "text": "from argparse import SUPPRESS, Action, ArgumentParser, Namespace"
+            }
+          ],
+          "calls": [
+            {
+              "line": 21,
+              "family": "argparse",
+              "text": "class _V(Action):"
+            }
+          ]
+        },
+        {
+          "path": "tox/tox_env/python/pip/req/args.py",
+          "sha256": "d2036feecca6bc9ed673e00b389215be873bec05791a33a38ace5af4bade369c",
+          "imports": [
+            {
+              "line": 5,
+              "text": "from argparse import Action, ArgumentParser, ArgumentTypeError, Namespace"
+            }
+          ],
+          "calls": [
+            {
+              "line": 18,
+              "family": "argparse",
+              "text": "class _OurArgumentParser(ArgumentParser):"
+            },
+            {
+              "line": 74,
+              "family": "argparse",
+              "text": "class AddSortedUniqueAction(Action):"
+            },
+            {
+              "line": 89,
+              "family": "argparse",
+              "text": "class AddUniqueAction(Action):"
+            },
+            {
+              "line": 104,
+              "family": "argparse",
+              "text": "class BinaryAction(Action):"
+            },
+            {
+              "line": 70,
+              "family": "argparse",
+              "text": "raise ArgumentTypeError(value)"
+            }
+          ]
+        },
+        {
+          "path": "tox/tox_env/python/pip/req/file.py",
+          "sha256": "93771b17f7225628488a53a8c207ea65a61b7ca50dab3dd228aba051ec9f69b4",
+          "imports": [
+            {
+              "line": 10,
+              "text": "from argparse import ArgumentParser, Namespace"
+            }
+          ],
+          "calls": [
+            {
+              "line": 143,
+              "family": "argparse",
+              "text": "self._opt = Namespace()"
+            },
+            {
+              "line": 442,
+              "family": "argparse",
+              "text": "opt = Namespace()"
+            }
+          ]
+        }
+      ],
+      "wheel_man_files": [],
+      "wheel_completion_files": [],
+      "machine_readable_spec_surface": null
+    },
+    {
+      "package": "virtualenv",
+      "version": "20.34.0",
+      "prefix": "/usr/local",
+      "entrypoints": [
+        {
+          "name": "virtualenv",
+          "value": "virtualenv.__main__:run_with_catch"
+        }
+      ],
+      "bin_files": [
+        "2to3",
+        "2to3-3.12",
+        "activate-global-python-argcomplete",
+        "black",
+        "blackd",
+        "cffi-gen-src",
+        "chardetect",
+        "cmark",
+        "datasette",
+        "diff-cover",
+        "diff-quality",
+        "docutils",
+        "hatch",
+        "hatchling",
+        "http",
+        "httpie",
+        "https",
+        "httpx",
+        "hupper",
+        "idle",
+        "idle3",
+        "idle3.12",
+        "idna",
+        "keyring",
+        "normalizer",
+        "pip",
+        "pip3",
+        "pip3.12",
+        "pipenv",
+        "pipenv-resolver",
+        "pipx",
+        "py.test",
+        "pydoc",
+        "pydoc3",
+        "pydoc3.12",
+        "pygmentize",
+        "pytest",
+        "python",
+        "python-config",
+        "python3",
+        "python3-config",
+        "python3.12",
+        "python3.12-config",
+        "register-python-argcomplete",
+        "rich",
+        "rst2html",
+        "rst2html4",
+        "rst2html5",
+        "rst2latex",
+        "rst2man",
+        "rst2odt",
+        "rst2pseudoxml",
+        "rst2s5",
+        "rst2xetex",
+        "rst2xml",
+        "sqlfluff",
+        "tox",
+        "tqdm",
+        "trove-classifiers",
+        "userpath",
+        "uv",
+        "uvicorn",
+        "uvx",
+        "virtualenv"
+      ],
+      "notices": [
+        {
+          "path": "virtualenv-20.34.0.dist-info/licenses/LICENSE",
+          "sha256": "5c15919378c5b2aaab7b19cea70d8cdc75f76879e32454e4c0399f8b71d171e9",
+          "text": "Copyright (c) 2020-202x The virtualenv developers\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\nLIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\nOF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n"
+        }
+      ],
+      "family_source_candidates": [
+        {
+          "path": "virtualenv/config/cli/parser.py",
+          "sha256": "6f94becf01a4710b719237514e1afc1ce950341d9238941bdc3862584b73d53d",
+          "imports": [
+            {
+              "line": 4,
+              "text": "from argparse import SUPPRESS, ArgumentDefaultsHelpFormatter, ArgumentParser, Namespace"
+            }
+          ],
+          "calls": [
+            {
+              "line": 12,
+              "family": "argparse",
+              "text": "class VirtualEnvOptions(Namespace):"
+            },
+            {
+              "line": 42,
+              "family": "argparse",
+              "text": "class VirtualEnvConfigParser(ArgumentParser):"
+            },
+            {
+              "line": 109,
+              "family": "argparse",
+              "text": "class HelpFormatter(ArgumentDefaultsHelpFormatter):"
+            }
+          ]
+        },
+        {
+          "path": "virtualenv/create/creator.py",
+          "sha256": "5b52bac41ad76e3ffd612b641157be9673344d1cf0db54341d0651b12b846d75",
+          "imports": [
+            {
+              "line": 9,
+              "text": "from argparse import ArgumentTypeError"
+            }
+          ],
+          "calls": [
+            {
+              "line": 113,
+              "family": "argparse",
+              "text": "raise ArgumentTypeError(msg)"
+            },
+            {
+              "line": 131,
+              "family": "argparse",
+              "text": "raise ArgumentTypeError(msg)"
+            },
+            {
+              "line": 137,
+              "family": "argparse",
+              "text": "raise ArgumentTypeError(msg)"
+            },
+            {
+              "line": 142,
+              "family": "argparse",
+              "text": "raise ArgumentTypeError(msg)"
+            }
+          ]
+        },
+        {
+          "path": "virtualenv/run/plugin/activators.py",
+          "sha256": "acda3c80433b4ea93434557c4565fc465ad97261dcd77fbc47b585f293b66cb5",
+          "imports": [
+            {
+              "line": 3,
+              "text": "from argparse import ArgumentTypeError"
+            }
+          ],
+          "calls": [
+            {
+              "line": 35,
+              "family": "argparse",
+              "text": "raise ArgumentTypeError(msg)"
+            }
+          ]
+        }
+      ],
+      "wheel_man_files": [],
+      "wheel_completion_files": [],
+      "machine_readable_spec_surface": null
+    },
+    {
+      "package": "httpie",
+      "version": "3.2.4",
+      "prefix": "/usr/local",
+      "entrypoints": [
+        {
+          "name": "http",
+          "value": "httpie.__main__:main"
+        },
+        {
+          "name": "httpie",
+          "value": "httpie.manager.__main__:main"
+        },
+        {
+          "name": "https",
+          "value": "httpie.__main__:main"
+        }
+      ],
+      "bin_files": [
+        "2to3",
+        "2to3-3.12",
+        "activate-global-python-argcomplete",
+        "black",
+        "blackd",
+        "cffi-gen-src",
+        "chardetect",
+        "cmark",
+        "datasette",
+        "diff-cover",
+        "diff-quality",
+        "docutils",
+        "hatch",
+        "hatchling",
+        "http",
+        "httpie",
+        "https",
+        "httpx",
+        "hupper",
+        "idle",
+        "idle3",
+        "idle3.12",
+        "idna",
+        "keyring",
+        "normalizer",
+        "pip",
+        "pip3",
+        "pip3.12",
+        "pipenv",
+        "pipenv-resolver",
+        "pipx",
+        "py.test",
+        "pydoc",
+        "pydoc3",
+        "pydoc3.12",
+        "pygmentize",
+        "pytest",
+        "python",
+        "python-config",
+        "python3",
+        "python3-config",
+        "python3.12",
+        "python3.12-config",
+        "register-python-argcomplete",
+        "rich",
+        "rst2html",
+        "rst2html4",
+        "rst2html5",
+        "rst2latex",
+        "rst2man",
+        "rst2odt",
+        "rst2pseudoxml",
+        "rst2s5",
+        "rst2xetex",
+        "rst2xml",
+        "sqlfluff",
+        "tox",
+        "tqdm",
+        "trove-classifiers",
+        "userpath",
+        "uv",
+        "uvicorn",
+        "uvx",
+        "virtualenv"
+      ],
+      "notices": [
+        {
+          "path": "httpie-3.2.4.dist-info/LICENSE",
+          "sha256": "89a72f18e678d9db71553f9a30bc0c436c71a61496849af9cd477871b70c31ef",
+          "text": "Copyright \u00a9 2012-2022 Jakub Roztocil <jakub@roztocil.co>\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n    1. Redistributions of source code must retain the above copyright notice,\n       this list of conditions and the following disclaimer.\n\n    2. Redistributions in binary form must reproduce the above copyright\n       notice, this list of conditions and the following disclaimer in the\n       documentation and/or other materials provided with the distribution.\n\n    3. Neither the name of the copyright holder nor the names of its contributors\n       may be used to endorse or promote products derived from this software\n       without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
+        }
+      ],
+      "family_source_candidates": [
+        {
+          "path": "httpie/cli/argparser.py",
+          "sha256": "6f2408a5e917e3d0fc5ad5c725252d98022990299b1ec5182b2237749d513077",
+          "imports": [
+            {
+              "line": 1,
+              "text": "import argparse"
+            },
+            {
+              "line": 6,
+              "text": "from argparse import RawDescriptionHelpFormatter"
+            }
+          ],
+          "calls": [
+            {
+              "line": 32,
+              "family": "argparse",
+              "text": "class HTTPieHelpFormatter(RawDescriptionHelpFormatter):"
+            },
+            {
+              "line": 81,
+              "family": "argparse",
+              "text": "class BaseHTTPieArgumentParser(argparse.ArgumentParser):"
+            },
+            {
+              "line": 158,
+              "family": "argparse",
+              "text": "self.env.args = namespace = namespace or argparse.Namespace()"
+            },
+            {
+              "line": 134,
+              "family": "argparse",
+              "text": "raise argparse.ArgumentError(None, None)"
+            }
+          ]
+        },
+        {
+          "path": "httpie/cli/argtypes.py",
+          "sha256": "de2f97a67bc7babfacf61098b7344f4c8c5f28e29216d09d1ab9c3cb45e96518",
+          "imports": [
+            {
+              "line": 1,
+              "text": "import argparse"
+            }
+          ],
+          "calls": [
+            {
+              "line": 273,
+              "family": "argparse",
+              "text": "raise argparse.ArgumentTypeError("
+            },
+            {
+              "line": 37,
+              "family": "argparse",
+              "text": "raise argparse.ArgumentError(None, self.error_message)"
+            },
+            {
+              "line": 106,
+              "family": "argparse",
+              "text": "raise argparse.ArgumentTypeError(f'{s!r} is not a valid value')"
+            },
+            {
+              "line": 199,
+              "family": "argparse",
+              "text": "raise argparse.ArgumentTypeError(f'{ex.filename}: {ex.strerror}')"
+            },
+            {
+              "line": 266,
+              "family": "argparse",
+              "text": "raise argparse.ArgumentTypeError("
+            },
+            {
+              "line": 223,
+              "family": "argparse",
+              "text": "raise argparse.ArgumentTypeError(f'invalid option {option!r}')"
+            },
+            {
+              "line": 244,
+              "family": "argparse",
+              "text": "raise argparse.ArgumentTypeError("
+            },
+            {
+              "line": 239,
+              "family": "argparse",
+              "text": "raise argparse.ArgumentTypeError("
+            }
+          ]
+        },
+        {
+          "path": "httpie/cli/definition.py",
+          "sha256": "c5efca2df0b6f4018a50623bfc1bf170826c790d1340e2e9c47fd1e0e66e2fc1",
+          "imports": [
+            {
+              "line": 5,
+              "text": "from argparse import FileType"
+            }
+          ],
+          "calls": [
+            {
+              "line": 526,
+              "family": "argparse",
+              "text": "type=FileType('a+b'),"
+            }
+          ]
+        },
+        {
+          "path": "httpie/cli/utils.py",
+          "sha256": "95dc7b7b4866ac29dfb23818cc0074d7b65ca24d37e11deca93492c8dd5c325b",
+          "imports": [
+            {
+              "line": 1,
+              "text": "import argparse"
+            }
+          ],
+          "calls": [
+            {
+              "line": 7,
+              "family": "argparse",
+              "text": "class Manual(argparse.Action):"
+            },
+            {
+              "line": 28,
+              "family": "argparse",
+              "text": "class LazyChoices(argparse.Action, Generic[T]):"
+            }
+          ]
+        },
+        {
+          "path": "httpie/context.py",
+          "sha256": "e4d2d6d7397158b44341570e27f693bb6e4a4ce57e245af4aef289b9d3957723",
+          "imports": [
+            {
+              "line": 1,
+              "text": "import argparse"
+            }
+          ],
+          "calls": [
+            {
+              "line": 56,
+              "family": "argparse",
+              "text": "args = argparse.Namespace()"
+            }
+          ]
+        },
+        {
+          "path": "httpie/internal/daemon_runner.py",
+          "sha256": "54dd4c4db1368ef44e2fe5f10103b60ea2d38084d3c2fd0ff944e79ce10bf1ec",
+          "imports": [
+            {
+              "line": 1,
+              "text": "import argparse"
+            }
+          ],
+          "calls": [
+            {
+              "line": 31,
+              "family": "argparse",
+              "text": "parser = argparse.ArgumentParser()"
+            }
+          ]
+        }
+      ],
+      "wheel_man_files": [
+        "../../../share/man/man1/http.1",
+        "../../../share/man/man1/httpie.1",
+        "../../../share/man/man1/https.1"
+      ],
+      "wheel_completion_files": [],
+      "machine_readable_spec_surface": null
+    },
+    {
+      "package": "rich-cli",
+      "version": "1.8.1",
+      "prefix": "/usr/local",
+      "entrypoints": [
+        {
+          "name": "rich",
+          "value": "rich_cli.__main__:run"
+        }
+      ],
+      "bin_files": [
+        "2to3",
+        "2to3-3.12",
+        "activate-global-python-argcomplete",
+        "black",
+        "blackd",
+        "cffi-gen-src",
+        "chardetect",
+        "cmark",
+        "datasette",
+        "diff-cover",
+        "diff-quality",
+        "docutils",
+        "hatch",
+        "hatchling",
+        "http",
+        "httpie",
+        "https",
+        "httpx",
+        "hupper",
+        "idle",
+        "idle3",
+        "idle3.12",
+        "idna",
+        "keyring",
+        "normalizer",
+        "pip",
+        "pip3",
+        "pip3.12",
+        "pipenv",
+        "pipenv-resolver",
+        "pipx",
+        "py.test",
+        "pydoc",
+        "pydoc3",
+        "pydoc3.12",
+        "pygmentize",
+        "pytest",
+        "python",
+        "python-config",
+        "python3",
+        "python3-config",
+        "python3.12",
+        "python3.12-config",
+        "register-python-argcomplete",
+        "rich",
+        "rst2html",
+        "rst2html4",
+        "rst2html5",
+        "rst2latex",
+        "rst2man",
+        "rst2odt",
+        "rst2pseudoxml",
+        "rst2s5",
+        "rst2xetex",
+        "rst2xml",
+        "sqlfluff",
+        "tox",
+        "tqdm",
+        "trove-classifiers",
+        "userpath",
+        "uv",
+        "uvicorn",
+        "uvx",
+        "virtualenv"
+      ],
+      "notices": [
+        {
+          "path": "rich_cli-1.8.1.dist-info/LICENSE",
+          "sha256": "cb5ea47b8c9c7a45785c535c2ef8e2d02326d5676ac5c0acc5a6573f2b7171f2",
+          "text": "MIT License\n\nCopyright (c) 2022 Will McGugan\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+        }
+      ],
+      "family_source_candidates": [
+        {
+          "path": "rich_cli/__main__.py",
+          "sha256": "d9e86132f0a8d7d65a34afd3dc8f2a7519d93432d6995144ce19a354849bb2c4",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 163,
+              "family": "click",
+              "text": "class RichCommand(click.Command):"
+            },
+            {
+              "line": 247,
+              "family": "click",
+              "text": "@click.command(cls=RichCommand)"
+            },
+            {
+              "line": 248,
+              "family": "click",
+              "text": "@click.argument(\"resource\", metavar=\"<PATH or TEXT or '-'>\", default=\"\")"
+            },
+            {
+              "line": 249,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 256,
+              "family": "click",
+              "text": "@click.option(\"--rule\", \"-u\", is_flag=True, help=\"Display a horizontal [u]rule[/u].\")"
+            },
+            {
+              "line": 257,
+              "family": "click",
+              "text": "@click.option(\"--json\", \"-J\", is_flag=True, help=\"Display as [u]JSON[/u].\")"
+            },
+            {
+              "line": 258,
+              "family": "click",
+              "text": "@click.option(\"--markdown\", \"-m\", is_flag=True, help=\"Display as [u]markdown[/u].\")"
+            },
+            {
+              "line": 259,
+              "family": "click",
+              "text": "@click.option(\"--rst\", is_flag=True, help=\"Display [u]restructured text[/u].\")"
+            },
+            {
+              "line": 260,
+              "family": "click",
+              "text": "@click.option(\"--csv\", is_flag=True, help=\"Display [u]CSV[/u] as a table.\")"
+            },
+            {
+              "line": 261,
+              "family": "click",
+              "text": "@click.option(\"--ipynb\", is_flag=True, help=\"Display [u]Jupyter notebook[/u].\")"
+            },
+            {
+              "line": 262,
+              "family": "click",
+              "text": "@click.option(\"--syntax\", is_flag=True, help=\"[u]Syntax[/u] highlighting.\")"
+            },
+            {
+              "line": 263,
+              "family": "click",
+              "text": "@click.option(\"--inspect\", is_flag=True, help=\"[u]Inspect[/u] a python object.\")"
+            }
+          ]
+        }
+      ],
+      "wheel_man_files": [],
+      "wheel_completion_files": [],
+      "machine_readable_spec_surface": null
+    },
+    {
+      "package": "sqlfluff",
+      "version": "3.4.2",
+      "prefix": "/usr/local",
+      "entrypoints": [
+        {
+          "name": "sqlfluff",
+          "value": "sqlfluff.cli.commands:cli"
+        }
+      ],
+      "bin_files": [
+        "2to3",
+        "2to3-3.12",
+        "activate-global-python-argcomplete",
+        "black",
+        "blackd",
+        "cffi-gen-src",
+        "chardetect",
+        "cmark",
+        "datasette",
+        "diff-cover",
+        "diff-quality",
+        "docutils",
+        "hatch",
+        "hatchling",
+        "http",
+        "httpie",
+        "https",
+        "httpx",
+        "hupper",
+        "idle",
+        "idle3",
+        "idle3.12",
+        "idna",
+        "keyring",
+        "normalizer",
+        "pip",
+        "pip3",
+        "pip3.12",
+        "pipenv",
+        "pipenv-resolver",
+        "pipx",
+        "py.test",
+        "pydoc",
+        "pydoc3",
+        "pydoc3.12",
+        "pygmentize",
+        "pytest",
+        "python",
+        "python-config",
+        "python3",
+        "python3-config",
+        "python3.12",
+        "python3.12-config",
+        "register-python-argcomplete",
+        "rich",
+        "rst2html",
+        "rst2html4",
+        "rst2html5",
+        "rst2latex",
+        "rst2man",
+        "rst2odt",
+        "rst2pseudoxml",
+        "rst2s5",
+        "rst2xetex",
+        "rst2xml",
+        "sqlfluff",
+        "tox",
+        "tqdm",
+        "trove-classifiers",
+        "userpath",
+        "uv",
+        "uvicorn",
+        "uvx",
+        "virtualenv"
+      ],
+      "notices": [
+        {
+          "path": "sqlfluff-3.4.2.dist-info/licenses/LICENSE.md",
+          "sha256": "74be6306100baa19b0bada4ee1f61156223a2424cb690a5e3ea1d7301043bc64",
+          "text": "MIT License\n\nCopyright (c) 2023 Alan Cruickshank\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+        }
+      ],
+      "family_source_candidates": [
+        {
+          "path": "sqlfluff/cli/autocomplete.py",
+          "sha256": "f6d3d74365cb4a13994f5245f159d227852c1a309debe0ccf35b907367d877c7",
+          "imports": [
+            {
+              "line": 10,
+              "text": "from click.shell_completion import CompletionItem"
+            }
+          ],
+          "calls": [
+            {
+              "line": 29,
+              "family": "click",
+              "text": "CompletionItem(name) for name in dialect_names if name.startswith(incomplete)"
+            }
+          ]
+        },
+        {
+          "path": "sqlfluff/cli/commands.py",
+          "sha256": "5dd422cc9760dae8025db3a61ea0b2b5ad9d2cfe91a597fd044295f7aee4c663",
+          "imports": [
+            {
+              "line": 12,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 465,
+              "family": "click",
+              "text": "@click.group("
+            },
+            {
+              "line": 479,
+              "family": "click",
+              "text": "@click.version_option()"
+            },
+            {
+              "line": 545,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 553,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 561,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 572,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 580,
+              "family": "click",
+              "text": "@click.argument(\"paths\", nargs=-1, type=click.Path(allow_dash=True))"
+            },
+            {
+              "line": 1004,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 1015,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 1024,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 1034,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 1040,
+              "family": "click",
+              "text": "@click.option("
+            }
+          ]
+        },
+        {
+          "path": "sqlfluff/cli/formatters.py",
+          "sha256": "6adaacfca9d12c9d63ba0d73c111a445014a812438413fcd0eba254bf306bb86",
+          "imports": [
+            {
+              "line": 8,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 714,
+              "family": "click",
+              "text": "click.echo(f\"All Finished{'' if self.plain_output else ' \ud83d\udcdc \ud83c\udf89'}!\")"
+            },
+            {
+              "line": 619,
+              "family": "click",
+              "text": "click.echo("
+            },
+            {
+              "line": 628,
+              "family": "click",
+              "text": "click.echo("
+            }
+          ]
+        },
+        {
+          "path": "sqlfluff/cli/outputstream.py",
+          "sha256": "2250defd004b2a2efaab08ffc89fa47990265a4efcc3e677331a27ff12ecd86d",
+          "imports": [
+            {
+              "line": 7,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 43,
+              "family": "click",
+              "text": "click.echo(message=message, color=self.config.get(\"color\"))"
+            }
+          ]
+        },
+        {
+          "path": "sqlfluff/utils/testing/cli.py",
+          "sha256": "2433c7a617b8718ca50082f1334da6a8e260a86715ee873bd8553c478173525b",
+          "imports": [
+            {
+              "line": 6,
+              "text": "from click.testing import CliRunner, Result"
+            }
+          ],
+          "calls": [
+            {
+              "line": 24,
+              "family": "click",
+              "text": "runner = CliRunner(mix_stderr=False)  # type: ignore[call-arg,unused-ignore]"
+            },
+            {
+              "line": 26,
+              "family": "click",
+              "text": "runner = CliRunner()"
+            }
+          ]
+        }
+      ],
+      "wheel_man_files": [],
+      "wheel_completion_files": [],
+      "machine_readable_spec_surface": null
+    },
+    {
+      "package": "hatch",
+      "version": "1.14.2",
+      "prefix": "/usr/local",
+      "entrypoints": [
+        {
+          "name": "hatch",
+          "value": "hatch.cli:main"
+        }
+      ],
+      "bin_files": [
+        "2to3",
+        "2to3-3.12",
+        "activate-global-python-argcomplete",
+        "black",
+        "blackd",
+        "cffi-gen-src",
+        "chardetect",
+        "cmark",
+        "datasette",
+        "diff-cover",
+        "diff-quality",
+        "docutils",
+        "hatch",
+        "hatchling",
+        "http",
+        "httpie",
+        "https",
+        "httpx",
+        "hupper",
+        "idle",
+        "idle3",
+        "idle3.12",
+        "idna",
+        "keyring",
+        "normalizer",
+        "pip",
+        "pip3",
+        "pip3.12",
+        "pipenv",
+        "pipenv-resolver",
+        "pipx",
+        "py.test",
+        "pydoc",
+        "pydoc3",
+        "pydoc3.12",
+        "pygmentize",
+        "pytest",
+        "python",
+        "python-config",
+        "python3",
+        "python3-config",
+        "python3.12",
+        "python3.12-config",
+        "register-python-argcomplete",
+        "rich",
+        "rst2html",
+        "rst2html4",
+        "rst2html5",
+        "rst2latex",
+        "rst2man",
+        "rst2odt",
+        "rst2pseudoxml",
+        "rst2s5",
+        "rst2xetex",
+        "rst2xml",
+        "sqlfluff",
+        "tox",
+        "tqdm",
+        "trove-classifiers",
+        "userpath",
+        "uv",
+        "uvicorn",
+        "uvx",
+        "virtualenv"
+      ],
+      "notices": [
+        {
+          "path": "hatch-1.14.2.dist-info/licenses/LICENSE.txt",
+          "sha256": "9f4f88aa42884240ae152d6fdd0e0b7e83e2430169c8ce613ae18f6a840f1c57",
+          "text": "MIT License\n\nCopyright (c) 2017-present Ofek Lev <oss@ofek.dev>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n"
+        }
+      ],
+      "family_source_candidates": [
+        {
+          "path": "hatch/cli/__init__.py",
+          "sha256": "09d1956a35da52f8fe2d6f4b64034fe9e60cd89650e7fcde020ea6563a926a6b",
+          "imports": [
+            {
+              "line": 3,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 29,
+              "family": "click",
+              "text": "@click.group("
+            },
+            {
+              "line": 32,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 40,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 46,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 53,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 60,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 65,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 74,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 79,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 84,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 90,
+              "family": "click",
+              "text": "@click.version_option(version=__version__, prog_name='Hatch')"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/build/__init__.py",
+          "sha256": "ea0ae633a474d112205848346654d61c389cccb4fdc6a03ca35d5abf1335fee2",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 11,
+              "family": "click",
+              "text": "@click.command(short_help='Build a project')"
+            },
+            {
+              "line": 12,
+              "family": "click",
+              "text": "@click.argument('location', required=False)"
+            },
+            {
+              "line": 13,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 23,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 26,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 29,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 37,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 43,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 51,
+              "family": "click",
+              "text": "@click.option('--clean-only', is_flag=True, hidden=True)"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/clean/__init__.py",
+          "sha256": "6e43dfb47a5352ed97353173048cb5a9da06881ad0c38e2c132ee0fb7e939410",
+          "imports": [
+            {
+              "line": 1,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 4,
+              "family": "click",
+              "text": "@click.command(short_help='Remove build artifacts')"
+            },
+            {
+              "line": 5,
+              "family": "click",
+              "text": "@click.argument('location', required=False)"
+            },
+            {
+              "line": 6,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 16,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 21,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 26,
+              "family": "click",
+              "text": "@click.option("
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/config/__init__.py",
+          "sha256": "6f6e20400f44c53781beaa6d202902def29c1f43e6b227809f1179861ece3924",
+          "imports": [
+            {
+              "line": 3,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 6,
+              "family": "click",
+              "text": "@click.group(short_help='Manage the config file')"
+            },
+            {
+              "line": 26,
+              "family": "click",
+              "text": "@click.option('--all', '-a', 'all_keys', is_flag=True, help='Do not scrub secret fields')"
+            },
+            {
+              "line": 54,
+              "family": "click",
+              "text": "@click.argument('key')"
+            },
+            {
+              "line": 55,
+              "family": "click",
+              "text": "@click.argument('value', required=False)"
+            },
+            {
+              "line": 15,
+              "family": "click",
+              "text": "click.launch(str(app.config_file.path), locate=True)"
+            },
+            {
+              "line": 71,
+              "family": "click",
+              "text": "value = click.prompt(f'Value for `{key}`', hide_input=scrubbing)"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/dep/__init__.py",
+          "sha256": "49c406e65db745c1b4688a12b8d3a241393367e5a6cd7d4bdcbd953b663502d1",
+          "imports": [
+            {
+              "line": 1,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 4,
+              "family": "click",
+              "text": "@click.group(short_help='Manage environment dependencies')"
+            },
+            {
+              "line": 10,
+              "family": "click",
+              "text": "@click.option('--project-only', '-p', is_flag=True, help='Whether or not to exclude environment dependencies')"
+            },
+            {
+              "line": 11,
+              "family": "click",
+              "text": "@click.option('--env-only', '-e', is_flag=True, help='Whether or not to exclude project dependencies')"
+            },
+            {
+              "line": 41,
+              "family": "click",
+              "text": "@click.option('--project-only', '-p', is_flag=True, help='Whether or not to exclude environment dependencies')"
+            },
+            {
+              "line": 42,
+              "family": "click",
+              "text": "@click.option('--env-only', '-e', is_flag=True, help='Whether or not to exclude project dependencies')"
+            },
+            {
+              "line": 43,
+              "family": "click",
+              "text": "@click.option('--lines', '-l', 'show_lines', is_flag=True, help='Whether or not to show lines between table rows')"
+            },
+            {
+              "line": 44,
+              "family": "click",
+              "text": "@click.option('--ascii', 'force_ascii', is_flag=True, help='Whether or not to only use ASCII characters')"
+            },
+            {
+              "line": 104,
+              "family": "click",
+              "text": "@click.option('--project-only', '-p', is_flag=True, help='Whether or not to exclude environment dependencies')"
+            },
+            {
+              "line": 105,
+              "family": "click",
+              "text": "@click.option('--env-only', '-e', is_flag=True, help='Whether or not to exclude project dependencies')"
+            },
+            {
+              "line": 106,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 113,
+              "family": "click",
+              "text": "@click.option('--all', 'all_features', is_flag=True, help='Whether or not to include the dependencies of all features')"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/env/__init__.py",
+          "sha256": "16bdad3399bd5d8e6525b60a3d5cc1934c3299997189a2c6f3894dddaeec96fd",
+          "imports": [
+            {
+              "line": 1,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 11,
+              "family": "click",
+              "text": "@click.group(short_help='Manage project environments')"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/env/create.py",
+          "sha256": "4f7fb8b3bf8c77d48a08e7082f0c09d1fa70ae1fe1eaa9002b658ad4157ed847",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 11,
+              "family": "click",
+              "text": "@click.command(short_help='Create environments')"
+            },
+            {
+              "line": 12,
+              "family": "click",
+              "text": "@click.argument('env_name', default='default')"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/env/find.py",
+          "sha256": "c655c0d4c681c921c1c6b93b8bc012475a1591751a4fd633ba07655c9f1319cd",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 11,
+              "family": "click",
+              "text": "@click.command(short_help='Locate environments')"
+            },
+            {
+              "line": 12,
+              "family": "click",
+              "text": "@click.argument('env_name', default='default')"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/env/prune.py",
+          "sha256": "8d904684d3d1f65193b506431324dfb71422bc68f38f0b06d1093787b9d5d8ab",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 11,
+              "family": "click",
+              "text": "@click.command(short_help='Remove all environments')"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/env/remove.py",
+          "sha256": "7569c95aa8aa70f5a460c19361c91060540429bb3028cc77145c6cde408a5290",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 11,
+              "family": "click",
+              "text": "@click.command(short_help='Remove environments')"
+            },
+            {
+              "line": 12,
+              "family": "click",
+              "text": "@click.argument('env_name', default='default')"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/env/run.py",
+          "sha256": "00586d9a02e11f3ebc0e1c62d4ba15477bbe21a6858266e394e99287377f27f2",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 23,
+              "family": "click",
+              "text": "@click.command(short_help='Run commands within project environments')"
+            },
+            {
+              "line": 24,
+              "family": "click",
+              "text": "@click.argument('args', required=True, nargs=-1)"
+            },
+            {
+              "line": 25,
+              "family": "click",
+              "text": "@click.option('--env', '-e', 'env_names', multiple=True, help='The environments to target')"
+            },
+            {
+              "line": 26,
+              "family": "click",
+              "text": "@click.option('--include', '-i', 'included_variable_specs', multiple=True, help='The matrix variables to include')"
+            },
+            {
+              "line": 27,
+              "family": "click",
+              "text": "@click.option('--exclude', '-x', 'excluded_variable_specs', multiple=True, help='The matrix variables to exclude')"
+            },
+            {
+              "line": 28,
+              "family": "click",
+              "text": "@click.option('--filter', '-f', 'filter_json', default=None, help='The JSON data used to select environments')"
+            },
+            {
+              "line": 29,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 32,
+              "family": "click",
+              "text": "@click.option('--ignore-compat', is_flag=True, help='Ignore incompatibility when selecting specific environments')"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/env/show.py",
+          "sha256": "bc346d6a930148af59da2b2489a60637c442d294e7e007058e571cc69d15b11e",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 11,
+              "family": "click",
+              "text": "@click.command(short_help='Show the available environments')"
+            },
+            {
+              "line": 12,
+              "family": "click",
+              "text": "@click.argument('envs', required=False, nargs=-1)"
+            },
+            {
+              "line": 13,
+              "family": "click",
+              "text": "@click.option('--ascii', 'force_ascii', is_flag=True, help='Whether or not to only use ASCII characters')"
+            },
+            {
+              "line": 14,
+              "family": "click",
+              "text": "@click.option('--json', 'as_json', is_flag=True, help='Whether or not to output in JSON format')"
+            },
+            {
+              "line": 15,
+              "family": "click",
+              "text": "@click.option('--internal', '-i', is_flag=True, help='Show internal environments')"
+            },
+            {
+              "line": 16,
+              "family": "click",
+              "text": "@click.option('--hide-titles', is_flag=True, hidden=True)"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/fmt/__init__.py",
+          "sha256": "74b387eee1840f7c6a864b310f525269d1b2c1346255e4649315ca0baf94eff4",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 11,
+              "family": "click",
+              "text": "@click.command(short_help='Format and lint source code', context_settings={'ignore_unknown_options': True})"
+            },
+            {
+              "line": 12,
+              "family": "click",
+              "text": "@click.argument('args', nargs=-1)"
+            },
+            {
+              "line": 13,
+              "family": "click",
+              "text": "@click.option('--check', is_flag=True, help='Only check for errors rather than fixing them')"
+            },
+            {
+              "line": 14,
+              "family": "click",
+              "text": "@click.option('--linter', '-l', is_flag=True, help='Only run the linter')"
+            },
+            {
+              "line": 15,
+              "family": "click",
+              "text": "@click.option('--formatter', '-f', is_flag=True, help='Only run the formatter')"
+            },
+            {
+              "line": 16,
+              "family": "click",
+              "text": "@click.option('--sync', is_flag=True, help='Sync the default config file with the current version of Hatch')"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/new/__init__.py",
+          "sha256": "f2187b7f2c6f636e55a037f36c3c06e5115dbd2db2efaeb4dd6275240949fc9a",
+          "imports": [
+            {
+              "line": 1,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 4,
+              "family": "click",
+              "text": "@click.command(short_help='Create or initialize a project')"
+            },
+            {
+              "line": 5,
+              "family": "click",
+              "text": "@click.argument('name', required=False)"
+            },
+            {
+              "line": 6,
+              "family": "click",
+              "text": "@click.argument('location', required=False)"
+            },
+            {
+              "line": 7,
+              "family": "click",
+              "text": "@click.option('--interactive', '-i', 'interactive', is_flag=True, help='Interactively choose details about the project')"
+            },
+            {
+              "line": 8,
+              "family": "click",
+              "text": "@click.option('--cli', 'feature_cli', is_flag=True, help='Give the project a command line interface')"
+            },
+            {
+              "line": 9,
+              "family": "click",
+              "text": "@click.option('--init', 'initialize', is_flag=True, help='Initialize an existing project')"
+            },
+            {
+              "line": 10,
+              "family": "click",
+              "text": "@click.option('-so', 'setuptools_options', multiple=True, hidden=True)"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/project/__init__.py",
+          "sha256": "b5f92d95b75a5db69c366cffb69cd4cdaec2395167f8573edeac989623eb1a9d",
+          "imports": [
+            {
+              "line": 1,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 6,
+              "family": "click",
+              "text": "@click.group(short_help='View project information')"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/project/metadata.py",
+          "sha256": "9d7941c91b95f524947e73c374fc53999dcfb5ee28b2366fa0006fbac409086e",
+          "imports": [
+            {
+              "line": 1,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 4,
+              "family": "click",
+              "text": "@click.command(short_help='Display project metadata')"
+            },
+            {
+              "line": 5,
+              "family": "click",
+              "text": "@click.argument('field', required=False)"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/publish/__init__.py",
+          "sha256": "0661209d0bbafd5a4ce33a2c2b5004d74e58abe099b87bbd75aca083521540fc",
+          "imports": [
+            {
+              "line": 1,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 6,
+              "family": "click",
+              "text": "@click.command(short_help='Publish build artifacts')"
+            },
+            {
+              "line": 7,
+              "family": "click",
+              "text": "@click.argument('artifacts', nargs=-1)"
+            },
+            {
+              "line": 8,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 14,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 17,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 23,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 28,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 33,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 38,
+              "family": "click",
+              "text": "@click.option('--no-prompt', '-n', is_flag=True, help='Disable prompts, such as for missing required fields')"
+            },
+            {
+              "line": 39,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 42,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 50,
+              "family": "click",
+              "text": "@click.option("
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/python/__init__.py",
+          "sha256": "1f17edbc48346bba68b670cba3358e265af352fb04b9d0fe1f9d80b241b82645",
+          "imports": [
+            {
+              "line": 1,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 10,
+              "family": "click",
+              "text": "@click.group(short_help='Manage Python installations')"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/python/find.py",
+          "sha256": "36d642078a945f65bd2f99028f9081b4747a4cfc3037fc8b25437bf4cf7b2471",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 11,
+              "family": "click",
+              "text": "@click.command(short_help='Locate Python binaries')"
+            },
+            {
+              "line": 12,
+              "family": "click",
+              "text": "@click.argument('name')"
+            },
+            {
+              "line": 13,
+              "family": "click",
+              "text": "@click.option('-p', '--parent', is_flag=True, help='Show the parent directory of the Python binary')"
+            },
+            {
+              "line": 14,
+              "family": "click",
+              "text": "@click.option('--dir', '-d', 'directory', help='The directory in which distributions reside')"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/python/install.py",
+          "sha256": "d2a5cdec812832e9abde1897f8caace46d09f10c47cd790bd95abc2725210326",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 21,
+              "family": "click",
+              "text": "@click.command(short_help='Install Python distributions')"
+            },
+            {
+              "line": 22,
+              "family": "click",
+              "text": "@click.argument('names', required=True, nargs=-1)"
+            },
+            {
+              "line": 23,
+              "family": "click",
+              "text": "@click.option('--private', is_flag=True, help='Do not add distributions to the user PATH')"
+            },
+            {
+              "line": 24,
+              "family": "click",
+              "text": "@click.option('--update', '-u', is_flag=True, help='Update existing installations')"
+            },
+            {
+              "line": 25,
+              "family": "click",
+              "text": "@click.option("
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/python/remove.py",
+          "sha256": "8e189d191b3794828b19aaa1b4a230d93724978dab3043f2ff437070388e2448",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 11,
+              "family": "click",
+              "text": "@click.command(short_help='Remove Python distributions')"
+            },
+            {
+              "line": 12,
+              "family": "click",
+              "text": "@click.argument('names', required=True, nargs=-1)"
+            },
+            {
+              "line": 13,
+              "family": "click",
+              "text": "@click.option('--dir', '-d', 'directory', help='The directory in which distributions reside')"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/python/show.py",
+          "sha256": "ebfc07507258fd50098dbe76ec8e704f66e772d80fa1f738cdc5d5dc4f84fb68",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 11,
+              "family": "click",
+              "text": "@click.command(short_help='Show the available Python distributions')"
+            },
+            {
+              "line": 12,
+              "family": "click",
+              "text": "@click.option('--ascii', 'force_ascii', is_flag=True, help='Whether or not to only use ASCII characters')"
+            },
+            {
+              "line": 13,
+              "family": "click",
+              "text": "@click.option('--dir', '-d', 'directory', help='The directory in which distributions reside')"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/python/update.py",
+          "sha256": "f5fc46c3ebda5dffabd7330ab3001b59883dade5d04e14a454c574ea86635b2d",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 13,
+              "family": "click",
+              "text": "@click.command(short_help='Update Python distributions')"
+            },
+            {
+              "line": 14,
+              "family": "click",
+              "text": "@click.argument('names', required=True, nargs=-1)"
+            },
+            {
+              "line": 15,
+              "family": "click",
+              "text": "@click.option('--dir', '-d', 'directory', help='The directory in which distributions reside')"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/run/__init__.py",
+          "sha256": "f581a37bc887dda9d238ff717f5a9ce1bb4c7b3a02277e5a24b91e41c2943ac5",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 11,
+              "family": "click",
+              "text": "@click.command("
+            },
+            {
+              "line": 15,
+              "family": "click",
+              "text": "@click.argument('args', metavar='[ENV:]ARGS...', required=True, nargs=-1)"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/self/__init__.py",
+          "sha256": "3b2948f7ea4c6f6a19696fad7ebb4a0dcac15885b4f920972e069c411612c662",
+          "imports": [
+            {
+              "line": 3,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 10,
+              "family": "click",
+              "text": "@click.group(name=__management_command, short_help='Manage Hatch')"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/self/report.py",
+          "sha256": "c8cad4cd0b6e7cfd81e48e8609ad1afe60016b6924d56ffe10b89c7b6bf6be5c",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 66,
+              "family": "click",
+              "text": "@click.command(short_help='Generate a pre-populated GitHub issue')"
+            },
+            {
+              "line": 67,
+              "family": "click",
+              "text": "@click.option('--no-open', '-n', is_flag=True, help='Show the URL instead of opening it')"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/self/restore.py",
+          "sha256": "22176ad5109c0d0607408bc0c067b8e1d8bf6dd5d076c21e3b801da3687b1dd5",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 11,
+              "family": "click",
+              "text": "@click.command("
+            },
+            {
+              "line": 14,
+              "family": "click",
+              "text": "@click.argument('args', nargs=-1)"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/self/update.py",
+          "sha256": "7b0c8c76887fdfacfdc318270d6752931eb8ded98e50e6f42adc7bd1bdb1ad8d",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 11,
+              "family": "click",
+              "text": "@click.command("
+            },
+            {
+              "line": 14,
+              "family": "click",
+              "text": "@click.argument('args', nargs=-1)"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/shell/__init__.py",
+          "sha256": "9cd2a2905ff95a72c852a2eecfea877317e7307b63bc5962b726758871b10f90",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 11,
+              "family": "click",
+              "text": "@click.command(short_help=\"Enter a shell within a project's environment\")"
+            },
+            {
+              "line": 12,
+              "family": "click",
+              "text": "@click.argument('env_name', required=False)"
+            },
+            {
+              "line": 13,
+              "family": "click",
+              "text": "@click.option('--name')"
+            },
+            {
+              "line": 14,
+              "family": "click",
+              "text": "@click.option('--path')"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/status/__init__.py",
+          "sha256": "5e4d495ead102bfd866a535b11bc1138266731e0c16b328d475c6ec535d5aa40",
+          "imports": [
+            {
+              "line": 1,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 4,
+              "family": "click",
+              "text": "@click.command(short_help='Show information about the current environment')"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/terminal.py",
+          "sha256": "9e434ea1e07466f73a2b16755b7bb72fa71e6fb9faf061bd1479e2e3b526ec65",
+          "imports": [
+            {
+              "line": 9,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 368,
+              "family": "click",
+              "text": "return click.prompt(text, **kwargs)"
+            },
+            {
+              "line": 372,
+              "family": "click",
+              "text": "return click.confirm(text, **kwargs)"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/test/__init__.py",
+          "sha256": "c0cf2d60a6bd9bb0e810d3fa4a8fa463ff0beffe9b58e18906c62074373c8c0f",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 12,
+              "family": "click",
+              "text": "@click.command(short_help='Run tests', context_settings={'ignore_unknown_options': True})"
+            },
+            {
+              "line": 13,
+              "family": "click",
+              "text": "@click.argument('args', nargs=-1)"
+            },
+            {
+              "line": 14,
+              "family": "click",
+              "text": "@click.option('--randomize', '-r', is_flag=True, help='Randomize the order of test execution')"
+            },
+            {
+              "line": 15,
+              "family": "click",
+              "text": "@click.option('--parallel', '-p', is_flag=True, help='Parallelize test execution')"
+            },
+            {
+              "line": 16,
+              "family": "click",
+              "text": "@click.option('--retries', type=int, help='Number of times to retry failed tests')"
+            },
+            {
+              "line": 17,
+              "family": "click",
+              "text": "@click.option('--retry-delay', type=float, help='Seconds to wait between retries')"
+            },
+            {
+              "line": 18,
+              "family": "click",
+              "text": "@click.option('--cover', '-c', is_flag=True, help='Measure code coverage')"
+            },
+            {
+              "line": 19,
+              "family": "click",
+              "text": "@click.option('--cover-quiet', is_flag=True, help='Disable coverage reporting after tests, implicitly enabling --cover')"
+            },
+            {
+              "line": 20,
+              "family": "click",
+              "text": "@click.option('--all', '-a', 'test_all', is_flag=True, help='Test all environments in the matrix')"
+            },
+            {
+              "line": 21,
+              "family": "click",
+              "text": "@click.option('--python', '-py', help='The Python versions to test, equivalent to: -i py=...')"
+            },
+            {
+              "line": 22,
+              "family": "click",
+              "text": "@click.option('--include', '-i', 'included_variable_specs', multiple=True, help='The matrix variables to include')"
+            },
+            {
+              "line": 23,
+              "family": "click",
+              "text": "@click.option('--exclude', '-x', 'excluded_variable_specs', multiple=True, help='The matrix variables to exclude')"
+            }
+          ]
+        },
+        {
+          "path": "hatch/cli/version/__init__.py",
+          "sha256": "d805db2599b0fb65e8587b73671ff7e8290eff291ae0283158fd5aa9c48a6093",
+          "imports": [
+            {
+              "line": 5,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 11,
+              "family": "click",
+              "text": "@click.command(short_help=\"View or set a project's version\")"
+            },
+            {
+              "line": 12,
+              "family": "click",
+              "text": "@click.argument('desired_version', required=False)"
+            }
+          ]
+        }
+      ],
+      "wheel_man_files": [],
+      "wheel_completion_files": [],
+      "machine_readable_spec_surface": null
+    },
+    {
+      "package": "datasette",
+      "version": "0.65.1",
+      "prefix": "/usr/local",
+      "entrypoints": [
+        {
+          "name": "datasette",
+          "value": "datasette.cli:cli"
+        }
+      ],
+      "bin_files": [
+        "2to3",
+        "2to3-3.12",
+        "activate-global-python-argcomplete",
+        "black",
+        "blackd",
+        "cffi-gen-src",
+        "chardetect",
+        "cmark",
+        "datasette",
+        "diff-cover",
+        "diff-quality",
+        "docutils",
+        "hatch",
+        "hatchling",
+        "http",
+        "httpie",
+        "https",
+        "httpx",
+        "hupper",
+        "idle",
+        "idle3",
+        "idle3.12",
+        "idna",
+        "keyring",
+        "normalizer",
+        "pip",
+        "pip3",
+        "pip3.12",
+        "pipenv",
+        "pipenv-resolver",
+        "pipx",
+        "py.test",
+        "pydoc",
+        "pydoc3",
+        "pydoc3.12",
+        "pygmentize",
+        "pytest",
+        "python",
+        "python-config",
+        "python3",
+        "python3-config",
+        "python3.12",
+        "python3.12-config",
+        "register-python-argcomplete",
+        "rich",
+        "rst2html",
+        "rst2html4",
+        "rst2html5",
+        "rst2latex",
+        "rst2man",
+        "rst2odt",
+        "rst2pseudoxml",
+        "rst2s5",
+        "rst2xetex",
+        "rst2xml",
+        "sqlfluff",
+        "tox",
+        "tqdm",
+        "trove-classifiers",
+        "userpath",
+        "uv",
+        "uvicorn",
+        "uvx",
+        "virtualenv"
+      ],
+      "notices": [
+        {
+          "path": "datasette-0.65.1.dist-info/LICENSE",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+          "text": "                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n      other entities that control, are controlled by, or are under common\n      control with that entity. For the purposes of this definition,\n      \"control\" means (i) the power, direct or indirect, to cause the\n      direction or management of such entity, whether by contract or\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n      outstanding shares, or (iii) beneficial ownership of such entity.\n\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n      exercising permissions granted by this License.\n\n      \"Source\" form shall mean the preferred form for making modifications,\n      including but not limited to software source code, documentation\n      source, and configuration files.\n\n      \"Object\" form shall mean any form resulting from mechanical\n      transformation or translation of a Source form, including but\n      not limited to compiled object code, generated documentation,\n      and conversions to other media types.\n\n      \"Work\" shall mean the work of authorship, whether in Source or\n      Object form, made available under the License, as indicated by a\n      copyright notice that is included in or attached to the work\n      (an example is provided in the Appendix below).\n\n      \"Derivative Works\" shall mean any work, whether in Source or Object\n      form, that is based on (or derived from) the Work and for which the\n      editorial revisions, annotations, elaborations, or other modifications\n      represent, as a whole, an original work of authorship. For the purposes\n      of this License, Derivative Works shall not include works that remain\n      separable from, or merely link (or bind by name) to the interfaces of,\n      the Work and Derivative Works thereof.\n\n      \"Contribution\" shall mean any work of authorship, including\n      the original version of the Work and any modifications or additions\n      to that Work or Derivative Works thereof, that is intentionally\n      submitted to Licensor for inclusion in the Work by the copyright owner\n      or by an individual or Legal Entity authorized to submit on behalf of\n      the copyright owner. For the purposes of this definition, \"submitted\"\n      means any form of electronic, verbal, or written communication sent\n      to the Licensor or its representatives, including but not limited to\n      communication on electronic mailing lists, source code control systems,\n      and issue tracking systems that are managed by, or on behalf of, the\n      Licensor for the purpose of discussing and improving the Work, but\n      excluding communication that is conspicuously marked or otherwise\n      designated in writing by the copyright owner as \"Not a Contribution.\"\n\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n      on behalf of whom a Contribution has been received by Licensor and\n      subsequently incorporated within the Work.\n\n   2. Grant of Copyright License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      copyright license to reproduce, prepare Derivative Works of,\n      publicly display, publicly perform, sublicense, and distribute the\n      Work and such Derivative Works in Source or Object form.\n\n   3. Grant of Patent License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      (except as stated in this section) patent license to make, have made,\n      use, offer to sell, sell, import, and otherwise transfer the Work,\n      where such license applies only to those patent claims licensable\n      by such Contributor that are necessarily infringed by their\n      Contribution(s) alone or by combination of their Contribution(s)\n      with the Work to which such Contribution(s) was submitted. If You\n      institute patent litigation against any entity (including a\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\n      or a Contribution incorporated within the Work constitutes direct\n      or contributory patent infringement, then any patent licenses\n      granted to You under this License for that Work shall terminate\n      as of the date such litigation is filed.\n\n   4. Redistribution. You may reproduce and distribute copies of the\n      Work or Derivative Works thereof in any medium, with or without\n      modifications, and in Source or Object form, provided that You\n      meet the following conditions:\n\n      (a) You must give any other recipients of the Work or\n          Derivative Works a copy of this License; and\n\n      (b) You must cause any modified files to carry prominent notices\n          stating that You changed the files; and\n\n      (c) You must retain, in the Source form of any Derivative Works\n          that You distribute, all copyright, patent, trademark, and\n          attribution notices from the Source form of the Work,\n          excluding those notices that do not pertain to any part of\n          the Derivative Works; and\n\n      (d) If the Work includes a \"NOTICE\" text file as part of its\n          distribution, then any Derivative Works that You distribute must\n          include a readable copy of the attribution notices contained\n          within such NOTICE file, excluding those notices that do not\n          pertain to any part of the Derivative Works, in at least one\n          of the following places: within a NOTICE text file distributed\n          as part of the Derivative Works; within the Source form or\n          documentation, if provided along with the Derivative Works; or,\n          within a display generated by the Derivative Works, if and\n          wherever such third-party notices normally appear. The contents\n          of the NOTICE file are for informational purposes only and\n          do not modify the License. You may add Your own attribution\n          notices within Derivative Works that You distribute, alongside\n          or as an addendum to the NOTICE text from the Work, provided\n          that such additional attribution notices cannot be construed\n          as modifying the License.\n\n      You may add Your own copyright statement to Your modifications and\n      may provide additional or different license terms and conditions\n      for use, reproduction, or distribution of Your modifications, or\n      for any such Derivative Works as a whole, provided Your use,\n      reproduction, and distribution of the Work otherwise complies with\n      the conditions stated in this License.\n\n   5. Submission of Contributions. Unless You explicitly state otherwise,\n      any Contribution intentionally submitted for inclusion in the Work\n      by You to the Licensor shall be under the terms and conditions of\n      this License, without any additional terms or conditions.\n      Notwithstanding the above, nothing herein shall supersede or modify\n      the terms of any separate license agreement you may have executed\n      with Licensor regarding such Contributions.\n\n   6. Trademarks. This License does not grant permission to use the trade\n      names, trademarks, service marks, or product names of the Licensor,\n      except as required for reasonable and customary use in describing the\n      origin of the Work and reproducing the content of the NOTICE file.\n\n   7. Disclaimer of Warranty. Unless required by applicable law or\n      agreed to in writing, Licensor provides the Work (and each\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n      implied, including, without limitation, any warranties or conditions\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n      PARTICULAR PURPOSE. You are solely responsible for determining the\n      appropriateness of using or redistributing the Work and assume any\n      risks associated with Your exercise of permissions under this License.\n\n   8. Limitation of Liability. In no event and under no legal theory,\n      whether in tort (including negligence), contract, or otherwise,\n      unless required by applicable law (such as deliberate and grossly\n      negligent acts) or agreed to in writing, shall any Contributor be\n      liable to You for damages, including any direct, indirect, special,\n      incidental, or consequential damages of any character arising as a\n      result of this License or out of the use or inability to use the\n      Work (including but not limited to damages for loss of goodwill,\n      work stoppage, computer failure or malfunction, or any and all\n      other commercial damages or losses), even if such Contributor\n      has been advised of the possibility of such damages.\n\n   9. Accepting Warranty or Additional Liability. While redistributing\n      the Work or Derivative Works thereof, You may choose to offer,\n      and charge a fee for, acceptance of support, warranty, indemnity,\n      or other liability obligations and/or rights consistent with this\n      License. However, in accepting such obligations, You may act only\n      on Your own behalf and on Your sole responsibility, not on behalf\n      of any other Contributor, and only if You agree to indemnify,\n      defend, and hold each Contributor harmless for any liability\n      incurred by, or claims asserted against, such Contributor by reason\n      of your accepting any such warranty or additional liability.\n\n   END OF TERMS AND CONDITIONS\n\n   APPENDIX: How to apply the Apache License to your work.\n\n      To apply the Apache License to your work, attach the following\n      boilerplate notice, with the fields enclosed by brackets \"{}\"\n      replaced with your own identifying information. (Don't include\n      the brackets!)  The text should be enclosed in the appropriate\n      comment syntax for the file format. We also recommend that a\n      file or class name and description of purpose be included on the\n      same \"printed page\" as the copyright notice for easier\n      identification within third-party archives.\n\n   Copyright {yyyy} {name of copyright owner}\n\n   Licensed under the Apache License, Version 2.0 (the \"License\");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.\n"
+        }
+      ],
+      "family_source_candidates": [
+        {
+          "path": "datasette/cli.py",
+          "sha256": "f43710b4ffc2ff86cc22747b0e7951ef85614b2e90e9752e655ab724a00bbf48",
+          "imports": [
+            {
+              "line": 3,
+              "text": "import click"
+            },
+            {
+              "line": 4,
+              "text": "from click import formatting"
+            },
+            {
+              "line": 5,
+              "text": "from click.types import CompositeParamType"
+            }
+          ],
+          "calls": [
+            {
+              "line": 53,
+              "family": "click",
+              "text": "class Config(click.ParamType):"
+            },
+            {
+              "line": 93,
+              "family": "click",
+              "text": "class Setting(CompositeParamType):"
+            },
+            {
+              "line": 161,
+              "family": "click",
+              "text": "@click.group(cls=DefaultGroup, default=\"serve\", default_if_no_args=True)"
+            },
+            {
+              "line": 162,
+              "family": "click",
+              "text": "@click.version_option(version=__version__)"
+            },
+            {
+              "line": 174,
+              "family": "click",
+              "text": "@click.argument(\"files\", type=click.Path(exists=True), nargs=-1)"
+            },
+            {
+              "line": 175,
+              "family": "click",
+              "text": "@click.option(\"--inspect-file\", default=\"-\")"
+            },
+            {
+              "line": 225,
+              "family": "click",
+              "text": "@click.option(\"--all\", help=\"Include built-in default plugins\", is_flag=True)"
+            },
+            {
+              "line": 226,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 238,
+              "family": "click",
+              "text": "@click.argument(\"files\", type=click.Path(exists=True), nargs=-1, required=True)"
+            },
+            {
+              "line": 239,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 244,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 250,
+              "family": "click",
+              "text": "@click.option(\"--extra-options\", help=\"Extra options to pass to datasette serve\")"
+            }
+          ]
+        },
+        {
+          "path": "datasette/publish/cloudrun.py",
+          "sha256": "9b0d941207e1b81414219d4f4bb83538d841ba09d8e7b834998a9094e9720b34",
+          "imports": [
+            {
+              "line": 2,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 19,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 25,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 28,
+              "family": "click",
+              "text": "@click.option(\"--spatialite\", is_flag=True, help=\"Enable SpatialLite extension\")"
+            },
+            {
+              "line": 29,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 34,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 39,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 44,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 49,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 55,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 60,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 222,
+              "family": "click",
+              "text": "raise click.BadParameter(\"--memory should be a number then Gi/G/Mi/M e.g 1Gi\")"
+            },
+            {
+              "line": 105,
+              "family": "click",
+              "text": "click.echo(\"Please provide a service name for this deployment\\n\")"
+            }
+          ]
+        },
+        {
+          "path": "datasette/publish/common.py",
+          "sha256": "fb22abbccd8f37ecd2b2b37f89358a59e8fc80e01e3a09100a07780c18b8c0f4",
+          "imports": [
+            {
+              "line": 2,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 78,
+              "family": "click",
+              "text": "click.secho("
+            },
+            {
+              "line": 87,
+              "family": "click",
+              "text": "click.echo("
+            },
+            {
+              "line": 11,
+              "family": "click",
+              "text": "click.argument(\"files\", type=click.Path(exists=True), nargs=-1),"
+            },
+            {
+              "line": 12,
+              "family": "click",
+              "text": "click.option("
+            },
+            {
+              "line": 18,
+              "family": "click",
+              "text": "click.option("
+            },
+            {
+              "line": 21,
+              "family": "click",
+              "text": "click.option("
+            },
+            {
+              "line": 24,
+              "family": "click",
+              "text": "click.option("
+            },
+            {
+              "line": 29,
+              "family": "click",
+              "text": "click.option("
+            },
+            {
+              "line": 34,
+              "family": "click",
+              "text": "click.option("
+            },
+            {
+              "line": 40,
+              "family": "click",
+              "text": "click.option("
+            },
+            {
+              "line": 45,
+              "family": "click",
+              "text": "click.option("
+            },
+            {
+              "line": 53,
+              "family": "click",
+              "text": "click.option("
+            }
+          ]
+        },
+        {
+          "path": "datasette/publish/heroku.py",
+          "sha256": "b93866815d4aa0ec03c7983501ad4ad49d2eeea55285ec9cb5b8da0fae0e1f30",
+          "imports": [
+            {
+              "line": 3,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 23,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 29,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 33,
+              "family": "click",
+              "text": "@click.option("
+            },
+            {
+              "line": 71,
+              "family": "click",
+              "text": "click.echo("
+            },
+            {
+              "line": 74,
+              "family": "click",
+              "text": "click.confirm("
+            },
+            {
+              "line": 35,
+              "family": "click",
+              "text": "type=click.Path(dir_okay=True, file_okay=False),"
+            },
+            {
+              "line": 121,
+              "family": "click",
+              "text": "click.echo("
+            },
+            {
+              "line": 119,
+              "family": "click",
+              "text": "raise click.ClickException(\"Directory already exists\")"
+            }
+          ]
+        },
+        {
+          "path": "datasette/utils/__init__.py",
+          "sha256": "2b0db8cd87e66476214ac2fdaf7cffbd13810b7d9f0d69616a02946abec4a03a",
+          "imports": [
+            {
+              "line": 3,
+              "text": "import click"
+            }
+          ],
+          "calls": [
+            {
+              "line": 838,
+              "family": "click",
+              "text": "class StaticMount(click.ParamType):"
+            },
+            {
+              "line": 857,
+              "family": "click",
+              "text": "class LoadExtension(click.ParamType):"
+            }
+          ]
+        },
+        {
+          "path": "datasette/vendored/pint/pint_convert.py",
+          "sha256": "b83b675ccfd7c02ea8a4af4df681a2a8bac9413c37a7e783059ca7a3f49fd93a",
+          "imports": [
+            {
+              "line": 13,
+              "text": "import argparse"
+            }
+          ],
+          "calls": [
+            {
+              "line": 19,
+              "family": "argparse",
+              "text": "parser = argparse.ArgumentParser(description=\"Unit converter.\", usage=argparse.SUPPRESS)"
+            }
+          ]
+        }
+      ],
+      "wheel_man_files": [],
+      "wheel_completion_files": [],
+      "machine_readable_spec_surface": null
+    }
+  ]
+}

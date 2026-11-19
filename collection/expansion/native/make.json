@@ -1,0 +1,88 @@
+{
+  "project": "make",
+  "repository": "https://www.gnu.org/software/make/",
+  "upstream_ref": "4.4.1",
+  "tool_version": "4.4.1",
+  "cli": "make",
+  "family": "gnu-style",
+  "family_basis": "The GNU getopt_long parser reads the program option table and the help branch dispatches to print_usage.",
+  "upstream_source_archive": {
+    "url": "https://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz",
+    "sha256": "dd16fb1d67bfab79a72f5e8390735c49e3e8e70b4945a15ab1f81ddb78658fb3"
+  },
+  "code_evidence": [
+    {
+      "path": "src/main.c",
+      "url": "https://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz",
+      "archive_member": "make-4.4.1/src/main.c",
+      "sha256": "7f0b8a02a6449507c751cdf3315a11bb0e99f22dc75a33a8b82b9e78c9f0bff0",
+      "excerpts": [
+        {
+          "line": 3162,
+          "code": "c = getopt_long (argc, (char *const *)argv, options, long_options, NULL);",
+          "url": "https://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz"
+        },
+        {
+          "line": 1636,
+          "code": "print_usage (0);",
+          "url": "https://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz"
+        },
+        {
+          "line": 897,
+          "code": "print_usage (int bad)",
+          "url": "https://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz"
+        }
+      ],
+      "debian_orig": {
+        "path": "src/main.c",
+        "url": "https://deb.debian.org/debian/pool/main/m/make-dfsg/make-dfsg_4.4.1.orig.tar.xz",
+        "archive_member": "make-4.4.1/src/main.c",
+        "sha256": "7f0b8a02a6449507c751cdf3315a11bb0e99f22dc75a33a8b82b9e78c9f0bff0",
+        "same_bytes": true
+      }
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "GPL-3.0-or-later",
+    "scope": "CLI source",
+    "license_files": [
+      {
+        "path": "COPYING",
+        "url": "https://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz",
+        "archive_member": "make-4.4.1/COPYING",
+        "sha256": "e79e9c8a0c85d735ff98185918ec94ed7d175efc377012787aebcf3b80f0d90b"
+      }
+    ],
+    "observed_terms": "The CLI source file carries a GPL-3.0-or-later header. Debian distributes a repacked source archive.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "debian": {
+    "index_url": "https://deb.debian.org/debian/dists/trixie/main/source/Sources.xz",
+    "index_sha256": "6002f81f463a2d976d84b34170367cc16da2d60bd0ba9ab9d868d6e1c1a935d9",
+    "source_package": "make-dfsg",
+    "version": "4.4.1-2",
+    "vcs": "https://salsa.debian.org/debian/make",
+    "orig": {
+      "url": "https://deb.debian.org/debian/pool/main/m/make-dfsg/make-dfsg_4.4.1.orig.tar.xz",
+      "sha256": "3b16b00ea1079af9f8096bbc71ff7cc00c249fc6a862003da3c42308a0adb0fe",
+      "filename": "make-dfsg_4.4.1.orig.tar.xz"
+    },
+    "debian": {
+      "url": "https://deb.debian.org/debian/pool/main/m/make-dfsg/make-dfsg_4.4.1-2.debian.tar.xz",
+      "sha256": "c785b80bd83b8294f104da43aee9573ba3e175e2e9a77ac00a49f0a569d6e061",
+      "filename": "make-dfsg_4.4.1-2.debian.tar.xz"
+    },
+    "binary_package": "make",
+    "package_url": "https://packages.debian.org/trixie/make",
+    "distribution": "Debian trixie",
+    "copyright": {
+      "path": "debian/copyright",
+      "url": "https://deb.debian.org/debian/pool/main/m/make-dfsg/make-dfsg_4.4.1-2.debian.tar.xz",
+      "archive_member": "debian/copyright",
+      "sha256": "2289e44c25c3c55925a9342bb209330c32d21e6f28cc5ce70155dcdd8c4cae86"
+    }
+  },
+  "provisional_grouping_concerns": [
+    "Shared GNU/Gnulib formatting idioms may repeat standard diagnostic and reporting lines across upstream projects. Review actual template overlap before assigning leakage groups."
+  ]
+}

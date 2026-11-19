@@ -1,0 +1,88 @@
+{
+  "project": "grep",
+  "repository": "https://www.gnu.org/software/grep/",
+  "upstream_ref": "3.11",
+  "tool_version": "3.11",
+  "cli": "grep",
+  "family": "gnu-style",
+  "family_basis": "GNU getopt_long parses root options and the main flow calls the successful usage formatter on a help request.",
+  "upstream_source_archive": {
+    "url": "https://mirrors.kernel.org/gnu/grep/grep-3.11.tar.xz",
+    "sha256": "1db2aedde89d0dea42b16d9528f894c8d15dae4e190b59aecc78f5a951276eab"
+  },
+  "code_evidence": [
+    {
+      "path": "src/grep.c",
+      "url": "https://mirrors.kernel.org/gnu/grep/grep-3.11.tar.xz",
+      "archive_member": "grep-3.11/src/grep.c",
+      "sha256": "9301373afca3183588b15c7cefd72b02393b6d14243f69f02050161c11715d4a",
+      "excerpts": [
+        {
+          "line": 2134,
+          "code": "opt = getopt_long (argc, (char **) argv, short_options,",
+          "url": "https://mirrors.kernel.org/gnu/grep/grep-3.11.tar.xz"
+        },
+        {
+          "line": 2840,
+          "code": "usage (EXIT_SUCCESS);",
+          "url": "https://mirrors.kernel.org/gnu/grep/grep-3.11.tar.xz"
+        },
+        {
+          "line": 1967,
+          "code": "usage (int status)",
+          "url": "https://mirrors.kernel.org/gnu/grep/grep-3.11.tar.xz"
+        }
+      ],
+      "debian_orig": {
+        "path": "src/grep.c",
+        "url": "https://deb.debian.org/debian/pool/main/g/grep/grep_3.11.orig.tar.xz",
+        "archive_member": "grep-3.11/src/grep.c",
+        "sha256": "9301373afca3183588b15c7cefd72b02393b6d14243f69f02050161c11715d4a",
+        "same_bytes": true
+      }
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "GPL-3.0-or-later",
+    "scope": "CLI source",
+    "license_files": [
+      {
+        "path": "COPYING",
+        "url": "https://mirrors.kernel.org/gnu/grep/grep-3.11.tar.xz",
+        "archive_member": "grep-3.11/COPYING",
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+      }
+    ],
+    "observed_terms": "The CLI source file and Debian copyright identify GPL-3.0-or-later.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "debian": {
+    "index_url": "https://deb.debian.org/debian/dists/trixie/main/source/Sources.xz",
+    "index_sha256": "6002f81f463a2d976d84b34170367cc16da2d60bd0ba9ab9d868d6e1c1a935d9",
+    "source_package": "grep",
+    "version": "3.11-4",
+    "vcs": "https://salsa.debian.org/debian/grep",
+    "orig": {
+      "url": "https://deb.debian.org/debian/pool/main/g/grep/grep_3.11.orig.tar.xz",
+      "sha256": "1db2aedde89d0dea42b16d9528f894c8d15dae4e190b59aecc78f5a951276eab",
+      "filename": "grep_3.11.orig.tar.xz"
+    },
+    "debian": {
+      "url": "https://deb.debian.org/debian/pool/main/g/grep/grep_3.11-4.debian.tar.xz",
+      "sha256": "f10394b7589c58ca7de4b580692b1b59431f898cb2068e86222c174e093fdf49",
+      "filename": "grep_3.11-4.debian.tar.xz"
+    },
+    "binary_package": "grep",
+    "package_url": "https://packages.debian.org/trixie/grep",
+    "distribution": "Debian trixie",
+    "copyright": {
+      "path": "debian/copyright",
+      "url": "https://deb.debian.org/debian/pool/main/g/grep/grep_3.11-4.debian.tar.xz",
+      "archive_member": "debian/copyright",
+      "sha256": "42d9b4d610396b1e8d1303dcb9487af3f5a2d2709623cf03a04cf76acdf6c5e3"
+    }
+  },
+  "provisional_grouping_concerns": [
+    "Shared GNU/Gnulib formatting idioms may repeat standard diagnostic and reporting lines across upstream projects. Review actual template overlap before assigning leakage groups."
+  ]
+}

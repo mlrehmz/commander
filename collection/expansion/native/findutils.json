@@ -1,0 +1,128 @@
+{
+  "project": "findutils",
+  "repository": "https://savannah.gnu.org/projects/findutils/",
+  "upstream_ref": "4.10.0",
+  "tool_version": "4.10.0",
+  "cli": "find",
+  "family": "irregular",
+  "family_basis": "The entry point processes leading switches separately from the expression grammar. The help aliases live in the expression parser, which invokes its own usage formatter.",
+  "upstream_source_archive": {
+    "url": "https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz",
+    "sha256": "1387e0b67ff247d2abde998f90dfbf70c1491391a59ddfecb8ae698789f0a4f5"
+  },
+  "code_evidence": [
+    {
+      "path": "find/ftsfind.c",
+      "url": "https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz",
+      "archive_member": "findutils-4.10.0/find/ftsfind.c",
+      "sha256": "7f2d6b557310562df8e66074c6dc694780d0ae79d4825020cb156fb31e7d62ce",
+      "excerpts": [
+        {
+          "line": 775,
+          "code": "end_of_leading_options = process_leading_options (argc, argv);",
+          "url": "https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz"
+        }
+      ],
+      "debian_orig": {
+        "path": "find/ftsfind.c",
+        "url": "https://deb.debian.org/debian/pool/main/f/findutils/findutils_4.10.0.orig.tar.xz",
+        "archive_member": "findutils-4.10.0/find/ftsfind.c",
+        "sha256": "7f2d6b557310562df8e66074c6dc694780d0ae79d4825020cb156fb31e7d62ce",
+        "same_bytes": true
+      }
+    },
+    {
+      "path": "find/parser.c",
+      "url": "https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz",
+      "archive_member": "findutils-4.10.0/find/parser.c",
+      "sha256": "e8c4a3377abc91dd412abe5cd0ea55e13f643290c1fa000d83cf58f137bbb71f",
+      "excerpts": [
+        {
+          "line": 329,
+          "code": "{ARG_TEST, \"help\",                  parse_help,    NULL},       /* GNU */",
+          "url": "https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz"
+        },
+        {
+          "line": 330,
+          "code": "{ARG_TEST, \"-help\",                 parse_help,    NULL},       /* GNU */",
+          "url": "https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz"
+        },
+        {
+          "line": 1182,
+          "code": "usage (EXIT_SUCCESS);",
+          "url": "https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz"
+        }
+      ],
+      "debian_orig": {
+        "path": "find/parser.c",
+        "url": "https://deb.debian.org/debian/pool/main/f/findutils/findutils_4.10.0.orig.tar.xz",
+        "archive_member": "findutils-4.10.0/find/parser.c",
+        "sha256": "e8c4a3377abc91dd412abe5cd0ea55e13f643290c1fa000d83cf58f137bbb71f",
+        "same_bytes": true
+      }
+    },
+    {
+      "path": "find/util.c",
+      "url": "https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz",
+      "archive_member": "findutils-4.10.0/find/util.c",
+      "sha256": "6d8bb541dcd887da0f309862b7edc4c7f1b2556f7fcd6d824cbf0fc1ae516215",
+      "excerpts": [
+        {
+          "line": 157,
+          "code": "usage (int status)",
+          "url": "https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz"
+        }
+      ],
+      "debian_orig": {
+        "path": "find/util.c",
+        "url": "https://deb.debian.org/debian/pool/main/f/findutils/findutils_4.10.0.orig.tar.xz",
+        "archive_member": "findutils-4.10.0/find/util.c",
+        "sha256": "6d8bb541dcd887da0f309862b7edc4c7f1b2556f7fcd6d824cbf0fc1ae516215",
+        "same_bytes": true
+      }
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "GPL-3.0-or-later",
+    "scope": "CLI source",
+    "license_files": [
+      {
+        "path": "COPYING",
+        "url": "https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz",
+        "archive_member": "findutils-4.10.0/COPYING",
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+      }
+    ],
+    "observed_terms": "The CLI source files and Debian copyright identify GPL-3.0-or-later.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "debian": {
+    "index_url": "https://deb.debian.org/debian/dists/trixie/main/source/Sources.xz",
+    "index_sha256": "6002f81f463a2d976d84b34170367cc16da2d60bd0ba9ab9d868d6e1c1a935d9",
+    "source_package": "findutils",
+    "version": "4.10.0-3",
+    "vcs": "https://salsa.debian.org/debian/findutils",
+    "orig": {
+      "url": "https://deb.debian.org/debian/pool/main/f/findutils/findutils_4.10.0.orig.tar.xz",
+      "sha256": "1387e0b67ff247d2abde998f90dfbf70c1491391a59ddfecb8ae698789f0a4f5",
+      "filename": "findutils_4.10.0.orig.tar.xz"
+    },
+    "debian": {
+      "url": "https://deb.debian.org/debian/pool/main/f/findutils/findutils_4.10.0-3.debian.tar.xz",
+      "sha256": "7d19668508523a6fcfb7731f5646305a8b1a00a3105ee3f0a5f167adf93a8a46",
+      "filename": "findutils_4.10.0-3.debian.tar.xz"
+    },
+    "binary_package": "findutils",
+    "package_url": "https://packages.debian.org/trixie/findutils",
+    "distribution": "Debian trixie",
+    "copyright": {
+      "path": "debian/copyright",
+      "url": "https://deb.debian.org/debian/pool/main/f/findutils/findutils_4.10.0-3.debian.tar.xz",
+      "archive_member": "debian/copyright",
+      "sha256": "f51541fbdfe15c01cd3fd3a06ad3b74478902d36a958d95b1756434979d97ed5"
+    }
+  },
+  "provisional_grouping_concerns": [
+    "Shared GNU/Gnulib formatting idioms may repeat standard diagnostic and reporting lines across upstream projects. Review actual template overlap before assigning leakage groups."
+  ]
+}

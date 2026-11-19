@@ -1,0 +1,89 @@
+{
+  "project": "gzip",
+  "repository": "https://www.gnu.org/software/gzip/",
+  "upstream_ref": "1.13",
+  "tool_version": "1.13",
+  "cli": "gzip",
+  "family": "gnu-style",
+  "family_basis": "GNU getopt_long parses the root arguments and the help case calls the CLI help printer.",
+  "upstream_source_archive": {
+    "url": "https://ftp.gnu.org/gnu/gzip/gzip-1.13.tar.xz",
+    "sha256": "7454eb6935db17c6655576c2e1b0fabefd38b4d0936e0f87f48cd062ce91a057"
+  },
+  "code_evidence": [
+    {
+      "path": "gzip.c",
+      "url": "https://ftp.gnu.org/gnu/gzip/gzip-1.13.tar.xz",
+      "archive_member": "gzip-1.13/gzip.c",
+      "sha256": "6dca614683f4ec1008954d9f5866c2dbc15a8aa53b5bef84ff0846ba0b36fc52",
+      "excerpts": [
+        {
+          "line": 504,
+          "code": "optc = getopt_long (argc, argv, shortopts, longopts, &longind);",
+          "url": "https://ftp.gnu.org/gnu/gzip/gzip-1.13.tar.xz"
+        },
+        {
+          "line": 527,
+          "code": "case 'h': case 'H':",
+          "url": "https://ftp.gnu.org/gnu/gzip/gzip-1.13.tar.xz"
+        },
+        {
+          "line": 528,
+          "code": "help (); finish_out (); break;",
+          "url": "https://ftp.gnu.org/gnu/gzip/gzip-1.13.tar.xz"
+        }
+      ],
+      "debian_orig": {
+        "path": "gzip.c",
+        "url": "https://deb.debian.org/debian/pool/main/g/gzip/gzip_1.13.orig.tar.xz",
+        "archive_member": "gzip-1.13/gzip.c",
+        "sha256": "6dca614683f4ec1008954d9f5866c2dbc15a8aa53b5bef84ff0846ba0b36fc52",
+        "same_bytes": true
+      }
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "GPL-3.0-or-later",
+    "scope": "CLI source",
+    "license_files": [
+      {
+        "path": "COPYING",
+        "url": "https://ftp.gnu.org/gnu/gzip/gzip-1.13.tar.xz",
+        "archive_member": "gzip-1.13/COPYING",
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+      }
+    ],
+    "observed_terms": "The CLI source file and Debian copyright identify GPL-3.0-or-later.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "debian": {
+    "index_url": "https://deb.debian.org/debian/dists/trixie/main/source/Sources.xz",
+    "index_sha256": "6002f81f463a2d976d84b34170367cc16da2d60bd0ba9ab9d868d6e1c1a935d9",
+    "source_package": "gzip",
+    "version": "1.13-1+deb13u1",
+    "vcs": "https://salsa.debian.org/debian/gzip",
+    "orig": {
+      "url": "https://deb.debian.org/debian/pool/main/g/gzip/gzip_1.13.orig.tar.xz",
+      "sha256": "7454eb6935db17c6655576c2e1b0fabefd38b4d0936e0f87f48cd062ce91a057",
+      "filename": "gzip_1.13.orig.tar.xz"
+    },
+    "debian": {
+      "url": "https://deb.debian.org/debian/pool/main/g/gzip/gzip_1.13-1+deb13u1.debian.tar.xz",
+      "sha256": "ffc69d13290009f42dbb4d10a34839350eff3fdaf4be1fda03d10b238ba2f77d",
+      "filename": "gzip_1.13-1+deb13u1.debian.tar.xz"
+    },
+    "binary_package": "gzip",
+    "package_url": "https://packages.debian.org/trixie/gzip",
+    "distribution": "Debian trixie",
+    "copyright": {
+      "path": "debian/copyright",
+      "url": "https://deb.debian.org/debian/pool/main/g/gzip/gzip_1.13-1+deb13u1.debian.tar.xz",
+      "archive_member": "debian/copyright",
+      "sha256": "02c197fa26ad056ed2382bb8c3e6323d47edfda4539f727b4ab3f4dbf64ac413"
+    }
+  },
+  "provisional_grouping_concerns": [
+    "Shared GNU/Gnulib formatting idioms may repeat standard diagnostic and reporting lines across upstream projects. Review actual template overlap before assigning leakage groups.",
+    "XZ Utils licenses several companion scripts adapted from GNU gzip. Keep the candidate commands gzip and xz distinct pending review of their actual rendered surfaces. Do not count helper scripts as separate projects."
+  ]
+}

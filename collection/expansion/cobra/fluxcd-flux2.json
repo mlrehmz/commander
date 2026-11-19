@@ -1,0 +1,55 @@
+{
+  "repository": "fluxcd/flux2",
+  "upstream_ref": "v2.5.1",
+  "cli": "flux",
+  "family": "cobra",
+  "code_evidence": [
+    {
+      "path": "cmd/flux/main.go",
+      "repository": "fluxcd/flux2",
+      "ref": "v2.5.1",
+      "raw_url": "https://raw.githubusercontent.com/fluxcd/flux2/v2.5.1/cmd/flux/main.go",
+      "sha256": "85f8e1887bad8008f4a441a9860c7c02d0e07847c303da998b098a1e982258e7",
+      "excerpts": [
+        {
+          "line": 28,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/fluxcd/flux2/blob/v2.5.1/cmd/flux/main.go#L28"
+        },
+        {
+          "line": 43,
+          "code": "var rootCmd = &cobra.Command{",
+          "url": "https://github.com/fluxcd/flux2/blob/v2.5.1/cmd/flux/main.go#L43"
+        },
+        {
+          "line": 189,
+          "code": "if err := rootCmd.Execute(); err != nil {",
+          "url": "https://github.com/fluxcd/flux2/blob/v2.5.1/cmd/flux/main.go#L189"
+        }
+      ]
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "Apache-2.0",
+    "license": {
+      "path": "LICENSE",
+      "repository": "fluxcd/flux2",
+      "ref": "v2.5.1",
+      "raw_url": "https://raw.githubusercontent.com/fluxcd/flux2/v2.5.1/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "redistribution_conditions": "Section 4 permits source and object-form redistribution subject to providing the license, marking changes, retaining applicable notices and carrying forward applicable NOTICE attribution.",
+    "notice_files": [],
+    "notice_search": "Common repository-root NOTICE filenames checked. Binary and dependency notices require separate review.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "release": {
+    "url": "https://github.com/fluxcd/flux2/releases/tag/v2.5.1",
+    "metadata_url": "https://api.github.com/repos/fluxcd/flux2/releases/tags/v2.5.1",
+    "published_at": "2025-02-25T16:26:12Z",
+    "linux_x86_64_asset_url": "https://github.com/fluxcd/flux2/releases/download/v2.5.1/flux_2.5.1_linux_amd64.tar.gz",
+    "asset_metadata_url": "https://api.github.com/repos/fluxcd/flux2/releases/tags/v2.5.1",
+    "asset_status": "listed_by_upstream_unfetched"
+  },
+  "provisional_grouping_concerns": []
+}

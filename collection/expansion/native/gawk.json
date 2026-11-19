@@ -1,0 +1,88 @@
+{
+  "project": "gawk",
+  "repository": "http://www.gnu.org/software/gawk/",
+  "upstream_ref": "5.2.1",
+  "tool_version": "5.2.1",
+  "cli": "gawk",
+  "family": "gnu-style",
+  "family_basis": "GNU getopt_long drives parsing. The help case calls the usage routine on standard output with a successful status.",
+  "upstream_source_archive": {
+    "url": "https://mirrors.kernel.org/gnu/gawk/gawk-5.2.1.tar.xz",
+    "sha256": "673553b91f9e18cc5792ed51075df8d510c9040f550a6f74e09c9add243a7e4f"
+  },
+  "code_evidence": [
+    {
+      "path": "main.c",
+      "url": "https://mirrors.kernel.org/gnu/gawk/gawk-5.2.1.tar.xz",
+      "archive_member": "gawk-5.2.1/main.c",
+      "sha256": "db35f7c03175fc860c3e19fb2fdf224b0a486b0f560e8751e9c905ebff028000",
+      "excerpts": [
+        {
+          "line": 1608,
+          "code": "(c = getopt_long(argc, argv, optlist, optab, NULL)) != EOF;",
+          "url": "https://mirrors.kernel.org/gnu/gawk/gawk-5.2.1.tar.xz"
+        },
+        {
+          "line": 1680,
+          "code": "case 'h':",
+          "url": "https://mirrors.kernel.org/gnu/gawk/gawk-5.2.1.tar.xz"
+        },
+        {
+          "line": 1682,
+          "code": "usage(EXIT_SUCCESS, stdout);",
+          "url": "https://mirrors.kernel.org/gnu/gawk/gawk-5.2.1.tar.xz"
+        }
+      ],
+      "debian_orig": {
+        "path": "main.c",
+        "url": "https://deb.debian.org/debian/pool/main/g/gawk/gawk_5.2.1.orig.tar.xz",
+        "archive_member": "gawk-5.2.1/main.c",
+        "sha256": "db35f7c03175fc860c3e19fb2fdf224b0a486b0f560e8751e9c905ebff028000",
+        "same_bytes": true
+      }
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "GPL-3.0-or-later",
+    "scope": "CLI source",
+    "license_files": [
+      {
+        "path": "COPYING",
+        "url": "https://mirrors.kernel.org/gnu/gawk/gawk-5.2.1.tar.xz",
+        "archive_member": "gawk-5.2.1/COPYING",
+        "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+      }
+    ],
+    "observed_terms": "The CLI source file and Debian copyright identify GPL-3.0-or-later.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "debian": {
+    "index_url": "https://deb.debian.org/debian/dists/trixie/main/source/Sources.xz",
+    "index_sha256": "6002f81f463a2d976d84b34170367cc16da2d60bd0ba9ab9d868d6e1c1a935d9",
+    "source_package": "gawk",
+    "version": "1:5.2.1-2",
+    "vcs": null,
+    "orig": {
+      "url": "https://deb.debian.org/debian/pool/main/g/gawk/gawk_5.2.1.orig.tar.xz",
+      "sha256": "2337a0283b180ec1b9c727973a34781c6478b3ae9bcbdcca0a4dc49861d75a65",
+      "filename": "gawk_5.2.1.orig.tar.xz"
+    },
+    "debian": {
+      "url": "https://deb.debian.org/debian/pool/main/g/gawk/gawk_5.2.1-2.debian.tar.xz",
+      "sha256": "ae031782d073e8d1670b4d9ced47b3adecde2f314d824339673d163ba7029f4b",
+      "filename": "gawk_5.2.1-2.debian.tar.xz"
+    },
+    "binary_package": "gawk",
+    "package_url": "https://packages.debian.org/trixie/gawk",
+    "distribution": "Debian trixie",
+    "copyright": {
+      "path": "debian/copyright",
+      "url": "https://deb.debian.org/debian/pool/main/g/gawk/gawk_5.2.1-2.debian.tar.xz",
+      "archive_member": "debian/copyright",
+      "sha256": "4d8bd683c14ce5e3f68094a56892ecd336524e9977b6cfd3eb22ef835d67f367"
+    }
+  },
+  "provisional_grouping_concerns": [
+    "Shared GNU/Gnulib formatting idioms may repeat standard diagnostic and reporting lines across upstream projects. Review actual template overlap before assigning leakage groups."
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "repository": "helm/helm",
+  "upstream_ref": "v3.17.3",
+  "cli": "helm",
+  "family": "cobra",
+  "code_evidence": [
+    {
+      "path": "cmd/helm/helm.go",
+      "repository": "helm/helm",
+      "ref": "v3.17.3",
+      "raw_url": "https://raw.githubusercontent.com/helm/helm/v3.17.3/cmd/helm/helm.go",
+      "sha256": "80f567429c3d446a1ac41ad9897afbf7e407318b95603832f799cee9fa2ae72d",
+      "excerpts": [
+        {
+          "line": 27,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/helm/helm/blob/v3.17.3/cmd/helm/helm.go#L27"
+        },
+        {
+          "line": 68,
+          "code": "cmd, err := newRootCmd(actionConfig, os.Stdout, os.Args[1:])",
+          "url": "https://github.com/helm/helm/blob/v3.17.3/cmd/helm/helm.go#L68"
+        },
+        {
+          "line": 85,
+          "code": "if err := cmd.Execute(); err != nil {",
+          "url": "https://github.com/helm/helm/blob/v3.17.3/cmd/helm/helm.go#L85"
+        }
+      ]
+    },
+    {
+      "path": "cmd/helm/root.go",
+      "repository": "helm/helm",
+      "ref": "v3.17.3",
+      "raw_url": "https://raw.githubusercontent.com/helm/helm/v3.17.3/cmd/helm/root.go",
+      "sha256": "959aa96ca001e7554b83fdbffcf3a215f5cfb96ee8793b23fdb6642c307614f0",
+      "excerpts": [
+        {
+          "line": 92,
+          "code": "func newRootCmd(actionConfig *action.Configuration, out io.Writer, args []string) (*cobra.Command, error) {",
+          "url": "https://github.com/helm/helm/blob/v3.17.3/cmd/helm/root.go#L92"
+        }
+      ]
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "Apache-2.0",
+    "license": {
+      "path": "LICENSE",
+      "repository": "helm/helm",
+      "ref": "v3.17.3",
+      "raw_url": "https://raw.githubusercontent.com/helm/helm/v3.17.3/LICENSE",
+      "sha256": "881467e52efeb1807406134b0ec04b1c6f52dc9dc49382713ef9ac4e0cae42f8"
+    },
+    "redistribution_conditions": "Section 4 permits source and object-form redistribution subject to providing the license, marking changes, retaining applicable notices and carrying forward applicable NOTICE attribution.",
+    "notice_files": [],
+    "notice_search": "Common repository-root NOTICE filenames checked. Binary and dependency notices require separate review.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "release": {
+    "url": "https://github.com/helm/helm/releases/tag/v3.17.3",
+    "metadata_url": "https://api.github.com/repos/helm/helm/releases/tags/v3.17.3",
+    "published_at": "2025-04-09T18:01:56Z",
+    "linux_x86_64_asset_url": "https://get.helm.sh/helm-v3.17.3-linux-amd64.tar.gz",
+    "asset_metadata_url": "https://github.com/helm/helm/releases/tag/v3.17.3",
+    "asset_status": "listed_by_upstream_unfetched"
+  },
+  "provisional_grouping_concerns": []
+}

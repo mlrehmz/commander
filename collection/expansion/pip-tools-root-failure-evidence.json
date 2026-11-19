@@ -1,0 +1,8 @@
+{
+  "id": "pip-tools-root",
+  "raw_sha256": "676091ab063f8e7325c8789ffbf5889dc21428a69181b4e8e59a0ee871d63fcb",
+  "matches_original_receipt": true,
+  "selected_stream_file": "corpus/intake/expansion/train/failures/pip-tools-root.selected-stream.bin",
+  "original_receipt": "corpus/intake/expansion/train/failures/pip-tools-root-0f89e5f0bba14fc3bcc05824a81d2339.json",
+  "unsupported_backspace_count": 5
+}

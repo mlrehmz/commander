@@ -1,0 +1,57 @@
+{
+  "repository": "containers/buildah",
+  "upstream_ref": "v1.39.3",
+  "cli": "buildah",
+  "family": "cobra",
+  "code_evidence": [
+    {
+      "path": "cmd/buildah/main.go",
+      "repository": "containers/buildah",
+      "ref": "v1.39.3",
+      "raw_url": "https://raw.githubusercontent.com/containers/buildah/v1.39.3/cmd/buildah/main.go",
+      "sha256": "7cfd6cb1d5ff3aec9599784ed2e3f6d0e882e63664f88ef340e0c388954d9146",
+      "excerpts": [
+        {
+          "line": 23,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/containers/buildah/blob/v1.39.3/cmd/buildah/main.go#L23"
+        },
+        {
+          "line": 45,
+          "code": "var rootCmd = &cobra.Command{",
+          "url": "https://github.com/containers/buildah/blob/v1.39.3/cmd/buildah/main.go#L45"
+        },
+        {
+          "line": 233,
+          "code": "if err := rootCmd.Execute(); err != nil {",
+          "url": "https://github.com/containers/buildah/blob/v1.39.3/cmd/buildah/main.go#L233"
+        }
+      ]
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "Apache-2.0",
+    "license": {
+      "path": "LICENSE",
+      "repository": "containers/buildah",
+      "ref": "v1.39.3",
+      "raw_url": "https://raw.githubusercontent.com/containers/buildah/v1.39.3/LICENSE",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    "redistribution_conditions": "Section 4 permits source and object-form redistribution subject to providing the license, marking changes, retaining applicable notices and carrying forward applicable NOTICE attribution.",
+    "notice_files": [],
+    "notice_search": "Common repository-root NOTICE filenames checked. Binary and dependency notices require separate review.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "release": {
+    "url": "https://github.com/podman-container-tools/buildah/releases/tag/v1.39.3",
+    "metadata_url": "https://api.github.com/repos/containers/buildah/releases/tags/v1.39.3",
+    "published_at": "2025-03-14T19:50:11Z",
+    "linux_x86_64_asset_url": null,
+    "asset_metadata_url": null,
+    "asset_status": "unverified"
+  },
+  "provisional_grouping_concerns": [
+    "containers"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "project": "nano",
+  "repository": "https://www.nano-editor.org/",
+  "upstream_ref": "8.4",
+  "tool_version": "8.4",
+  "cli": "nano",
+  "family": "gnu-style",
+  "family_basis": "The getopt_long table maps help to the usage routine through the short-option dispatch.",
+  "upstream_source_archive": {
+    "url": "https://ftp.gnu.org/gnu/nano/nano-8.4.tar.xz",
+    "sha256": "5ad29222bbd55624d87ea677928b3106a743114d6c6f9b41f36c97be2a8e628d"
+  },
+  "code_evidence": [
+    {
+      "path": "src/nano.c",
+      "url": "https://ftp.gnu.org/gnu/nano/nano-8.4.tar.xz",
+      "archive_member": "nano-8.4/src/nano.c",
+      "sha256": "6f30554c199f253b1078fcd429e2801fcff55b010f6c58d058391d9cd9036212",
+      "excerpts": [
+        {
+          "line": 1782,
+          "code": "{\"help\", 0, NULL, 'h'},",
+          "url": "https://ftp.gnu.org/gnu/nano/nano-8.4.tar.xz"
+        },
+        {
+          "line": 1884,
+          "code": "while ((optchr = getopt_long(argc, argv, \"ABC:DEFGHIJ:KLMNOPQ:RST:UVWX:Y:Z\"",
+          "url": "https://ftp.gnu.org/gnu/nano/nano-8.4.tar.xz"
+        },
+        {
+          "line": 2034,
+          "code": "case 'h':",
+          "url": "https://ftp.gnu.org/gnu/nano/nano-8.4.tar.xz"
+        },
+        {
+          "line": 490,
+          "code": "void usage(void)",
+          "url": "https://ftp.gnu.org/gnu/nano/nano-8.4.tar.xz"
+        }
+      ],
+      "debian_orig": {
+        "path": "src/nano.c",
+        "url": "https://deb.debian.org/debian/pool/main/n/nano/nano_8.4.orig.tar.xz",
+        "archive_member": "nano-8.4/src/nano.c",
+        "sha256": "6f30554c199f253b1078fcd429e2801fcff55b010f6c58d058391d9cd9036212",
+        "same_bytes": true
+      }
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "GPL-3.0-or-later",
+    "scope": "CLI source",
+    "license_files": [
+      {
+        "path": "COPYING",
+        "url": "https://ftp.gnu.org/gnu/nano/nano-8.4.tar.xz",
+        "archive_member": "nano-8.4/COPYING",
+        "sha256": "fc82ca8b6fdb18d4e3e85cfd8ab58d1bcd3f1b29abe782895abd91d64763f8e7"
+      },
+      {
+        "path": "COPYING.DOC",
+        "url": "https://ftp.gnu.org/gnu/nano/nano-8.4.tar.xz",
+        "archive_member": "nano-8.4/COPYING.DOC",
+        "sha256": "f45cc81b400a048b56c9edbd4c3317f7a8958463dfd55aa96f268ecfd6baa12c"
+      }
+    ],
+    "observed_terms": "The CLI source is GPL-3.0-or-later. Separately licensed documentation is inventoried in the release.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "debian": {
+    "index_url": "https://deb.debian.org/debian/dists/trixie/main/source/Sources.xz",
+    "index_sha256": "6002f81f463a2d976d84b34170367cc16da2d60bd0ba9ab9d868d6e1c1a935d9",
+    "source_package": "nano",
+    "version": "8.4-1+deb13u1",
+    "vcs": "https://salsa.debian.org/debian/nano",
+    "orig": {
+      "url": "https://deb.debian.org/debian/pool/main/n/nano/nano_8.4.orig.tar.xz",
+      "sha256": "5ad29222bbd55624d87ea677928b3106a743114d6c6f9b41f36c97be2a8e628d",
+      "filename": "nano_8.4.orig.tar.xz"
+    },
+    "debian": {
+      "url": "https://deb.debian.org/debian/pool/main/n/nano/nano_8.4-1+deb13u1.debian.tar.xz",
+      "sha256": "5aac3813554a9b8136fa8ce825261298de12cf2c71a5ad5235670411b3c72a5b",
+      "filename": "nano_8.4-1+deb13u1.debian.tar.xz"
+    },
+    "binary_package": "nano",
+    "package_url": "https://packages.debian.org/trixie/nano",
+    "distribution": "Debian trixie",
+    "copyright": {
+      "path": "debian/copyright",
+      "url": "https://deb.debian.org/debian/pool/main/n/nano/nano_8.4-1+deb13u1.debian.tar.xz",
+      "archive_member": "debian/copyright",
+      "sha256": "27d771fde4ce6783fac558a9d5c4cc5a601a0935f897c77526f59fe184c142b3"
+    }
+  },
+  "provisional_grouping_concerns": [
+    "Shared GNU/Gnulib formatting idioms may repeat standard diagnostic and reporting lines across upstream projects. Review actual template overlap before assigning leakage groups."
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "project": "tmux",
+  "repository": "https://github.com/tmux/tmux",
+  "upstream_ref": "3.5a",
+  "tool_version": "3.5a",
+  "cli": "tmux",
+  "family": "irregular",
+  "family_basis": "The root parser uses short-only getopt; the default error branch invokes usage, which exits with status 1.",
+  "upstream_source_archive": null,
+  "code_evidence": [
+    {
+      "path": "tmux.c",
+      "url": "https://github.com/tmux/tmux/blob/3.5a/tmux.c",
+      "sha256": "174f30de73191eec91bf3b915788421df0b4a95fa3c6855c5efcd94750dad590",
+      "raw_url": "https://raw.githubusercontent.com/tmux/tmux/3.5a/tmux.c",
+      "excerpts": [
+        {
+          "line": 382,
+          "code": "while ((opt = getopt(argc, argv, \"2c:CDdf:lL:NqS:T:uUvV\")) != -1) {",
+          "url": "https://github.com/tmux/tmux/blob/3.5a/tmux.c#L382"
+        },
+        {
+          "line": 53,
+          "code": "usage(void)",
+          "url": "https://github.com/tmux/tmux/blob/3.5a/tmux.c#L53"
+        },
+        {
+          "line": 59,
+          "code": "exit(1);",
+          "url": "https://github.com/tmux/tmux/blob/3.5a/tmux.c#L59"
+        },
+        {
+          "line": 537,
+          "code": "exit(client_main(osdep_event_init(), argc, argv, flags, feat));",
+          "url": "https://github.com/tmux/tmux/blob/3.5a/tmux.c#L537"
+        }
+      ],
+      "debian_orig": {
+        "path": "tmux.c",
+        "url": "https://deb.debian.org/debian/pool/main/t/tmux/tmux_3.5a.orig.tar.gz",
+        "archive_member": "tmux-3.5a/tmux.c",
+        "sha256": "174f30de73191eec91bf3b915788421df0b4a95fa3c6855c5efcd94750dad590",
+        "same_bytes": true
+      }
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "ISC",
+    "scope": "CLI source",
+    "license_files": [
+      {
+        "path": "COPYING",
+        "url": "https://github.com/tmux/tmux/blob/3.5a/COPYING",
+        "sha256": "c031bd37f464c534277814f6aa38686fa023d094261d57fd2545ad592bb53ccd",
+        "raw_url": "https://raw.githubusercontent.com/tmux/tmux/3.5a/COPYING"
+      }
+    ],
+    "additional_license_basis": {
+      "path": "tmux.c",
+      "url": "https://deb.debian.org/debian/pool/main/t/tmux/tmux_3.5a.orig.tar.gz",
+      "archive_member": "tmux-3.5a/tmux.c",
+      "sha256": "174f30de73191eec91bf3b915788421df0b4a95fa3c6855c5efcd94750dad590",
+      "line": 1,
+      "topic": "File-specific ISC notice"
+    },
+    "observed_terms": "The tmux.c entry point carries ISC terms. COPYING is informational and says file headers control. Other source files carry additional terms.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "debian": {
+    "index_url": "https://deb.debian.org/debian/dists/trixie/main/source/Sources.xz",
+    "index_sha256": "6002f81f463a2d976d84b34170367cc16da2d60bd0ba9ab9d868d6e1c1a935d9",
+    "source_package": "tmux",
+    "version": "3.5a-3",
+    "vcs": "https://salsa.debian.org/debian/tmux",
+    "orig": {
+      "url": "https://deb.debian.org/debian/pool/main/t/tmux/tmux_3.5a.orig.tar.gz",
+      "sha256": "16216bd0877170dfcc64157085ba9013610b12b082548c7c9542cc0103198951",
+      "filename": "tmux_3.5a.orig.tar.gz"
+    },
+    "debian": {
+      "url": "https://deb.debian.org/debian/pool/main/t/tmux/tmux_3.5a-3.debian.tar.xz",
+      "sha256": "7fb70bc549dd3c19745fae952009403fbce1c546e05a19eca72e1b4bbd1c2f86",
+      "filename": "tmux_3.5a-3.debian.tar.xz"
+    },
+    "binary_package": "tmux",
+    "package_url": "https://packages.debian.org/trixie/tmux",
+    "distribution": "Debian trixie",
+    "copyright": {
+      "path": "debian/copyright",
+      "url": "https://deb.debian.org/debian/pool/main/t/tmux/tmux_3.5a-3.debian.tar.xz",
+      "archive_member": "debian/copyright",
+      "sha256": "9c587ac09a351692c23a910e4e59008d4a5ce66125c7aad1279065f3a272a3e1"
+    }
+  },
+  "provisional_grouping_concerns": [
+    "The root option parser exposes an error usage synopsis. A canonical root help invocation and the shape of its capture remain unverified."
+  ]
+}

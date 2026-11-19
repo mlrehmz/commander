@@ -1,0 +1,69 @@
+{
+  "repository": "tektoncd/cli",
+  "upstream_ref": "v0.40.0",
+  "cli": "tkn",
+  "family": "cobra",
+  "code_evidence": [
+    {
+      "path": "cmd/tkn/main.go",
+      "repository": "tektoncd/cli",
+      "ref": "v0.40.0",
+      "raw_url": "https://raw.githubusercontent.com/tektoncd/cli/v0.40.0/cmd/tkn/main.go",
+      "sha256": "b7b8c6def289549f82528fdf21f52df79a9d6bf933e6b5a18cbe0e42b9f6f114",
+      "excerpts": [
+        {
+          "line": 30,
+          "code": "tkn := cmd.Root(tp)",
+          "url": "https://github.com/tektoncd/cli/blob/v0.40.0/cmd/tkn/main.go#L30"
+        },
+        {
+          "line": 50,
+          "code": "if err := tkn.Execute(); err != nil {",
+          "url": "https://github.com/tektoncd/cli/blob/v0.40.0/cmd/tkn/main.go#L50"
+        }
+      ]
+    },
+    {
+      "path": "pkg/cmd/root.go",
+      "repository": "tektoncd/cli",
+      "ref": "v0.40.0",
+      "raw_url": "https://raw.githubusercontent.com/tektoncd/cli/v0.40.0/pkg/cmd/root.go",
+      "sha256": "bbd8acb412f44d4eb97f8b4a18a16f870302e7cc7834c27f67c713a8b13af844",
+      "excerpts": [
+        {
+          "line": 21,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/tektoncd/cli/blob/v0.40.0/pkg/cmd/root.go#L21"
+        },
+        {
+          "line": 89,
+          "code": "func Root(p cli.Params) *cobra.Command {",
+          "url": "https://github.com/tektoncd/cli/blob/v0.40.0/pkg/cmd/root.go#L89"
+        }
+      ]
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "Apache-2.0",
+    "license": {
+      "path": "LICENSE",
+      "repository": "tektoncd/cli",
+      "ref": "v0.40.0",
+      "raw_url": "https://raw.githubusercontent.com/tektoncd/cli/v0.40.0/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "redistribution_conditions": "Section 4 permits source and object-form redistribution subject to providing the license, marking changes, retaining applicable notices and carrying forward applicable NOTICE attribution.",
+    "notice_files": [],
+    "notice_search": "Common repository-root NOTICE filenames checked. Binary and dependency notices require separate review.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "release": {
+    "url": "https://github.com/tektoncd/cli/releases/tag/v0.40.0",
+    "metadata_url": "https://api.github.com/repos/tektoncd/cli/releases/tags/v0.40.0",
+    "published_at": "2025-02-26T03:32:55Z",
+    "linux_x86_64_asset_url": "https://github.com/tektoncd/cli/releases/download/v0.40.0/tkn_0.40.0_Linux_x86_64.tar.gz",
+    "asset_metadata_url": "https://api.github.com/repos/tektoncd/cli/releases/tags/v0.40.0",
+    "asset_status": "listed_by_upstream_unfetched"
+  },
+  "provisional_grouping_concerns": []
+}

@@ -1,0 +1,9 @@
+{
+  "id": "httpx-root",
+  "raw_sha256": "6a68a9e4e6ae57e47ae256cbf20eb18ef6d77276d273d87082f4e4888868512f",
+  "matches_original_receipt": true,
+  "selected_stream_file": "corpus/intake/expansion/familiar_test/failures/httpx-root.selected-stream.bin",
+  "original_receipt": "corpus/intake/expansion/familiar_test/failures/httpx-root-03e0048a171a4ee0b86574fa171731bf.json",
+  "unsupported_backspace_count": 0,
+  "optional_cli_dependency_hint_present": true
+}

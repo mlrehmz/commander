@@ -1,0 +1,574 @@
+{
+  "version": 1,
+  "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+  "timeout_seconds": 20,
+  "output_limit_bytes": 1048576,
+  "captures": [
+    {
+      "id": "pip-root",
+      "project": "pip",
+      "package": "pip",
+      "tool_version": "26.3",
+      "invocation": [
+        "/opt/tools/pip/bin/pip",
+        "--help"
+      ],
+      "command_path": [
+        "pip"
+      ],
+      "family": "unknown",
+      "leakage_group": "pip-tooling",
+      "source_url": "https://pypi.org/project/pip/26.3/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "pip-tools-root",
+      "project": "pip-tools",
+      "package": "pip-tools",
+      "tool_version": "7.7.0",
+      "invocation": [
+        "/opt/tools/pip-tools/bin/pip-compile",
+        "--help"
+      ],
+      "command_path": [
+        "pip-compile"
+      ],
+      "family": "unknown",
+      "leakage_group": "pip-tooling",
+      "source_url": "https://pypi.org/project/pip-tools/7.7.0/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "pre-commit-root",
+      "project": "pre-commit",
+      "package": "pre-commit",
+      "tool_version": "4.7.0",
+      "invocation": [
+        "/opt/tools/pre-commit/bin/pre-commit",
+        "--help"
+      ],
+      "command_path": [
+        "pre-commit"
+      ],
+      "family": "unknown",
+      "leakage_group": "pre-commit",
+      "source_url": "https://pypi.org/project/pre-commit/4.7.0/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "cookiecutter-root",
+      "project": "cookiecutter",
+      "package": "cookiecutter",
+      "tool_version": "2.7.1",
+      "invocation": [
+        "/opt/tools/cookiecutter/bin/cookiecutter",
+        "--help"
+      ],
+      "command_path": [
+        "cookiecutter"
+      ],
+      "family": "unknown",
+      "leakage_group": "cookiecutter",
+      "source_url": "https://pypi.org/project/cookiecutter/2.7.1/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "mkdocs-root",
+      "project": "mkdocs",
+      "package": "mkdocs",
+      "tool_version": "1.6.1",
+      "invocation": [
+        "/opt/tools/mkdocs/bin/mkdocs",
+        "--help"
+      ],
+      "command_path": [
+        "mkdocs"
+      ],
+      "family": "unknown",
+      "leakage_group": "mkdocs",
+      "source_url": "https://pypi.org/project/mkdocs/1.6.1/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "sphinx-root",
+      "project": "sphinx",
+      "package": "sphinx",
+      "tool_version": "9.1.1",
+      "invocation": [
+        "/opt/tools/sphinx/bin/sphinx-build",
+        "--help"
+      ],
+      "command_path": [
+        "sphinx-build"
+      ],
+      "family": "unknown",
+      "leakage_group": "sphinx",
+      "source_url": "https://pypi.org/project/sphinx/9.1.1/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "autopep8-root",
+      "project": "autopep8",
+      "package": "autopep8",
+      "tool_version": "2.3.2",
+      "invocation": [
+        "/opt/tools/autopep8/bin/autopep8",
+        "--help"
+      ],
+      "command_path": [
+        "autopep8"
+      ],
+      "family": "unknown",
+      "leakage_group": "autopep8",
+      "source_url": "https://pypi.org/project/autopep8/2.3.2/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "flake8-root",
+      "project": "flake8",
+      "package": "flake8",
+      "tool_version": "7.5.0",
+      "invocation": [
+        "/opt/tools/flake8/bin/flake8",
+        "--help"
+      ],
+      "command_path": [
+        "flake8"
+      ],
+      "family": "unknown",
+      "leakage_group": "flake8",
+      "source_url": "https://pypi.org/project/flake8/7.5.0/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "yamllint-root",
+      "project": "yamllint",
+      "package": "yamllint",
+      "tool_version": "1.38.0",
+      "invocation": [
+        "/opt/tools/yamllint/bin/yamllint",
+        "--help"
+      ],
+      "command_path": [
+        "yamllint"
+      ],
+      "family": "unknown",
+      "leakage_group": "yamllint",
+      "source_url": "https://pypi.org/project/yamllint/1.38.0/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "codespell-root",
+      "project": "codespell",
+      "package": "codespell",
+      "tool_version": "2.4.3",
+      "invocation": [
+        "/opt/tools/codespell/bin/codespell",
+        "--help"
+      ],
+      "command_path": [
+        "codespell"
+      ],
+      "family": "unknown",
+      "leakage_group": "codespell",
+      "source_url": "https://pypi.org/project/codespell/2.4.3/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "twine-root",
+      "project": "twine",
+      "package": "twine",
+      "tool_version": "7.0.0",
+      "invocation": [
+        "/opt/tools/twine/bin/twine",
+        "--help"
+      ],
+      "command_path": [
+        "twine"
+      ],
+      "family": "unknown",
+      "leakage_group": "twine",
+      "source_url": "https://pypi.org/project/twine/7.0.0/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "build-root",
+      "project": "build",
+      "package": "build",
+      "tool_version": "1.6.1",
+      "invocation": [
+        "/opt/tools/build/bin/pyproject-build",
+        "--help"
+      ],
+      "command_path": [
+        "pyproject-build"
+      ],
+      "family": "unknown",
+      "leakage_group": "build",
+      "source_url": "https://pypi.org/project/build/1.6.1/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "wheel-root",
+      "project": "wheel",
+      "package": "wheel",
+      "tool_version": "0.48.0",
+      "invocation": [
+        "/opt/tools/wheel/bin/wheel",
+        "--help"
+      ],
+      "command_path": [
+        "wheel"
+      ],
+      "family": "unknown",
+      "leakage_group": "wheel",
+      "source_url": "https://pypi.org/project/wheel/0.48.0/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "nox-root",
+      "project": "nox",
+      "package": "nox",
+      "tool_version": "2026.10.20",
+      "invocation": [
+        "/opt/tools/nox/bin/nox",
+        "--help"
+      ],
+      "command_path": [
+        "nox"
+      ],
+      "family": "unknown",
+      "leakage_group": "nox",
+      "source_url": "https://pypi.org/project/nox/2026.10.20/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "invoke-root",
+      "project": "invoke",
+      "package": "invoke",
+      "tool_version": "3.0.3",
+      "invocation": [
+        "/opt/tools/invoke/bin/invoke",
+        "--help"
+      ],
+      "command_path": [
+        "invoke"
+      ],
+      "family": "unknown",
+      "leakage_group": "invoke-fabric",
+      "source_url": "https://pypi.org/project/invoke/3.0.3/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "fabric-root",
+      "project": "fabric",
+      "package": "fabric",
+      "tool_version": "3.2.3",
+      "invocation": [
+        "/opt/tools/fabric/bin/fab",
+        "--help"
+      ],
+      "command_path": [
+        "fab"
+      ],
+      "family": "unknown",
+      "leakage_group": "invoke-fabric",
+      "source_url": "https://pypi.org/project/fabric/3.2.3/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "yt-dlp-root",
+      "project": "yt-dlp",
+      "package": "yt-dlp",
+      "tool_version": "2026.10.26",
+      "invocation": [
+        "/opt/tools/yt-dlp/bin/yt-dlp",
+        "--help"
+      ],
+      "command_path": [
+        "yt-dlp"
+      ],
+      "family": "unknown",
+      "leakage_group": "yt-dlp",
+      "source_url": "https://pypi.org/project/yt-dlp/2026.10.26/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "grep-root",
+      "project": "grep",
+      "tool_version": "3.11-4",
+      "version_source": "debian_package",
+      "invocation": [
+        "/usr/bin/grep",
+        "--help"
+      ],
+      "command_path": [
+        "grep"
+      ],
+      "family": "gnu-style",
+      "leakage_group": "grep",
+      "source_url": "https://mirrors.kernel.org/gnu/grep/grep-3.11.tar.xz",
+      "license_evidence": "collection/expansion/native/environment-evidence.json",
+      "capture_stream": "stdout",
+      "accepted_exit_codes": [
+        0
+      ],
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false,
+      "binary_sha256": "bd6686bf7a650a9717fd7e73fdb07dc63b70547a1da41bce093c56df937a66eb"
+    },
+    {
+      "id": "sed-root",
+      "project": "sed",
+      "tool_version": "4.9-2+deb13u1",
+      "version_source": "debian_package",
+      "invocation": [
+        "/usr/bin/sed",
+        "--help"
+      ],
+      "command_path": [
+        "sed"
+      ],
+      "family": "gnu-style",
+      "leakage_group": "sed",
+      "source_url": "https://ftp.gnu.org/gnu/sed/sed-4.9.tar.xz",
+      "license_evidence": "collection/expansion/native/environment-evidence.json",
+      "capture_stream": "stdout",
+      "accepted_exit_codes": [
+        0
+      ],
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false,
+      "binary_sha256": "69ff7292c0d081bdf5866bc84dde96d5a14f4a7deafeb9483739be68c48ac2b3"
+    },
+    {
+      "id": "diffutils-root",
+      "project": "diffutils",
+      "tool_version": "1:3.10-4",
+      "version_source": "debian_package",
+      "invocation": [
+        "/usr/bin/diff",
+        "--help"
+      ],
+      "command_path": [
+        "diff"
+      ],
+      "family": "gnu-style",
+      "leakage_group": "diffutils",
+      "source_url": "https://ftp.gnu.org/gnu/diffutils/diffutils-3.10.tar.xz",
+      "license_evidence": "collection/expansion/native/environment-evidence.json",
+      "capture_stream": "stdout",
+      "accepted_exit_codes": [
+        0
+      ],
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false,
+      "binary_sha256": "ae8ef59bc4039e56ce184b6cd55e87526aceb72940e2c16a88113b2ae745613b"
+    },
+    {
+      "id": "xz-root",
+      "project": "xz",
+      "tool_version": "5.8.1-1+deb13u2",
+      "version_source": "debian_package",
+      "invocation": [
+        "/usr/bin/xz",
+        "--help"
+      ],
+      "command_path": [
+        "xz"
+      ],
+      "family": "gnu-style",
+      "leakage_group": "xz",
+      "source_url": "https://github.com/tukaani-project/xz/blob/v5.8.1/src/xz/args.c#L320",
+      "license_evidence": "collection/expansion/native/environment-evidence.json",
+      "capture_stream": "stdout",
+      "accepted_exit_codes": [
+        0
+      ],
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false,
+      "binary_sha256": "133d08171b67ba0216b26bfd523b91442a91a1a9a253ba016849b85b6f70d088"
+    },
+    {
+      "id": "make-root",
+      "project": "make",
+      "tool_version": "4.4.1-2",
+      "version_source": "debian_package",
+      "invocation": [
+        "/usr/bin/make",
+        "--help"
+      ],
+      "command_path": [
+        "make"
+      ],
+      "family": "gnu-style",
+      "leakage_group": "make",
+      "source_url": "https://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz",
+      "license_evidence": "collection/expansion/native/environment-evidence.json",
+      "capture_stream": "stdout",
+      "accepted_exit_codes": [
+        0
+      ],
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false,
+      "binary_sha256": "8a229baf64671988cfb5af43ba3070c6ce7214cf32bcf96155115559d1466fa7"
+    },
+    {
+      "id": "patch-root",
+      "project": "patch",
+      "tool_version": "2.8-2",
+      "version_source": "debian_package",
+      "invocation": [
+        "/usr/bin/patch",
+        "--help"
+      ],
+      "command_path": [
+        "patch"
+      ],
+      "family": "gnu-style",
+      "leakage_group": "patch",
+      "source_url": "https://ftp.gnu.org/gnu/patch/patch-2.8.tar.xz",
+      "license_evidence": "collection/expansion/native/environment-evidence.json",
+      "capture_stream": "stdout",
+      "accepted_exit_codes": [
+        0
+      ],
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false,
+      "binary_sha256": "121ea00cd7ad3567f8a2d23370807c924f40ad4352733120cf9b150ed33e978f"
+    },
+    {
+      "id": "tmux-root",
+      "project": "tmux",
+      "tool_version": "3.5a-3",
+      "version_source": "debian_package",
+      "invocation": [
+        "/usr/bin/tmux",
+        "-h"
+      ],
+      "command_path": [
+        "tmux"
+      ],
+      "family": "irregular",
+      "leakage_group": "tmux",
+      "source_url": "https://github.com/tmux/tmux/blob/3.5a/tmux.c#L382",
+      "license_evidence": "collection/expansion/native/environment-evidence.json",
+      "capture_stream": "stderr",
+      "accepted_exit_codes": [
+        1
+      ],
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false,
+      "binary_sha256": "2967b531cb415b19afbc153bc19eff1c2e461726781a36c27c855a166bb36d4b",
+      "capture_kind": "explicit_diagnostic_usage_on_invalid_help_option"
+    },
+    {
+      "id": "htop-root",
+      "project": "htop",
+      "tool_version": "3.4.1-5",
+      "version_source": "debian_package",
+      "invocation": [
+        "/usr/bin/htop",
+        "--help"
+      ],
+      "command_path": [
+        "htop"
+      ],
+      "family": "gnu-style",
+      "leakage_group": "htop",
+      "source_url": "https://github.com/htop-dev/htop/blob/3.4.1/CommandLine.c#L139",
+      "license_evidence": "collection/expansion/native/environment-evidence.json",
+      "capture_stream": "stdout",
+      "accepted_exit_codes": [
+        0
+      ],
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false,
+      "binary_sha256": "9354faddd37fb717afb172c852143478fa5f9e2178c21b26b8c653423daf2fed"
+    },
+    {
+      "id": "file-root",
+      "project": "file",
+      "tool_version": "1:5.46-5",
+      "version_source": "debian_package",
+      "invocation": [
+        "/usr/bin/file",
+        "--help"
+      ],
+      "command_path": [
+        "file"
+      ],
+      "family": "gnu-style",
+      "leakage_group": "file",
+      "source_url": "https://github.com/file/file/blob/FILE5_46/src/file.c#L107",
+      "license_evidence": "collection/expansion/native/environment-evidence.json",
+      "capture_stream": "stdout",
+      "accepted_exit_codes": [
+        0
+      ],
+      "reserved_split": "train",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false,
+      "binary_sha256": "879067e624a6547de9e2a8492378ca2db500e066d71a34764ad9fe0d4eac953d"
+    }
+  ]
+}

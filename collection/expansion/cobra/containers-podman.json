@@ -1,0 +1,77 @@
+{
+  "repository": "containers/podman",
+  "upstream_ref": "v5.4.2",
+  "cli": "podman",
+  "family": "cobra",
+  "code_evidence": [
+    {
+      "path": "cmd/podman/main.go",
+      "repository": "containers/podman",
+      "ref": "v5.4.2",
+      "raw_url": "https://raw.githubusercontent.com/containers/podman/v5.4.2/cmd/podman/main.go",
+      "sha256": "ca4e1ab5a86cd867a3a393bb6ab7c9ee4fad758c8bc805d50d6587120168b083",
+      "excerpts": [
+        {
+          "line": 37,
+          "code": "func main() {",
+          "url": "https://github.com/containers/podman/blob/v5.4.2/cmd/podman/main.go#L37"
+        },
+        {
+          "line": 62,
+          "code": "Execute()",
+          "url": "https://github.com/containers/podman/blob/v5.4.2/cmd/podman/main.go#L62"
+        }
+      ]
+    },
+    {
+      "path": "cmd/podman/root.go",
+      "repository": "containers/podman",
+      "ref": "v5.4.2",
+      "raw_url": "https://raw.githubusercontent.com/containers/podman/v5.4.2/cmd/podman/root.go",
+      "sha256": "296744d0be5c2924adf2cd0ef5e98cda63383e0fc1807a73fe0b167e573e27dd",
+      "excerpts": [
+        {
+          "line": 27,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/containers/podman/blob/v5.4.2/cmd/podman/root.go#L27"
+        },
+        {
+          "line": 64,
+          "code": "rootCmd = &cobra.Command{",
+          "url": "https://github.com/containers/podman/blob/v5.4.2/cmd/podman/root.go#L64"
+        },
+        {
+          "line": 119,
+          "code": "if err := rootCmd.ExecuteContext(registry.Context()); err != nil {",
+          "url": "https://github.com/containers/podman/blob/v5.4.2/cmd/podman/root.go#L119"
+        }
+      ]
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "Apache-2.0",
+    "license": {
+      "path": "LICENSE",
+      "repository": "containers/podman",
+      "ref": "v5.4.2",
+      "raw_url": "https://raw.githubusercontent.com/containers/podman/v5.4.2/LICENSE",
+      "sha256": "62fb8a3a9621dc2388174caaabe9c2317b694bb9a1d46c98bcf5655b68f51be3"
+    },
+    "redistribution_conditions": "Section 4 permits source and object-form redistribution subject to providing the license, marking changes, retaining applicable notices and carrying forward applicable NOTICE attribution.",
+    "notice_files": [],
+    "notice_search": "Common repository-root NOTICE filenames checked. Binary and dependency notices require separate review.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "release": {
+    "url": "https://github.com/podman-container-tools/podman/releases/tag/v5.4.2",
+    "metadata_url": "https://api.github.com/repos/containers/podman/releases/tags/v5.4.2",
+    "published_at": "2025-04-02T16:27:32Z",
+    "linux_x86_64_asset_url": null,
+    "asset_metadata_url": null,
+    "asset_status": "unverified"
+  },
+  "provisional_grouping_concerns": [
+    "containers",
+    "container-cli-compatibility"
+  ]
+}

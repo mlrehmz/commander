@@ -1,0 +1,83 @@
+{
+  "repository": "cli/cli",
+  "upstream_ref": "v2.70.0",
+  "cli": "gh",
+  "family": "cobra",
+  "code_evidence": [
+    {
+      "path": "cmd/gh/main.go",
+      "repository": "cli/cli",
+      "ref": "v2.70.0",
+      "raw_url": "https://raw.githubusercontent.com/cli/cli/v2.70.0/cmd/gh/main.go",
+      "sha256": "cb5651bc0b702e28adac867f130729b351b8cbc51af7013c528f178a3ce4f593",
+      "excerpts": [
+        {
+          "line": 10,
+          "code": "code := ghcmd.Main()",
+          "url": "https://github.com/cli/cli/blob/v2.70.0/cmd/gh/main.go#L10"
+        }
+      ]
+    },
+    {
+      "path": "internal/ghcmd/cmd.go",
+      "repository": "cli/cli",
+      "ref": "v2.70.0",
+      "raw_url": "https://raw.githubusercontent.com/cli/cli/v2.70.0/internal/ghcmd/cmd.go",
+      "sha256": "467a6ca1342877f3d5ccadd0eff52f59d02eea201abc80406772c6d5349f9deb",
+      "excerpts": [
+        {
+          "line": 100,
+          "code": "rootCmd, err := root.NewCmdRoot(cmdFactory, buildVersion, buildDate)",
+          "url": "https://github.com/cli/cli/blob/v2.70.0/internal/ghcmd/cmd.go#L100"
+        },
+        {
+          "line": 119,
+          "code": "if cmd, err := rootCmd.ExecuteContextC(ctx); err != nil {",
+          "url": "https://github.com/cli/cli/blob/v2.70.0/internal/ghcmd/cmd.go#L119"
+        }
+      ]
+    },
+    {
+      "path": "pkg/cmd/root/root.go",
+      "repository": "cli/cli",
+      "ref": "v2.70.0",
+      "raw_url": "https://raw.githubusercontent.com/cli/cli/v2.70.0/pkg/cmd/root/root.go",
+      "sha256": "569a5d2d20555fc5ca5919b9631d17e53c9d2ff0c248289bf7f9e22a05f1f9cb",
+      "excerpts": [
+        {
+          "line": 43,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/cli/cli/blob/v2.70.0/pkg/cmd/root/root.go#L43"
+        },
+        {
+          "line": 54,
+          "code": "func NewCmdRoot(f *cmdutil.Factory, version, buildDate string) (*cobra.Command, error) {",
+          "url": "https://github.com/cli/cli/blob/v2.70.0/pkg/cmd/root/root.go#L54"
+        }
+      ]
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "MIT",
+    "license": {
+      "path": "LICENSE",
+      "repository": "cli/cli",
+      "ref": "v2.70.0",
+      "raw_url": "https://raw.githubusercontent.com/cli/cli/v2.70.0/LICENSE",
+      "sha256": "6da4adc42392c8485e40b4251c7e332fc3352df1947c9ffade71dd60b14a7a4f"
+    },
+    "redistribution_conditions": "The text grants distribution subject to including the copyright and permission notices in copies or substantial portions.",
+    "notice_files": [],
+    "notice_search": "Common repository-root NOTICE filenames checked. Binary and dependency notices require separate review.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "release": {
+    "url": "https://github.com/cli/cli/releases/tag/v2.70.0",
+    "metadata_url": "https://api.github.com/repos/cli/cli/releases/tags/v2.70.0",
+    "published_at": "2025-04-15T09:41:11Z",
+    "linux_x86_64_asset_url": "https://github.com/cli/cli/releases/download/v2.70.0/gh_2.70.0_linux_amd64.tar.gz",
+    "asset_metadata_url": "https://api.github.com/repos/cli/cli/releases/tags/v2.70.0",
+    "asset_status": "listed_by_upstream_unfetched"
+  },
+  "provisional_grouping_concerns": []
+}

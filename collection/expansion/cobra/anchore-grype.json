@@ -1,0 +1,124 @@
+{
+  "repository": "anchore/grype",
+  "upstream_ref": "v0.91.2",
+  "cli": "grype",
+  "family": "cobra",
+  "code_evidence": [
+    {
+      "path": "cmd/grype/main.go",
+      "repository": "anchore/grype",
+      "ref": "v0.91.2",
+      "raw_url": "https://raw.githubusercontent.com/anchore/grype/v0.91.2/cmd/grype/main.go",
+      "sha256": "1e838dc376cd7df6f1542dfb6d8200add06ead65e2e161de6b4c93f274917f85",
+      "excerpts": [
+        {
+          "line": 23,
+          "code": "app := cli.Application(",
+          "url": "https://github.com/anchore/grype/blob/v0.91.2/cmd/grype/main.go#L23"
+        },
+        {
+          "line": 33,
+          "code": "app.Run()",
+          "url": "https://github.com/anchore/grype/blob/v0.91.2/cmd/grype/main.go#L33"
+        }
+      ]
+    },
+    {
+      "path": "cmd/grype/cli/cli.go",
+      "repository": "anchore/grype",
+      "ref": "v0.91.2",
+      "raw_url": "https://raw.githubusercontent.com/anchore/grype/v0.91.2/cmd/grype/cli/cli.go",
+      "sha256": "d3c45062501a9b83a9bb4c112352129adac2b7242b497db5cb46c641448a1ec6",
+      "excerpts": [
+        {
+          "line": 8,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/anchore/grype/blob/v0.91.2/cmd/grype/cli/cli.go#L8"
+        },
+        {
+          "line": 89,
+          "code": "app := clio.New(*clioCfg)",
+          "url": "https://github.com/anchore/grype/blob/v0.91.2/cmd/grype/cli/cli.go#L89"
+        },
+        {
+          "line": 91,
+          "code": "rootCmd := commands.Root(app)",
+          "url": "https://github.com/anchore/grype/blob/v0.91.2/cmd/grype/cli/cli.go#L91"
+        }
+      ]
+    },
+    {
+      "path": "cmd/grype/cli/commands/root.go",
+      "repository": "anchore/grype",
+      "ref": "v0.91.2",
+      "raw_url": "https://raw.githubusercontent.com/anchore/grype/v0.91.2/cmd/grype/cli/commands/root.go",
+      "sha256": "36296dc8e44a5bb7cf747c8acc2a6f70cdfa8b3f7b637001b10b70780ecd29cc",
+      "excerpts": [
+        {
+          "line": 46,
+          "code": "return app.SetupRootCommand(&cobra.Command{",
+          "url": "https://github.com/anchore/grype/blob/v0.91.2/cmd/grype/cli/commands/root.go#L46"
+        }
+      ]
+    },
+    {
+      "path": "application.go",
+      "repository": "anchore/clio",
+      "ref": "4c1d6bd1e872",
+      "raw_url": "https://raw.githubusercontent.com/anchore/clio/4c1d6bd1e872/application.go",
+      "sha256": "c33f6a3cc0f35b504c3f5eabb466436d993ef800cd8d0ad5517853940ab6fb8b",
+      "excerpts": [
+        {
+          "line": 15,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/anchore/clio/blob/4c1d6bd1e872/application.go#L15"
+        },
+        {
+          "line": 41,
+          "code": "root            *cobra.Command",
+          "url": "https://github.com/anchore/clio/blob/4c1d6bd1e872/application.go#L41"
+        },
+        {
+          "line": 238,
+          "code": "func (a *application) Run() {",
+          "url": "https://github.com/anchore/clio/blob/4c1d6bd1e872/application.go#L238"
+        },
+        {
+          "line": 278,
+          "code": "if err := a.root.Execute(); err != nil {",
+          "url": "https://github.com/anchore/clio/blob/4c1d6bd1e872/application.go#L278"
+        },
+        {
+          "line": 305,
+          "code": "a.root = cmd",
+          "url": "https://github.com/anchore/clio/blob/4c1d6bd1e872/application.go#L305"
+        }
+      ]
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "Apache-2.0",
+    "license": {
+      "path": "LICENSE",
+      "repository": "anchore/grype",
+      "ref": "v0.91.2",
+      "raw_url": "https://raw.githubusercontent.com/anchore/grype/v0.91.2/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "redistribution_conditions": "Section 4 permits source and object-form redistribution subject to providing the license, marking changes, retaining applicable notices and carrying forward applicable NOTICE attribution.",
+    "notice_files": [],
+    "notice_search": "Common repository-root NOTICE filenames checked. Binary and dependency notices require separate review.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "release": {
+    "url": "https://github.com/anchore/grype/releases/tag/v0.91.2",
+    "metadata_url": "https://api.github.com/repos/anchore/grype/releases/tags/v0.91.2",
+    "published_at": "2025-04-25T17:30:56Z",
+    "linux_x86_64_asset_url": "https://github.com/anchore/grype/releases/download/v0.91.2/grype_0.91.2_linux_amd64.tar.gz",
+    "asset_metadata_url": "https://api.github.com/repos/anchore/grype/releases/tags/v0.91.2",
+    "asset_status": "listed_by_upstream_unfetched"
+  },
+  "provisional_grouping_concerns": [
+    "anchore"
+  ]
+}

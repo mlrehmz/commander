@@ -1,0 +1,988 @@
+{
+  "version": 1,
+  "status": "provisional_source_survey_not_evaluation_manifest",
+  "projects": [
+    {
+      "id": "black",
+      "cohort": "pilot",
+      "capture_status": "ok",
+      "annotation_status": "independently_audited_agent_reference",
+      "source_evidence": "collection/expansion/python/pilot-environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review"
+    },
+    {
+      "id": "datasette",
+      "cohort": "pilot",
+      "capture_status": "ok",
+      "annotation_status": "independently_audited_agent_reference",
+      "source_evidence": "collection/expansion/python/pilot-environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review"
+    },
+    {
+      "id": "hatch",
+      "cohort": "pilot",
+      "capture_status": "ok",
+      "annotation_status": "independently_audited_agent_reference",
+      "source_evidence": "collection/expansion/python/pilot-environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review"
+    },
+    {
+      "id": "httpie",
+      "cohort": "pilot",
+      "capture_status": "ok",
+      "annotation_status": "independently_audited_agent_reference",
+      "source_evidence": "collection/expansion/python/pilot-environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review"
+    },
+    {
+      "id": "pipenv",
+      "cohort": "pilot",
+      "capture_status": "ok",
+      "annotation_status": "independently_audited_agent_reference",
+      "source_evidence": "collection/expansion/python/pilot-environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review"
+    },
+    {
+      "id": "pipx",
+      "cohort": "pilot",
+      "capture_status": "ok",
+      "annotation_status": "independently_audited_agent_reference",
+      "source_evidence": "collection/expansion/python/pilot-environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review"
+    },
+    {
+      "id": "rich-cli",
+      "cohort": "pilot",
+      "capture_status": "ok",
+      "annotation_status": "independently_audited_agent_reference",
+      "source_evidence": "collection/expansion/python/pilot-environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review"
+    },
+    {
+      "id": "sqlfluff",
+      "cohort": "pilot",
+      "capture_status": "ok",
+      "annotation_status": "independently_audited_agent_reference",
+      "source_evidence": "collection/expansion/python/pilot-environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review"
+    },
+    {
+      "id": "tox",
+      "cohort": "pilot",
+      "capture_status": "ok",
+      "annotation_status": "independently_audited_agent_reference",
+      "source_evidence": "collection/expansion/python/pilot-environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review"
+    },
+    {
+      "id": "virtualenv",
+      "cohort": "pilot",
+      "capture_status": "ok",
+      "annotation_status": "independently_audited_agent_reference",
+      "source_evidence": "collection/expansion/python/pilot-environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review"
+    },
+    {
+      "id": "pytest",
+      "cohort": "python-expansion",
+      "tool_version": "9.2.0",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "coverage",
+      "cohort": "python-expansion",
+      "tool_version": "7.17.3",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "poetry",
+      "cohort": "python-expansion",
+      "tool_version": "2.5.1",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "ansible-core",
+      "cohort": "python-expansion",
+      "tool_version": "2.21.6",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "awscli",
+      "cohort": "python-expansion",
+      "tool_version": "1.46.3",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "invalid_text",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "pip",
+      "cohort": "python-expansion",
+      "tool_version": "26.3",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "pip-tools",
+      "cohort": "python-expansion",
+      "tool_version": "7.7.0",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "invalid_text",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "pre-commit",
+      "cohort": "python-expansion",
+      "tool_version": "4.7.0",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "cookiecutter",
+      "cohort": "python-expansion",
+      "tool_version": "2.7.1",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "mkdocs",
+      "cohort": "python-expansion",
+      "tool_version": "1.6.1",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "sphinx",
+      "cohort": "python-expansion",
+      "tool_version": "9.1.1",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "docutils",
+      "cohort": "python-expansion",
+      "tool_version": "0.23",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "mypy",
+      "cohort": "python-expansion",
+      "tool_version": "2.4.1",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "pylint",
+      "cohort": "python-expansion",
+      "tool_version": "4.1.4",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "isort",
+      "cohort": "python-expansion",
+      "tool_version": "9.0.2",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "autopep8",
+      "cohort": "python-expansion",
+      "tool_version": "2.3.2",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "flake8",
+      "cohort": "python-expansion",
+      "tool_version": "7.5.0",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "bandit",
+      "cohort": "python-expansion",
+      "tool_version": "1.9.4",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "yamllint",
+      "cohort": "python-expansion",
+      "tool_version": "1.38.0",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "codespell",
+      "cohort": "python-expansion",
+      "tool_version": "2.4.3",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "twine",
+      "cohort": "python-expansion",
+      "tool_version": "7.0.0",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "build",
+      "cohort": "python-expansion",
+      "tool_version": "1.6.1",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "wheel",
+      "cohort": "python-expansion",
+      "tool_version": "0.48.0",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "nox",
+      "cohort": "python-expansion",
+      "tool_version": "2026.10.20",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "invoke",
+      "cohort": "python-expansion",
+      "tool_version": "3.0.3",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "fabric",
+      "cohort": "python-expansion",
+      "tool_version": "3.2.3",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "streamlink",
+      "cohort": "python-expansion",
+      "tool_version": "8.6.3",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "httpx",
+      "cohort": "python-expansion",
+      "tool_version": "0.28.1",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "nonzero_exit",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "llm",
+      "cohort": "python-expansion",
+      "tool_version": "0.38",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "yt-dlp",
+      "cohort": "python-expansion",
+      "tool_version": "2026.10.26",
+      "source_evidence": "collection/expansion/python-family-survey.json",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "curl",
+      "cohort": "native",
+      "tool_version": "8.14.1",
+      "source_evidence": "collection/expansion/native-survey.json",
+      "parser_or_layout_source_label": "gnu-style",
+      "formatter_family": "gnu-style",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "wget",
+      "cohort": "native",
+      "tool_version": "1.25.0",
+      "source_evidence": "collection/expansion/native-survey.json",
+      "parser_or_layout_source_label": "gnu-style",
+      "formatter_family": "gnu-style",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "tar",
+      "cohort": "native",
+      "tool_version": "1.35",
+      "source_evidence": "collection/expansion/native-survey.json",
+      "parser_or_layout_source_label": "gnu-style",
+      "formatter_family": "gnu-style",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "grep",
+      "cohort": "native",
+      "tool_version": "3.11",
+      "source_evidence": "collection/expansion/native-survey.json",
+      "parser_or_layout_source_label": "gnu-style",
+      "formatter_family": "gnu-style",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "sed",
+      "cohort": "native",
+      "tool_version": "4.9",
+      "source_evidence": "collection/expansion/native-survey.json",
+      "parser_or_layout_source_label": "gnu-style",
+      "formatter_family": "gnu-style",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "gawk",
+      "cohort": "native",
+      "tool_version": "5.2.1",
+      "source_evidence": "collection/expansion/native-survey.json",
+      "parser_or_layout_source_label": "gnu-style",
+      "formatter_family": "gnu-style",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "diffutils",
+      "cohort": "native",
+      "tool_version": "3.10",
+      "source_evidence": "collection/expansion/native-survey.json",
+      "parser_or_layout_source_label": "gnu-style",
+      "formatter_family": "gnu-style",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "findutils",
+      "cohort": "native",
+      "tool_version": "4.10.0",
+      "source_evidence": "collection/expansion/native-survey.json",
+      "parser_or_layout_source_label": "irregular",
+      "formatter_family": "irregular",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "gzip",
+      "cohort": "native",
+      "tool_version": "1.13",
+      "source_evidence": "collection/expansion/native-survey.json",
+      "parser_or_layout_source_label": "gnu-style",
+      "formatter_family": "gnu-style",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "xz",
+      "cohort": "native",
+      "tool_version": "5.8.1",
+      "source_evidence": "collection/expansion/native-survey.json",
+      "parser_or_layout_source_label": "gnu-style",
+      "formatter_family": "gnu-style",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "make",
+      "cohort": "native",
+      "tool_version": "4.4.1",
+      "source_evidence": "collection/expansion/native-survey.json",
+      "parser_or_layout_source_label": "gnu-style",
+      "formatter_family": "gnu-style",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "patch",
+      "cohort": "native",
+      "tool_version": "2.8",
+      "source_evidence": "collection/expansion/native-survey.json",
+      "parser_or_layout_source_label": "gnu-style",
+      "formatter_family": "gnu-style",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "m4",
+      "cohort": "native",
+      "tool_version": "1.4.19",
+      "source_evidence": "collection/expansion/native-survey.json",
+      "parser_or_layout_source_label": "gnu-style",
+      "formatter_family": "gnu-style",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "less",
+      "cohort": "native",
+      "tool_version": "668",
+      "source_evidence": "collection/expansion/native-survey.json",
+      "parser_or_layout_source_label": "irregular",
+      "formatter_family": "irregular",
+      "capture_status": "invalid_text",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "nano",
+      "cohort": "native",
+      "tool_version": "8.4",
+      "source_evidence": "collection/expansion/native-survey.json",
+      "parser_or_layout_source_label": "gnu-style",
+      "formatter_family": "gnu-style",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "tmux",
+      "cohort": "native",
+      "tool_version": "3.5a",
+      "source_evidence": "collection/expansion/native-survey.json",
+      "parser_or_layout_source_label": "irregular",
+      "formatter_family": "irregular",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "htop",
+      "cohort": "native",
+      "tool_version": "3.4.1",
+      "source_evidence": "collection/expansion/native-survey.json",
+      "parser_or_layout_source_label": "gnu-style",
+      "formatter_family": "gnu-style",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "rsync",
+      "cohort": "native",
+      "tool_version": "3.4.1",
+      "source_evidence": "collection/expansion/native-survey.json",
+      "parser_or_layout_source_label": "gnu-style",
+      "formatter_family": "gnu-style",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "file",
+      "cohort": "native",
+      "tool_version": "5.46",
+      "source_evidence": "collection/expansion/native-survey.json",
+      "parser_or_layout_source_label": "gnu-style",
+      "formatter_family": "gnu-style",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "golang",
+      "cohort": "native",
+      "tool_version": "1.24.4",
+      "source_evidence": "collection/expansion/native-survey.json",
+      "parser_or_layout_source_label": "go-flag",
+      "formatter_family": "go-flag",
+      "capture_status": "ok",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "helm/helm",
+      "cohort": "cobra",
+      "tool_version": "3.17.3",
+      "source_evidence": "collection/expansion/cobra-survey.json",
+      "parser_or_layout_source_label": "cobra",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "kubernetes-sigs/kind",
+      "cohort": "cobra",
+      "tool_version": "0.27.0",
+      "source_evidence": "collection/expansion/cobra-survey.json",
+      "parser_or_layout_source_label": "cobra",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "goreleaser/goreleaser",
+      "cohort": "cobra",
+      "tool_version": "2.8.2",
+      "source_evidence": "collection/expansion/cobra-survey.json",
+      "parser_or_layout_source_label": "cobra",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "cli/cli",
+      "cohort": "cobra",
+      "tool_version": "2.70.0",
+      "source_evidence": "collection/expansion/cobra-survey.json",
+      "parser_or_layout_source_label": "cobra",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "docker/cli",
+      "cohort": "cobra",
+      "tool_version": "28.1.1",
+      "source_evidence": "collection/expansion/cobra-survey.json",
+      "parser_or_layout_source_label": "cobra",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "containers/podman",
+      "cohort": "cobra",
+      "tool_version": "5.4.2",
+      "source_evidence": "collection/expansion/cobra-survey.json",
+      "parser_or_layout_source_label": "cobra",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "containers/buildah",
+      "cohort": "cobra",
+      "tool_version": "1.39.3",
+      "source_evidence": "collection/expansion/cobra-survey.json",
+      "parser_or_layout_source_label": "cobra",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "containers/skopeo",
+      "cohort": "cobra",
+      "tool_version": "1.18.0",
+      "source_evidence": "collection/expansion/cobra-survey.json",
+      "parser_or_layout_source_label": "cobra",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "anchore/syft",
+      "cohort": "cobra",
+      "tool_version": "1.23.1",
+      "source_evidence": "collection/expansion/cobra-survey.json",
+      "parser_or_layout_source_label": "cobra",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "anchore/grype",
+      "cohort": "cobra",
+      "tool_version": "0.91.2",
+      "source_evidence": "collection/expansion/cobra-survey.json",
+      "parser_or_layout_source_label": "cobra",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "fluxcd/flux2",
+      "cohort": "cobra",
+      "tool_version": "2.5.1",
+      "source_evidence": "collection/expansion/cobra-survey.json",
+      "parser_or_layout_source_label": "cobra",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "argoproj/argo-cd",
+      "cohort": "cobra",
+      "tool_version": "2.14.11",
+      "source_evidence": "collection/expansion/cobra-survey.json",
+      "parser_or_layout_source_label": "cobra",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "tektoncd/cli",
+      "cohort": "cobra",
+      "tool_version": "0.40.0",
+      "source_evidence": "collection/expansion/cobra-survey.json",
+      "parser_or_layout_source_label": "cobra",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "loft-sh/vcluster",
+      "cohort": "cobra",
+      "tool_version": "0.24.1",
+      "source_evidence": "collection/expansion/cobra-survey.json",
+      "parser_or_layout_source_label": "cobra",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "restic/restic",
+      "cohort": "cobra",
+      "tool_version": "0.18.0",
+      "source_evidence": "collection/expansion/cobra-survey.json",
+      "parser_or_layout_source_label": "cobra",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "sigstore/cosign",
+      "cohort": "cobra",
+      "tool_version": "2.5.0",
+      "source_evidence": "collection/expansion/cobra-survey.json",
+      "parser_or_layout_source_label": "cobra",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "sigstore/rekor",
+      "cohort": "cobra",
+      "tool_version": "1.3.10",
+      "source_evidence": "collection/expansion/cobra-survey.json",
+      "parser_or_layout_source_label": "cobra",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "GoogleContainerTools/skaffold",
+      "cohort": "cobra",
+      "tool_version": "2.15.0",
+      "source_evidence": "collection/expansion/cobra-survey.json",
+      "parser_or_layout_source_label": "cobra",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "containerd/nerdctl",
+      "cohort": "cobra",
+      "tool_version": "2.0.4",
+      "source_evidence": "collection/expansion/cobra-survey.json",
+      "parser_or_layout_source_label": "cobra",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "knative/client",
+      "cohort": "cobra",
+      "tool_version": "1.17.0",
+      "source_evidence": "collection/expansion/cobra-survey.json",
+      "parser_or_layout_source_label": "cobra",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "bat",
+      "cohort": "clap",
+      "tool_version": "0.26.1",
+      "source_evidence": "collection/expansion/clap-survey.json",
+      "parser_or_layout_source_label": "clap",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "fd",
+      "cohort": "clap",
+      "tool_version": "10.5.2",
+      "source_evidence": "collection/expansion/clap-survey.json",
+      "parser_or_layout_source_label": "clap",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "lsd",
+      "cohort": "clap",
+      "tool_version": "1.2.0",
+      "source_evidence": "collection/expansion/clap-survey.json",
+      "parser_or_layout_source_label": "clap",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "hyperfine",
+      "cohort": "clap",
+      "tool_version": "2.0.0",
+      "source_evidence": "collection/expansion/clap-survey.json",
+      "parser_or_layout_source_label": "clap",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "hexyl",
+      "cohort": "clap",
+      "tool_version": "0.17.0",
+      "source_evidence": "collection/expansion/clap-survey.json",
+      "parser_or_layout_source_label": "clap",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "dust",
+      "cohort": "clap",
+      "tool_version": "1.2.7",
+      "source_evidence": "collection/expansion/clap-survey.json",
+      "parser_or_layout_source_label": "clap",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "procs",
+      "cohort": "clap",
+      "tool_version": "0.14.12",
+      "source_evidence": "collection/expansion/clap-survey.json",
+      "parser_or_layout_source_label": "clap",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "bottom",
+      "cohort": "clap",
+      "tool_version": "0.15.0",
+      "source_evidence": "collection/expansion/clap-survey.json",
+      "parser_or_layout_source_label": "clap",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "starship",
+      "cohort": "clap",
+      "tool_version": "1.27.0",
+      "source_evidence": "collection/expansion/clap-survey.json",
+      "parser_or_layout_source_label": "clap",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "atuin",
+      "cohort": "clap",
+      "tool_version": "18.24.8",
+      "source_evidence": "collection/expansion/clap-survey.json",
+      "parser_or_layout_source_label": "clap",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "uv",
+      "cohort": "clap",
+      "tool_version": "0.13.9",
+      "source_evidence": "collection/expansion/clap-survey.json",
+      "parser_or_layout_source_label": "clap",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "ruff",
+      "cohort": "clap",
+      "tool_version": "0.17.5",
+      "source_evidence": "collection/expansion/clap-survey.json",
+      "parser_or_layout_source_label": "clap",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "gitui",
+      "cohort": "clap",
+      "tool_version": "0.28.1",
+      "source_evidence": "collection/expansion/clap-survey.json",
+      "parser_or_layout_source_label": "clap",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "zellij",
+      "cohort": "clap",
+      "tool_version": "0.46.0",
+      "source_evidence": "collection/expansion/clap-survey.json",
+      "parser_or_layout_source_label": "clap",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "zoxide",
+      "cohort": "clap",
+      "tool_version": "0.10.0",
+      "source_evidence": "collection/expansion/clap-survey.json",
+      "parser_or_layout_source_label": "clap",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "sccache",
+      "cohort": "clap",
+      "tool_version": "0.19.0",
+      "source_evidence": "collection/expansion/clap-survey.json",
+      "parser_or_layout_source_label": "clap",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "genact",
+      "cohort": "clap",
+      "tool_version": "1.6.0",
+      "source_evidence": "collection/expansion/clap-survey.json",
+      "parser_or_layout_source_label": "clap",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "miniserve",
+      "cohort": "clap",
+      "tool_version": "0.35.0",
+      "source_evidence": "collection/expansion/clap-survey.json",
+      "parser_or_layout_source_label": "clap",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "mdBook",
+      "cohort": "clap",
+      "tool_version": "0.5.4",
+      "source_evidence": "collection/expansion/clap-survey.json",
+      "parser_or_layout_source_label": "clap",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "just",
+      "cohort": "clap",
+      "tool_version": "1.59.0",
+      "source_evidence": "collection/expansion/clap-survey.json",
+      "parser_or_layout_source_label": "clap",
+      "formatter_family": "unknown_pending_renderer_review",
+      "capture_status": "not_started",
+      "annotation_status": "pending"
+    }
+  ],
+  "admitted_evaluation_projects": 0,
+  "source_only_survey_count": 100
+}

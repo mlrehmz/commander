@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "image": "sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3",
+  "timeout_seconds": 20,
+  "output_limit_bytes": 1048576,
+  "captures": [
+    {
+      "id": "pytest-root",
+      "project": "pytest",
+      "package": "pytest",
+      "tool_version": "9.2.0",
+      "invocation": [
+        "env",
+        "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1",
+        "/opt/tools/pytest/bin/pytest",
+        "--help"
+      ],
+      "command_path": [
+        "pytest"
+      ],
+      "family": "unknown",
+      "leakage_group": "pytest",
+      "source_url": "https://pypi.org/project/pytest/9.2.0/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "dev",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "poetry-root",
+      "project": "poetry",
+      "package": "poetry",
+      "tool_version": "2.5.1",
+      "invocation": [
+        "/opt/tools/poetry/bin/poetry",
+        "--help"
+      ],
+      "command_path": [
+        "poetry"
+      ],
+      "family": "unknown",
+      "leakage_group": "poetry",
+      "source_url": "https://pypi.org/project/poetry/2.5.1/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "dev",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "ansible-core-root",
+      "project": "ansible-core",
+      "package": "ansible-core",
+      "tool_version": "2.21.6",
+      "invocation": [
+        "/opt/tools/ansible-core/bin/ansible",
+        "--help"
+      ],
+      "command_path": [
+        "ansible"
+      ],
+      "family": "unknown",
+      "leakage_group": "ansible-core",
+      "source_url": "https://pypi.org/project/ansible-core/2.21.6/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "dev",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "awscli-root",
+      "project": "awscli",
+      "package": "awscli",
+      "tool_version": "1.46.3",
+      "invocation": [
+        "env",
+        "PAGER=cat",
+        "AWS_PAGER=",
+        "/opt/tools/awscli/bin/aws",
+        "help"
+      ],
+      "command_path": [
+        "aws"
+      ],
+      "family": "unknown",
+      "leakage_group": "awscli",
+      "source_url": "https://pypi.org/project/awscli/1.46.3/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "dev",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "mypy-root",
+      "project": "mypy",
+      "package": "mypy",
+      "tool_version": "2.4.1",
+      "invocation": [
+        "/opt/tools/mypy/bin/mypy",
+        "--help"
+      ],
+      "command_path": [
+        "mypy"
+      ],
+      "family": "unknown",
+      "leakage_group": "mypy",
+      "source_url": "https://pypi.org/project/mypy/2.4.1/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "dev",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "isort-root",
+      "project": "isort",
+      "package": "isort",
+      "tool_version": "9.0.2",
+      "invocation": [
+        "/opt/tools/isort/bin/isort",
+        "--help"
+      ],
+      "command_path": [
+        "isort"
+      ],
+      "family": "unknown",
+      "leakage_group": "isort",
+      "source_url": "https://pypi.org/project/isort/9.0.2/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "dev",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "llm-root",
+      "project": "llm",
+      "package": "llm",
+      "tool_version": "0.38",
+      "invocation": [
+        "/opt/tools/llm/bin/llm",
+        "--help"
+      ],
+      "command_path": [
+        "llm"
+      ],
+      "family": "unknown",
+      "leakage_group": "llm",
+      "source_url": "https://pypi.org/project/llm/0.38/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "dev",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    },
+    {
+      "id": "curl-root",
+      "project": "curl",
+      "tool_version": "8.14.1-2+deb13u7",
+      "version_source": "debian_package",
+      "invocation": [
+        "/usr/bin/curl",
+        "--help",
+        "all"
+      ],
+      "command_path": [
+        "curl"
+      ],
+      "family": "gnu-style",
+      "leakage_group": "curl",
+      "source_url": "https://github.com/curl/curl/blob/curl-8_14_1/src/tool_getparam.c#L2837",
+      "license_evidence": "collection/expansion/native/environment-evidence.json",
+      "capture_stream": "stdout",
+      "accepted_exit_codes": [
+        0
+      ],
+      "reserved_split": "dev",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false,
+      "binary_sha256": "52e9ceef96bd7c7dd4c2c9d8ac4c5f466c563dc0d16817720518b430da7a94b7"
+    },
+    {
+      "id": "tar-root",
+      "project": "tar",
+      "tool_version": "1.35+dfsg-3.1",
+      "version_source": "debian_package",
+      "invocation": [
+        "/usr/bin/tar",
+        "--help"
+      ],
+      "command_path": [
+        "tar"
+      ],
+      "family": "gnu-style",
+      "leakage_group": "tar",
+      "source_url": "https://ftp.gnu.org/gnu/tar/tar-1.35.tar.xz",
+      "license_evidence": "collection/expansion/native/environment-evidence.json",
+      "capture_stream": "stdout",
+      "accepted_exit_codes": [
+        0
+      ],
+      "reserved_split": "dev",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false,
+      "binary_sha256": "38adf50825f773d353d6bda1a7cd70c22f8877823e44821c1d2bd0a52ddc3871"
+    },
+    {
+      "id": "gawk-root",
+      "project": "gawk",
+      "tool_version": "1:5.2.1-2+b1",
+      "version_source": "debian_package",
+      "invocation": [
+        "/usr/bin/gawk",
+        "--help"
+      ],
+      "command_path": [
+        "gawk"
+      ],
+      "family": "gnu-style",
+      "leakage_group": "gawk",
+      "source_url": "https://mirrors.kernel.org/gnu/gawk/gawk-5.2.1.tar.xz",
+      "license_evidence": "collection/expansion/native/environment-evidence.json",
+      "capture_stream": "stdout",
+      "accepted_exit_codes": [
+        0
+      ],
+      "reserved_split": "dev",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false,
+      "binary_sha256": "c90aba59e13752526d9cb767533f3802d3b7cd5dd6355615516d21abbc28b005"
+    },
+    {
+      "id": "less-root",
+      "project": "less",
+      "tool_version": "668-1",
+      "version_source": "debian_package",
+      "invocation": [
+        "/usr/bin/less",
+        "--help"
+      ],
+      "command_path": [
+        "less"
+      ],
+      "family": "irregular",
+      "leakage_group": "less",
+      "source_url": "https://github.com/gwsw/less/blob/v668/main.c#L308",
+      "license_evidence": "collection/expansion/native/environment-evidence.json",
+      "capture_stream": "stdout",
+      "accepted_exit_codes": [
+        0
+      ],
+      "reserved_split": "dev",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false,
+      "binary_sha256": "27dccb9e14cb983e7738289b71884c9776a4425a424c703dadffe5639d82d7f7"
+    },
+    {
+      "id": "golang-root",
+      "project": "golang",
+      "tool_version": "1.24.4-1",
+      "version_source": "debian_package",
+      "invocation": [
+        "/usr/lib/go-1.24/bin/gofmt",
+        "-h"
+      ],
+      "command_path": [
+        "gofmt"
+      ],
+      "family": "go-flag",
+      "leakage_group": "golang",
+      "source_url": "https://github.com/golang/go/blob/go1.24.4/src/cmd/gofmt/gofmt.go#L73",
+      "license_evidence": "collection/expansion/native/environment-evidence.json",
+      "capture_stream": "stderr",
+      "accepted_exit_codes": [
+        0,
+        2
+      ],
+      "reserved_split": "dev",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false,
+      "binary_sha256": "0bc9006f9b47e45f235665d1f0ccff8e6aab430c23b03116cfff3bc77a9ea5b7"
+    }
+  ]
+}

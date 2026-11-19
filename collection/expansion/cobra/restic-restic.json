@@ -1,0 +1,55 @@
+{
+  "repository": "restic/restic",
+  "upstream_ref": "v0.18.0",
+  "cli": "restic",
+  "family": "cobra",
+  "code_evidence": [
+    {
+      "path": "cmd/restic/main.go",
+      "repository": "restic/restic",
+      "ref": "v0.18.0",
+      "raw_url": "https://raw.githubusercontent.com/restic/restic/v0.18.0/cmd/restic/main.go",
+      "sha256": "6d44c8e114ec808e79b4636495d516f019bf1525a43ea89335421cc4679a2aae",
+      "excerpts": [
+        {
+          "line": 14,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/restic/restic/blob/v0.18.0/cmd/restic/main.go#L14"
+        },
+        {
+          "line": 34,
+          "code": "func newRootCommand() *cobra.Command {",
+          "url": "https://github.com/restic/restic/blob/v0.18.0/cmd/restic/main.go#L34"
+        },
+        {
+          "line": 172,
+          "code": "err = newRootCommand().ExecuteContext(ctx)",
+          "url": "https://github.com/restic/restic/blob/v0.18.0/cmd/restic/main.go#L172"
+        }
+      ]
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "BSD-2-Clause",
+    "license": {
+      "path": "LICENSE",
+      "repository": "restic/restic",
+      "ref": "v0.18.0",
+      "raw_url": "https://raw.githubusercontent.com/restic/restic/v0.18.0/LICENSE",
+      "sha256": "6f08a01a9fab5b24e139a09f15cc24a73087c7bc09e3bacf099fdf2d767bf897"
+    },
+    "redistribution_conditions": "The text permits source and binary redistribution subject to retaining or reproducing the copyright notice, conditions and disclaimer.",
+    "notice_files": [],
+    "notice_search": "Common repository-root NOTICE filenames checked. Binary and dependency notices require separate review.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "release": {
+    "url": "https://github.com/restic/restic/releases/tag/v0.18.0",
+    "metadata_url": "https://github.com/restic/restic/releases/tag/v0.18.0",
+    "published_at": "2025-03-27T19:34:28Z",
+    "linux_x86_64_asset_url": "https://github.com/restic/restic/releases/download/v0.18.0/restic_0.18.0_linux_amd64.bz2",
+    "asset_metadata_url": "https://github.com/restic/restic/releases/expanded_assets/v0.18.0",
+    "asset_status": "listed_by_upstream_unfetched"
+  },
+  "provisional_grouping_concerns": []
+}

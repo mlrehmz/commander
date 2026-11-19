@@ -1,0 +1,66 @@
+{
+  "repository": "sigstore/rekor",
+  "upstream_ref": "v1.3.10",
+  "cli": "rekor-cli",
+  "family": "cobra",
+  "code_evidence": [
+    {
+      "path": "cmd/rekor-cli/main.go",
+      "repository": "sigstore/rekor",
+      "ref": "v1.3.10",
+      "raw_url": "https://raw.githubusercontent.com/sigstore/rekor/v1.3.10/cmd/rekor-cli/main.go",
+      "sha256": "ca82a2f28c17ccd0bda980130ad20b85c1c3be05a0154cdd184bdd0b876b1b3f",
+      "excerpts": [
+        {
+          "line": 21,
+          "code": "app.Execute()",
+          "url": "https://github.com/sigstore/rekor/blob/v1.3.10/cmd/rekor-cli/main.go#L21"
+        }
+      ]
+    },
+    {
+      "path": "cmd/rekor-cli/app/root.go",
+      "repository": "sigstore/rekor",
+      "ref": "v1.3.10",
+      "raw_url": "https://raw.githubusercontent.com/sigstore/rekor/v1.3.10/cmd/rekor-cli/app/root.go",
+      "sha256": "19d9595368fe7859e869454e4917a365ccea78ad99bbd14d7df76f0bbcc20819",
+      "excerpts": [
+        {
+          "line": 23,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/sigstore/rekor/blob/v1.3.10/cmd/rekor-cli/app/root.go#L23"
+        },
+        {
+          "line": 56,
+          "code": "if err := rootCmd.Execute(); err != nil {",
+          "url": "https://github.com/sigstore/rekor/blob/v1.3.10/cmd/rekor-cli/app/root.go#L56"
+        }
+      ]
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "Apache-2.0",
+    "license": {
+      "path": "LICENSE",
+      "repository": "sigstore/rekor",
+      "ref": "v1.3.10",
+      "raw_url": "https://raw.githubusercontent.com/sigstore/rekor/v1.3.10/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "redistribution_conditions": "Section 4 permits source and object-form redistribution subject to providing the license, marking changes, retaining applicable notices and carrying forward applicable NOTICE attribution.",
+    "notice_files": [],
+    "notice_search": "Common repository-root NOTICE filenames checked. Binary and dependency notices require separate review.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "release": {
+    "url": "https://github.com/sigstore/rekor/releases/tag/v1.3.10",
+    "metadata_url": "https://github.com/sigstore/rekor/releases/tag/v1.3.10",
+    "published_at": "2025-04-11T17:20:44Z",
+    "linux_x86_64_asset_url": "https://github.com/sigstore/rekor/releases/download/v1.3.10/rekor-cli-linux-amd64",
+    "asset_metadata_url": "https://github.com/sigstore/rekor/releases/expanded_assets/v1.3.10",
+    "asset_status": "listed_by_upstream_unfetched"
+  },
+  "provisional_grouping_concerns": [
+    "sigstore"
+  ]
+}

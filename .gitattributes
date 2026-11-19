@@ -1,2 +1,8 @@
 # Keep captured bytes unchanged, including terminal padding.
 corpus/intake/*.txt -text -whitespace
+corpus/intake/**/*.txt -text -whitespace
+corpus/intake/**/*.bin -text -diff
+# Raw captures can contain printed conflict-marker-like rulers; audit bytes separately.
+corpus/intake/**/*.txt -diff
+# Preserve upstream notice bytes, including original whitespace.
+collection/expansion/clap/**/LICENSE* -text -whitespace

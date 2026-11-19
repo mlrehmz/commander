@@ -1,0 +1,167 @@
+{
+  "project": "golang",
+  "repository": "https://github.com/golang/go",
+  "upstream_ref": "go1.24.4",
+  "tool_version": "1.24.4",
+  "cli": "gofmt",
+  "family": "go-flag",
+  "family_basis": "gofmt assigns a custom Usage callback and calls the Go standard flag parser. The callback delegates option formatting to flag.PrintDefaults.",
+  "upstream_source_archive": null,
+  "code_evidence": [
+    {
+      "path": "src/cmd/gofmt/gofmt.go",
+      "url": "https://github.com/golang/go/blob/go1.24.4/src/cmd/gofmt/gofmt.go",
+      "sha256": "78a1226c7a1f2493f0cfd70ef7aa53a721248ca721f27d626a79628a634ff2ce",
+      "raw_url": "https://raw.githubusercontent.com/golang/go/go1.24.4/src/cmd/gofmt/gofmt.go",
+      "excerpts": [
+        {
+          "line": 73,
+          "code": "func usage() {",
+          "url": "https://github.com/golang/go/blob/go1.24.4/src/cmd/gofmt/gofmt.go#L73"
+        },
+        {
+          "line": 75,
+          "code": "flag.PrintDefaults()",
+          "url": "https://github.com/golang/go/blob/go1.24.4/src/cmd/gofmt/gofmt.go#L75"
+        },
+        {
+          "line": 378,
+          "code": "flag.Usage = usage",
+          "url": "https://github.com/golang/go/blob/go1.24.4/src/cmd/gofmt/gofmt.go#L378"
+        },
+        {
+          "line": 379,
+          "code": "flag.Parse()",
+          "url": "https://github.com/golang/go/blob/go1.24.4/src/cmd/gofmt/gofmt.go#L379"
+        }
+      ],
+      "debian_orig": {
+        "path": "src/cmd/gofmt/gofmt.go",
+        "url": "https://deb.debian.org/debian/pool/main/g/golang-1.24/golang-1.24_1.24.4.orig.tar.gz",
+        "archive_member": "go/src/cmd/gofmt/gofmt.go",
+        "sha256": "78a1226c7a1f2493f0cfd70ef7aa53a721248ca721f27d626a79628a634ff2ce",
+        "same_bytes": true
+      }
+    },
+    {
+      "path": "src/flag/flag.go",
+      "url": "https://github.com/golang/go/blob/go1.24.4/src/flag/flag.go",
+      "sha256": "063d55aaeb7f269b2d271316e7876cdc738a309bcb5a661a8b251f3d4e911a25",
+      "raw_url": "https://raw.githubusercontent.com/golang/go/go1.24.4/src/flag/flag.go",
+      "excerpts": [
+        {
+          "line": 679,
+          "code": "func PrintDefaults() {",
+          "url": "https://github.com/golang/go/blob/go1.24.4/src/flag/flag.go#L679"
+        },
+        {
+          "line": 1186,
+          "code": "func Parse() {",
+          "url": "https://github.com/golang/go/blob/go1.24.4/src/flag/flag.go#L1186"
+        }
+      ],
+      "debian_orig": {
+        "path": "src/flag/flag.go",
+        "url": "https://deb.debian.org/debian/pool/main/g/golang-1.24/golang-1.24_1.24.4.orig.tar.gz",
+        "archive_member": "go/src/flag/flag.go",
+        "sha256": "063d55aaeb7f269b2d271316e7876cdc738a309bcb5a661a8b251f3d4e911a25",
+        "same_bytes": true
+      }
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "BSD-3-Clause",
+    "scope": "CLI source",
+    "license_files": [
+      {
+        "path": "LICENSE",
+        "url": "https://github.com/golang/go/blob/go1.24.4/LICENSE",
+        "sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad",
+        "raw_url": "https://raw.githubusercontent.com/golang/go/go1.24.4/LICENSE"
+      }
+    ],
+    "additional_upstream_files": [
+      {
+        "path": "PATENTS",
+        "url": "https://github.com/golang/go/blob/go1.24.4/PATENTS",
+        "raw_url": "https://raw.githubusercontent.com/golang/go/go1.24.4/PATENTS",
+        "sha256": "96f408bfae65bf137fc2525d3ecb030271c50c1e90799f87abf8846d8dd505cc"
+      }
+    ],
+    "observed_terms": "The Go LICENSE carries the BSD-3-Clause terms. Debian documents exceptions for other files in the distribution.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "debian": {
+    "index_url": "https://deb.debian.org/debian/dists/trixie/main/source/Sources.xz",
+    "index_sha256": "6002f81f463a2d976d84b34170367cc16da2d60bd0ba9ab9d868d6e1c1a935d9",
+    "source_package": "golang-1.24",
+    "version": "1.24.4-1",
+    "vcs": "https://salsa.debian.org/go-team/compiler/golang/tree/golang-1.24",
+    "orig": {
+      "url": "https://deb.debian.org/debian/pool/main/g/golang-1.24/golang-1.24_1.24.4.orig.tar.gz",
+      "sha256": "5a86a83a31f9fa81490b8c5420ac384fd3d95a3e71fba665c7b3f95d1dfef2b4",
+      "filename": "golang-1.24_1.24.4.orig.tar.gz"
+    },
+    "debian": {
+      "url": "https://deb.debian.org/debian/pool/main/g/golang-1.24/golang-1.24_1.24.4-1.debian.tar.xz",
+      "sha256": "b613c9f5f2a4179ea618854e4310422231f115bab97cc5c18707a720d612da32",
+      "filename": "golang-1.24_1.24.4-1.debian.tar.xz"
+    },
+    "binary_package": "golang-1.24-go",
+    "package_url": "https://packages.debian.org/trixie/golang-1.24-go",
+    "distribution": "Debian trixie",
+    "copyright": {
+      "path": "debian/copyright",
+      "url": "https://deb.debian.org/debian/pool/main/g/golang-1.24/golang-1.24_1.24.4-1.debian.tar.xz",
+      "archive_member": "debian/copyright",
+      "sha256": "a739b83e49889464462830f3c992b275f5acba9380d859f64bb75d71b18c1e03"
+    },
+    "default_metapackage": {
+      "binary_package": "golang-go",
+      "source_package": "golang-defaults",
+      "version": "2:1.24~2",
+      "package_url": "https://packages.debian.org/trixie/golang-go",
+      "source_archive": {
+        "url": "https://deb.debian.org/debian/pool/main/g/golang-defaults/golang-defaults_1.24~2.tar.xz",
+        "sha256": "a0837e02d0640f654e8043341daa7d78242589b4b6db4d6b19bfb0c00f1f31da",
+        "filename": "golang-defaults_1.24~2.tar.xz"
+      },
+      "evidence": [
+        {
+          "path": "debian/control",
+          "url": "https://deb.debian.org/debian/pool/main/g/golang-defaults/golang-defaults_1.24~2.tar.xz",
+          "archive_member": "golang-defaults-1.24~2/debian/control",
+          "sha256": "75a97b82cbd8d7ec33cf1e0a98f59e8f27ee9ae2c8626ea7f73eb7308454efc8",
+          "excerpts": [
+            {
+              "line": 20,
+              "code": "Package: golang-go",
+              "url": "https://deb.debian.org/debian/pool/main/g/golang-defaults/golang-defaults_1.24~2.tar.xz"
+            },
+            {
+              "line": 23,
+              "code": "Depends: golang-${golang:Version}-go,",
+              "url": "https://deb.debian.org/debian/pool/main/g/golang-defaults/golang-defaults_1.24~2.tar.xz"
+            }
+          ]
+        },
+        {
+          "path": "debian/golang-go.links",
+          "url": "https://deb.debian.org/debian/pool/main/g/golang-defaults/golang-defaults_1.24~2.tar.xz",
+          "archive_member": "golang-defaults-1.24~2/debian/golang-go.links",
+          "sha256": "baf37711fcbc2c3695e903c264f37435cc920819eb63519239c880a3b38adb0c",
+          "excerpts": [
+            {
+              "line": 4,
+              "code": "usr/lib/go-${GOVER}/bin/gofmt usr/bin/gofmt",
+              "url": "https://deb.debian.org/debian/pool/main/g/golang-defaults/golang-defaults_1.24~2.tar.xz"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "provisional_grouping_concerns": [
+    "gofmt is part of the Go source project. Count Go once across all toolchain commands and do not count golang-defaults as another upstream."
+  ]
+}

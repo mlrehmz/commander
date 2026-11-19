@@ -1,0 +1,74 @@
+{
+  "repository": "knative/client",
+  "upstream_ref": "knative-v1.17.0",
+  "cli": "kn",
+  "family": "cobra",
+  "code_evidence": [
+    {
+      "path": "cmd/kn/main.go",
+      "repository": "knative/client",
+      "ref": "knative-v1.17.0",
+      "raw_url": "https://raw.githubusercontent.com/knative/client/knative-v1.17.0/cmd/kn/main.go",
+      "sha256": "f8a855269258ed742d7c287b5b20d7eb36a9db1ec812cdf15b9bbf582a070aa1",
+      "excerpts": [
+        {
+          "line": 24,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/knative/client/blob/knative-v1.17.0/cmd/kn/main.go#L24"
+        },
+        {
+          "line": 66,
+          "code": "rootCmd, err := root.NewRootCommand(pluginManager.HelpTemplateFuncs())",
+          "url": "https://github.com/knative/client/blob/knative-v1.17.0/cmd/kn/main.go#L66"
+        },
+        {
+          "line": 130,
+          "code": "return rootCmd.Execute()",
+          "url": "https://github.com/knative/client/blob/knative-v1.17.0/cmd/kn/main.go#L130"
+        }
+      ]
+    },
+    {
+      "path": "pkg/root/root.go",
+      "repository": "knative/client",
+      "ref": "knative-v1.17.0",
+      "raw_url": "https://raw.githubusercontent.com/knative/client/knative-v1.17.0/pkg/root/root.go",
+      "sha256": "2e37d3afb3777ebfd8e64d4591b0a7be3ae960d0d9db3e4e3c3f6c7153fd8c69",
+      "excerpts": [
+        {
+          "line": 28,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/knative/client/blob/knative-v1.17.0/pkg/root/root.go#L28"
+        },
+        {
+          "line": 54,
+          "code": "func NewRootCommand(helpFuncs *template.FuncMap) (*cobra.Command, error) {",
+          "url": "https://github.com/knative/client/blob/knative-v1.17.0/pkg/root/root.go#L54"
+        }
+      ]
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "Apache-2.0",
+    "license": {
+      "path": "LICENSE",
+      "repository": "knative/client",
+      "ref": "knative-v1.17.0",
+      "raw_url": "https://raw.githubusercontent.com/knative/client/knative-v1.17.0/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "redistribution_conditions": "Section 4 permits source and object-form redistribution subject to providing the license, marking changes, retaining applicable notices and carrying forward applicable NOTICE attribution.",
+    "notice_files": [],
+    "notice_search": "Common repository-root NOTICE filenames checked. Binary and dependency notices require separate review.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "release": {
+    "url": "https://github.com/knative/client/releases/tag/knative-v1.17.0",
+    "metadata_url": "https://github.com/knative/client/releases/tag/knative-v1.17.0",
+    "published_at": "2025-01-22T16:39:00Z",
+    "linux_x86_64_asset_url": "https://github.com/knative/client/releases/download/knative-v1.17.0/kn-linux-amd64",
+    "asset_metadata_url": "https://github.com/knative/client/releases/expanded_assets/knative-v1.17.0",
+    "asset_status": "listed_by_upstream_unfetched"
+  },
+  "provisional_grouping_concerns": []
+}

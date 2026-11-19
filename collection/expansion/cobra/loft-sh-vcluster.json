@@ -1,0 +1,69 @@
+{
+  "repository": "loft-sh/vcluster",
+  "upstream_ref": "v0.24.1",
+  "cli": "vcluster",
+  "family": "cobra",
+  "code_evidence": [
+    {
+      "path": "cmd/vcluster/main.go",
+      "repository": "loft-sh/vcluster",
+      "ref": "v0.24.1",
+      "raw_url": "https://raw.githubusercontent.com/loft-sh/vcluster/v0.24.1/cmd/vcluster/main.go",
+      "sha256": "4e3e1fa18b4a07b7398faa70be58e1607c07117dafd9d54cc9d1859dba43b0fd",
+      "excerpts": [
+        {
+          "line": 14,
+          "code": "cmd.RunRoot()",
+          "url": "https://github.com/loft-sh/vcluster/blob/v0.24.1/cmd/vcluster/main.go#L14"
+        }
+      ]
+    },
+    {
+      "path": "cmd/vcluster/cmd/root.go",
+      "repository": "loft-sh/vcluster",
+      "ref": "v0.24.1",
+      "raw_url": "https://raw.githubusercontent.com/loft-sh/vcluster/v0.24.1/cmd/vcluster/cmd/root.go",
+      "sha256": "00adcf317193c00c11145d883ff4b3516b80c9c34f1d933dede55c45abcc8d77",
+      "excerpts": [
+        {
+          "line": 10,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/loft-sh/vcluster/blob/v0.24.1/cmd/vcluster/cmd/root.go#L10"
+        },
+        {
+          "line": 56,
+          "code": "func BuildRoot() *cobra.Command {",
+          "url": "https://github.com/loft-sh/vcluster/blob/v0.24.1/cmd/vcluster/cmd/root.go#L56"
+        },
+        {
+          "line": 48,
+          "code": "err = BuildRoot().ExecuteContext(ctx)",
+          "url": "https://github.com/loft-sh/vcluster/blob/v0.24.1/cmd/vcluster/cmd/root.go#L48"
+        }
+      ]
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "Apache-2.0",
+    "license": {
+      "path": "LICENSE",
+      "repository": "loft-sh/vcluster",
+      "ref": "v0.24.1",
+      "raw_url": "https://raw.githubusercontent.com/loft-sh/vcluster/v0.24.1/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "redistribution_conditions": "Section 4 permits source and object-form redistribution subject to providing the license, marking changes, retaining applicable notices and carrying forward applicable NOTICE attribution.",
+    "notice_files": [],
+    "notice_search": "Common repository-root NOTICE filenames checked. Binary and dependency notices require separate review.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "release": {
+    "url": "https://github.com/loft-sh/vcluster/releases/tag/v0.24.1",
+    "metadata_url": "https://api.github.com/repos/loft-sh/vcluster/releases/tags/v0.24.1",
+    "published_at": "2025-04-08T17:26:52Z",
+    "linux_x86_64_asset_url": "https://github.com/loft-sh/vcluster/releases/download/v0.24.1/vcluster-linux-amd64",
+    "asset_metadata_url": "https://api.github.com/repos/loft-sh/vcluster/releases/tags/v0.24.1",
+    "asset_status": "listed_by_upstream_unfetched"
+  },
+  "provisional_grouping_concerns": []
+}

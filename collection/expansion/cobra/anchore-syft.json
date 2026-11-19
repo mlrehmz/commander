@@ -1,0 +1,124 @@
+{
+  "repository": "anchore/syft",
+  "upstream_ref": "v1.23.1",
+  "cli": "syft",
+  "family": "cobra",
+  "code_evidence": [
+    {
+      "path": "cmd/syft/main.go",
+      "repository": "anchore/syft",
+      "ref": "v1.23.1",
+      "raw_url": "https://raw.githubusercontent.com/anchore/syft/v1.23.1/cmd/syft/main.go",
+      "sha256": "e9bf166c4a0a622da045635441dd26a447ba22696e9e1734d743d682fbf3d3a1",
+      "excerpts": [
+        {
+          "line": 23,
+          "code": "app := cli.Application(",
+          "url": "https://github.com/anchore/syft/blob/v1.23.1/cmd/syft/main.go#L23"
+        },
+        {
+          "line": 33,
+          "code": "app.Run()",
+          "url": "https://github.com/anchore/syft/blob/v1.23.1/cmd/syft/main.go#L33"
+        }
+      ]
+    },
+    {
+      "path": "cmd/syft/cli/cli.go",
+      "repository": "anchore/syft",
+      "ref": "v1.23.1",
+      "raw_url": "https://raw.githubusercontent.com/anchore/syft/v1.23.1/cmd/syft/cli/cli.go",
+      "sha256": "8f4e4c92aa1f467ffc82bdaebfe613fc7cb4b08c492bda7606ab0af20d69c8fc",
+      "excerpts": [
+        {
+          "line": 8,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/anchore/syft/blob/v1.23.1/cmd/syft/cli/cli.go#L8"
+        },
+        {
+          "line": 34,
+          "code": "app := clio.New(*clioCfg)",
+          "url": "https://github.com/anchore/syft/blob/v1.23.1/cmd/syft/cli/cli.go#L34"
+        },
+        {
+          "line": 41,
+          "code": "rootCmd := commands.Root(app, scanCmd)",
+          "url": "https://github.com/anchore/syft/blob/v1.23.1/cmd/syft/cli/cli.go#L41"
+        }
+      ]
+    },
+    {
+      "path": "cmd/syft/internal/commands/root.go",
+      "repository": "anchore/syft",
+      "ref": "v1.23.1",
+      "raw_url": "https://raw.githubusercontent.com/anchore/syft/v1.23.1/cmd/syft/internal/commands/root.go",
+      "sha256": "fc3735ce8acf8750c3f3b193f762c0a614764ca8a9c6ad566da29653cd0d25b3",
+      "excerpts": [
+        {
+          "line": 17,
+          "code": "return app.SetupRootCommand(&cobra.Command{",
+          "url": "https://github.com/anchore/syft/blob/v1.23.1/cmd/syft/internal/commands/root.go#L17"
+        }
+      ]
+    },
+    {
+      "path": "application.go",
+      "repository": "anchore/clio",
+      "ref": "2cfe4b0cb716",
+      "raw_url": "https://raw.githubusercontent.com/anchore/clio/2cfe4b0cb716/application.go",
+      "sha256": "982cdb952f342bfea3ebc95413cf0ad3251c7af8aed8908917db806526ad0209",
+      "excerpts": [
+        {
+          "line": 15,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/anchore/clio/blob/2cfe4b0cb716/application.go#L15"
+        },
+        {
+          "line": 39,
+          "code": "root            *cobra.Command",
+          "url": "https://github.com/anchore/clio/blob/2cfe4b0cb716/application.go#L39"
+        },
+        {
+          "line": 236,
+          "code": "func (a *application) Run() {",
+          "url": "https://github.com/anchore/clio/blob/2cfe4b0cb716/application.go#L236"
+        },
+        {
+          "line": 276,
+          "code": "if err := a.root.Execute(); err != nil {",
+          "url": "https://github.com/anchore/clio/blob/2cfe4b0cb716/application.go#L276"
+        },
+        {
+          "line": 300,
+          "code": "a.root = cmd",
+          "url": "https://github.com/anchore/clio/blob/2cfe4b0cb716/application.go#L300"
+        }
+      ]
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "Apache-2.0",
+    "license": {
+      "path": "LICENSE",
+      "repository": "anchore/syft",
+      "ref": "v1.23.1",
+      "raw_url": "https://raw.githubusercontent.com/anchore/syft/v1.23.1/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "redistribution_conditions": "Section 4 permits source and object-form redistribution subject to providing the license, marking changes, retaining applicable notices and carrying forward applicable NOTICE attribution.",
+    "notice_files": [],
+    "notice_search": "Common repository-root NOTICE filenames checked. Binary and dependency notices require separate review.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "release": {
+    "url": "https://github.com/anchore/syft/releases/tag/v1.23.1",
+    "metadata_url": "https://api.github.com/repos/anchore/syft/releases/tags/v1.23.1",
+    "published_at": "2025-04-25T15:02:01Z",
+    "linux_x86_64_asset_url": "https://github.com/anchore/syft/releases/download/v1.23.1/syft_1.23.1_linux_amd64.tar.gz",
+    "asset_metadata_url": "https://api.github.com/repos/anchore/syft/releases/tags/v1.23.1",
+    "asset_status": "listed_by_upstream_unfetched"
+  },
+  "provisional_grouping_concerns": [
+    "anchore"
+  ]
+}

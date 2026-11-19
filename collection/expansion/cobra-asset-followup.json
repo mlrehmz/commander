@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "status": "asset-provenance-verified-capture-pending",
+  "scope": "Official archive and Debian packaging evidence for four fields left unknown in cobra-survey.json. No harvested executable was run, and no CLI help was collected or read. Asset bytes were downloaded to temporary storage for hash and archive metadata verification.",
+  "docker": {
+    "project": "docker/cli",
+    "survey_upstream_ref": "v28.1.1",
+    "architecture": "linux/amd64",
+    "release_notes_url": "https://docs.docker.com/engine/release-notes/28/#2811",
+    "documented_release_date": "2025-04-18",
+    "upstream_tag_url": "https://github.com/docker/cli/tree/v28.1.1",
+    "upstream_git_url": "https://github.com/docker/cli.git",
+    "tag_object_sha1": "8a8ca7aae8685e1ca7bed1aaf3e23c9e539f450e",
+    "tag_peeled_commit_sha1": "4eba3773274f9d21ba90ae5bc719c3f1e4bb07a1",
+    "artifact": {
+      "directory_listing_url": "https://download.docker.com/linux/static/stable/x86_64/",
+      "url": "https://download.docker.com/linux/static/stable/x86_64/docker-28.1.1.tgz",
+      "http_status": 200,
+      "http_last_modified": "Fri, 25 Apr 2025 13:10:26 GMT",
+      "size_bytes": 78865677,
+      "locally_computed_sha256": "ff34bd799b5e4c3738a3b1a383cf4067c672add48c7203fcd003fcb0aacebc94",
+      "upstream_sha256": null,
+      "checked_sidecar_url": "https://download.docker.com/linux/static/stable/x86_64/docker-28.1.1.tgz.sha256",
+      "checked_sidecar_http_status": 404,
+      "digest_verification": "Archive bytes were hashed locally. No matching digest was found in the static directory listing or at the SHA-256 sidecar endpoint.",
+      "cli_member": "docker/docker",
+      "cli_member_sha256": "a1e26e03d5c80c72092ad1a68e39177319e1b6e4a296910b2b550cb3906b90aa",
+      "embedded_build_identifiers": {
+        "go_main_package": "github.com/docker/cli/cmd/docker",
+        "version": "28.1.1",
+        "short_revision": "4eba377"
+      },
+      "license_or_notice_members": []
+    },
+    "source_license_url": "https://github.com/docker/cli/blob/v28.1.1/LICENSE",
+    "source_notice_url": "https://github.com/docker/cli/blob/v28.1.1/NOTICE",
+    "capture_status": "pending"
+  },
+  "debian_archive": {
+    "distribution": "trixie",
+    "version": "13.7",
+    "index_date": "Sat, 12 Sep 2026 07:55:41 UTC",
+    "inrelease_url": "https://deb.debian.org/debian/dists/trixie/InRelease",
+    "inrelease_sha256": "0584fba32e13e0ab8285fb16c27adea1ec03a73669c18702821094fd6ca86675",
+    "signature_verification": "Three signatures verified with gpgv and the public keys fetched from Debian FTP Master over HTTPS.",
+    "signing_key_fingerprints": [
+      "4CB50190207B4758A3F73A796ED0E7B82643E131",
+      "B8E5F13176D2A7A75220028078DBA3BC47EF2265",
+      "41587F7DB8C774BCCF131416762F67A0B2C39DE4"
+    ],
+    "signing_key_urls": [
+      "https://ftp-master.debian.org/keys/archive-key-12.asc",
+      "https://ftp-master.debian.org/keys/archive-key-13.asc",
+      "https://ftp-master.debian.org/keys/release-13.asc"
+    ],
+    "indexes": {
+      "Packages.xz": {
+        "url": "https://deb.debian.org/debian/dists/trixie/main/binary-amd64/Packages.xz",
+        "sha256": "7778d3e3f303b7ddb8ce0fe7c8d57473a076c6bf2e8f241f75421d2396352498",
+        "size_bytes": 9678380
+      },
+      "Sources.xz": {
+        "url": "https://deb.debian.org/debian/dists/trixie/main/source/Sources.xz",
+        "sha256": "6002f81f463a2d976d84b34170367cc16da2d60bd0ba9ab9d868d6e1c1a935d9",
+        "size_bytes": 10540436
+      }
+    }
+  },
+  "debian": [
+    {
+      "project": "containers/buildah",
+      "survey_upstream_ref": "v1.39.3",
+      "binary_package": "buildah",
+      "binary_package_version": "1.39.3+ds1-1+b7",
+      "architecture": "amd64",
+      "artifact": {
+        "url": "https://deb.debian.org/debian/pool/main/g/golang-github-containers-buildah/buildah_1.39.3+ds1-1+b7_amd64.deb",
+        "size_bytes": 36308764,
+        "sha256": "7a3e35194f2664aa1c32be79647da3c7c532ff44e47c53247ab31672442c6fc3",
+        "digest_verification": "downloaded bytes matched Debian Packages.xz SHA-256, with index authenticated by InRelease",
+        "package_data_member": "data.tar.xz",
+        "cli_member": "./usr/bin/buildah",
+        "cli_member_sha256": "17ce870d84b45de68416990a2515e0e0a42152524211c4bf315b379cf03d374a"
+      },
+      "packages_page": "https://packages.debian.org/trixie/buildah",
+      "source_package": {
+        "name": "golang-github-containers-buildah",
+        "version": "1.39.3+ds1-1",
+        "packages_page": "https://packages.debian.org/source/trixie/golang-github-containers-buildah",
+        "packaging_repository": "https://salsa.debian.org/go-team/packages/golang-github-containers-buildah",
+        "format": "3.0 (quilt)",
+        "archive_files": {
+          "golang-github-containers-buildah_1.39.3+ds1-1.dsc": {
+            "url": "https://deb.debian.org/debian/pool/main/g/golang-github-containers-buildah/golang-github-containers-buildah_1.39.3+ds1-1.dsc",
+            "sha256": "5fddc8fb464dcda641a643812bd0728cc3a22ce8c4b9dbaf5cb3367b02129c31",
+            "size_bytes": 4295,
+            "bytes_verified": true
+          },
+          "golang-github-containers-buildah_1.39.3+ds1.orig.tar.xz": {
+            "url": "https://deb.debian.org/debian/pool/main/g/golang-github-containers-buildah/golang-github-containers-buildah_1.39.3+ds1.orig.tar.xz",
+            "sha256": "6b922efcd4b7eb138c09c8de17b4484d0b50e54e761759efe264964d6871b14d",
+            "size_bytes": 988668,
+            "bytes_verified": false
+          },
+          "golang-github-containers-buildah_1.39.3+ds1-1.debian.tar.xz": {
+            "url": "https://deb.debian.org/debian/pool/main/g/golang-github-containers-buildah/golang-github-containers-buildah_1.39.3+ds1-1.debian.tar.xz",
+            "sha256": "0ac527bae75f5cb8b360c969a3f702ddf574fdf14fd814e272e3b7587db98d7a",
+            "size_bytes": 11528,
+            "bytes_verified": true
+          }
+        },
+        "declared_patch_series": [
+          "root-testfail-ignore.patch",
+          "0005-Disable-TestDeviceFromPath.patch",
+          "0006-tolerate-absence-of-netavark-binary-in-tests.patch",
+          "0004-integration-tests-Prefer-ubi8-over-ubi9-image.patch"
+        ]
+      },
+      "copyright": {
+        "binary_package_member": "./usr/share/doc/buildah/copyright",
+        "binary_copyright_sha256": "0c3ddce7fd2d0f527efb7c8fb3fd1c44a3ec5d5cd30846b823c65342a4b77dc3",
+        "source_packaging_member": "debian/copyright",
+        "source_copyright_sha256": "0c3ddce7fd2d0f527efb7c8fb3fd1c44a3ec5d5cd30846b823c65342a4b77dc3",
+        "observed_source_license_labels": [
+          "Apache-2.0"
+        ],
+        "scope_status": "review copyright and notices for any redistributed capture"
+      },
+      "depends": "golang-github-containers-common (>> 0.57), uidmap, libc6 (>= 2.38), libgpgme11t64 (>= 1.23.2), libseccomp2 (>= 2.5.0), libsqlite3-0 (>= 3.36.0), libsubid5 (>= 1:4.16.0)",
+      "cobra_debian_dependency": "golang-github-spf13-cobra (= 1.8.1-1)",
+      "provenance_note": "Debian build from the same upstream base version, with a repacked source tarball, Debian build dependencies and Debian patch series. Formatter and runtime equivalence to the upstream release remains unverified."
+    },
+    {
+      "project": "containers/podman",
+      "survey_upstream_ref": "v5.4.2",
+      "binary_package": "podman",
+      "binary_package_version": "5.4.2+ds1-2+b2",
+      "architecture": "amd64",
+      "artifact": {
+        "url": "https://deb.debian.org/debian/pool/main/p/podman/podman_5.4.2+ds1-2+b2_amd64.deb",
+        "size_bytes": 24686200,
+        "sha256": "e3987a9d1e6d46cbd4ee11bd067927a5f7f886e41c7a2dbe5b89a436905d44a0",
+        "digest_verification": "downloaded bytes matched Debian Packages.xz SHA-256, with index authenticated by InRelease",
+        "package_data_member": "data.tar.xz",
+        "cli_member": "./usr/bin/podman",
+        "cli_member_sha256": "6e4993e061eb88205003892252e2e13bbf49c12a6f67f519881b9b3c94e980e6"
+      },
+      "packages_page": "https://packages.debian.org/trixie/podman",
+      "source_package": {
+        "name": "podman",
+        "version": "5.4.2+ds1-2",
+        "packages_page": "https://packages.debian.org/source/trixie/podman",
+        "packaging_repository": "https://salsa.debian.org/go-team/packages/podman",
+        "format": "3.0 (quilt)",
+        "archive_files": {
+          "podman_5.4.2+ds1-2.dsc": {
+            "url": "https://deb.debian.org/debian/pool/main/p/podman/podman_5.4.2+ds1-2.dsc",
+            "sha256": "9effc8ff418f80e8c9f397b90104c4fd98254cf9cda9fb3eddd3bb9cdcd49d04",
+            "size_bytes": 4645,
+            "bytes_verified": true
+          },
+          "podman_5.4.2+ds1.orig.tar.xz": {
+            "url": "https://deb.debian.org/debian/pool/main/p/podman/podman_5.4.2+ds1.orig.tar.xz",
+            "sha256": "c0ea13984109bee230723361ace7f8954d3c1db350c0280bf0798ab55d69e46a",
+            "size_bytes": 2964924,
+            "bytes_verified": false
+          },
+          "podman_5.4.2+ds1-2.debian.tar.xz": {
+            "url": "https://deb.debian.org/debian/pool/main/p/podman/podman_5.4.2+ds1-2.debian.tar.xz",
+            "sha256": "5e19d4f7a5f58f5ce4ab8e48b7c66640b0978d2b02ee37ecc45851dec961bae8",
+            "size_bytes": 28632,
+            "bytes_verified": true
+          }
+        },
+        "declared_patch_series": [
+          "system-goimports.patch",
+          "Revert-to-docker-26.patch",
+          "pkg-machine-platform.patch",
+          "gopsutil-v4.patch",
+          "tests-unit-skips.patch",
+          "tests-system-skips.patch",
+          "tests-integration-skips.patch",
+          "CVE-2025-6032.patch"
+        ]
+      },
+      "copyright": {
+        "binary_package_member": "./usr/share/doc/podman/copyright",
+        "binary_copyright_sha256": "a7f7b4f9165a034e192e639e8a32883b882b5757a50653b7120d91211ecfefdc",
+        "source_packaging_member": "debian/copyright",
+        "source_copyright_sha256": "a7f7b4f9165a034e192e639e8a32883b882b5757a50653b7120d91211ecfefdc",
+        "observed_source_license_labels": [
+          "Apache-2.0",
+          "BSD-3-clause",
+          "Expat",
+          "LGPL-2.1+"
+        ],
+        "scope_status": "review copyright and notices for any redistributed capture"
+      },
+      "depends": "conmon, crun | runc, golang-github-containers-common, netavark, init-system-helpers (>= 1.52), libc6 (>= 2.38), libgpgme11t64 (>= 1.23.2), libseccomp2 (>= 2.5.0), libsqlite3-0 (>= 3.36.0), libsubid5 (>= 1:4.16.0)",
+      "cobra_debian_dependency": "golang-github-spf13-cobra (= 1.8.1-1)",
+      "provenance_note": "Debian build from the same upstream base version, with a repacked source tarball, Debian build dependencies and Debian patch series. Formatter and runtime equivalence to the upstream release remains unverified."
+    },
+    {
+      "project": "containers/skopeo",
+      "survey_upstream_ref": "v1.18.0",
+      "binary_package": "skopeo",
+      "binary_package_version": "1.18.0+ds1-1+b5",
+      "architecture": "amd64",
+      "artifact": {
+        "url": "https://deb.debian.org/debian/pool/main/s/skopeo/skopeo_1.18.0+ds1-1+b5_amd64.deb",
+        "size_bytes": 7556560,
+        "sha256": "7ca44a3f31f3cddca9d9dc858029dd08c30faf6e93456753825509e6a59192e2",
+        "digest_verification": "downloaded bytes matched Debian Packages.xz SHA-256, with index authenticated by InRelease",
+        "package_data_member": "data.tar.xz",
+        "cli_member": "./usr/bin/skopeo",
+        "cli_member_sha256": "cd21ffca595f2cc926b7181249f8a08ca3d3f6b01242b1d520485cfafd5fed23"
+      },
+      "packages_page": "https://packages.debian.org/trixie/skopeo",
+      "source_package": {
+        "name": "skopeo",
+        "version": "1.18.0+ds1-1",
+        "packages_page": "https://packages.debian.org/source/trixie/skopeo",
+        "packaging_repository": "https://salsa.debian.org/go-team/packages/skopeo",
+        "format": "3.0 (quilt)",
+        "archive_files": {
+          "skopeo_1.18.0+ds1-1.dsc": {
+            "url": "https://deb.debian.org/debian/pool/main/s/skopeo/skopeo_1.18.0+ds1-1.dsc",
+            "sha256": "1ed9167124d86aad000df019700de5ff12aae0a507c266c8b91543bdc40de175",
+            "size_bytes": 2888,
+            "bytes_verified": true
+          },
+          "skopeo_1.18.0+ds1.orig.tar.xz": {
+            "url": "https://deb.debian.org/debian/pool/main/s/skopeo/skopeo_1.18.0+ds1.orig.tar.xz",
+            "sha256": "5796cf4b10fb6f807fb5ad94bbbe8282c655794a3671672149fe55c4257fea59",
+            "size_bytes": 884444,
+            "bytes_verified": false
+          },
+          "skopeo_1.18.0+ds1-1.debian.tar.xz": {
+            "url": "https://deb.debian.org/debian/pool/main/s/skopeo/skopeo_1.18.0+ds1-1.debian.tar.xz",
+            "sha256": "d7d07505a9ad529f54224a09938d171e6198c67bd342ac314fced17e311fb9a8",
+            "size_bytes": 4492,
+            "bytes_verified": true
+          }
+        },
+        "declared_patch_series": [
+          "t-skip--TestStandaloneSign.patch"
+        ]
+      },
+      "copyright": {
+        "binary_package_member": "./usr/share/doc/skopeo/copyright",
+        "binary_copyright_sha256": "b2a7bd325af9a579963890c55408d30e174ea0402fc7321e16f1f3885fb11b5f",
+        "source_packaging_member": "debian/copyright",
+        "source_copyright_sha256": "b2a7bd325af9a579963890c55408d30e174ea0402fc7321e16f1f3885fb11b5f",
+        "observed_source_license_labels": [
+          "Apache-2.0",
+          "Apache-2.0 and/or Expat",
+          "Expat"
+        ],
+        "scope_status": "review copyright and notices for any redistributed capture"
+      },
+      "depends": "golang-github-containers-common (>> 0.49), libc6 (>= 2.38), libgpgme11t64 (>= 1.23.2), libsqlite3-0 (>= 3.36.0)",
+      "cobra_debian_dependency": "golang-github-spf13-cobra (= 1.8.1-1)",
+      "provenance_note": "Debian build from the same upstream base version, with a repacked source tarball, Debian build dependencies and Debian patch series. Formatter and runtime equivalence to the upstream release remains unverified."
+    }
+  ]
+}

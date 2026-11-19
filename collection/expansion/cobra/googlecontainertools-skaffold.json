@@ -1,0 +1,83 @@
+{
+  "repository": "GoogleContainerTools/skaffold",
+  "upstream_ref": "v2.15.0",
+  "cli": "skaffold",
+  "family": "cobra",
+  "code_evidence": [
+    {
+      "path": "cmd/skaffold/skaffold.go",
+      "repository": "GoogleContainerTools/skaffold",
+      "ref": "v2.15.0",
+      "raw_url": "https://raw.githubusercontent.com/GoogleContainerTools/skaffold/v2.15.0/cmd/skaffold/skaffold.go",
+      "sha256": "14ac0edf5a0b5ca26fbcee3a9fbe2ae111db43193a7ec87d9d49a3595419a150",
+      "excerpts": [
+        {
+          "line": 49,
+          "code": "if err := app.Run(os.Stdout, os.Stderr); err != nil && !errors.Is(err, context.Canceled) {",
+          "url": "https://github.com/GoogleContainerTools/skaffold/blob/v2.15.0/cmd/skaffold/skaffold.go#L49"
+        }
+      ]
+    },
+    {
+      "path": "cmd/skaffold/app/skaffold.go",
+      "repository": "GoogleContainerTools/skaffold",
+      "ref": "v2.15.0",
+      "raw_url": "https://raw.githubusercontent.com/GoogleContainerTools/skaffold/v2.15.0/cmd/skaffold/app/skaffold.go",
+      "sha256": "215828952f523f6178c1d8190ae834fc0ee2efe3d82334ac9f47c9576d448b31",
+      "excerpts": [
+        {
+          "line": 41,
+          "code": "c := cmd.NewSkaffoldCommand(out, stderr)",
+          "url": "https://github.com/GoogleContainerTools/skaffold/blob/v2.15.0/cmd/skaffold/app/skaffold.go#L41"
+        },
+        {
+          "line": 51,
+          "code": "c, err := c.ExecuteContextC(ctx)",
+          "url": "https://github.com/GoogleContainerTools/skaffold/blob/v2.15.0/cmd/skaffold/app/skaffold.go#L51"
+        }
+      ]
+    },
+    {
+      "path": "cmd/skaffold/app/cmd/cmd.go",
+      "repository": "GoogleContainerTools/skaffold",
+      "ref": "v2.15.0",
+      "raw_url": "https://raw.githubusercontent.com/GoogleContainerTools/skaffold/v2.15.0/cmd/skaffold/app/cmd/cmd.go",
+      "sha256": "56340b1d6471bdd54792d57277caac1c8699961ac485d7c47f95c9578efb0d39",
+      "excerpts": [
+        {
+          "line": 27,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/GoogleContainerTools/skaffold/blob/v2.15.0/cmd/skaffold/app/cmd/cmd.go#L27"
+        },
+        {
+          "line": 66,
+          "code": "func NewSkaffoldCommand(out, errOut io.Writer) *cobra.Command {",
+          "url": "https://github.com/GoogleContainerTools/skaffold/blob/v2.15.0/cmd/skaffold/app/cmd/cmd.go#L66"
+        }
+      ]
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "Apache-2.0",
+    "license": {
+      "path": "LICENSE",
+      "repository": "GoogleContainerTools/skaffold",
+      "ref": "v2.15.0",
+      "raw_url": "https://raw.githubusercontent.com/GoogleContainerTools/skaffold/v2.15.0/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "redistribution_conditions": "Section 4 permits source and object-form redistribution subject to providing the license, marking changes, retaining applicable notices and carrying forward applicable NOTICE attribution.",
+    "notice_files": [],
+    "notice_search": "Common repository-root NOTICE filenames checked. Binary and dependency notices require separate review.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "release": {
+    "url": "https://github.com/GoogleContainerTools/skaffold/releases/tag/v2.15.0",
+    "metadata_url": "https://api.github.com/repos/GoogleContainerTools/skaffold/releases/tags/v2.15.0",
+    "published_at": "2025-04-04T19:51:20Z",
+    "linux_x86_64_asset_url": "https://github.com/GoogleContainerTools/skaffold/releases/download/v2.15.0/skaffold-linux-amd64",
+    "asset_metadata_url": "https://api.github.com/repos/GoogleContainerTools/skaffold/releases/tags/v2.15.0",
+    "asset_status": "listed_by_upstream_unfetched"
+  },
+  "provisional_grouping_concerns": []
+}

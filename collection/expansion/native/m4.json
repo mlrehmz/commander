@@ -1,0 +1,88 @@
+{
+  "project": "m4",
+  "repository": "https://www.gnu.org/software/m4/",
+  "upstream_ref": "1.4.19",
+  "tool_version": "1.4.19",
+  "cli": "m4",
+  "family": "gnu-style",
+  "family_basis": "GNU getopt_long dispatches the root help case to the usage routine with a success status.",
+  "upstream_source_archive": {
+    "url": "https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz",
+    "sha256": "63aede5c6d33b6d9b13511cd0be2cac046f2e70fd0a07aa9573a04a82783af96"
+  },
+  "code_evidence": [
+    {
+      "path": "src/m4.c",
+      "url": "https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz",
+      "archive_member": "m4-1.4.19/src/m4.c",
+      "sha256": "186d42ff976690d795fc638ed17fc293acb26a27e3015f0e04d64064af6e3f2a",
+      "excerpts": [
+        {
+          "line": 478,
+          "code": "while ((optchar = getopt_long (argc, (char **) argv, OPTSTRING,",
+          "url": "https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz"
+        },
+        {
+          "line": 618,
+          "code": "case HELP_OPTION:",
+          "url": "https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz"
+        },
+        {
+          "line": 619,
+          "code": "usage (EXIT_SUCCESS);",
+          "url": "https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz"
+        }
+      ],
+      "debian_orig": {
+        "path": "src/m4.c",
+        "url": "https://deb.debian.org/debian/pool/main/m/m4/m4_1.4.19.orig.tar.xz",
+        "archive_member": "m4-1.4.19/src/m4.c",
+        "sha256": "186d42ff976690d795fc638ed17fc293acb26a27e3015f0e04d64064af6e3f2a",
+        "same_bytes": true
+      }
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "GPL-3.0-or-later",
+    "scope": "CLI source",
+    "license_files": [
+      {
+        "path": "COPYING",
+        "url": "https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz",
+        "archive_member": "m4-1.4.19/COPYING",
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+      }
+    ],
+    "observed_terms": "The CLI source file and Debian copyright identify GPL-3.0-or-later.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "debian": {
+    "index_url": "https://deb.debian.org/debian/dists/trixie/main/source/Sources.xz",
+    "index_sha256": "6002f81f463a2d976d84b34170367cc16da2d60bd0ba9ab9d868d6e1c1a935d9",
+    "source_package": "m4",
+    "version": "1.4.19-8",
+    "vcs": "https://salsa.debian.org/sanvila/m4",
+    "orig": {
+      "url": "https://deb.debian.org/debian/pool/main/m/m4/m4_1.4.19.orig.tar.xz",
+      "sha256": "63aede5c6d33b6d9b13511cd0be2cac046f2e70fd0a07aa9573a04a82783af96",
+      "filename": "m4_1.4.19.orig.tar.xz"
+    },
+    "debian": {
+      "url": "https://deb.debian.org/debian/pool/main/m/m4/m4_1.4.19-8.debian.tar.xz",
+      "sha256": "81299879531d9b956b71b4dfe4997325f48309cc154bc23a2e9ef71b2b8ca20f",
+      "filename": "m4_1.4.19-8.debian.tar.xz"
+    },
+    "binary_package": "m4",
+    "package_url": "https://packages.debian.org/trixie/m4",
+    "distribution": "Debian trixie",
+    "copyright": {
+      "path": "debian/copyright",
+      "url": "https://deb.debian.org/debian/pool/main/m/m4/m4_1.4.19-8.debian.tar.xz",
+      "archive_member": "debian/copyright",
+      "sha256": "9438e0cbd4cf2121d2a9b61f42b1aaf765788dc3454983c55f2107cfe504f11c"
+    }
+  },
+  "provisional_grouping_concerns": [
+    "Shared GNU/Gnulib formatting idioms may repeat standard diagnostic and reporting lines across upstream projects. Review actual template overlap before assigning leakage groups."
+  ]
+}

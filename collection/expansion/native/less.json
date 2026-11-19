@@ -1,0 +1,156 @@
+{
+  "project": "less",
+  "repository": "https://github.com/gwsw/less",
+  "upstream_ref": "v668",
+  "tool_version": "668",
+  "cli": "less",
+  "family": "irregular",
+  "family_basis": "The custom option scanner resolves the help alias to opt_query. The main path opens a synthetic help file in the pager.",
+  "upstream_source_archive": null,
+  "code_evidence": [
+    {
+      "path": "main.c",
+      "url": "https://github.com/gwsw/less/blob/v668/main.c",
+      "sha256": "63b7ab7f537494f9007de26535c7bf74c91fc535b9e3f251934c5901b4e696ac",
+      "raw_url": "https://raw.githubusercontent.com/gwsw/less/v668/main.c",
+      "excerpts": [
+        {
+          "line": 308,
+          "code": "scan_option(s);",
+          "url": "https://github.com/gwsw/less/blob/v668/main.c#L308"
+        },
+        {
+          "line": 353,
+          "code": "ifile = get_ifile(FAKE_HELPFILE, ifile);",
+          "url": "https://github.com/gwsw/less/blob/v668/main.c#L353"
+        }
+      ],
+      "debian_orig": {
+        "path": "main.c",
+        "url": "https://deb.debian.org/debian/pool/main/l/less/less_668.orig.tar.gz",
+        "archive_member": "less-668/main.c",
+        "sha256": "63b7ab7f537494f9007de26535c7bf74c91fc535b9e3f251934c5901b4e696ac",
+        "same_bytes": true
+      }
+    },
+    {
+      "path": "option.c",
+      "url": "https://github.com/gwsw/less/blob/v668/option.c",
+      "sha256": "fcff19b8a62f8d92262c9afe8419a44bf90b1f7647f58c87bb9fda03a6cc5b25",
+      "raw_url": "https://raw.githubusercontent.com/gwsw/less/v668/option.c",
+      "excerpts": [
+        {
+          "line": 63,
+          "code": "public void scan_option(constant char *s)",
+          "url": "https://github.com/gwsw/less/blob/v668/option.c#L63"
+        }
+      ],
+      "debian_orig": {
+        "path": "option.c",
+        "url": "https://deb.debian.org/debian/pool/main/l/less/less_668.orig.tar.gz",
+        "archive_member": "less-668/option.c",
+        "sha256": "fcff19b8a62f8d92262c9afe8419a44bf90b1f7647f58c87bb9fda03a6cc5b25",
+        "same_bytes": true
+      }
+    },
+    {
+      "path": "opttbl.c",
+      "url": "https://github.com/gwsw/less/blob/v668/opttbl.c",
+      "sha256": "a93b23b8bcbbf9e29a0f40ee5973c536d450af1e7fa2cfe438a347c05c0be2f8",
+      "raw_url": "https://raw.githubusercontent.com/gwsw/less/v668/opttbl.c",
+      "excerpts": [
+        {
+          "line": 146,
+          "code": "static struct optname query_optname  = { \"help\",                 NULL };",
+          "url": "https://github.com/gwsw/less/blob/v668/opttbl.c#L146"
+        },
+        {
+          "line": 483,
+          "code": "NOVAR, 0, NULL, opt_query,",
+          "url": "https://github.com/gwsw/less/blob/v668/opttbl.c#L483"
+        }
+      ],
+      "debian_orig": {
+        "path": "opttbl.c",
+        "url": "https://deb.debian.org/debian/pool/main/l/less/less_668.orig.tar.gz",
+        "archive_member": "less-668/opttbl.c",
+        "sha256": "a93b23b8bcbbf9e29a0f40ee5973c536d450af1e7fa2cfe438a347c05c0be2f8",
+        "same_bytes": true
+      }
+    },
+    {
+      "path": "optfunc.c",
+      "url": "https://github.com/gwsw/less/blob/v668/optfunc.c",
+      "sha256": "45be76d36bef0f9a2a077f0d3ff4b5e732134e69f615ec2637328b44847afebf",
+      "raw_url": "https://raw.githubusercontent.com/gwsw/less/v668/optfunc.c",
+      "excerpts": [
+        {
+          "line": 834,
+          "code": "public void opt_query(int type, constant char *s)",
+          "url": "https://github.com/gwsw/less/blob/v668/optfunc.c#L834"
+        },
+        {
+          "line": 843,
+          "code": "dohelp = 1;",
+          "url": "https://github.com/gwsw/less/blob/v668/optfunc.c#L843"
+        }
+      ],
+      "debian_orig": {
+        "path": "optfunc.c",
+        "url": "https://deb.debian.org/debian/pool/main/l/less/less_668.orig.tar.gz",
+        "archive_member": "less-668/optfunc.c",
+        "sha256": "45be76d36bef0f9a2a077f0d3ff4b5e732134e69f615ec2637328b44847afebf",
+        "same_bytes": true
+      }
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "GPL-3.0-or-later OR LicenseRef-Less",
+    "scope": "CLI source",
+    "license_files": [
+      {
+        "path": "LICENSE",
+        "url": "https://github.com/gwsw/less/blob/v668/LICENSE",
+        "sha256": "8844d218365c70edc7f5248294c8dd2c4854c389c93d19e5f5bea86d0672eb1b",
+        "raw_url": "https://raw.githubusercontent.com/gwsw/less/v668/LICENSE"
+      },
+      {
+        "path": "COPYING",
+        "url": "https://github.com/gwsw/less/blob/v668/COPYING",
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+        "raw_url": "https://raw.githubusercontent.com/gwsw/less/v668/COPYING"
+      }
+    ],
+    "observed_terms": "Debian and upstream document a choice of GPL-3.0-or-later or the custom Less License. The latter has source/binary notice conditions.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "debian": {
+    "index_url": "https://deb.debian.org/debian/dists/trixie/main/source/Sources.xz",
+    "index_sha256": "6002f81f463a2d976d84b34170367cc16da2d60bd0ba9ab9d868d6e1c1a935d9",
+    "source_package": "less",
+    "version": "668-1",
+    "vcs": "https://salsa.debian.org/debian/less",
+    "orig": {
+      "url": "https://deb.debian.org/debian/pool/main/l/less/less_668.orig.tar.gz",
+      "sha256": "2819f55564d86d542abbecafd82ff61e819a3eec967faa36cd3e68f1596a44b8",
+      "filename": "less_668.orig.tar.gz"
+    },
+    "debian": {
+      "url": "https://deb.debian.org/debian/pool/main/l/less/less_668-1.debian.tar.xz",
+      "sha256": "83e659f43c11ee8591685744cd71e6b99e8cb430224649ac98557068d881e4ce",
+      "filename": "less_668-1.debian.tar.xz"
+    },
+    "binary_package": "less",
+    "package_url": "https://packages.debian.org/trixie/less",
+    "distribution": "Debian trixie",
+    "copyright": {
+      "path": "debian/copyright",
+      "url": "https://deb.debian.org/debian/pool/main/l/less/less_668-1.debian.tar.xz",
+      "archive_member": "debian/copyright",
+      "sha256": "e6ff1fff1cfd66ccd4d9a4179f3f4d945fd5827ad8bb6425dd1a430f9ca308fc"
+    }
+  },
+  "provisional_grouping_concerns": [
+    "Root help is routed through the pager help file. Noninteractive capture behavior remains unverified."
+  ]
+}

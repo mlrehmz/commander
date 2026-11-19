@@ -1,0 +1,167 @@
+usage: nox [--allow-parallel] [--no-allow-parallel]
+           [-db {conda,mamba,micromamba,rattler,virtualenv,venv,uv,none}]
+           [--download-python {auto,never,always}] [--envdir ENVDIR]
+           [--error-on-external-run] [--no-error-on-external-run]
+           [--error-on-missing-interpreters]
+           [--no-error-on-missing-interpreters]
+           [-fb {conda,mamba,micromamba,rattler,virtualenv,venv,uv,none}]
+           [-k KEYWORDS] [-j N] [-p [PYTHONS ...]] [--report REPORT] [-r] [-N]
+           [--reuse-venv {no,yes,never,always}] [-s [SESSIONS ...]] [-x]
+           [--no-stop-on-first-error] [-t [TAGS ...]] [-v] [--no-verbose] [-h]
+           [--version] [--script-mode {none,fresh,reuse}]
+           [--script-venv-backend SCRIPT_VENV_BACKEND] [-f NOXFILE] [-l]
+           [--usage USAGE] [--json] [--extra-pythons [EXTRA_PYTHONS ...]]
+           [-P [FORCE_PYTHONS ...]] [--no-venv] [-R] [--no-dependencies]
+           [--install-only] [--no-install] [--non-interactive] [-ts]
+           [--nocolor] [--forcecolor]
+           ...
+
+Nox is a Python automation toolkit.
+
+General options:
+  These are general arguments used when invoking Nox.
+
+  -h, --help            Show this help message and exit.
+  --version             Show the Nox version and exit.
+  --script-mode {none,fresh,reuse}
+  --script-venv-backend SCRIPT_VENV_BACKEND
+  -f NOXFILE, --noxfile NOXFILE
+                        Location of the Python file containing Nox sessions.
+  posargs               Arguments following ``--`` that are passed through to
+                        the session(s).
+
+Sessions options:
+  These arguments are used to control which Nox session(s) to execute.
+
+  -k KEYWORDS, --keywords KEYWORDS
+                        Only run sessions that match the given expression.
+  -s [SESSIONS ...], -e [SESSIONS ...], --sessions [SESSIONS ...], --session [SESSIONS ...]
+                        Which sessions to run. By default, all sessions will
+                        run. Environment variable: NOXSESSION
+  -t [TAGS ...], --tags [TAGS ...]
+                        Only run sessions with the given tags.
+  -l, --list-sessions, --list
+                        List all available sessions and exit.
+  --usage USAGE         Print the full docstring of a given session and exit.
+                        Raises if there is no docstring.
+  --json                JSON output formatting. Requires list-sessions
+                        currently.
+
+Python options:
+  These arguments are used to control which Python version(s) to use.
+
+  --download-python {auto,never,always}
+                        When should nox download python standalone builds to
+                        run the sessions, defaults to 'auto' which will
+                        download when the version requested can't be found in
+                        the running environment. Environment variable:
+                        NOX_DOWNLOAD_PYTHON
+  -p [PYTHONS ...], --pythons [PYTHONS ...], --python [PYTHONS ...]
+                        Only run sessions that use the given python
+                        interpreter versions. Environment variable: NOXPYTHON
+  --extra-pythons [EXTRA_PYTHONS ...], --extra-python [EXTRA_PYTHONS ...]
+                        Additionally, run sessions using the given python
+                        interpreter versions. Environment variable:
+                        NOXEXTRAPYTHON
+  -P [FORCE_PYTHONS ...], --force-pythons [FORCE_PYTHONS ...], --force-python [FORCE_PYTHONS ...]
+                        Run sessions with the given interpreters instead of
+                        those listed in the Noxfile. This is a shorthand for
+                        ``--python=X.Y --extra-python=X.Y``. It will also work
+                        on sessions that don't have any interpreter
+                        parametrized. Environment variable: NOXFORCEPYTHON
+
+Environment options:
+  These arguments are used to control Nox's creation and usage of virtual
+  environments.
+
+  -db {conda,mamba,micromamba,rattler,virtualenv,venv,uv,none}, --default-venv-backend {conda,mamba,micromamba,rattler,virtualenv,venv,uv,none}
+                        Virtual environment backend to use by default for Nox
+                        sessions, this is ``'virtualenv'`` by default but any
+                        of ``['conda', 'mamba', 'micromamba', 'rattler',
+                        'virtualenv', 'venv', 'uv', 'none']`` are accepted.
+  --envdir ENVDIR       Directory where Nox will store virtualenvs, this is
+                        ``.nox`` by default.
+  -fb {conda,mamba,micromamba,rattler,virtualenv,venv,uv,none}, --force-venv-backend {conda,mamba,micromamba,rattler,virtualenv,venv,uv,none}
+                        Virtual environment backend to force-use for all Nox
+                        sessions in this run, overriding any other venv
+                        backend declared in the Noxfile and ignoring the
+                        default backend. Any of ``['conda', 'mamba',
+                        'micromamba', 'rattler', 'virtualenv', 'venv', 'uv',
+                        'none']`` are accepted.
+  -r, --reuse-existing-virtualenvs
+                        This is an alias for '--reuse-venv=yes|no'.
+  -N, --no-reuse-existing-virtualenvs
+                        Disables --reuse-existing-virtualenvs if it is enabled
+                        in the Noxfile.
+  --reuse-venv {no,yes,never,always}
+                        Controls existing virtualenvs recreation. This is
+                        ``'no'`` by default, but any of ``('yes', 'no',
+                        'always', 'never')`` are accepted.
+  --no-venv             Runs the selected sessions directly on the current
+                        interpreter, without creating a venv. This is an alias
+                        for '--force-venv-backend none'.
+  -R                    Reuse existing virtualenvs and skip package re-
+                        installation. This is an alias for '--reuse-existing-
+                        virtualenvs --no-install'.
+
+Execution options:
+  These arguments are used to control execution of sessions.
+
+  --allow-parallel      Allow every session to run concurrently under
+                        ``--parallel`` unless it sets ``allow_parallel``
+                        itself; a session's own ``allow_parallel=`` value
+                        always wins.
+  --no-allow-parallel   Disables --allow-parallel if it is enabled in the
+                        Noxfile.
+  --error-on-external-run
+                        Error if run() is used to execute a program that isn't
+                        installed in a session's virtualenv.
+  --no-error-on-external-run
+                        Disables --error-on-external-run if it is enabled in
+                        the Noxfile.
+  --error-on-missing-interpreters
+                        Error instead of skipping sessions if an interpreter
+                        can not be located.
+  --no-error-on-missing-interpreters
+                        Disables --error-on-missing-interpreters if it is
+                        enabled in the Noxfile.
+  -j N, --parallel N    Run independent sessions in parallel, each in its own
+                        subprocess. Pass a positive integer or ``'auto'`` (one
+                        per CPU). Only sessions that allow parallel execution
+                        (``allow_parallel=True`` or ``--allow-parallel``) run
+                        concurrently; other sessions run one at a time.
+                        Sessions are ordered by their ``requires=``
+                        dependencies; their output is buffered and printed as
+                        each session finishes. Default is 1 (sequential).
+                        Environment variable: NOX_PARALLEL
+  -x, --stop-on-first-error
+                        Stop after the first error.
+  --no-stop-on-first-error
+                        Disables --stop-on-first-error if it is enabled in the
+                        Noxfile.
+  --no-dependencies     Run only the explicitly selected sessions, skipping
+                        any sessions they ``require``. Assumes prerequisites
+                        have already run; mainly used internally by
+                        ``--parallel``.
+  --install-only        Skip session.run invocations in the Noxfile.
+  --no-install          Skip invocations of session methods for installing
+                        packages (session.install, session.conda_install,
+                        session.run_install) when a virtualenv is being
+                        reused.
+  --non-interactive     Force session.interactive to always be False, even in
+                        interactive sessions.
+
+Reporting options:
+  These arguments are used to control Nox's reporting during execution.
+
+  --report REPORT       Output a report of all sessions to the given filename.
+  -v, --verbose         Logs the output of all commands run including commands
+                        marked silent.
+  --no-verbose          Disables --verbose if it is enabled in the Noxfile.
+  -ts, --add-timestamp  Adds a timestamp to logged output.
+  --nocolor, --no-color
+                        Disable all color output. Environment variable:
+                        NO_COLOR
+  --forcecolor, --force-color
+                        Force color output, even if stdout is not an
+                        interactive terminal.

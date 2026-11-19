@@ -1,0 +1,516 @@
+{
+  "version": 1,
+  "frozen": false,
+  "status": "PROVISIONAL: no evaluation admission",
+  "why": "Reserve familiar test projects before capture so development need not open their help.",
+  "counts": {
+    "train": 36,
+    "dev": 12,
+    "familiar_test": 12,
+    "cobra_test": 20,
+    "clap_test": 20
+  },
+  "grouping_review_complete": false,
+  "projects": [
+    {
+      "project": "black",
+      "reserved_split": "train",
+      "status": "audited_pilot"
+    },
+    {
+      "project": "datasette",
+      "reserved_split": "train",
+      "status": "audited_pilot"
+    },
+    {
+      "project": "hatch",
+      "reserved_split": "train",
+      "status": "audited_pilot"
+    },
+    {
+      "project": "httpie",
+      "reserved_split": "train",
+      "status": "audited_pilot"
+    },
+    {
+      "project": "pipenv",
+      "reserved_split": "train",
+      "status": "audited_pilot"
+    },
+    {
+      "project": "pipx",
+      "reserved_split": "train",
+      "status": "audited_pilot"
+    },
+    {
+      "project": "rich-cli",
+      "reserved_split": "train",
+      "status": "audited_pilot"
+    },
+    {
+      "project": "sqlfluff",
+      "reserved_split": "train",
+      "status": "audited_pilot"
+    },
+    {
+      "project": "tox",
+      "reserved_split": "train",
+      "status": "audited_pilot"
+    },
+    {
+      "project": "virtualenv",
+      "reserved_split": "train",
+      "status": "audited_pilot"
+    },
+    {
+      "project": "pytest",
+      "reserved_split": "dev",
+      "status": "capture_planned"
+    },
+    {
+      "project": "coverage",
+      "reserved_split": "familiar_test",
+      "status": "capture_planned"
+    },
+    {
+      "project": "poetry",
+      "reserved_split": "dev",
+      "status": "capture_planned"
+    },
+    {
+      "project": "ansible-core",
+      "reserved_split": "dev",
+      "status": "capture_planned"
+    },
+    {
+      "project": "awscli",
+      "reserved_split": "dev",
+      "status": "capture_planned"
+    },
+    {
+      "project": "pip",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "pip-tools",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "pre-commit",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "cookiecutter",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "mkdocs",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "sphinx",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "docutils",
+      "reserved_split": "familiar_test",
+      "status": "capture_planned"
+    },
+    {
+      "project": "mypy",
+      "reserved_split": "dev",
+      "status": "capture_planned"
+    },
+    {
+      "project": "pylint",
+      "reserved_split": "familiar_test",
+      "status": "capture_planned"
+    },
+    {
+      "project": "isort",
+      "reserved_split": "dev",
+      "status": "capture_planned"
+    },
+    {
+      "project": "autopep8",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "flake8",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "bandit",
+      "reserved_split": "familiar_test",
+      "status": "capture_planned"
+    },
+    {
+      "project": "yamllint",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "codespell",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "twine",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "build",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "wheel",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "nox",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "invoke",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "fabric",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "streamlink",
+      "reserved_split": "familiar_test",
+      "status": "capture_planned"
+    },
+    {
+      "project": "httpx",
+      "reserved_split": "familiar_test",
+      "status": "capture_planned"
+    },
+    {
+      "project": "llm",
+      "reserved_split": "dev",
+      "status": "capture_planned"
+    },
+    {
+      "project": "yt-dlp",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "curl",
+      "reserved_split": "dev",
+      "status": "capture_planned"
+    },
+    {
+      "project": "wget",
+      "reserved_split": "familiar_test",
+      "status": "capture_planned"
+    },
+    {
+      "project": "tar",
+      "reserved_split": "dev",
+      "status": "capture_planned"
+    },
+    {
+      "project": "grep",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "sed",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "gawk",
+      "reserved_split": "dev",
+      "status": "capture_planned"
+    },
+    {
+      "project": "diffutils",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "findutils",
+      "reserved_split": "familiar_test",
+      "status": "capture_planned"
+    },
+    {
+      "project": "gzip",
+      "reserved_split": "familiar_test",
+      "status": "capture_planned"
+    },
+    {
+      "project": "xz",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "make",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "patch",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "m4",
+      "reserved_split": "familiar_test",
+      "status": "capture_planned"
+    },
+    {
+      "project": "less",
+      "reserved_split": "dev",
+      "status": "capture_planned"
+    },
+    {
+      "project": "nano",
+      "reserved_split": "familiar_test",
+      "status": "capture_planned"
+    },
+    {
+      "project": "tmux",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "htop",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "rsync",
+      "reserved_split": "familiar_test",
+      "status": "capture_planned"
+    },
+    {
+      "project": "file",
+      "reserved_split": "train",
+      "status": "capture_planned"
+    },
+    {
+      "project": "golang",
+      "reserved_split": "dev",
+      "status": "capture_planned"
+    },
+    {
+      "project": "helm/helm",
+      "reserved_split": "cobra_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "kubernetes-sigs/kind",
+      "reserved_split": "cobra_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "goreleaser/goreleaser",
+      "reserved_split": "cobra_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "cli/cli",
+      "reserved_split": "cobra_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "docker/cli",
+      "reserved_split": "cobra_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "containers/podman",
+      "reserved_split": "cobra_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "containers/buildah",
+      "reserved_split": "cobra_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "containers/skopeo",
+      "reserved_split": "cobra_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "anchore/syft",
+      "reserved_split": "cobra_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "anchore/grype",
+      "reserved_split": "cobra_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "fluxcd/flux2",
+      "reserved_split": "cobra_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "argoproj/argo-cd",
+      "reserved_split": "cobra_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "tektoncd/cli",
+      "reserved_split": "cobra_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "loft-sh/vcluster",
+      "reserved_split": "cobra_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "restic/restic",
+      "reserved_split": "cobra_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "sigstore/cosign",
+      "reserved_split": "cobra_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "sigstore/rekor",
+      "reserved_split": "cobra_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "GoogleContainerTools/skaffold",
+      "reserved_split": "cobra_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "containerd/nerdctl",
+      "reserved_split": "cobra_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "knative/client",
+      "reserved_split": "cobra_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "bat",
+      "reserved_split": "clap_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "fd",
+      "reserved_split": "clap_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "lsd",
+      "reserved_split": "clap_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "hyperfine",
+      "reserved_split": "clap_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "hexyl",
+      "reserved_split": "clap_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "dust",
+      "reserved_split": "clap_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "procs",
+      "reserved_split": "clap_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "bottom",
+      "reserved_split": "clap_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "starship",
+      "reserved_split": "clap_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "atuin",
+      "reserved_split": "clap_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "uv",
+      "reserved_split": "clap_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "ruff",
+      "reserved_split": "clap_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "gitui",
+      "reserved_split": "clap_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "zellij",
+      "reserved_split": "clap_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "zoxide",
+      "reserved_split": "clap_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "sccache",
+      "reserved_split": "clap_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "genact",
+      "reserved_split": "clap_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "miniserve",
+      "reserved_split": "clap_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "mdBook",
+      "reserved_split": "clap_test",
+      "status": "asset_verified_help_unopened"
+    },
+    {
+      "project": "just",
+      "reserved_split": "clap_test",
+      "status": "asset_verified_help_unopened"
+    }
+  ]
+}

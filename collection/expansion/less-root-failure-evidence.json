@@ -1,0 +1,8 @@
+{
+  "id": "less-root",
+  "raw_sha256": "8f929f24047cda1776e8a44835106e26cd32e21d4fa6cb411b287fbf800aad88",
+  "matches_original_receipt": true,
+  "selected_stream_file": "corpus/intake/expansion/dev/failures/less-root.selected-stream.bin",
+  "original_receipt": "corpus/intake/expansion/dev/failures/less-root-9f6e4ea3b4d64f83a3108c3c613d9d42.json",
+  "unsupported_backspace_count": 388
+}

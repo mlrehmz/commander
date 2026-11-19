@@ -58,3 +58,5 @@ See [architecture](docs/ARCHITECTURE.md), [preregistration](docs/PREREGISTRATION
 [annotation protocol](docs/ANNOTATION_GUIDELINES.md), [datasheet](docs/DATASHEET.md),
 and [model card](docs/MODEL_CARD.md). The original prototype was archived before
 this project was initialized; its location is recorded in PROGRESS.md.
+
+Expansion checkpoint: [100 source candidates, 56 capture-contract-valid outputs, and 40 locked held-out assets](collection/expansion/README.md). Only the ten audited pilot references are admitted; the full experiment remains incomplete.

@@ -1,0 +1,70 @@
+{
+  "repository": "containerd/nerdctl",
+  "upstream_ref": "v2.0.4",
+  "cli": "nerdctl",
+  "family": "cobra",
+  "code_evidence": [
+    {
+      "path": "cmd/nerdctl/main.go",
+      "repository": "containerd/nerdctl",
+      "ref": "v2.0.4",
+      "raw_url": "https://raw.githubusercontent.com/containerd/nerdctl/v2.0.4/cmd/nerdctl/main.go",
+      "sha256": "56395394f854afaa3fa0eeb3e33f99e467801f55e16968ab62783a734cc8d8ba",
+      "excerpts": [
+        {
+          "line": 28,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/containerd/nerdctl/blob/v2.0.4/cmd/nerdctl/main.go#L28"
+        },
+        {
+          "line": 141,
+          "code": "app, err := newApp()",
+          "url": "https://github.com/containerd/nerdctl/blob/v2.0.4/cmd/nerdctl/main.go#L141"
+        },
+        {
+          "line": 145,
+          "code": "return app.Execute()",
+          "url": "https://github.com/containerd/nerdctl/blob/v2.0.4/cmd/nerdctl/main.go#L145"
+        },
+        {
+          "line": 204,
+          "code": "var rootCmd = &cobra.Command{",
+          "url": "https://github.com/containerd/nerdctl/blob/v2.0.4/cmd/nerdctl/main.go#L204"
+        }
+      ]
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "Apache-2.0",
+    "license": {
+      "path": "LICENSE",
+      "repository": "containerd/nerdctl",
+      "ref": "v2.0.4",
+      "raw_url": "https://raw.githubusercontent.com/containerd/nerdctl/v2.0.4/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "redistribution_conditions": "Section 4 permits source and object-form redistribution subject to providing the license, marking changes, retaining applicable notices and carrying forward applicable NOTICE attribution.",
+    "notice_files": [
+      {
+        "path": "NOTICE",
+        "repository": "containerd/nerdctl",
+        "ref": "v2.0.4",
+        "raw_url": "https://raw.githubusercontent.com/containerd/nerdctl/v2.0.4/NOTICE",
+        "sha256": "ff833970ecea8008091acd1b4d3eb5d87561acb7d4a364eab48ff8a1f2b759a6"
+      }
+    ],
+    "notice_search": "Common repository-root NOTICE filenames checked. Binary and dependency notices require separate review.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "release": {
+    "url": "https://github.com/containerd/nerdctl/releases/tag/v2.0.4",
+    "metadata_url": "https://api.github.com/repos/containerd/nerdctl/releases/tags/v2.0.4",
+    "published_at": "2025-03-20T15:26:44Z",
+    "linux_x86_64_asset_url": "https://github.com/containerd/nerdctl/releases/download/v2.0.4/nerdctl-2.0.4-linux-amd64.tar.gz",
+    "asset_metadata_url": "https://api.github.com/repos/containerd/nerdctl/releases/tags/v2.0.4",
+    "asset_status": "listed_by_upstream_unfetched"
+  },
+  "provisional_grouping_concerns": [
+    "container-cli-compatibility"
+  ]
+}

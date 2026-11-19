@@ -1,0 +1,66 @@
+{
+  "repository": "sigstore/cosign",
+  "upstream_ref": "v2.5.0",
+  "cli": "cosign",
+  "family": "cobra",
+  "code_evidence": [
+    {
+      "path": "cmd/cosign/main.go",
+      "repository": "sigstore/cosign",
+      "ref": "v2.5.0",
+      "raw_url": "https://raw.githubusercontent.com/sigstore/cosign/v2.5.0/cmd/cosign/main.go",
+      "sha256": "7b42159995078fe1fb6ff37e0dc46512e0fde24ad16b8d7d291a6c5731c8921b",
+      "excerpts": [
+        {
+          "line": 64,
+          "code": "if err := cli.New().Execute(); err != nil {",
+          "url": "https://github.com/sigstore/cosign/blob/v2.5.0/cmd/cosign/main.go#L64"
+        }
+      ]
+    },
+    {
+      "path": "cmd/cosign/cli/commands.go",
+      "repository": "sigstore/cosign",
+      "ref": "v2.5.0",
+      "raw_url": "https://raw.githubusercontent.com/sigstore/cosign/v2.5.0/cmd/cosign/cli/commands.go",
+      "sha256": "744b43e60963a98310684e365e089d475782615c8462dad25d3ceaa9ba7e6cd7",
+      "excerpts": [
+        {
+          "line": 23,
+          "code": "\"github.com/spf13/cobra\"",
+          "url": "https://github.com/sigstore/cosign/blob/v2.5.0/cmd/cosign/cli/commands.go#L23"
+        },
+        {
+          "line": 55,
+          "code": "func New() *cobra.Command {",
+          "url": "https://github.com/sigstore/cosign/blob/v2.5.0/cmd/cosign/cli/commands.go#L55"
+        }
+      ]
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "Apache-2.0",
+    "license": {
+      "path": "LICENSE",
+      "repository": "sigstore/cosign",
+      "ref": "v2.5.0",
+      "raw_url": "https://raw.githubusercontent.com/sigstore/cosign/v2.5.0/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "redistribution_conditions": "Section 4 permits source and object-form redistribution subject to providing the license, marking changes, retaining applicable notices and carrying forward applicable NOTICE attribution.",
+    "notice_files": [],
+    "notice_search": "Common repository-root NOTICE filenames checked. Binary and dependency notices require separate review.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "release": {
+    "url": "https://github.com/sigstore/cosign/releases/tag/v2.5.0",
+    "metadata_url": "https://api.github.com/repos/sigstore/cosign/releases/tags/v2.5.0",
+    "published_at": "2025-04-07T22:55:40Z",
+    "linux_x86_64_asset_url": "https://github.com/sigstore/cosign/releases/download/v2.5.0/cosign-linux-amd64",
+    "asset_metadata_url": "https://api.github.com/repos/sigstore/cosign/releases/tags/v2.5.0",
+    "asset_status": "listed_by_upstream_unfetched"
+  },
+  "provisional_grouping_concerns": [
+    "sigstore"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "project": "diffutils",
+  "repository": "https://www.gnu.org/software/diffutils/",
+  "upstream_ref": "3.10",
+  "tool_version": "3.10",
+  "cli": "diff",
+  "family": "gnu-style",
+  "family_basis": "GNU getopt_long dispatches help to usage, which iterates over the assembled option-help table.",
+  "upstream_source_archive": {
+    "url": "https://ftp.gnu.org/gnu/diffutils/diffutils-3.10.tar.xz",
+    "sha256": "90e5e93cc724e4ebe12ede80df1634063c7a855692685919bfe60b556c9bd09e"
+  },
+  "code_evidence": [
+    {
+      "path": "src/diff.c",
+      "url": "https://ftp.gnu.org/gnu/diffutils/diffutils-3.10.tar.xz",
+      "archive_member": "diffutils-3.10/src/diff.c",
+      "sha256": "b796138c8f0a337c7e737210bc3f833cfad7ef535ac6d72696c81b2548b4a35a",
+      "excerpts": [
+        {
+          "line": 317,
+          "code": "while ((c = getopt_long (argc, argv, shortopts, longopts, nullptr)) != -1)",
+          "url": "https://ftp.gnu.org/gnu/diffutils/diffutils-3.10.tar.xz"
+        },
+        {
+          "line": 602,
+          "code": "case HELP_OPTION:",
+          "url": "https://ftp.gnu.org/gnu/diffutils/diffutils-3.10.tar.xz"
+        },
+        {
+          "line": 1065,
+          "code": "for (p = option_help_msgid;  *p;  p++)",
+          "url": "https://ftp.gnu.org/gnu/diffutils/diffutils-3.10.tar.xz"
+        }
+      ],
+      "debian_orig": {
+        "path": "src/diff.c",
+        "url": "https://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.10.orig.tar.xz",
+        "archive_member": "diffutils-3.10/src/diff.c",
+        "sha256": "b796138c8f0a337c7e737210bc3f833cfad7ef535ac6d72696c81b2548b4a35a",
+        "same_bytes": true
+      }
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "GPL-3.0-or-later",
+    "scope": "CLI source",
+    "license_files": [
+      {
+        "path": "COPYING",
+        "url": "https://ftp.gnu.org/gnu/diffutils/diffutils-3.10.tar.xz",
+        "archive_member": "diffutils-3.10/COPYING",
+        "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+      }
+    ],
+    "observed_terms": "The CLI source file and Debian copyright identify GPL-3.0-or-later.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "debian": {
+    "index_url": "https://deb.debian.org/debian/dists/trixie/main/source/Sources.xz",
+    "index_sha256": "6002f81f463a2d976d84b34170367cc16da2d60bd0ba9ab9d868d6e1c1a935d9",
+    "source_package": "diffutils",
+    "version": "1:3.10-4",
+    "vcs": "https://salsa.debian.org/sanvila/diffutils",
+    "orig": {
+      "url": "https://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.10.orig.tar.xz",
+      "sha256": "90e5e93cc724e4ebe12ede80df1634063c7a855692685919bfe60b556c9bd09e",
+      "filename": "diffutils_3.10.orig.tar.xz"
+    },
+    "debian": {
+      "url": "https://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.10-4.debian.tar.xz",
+      "sha256": "8588b6ffb897ccff46c583e58ef50500b2511eee41949b21e8afa5439712c2c7",
+      "filename": "diffutils_3.10-4.debian.tar.xz"
+    },
+    "binary_package": "diffutils",
+    "package_url": "https://packages.debian.org/trixie/diffutils",
+    "distribution": "Debian trixie",
+    "copyright": {
+      "path": "debian/copyright",
+      "url": "https://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.10-4.debian.tar.xz",
+      "archive_member": "debian/copyright",
+      "sha256": "ac6fcf18142bab7569188ae75b204a9e1c73c050c0f9467adaf080759e516123"
+    }
+  },
+  "provisional_grouping_concerns": [
+    "Shared GNU/Gnulib formatting idioms may repeat standard diagnostic and reporting lines across upstream projects. Review actual template overlap before assigning leakage groups."
+  ]
+}

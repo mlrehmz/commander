@@ -1,0 +1,152 @@
+[
+  {
+    "package": "pytest",
+    "version": "9.2.0",
+    "locked": true
+  },
+  {
+    "package": "coverage",
+    "version": "7.17.3",
+    "locked": true
+  },
+  {
+    "package": "poetry",
+    "version": "2.5.1",
+    "locked": true
+  },
+  {
+    "package": "ansible-core",
+    "version": "2.21.6",
+    "locked": true
+  },
+  {
+    "package": "awscli",
+    "version": "1.46.3",
+    "locked": true
+  },
+  {
+    "package": "pip",
+    "version": "26.3",
+    "locked": true
+  },
+  {
+    "package": "pip-tools",
+    "version": "7.7.0",
+    "locked": true
+  },
+  {
+    "package": "pre-commit",
+    "version": "4.7.0",
+    "locked": true
+  },
+  {
+    "package": "cookiecutter",
+    "version": "2.7.1",
+    "locked": true
+  },
+  {
+    "package": "mkdocs",
+    "version": "1.6.1",
+    "locked": true
+  },
+  {
+    "package": "sphinx",
+    "version": "9.1.1",
+    "locked": true
+  },
+  {
+    "package": "docutils",
+    "version": "0.23",
+    "locked": true
+  },
+  {
+    "package": "mypy",
+    "version": "2.4.1",
+    "locked": true
+  },
+  {
+    "package": "pylint",
+    "version": "4.1.4",
+    "locked": true
+  },
+  {
+    "package": "isort",
+    "version": "9.0.2",
+    "locked": true
+  },
+  {
+    "package": "autopep8",
+    "version": "2.3.2",
+    "locked": true
+  },
+  {
+    "package": "flake8",
+    "version": "7.5.0",
+    "locked": true
+  },
+  {
+    "package": "bandit",
+    "version": "1.9.4",
+    "locked": true
+  },
+  {
+    "package": "yamllint",
+    "version": "1.38.0",
+    "locked": true
+  },
+  {
+    "package": "codespell",
+    "version": "2.4.3",
+    "locked": true
+  },
+  {
+    "package": "twine",
+    "version": "7.0.0",
+    "locked": true
+  },
+  {
+    "package": "build",
+    "version": "1.6.1",
+    "locked": true
+  },
+  {
+    "package": "wheel",
+    "version": "0.48.0",
+    "locked": true
+  },
+  {
+    "package": "nox",
+    "version": "2026.10.20",
+    "locked": true
+  },
+  {
+    "package": "invoke",
+    "version": "3.0.3",
+    "locked": true
+  },
+  {
+    "package": "fabric",
+    "version": "3.2.3",
+    "locked": true
+  },
+  {
+    "package": "streamlink",
+    "version": "8.6.3",
+    "locked": true
+  },
+  {
+    "package": "httpx",
+    "version": "0.28.1",
+    "locked": true
+  },
+  {
+    "package": "llm",
+    "version": "0.38",
+    "locked": true
+  },
+  {
+    "package": "yt-dlp",
+    "version": "2026.10.26",
+    "locked": true
+  }
+]

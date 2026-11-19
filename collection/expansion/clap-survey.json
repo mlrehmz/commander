@@ -1,0 +1,1550 @@
+{
+  "version": 1,
+  "status": "upstream-source-survey",
+  "family": "clap",
+  "verified_project_count": 20,
+  "scope": "Family and licensing metadata for potential held-out membership. No CLI help fetched or executed, and no binary downloaded or executed.",
+  "replacement": {
+    "repository": "https://github.com/rust-lang/cargo",
+    "evidence_url": "https://api.github.com/repos/rust-lang/cargo/releases/latest",
+    "reason": "The GitHub latest release endpoint returned HTTP 404.",
+    "replacement_repository": "https://github.com/casey/just"
+  },
+  "projects": [
+    {
+      "project": "bat",
+      "repository": "https://github.com/sharkdp/bat",
+      "tool_version": "0.26.1",
+      "release_tag": "v0.26.1",
+      "source_revision": "979ba22628bc9d8171f2cffca2bd5c90c9fc0a9e",
+      "release_url": "https://github.com/sharkdp/bat/releases/tag/v0.26.1",
+      "release_published_at": "2025-12-02T20:48:10Z",
+      "release_date_evidence_url": "https://api.github.com/repos/sharkdp/bat/releases/tags/v0.26.1",
+      "family": "clap",
+      "family_verified": true,
+      "family_evidence": [
+        {
+          "url": "https://github.com/sharkdp/bat/blob/979ba22628bc9d8171f2cffca2bd5c90c9fc0a9e/src/bin/bat/clap_app.rs#L2-L5",
+          "lines": [
+            {
+              "line": 2,
+              "text": "use clap::{"
+            },
+            {
+              "line": 3,
+              "text": "    crate_name, crate_version, value_parser, Arg, ArgAction, ArgGroup, ColorChoice, Command,"
+            },
+            {
+              "line": 4,
+              "text": "};"
+            },
+            {
+              "line": 5,
+              "text": "use once_cell::sync::Lazy;"
+            }
+          ],
+          "upstream_file_sha256": "de4c87018e0a239afd11bd2e522f2cd0285935b3990a75503c3e704f5b57a325"
+        },
+        {
+          "url": "https://github.com/sharkdp/bat/blob/979ba22628bc9d8171f2cffca2bd5c90c9fc0a9e/src/bin/bat/clap_app.rs#L30",
+          "lines": [
+            {
+              "line": 30,
+              "text": "    let mut app = Command::new(crate_name!())"
+            }
+          ],
+          "upstream_file_sha256": "de4c87018e0a239afd11bd2e522f2cd0285935b3990a75503c3e704f5b57a325"
+        },
+        {
+          "url": "https://github.com/sharkdp/bat/blob/979ba22628bc9d8171f2cffca2bd5c90c9fc0a9e/src/bin/bat/app.rs#L270",
+          "lines": [
+            {
+              "line": 270,
+              "text": "            Ok(clap_app::build_app(interactive_output).get_matches_from(args))"
+            }
+          ],
+          "upstream_file_sha256": "87d7f569e73523f9bc9889dd73ae7c5b985cf30522d55c9ea6e7c889027cb3d2"
+        },
+        {
+          "url": "https://github.com/sharkdp/bat/blob/979ba22628bc9d8171f2cffca2bd5c90c9fc0a9e/src/bin/bat/main.rs#L346",
+          "lines": [
+            {
+              "line": 346,
+              "text": "    let app = App::new()?;"
+            }
+          ],
+          "upstream_file_sha256": "4ee5d5f08d511b1a928c945957a110110d9e5474877d23c5554e785d16b956fd"
+        }
+      ],
+      "license_evidence": {
+        "declared_license": "MIT OR Apache-2.0",
+        "manifest": {
+          "url": "https://github.com/sharkdp/bat/blob/979ba22628bc9d8171f2cffca2bd5c90c9fc0a9e/Cargo.toml#L6",
+          "lines": [
+            {
+              "line": 6,
+              "text": "license = \"MIT OR Apache-2.0\""
+            }
+          ],
+          "upstream_file_sha256": "235ab95201df5e339012295f439bb1cb5e488e16d8d133ff4fa7b3c6be3080f9"
+        },
+        "license_and_notice_files": [
+          {
+            "path": "collection/expansion/clap/bat/LICENSE-APACHE",
+            "url": "https://github.com/sharkdp/bat/blob/979ba22628bc9d8171f2cffca2bd5c90c9fc0a9e/LICENSE-APACHE",
+            "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+            "kind": "license"
+          },
+          {
+            "path": "collection/expansion/clap/bat/LICENSE-MIT",
+            "url": "https://github.com/sharkdp/bat/blob/979ba22628bc9d8171f2cffca2bd5c90c9fc0a9e/LICENSE-MIT",
+            "sha256": "dccda9eb9533f5c65624a1106536c6cfde46008d58e60b3faf154e8b9fd5b46e",
+            "kind": "license"
+          },
+          {
+            "path": "collection/expansion/clap/bat/NOTICE",
+            "url": "https://github.com/sharkdp/bat/blob/979ba22628bc9d8171f2cffca2bd5c90c9fc0a9e/NOTICE",
+            "sha256": "dd46bdeebfdf5e0e55dd0b4636eff2bfbb8f8efeaea018ed86814710a23c1bda",
+            "kind": "notice"
+          }
+        ]
+      },
+      "linux_x86_64_asset": {
+        "name": "bat-v0.26.1-x86_64-unknown-linux-gnu.tar.gz",
+        "url": "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-unknown-linux-gnu.tar.gz",
+        "upstream_digest": "sha256:726f04c8f576a7fd18b7634f1bbf2f915c43494c1c0f013baa3287edb0d5a2a3",
+        "evidence_url": "https://api.github.com/repos/sharkdp/bat/releases/tags/v0.26.1"
+      }
+    },
+    {
+      "project": "fd",
+      "repository": "https://github.com/sharkdp/fd",
+      "tool_version": "10.5.2",
+      "release_tag": "v10.5.2",
+      "source_revision": "b2a287b3993768e0ec52f0852916917f23fb2a38",
+      "release_url": "https://github.com/sharkdp/fd/releases/tag/v10.5.2",
+      "release_published_at": "2026-11-07T07:23:35Z",
+      "release_date_evidence_url": "https://api.github.com/repos/sharkdp/fd/releases/tags/v10.5.2",
+      "family": "clap",
+      "family_verified": true,
+      "family_evidence": [
+        {
+          "url": "https://github.com/sharkdp/fd/blob/b2a287b3993768e0ec52f0852916917f23fb2a38/src/main.rs#L27",
+          "lines": [
+            {
+              "line": 27,
+              "text": "use clap::{CommandFactory, Parser};"
+            }
+          ],
+          "upstream_file_sha256": "9fe43ca855d465365632769c1b6441ea5a676aa923405863bd5ff161a0e88d57"
+        },
+        {
+          "url": "https://github.com/sharkdp/fd/blob/b2a287b3993768e0ec52f0852916917f23fb2a38/src/main.rs#L84",
+          "lines": [
+            {
+              "line": 84,
+              "text": "    let mut opts = Opts::parse();"
+            }
+          ],
+          "upstream_file_sha256": "9fe43ca855d465365632769c1b6441ea5a676aa923405863bd5ff161a0e88d57"
+        }
+      ],
+      "license_evidence": {
+        "declared_license": "MIT OR Apache-2.0",
+        "manifest": {
+          "url": "https://github.com/sharkdp/fd/blob/b2a287b3993768e0ec52f0852916917f23fb2a38/Cargo.toml#L15",
+          "lines": [
+            {
+              "line": 15,
+              "text": "license = \"MIT OR Apache-2.0\""
+            }
+          ],
+          "upstream_file_sha256": "a9c3e7ffb7c74509ecd1292b73a8a17434714b8da6a32c642991216c5ff92b17"
+        },
+        "license_and_notice_files": [
+          {
+            "path": "collection/expansion/clap/fd/LICENSE-APACHE",
+            "url": "https://github.com/sharkdp/fd/blob/b2a287b3993768e0ec52f0852916917f23fb2a38/LICENSE-APACHE",
+            "sha256": "73c83c60d817e7df1943cb3f0af81e4939a8352c9a96c2fd00451b1116fa635c",
+            "kind": "license"
+          },
+          {
+            "path": "collection/expansion/clap/fd/LICENSE-MIT",
+            "url": "https://github.com/sharkdp/fd/blob/b2a287b3993768e0ec52f0852916917f23fb2a38/LICENSE-MIT",
+            "sha256": "322cfc7aa0c774d0eca3b2610f1d414de3ddbd7d8dd4b9dea941a13a6eb07455",
+            "kind": "license"
+          }
+        ]
+      },
+      "linux_x86_64_asset": {
+        "name": "fd-v10.5.2-x86_64-unknown-linux-gnu.tar.gz",
+        "url": "https://github.com/sharkdp/fd/releases/download/v10.5.2/fd-v10.5.2-x86_64-unknown-linux-gnu.tar.gz",
+        "upstream_digest": "sha256:985e24041e9ef6e9a38e9e088743405dde23d7220aa96740f091862167d9ff28",
+        "evidence_url": "https://api.github.com/repos/sharkdp/fd/releases/tags/v10.5.2"
+      }
+    },
+    {
+      "project": "lsd",
+      "repository": "https://github.com/lsd-rs/lsd",
+      "tool_version": "1.2.0",
+      "release_tag": "v1.2.0",
+      "source_revision": "d5a4e1cb80626d5ec94b237f6b77f7280d0f2fc9",
+      "release_url": "https://github.com/lsd-rs/lsd/releases/tag/v1.2.0",
+      "release_published_at": "2025-10-12T08:31:53Z",
+      "release_date_evidence_url": "https://api.github.com/repos/lsd-rs/lsd/releases/tags/v1.2.0",
+      "family": "clap",
+      "family_verified": true,
+      "family_evidence": [
+        {
+          "url": "https://github.com/lsd-rs/lsd/blob/d5a4e1cb80626d5ec94b237f6b77f7280d0f2fc9/src/main.rs#L42",
+          "lines": [
+            {
+              "line": 42,
+              "text": "use clap::Parser;"
+            }
+          ],
+          "upstream_file_sha256": "a4179e809a2272a420e75a79a2cbc06cfc9b6f2195702e9fbc6578012df7a679"
+        },
+        {
+          "url": "https://github.com/lsd-rs/lsd/blob/d5a4e1cb80626d5ec94b237f6b77f7280d0f2fc9/src/main.rs#L111",
+          "lines": [
+            {
+              "line": 111,
+              "text": "    let cli = Cli::parse_from(wild::args_os());"
+            }
+          ],
+          "upstream_file_sha256": "a4179e809a2272a420e75a79a2cbc06cfc9b6f2195702e9fbc6578012df7a679"
+        }
+      ],
+      "license_evidence": {
+        "declared_license": "Apache-2.0",
+        "manifest": {
+          "url": "https://github.com/lsd-rs/lsd/blob/d5a4e1cb80626d5ec94b237f6b77f7280d0f2fc9/Cargo.toml#L7",
+          "lines": [
+            {
+              "line": 7,
+              "text": "license = \"Apache-2.0\""
+            }
+          ],
+          "upstream_file_sha256": "67aed69f4e784f464e81ccb4d1d499b71f46b7995fdebbc6c2f6611bb65f6acd"
+        },
+        "license_and_notice_files": [
+          {
+            "path": "collection/expansion/clap/lsd/LICENSE",
+            "url": "https://github.com/lsd-rs/lsd/blob/d5a4e1cb80626d5ec94b237f6b77f7280d0f2fc9/LICENSE",
+            "sha256": "600cc67cc4cb2f5ea317dcfc687ad1c74dc4bec8782bbe9db0afd83513b935b7",
+            "kind": "license"
+          }
+        ]
+      },
+      "linux_x86_64_asset": {
+        "name": "lsd-v1.2.0-x86_64-unknown-linux-gnu.tar.gz",
+        "url": "https://github.com/lsd-rs/lsd/releases/download/v1.2.0/lsd-v1.2.0-x86_64-unknown-linux-gnu.tar.gz",
+        "upstream_digest": "sha256:57d3b5859254adcfb8374ce98159cca97a14959997d2ae1176d2cff59556d829",
+        "evidence_url": "https://api.github.com/repos/lsd-rs/lsd/releases/tags/v1.2.0"
+      }
+    },
+    {
+      "project": "hyperfine",
+      "repository": "https://github.com/sharkdp/hyperfine",
+      "tool_version": "2.0.0",
+      "release_tag": "v2.0.0",
+      "source_revision": "b33755fe1fca8bcc1f182c773ca3ab040bfe517d",
+      "release_url": "https://github.com/sharkdp/hyperfine/releases/tag/v2.0.0",
+      "release_published_at": "2026-10-07T21:13:36Z",
+      "release_date_evidence_url": "https://api.github.com/repos/sharkdp/hyperfine/releases/tags/v2.0.0",
+      "family": "clap",
+      "family_verified": true,
+      "family_evidence": [
+        {
+          "url": "https://github.com/sharkdp/hyperfine/blob/b33755fe1fca8bcc1f182c773ca3ab040bfe517d/src/cli.rs#L3-L8",
+          "lines": [
+            {
+              "line": 3,
+              "text": "use clap::{"
+            },
+            {
+              "line": 4,
+              "text": "    builder::styling::{AnsiColor, Effects},"
+            },
+            {
+              "line": 5,
+              "text": "    builder::NonEmptyStringValueParser,"
+            },
+            {
+              "line": 6,
+              "text": "    builder::Styles,"
+            },
+            {
+              "line": 7,
+              "text": "    crate_version, Arg, ArgAction, ArgMatches, Command, ValueHint,"
+            },
+            {
+              "line": 8,
+              "text": "};"
+            }
+          ],
+          "upstream_file_sha256": "5247aa96996477238e2b4e2565cf91dc118ee9c02c764fb8e0c55e6091189788"
+        },
+        {
+          "url": "https://github.com/sharkdp/hyperfine/blob/b33755fe1fca8bcc1f182c773ca3ab040bfe517d/src/cli.rs#L22",
+          "lines": [
+            {
+              "line": 22,
+              "text": "    command.get_matches_from(args)"
+            }
+          ],
+          "upstream_file_sha256": "5247aa96996477238e2b4e2565cf91dc118ee9c02c764fb8e0c55e6091189788"
+        },
+        {
+          "url": "https://github.com/sharkdp/hyperfine/blob/b33755fe1fca8bcc1f182c773ca3ab040bfe517d/src/cli.rs#L33",
+          "lines": [
+            {
+              "line": 33,
+              "text": "    Command::new(\"hyperfine\")"
+            }
+          ],
+          "upstream_file_sha256": "5247aa96996477238e2b4e2565cf91dc118ee9c02c764fb8e0c55e6091189788"
+        },
+        {
+          "url": "https://github.com/sharkdp/hyperfine/blob/b33755fe1fca8bcc1f182c773ca3ab040bfe517d/src/main.rs#L39",
+          "lines": [
+            {
+              "line": 39,
+              "text": "    let cli_arguments = get_cli_arguments(env::args_os());"
+            }
+          ],
+          "upstream_file_sha256": "43dee1e9056db5e1eaff29b73698ac464bd4e760fecc22ed5026b34c0f45a00b"
+        }
+      ],
+      "license_evidence": {
+        "declared_license": "MIT OR Apache-2.0",
+        "manifest": {
+          "url": "https://github.com/sharkdp/hyperfine/blob/b33755fe1fca8bcc1f182c773ca3ab040bfe517d/Cargo.toml#L6",
+          "lines": [
+            {
+              "line": 6,
+              "text": "license = \"MIT OR Apache-2.0\""
+            }
+          ],
+          "upstream_file_sha256": "0073da9ab06c2d547622e8043fd5d1d2ef7dacb64628b982083e01f1154f5250"
+        },
+        "license_and_notice_files": [
+          {
+            "path": "collection/expansion/clap/hyperfine/LICENSE-APACHE",
+            "url": "https://github.com/sharkdp/hyperfine/blob/b33755fe1fca8bcc1f182c773ca3ab040bfe517d/LICENSE-APACHE",
+            "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+            "kind": "license"
+          },
+          {
+            "path": "collection/expansion/clap/hyperfine/LICENSE-MIT",
+            "url": "https://github.com/sharkdp/hyperfine/blob/b33755fe1fca8bcc1f182c773ca3ab040bfe517d/LICENSE-MIT",
+            "sha256": "1dfee18c2ff07ce551de4d6a1d2db158c0380746b488a7f0d08c8e0d3568b7c3",
+            "kind": "license"
+          }
+        ]
+      },
+      "linux_x86_64_asset": {
+        "name": "hyperfine-v2.0.0-x86_64-unknown-linux-gnu.tar.gz",
+        "url": "https://github.com/sharkdp/hyperfine/releases/download/v2.0.0/hyperfine-v2.0.0-x86_64-unknown-linux-gnu.tar.gz",
+        "upstream_digest": "sha256:ae2beda2ac99c098427e4f755244552daf20e514422889cca6d44421e2d93c87",
+        "evidence_url": "https://api.github.com/repos/sharkdp/hyperfine/releases/tags/v2.0.0"
+      }
+    },
+    {
+      "project": "hexyl",
+      "repository": "https://github.com/sharkdp/hexyl",
+      "tool_version": "0.17.0",
+      "release_tag": "v0.17.0",
+      "source_revision": "8eb6d4771ce1ec7af65d06bd335457783b77d557",
+      "release_url": "https://github.com/sharkdp/hexyl/releases/tag/v0.17.0",
+      "release_published_at": "2026-02-14T12:56:31Z",
+      "release_date_evidence_url": "https://api.github.com/repos/sharkdp/hexyl/releases/tags/v0.17.0",
+      "family": "clap",
+      "family_verified": true,
+      "family_evidence": [
+        {
+          "url": "https://github.com/sharkdp/hexyl/blob/8eb6d4771ce1ec7af65d06bd335457783b77d557/src/main.rs#L9",
+          "lines": [
+            {
+              "line": 9,
+              "text": "use clap::{ArgAction, CommandFactory, Parser, ValueEnum};"
+            }
+          ],
+          "upstream_file_sha256": "4d3712519f131f826ab0b45d8bdb6d1c773d4e9ec6e54b86e3331e1bbbebb5a1"
+        },
+        {
+          "url": "https://github.com/sharkdp/hexyl/blob/8eb6d4771ce1ec7af65d06bd335457783b77d557/src/main.rs#L270",
+          "lines": [
+            {
+              "line": 270,
+              "text": "    let opt = Opt::parse();"
+            }
+          ],
+          "upstream_file_sha256": "4d3712519f131f826ab0b45d8bdb6d1c773d4e9ec6e54b86e3331e1bbbebb5a1"
+        }
+      ],
+      "license_evidence": {
+        "declared_license": "MIT/Apache-2.0",
+        "manifest": {
+          "url": "https://github.com/sharkdp/hexyl/blob/8eb6d4771ce1ec7af65d06bd335457783b77d557/Cargo.toml#L7",
+          "lines": [
+            {
+              "line": 7,
+              "text": "license = \"MIT/Apache-2.0\""
+            }
+          ],
+          "upstream_file_sha256": "da6100d14c9d19c5c9659ac7d050149156c063cedc83b50c2f11e74dccdb6ddb"
+        },
+        "license_and_notice_files": [
+          {
+            "path": "collection/expansion/clap/hexyl/LICENSE-APACHE",
+            "url": "https://github.com/sharkdp/hexyl/blob/8eb6d4771ce1ec7af65d06bd335457783b77d557/LICENSE-APACHE",
+            "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+            "kind": "license"
+          },
+          {
+            "path": "collection/expansion/clap/hexyl/LICENSE-MIT",
+            "url": "https://github.com/sharkdp/hexyl/blob/8eb6d4771ce1ec7af65d06bd335457783b77d557/LICENSE-MIT",
+            "sha256": "f9c4c77baa3828004ee54b8a4f2db2e88ed44a6237a493965bf551fac0fcb62d",
+            "kind": "license"
+          }
+        ]
+      },
+      "linux_x86_64_asset": {
+        "name": "hexyl-v0.17.0-x86_64-unknown-linux-gnu.tar.gz",
+        "url": "https://github.com/sharkdp/hexyl/releases/download/v0.17.0/hexyl-v0.17.0-x86_64-unknown-linux-gnu.tar.gz",
+        "upstream_digest": "sha256:71b7463b8716225b4248525066e24b1874e954e87f397096f53e8804e3360189",
+        "evidence_url": "https://api.github.com/repos/sharkdp/hexyl/releases/tags/v0.17.0"
+      }
+    },
+    {
+      "project": "dust",
+      "repository": "https://github.com/bootandy/dust",
+      "tool_version": "1.2.7",
+      "release_tag": "v1.2.7",
+      "source_revision": "079c55266917387e416e0f871c97c06da52df12d",
+      "release_url": "https://github.com/bootandy/dust/releases/tag/v1.2.7",
+      "release_published_at": "2026-11-01T20:35:10Z",
+      "release_date_evidence_url": "https://api.github.com/repos/bootandy/dust/releases/tags/v1.2.7",
+      "family": "clap",
+      "family_verified": true,
+      "family_evidence": [
+        {
+          "url": "https://github.com/bootandy/dust/blob/079c55266917387e416e0f871c97c06da52df12d/src/main.rs#L17",
+          "lines": [
+            {
+              "line": 17,
+              "text": "use clap::Parser;"
+            }
+          ],
+          "upstream_file_sha256": "366c442148c5d400cf67bc2d95f6a74a34e824869aa83d51cbb75bb80d46a6a7"
+        },
+        {
+          "url": "https://github.com/bootandy/dust/blob/079c55266917387e416e0f871c97c06da52df12d/src/main.rs#L118",
+          "lines": [
+            {
+              "line": 118,
+              "text": "    let options = Cli::parse();"
+            }
+          ],
+          "upstream_file_sha256": "366c442148c5d400cf67bc2d95f6a74a34e824869aa83d51cbb75bb80d46a6a7"
+        },
+        {
+          "url": "https://github.com/bootandy/dust/blob/079c55266917387e416e0f871c97c06da52df12d/src/cli.rs#L9",
+          "lines": [
+            {
+              "line": 9,
+              "text": "#[derive(Debug, Parser)]"
+            }
+          ],
+          "upstream_file_sha256": "a26feacedd7d100082ba3c72d89706e266d0e3ae603c39578f7af3354d6c49cc"
+        }
+      ],
+      "license_evidence": {
+        "declared_license": "Apache-2.0",
+        "manifest": {
+          "url": "https://github.com/bootandy/dust/blob/079c55266917387e416e0f871c97c06da52df12d/Cargo.toml#L15",
+          "lines": [
+            {
+              "line": 15,
+              "text": "license = \"Apache-2.0\""
+            }
+          ],
+          "upstream_file_sha256": "5e24da0e110f59b31bd90eeada5d5bbc4e01635ff6f52f84872584c8ca71ff17"
+        },
+        "license_and_notice_files": [
+          {
+            "path": "collection/expansion/clap/dust/LICENSE",
+            "url": "https://github.com/bootandy/dust/blob/079c55266917387e416e0f871c97c06da52df12d/LICENSE",
+            "sha256": "aee6e2d13d3a55c7881630c09b41ca7b3b44bb1437b5d36695d22decc3655160",
+            "kind": "license"
+          }
+        ]
+      },
+      "linux_x86_64_asset": {
+        "name": "dust-v1.2.7-x86_64-unknown-linux-gnu.tar.gz",
+        "url": "https://github.com/bootandy/dust/releases/download/v1.2.7/dust-v1.2.7-x86_64-unknown-linux-gnu.tar.gz",
+        "upstream_digest": "sha256:ec3bf712c660dcaa5578b996741f5cca36b30c021c1e4b49352b11137a95a96e",
+        "evidence_url": "https://api.github.com/repos/bootandy/dust/releases/tags/v1.2.7"
+      }
+    },
+    {
+      "project": "procs",
+      "repository": "https://github.com/dalance/procs",
+      "tool_version": "0.14.12",
+      "release_tag": "v0.14.12",
+      "source_revision": "8ad5da5ef0c33a7c9dbe30625548469f88e824d8",
+      "release_url": "https://github.com/dalance/procs/releases/tag/v0.14.12",
+      "release_published_at": "2026-06-25T10:12:30Z",
+      "release_date_evidence_url": "https://api.github.com/repos/dalance/procs/releases/tags/v0.14.12",
+      "family": "clap",
+      "family_verified": true,
+      "family_evidence": [
+        {
+          "url": "https://github.com/dalance/procs/blob/8ad5da5ef0c33a7c9dbe30625548469f88e824d8/src/main.rs#L21",
+          "lines": [
+            {
+              "line": 21,
+              "text": "use clap::{CommandFactory, Parser};"
+            }
+          ],
+          "upstream_file_sha256": "2aebdc0178629af5664818c8d03d5183bc980c4817ceb50df2654b539aab9597"
+        },
+        {
+          "url": "https://github.com/dalance/procs/blob/8ad5da5ef0c33a7c9dbe30625548469f88e824d8/src/main.rs#L142",
+          "lines": [
+            {
+              "line": 142,
+              "text": "    let mut opt: Opt = Parser::parse();"
+            }
+          ],
+          "upstream_file_sha256": "2aebdc0178629af5664818c8d03d5183bc980c4817ceb50df2654b539aab9597"
+        }
+      ],
+      "license_evidence": {
+        "declared_license": "MIT",
+        "manifest": {
+          "url": "https://github.com/dalance/procs/blob/8ad5da5ef0c33a7c9dbe30625548469f88e824d8/Cargo.toml#L8",
+          "lines": [
+            {
+              "line": 8,
+              "text": "license = \"MIT\""
+            }
+          ],
+          "upstream_file_sha256": "7906b78149a9dcddfcdf62f58726470eabfc9eac5c24a5c32727a9d60057e3db"
+        },
+        "license_and_notice_files": [
+          {
+            "path": "collection/expansion/clap/procs/LICENSE",
+            "url": "https://github.com/dalance/procs/blob/8ad5da5ef0c33a7c9dbe30625548469f88e824d8/LICENSE",
+            "sha256": "feb87a2e0c305de3464cc44077da5393c52d8ca6362d37427157d04ec6f4510d",
+            "kind": "license"
+          }
+        ]
+      },
+      "linux_x86_64_asset": {
+        "name": "procs-v0.14.12-x86_64-linux.zip",
+        "url": "https://github.com/dalance/procs/releases/download/v0.14.12/procs-v0.14.12-x86_64-linux.zip",
+        "upstream_digest": "sha256:81964faf9d5cd0e9f399d5d0954fb6fe4d4d9f7d3cbec4507633df5a45b11713",
+        "evidence_url": "https://api.github.com/repos/dalance/procs/releases/tags/v0.14.12"
+      }
+    },
+    {
+      "project": "bottom",
+      "repository": "https://github.com/ClementTsang/bottom",
+      "tool_version": "0.15.0",
+      "release_tag": "0.15.0",
+      "source_revision": "4b6a033f430728a882c40588cd96499ed550a3f1",
+      "release_url": "https://github.com/ClementTsang/bottom/releases/tag/0.15.0",
+      "release_published_at": "2026-11-01T01:51:14Z",
+      "release_date_evidence_url": "https://api.github.com/repos/ClementTsang/bottom/releases/tags/0.15.0",
+      "family": "clap",
+      "family_verified": true,
+      "family_evidence": [
+        {
+          "url": "https://github.com/ClementTsang/bottom/blob/4b6a033f430728a882c40588cd96499ed550a3f1/src/options/args.rs#L10",
+          "lines": [
+            {
+              "line": 10,
+              "text": "use clap::{builder::PossibleValue, *};"
+            }
+          ],
+          "upstream_file_sha256": "31560990a7653fd7bdbdc26ed44c9eda680177a89c37f4e487ccd0d7f3987c4a"
+        },
+        {
+          "url": "https://github.com/ClementTsang/bottom/blob/4b6a033f430728a882c40588cd96499ed550a3f1/src/options/args.rs#L45",
+          "lines": [
+            {
+              "line": 45,
+              "text": "#[derive(Parser, Debug)]"
+            }
+          ],
+          "upstream_file_sha256": "31560990a7653fd7bdbdc26ed44c9eda680177a89c37f4e487ccd0d7f3987c4a"
+        },
+        {
+          "url": "https://github.com/ClementTsang/bottom/blob/4b6a033f430728a882c40588cd96499ed550a3f1/src/options/args.rs#L713-L715",
+          "lines": [
+            {
+              "line": 713,
+              "text": "pub fn get_args() -> BottomArgs {"
+            },
+            {
+              "line": 714,
+              "text": "    BottomArgs::parse()"
+            },
+            {
+              "line": 715,
+              "text": "}"
+            }
+          ],
+          "upstream_file_sha256": "31560990a7653fd7bdbdc26ed44c9eda680177a89c37f4e487ccd0d7f3987c4a"
+        },
+        {
+          "url": "https://github.com/ClementTsang/bottom/blob/4b6a033f430728a882c40588cd96499ed550a3f1/src/lib.rs#L306",
+          "lines": [
+            {
+              "line": 306,
+              "text": "    let args = args::get_args();"
+            }
+          ],
+          "upstream_file_sha256": "37f7beaf4410b83ee7f87a8f377265593d057c6eac2a0de29406062a3be7c8d7"
+        },
+        {
+          "url": "https://github.com/ClementTsang/bottom/blob/4b6a033f430728a882c40588cd96499ed550a3f1/src/bin/main.rs#L8",
+          "lines": [
+            {
+              "line": 8,
+              "text": "    start_bottom(&mut run_error_hook).inspect_err(|_| {"
+            }
+          ],
+          "upstream_file_sha256": "b3c8c56ad9e04dd3e6ec3084068c08c253c57869f6f24e128f580f3bc8a7514d"
+        }
+      ],
+      "license_evidence": {
+        "declared_license": "MIT",
+        "manifest": {
+          "url": "https://github.com/ClementTsang/bottom/blob/4b6a033f430728a882c40588cd96499ed550a3f1/Cargo.toml#L5",
+          "lines": [
+            {
+              "line": 5,
+              "text": "license = \"MIT\""
+            }
+          ],
+          "upstream_file_sha256": "6c3153bee19cff393832400bbc78e15d64e444b2efd3ebbf0da2c69b9011bc88"
+        },
+        "license_and_notice_files": [
+          {
+            "path": "collection/expansion/clap/bottom/LICENSE",
+            "url": "https://github.com/ClementTsang/bottom/blob/4b6a033f430728a882c40588cd96499ed550a3f1/LICENSE",
+            "sha256": "89855774cfcb4b828306549bdb9d3424c15bebf01d60a59e6c98ff0e2896da9e",
+            "kind": "license"
+          }
+        ]
+      },
+      "linux_x86_64_asset": {
+        "name": "bottom_x86_64-unknown-linux-gnu.tar.gz",
+        "url": "https://github.com/ClementTsang/bottom/releases/download/0.15.0/bottom_x86_64-unknown-linux-gnu.tar.gz",
+        "upstream_digest": "sha256:051888e0e064aa037728efed3fcf77820714f8f4dc7bea2b0179d40c54400c26",
+        "evidence_url": "https://api.github.com/repos/ClementTsang/bottom/releases/tags/0.15.0"
+      }
+    },
+    {
+      "project": "starship",
+      "repository": "https://github.com/starship/starship",
+      "tool_version": "1.27.0",
+      "release_tag": "v1.27.0",
+      "source_revision": "f8e4e2155542cc84f49b342122d371f74e0ad253",
+      "release_url": "https://github.com/starship/starship/releases/tag/v1.27.0",
+      "release_published_at": "2026-10-17T09:17:43Z",
+      "release_date_evidence_url": "https://api.github.com/repos/starship/starship/releases/tags/v1.27.0",
+      "family": "clap",
+      "family_verified": true,
+      "family_evidence": [
+        {
+          "url": "https://github.com/starship/starship/blob/f8e4e2155542cc84f49b342122d371f74e0ad253/src/main.rs#L8",
+          "lines": [
+            {
+              "line": 8,
+              "text": "use clap::{CommandFactory, Parser, Subcommand, ValueEnum};"
+            }
+          ],
+          "upstream_file_sha256": "dfd37a78c760b644b79a2c5354bfb668dc1d25e17f209c379183304a87b90686"
+        },
+        {
+          "url": "https://github.com/starship/starship/blob/f8e4e2155542cc84f49b342122d371f74e0ad253/src/main.rs#L181",
+          "lines": [
+            {
+              "line": 181,
+              "text": "    let args = match Cli::try_parse() {"
+            }
+          ],
+          "upstream_file_sha256": "dfd37a78c760b644b79a2c5354bfb668dc1d25e17f209c379183304a87b90686"
+        }
+      ],
+      "license_evidence": {
+        "declared_license": "ISC",
+        "manifest": {
+          "url": "https://github.com/starship/starship/blob/f8e4e2155542cc84f49b342122d371f74e0ad253/Cargo.toml#L22",
+          "lines": [
+            {
+              "line": 22,
+              "text": "license = \"ISC\""
+            }
+          ],
+          "upstream_file_sha256": "3d40efa77dd5727da751803ab001964f8b4242fecfd127b206de5fe7a256acc5"
+        },
+        "license_and_notice_files": [
+          {
+            "path": "collection/expansion/clap/starship/LICENSE",
+            "url": "https://github.com/starship/starship/blob/f8e4e2155542cc84f49b342122d371f74e0ad253/LICENSE",
+            "sha256": "2587580d0ec4ddc43d1534745a19ffeec0b63186497c2ed4bc36832da91b13e2",
+            "kind": "license"
+          }
+        ]
+      },
+      "linux_x86_64_asset": {
+        "name": "starship-x86_64-unknown-linux-gnu.tar.gz",
+        "url": "https://github.com/starship/starship/releases/download/v1.27.0/starship-x86_64-unknown-linux-gnu.tar.gz",
+        "upstream_digest": "sha256:3b94758850901717eb36aa1b53f8492c1322506ec6d41273bc6151e79ed8e4a1",
+        "evidence_url": "https://api.github.com/repos/starship/starship/releases/tags/v1.27.0"
+      }
+    },
+    {
+      "project": "atuin",
+      "repository": "https://github.com/atuinsh/atuin",
+      "tool_version": "18.24.8",
+      "release_tag": "v18.24.8",
+      "source_revision": "b178f009db237db378de0360f9a6ac5cc7bdf7f5",
+      "release_url": "https://github.com/atuinsh/atuin/releases/tag/v18.24.8",
+      "release_published_at": "2026-11-13T02:17:45Z",
+      "release_date_evidence_url": "https://api.github.com/repos/atuinsh/atuin/releases/tags/v18.24.8",
+      "family": "clap",
+      "family_verified": true,
+      "family_evidence": [
+        {
+          "url": "https://github.com/atuinsh/atuin/blob/b178f009db237db378de0360f9a6ac5cc7bdf7f5/crates/atuin/src/main.rs#L4",
+          "lines": [
+            {
+              "line": 4,
+              "text": "use clap::Parser;"
+            }
+          ],
+          "upstream_file_sha256": "e2ac433569fa4879264768185d493a65ef42d53dc70218d03f373c056e9227c3"
+        },
+        {
+          "url": "https://github.com/atuinsh/atuin/blob/b178f009db237db378de0360f9a6ac5cc7bdf7f5/crates/atuin/src/main.rs#L7",
+          "lines": [
+            {
+              "line": 7,
+              "text": "use clap_couture::{Couture, CoutureParser};"
+            }
+          ],
+          "upstream_file_sha256": "e2ac433569fa4879264768185d493a65ef42d53dc70218d03f373c056e9227c3"
+        },
+        {
+          "url": "https://github.com/atuinsh/atuin/blob/b178f009db237db378de0360f9a6ac5cc7bdf7f5/crates/atuin/src/main.rs#L35",
+          "lines": [
+            {
+              "line": 35,
+              "text": "#[derive(Parser, Couture)]"
+            }
+          ],
+          "upstream_file_sha256": "e2ac433569fa4879264768185d493a65ef42d53dc70218d03f373c056e9227c3"
+        },
+        {
+          "url": "https://github.com/atuinsh/atuin/blob/b178f009db237db378de0360f9a6ac5cc7bdf7f5/crates/atuin/src/main.rs#L54-L56",
+          "lines": [
+            {
+              "line": 54,
+              "text": "fn main() -> Result<(), CliError> {"
+            },
+            {
+              "line": 55,
+              "text": "    Ok(Atuin::couture_parse().run()?)"
+            },
+            {
+              "line": 56,
+              "text": "}"
+            }
+          ],
+          "upstream_file_sha256": "e2ac433569fa4879264768185d493a65ef42d53dc70218d03f373c056e9227c3"
+        }
+      ],
+      "license_evidence": {
+        "declared_license": "MIT",
+        "manifest": {
+          "url": "https://github.com/atuinsh/atuin/blob/b178f009db237db378de0360f9a6ac5cc7bdf7f5/Cargo.toml#L10",
+          "lines": [
+            {
+              "line": 10,
+              "text": "license = \"MIT\""
+            }
+          ],
+          "upstream_file_sha256": "26ce38e32c3fb7e91bd59b572517e03da508b79677222d246f2608a427752131"
+        },
+        "license_and_notice_files": [
+          {
+            "path": "collection/expansion/clap/atuin/LICENSE",
+            "url": "https://github.com/atuinsh/atuin/blob/b178f009db237db378de0360f9a6ac5cc7bdf7f5/LICENSE",
+            "sha256": "23ee4dd12c9fc8c59303caeb0f8ac300bf57e549d052f44f00d98c1edb11be91",
+            "kind": "license"
+          }
+        ]
+      },
+      "linux_x86_64_asset": {
+        "name": "atuin-x86_64-unknown-linux-gnu.tar.gz",
+        "url": "https://github.com/atuinsh/atuin/releases/download/v18.24.8/atuin-x86_64-unknown-linux-gnu.tar.gz",
+        "upstream_digest": "sha256:7433290f39b6c4fc9ec44f4fb0ebfbc5a574a81d4234b9a7d39741f24794edbd",
+        "evidence_url": "https://api.github.com/repos/atuinsh/atuin/releases/tags/v18.24.8"
+      },
+      "family_evidence_note": "Atuin derives clap::Parser and invokes the clap-couture parser wrapper."
+    },
+    {
+      "project": "uv",
+      "repository": "https://github.com/astral-sh/uv",
+      "tool_version": "0.13.9",
+      "release_tag": "0.13.9",
+      "source_revision": "6b2d39dcc390293d51c9c0d2bbcd650f4bcbfdce",
+      "release_url": "https://github.com/astral-sh/uv/releases/tag/0.13.9",
+      "release_published_at": "2026-11-17T09:57:55Z",
+      "release_date_evidence_url": "https://api.github.com/repos/astral-sh/uv/releases/tags/0.13.9",
+      "family": "clap",
+      "family_verified": true,
+      "family_evidence": [
+        {
+          "url": "https://github.com/astral-sh/uv/blob/6b2d39dcc390293d51c9c0d2bbcd650f4bcbfdce/crates/uv/src/lib.rs#L16",
+          "lines": [
+            {
+              "line": 16,
+              "text": "use clap::{CommandFactory, Error, Parser};"
+            }
+          ],
+          "upstream_file_sha256": "3ccf524667e21c7fe92b160cf155e75a616852c3a2af4fb0ea79b9d7d0618a3b"
+        },
+        {
+          "url": "https://github.com/astral-sh/uv/blob/6b2d39dcc390293d51c9c0d2bbcd650f4bcbfdce/crates/uv/src/lib.rs#L3098",
+          "lines": [
+            {
+              "line": 3098,
+              "text": "    let cli = match Cli::try_parse_from(args) {"
+            }
+          ],
+          "upstream_file_sha256": "3ccf524667e21c7fe92b160cf155e75a616852c3a2af4fb0ea79b9d7d0618a3b"
+        },
+        {
+          "url": "https://github.com/astral-sh/uv/blob/6b2d39dcc390293d51c9c0d2bbcd650f4bcbfdce/crates/uv-cli/src/lib.rs#L73",
+          "lines": [
+            {
+              "line": 73,
+              "text": "#[derive(Parser)]"
+            }
+          ],
+          "upstream_file_sha256": "e866626c27868daf60577c0f548caeb8986690f4eebe59552548adda573aa2fe"
+        }
+      ],
+      "license_evidence": {
+        "declared_license": "MIT OR Apache-2.0",
+        "manifest": {
+          "url": "https://github.com/astral-sh/uv/blob/6b2d39dcc390293d51c9c0d2bbcd650f4bcbfdce/Cargo.toml#L16",
+          "lines": [
+            {
+              "line": 16,
+              "text": "license = \"MIT OR Apache-2.0\""
+            }
+          ],
+          "upstream_file_sha256": "990a1fc9f9774fda232b7809bce0deec5c4ef33b9b973fcee5130df1e45a768d"
+        },
+        "license_and_notice_files": [
+          {
+            "path": "collection/expansion/clap/uv/LICENSE-APACHE",
+            "url": "https://github.com/astral-sh/uv/blob/6b2d39dcc390293d51c9c0d2bbcd650f4bcbfdce/LICENSE-APACHE",
+            "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+            "kind": "license"
+          },
+          {
+            "path": "collection/expansion/clap/uv/LICENSE-MIT",
+            "url": "https://github.com/astral-sh/uv/blob/6b2d39dcc390293d51c9c0d2bbcd650f4bcbfdce/LICENSE-MIT",
+            "sha256": "860e3d7a86b84e6a7012c7a635fc64df475cebc6cce34dfeb73a5982ec58176c",
+            "kind": "license"
+          }
+        ]
+      },
+      "linux_x86_64_asset": {
+        "name": "uv-x86_64-unknown-linux-gnu.tar.gz",
+        "url": "https://github.com/astral-sh/uv/releases/download/0.13.9/uv-x86_64-unknown-linux-gnu.tar.gz",
+        "upstream_digest": "sha256:a7fbaff2b9a271d85c1bdb540941090fd1ce011797b4abeb48e4dcd39c2471d5",
+        "evidence_url": "https://api.github.com/repos/astral-sh/uv/releases/tags/0.13.9"
+      }
+    },
+    {
+      "project": "ruff",
+      "repository": "https://github.com/astral-sh/ruff",
+      "tool_version": "0.17.5",
+      "release_tag": "0.17.5",
+      "source_revision": "c91de8a012cb87efe279b762020a0d28dd75ddb5",
+      "release_url": "https://github.com/astral-sh/ruff/releases/tag/0.17.5",
+      "release_published_at": "2026-11-12T17:55:55Z",
+      "release_date_evidence_url": "https://api.github.com/repos/astral-sh/ruff/releases/tags/0.17.5",
+      "family": "clap",
+      "family_verified": true,
+      "family_evidence": [
+        {
+          "url": "https://github.com/astral-sh/ruff/blob/c91de8a012cb87efe279b762020a0d28dd75ddb5/crates/ruff/src/main.rs#L5",
+          "lines": [
+            {
+              "line": 5,
+              "text": "use clap::Parser;"
+            }
+          ],
+          "upstream_file_sha256": "86e708be2e31f82d453530226637e4d54ef8a7c251ccdaf0801b67e573d692e3"
+        },
+        {
+          "url": "https://github.com/astral-sh/ruff/blob/c91de8a012cb87efe279b762020a0d28dd75ddb5/crates/ruff/src/main.rs#L43",
+          "lines": [
+            {
+              "line": 43,
+              "text": "    let args = Args::parse_from(args);"
+            }
+          ],
+          "upstream_file_sha256": "86e708be2e31f82d453530226637e4d54ef8a7c251ccdaf0801b67e573d692e3"
+        }
+      ],
+      "license_evidence": {
+        "declared_license": "MIT",
+        "manifest": {
+          "url": "https://github.com/astral-sh/ruff/blob/c91de8a012cb87efe279b762020a0d28dd75ddb5/Cargo.toml#L13",
+          "lines": [
+            {
+              "line": 13,
+              "text": "license = \"MIT\""
+            }
+          ],
+          "upstream_file_sha256": "936ebd63a5bc306492f898d31b2768bb2fb20ed199803f05ef2d5ac8d6c647bb"
+        },
+        "license_and_notice_files": [
+          {
+            "path": "collection/expansion/clap/ruff/LICENSE",
+            "url": "https://github.com/astral-sh/ruff/blob/c91de8a012cb87efe279b762020a0d28dd75ddb5/LICENSE",
+            "sha256": "2597d854122b77ddc71971564ca2350a37608575ce324adc5650a2b2051c8f18",
+            "kind": "license"
+          }
+        ]
+      },
+      "linux_x86_64_asset": {
+        "name": "ruff-x86_64-unknown-linux-gnu.tar.gz",
+        "url": "https://github.com/astral-sh/ruff/releases/download/0.17.5/ruff-x86_64-unknown-linux-gnu.tar.gz",
+        "upstream_digest": "sha256:7d261fc981a784668e19e9fa6ad437bfd95b67f2dc263fc1eab87d54d72fcc90",
+        "evidence_url": "https://api.github.com/repos/astral-sh/ruff/releases/tags/0.17.5"
+      }
+    },
+    {
+      "project": "gitui",
+      "repository": "https://github.com/gitui-org/gitui",
+      "tool_version": "0.28.1",
+      "release_tag": "v0.28.1",
+      "source_revision": "e24fb45df1584ee8d8ebdc4258531b4a91ca975d",
+      "release_url": "https://github.com/gitui-org/gitui/releases/tag/v0.28.1",
+      "release_published_at": "2026-03-24T23:26:28Z",
+      "release_date_evidence_url": "https://api.github.com/repos/gitui-org/gitui/releases/tags/v0.28.1",
+      "family": "clap",
+      "family_verified": true,
+      "family_evidence": [
+        {
+          "url": "https://github.com/gitui-org/gitui/blob/e24fb45df1584ee8d8ebdc4258531b4a91ca975d/src/args.rs#L4-L7",
+          "lines": [
+            {
+              "line": 4,
+              "text": "use clap::{"
+            },
+            {
+              "line": 5,
+              "text": "\tbuilder::ArgPredicate, crate_authors, crate_description,"
+            },
+            {
+              "line": 6,
+              "text": "\tcrate_name, Arg, Command as ClapApp,"
+            },
+            {
+              "line": 7,
+              "text": "};"
+            }
+          ],
+          "upstream_file_sha256": "e06fd5a51fac1f2a7ed3e795ad6929e3466fd26c9defcb67e69e253a7181abd1"
+        },
+        {
+          "url": "https://github.com/gitui-org/gitui/blob/e24fb45df1584ee8d8ebdc4258531b4a91ca975d/src/args.rs#L38-L41",
+          "lines": [
+            {
+              "line": 38,
+              "text": "pub fn process_cmdline() -> Result<CliArgs> {"
+            },
+            {
+              "line": 39,
+              "text": "\tlet app = app();"
+            },
+            {
+              "line": 40,
+              "text": ""
+            },
+            {
+              "line": 41,
+              "text": "\tlet arg_matches = app.get_matches();"
+            }
+          ],
+          "upstream_file_sha256": "e06fd5a51fac1f2a7ed3e795ad6929e3466fd26c9defcb67e69e253a7181abd1"
+        },
+        {
+          "url": "https://github.com/gitui-org/gitui/blob/e24fb45df1584ee8d8ebdc4258531b4a91ca975d/src/main.rs#L168",
+          "lines": [
+            {
+              "line": 168,
+              "text": "\tlet cliargs = process_cmdline()?;"
+            }
+          ],
+          "upstream_file_sha256": "e0e3b702ff2c9fd494070d218e1b9f04c1affa6b8188697049cd7c96e74bc6bc"
+        }
+      ],
+      "license_evidence": {
+        "declared_license": "MIT",
+        "manifest": {
+          "url": "https://github.com/gitui-org/gitui/blob/e24fb45df1584ee8d8ebdc4258531b4a91ca975d/Cargo.toml#L12",
+          "lines": [
+            {
+              "line": 12,
+              "text": "license = \"MIT\""
+            }
+          ],
+          "upstream_file_sha256": "354ce4e4b5e7ea534f50d3c64cc312b856d61af548af12723935e553b13c818f"
+        },
+        "license_and_notice_files": [
+          {
+            "path": "collection/expansion/clap/gitui/LICENSE.md",
+            "url": "https://github.com/gitui-org/gitui/blob/e24fb45df1584ee8d8ebdc4258531b4a91ca975d/LICENSE.md",
+            "sha256": "58f97f31594eb38847063a2c7bd98c4b5cceca3a3b15671fb74f1324e92ae652",
+            "kind": "license"
+          }
+        ]
+      },
+      "linux_x86_64_asset": {
+        "name": "gitui-linux-x86_64.tar.gz",
+        "url": "https://github.com/gitui-org/gitui/releases/download/v0.28.1/gitui-linux-x86_64.tar.gz",
+        "upstream_digest": "sha256:f6149b9ae203397158b0c89c13cfde718e7121d3d3cd2ebc597f93d6628d9b5b",
+        "evidence_url": "https://api.github.com/repos/gitui-org/gitui/releases/tags/v0.28.1"
+      }
+    },
+    {
+      "project": "zellij",
+      "repository": "https://github.com/zellij-org/zellij",
+      "tool_version": "0.46.0",
+      "release_tag": "v0.46.0",
+      "source_revision": "aedee21cb0d58d716496e7f6c66ba0b6f08045d8",
+      "release_url": "https://github.com/zellij-org/zellij/releases/tag/v0.46.0",
+      "release_published_at": "2026-11-11T09:43:57Z",
+      "release_date_evidence_url": "https://api.github.com/repos/zellij-org/zellij/releases/tags/v0.46.0",
+      "family": "clap",
+      "family_verified": true,
+      "family_evidence": [
+        {
+          "url": "https://github.com/zellij-org/zellij/blob/aedee21cb0d58d716496e7f6c66ba0b6f08045d8/zellij-utils/src/cli.rs#L11",
+          "lines": [
+            {
+              "line": 11,
+              "text": "use clap::{Args, Parser, Subcommand, ValueEnum};"
+            }
+          ],
+          "upstream_file_sha256": "3002eba7a5adadd91f4b4cddcda47903708cd7aee7097d4dfecc594c2e56cc5f"
+        },
+        {
+          "url": "https://github.com/zellij-org/zellij/blob/aedee21cb0d58d716496e7f6c66ba0b6f08045d8/zellij-utils/src/cli.rs#L36",
+          "lines": [
+            {
+              "line": 36,
+              "text": ""
+            }
+          ],
+          "upstream_file_sha256": "3002eba7a5adadd91f4b4cddcda47903708cd7aee7097d4dfecc594c2e56cc5f"
+        },
+        {
+          "url": "https://github.com/zellij-org/zellij/blob/aedee21cb0d58d716496e7f6c66ba0b6f08045d8/zellij-utils/src/cli.rs#L131-L134",
+          "lines": [
+            {
+              "line": 131,
+              "text": "    pub fn parse_for_distribution() -> Self {"
+            },
+            {
+              "line": 132,
+              "text": "        use clap::FromArgMatches;"
+            },
+            {
+              "line": 133,
+              "text": "        let matches = CliArgs::command_for_distribution().get_matches();"
+            },
+            {
+              "line": 134,
+              "text": "        match CliArgs::from_arg_matches(&matches) {"
+            }
+          ],
+          "upstream_file_sha256": "3002eba7a5adadd91f4b4cddcda47903708cd7aee7097d4dfecc594c2e56cc5f"
+        },
+        {
+          "url": "https://github.com/zellij-org/zellij/blob/aedee21cb0d58d716496e7f6c66ba0b6f08045d8/src/lib.rs#L61",
+          "lines": [
+            {
+              "line": 61,
+              "text": "    let opts = double_click::reroute(CliArgs::parse_for_distribution());"
+            }
+          ],
+          "upstream_file_sha256": "f3285e414da3070a125567d91be2ba59f710f235e8bebcb0a848814dd162877c"
+        }
+      ],
+      "license_evidence": {
+        "declared_license": "MIT",
+        "manifest": {
+          "url": "https://github.com/zellij-org/zellij/blob/aedee21cb0d58d716496e7f6c66ba0b6f08045d8/Cargo.toml#L78",
+          "lines": [
+            {
+              "line": 78,
+              "text": "license = \"MIT\""
+            }
+          ],
+          "upstream_file_sha256": "f608de10c53eb29738121d2225e6b0d4188eafdf16a7d29dda329497bd5b45d1"
+        },
+        "license_and_notice_files": [
+          {
+            "path": "collection/expansion/clap/zellij/LICENSE.md",
+            "url": "https://github.com/zellij-org/zellij/blob/aedee21cb0d58d716496e7f6c66ba0b6f08045d8/LICENSE.md",
+            "sha256": "9aa6c363b18a48eeecbffe13ff390c76ede2c90eb37ba17dfbbaffc42892d87d",
+            "kind": "license"
+          }
+        ]
+      },
+      "linux_x86_64_asset": {
+        "name": "zellij-x86_64-unknown-linux-gnu.tar.gz",
+        "url": "https://github.com/zellij-org/zellij/releases/download/v0.46.0/zellij-x86_64-unknown-linux-gnu.tar.gz",
+        "upstream_digest": "sha256:0940e467f99ca57aec5a63edcad633450d49cd6f22e8a7d9c686771a0d9f86ae",
+        "evidence_url": "https://api.github.com/repos/zellij-org/zellij/releases/tags/v0.46.0"
+      }
+    },
+    {
+      "project": "zoxide",
+      "repository": "https://github.com/ajeetdsouza/zoxide",
+      "tool_version": "0.10.0",
+      "release_tag": "v0.10.0",
+      "source_revision": "f84f9a3e1d16fabf3e34b199ec7d552993b41f29",
+      "release_url": "https://github.com/ajeetdsouza/zoxide/releases/tag/v0.10.0",
+      "release_published_at": "2026-07-04T12:41:16Z",
+      "release_date_evidence_url": "https://api.github.com/repos/ajeetdsouza/zoxide/releases/tags/v0.10.0",
+      "family": "clap",
+      "family_verified": true,
+      "family_evidence": [
+        {
+          "url": "https://github.com/ajeetdsouza/zoxide/blob/f84f9a3e1d16fabf3e34b199ec7d552993b41f29/src/main.rs#L15",
+          "lines": [
+            {
+              "line": 15,
+              "text": "use clap::Parser;"
+            }
+          ],
+          "upstream_file_sha256": "a8af2cf12c087f0c11c4ac73b4e33b8402c0df1968f770ab90109e52cd58387a"
+        },
+        {
+          "url": "https://github.com/ajeetdsouza/zoxide/blob/f84f9a3e1d16fabf3e34b199ec7d552993b41f29/src/main.rs#L25",
+          "lines": [
+            {
+              "line": 25,
+              "text": "    match Cmd::parse().run() {"
+            }
+          ],
+          "upstream_file_sha256": "a8af2cf12c087f0c11c4ac73b4e33b8402c0df1968f770ab90109e52cd58387a"
+        }
+      ],
+      "license_evidence": {
+        "declared_license": "MIT",
+        "manifest": {
+          "url": "https://github.com/ajeetdsouza/zoxide/blob/f84f9a3e1d16fabf3e34b199ec7d552993b41f29/Cargo.toml#L8",
+          "lines": [
+            {
+              "line": 8,
+              "text": "license = \"MIT\""
+            }
+          ],
+          "upstream_file_sha256": "08faf2dc1df58fb16f3f5961a29a4daa678db3fb81a0b47b4971304d7719f126"
+        },
+        "license_and_notice_files": [
+          {
+            "path": "collection/expansion/clap/zoxide/LICENSE",
+            "url": "https://github.com/ajeetdsouza/zoxide/blob/f84f9a3e1d16fabf3e34b199ec7d552993b41f29/LICENSE",
+            "sha256": "23aa3b08366e4ed6050f3d9950070201802aadbe5675fa1c19f24f4de91cf294",
+            "kind": "license"
+          }
+        ]
+      },
+      "linux_x86_64_asset": {
+        "name": "zoxide-0.10.0-x86_64-unknown-linux-musl.tar.gz",
+        "url": "https://github.com/ajeetdsouza/zoxide/releases/download/v0.10.0/zoxide-0.10.0-x86_64-unknown-linux-musl.tar.gz",
+        "upstream_digest": "sha256:2d93385b99f3e82cf2701609a1bffcad863fbeb75aa3fe7eb6be4d29be68b1ae",
+        "evidence_url": "https://api.github.com/repos/ajeetdsouza/zoxide/releases/tags/v0.10.0"
+      }
+    },
+    {
+      "project": "sccache",
+      "repository": "https://github.com/mozilla/sccache",
+      "tool_version": "0.19.0",
+      "release_tag": "v0.19.0",
+      "source_revision": "965c01943a40c9df96264474bbe28ba98f2e1487",
+      "release_url": "https://github.com/mozilla/sccache/releases/tag/v0.19.0",
+      "release_published_at": "2026-10-24T10:25:17Z",
+      "release_date_evidence_url": "https://api.github.com/repos/mozilla/sccache/releases/tags/v0.19.0",
+      "family": "clap",
+      "family_verified": true,
+      "family_evidence": [
+        {
+          "url": "https://github.com/mozilla/sccache/blob/965c01943a40c9df96264474bbe28ba98f2e1487/src/cmdline.rs#L16",
+          "lines": [
+            {
+              "line": 16,
+              "text": "use clap::{Arg, ArgAction, ArgGroup, ValueEnum, error::ErrorKind};"
+            }
+          ],
+          "upstream_file_sha256": "6777684ba35da8f9424cd37fa790f2660df742b074618bee8f1c6df74231d14b"
+        },
+        {
+          "url": "https://github.com/mozilla/sccache/blob/965c01943a40c9df96264474bbe28ba98f2e1487/src/cmdline.rs#L94-L95",
+          "lines": [
+            {
+              "line": 94,
+              "text": "fn get_clap_command() -> clap::Command {"
+            },
+            {
+              "line": 95,
+              "text": "    clap::Command::new(env!(\"CARGO_PKG_NAME\"))"
+            }
+          ],
+          "upstream_file_sha256": "6777684ba35da8f9424cd37fa790f2660df742b074618bee8f1c6df74231d14b"
+        },
+        {
+          "url": "https://github.com/mozilla/sccache/blob/965c01943a40c9df96264474bbe28ba98f2e1487/src/cmdline.rs#L241",
+          "lines": [
+            {
+              "line": 241,
+              "text": "    let matches_result = get_clap_command().try_get_matches_from(args);"
+            }
+          ],
+          "upstream_file_sha256": "6777684ba35da8f9424cd37fa790f2660df742b074618bee8f1c6df74231d14b"
+        },
+        {
+          "url": "https://github.com/mozilla/sccache/blob/965c01943a40c9df96264474bbe28ba98f2e1487/src/lib.rs#L67",
+          "lines": [
+            {
+              "line": 67,
+              "text": "    let command = match cmdline::try_parse() {"
+            }
+          ],
+          "upstream_file_sha256": "293b063e5812f65175184057157f5f5c3b6cc4d7f12067ee6561f11cb36ef575"
+        }
+      ],
+      "license_evidence": {
+        "declared_license": "Apache-2.0",
+        "manifest": {
+          "url": "https://github.com/mozilla/sccache/blob/965c01943a40c9df96264474bbe28ba98f2e1487/Cargo.toml#L11",
+          "lines": [
+            {
+              "line": 11,
+              "text": "license = \"Apache-2.0\""
+            }
+          ],
+          "upstream_file_sha256": "d93cf9f76efa9919a8aa4fa0b9c40727da40851e3205ceccef4a5ae4369bd659"
+        },
+        "license_and_notice_files": [
+          {
+            "path": "collection/expansion/clap/sccache/LICENSE",
+            "url": "https://github.com/mozilla/sccache/blob/965c01943a40c9df96264474bbe28ba98f2e1487/LICENSE",
+            "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+            "kind": "license"
+          }
+        ]
+      },
+      "linux_x86_64_asset": {
+        "name": "sccache-v0.19.0-x86_64-unknown-linux-musl.tar.gz",
+        "url": "https://github.com/mozilla/sccache/releases/download/v0.19.0/sccache-v0.19.0-x86_64-unknown-linux-musl.tar.gz",
+        "upstream_digest": "sha256:aa73c7270c997894038c0d8f0d297865f57569e1687883322bc431713d4bb9dd",
+        "evidence_url": "https://api.github.com/repos/mozilla/sccache/releases/tags/v0.19.0"
+      }
+    },
+    {
+      "project": "genact",
+      "repository": "https://github.com/svenstaro/genact",
+      "tool_version": "1.6.0",
+      "release_tag": "v1.6.0",
+      "source_revision": "ad54eba035dcc6569333a0ad93c2486cfc2ed55a",
+      "release_url": "https://github.com/svenstaro/genact/releases/tag/v1.6.0",
+      "release_published_at": "2026-10-01T21:28:04Z",
+      "release_date_evidence_url": "https://api.github.com/repos/svenstaro/genact/releases/tags/v1.6.0",
+      "family": "clap",
+      "family_verified": true,
+      "family_evidence": [
+        {
+          "url": "https://github.com/svenstaro/genact/blob/ad54eba035dcc6569333a0ad93c2486cfc2ed55a/src/args.rs#L2",
+          "lines": [
+            {
+              "line": 2,
+              "text": "use clap::{Parser, builder::PossibleValuesParser};"
+            }
+          ],
+          "upstream_file_sha256": "79afd8c5b57cfd3a6b50de31bdeebf1cdc5f9129caa61e1d16a8ef4c17bfe027"
+        },
+        {
+          "url": "https://github.com/svenstaro/genact/blob/ad54eba035dcc6569333a0ad93c2486cfc2ed55a/src/args.rs#L109",
+          "lines": [
+            {
+              "line": 109,
+              "text": "    let mut args = AppConfig::parse();"
+            }
+          ],
+          "upstream_file_sha256": "79afd8c5b57cfd3a6b50de31bdeebf1cdc5f9129caa61e1d16a8ef4c17bfe027"
+        },
+        {
+          "url": "https://github.com/svenstaro/genact/blob/ad54eba035dcc6569333a0ad93c2486cfc2ed55a/src/main.rs#L16",
+          "lines": [
+            {
+              "line": 16,
+              "text": "    let appconfig = parse_args();"
+            }
+          ],
+          "upstream_file_sha256": "30bcdf2c28c2347e06f62c3b8d784063857acbe52cebad3c547a255ac0f41288"
+        }
+      ],
+      "license_evidence": {
+        "declared_license": "MIT",
+        "manifest": {
+          "url": "https://github.com/svenstaro/genact/blob/ad54eba035dcc6569333a0ad93c2486cfc2ed55a/Cargo.toml#L7",
+          "lines": [
+            {
+              "line": 7,
+              "text": "license = \"MIT\""
+            }
+          ],
+          "upstream_file_sha256": "3fa2c1a6fc4a7129db9100f9cd084d7fe56d4da61df466c39995b45e6c75204f"
+        },
+        "license_and_notice_files": [
+          {
+            "path": "collection/expansion/clap/genact/LICENSE",
+            "url": "https://github.com/svenstaro/genact/blob/ad54eba035dcc6569333a0ad93c2486cfc2ed55a/LICENSE",
+            "sha256": "4367524e5000757d2fe3660ebfa9efbfdfb69df3a7a46e3b8bc52ad78244781f",
+            "kind": "license"
+          }
+        ]
+      },
+      "linux_x86_64_asset": {
+        "name": "genact-1.6.0-x86_64-unknown-linux-gnu",
+        "url": "https://github.com/svenstaro/genact/releases/download/v1.6.0/genact-1.6.0-x86_64-unknown-linux-gnu",
+        "upstream_digest": "sha256:df45257b5c21256877abb2ad61c452beb9a3908bd6fbb34e10d49315fa357f79",
+        "evidence_url": "https://api.github.com/repos/svenstaro/genact/releases/tags/v1.6.0"
+      }
+    },
+    {
+      "project": "miniserve",
+      "repository": "https://github.com/svenstaro/miniserve",
+      "tool_version": "0.35.0",
+      "release_tag": "v0.35.0",
+      "source_revision": "2cd9c495ef25f2fcef505615f603e9de8f981915",
+      "release_url": "https://github.com/svenstaro/miniserve/releases/tag/v0.35.0",
+      "release_published_at": "2026-04-08T12:11:43Z",
+      "release_date_evidence_url": "https://api.github.com/repos/svenstaro/miniserve/releases/tags/v0.35.0",
+      "family": "clap",
+      "family_verified": true,
+      "family_evidence": [
+        {
+          "url": "https://github.com/svenstaro/miniserve/blob/2cd9c495ef25f2fcef505615f603e9de8f981915/src/main.rs#L18",
+          "lines": [
+            {
+              "line": 18,
+              "text": "use clap::{CommandFactory, Parser, crate_version};"
+            }
+          ],
+          "upstream_file_sha256": "81801156aed991b60414aa321f24adf979bbb6f14fe618521fcd61e201638cbc"
+        },
+        {
+          "url": "https://github.com/svenstaro/miniserve/blob/2cd9c495ef25f2fcef505615f603e9de8f981915/src/main.rs#L51",
+          "lines": [
+            {
+              "line": 51,
+              "text": "    let args = args::CliArgs::parse();"
+            }
+          ],
+          "upstream_file_sha256": "81801156aed991b60414aa321f24adf979bbb6f14fe618521fcd61e201638cbc"
+        }
+      ],
+      "license_evidence": {
+        "declared_license": "MIT",
+        "manifest": {
+          "url": "https://github.com/svenstaro/miniserve/blob/2cd9c495ef25f2fcef505615f603e9de8f981915/Cargo.toml#L7",
+          "lines": [
+            {
+              "line": 7,
+              "text": "license = \"MIT\""
+            }
+          ],
+          "upstream_file_sha256": "1f991386abb56330741478a4f3283f8158bbe1ac927ecf70513e1904aa5793de"
+        },
+        "license_and_notice_files": [
+          {
+            "path": "collection/expansion/clap/miniserve/LICENSE",
+            "url": "https://github.com/svenstaro/miniserve/blob/2cd9c495ef25f2fcef505615f603e9de8f981915/LICENSE",
+            "sha256": "bedb87f0760796c7be677651eb10ad949410e90c55bc7f607d848e8e9d65375a",
+            "kind": "license"
+          }
+        ]
+      },
+      "linux_x86_64_asset": {
+        "name": "miniserve-0.35.0-x86_64-unknown-linux-gnu",
+        "url": "https://github.com/svenstaro/miniserve/releases/download/v0.35.0/miniserve-0.35.0-x86_64-unknown-linux-gnu",
+        "upstream_digest": "sha256:3b43ec6cb8ef5d5cc72a216b2309ef77c90952fd2c3e3c6eb9010dec39f3a086",
+        "evidence_url": "https://api.github.com/repos/svenstaro/miniserve/releases/tags/v0.35.0"
+      }
+    },
+    {
+      "project": "mdBook",
+      "repository": "https://github.com/rust-lang/mdBook",
+      "tool_version": "0.5.4",
+      "release_tag": "v0.5.4",
+      "source_revision": "2ea30c00f00647d2b3f4c0f79b3e0e1eabc0b66d",
+      "release_url": "https://github.com/rust-lang/mdBook/releases/tag/v0.5.4",
+      "release_published_at": "2026-07-06T15:28:05Z",
+      "release_date_evidence_url": "https://api.github.com/repos/rust-lang/mdBook/releases/tags/v0.5.4",
+      "family": "clap",
+      "family_verified": true,
+      "family_evidence": [
+        {
+          "url": "https://github.com/rust-lang/mdBook/blob/2ea30c00f00647d2b3f4c0f79b3e0e1eabc0b66d/src/main.rs#L6",
+          "lines": [
+            {
+              "line": 6,
+              "text": "use clap::{Arg, ArgMatches, Command};"
+            }
+          ],
+          "upstream_file_sha256": "8f9feacf4fdfc2f99442f25915f436ad29c149b7e32f0b0d2582fb77bf5d3ee7"
+        },
+        {
+          "url": "https://github.com/rust-lang/mdBook/blob/2ea30c00f00647d2b3f4c0f79b3e0e1eabc0b66d/src/main.rs#L24",
+          "lines": [
+            {
+              "line": 24,
+              "text": "    let res = match command.get_matches().subcommand() {"
+            }
+          ],
+          "upstream_file_sha256": "8f9feacf4fdfc2f99442f25915f436ad29c149b7e32f0b0d2582fb77bf5d3ee7"
+        }
+      ],
+      "license_evidence": {
+        "declared_license": "MPL-2.0",
+        "manifest": {
+          "url": "https://github.com/rust-lang/mdBook/blob/2ea30c00f00647d2b3f4c0f79b3e0e1eabc0b66d/Cargo.toml#L23",
+          "lines": [
+            {
+              "line": 23,
+              "text": "license = \"MPL-2.0\""
+            }
+          ],
+          "upstream_file_sha256": "2209d24199d75a4c0fc6af42fcd41e81894bda546f97e00461207cf117cd1bfb"
+        },
+        "license_and_notice_files": [
+          {
+            "path": "collection/expansion/clap/mdbook/LICENSE",
+            "url": "https://github.com/rust-lang/mdBook/blob/2ea30c00f00647d2b3f4c0f79b3e0e1eabc0b66d/LICENSE",
+            "sha256": "af175b9d96ee93c21a036152e1b905b0b95304d4ae8c2c921c7609100ba8df7e",
+            "kind": "license"
+          }
+        ]
+      },
+      "linux_x86_64_asset": {
+        "name": "mdbook-v0.5.4-x86_64-unknown-linux-gnu.tar.gz",
+        "url": "https://github.com/rust-lang/mdBook/releases/download/v0.5.4/mdbook-v0.5.4-x86_64-unknown-linux-gnu.tar.gz",
+        "upstream_digest": "sha256:3f28de05dafca9d0f2eab99c662116b0e37b89b1d96a08f8f430b9eeae958cd7",
+        "evidence_url": "https://api.github.com/repos/rust-lang/mdBook/releases/tags/v0.5.4"
+      }
+    },
+    {
+      "project": "just",
+      "repository": "https://github.com/casey/just",
+      "tool_version": "1.59.0",
+      "release_tag": "1.59.0",
+      "source_revision": "2638e9c0941edb1f409da7426fa7842887656973",
+      "release_url": "https://github.com/casey/just/releases/tag/1.59.0",
+      "release_published_at": "2026-10-15T06:41:04Z",
+      "release_date_evidence_url": "https://github.com/casey/just/releases/tag/1.59.0",
+      "family": "clap",
+      "family_verified": true,
+      "family_evidence": [
+        {
+          "url": "https://github.com/casey/just/blob/2638e9c0941edb1f409da7426fa7842887656973/src/lib.rs#L150",
+          "lines": [
+            {
+              "line": 150,
+              "text": "  clap::{CommandFactory, FromArgMatches, Parser as _, ValueEnum},"
+            }
+          ],
+          "upstream_file_sha256": "11a3aded20ded88692132bf6f733f002ac8f54ab080130c47759a1a672313f7f"
+        },
+        {
+          "url": "https://github.com/casey/just/blob/2638e9c0941edb1f409da7426fa7842887656973/src/arguments.rs#L12",
+          "lines": [
+            {
+              "line": 12,
+              "text": "#[derive(Debug, Parser)]"
+            }
+          ],
+          "upstream_file_sha256": "fa8d63beb1d4a68e474e4d667889723b682241c7dd15cbe301ad794f5e90c0e6"
+        },
+        {
+          "url": "https://github.com/casey/just/blob/2638e9c0941edb1f409da7426fa7842887656973/src/run.rs#L9",
+          "lines": [
+            {
+              "line": 9,
+              "text": "  let arguments = Arguments::try_parse_from(args).map_err(|err| {"
+            }
+          ],
+          "upstream_file_sha256": "fe030fce9db0faa6f9a4cd6e3b5cee22fdc8da8ec2f0b682794ba95a0ef9a414"
+        },
+        {
+          "url": "https://github.com/casey/just/blob/2638e9c0941edb1f409da7426fa7842887656973/src/main.rs#L23",
+          "lines": [
+            {
+              "line": 23,
+              "text": "  if let Err(code) = just::run(env::args_os()) {"
+            }
+          ],
+          "upstream_file_sha256": "36d85ea51597a6d32de4cb36520f17d381d1f3f8ff0c0ef3f52455b338415258"
+        }
+      ],
+      "license_evidence": {
+        "declared_license": "CC0-1.0",
+        "manifest": {
+          "url": "https://github.com/casey/just/blob/2638e9c0941edb1f409da7426fa7842887656973/Cargo.toml#L12",
+          "lines": [
+            {
+              "line": 12,
+              "text": "license = \"CC0-1.0\""
+            }
+          ],
+          "upstream_file_sha256": "a942f39d7a4653001686b6490f5280892928d46c7c02db8b591babdf08b31a3f"
+        },
+        "license_and_notice_files": [
+          {
+            "path": "collection/expansion/clap/just/LICENSE",
+            "url": "https://github.com/casey/just/blob/2638e9c0941edb1f409da7426fa7842887656973/LICENSE",
+            "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+            "kind": "license"
+          }
+        ]
+      },
+      "linux_x86_64_asset": {
+        "name": "just-1.59.0-x86_64-unknown-linux-musl.tar.gz",
+        "url": "https://github.com/casey/just/releases/download/1.59.0/just-1.59.0-x86_64-unknown-linux-musl.tar.gz",
+        "upstream_digest": null,
+        "evidence_url": "https://github.com/casey/just/releases/expanded_assets/1.59.0"
+      }
+    }
+  ]
+}

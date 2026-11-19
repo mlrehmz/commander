@@ -1,0 +1,88 @@
+{
+  "project": "file",
+  "repository": "https://github.com/file/file",
+  "upstream_ref": "FILE5_46",
+  "tool_version": "5.46",
+  "cli": "file",
+  "family": "gnu-style",
+  "family_basis": "The getopt_long table routes the help switch to a dedicated usage formatter.",
+  "upstream_source_archive": null,
+  "code_evidence": [
+    {
+      "path": "src/file.c",
+      "url": "https://github.com/file/file/blob/FILE5_46/src/file.c",
+      "sha256": "175639eeb55d4775b7cb5345f381cd0dbb69392ce8cdd1ca4cf301d384c6488f",
+      "raw_url": "https://raw.githubusercontent.com/file/file/FILE5_46/src/file.c",
+      "excerpts": [
+        {
+          "line": 107,
+          "code": "file_private const struct option long_options[] = {",
+          "url": "https://github.com/file/file/blob/FILE5_46/src/file.c#L107"
+        },
+        {
+          "line": 230,
+          "code": "while ((c = getopt_long(argc, argv, OPTSTRING, long_options,",
+          "url": "https://github.com/file/file/blob/FILE5_46/src/file.c#L230"
+        },
+        {
+          "line": 233,
+          "code": "case OPT_HELP:",
+          "url": "https://github.com/file/file/blob/FILE5_46/src/file.c#L233"
+        },
+        {
+          "line": 699,
+          "code": "usage(void)",
+          "url": "https://github.com/file/file/blob/FILE5_46/src/file.c#L699"
+        }
+      ],
+      "debian_orig": {
+        "path": "src/file.c",
+        "url": "https://deb.debian.org/debian/pool/main/f/file/file_5.46.orig.tar.gz",
+        "archive_member": "file-5.46/src/file.c",
+        "sha256": "175639eeb55d4775b7cb5345f381cd0dbb69392ce8cdd1ca4cf301d384c6488f",
+        "same_bytes": true
+      }
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": null,
+    "scope": "CLI source",
+    "license_files": [
+      {
+        "path": "COPYING",
+        "url": "https://github.com/file/file/blob/FILE5_46/COPYING",
+        "sha256": "0bfa856a9930bddadbef95d1be1cf4e163c0be618e76ea3275caaf255283e274",
+        "raw_url": "https://raw.githubusercontent.com/file/file/FILE5_46/COPYING"
+      }
+    ],
+    "observed_terms": "Debian calls the CLI license BSD-2-Clause-alike. The upstream copying terms include distinct source notice language, so an exact SPDX expression remains unassigned.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "debian": {
+    "index_url": "https://deb.debian.org/debian/dists/trixie/main/source/Sources.xz",
+    "index_sha256": "6002f81f463a2d976d84b34170367cc16da2d60bd0ba9ab9d868d6e1c1a935d9",
+    "source_package": "file",
+    "version": "1:5.46-5",
+    "vcs": "https://git.in-ulm.de/cbiedl/file",
+    "orig": {
+      "url": "https://deb.debian.org/debian/pool/main/f/file/file_5.46.orig.tar.gz",
+      "sha256": "c9cc77c7c560c543135edc555af609d5619dbef011997e988ce40a3d75d86088",
+      "filename": "file_5.46.orig.tar.gz"
+    },
+    "debian": {
+      "url": "https://deb.debian.org/debian/pool/main/f/file/file_5.46-5.debian.tar.xz",
+      "sha256": "a74bd66a0351f15050fdc33d89b857d4761ba2041742f94e024a35685c43bb8c",
+      "filename": "file_5.46-5.debian.tar.xz"
+    },
+    "binary_package": "file",
+    "package_url": "https://packages.debian.org/trixie/file",
+    "distribution": "Debian trixie",
+    "copyright": {
+      "path": "debian/copyright",
+      "url": "https://deb.debian.org/debian/pool/main/f/file/file_5.46-5.debian.tar.xz",
+      "archive_member": "debian/copyright",
+      "sha256": "6d62c7146de297f172d68e3c4ad4c0d4c995a3b888ccfe5957bf5c9a39d47c6b"
+    }
+  },
+  "provisional_grouping_concerns": []
+}

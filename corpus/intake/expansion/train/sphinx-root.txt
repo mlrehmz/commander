@@ -1,0 +1,67 @@
+usage: sphinx-build [OPTIONS] SOURCEDIR OUTPUTDIR [FILENAMES...]
+
+Generate documentation from source files. sphinx-build generates documentation
+from the files in SOURCEDIR and places it in OUTPUTDIR. It looks for 'conf.py'
+in SOURCEDIR for the configuration settings. The 'sphinx-quickstart' tool may
+be used to generate template files, including 'conf.py' sphinx-build can
+create documentation in different formats. A format is selected by specifying
+the builder name on the command line; it defaults to HTML. Builders can also
+perform other tasks related to documentation processing. By default,
+everything that is outdated is built. Output only for selected files can be
+built by specifying individual filenames.
+
+positional arguments:
+  SOURCE_DIR            path to documentation source files
+  OUTPUT_DIR            path to output directory
+  filenames             (optional) a list of specific files to rebuild.
+                        Ignored if --write-all is specified
+
+options:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit
+
+general options:
+  --builder BUILDER, -b BUILDER
+                        builder to use (default: 'html')
+  --jobs N, -j N        run in parallel with N processes, when possible.
+                        'auto' uses the number of CPU cores
+  --write-all, -a       write all files (default: only write new and changed
+                        files)
+  --fresh-env, -E       don't use a saved environment, always read all files
+
+path options:
+  --doctree-dir PATH, -d PATH
+                        directory for doctree and environment files (default:
+                        OUTPUT_DIR/.doctrees)
+  --conf-dir PATH, -c PATH
+                        directory for the configuration file (conf.py)
+                        (default: SOURCE_DIR)
+
+build configuration options:
+  --isolated, -C        use no configuration file, only use settings from -D
+                        options
+  --define setting=value, -D setting=value
+                        override a setting in configuration file
+  --html-define name=value, -A name=value
+                        pass a value into HTML templates
+  --tag TAG, -t TAG     define tag: include "only" blocks with TAG
+  --nitpicky, -n        nitpicky mode: warn about all missing references
+
+console output options:
+  --verbose, -v         increase verbosity (can be repeated)
+  --quiet, -q           no output on stdout, just warnings on stderr
+  --silent, -Q          no output at all, not even warnings
+  --color               do emit colored output (default: auto-detect)
+  --no-color, -N        do not emit colored output (default: auto-detect)
+
+warning control options:
+  --warning-file FILE, -w FILE
+                        write warnings (and errors) to given file
+  --fail-on-warning, -W
+                        turn warnings into errors
+  --show-traceback, -T  show full traceback on exception
+  --pdb, -P             run Pdb on exception
+  --exception-on-warning
+                        raise an exception on warnings
+
+For more information, visit <https://www.sphinx-doc.org/>.

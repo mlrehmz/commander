@@ -1,0 +1,471 @@
+[
+  {
+    "package": "pytest",
+    "version": "9.2.0",
+    "source_url": "https://pypi.org/pypi/pytest/9.2.0/json",
+    "metadata_sha256": "9bfb2ab87f53ac4e1770fb14b2431e5a4a1db5d8bd39189f441b92d8b59e94cc",
+    "requires_python": ">=3.10",
+    "license_metadata": "MIT",
+    "project_urls": {
+      "Changelog": "https://docs.pytest.org/en/stable/changelog.html",
+      "Contact": "https://docs.pytest.org/en/stable/contact.html",
+      "Funding": "https://docs.pytest.org/en/stable/sponsor.html",
+      "Homepage": "https://docs.pytest.org/en/latest/",
+      "Source": "https://github.com/pytest-dev/pytest",
+      "Tracker": "https://github.com/pytest-dev/pytest/issues"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "coverage",
+    "version": "7.17.3",
+    "source_url": "https://pypi.org/pypi/coverage/7.17.3/json",
+    "metadata_sha256": "6805a80402a92b4fd44ac9b5a0252bf907c05581791085c0ecac784af9afac04",
+    "requires_python": ">=3.11",
+    "license_metadata": "Apache-2.0",
+    "project_urls": {
+      "Documentation": "https://coverage.readthedocs.io/en/7.17.3",
+      "Funding": "https://tidelift.com/subscription/pkg/pypi-coverage?utm_source=pypi-coverage&utm_medium=referral&utm_campaign=pypi",
+      "Homepage": "https://github.com/coveragepy/coveragepy",
+      "Issues": "https://github.com/coveragepy/coveragepy/issues",
+      "Mastodon": "https://hachyderm.io/@coveragepy",
+      "Mastodon (nedbat)": "https://hachyderm.io/@nedbat"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "poetry",
+    "version": "2.5.1",
+    "source_url": "https://pypi.org/pypi/poetry/2.5.1/json",
+    "metadata_sha256": "01527c7f532fd760e0ab753a1052994ebd052109e312128b41a10a4ad6ecbe38",
+    "requires_python": "<4.0,>=3.10",
+    "license_metadata": "MIT",
+    "project_urls": {
+      "Changelog": "https://python-poetry.org/history/",
+      "Documentation": "https://python-poetry.org/docs",
+      "Homepage": "https://python-poetry.org/",
+      "Repository": "https://github.com/python-poetry/poetry"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "ansible-core",
+    "version": "2.21.6",
+    "source_url": "https://pypi.org/pypi/ansible-core/2.21.6/json",
+    "metadata_sha256": "2db3f0c32d451afa6bc0bd24f8f96ca83c509e50471c1f0bf0b9a2bd21378866",
+    "requires_python": ">=3.12",
+    "license_metadata": "GPL-3.0-or-later",
+    "project_urls": {
+      "Bug Tracker": "https://github.com/ansible/ansible/issues/",
+      "CI: Azure Pipelines": "https://dev.azure.com/ansible/ansible/",
+      "Code of Conduct": "https://docs.ansible.com/ansible/latest/community/code_of_conduct.html",
+      "Documentation": "https://docs.ansible.com/ansible-core/",
+      "Homepage": "https://ansible.com/",
+      "Source Code": "https://github.com/ansible/ansible/"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "awscli",
+    "version": "1.46.3",
+    "source_url": "https://pypi.org/pypi/awscli/1.46.3/json",
+    "metadata_sha256": "fbed88cd011caeb11a75b136a5dea17436bddf235280cdf3a5dc44c62f4f6902",
+    "requires_python": ">=3.10",
+    "license_metadata": "Apache License 2.0",
+    "project_urls": {
+      "Changelog": "https://github.com/aws/aws-cli/blob/develop/CHANGELOG.rst",
+      "Homepage": "http://aws.amazon.com/cli/",
+      "Reference": "https://docs.aws.amazon.com/cli/latest/reference/",
+      "Source": "https://github.com/aws/aws-cli"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "pip",
+    "version": "26.3",
+    "source_url": "https://pypi.org/pypi/pip/26.3/json",
+    "metadata_sha256": "9cee103938ec9d9fb6201ecd0eb8a51b1893e01358f75c162d7c7cf6a9d8fa20",
+    "requires_python": ">=3.10",
+    "license_metadata": "MIT",
+    "project_urls": {
+      "Changelog": "https://pip.pypa.io/en/stable/news/",
+      "Documentation": "https://pip.pypa.io",
+      "Homepage": "https://pip.pypa.io/",
+      "Source": "https://github.com/pypa/pip"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "pip-tools",
+    "version": "7.7.0",
+    "source_url": "https://pypi.org/pypi/pip-tools/7.7.0/json",
+    "metadata_sha256": "d1eec881c5efc8757a467bbb38a9ee7d16094203a6c2868e0cad7a3d236b6401",
+    "requires_python": ">=3.10",
+    "license_metadata": "BSD-3-Clause",
+    "project_urls": {
+      "changelog": "https://github.com/pypa/pip-tools/releases",
+      "documentation": "https://pip-tools.pypa.io",
+      "homepage": "https://github.com/pypa/pip-tools/",
+      "repository": "https://github.com/pypa/pip-tools"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "pre-commit",
+    "version": "4.7.0",
+    "source_url": "https://pypi.org/pypi/pre-commit/4.7.0/json",
+    "metadata_sha256": "a5e4b8131676e044f10f61201fc3695d3b4d26fb329cb2f7cea4e377be16f76a",
+    "requires_python": ">=3.11",
+    "license_metadata": "MIT",
+    "project_urls": {
+      "Homepage": "https://github.com/pre-commit/pre-commit"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "cookiecutter",
+    "version": "2.7.1",
+    "source_url": "https://pypi.org/pypi/cookiecutter/2.7.1/json",
+    "metadata_sha256": "e3b16111ba67d630917a9e354e55394d741870646959e60a8abda70e666864b3",
+    "requires_python": ">=3.10",
+    "license_metadata": [],
+    "project_urls": {
+      "Discord": "https://discord.gg/9BrxzPKuEW",
+      "Documentation": "https://cookiecutter.readthedocs.io",
+      "Homepage": "https://github.com/cookiecutter/cookiecutter",
+      "Issues": "https://github.com/cookiecutter/cookiecutter/issues"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "mkdocs",
+    "version": "1.6.1",
+    "source_url": "https://pypi.org/pypi/mkdocs/1.6.1/json",
+    "metadata_sha256": "a0784c65cb13cae34bd4826cf82c9072b487c814934b76cc7b728ebc2c6aebba",
+    "requires_python": ">=3.8",
+    "license_metadata": [
+      "License :: OSI Approved :: BSD License"
+    ],
+    "project_urls": {
+      "Documentation": "https://www.mkdocs.org/",
+      "History": "https://www.mkdocs.org/about/release-notes/",
+      "Issues": "https://github.com/mkdocs/mkdocs/issues",
+      "Source": "https://github.com/mkdocs/mkdocs"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "sphinx",
+    "version": "9.1.1",
+    "source_url": "https://pypi.org/pypi/sphinx/9.1.1/json",
+    "metadata_sha256": "7eac51f8749bd8dd9d25219687c8797321b431d2bf76372fdf2b3416040a5ec2",
+    "requires_python": ">=3.12",
+    "license_metadata": "BSD-2-Clause",
+    "project_urls": {
+      "Changelog": "https://www.sphinx-doc.org/en/master/changes.html",
+      "Code": "https://github.com/sphinx-doc/sphinx",
+      "Documentation": "https://www.sphinx-doc.org/",
+      "Download": "https://pypi.org/project/Sphinx/",
+      "Homepage": "https://www.sphinx-doc.org/",
+      "Issue tracker": "https://github.com/sphinx-doc/sphinx/issues"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "docutils",
+    "version": "0.23",
+    "source_url": "https://pypi.org/pypi/docutils/0.23/json",
+    "metadata_sha256": "cd16c0ef6c719c6d965cf2315ce06db69e551b02b58b23adebc6b52f51ba5805",
+    "requires_python": ">=3.9",
+    "license_metadata": [
+      "License :: OSI Approved :: BSD License",
+      "License :: OSI Approved :: GNU General Public License (GPL)",
+      "License :: Public Domain"
+    ],
+    "project_urls": {
+      "Changelog": "https://docutils.sourceforge.io/HISTORY.html",
+      "Code": "https://sourceforge.net/p/docutils/code/",
+      "Documentation": "https://docutils.sourceforge.io/docs/",
+      "Download": "https://pypi.org/project/docutils/",
+      "Homepage": "https://docutils.sourceforge.io",
+      "Issue tracker": "https://sourceforge.net/p/docutils/bugs/"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "mypy",
+    "version": "2.4.1",
+    "source_url": "https://pypi.org/pypi/mypy/2.4.1/json",
+    "metadata_sha256": "7a117664785380511fe56aa00829f566616544933e5ab9ea34b4d4a7ffd5da41",
+    "requires_python": ">=3.10",
+    "license_metadata": "MIT",
+    "project_urls": {
+      "Changelog": "https://github.com/python/mypy/blob/master/CHANGELOG.md",
+      "Documentation": "https://mypy.readthedocs.io/en/stable/index.html",
+      "Homepage": "https://www.mypy-lang.org/",
+      "Issues": "https://github.com/python/mypy/issues",
+      "Repository": "https://github.com/python/mypy"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "pylint",
+    "version": "4.1.4",
+    "source_url": "https://pypi.org/pypi/pylint/4.1.4/json",
+    "metadata_sha256": "863735cb542d05d8160a8f6128152c0f31fda0aebac8680c25b0078734aa0dcb",
+    "requires_python": ">=3.10.0",
+    "license_metadata": "GPL-2.0-or-later",
+    "project_urls": {
+      "Bug Tracker": "https://github.com/pylint-dev/pylint/issues",
+      "Discord Server": "https://discord.com/invite/Egy6P8AMB5",
+      "Docs: Contributor Guide": "https://pylint.readthedocs.io/en/latest/development_guide/contributor_guide/index.html",
+      "Docs: User Guide": "https://pylint.readthedocs.io/en/latest/",
+      "Source Code": "https://github.com/pylint-dev/pylint",
+      "What's New": "https://pylint.readthedocs.io/en/latest/whatsnew/4/",
+      "homepage": "https://github.com/pylint-dev/pylint"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "isort",
+    "version": "9.0.2",
+    "source_url": "https://pypi.org/pypi/isort/9.0.2/json",
+    "metadata_sha256": "50ac424e320c143ffc01d9c6d3f6261988bb87ac8a042c9fb46b62309de1282f",
+    "requires_python": ">=3.10.0",
+    "license_metadata": "MIT",
+    "project_urls": {
+      "Changelog": "https://github.com/PyCQA/isort/releases",
+      "Documentation": "https://isort.readthedocs.io/",
+      "Homepage": "https://isort.readthedocs.io/",
+      "Repository": "https://github.com/PyCQA/isort"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "autopep8",
+    "version": "2.3.2",
+    "source_url": "https://pypi.org/pypi/autopep8/2.3.2/json",
+    "metadata_sha256": "21fac2e094ee935143f1ef776fb2eb0c3fc8eb30e911f63b404f0dbd7e486bc3",
+    "requires_python": ">=3.9",
+    "license_metadata": [
+      "License :: OSI Approved :: MIT License"
+    ],
+    "project_urls": {
+      "Repository": "https://github.com/hhatto/autopep8"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "flake8",
+    "version": "7.5.0",
+    "source_url": "https://pypi.org/pypi/flake8/7.5.0/json",
+    "metadata_sha256": "bfd9d61637b63c058c4c3c17e6587e25b00c98a6958f85055be41dfe3e8f6733",
+    "requires_python": ">=3.11",
+    "license_metadata": "MIT",
+    "project_urls": {
+      "Homepage": "https://github.com/pycqa/flake8"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "bandit",
+    "version": "1.9.4",
+    "source_url": "https://pypi.org/pypi/bandit/1.9.4/json",
+    "metadata_sha256": "cde9ac71444c0b497433e7fd219dd2e184701413ee7b37ae3ecbc4ba495fe8da",
+    "requires_python": ">=3.10",
+    "license_metadata": "Apache-2.0",
+    "project_urls": {
+      "Discord": "https://discord.gg/qYxpadCgkx",
+      "Documentation": "https://bandit.readthedocs.io/",
+      "Homepage": "https://bandit.readthedocs.io/",
+      "Issue Tracker": "https://github.com/PyCQA/bandit/issues",
+      "Release Notes": "https://github.com/PyCQA/bandit/releases",
+      "Source Code": "https://github.com/PyCQA/bandit",
+      "Sponsor": "https://psfmember.org/civicrm/contribute/transact/?reset=1&id=42"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "yamllint",
+    "version": "1.38.0",
+    "source_url": "https://pypi.org/pypi/yamllint/1.38.0/json",
+    "metadata_sha256": "91bf3dae3f038b104b9949ad820027bdb38129c93459440b10d871871fafd367",
+    "requires_python": ">=3.10",
+    "license_metadata": "GPL-3.0-or-later",
+    "project_urls": {
+      "documentation": "https://yamllint.readthedocs.io",
+      "homepage": "https://github.com/adrienverge/yamllint",
+      "repository": "https://github.com/adrienverge/yamllint"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "codespell",
+    "version": "2.4.3",
+    "source_url": "https://pypi.org/pypi/codespell/2.4.3/json",
+    "metadata_sha256": "31eaca7b01f7de77691ef697fc1668440d94077938d0047d2219eae5d48dd17c",
+    "requires_python": ">=3.9",
+    "license_metadata": "GPL-2.0-only",
+    "project_urls": {
+      "homepage": "https://github.com/codespell-project/codespell",
+      "repository": "https://github.com/codespell-project/codespell"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "twine",
+    "version": "7.0.0",
+    "source_url": "https://pypi.org/pypi/twine/7.0.0/json",
+    "metadata_sha256": "b55160e433b5baac797e89a79a8c38b901fa0cb2b0d46d47724f3c953b386902",
+    "requires_python": ">=3.10",
+    "license_metadata": "Apache-2.0",
+    "project_urls": {
+      "Documentation": "https://twine.readthedocs.io/en/latest/",
+      "Homepage": "https://twine.readthedocs.io/",
+      "Packaging tutorial": "https://packaging.python.org/tutorials/packaging-projects/",
+      "Source": "https://github.com/pypa/twine/"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "build",
+    "version": "1.6.1",
+    "source_url": "https://pypi.org/pypi/build/1.6.1/json",
+    "metadata_sha256": "064e9dcb80e948b5de7a841c3fd9b5644a980eb27bb644fb7f562b7d773b157b",
+    "requires_python": ">=3.10",
+    "license_metadata": "MIT",
+    "project_urls": {
+      "changelog": "https://build.pypa.io/en/stable/changelog.html",
+      "homepage": "https://build.pypa.io",
+      "issues": "https://github.com/pypa/build/issues",
+      "source": "https://github.com/pypa/build"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "wheel",
+    "version": "0.48.0",
+    "source_url": "https://pypi.org/pypi/wheel/0.48.0/json",
+    "metadata_sha256": "03f655da3a6dd010d9ac41d4771d5d973109cb662a1e10eb9d967535ffd145f8",
+    "requires_python": ">=3.9",
+    "license_metadata": "MIT",
+    "project_urls": {
+      "Changelog": "https://wheel.readthedocs.io/en/stable/news.html",
+      "Documentation": "https://wheel.readthedocs.io/",
+      "Issue Tracker": "https://github.com/pypa/wheel/issues",
+      "Source": "https://github.com/pypa/wheel"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "nox",
+    "version": "2026.10.20",
+    "source_url": "https://pypi.org/pypi/nox/2026.10.20/json",
+    "metadata_sha256": "0b675df9d6a7ade0b40f187c64863c45fddeeca0e60534cedcddae9879fc9c1a",
+    "requires_python": ">=3.10",
+    "license_metadata": "Apache-2.0",
+    "project_urls": {
+      "bug-tracker": "https://github.com/wntrblm/nox/issues",
+      "documentation": "https://nox.thea.codes",
+      "homepage": "https://github.com/wntrblm/nox",
+      "repository": "https://github.com/wntrblm/nox"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "invoke",
+    "version": "3.0.3",
+    "source_url": "https://pypi.org/pypi/invoke/3.0.3/json",
+    "metadata_sha256": "91bff6c363f4f6441733ee179c2ee98e3627a95a66a2147a854d8fe09bc5c6d5",
+    "requires_python": ">=3.9",
+    "license_metadata": "BSD-2-Clause",
+    "project_urls": {
+      "CI": "https://app.circleci.com/pipelines/github/pyinvoke/invoke",
+      "Changelog": "https://www.pyinvoke.org/changelog.html",
+      "Docs": "https://docs.pyinvoke.org",
+      "Issues": "https://github.com/pyinvoke/invoke/issues",
+      "Source": "https://github.com/pyinvoke/invoke"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "fabric",
+    "version": "3.2.3",
+    "source_url": "https://pypi.org/pypi/fabric/3.2.3/json",
+    "metadata_sha256": "98870306e859d6db82ae5b9aef3cf8a29f8a99893e9d06ff3a478c2d35133a4c",
+    "requires_python": null,
+    "license_metadata": "BSD",
+    "project_urls": {
+      "CI": "https://app.circleci.com/pipelines/github/fabric/fabric",
+      "Changelog": "https://www.fabfile.org/changelog.html",
+      "Docs": "https://docs.fabfile.org",
+      "Homepage": "https://fabfile.org",
+      "Issues": "https://github.com/fabric/fabric/issues",
+      "Source": "https://github.com/fabric/fabric",
+      "Twitter": "https://twitter.com/pyfabric"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "streamlink",
+    "version": "8.6.3",
+    "source_url": "https://pypi.org/pypi/streamlink/8.6.3/json",
+    "metadata_sha256": "a29a7e06f7d24533f030102eccb6c81e22994ed433ef7d921d66337b6fb0951a",
+    "requires_python": ">=3.10",
+    "license_metadata": "BSD-2-Clause",
+    "project_urls": {
+      "Documentation": "https://streamlink.github.io/",
+      "Funding": "https://streamlink.github.io/latest/support.html",
+      "Homepage": "https://github.com/streamlink/streamlink",
+      "Source": "https://github.com/streamlink/streamlink",
+      "Tracker": "https://github.com/streamlink/streamlink/issues"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "httpx",
+    "version": "0.28.1",
+    "source_url": "https://pypi.org/pypi/httpx/0.28.1/json",
+    "metadata_sha256": "293bfab7bf587fcd0825f1bd8eed8e6303285ba14801b15659853827cbe30796",
+    "requires_python": ">=3.8",
+    "license_metadata": "BSD-3-Clause",
+    "project_urls": {
+      "Changelog": "https://github.com/encode/httpx/blob/master/CHANGELOG.md",
+      "Documentation": "https://www.python-httpx.org",
+      "Homepage": "https://github.com/encode/httpx",
+      "Source": "https://github.com/encode/httpx"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "llm",
+    "version": "0.38",
+    "source_url": "https://pypi.org/pypi/llm/0.38/json",
+    "metadata_sha256": "2247551556bf8bad6f8e334de3d21fa4f498ffd829ca5716d8415c0fa6a8fd2b",
+    "requires_python": ">=3.11",
+    "license_metadata": "Apache-2.0",
+    "project_urls": {
+      "CI": "https://github.com/simonw/llm/actions",
+      "Changelog": "https://github.com/simonw/llm/releases",
+      "Documentation": "https://llm.datasette.io/",
+      "Homepage": "https://github.com/simonw/llm",
+      "Issues": "https://github.com/simonw/llm/issues"
+    },
+    "status": "metadata_verified"
+  },
+  {
+    "package": "yt-dlp",
+    "version": "2026.10.26",
+    "source_url": "https://pypi.org/pypi/yt-dlp/2026.10.26/json",
+    "metadata_sha256": "cfa514548ef242234406b58fb099a9825d758ef223af6a837736226b14c415d1",
+    "requires_python": ">=3.11",
+    "license_metadata": "Unlicense",
+    "project_urls": {
+      "Documentation": "https://github.com/yt-dlp/yt-dlp#readme",
+      "Funding": "https://github.com/yt-dlp/yt-dlp/blob/master/Maintainers.md#maintainers",
+      "Repository": "https://github.com/yt-dlp/yt-dlp",
+      "Tracker": "https://github.com/yt-dlp/yt-dlp/issues"
+    },
+    "status": "metadata_verified"
+  }
+]

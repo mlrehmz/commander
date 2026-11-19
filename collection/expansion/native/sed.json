@@ -1,0 +1,88 @@
+{
+  "project": "sed",
+  "repository": "https://www.gnu.org/software/sed/",
+  "upstream_ref": "4.9",
+  "tool_version": "4.9",
+  "cli": "sed",
+  "family": "gnu-style",
+  "family_basis": "A getopt_long option table maps help to the usage routine with a successful status.",
+  "upstream_source_archive": {
+    "url": "https://ftp.gnu.org/gnu/sed/sed-4.9.tar.xz",
+    "sha256": "6e226b732e1cd739464ad6862bd1a1aba42d7982922da7a53519631d24975181"
+  },
+  "code_evidence": [
+    {
+      "path": "sed/sed.c",
+      "url": "https://ftp.gnu.org/gnu/sed/sed-4.9.tar.xz",
+      "archive_member": "sed-4.9/sed/sed.c",
+      "sha256": "f03d7c5dc7e3e08cdbb4ebefd29b1988733147234ba4140efcb82d525589ff47",
+      "excerpts": [
+        {
+          "line": 214,
+          "code": "{\"help\", 0, NULL, 'h'},",
+          "url": "https://ftp.gnu.org/gnu/sed/sed-4.9.tar.xz"
+        },
+        {
+          "line": 261,
+          "code": "while ((opt = getopt_long (argc, argv, SHORTOPTS, longopts, NULL)) != EOF)",
+          "url": "https://ftp.gnu.org/gnu/sed/sed-4.9.tar.xz"
+        },
+        {
+          "line": 347,
+          "code": "usage (EXIT_SUCCESS);",
+          "url": "https://ftp.gnu.org/gnu/sed/sed-4.9.tar.xz"
+        }
+      ],
+      "debian_orig": {
+        "path": "sed/sed.c",
+        "url": "https://deb.debian.org/debian/pool/main/s/sed/sed_4.9.orig.tar.xz",
+        "archive_member": "sed-4.9/sed/sed.c",
+        "sha256": "f03d7c5dc7e3e08cdbb4ebefd29b1988733147234ba4140efcb82d525589ff47",
+        "same_bytes": true
+      }
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "GPL-3.0-or-later",
+    "scope": "CLI source",
+    "license_files": [
+      {
+        "path": "COPYING",
+        "url": "https://ftp.gnu.org/gnu/sed/sed-4.9.tar.xz",
+        "archive_member": "sed-4.9/COPYING",
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+      }
+    ],
+    "observed_terms": "The CLI source file and Debian copyright identify GPL-3.0-or-later.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "debian": {
+    "index_url": "https://deb.debian.org/debian/dists/trixie/main/source/Sources.xz",
+    "index_sha256": "6002f81f463a2d976d84b34170367cc16da2d60bd0ba9ab9d868d6e1c1a935d9",
+    "source_package": "sed",
+    "version": "4.9-2+deb13u1",
+    "vcs": "https://salsa.debian.org/debian/sed",
+    "orig": {
+      "url": "https://deb.debian.org/debian/pool/main/s/sed/sed_4.9.orig.tar.xz",
+      "sha256": "6e226b732e1cd739464ad6862bd1a1aba42d7982922da7a53519631d24975181",
+      "filename": "sed_4.9.orig.tar.xz"
+    },
+    "debian": {
+      "url": "https://deb.debian.org/debian/pool/main/s/sed/sed_4.9-2+deb13u1.debian.tar.xz",
+      "sha256": "9c9aacda91e02802f33fb6a1a6e86f80be1bc67b92a4dae009e78f77e26e130a",
+      "filename": "sed_4.9-2+deb13u1.debian.tar.xz"
+    },
+    "binary_package": "sed",
+    "package_url": "https://packages.debian.org/trixie/sed",
+    "distribution": "Debian trixie",
+    "copyright": {
+      "path": "debian/copyright",
+      "url": "https://deb.debian.org/debian/pool/main/s/sed/sed_4.9-2+deb13u1.debian.tar.xz",
+      "archive_member": "debian/copyright",
+      "sha256": "719320e425e8e6da53a55e0fcfa2f2ed9b1332cea16abd65321bd651b2a88568"
+    }
+  },
+  "provisional_grouping_concerns": [
+    "Shared GNU/Gnulib formatting idioms may repeat standard diagnostic and reporting lines across upstream projects. Review actual template overlap before assigning leakage groups."
+  ]
+}

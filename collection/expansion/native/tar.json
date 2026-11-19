@@ -1,0 +1,88 @@
+{
+  "project": "tar",
+  "repository": "https://www.gnu.org/software/tar/",
+  "upstream_ref": "1.35",
+  "tool_version": "1.35",
+  "cli": "tar",
+  "family": "gnu-style",
+  "family_basis": "The root option structure uses GNU argp for argument parsing and help. The code also has separate handling for older tar option syntax.",
+  "upstream_source_archive": {
+    "url": "https://ftp.gnu.org/gnu/tar/tar-1.35.tar.xz",
+    "sha256": "4d62ff37342ec7aed748535323930c7cf94acf71c3591882b26a7ea50f3edc16"
+  },
+  "code_evidence": [
+    {
+      "path": "src/tar.c",
+      "url": "https://ftp.gnu.org/gnu/tar/tar-1.35.tar.xz",
+      "archive_member": "tar-1.35/src/tar.c",
+      "sha256": "cc5fad63d3ae5b7610cb3a30a670edb2e27baacd2d7668703e464a69577c86d5",
+      "excerpts": [
+        {
+          "line": 2167,
+          "code": "static struct argp argp = {",
+          "url": "https://ftp.gnu.org/gnu/tar/tar-1.35.tar.xz"
+        },
+        {
+          "line": 2180,
+          "code": "argp_help (&argp, stderr, ARGP_HELP_SEE, (char*) program_name);",
+          "url": "https://ftp.gnu.org/gnu/tar/tar-1.35.tar.xz"
+        },
+        {
+          "line": 2395,
+          "code": "if (argp_parse (&argp, argc, argv, ARGP_IN_ORDER, &idx, &args))",
+          "url": "https://ftp.gnu.org/gnu/tar/tar-1.35.tar.xz"
+        }
+      ],
+      "debian_orig": {
+        "path": "src/tar.c",
+        "url": "https://deb.debian.org/debian/pool/main/t/tar/tar_1.35+dfsg.orig.tar.xz",
+        "archive_member": "tar-1.35+dfsg/src/tar.c",
+        "sha256": "cc5fad63d3ae5b7610cb3a30a670edb2e27baacd2d7668703e464a69577c86d5",
+        "same_bytes": true
+      }
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "GPL-3.0-or-later",
+    "scope": "CLI source",
+    "license_files": [
+      {
+        "path": "COPYING",
+        "url": "https://ftp.gnu.org/gnu/tar/tar-1.35.tar.xz",
+        "archive_member": "tar-1.35/COPYING",
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+      }
+    ],
+    "observed_terms": "The CLI source file carries a GPL-3.0-or-later header. Debian repacks the upstream source as +dfsg.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "debian": {
+    "index_url": "https://deb.debian.org/debian/dists/trixie/main/source/Sources.xz",
+    "index_sha256": "6002f81f463a2d976d84b34170367cc16da2d60bd0ba9ab9d868d6e1c1a935d9",
+    "source_package": "tar",
+    "version": "1.35+dfsg-3.1",
+    "vcs": "https://salsa.debian.org/debian/tar",
+    "orig": {
+      "url": "https://deb.debian.org/debian/pool/main/t/tar/tar_1.35+dfsg.orig.tar.xz",
+      "sha256": "9ae57e981c1e73c0eebc2b26c9b0c4497fe310ef1d516ea430efb5470b71f7a8",
+      "filename": "tar_1.35+dfsg.orig.tar.xz"
+    },
+    "debian": {
+      "url": "https://deb.debian.org/debian/pool/main/t/tar/tar_1.35+dfsg-3.1.debian.tar.xz",
+      "sha256": "0d0278034b82ed84dce04a461879b6e1871e4cb416a0ff04d3d35ff05fc30a53",
+      "filename": "tar_1.35+dfsg-3.1.debian.tar.xz"
+    },
+    "binary_package": "tar",
+    "package_url": "https://packages.debian.org/trixie/tar",
+    "distribution": "Debian trixie",
+    "copyright": {
+      "path": "debian/copyright",
+      "url": "https://deb.debian.org/debian/pool/main/t/tar/tar_1.35+dfsg-3.1.debian.tar.xz",
+      "archive_member": "debian/copyright",
+      "sha256": "a0a44d41b2a045eb5946a8952487151cfa6ff0cd080bbf4b2eec220751d23024"
+    }
+  },
+  "provisional_grouping_concerns": [
+    "Shared GNU/Gnulib formatting idioms may repeat standard diagnostic and reporting lines across upstream projects. Review actual template overlap before assigning leakage groups."
+  ]
+}

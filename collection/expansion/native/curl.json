@@ -1,0 +1,111 @@
+{
+  "project": "curl",
+  "repository": "https://github.com/curl/curl",
+  "upstream_ref": "curl-8_14_1",
+  "tool_version": "8.14.1",
+  "cli": "curl",
+  "family": "gnu-style",
+  "family_basis": "Custom parser distinguishes single-letter and long options and dispatches help to a category-aware option renderer.",
+  "upstream_source_archive": null,
+  "code_evidence": [
+    {
+      "path": "src/tool_getparam.c",
+      "url": "https://github.com/curl/curl/blob/curl-8_14_1/src/tool_getparam.c",
+      "sha256": "5e1dddfae3b6a0553ff159549cc95cf41764c9af676515a2c8bb5b423455f892",
+      "raw_url": "https://raw.githubusercontent.com/curl/curl/curl-8_14_1/src/tool_getparam.c",
+      "excerpts": [
+        {
+          "line": 2837,
+          "code": "a = findlongopt(word);",
+          "url": "https://github.com/curl/curl/blob/curl-8_14_1/src/tool_getparam.c#L2837"
+        },
+        {
+          "line": 2879,
+          "code": "a = findshortopt(*parse);",
+          "url": "https://github.com/curl/curl/blob/curl-8_14_1/src/tool_getparam.c#L2879"
+        },
+        {
+          "line": 2898,
+          "code": "tool_help((nextarg && *nextarg) ? nextarg : NULL);",
+          "url": "https://github.com/curl/curl/blob/curl-8_14_1/src/tool_getparam.c#L2898"
+        }
+      ],
+      "debian_orig": {
+        "path": "src/tool_getparam.c",
+        "url": "https://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1.orig.tar.gz",
+        "archive_member": "curl-8.14.1/src/tool_getparam.c",
+        "sha256": "5e1dddfae3b6a0553ff159549cc95cf41764c9af676515a2c8bb5b423455f892",
+        "same_bytes": true
+      }
+    },
+    {
+      "path": "src/tool_help.c",
+      "url": "https://github.com/curl/curl/blob/curl-8_14_1/src/tool_help.c",
+      "sha256": "b5b59c5f238ba784d6e1c9842f65d64fd5dbcd3fcd5524fc21e98fcaf6fec2d3",
+      "raw_url": "https://raw.githubusercontent.com/curl/curl/curl-8_14_1/src/tool_help.c",
+      "excerpts": [
+        {
+          "line": 241,
+          "code": "print_category(CURLHELP_IMPORTANT, cols);",
+          "url": "https://github.com/curl/curl/blob/curl-8_14_1/src/tool_help.c#L241"
+        }
+      ],
+      "debian_orig": {
+        "path": "src/tool_help.c",
+        "url": "https://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1.orig.tar.gz",
+        "archive_member": "curl-8.14.1/src/tool_help.c",
+        "sha256": "b5b59c5f238ba784d6e1c9842f65d64fd5dbcd3fcd5524fc21e98fcaf6fec2d3",
+        "same_bytes": true
+      }
+    }
+  ],
+  "redistribution_evidence": {
+    "spdx": "curl",
+    "scope": "CLI source",
+    "license_files": [
+      {
+        "path": "COPYING",
+        "url": "https://github.com/curl/curl/blob/curl-8_14_1/COPYING",
+        "sha256": "e18f1989333b70044b2adfb7dc2f905d0119dbdcac3bc9f4bc9d540e3a29de5b",
+        "raw_url": "https://raw.githubusercontent.com/curl/curl/curl-8_14_1/COPYING"
+      }
+    ],
+    "additional_upstream_files": [
+      {
+        "path": "docs/THANKS",
+        "url": "https://github.com/curl/curl/blob/curl-8_14_1/docs/THANKS",
+        "raw_url": "https://raw.githubusercontent.com/curl/curl/curl-8_14_1/docs/THANKS",
+        "sha256": "75c6d516ac48d9abc929ccb9178a607e8c99e3e4f1687bb1e4880ceba6ddbe66"
+      }
+    ],
+    "observed_terms": "Curl license applies to the upstream CLI source. Retain its copyright and permission notice in copies.",
+    "captured_help_redistribution_status": "pending_capture_scope_and_notice_review"
+  },
+  "debian": {
+    "index_url": "https://deb.debian.org/debian/dists/trixie/main/source/Sources.xz",
+    "index_sha256": "6002f81f463a2d976d84b34170367cc16da2d60bd0ba9ab9d868d6e1c1a935d9",
+    "source_package": "curl",
+    "version": "8.14.1-2+deb13u5",
+    "vcs": "https://salsa.debian.org/debian/curl",
+    "orig": {
+      "url": "https://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1.orig.tar.gz",
+      "sha256": "6766ada7101d292b42b8b15681120acd68effa4a9660935853cf6d61f0d984d4",
+      "filename": "curl_8.14.1.orig.tar.gz"
+    },
+    "debian": {
+      "url": "https://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1-2+deb13u5.debian.tar.xz",
+      "sha256": "ebdfcfab1c2001c7a539fe2a4044dbf666a544393f191bedce9ee2d07c4ea925",
+      "filename": "curl_8.14.1-2+deb13u5.debian.tar.xz"
+    },
+    "binary_package": "curl",
+    "package_url": "https://packages.debian.org/trixie/curl",
+    "distribution": "Debian trixie",
+    "copyright": {
+      "path": "debian/copyright",
+      "url": "https://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1-2+deb13u5.debian.tar.xz",
+      "archive_member": "debian/copyright",
+      "sha256": "e1b7678c8443b4f8ac69350e1eefd6132339b010cc3b870675fec0c0c29779a5"
+    }
+  },
+  "provisional_grouping_concerns": []
+}
