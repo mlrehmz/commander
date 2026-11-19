@@ -1,0 +1,305 @@
+{
+  "image": "sha256:9576f5606188f4512e66095671bacc98b1262ea6aec2d8785dca239d9903e8e5",
+  "captures": [
+    {
+      "id": "cobra-helm-helm",
+      "project": "helm/helm",
+      "family": "cobra",
+      "tool_version": "3.17.3",
+      "invocation": [
+        "/opt/helpcat-bin/cobra-helm-helm/helm",
+        "--help"
+      ],
+      "command_path": [
+        "helm"
+      ],
+      "binary_sha256": "c16af303055cfe1c1e64652b547cfdbed924e89fd2a20d8632d797978c14def3",
+      "source_url": "https://get.helm.sh/helm-v3.17.3-linux-amd64.tar.gz"
+    },
+    {
+      "id": "cobra-kubernetes-sigs-kind",
+      "project": "kubernetes-sigs/kind",
+      "family": "cobra",
+      "tool_version": "0.27.0",
+      "invocation": [
+        "/opt/helpcat-bin/cobra-kubernetes-sigs-kind/kind",
+        "--help"
+      ],
+      "command_path": [
+        "kind"
+      ],
+      "binary_sha256": "a6875aaea358acf0ac07786b1a6755d08fd640f4c79b7a2e46681cc13f49a04b",
+      "source_url": "https://github.com/kubernetes-sigs/kind/releases/download/v0.27.0/kind-linux-amd64"
+    },
+    {
+      "id": "cobra-goreleaser-goreleaser",
+      "project": "goreleaser/goreleaser",
+      "family": "cobra",
+      "tool_version": "2.8.2",
+      "invocation": [
+        "/opt/helpcat-bin/cobra-goreleaser-goreleaser/goreleaser",
+        "--help"
+      ],
+      "command_path": [
+        "goreleaser"
+      ],
+      "binary_sha256": "0beca01603c62cbf77a26ddccf718ee679abadbc7f019c1147aea3d5773bdd44",
+      "source_url": "https://github.com/goreleaser/goreleaser/releases/download/v2.8.2/goreleaser_Linux_x86_64.tar.gz"
+    },
+    {
+      "id": "cobra-cli-cli",
+      "project": "cli/cli",
+      "family": "cobra",
+      "tool_version": "2.70.0",
+      "invocation": [
+        "/opt/helpcat-bin/cobra-cli-cli/gh",
+        "--help"
+      ],
+      "command_path": [
+        "gh"
+      ],
+      "binary_sha256": "d2c22fcdb510e312385701f0fcbbc37930b899b55102ab7430a9e441d142c748",
+      "source_url": "https://github.com/cli/cli/releases/download/v2.70.0/gh_2.70.0_linux_amd64.tar.gz"
+    },
+    {
+      "id": "cobra-docker-cli",
+      "project": "docker/cli",
+      "family": "cobra",
+      "tool_version": "28.1.1",
+      "invocation": [
+        "/opt/helpcat-bin/cobra-docker-cli/docker",
+        "--help"
+      ],
+      "command_path": [
+        "docker"
+      ],
+      "binary_sha256": "a1e26e03d5c80c72092ad1a68e39177319e1b6e4a296910b2b550cb3906b90aa",
+      "source_url": "https://download.docker.com/linux/static/stable/x86_64/docker-28.1.1.tgz"
+    },
+    {
+      "id": "cobra-containers-podman",
+      "project": "containers/podman",
+      "family": "cobra",
+      "tool_version": "5.4.2",
+      "invocation": [
+        "/opt/helpcat-bin/cobra-containers-podman/podman",
+        "--help"
+      ],
+      "command_path": [
+        "podman"
+      ],
+      "binary_sha256": "6e4993e061eb88205003892252e2e13bbf49c12a6f67f519881b9b3c94e980e6",
+      "source_url": "https://deb.debian.org/debian/pool/main/p/podman/podman_5.4.2+ds1-2+b2_amd64.deb"
+    },
+    {
+      "id": "cobra-containers-buildah",
+      "project": "containers/buildah",
+      "family": "cobra",
+      "tool_version": "1.39.3",
+      "invocation": [
+        "/opt/helpcat-bin/cobra-containers-buildah/buildah",
+        "--help"
+      ],
+      "command_path": [
+        "buildah"
+      ],
+      "binary_sha256": "17ce870d84b45de68416990a2515e0e0a42152524211c4bf315b379cf03d374a",
+      "source_url": "https://deb.debian.org/debian/pool/main/g/golang-github-containers-buildah/buildah_1.39.3+ds1-1+b7_amd64.deb"
+    },
+    {
+      "id": "cobra-containers-skopeo",
+      "project": "containers/skopeo",
+      "family": "cobra",
+      "tool_version": "1.18.0",
+      "invocation": [
+        "/opt/helpcat-bin/cobra-containers-skopeo/skopeo",
+        "--help"
+      ],
+      "command_path": [
+        "skopeo"
+      ],
+      "binary_sha256": "cd21ffca595f2cc926b7181249f8a08ca3d3f6b01242b1d520485cfafd5fed23",
+      "source_url": "https://deb.debian.org/debian/pool/main/s/skopeo/skopeo_1.18.0+ds1-1+b5_amd64.deb"
+    },
+    {
+      "id": "cobra-anchore-syft",
+      "project": "anchore/syft",
+      "family": "cobra",
+      "tool_version": "1.23.1",
+      "invocation": [
+        "/opt/helpcat-bin/cobra-anchore-syft/syft",
+        "--help"
+      ],
+      "command_path": [
+        "syft"
+      ],
+      "binary_sha256": "d2265dc5556f4d805344151b9833ab8f3492e6570de41129a4e14576ad67573f",
+      "source_url": "https://github.com/anchore/syft/releases/download/v1.23.1/syft_1.23.1_linux_amd64.tar.gz"
+    },
+    {
+      "id": "cobra-anchore-grype",
+      "project": "anchore/grype",
+      "family": "cobra",
+      "tool_version": "0.91.2",
+      "invocation": [
+        "/opt/helpcat-bin/cobra-anchore-grype/grype",
+        "--help"
+      ],
+      "command_path": [
+        "grype"
+      ],
+      "binary_sha256": "6cac8b291985494c71f19271bd83853e6b94f54fbc512660f092fb7fe66127b9",
+      "source_url": "https://github.com/anchore/grype/releases/download/v0.91.2/grype_0.91.2_linux_amd64.tar.gz"
+    },
+    {
+      "id": "cobra-fluxcd-flux2",
+      "project": "fluxcd/flux2",
+      "family": "cobra",
+      "tool_version": "2.5.1",
+      "invocation": [
+        "/opt/helpcat-bin/cobra-fluxcd-flux2/flux",
+        "--help"
+      ],
+      "command_path": [
+        "flux"
+      ],
+      "binary_sha256": "6183c4f13c73ca7c2281a0f3b6978cb647c0f1be4c8eca09335443cb505bde0a",
+      "source_url": "https://github.com/fluxcd/flux2/releases/download/v2.5.1/flux_2.5.1_linux_amd64.tar.gz"
+    },
+    {
+      "id": "cobra-argoproj-argo-cd",
+      "project": "argoproj/argo-cd",
+      "family": "cobra",
+      "tool_version": "2.14.11",
+      "invocation": [
+        "/opt/helpcat-bin/cobra-argoproj-argo-cd/argocd",
+        "--help"
+      ],
+      "command_path": [
+        "argocd"
+      ],
+      "binary_sha256": "78438cfffeb56b34dae868c16154a481b177af68ee6fcb5e11730ae476a1b252",
+      "source_url": "https://github.com/argoproj/argo-cd/releases/download/v2.14.11/argocd-linux-amd64"
+    },
+    {
+      "id": "cobra-tektoncd-cli",
+      "project": "tektoncd/cli",
+      "family": "cobra",
+      "tool_version": "0.40.0",
+      "invocation": [
+        "/opt/helpcat-bin/cobra-tektoncd-cli/tkn",
+        "--help"
+      ],
+      "command_path": [
+        "tkn"
+      ],
+      "binary_sha256": "4cb22623624a675dd4947cddc1f8a2f8d036ed7ee95ceee33f7da09bf61c4e44",
+      "source_url": "https://github.com/tektoncd/cli/releases/download/v0.40.0/tkn_0.40.0_Linux_x86_64.tar.gz"
+    },
+    {
+      "id": "cobra-loft-sh-vcluster",
+      "project": "loft-sh/vcluster",
+      "family": "cobra",
+      "tool_version": "0.24.1",
+      "invocation": [
+        "/opt/helpcat-bin/cobra-loft-sh-vcluster/vcluster",
+        "--help"
+      ],
+      "command_path": [
+        "vcluster"
+      ],
+      "binary_sha256": "5943c6a01e930f94a52b36ec706014251537bacd35502c96ee8972ce04779191",
+      "source_url": "https://github.com/loft-sh/vcluster/releases/download/v0.24.1/vcluster-linux-amd64"
+    },
+    {
+      "id": "cobra-restic-restic",
+      "project": "restic/restic",
+      "family": "cobra",
+      "tool_version": "0.18.0",
+      "invocation": [
+        "/opt/helpcat-bin/cobra-restic-restic/restic",
+        "--help"
+      ],
+      "command_path": [
+        "restic"
+      ],
+      "binary_sha256": "a77b8f59af4da23256edf1f768bc363c224b259082da8f6cc7fc7913535626d3",
+      "source_url": "https://github.com/restic/restic/releases/download/v0.18.0/restic_0.18.0_linux_amd64.bz2"
+    },
+    {
+      "id": "cobra-sigstore-cosign",
+      "project": "sigstore/cosign",
+      "family": "cobra",
+      "tool_version": "2.5.0",
+      "invocation": [
+        "/opt/helpcat-bin/cobra-sigstore-cosign/cosign",
+        "--help"
+      ],
+      "command_path": [
+        "cosign"
+      ],
+      "binary_sha256": "1f6c194dd0891eb345b436bb71ff9f996768355f5e0ce02dde88567029ac2188",
+      "source_url": "https://github.com/sigstore/cosign/releases/download/v2.5.0/cosign-linux-amd64"
+    },
+    {
+      "id": "cobra-sigstore-rekor",
+      "project": "sigstore/rekor",
+      "family": "cobra",
+      "tool_version": "1.3.10",
+      "invocation": [
+        "/opt/helpcat-bin/cobra-sigstore-rekor/rekor-cli",
+        "--help"
+      ],
+      "command_path": [
+        "rekor-cli"
+      ],
+      "binary_sha256": "cf87be059e7e69230c4f958e6f70f332a8027ff0731ccc750c509fca17baa12d",
+      "source_url": "https://github.com/sigstore/rekor/releases/download/v1.3.10/rekor-cli-linux-amd64"
+    },
+    {
+      "id": "cobra-googlecontainertools-skaffold",
+      "project": "GoogleContainerTools/skaffold",
+      "family": "cobra",
+      "tool_version": "2.15.0",
+      "invocation": [
+        "/opt/helpcat-bin/cobra-googlecontainertools-skaffold/skaffold",
+        "--help"
+      ],
+      "command_path": [
+        "skaffold"
+      ],
+      "binary_sha256": "089d45bca89437ef47739cf01f1d50c50855ccb483bf18b43a8303d12005c8c5",
+      "source_url": "https://github.com/GoogleContainerTools/skaffold/releases/download/v2.15.0/skaffold-linux-amd64"
+    },
+    {
+      "id": "cobra-containerd-nerdctl",
+      "project": "containerd/nerdctl",
+      "family": "cobra",
+      "tool_version": "2.0.4",
+      "invocation": [
+        "/opt/helpcat-bin/cobra-containerd-nerdctl/nerdctl",
+        "--help"
+      ],
+      "command_path": [
+        "nerdctl"
+      ],
+      "binary_sha256": "b6db18d0bbb2af197f06ebf2deb5b4d290ceaa60154751cc03e150451c030c4f",
+      "source_url": "https://github.com/containerd/nerdctl/releases/download/v2.0.4/nerdctl-2.0.4-linux-amd64.tar.gz"
+    },
+    {
+      "id": "cobra-knative-client",
+      "project": "knative/client",
+      "family": "cobra",
+      "tool_version": "1.17.0",
+      "invocation": [
+        "/opt/helpcat-bin/cobra-knative-client/kn",
+        "--help"
+      ],
+      "command_path": [
+        "kn"
+      ],
+      "binary_sha256": "e9c1dc399e2f5feddd6220a3a7a5c1537f709508ea99799a07d565a5ac08268f",
+      "source_url": "https://github.com/knative/client/releases/download/knative-v1.17.0/kn-linux-amd64"
+    }
+  ]
+}

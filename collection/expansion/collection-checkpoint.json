@@ -1,0 +1,295 @@
+{
+  "version": 1,
+  "capture_counts": {
+    "cobra": 20,
+    "clap": 20,
+    "familiar": 60
+  },
+  "total": 100,
+  "heldout": {
+    "cobra": [
+      {
+        "id": "cobra-helm-helm",
+        "status": "ok",
+        "sha256": "57288edcabe7d98ad31928f264e465e9086470bcb56190683e7803fdfdf7ca2b",
+        "capture": ".helpcat-heldout/cobra/cobra-helm-helm.txt",
+        "receipt": ".helpcat-heldout/cobra/cobra-helm-helm.receipt.json"
+      },
+      {
+        "id": "cobra-kubernetes-sigs-kind",
+        "status": "ok",
+        "sha256": "9d1b88dc8932d0a04beb460df0a66b77efa65356b6caf85725851769d1634858",
+        "capture": ".helpcat-heldout/cobra/cobra-kubernetes-sigs-kind.txt",
+        "receipt": ".helpcat-heldout/cobra/cobra-kubernetes-sigs-kind.receipt.json"
+      },
+      {
+        "id": "cobra-goreleaser-goreleaser",
+        "status": "ok",
+        "sha256": "e6807f3262e624c60f20334204f7d553dd3d30caca6e0cd194180a7632eb10c0",
+        "capture": ".helpcat-heldout/cobra/cobra-goreleaser-goreleaser.txt",
+        "receipt": ".helpcat-heldout/cobra/cobra-goreleaser-goreleaser.receipt.json"
+      },
+      {
+        "id": "cobra-cli-cli",
+        "status": "ok",
+        "sha256": "0fdc01fb81a226d1b11db05684b90b6622336b0d13366385af6ecb510cce670e",
+        "capture": ".helpcat-heldout/cobra/cobra-cli-cli.txt",
+        "receipt": ".helpcat-heldout/cobra/cobra-cli-cli.receipt.json"
+      },
+      {
+        "id": "cobra-docker-cli",
+        "status": "ok",
+        "sha256": "a4fb5ac13a90adce3b2a6b2111e69a2955bf1047654c165d452a64a63e4cf507",
+        "capture": ".helpcat-heldout/cobra/cobra-docker-cli.txt",
+        "receipt": ".helpcat-heldout/cobra/cobra-docker-cli.receipt.json"
+      },
+      {
+        "id": "cobra-containers-podman",
+        "status": "ok",
+        "sha256": "c94d41afc8d2177d91ca7b288c5c47115051815a09a27c15f6e20857f3b5dddc",
+        "capture": ".helpcat-heldout/cobra/cobra-containers-podman.txt",
+        "receipt": ".helpcat-heldout/cobra/cobra-containers-podman.receipt.json"
+      },
+      {
+        "id": "cobra-containers-buildah",
+        "status": "ok",
+        "sha256": "2a7a228c41f4ef6370e90bb59401083ccab78e216df2a1b2951f5860a1d4fe90",
+        "capture": ".helpcat-heldout/cobra/cobra-containers-buildah.txt",
+        "receipt": ".helpcat-heldout/cobra/cobra-containers-buildah.receipt.json"
+      },
+      {
+        "id": "cobra-containers-skopeo",
+        "status": "ok",
+        "sha256": "6410a793a1d06914e5f0ca1986e6b05578ec74c761080f65a7b7389bda1a112f",
+        "capture": ".helpcat-heldout/cobra/cobra-containers-skopeo.txt",
+        "receipt": ".helpcat-heldout/cobra/cobra-containers-skopeo.receipt.json"
+      },
+      {
+        "id": "cobra-anchore-syft",
+        "status": "ok",
+        "sha256": "5e32885c7c00496041fe39ecfd3fa3fac72e2b48bc8d55265a6d634553d9003b",
+        "capture": ".helpcat-heldout/cobra/cobra-anchore-syft.txt",
+        "receipt": ".helpcat-heldout/cobra/cobra-anchore-syft.receipt.json"
+      },
+      {
+        "id": "cobra-anchore-grype",
+        "status": "ok",
+        "sha256": "bff9f91bff5d3b88c54e78f5d3fc8fcc6d6cbcae763327f36720ee04eeaf67ce",
+        "capture": ".helpcat-heldout/cobra/cobra-anchore-grype.txt",
+        "receipt": ".helpcat-heldout/cobra/cobra-anchore-grype.receipt.json"
+      },
+      {
+        "id": "cobra-fluxcd-flux2",
+        "status": "ok",
+        "sha256": "ac4f31b4de5bf2b97282cff573fbb1891e1328c453ea1b01706da278c1820120",
+        "capture": ".helpcat-heldout/cobra/cobra-fluxcd-flux2.txt",
+        "receipt": ".helpcat-heldout/cobra/cobra-fluxcd-flux2.receipt.json"
+      },
+      {
+        "id": "cobra-argoproj-argo-cd",
+        "status": "ok",
+        "sha256": "29ac104172ad36b0bba342aaa155bcd313c22f913752b27945eab6d0dee42850",
+        "capture": ".helpcat-heldout/cobra/cobra-argoproj-argo-cd.txt",
+        "receipt": ".helpcat-heldout/cobra/cobra-argoproj-argo-cd.receipt.json"
+      },
+      {
+        "id": "cobra-tektoncd-cli",
+        "status": "ok",
+        "sha256": "779d4e860b1cb5b3af25a462650de3e76a7b2046b789a62b3422320bd9dd291c",
+        "capture": ".helpcat-heldout/cobra/cobra-tektoncd-cli.txt",
+        "receipt": ".helpcat-heldout/cobra/cobra-tektoncd-cli.receipt.json"
+      },
+      {
+        "id": "cobra-loft-sh-vcluster",
+        "status": "ok",
+        "sha256": "7d4d0fc10dfbfb7d71796c8a0ce56b580f6ee9f4d1a14607a25f6ac91e8279b7",
+        "capture": ".helpcat-heldout/cobra/cobra-loft-sh-vcluster.txt",
+        "receipt": ".helpcat-heldout/cobra/cobra-loft-sh-vcluster.receipt.json"
+      },
+      {
+        "id": "cobra-restic-restic",
+        "status": "ok",
+        "sha256": "168f1292c138894b95ea819f612b77524462e2c836b2efbf8851f10573d5c5c5",
+        "capture": ".helpcat-heldout/cobra/cobra-restic-restic.txt",
+        "receipt": ".helpcat-heldout/cobra/cobra-restic-restic.receipt.json"
+      },
+      {
+        "id": "cobra-sigstore-cosign",
+        "status": "ok",
+        "sha256": "4e893a059d74fdede63523a8b3ca30c86452e0c99b2b253538e8029692f49c05",
+        "capture": ".helpcat-heldout/cobra/cobra-sigstore-cosign.txt",
+        "receipt": ".helpcat-heldout/cobra/cobra-sigstore-cosign.receipt.json"
+      },
+      {
+        "id": "cobra-sigstore-rekor",
+        "status": "ok",
+        "sha256": "8c1527276bb96e8efbd9e26e23f571dedd7826fd432be21b25af91286d862b99",
+        "capture": ".helpcat-heldout/cobra/cobra-sigstore-rekor.txt",
+        "receipt": ".helpcat-heldout/cobra/cobra-sigstore-rekor.receipt.json"
+      },
+      {
+        "id": "cobra-googlecontainertools-skaffold",
+        "status": "ok",
+        "sha256": "dc91c89047986fe2131c9a5c8c92a8b9beeb9fbed85c5d85d66519f1d674975a",
+        "capture": ".helpcat-heldout/cobra/cobra-googlecontainertools-skaffold.txt",
+        "receipt": ".helpcat-heldout/cobra/cobra-googlecontainertools-skaffold.receipt.json"
+      },
+      {
+        "id": "cobra-containerd-nerdctl",
+        "status": "ok",
+        "sha256": "98edaac4556b8417207f5a68bd03c0bafa715bf5181275bd9a02532b68f05b2a",
+        "capture": ".helpcat-heldout/cobra/cobra-containerd-nerdctl.txt",
+        "receipt": ".helpcat-heldout/cobra/cobra-containerd-nerdctl.receipt.json"
+      },
+      {
+        "id": "cobra-knative-client",
+        "status": "ok",
+        "sha256": "9ffcf536d02d6baa93b06aab49d6ea53d5944d2a993acd6e43d3e4950ec5a33e",
+        "capture": ".helpcat-heldout/cobra/cobra-knative-client.txt",
+        "receipt": ".helpcat-heldout/cobra/cobra-knative-client.receipt.json"
+      }
+    ],
+    "clap": [
+      {
+        "id": "clap-bat",
+        "status": "ok",
+        "sha256": "9210d6a1255ad90f88afa2d000c374b05d06b240dc2b63f1d8bb8b3673b3b4b1",
+        "capture": ".helpcat-heldout/clap/clap-bat.txt",
+        "receipt": ".helpcat-heldout/clap/clap-bat.receipt.json"
+      },
+      {
+        "id": "clap-fd",
+        "status": "ok",
+        "sha256": "df502f70e8e92818a4b0c66b7d3adeabd2f2889f906240d6fd25e85312b72db9",
+        "capture": ".helpcat-heldout/clap/clap-fd.txt",
+        "receipt": ".helpcat-heldout/clap/clap-fd.receipt.json"
+      },
+      {
+        "id": "clap-lsd",
+        "status": "ok",
+        "sha256": "f05c015ac07a1723b1dee388e3a41d4879e4eea6bdcd737a7d7bd9682859bf5b",
+        "capture": ".helpcat-heldout/clap/clap-lsd.txt",
+        "receipt": ".helpcat-heldout/clap/clap-lsd.receipt.json"
+      },
+      {
+        "id": "clap-hyperfine",
+        "status": "ok",
+        "sha256": "2fb4bab5ad409ccba616f61dba8061ef9a8f59c1a34c8c2f1cf4b2a9be3c26be",
+        "capture": ".helpcat-heldout/clap/clap-hyperfine.txt",
+        "receipt": ".helpcat-heldout/clap/clap-hyperfine.receipt.json"
+      },
+      {
+        "id": "clap-hexyl",
+        "status": "ok",
+        "sha256": "fc68e3dfd32dae052caac0f34c646860ad516c223caaaa7b4c50305ef09bbfde",
+        "capture": ".helpcat-heldout/clap/clap-hexyl.txt",
+        "receipt": ".helpcat-heldout/clap/clap-hexyl.receipt.json"
+      },
+      {
+        "id": "clap-dust",
+        "status": "ok",
+        "sha256": "6c88b2565f04f866df7dad7f8fa1b8c7b008eac7ee9fc4a67f9cc7cb679c1410",
+        "capture": ".helpcat-heldout/clap/clap-dust.txt",
+        "receipt": ".helpcat-heldout/clap/clap-dust.receipt.json"
+      },
+      {
+        "id": "clap-procs",
+        "status": "ok",
+        "sha256": "3bdf734b5a50c3a83f2b3b1555b389d5b86580396dde686ebc5e7bda77027ff9",
+        "capture": ".helpcat-heldout/clap/clap-procs.txt",
+        "receipt": ".helpcat-heldout/clap/clap-procs.receipt.json"
+      },
+      {
+        "id": "clap-bottom",
+        "status": "ok",
+        "sha256": "25fe8f45904f024f5a6bae541d319e23963f249365d2eacfb05ca44fb0b73705",
+        "capture": ".helpcat-heldout/clap/clap-bottom.txt",
+        "receipt": ".helpcat-heldout/clap/clap-bottom.receipt.json"
+      },
+      {
+        "id": "clap-starship",
+        "status": "ok",
+        "sha256": "780d756cf5cbf47e62ab2359e308bac831132f8ea754eeac2dbe017ce19358e5",
+        "capture": ".helpcat-heldout/clap/clap-starship.txt",
+        "receipt": ".helpcat-heldout/clap/clap-starship.receipt.json"
+      },
+      {
+        "id": "clap-atuin",
+        "status": "ok",
+        "sha256": "fe195372330d3ea036ca5cee82b7a41e0b809154397b974739938c15f21cd547",
+        "capture": ".helpcat-heldout/clap/clap-atuin.txt",
+        "receipt": ".helpcat-heldout/clap/clap-atuin.receipt.json"
+      },
+      {
+        "id": "clap-uv",
+        "status": "ok",
+        "sha256": "b88f7346ec1d8eade978220053b985a3308767809e01aafe147e2f0c0fb3fd45",
+        "capture": ".helpcat-heldout/clap/clap-uv.txt",
+        "receipt": ".helpcat-heldout/clap/clap-uv.receipt.json"
+      },
+      {
+        "id": "clap-ruff",
+        "status": "ok",
+        "sha256": "b0f186b69266d595149e311909dcbe1b77818452115edf1db2ca318fa035a746",
+        "capture": ".helpcat-heldout/clap/clap-ruff.txt",
+        "receipt": ".helpcat-heldout/clap/clap-ruff.receipt.json"
+      },
+      {
+        "id": "clap-gitui",
+        "status": "ok",
+        "sha256": "cdb378a3806d93a08c15b26babf692f857e11639e3df2d0d4de3d7c11d220553",
+        "capture": ".helpcat-heldout/clap/clap-gitui.txt",
+        "receipt": ".helpcat-heldout/clap/clap-gitui.receipt.json"
+      },
+      {
+        "id": "clap-zellij",
+        "status": "ok",
+        "sha256": "166308fb6df257210d5e9733da33280b2d1a2c5d783e637a6e19f4341c549161",
+        "capture": ".helpcat-heldout/clap/clap-zellij.txt",
+        "receipt": ".helpcat-heldout/clap/clap-zellij.receipt.json"
+      },
+      {
+        "id": "clap-zoxide",
+        "status": "ok",
+        "sha256": "1cde15a802c0df9484baffa59e756a12c4a1ba0d556ab01c6a75b8417c7086d3",
+        "capture": ".helpcat-heldout/clap/clap-zoxide.txt",
+        "receipt": ".helpcat-heldout/clap/clap-zoxide.receipt.json"
+      },
+      {
+        "id": "clap-sccache",
+        "status": "ok",
+        "sha256": "09d6afe4ee6f61906fe77522b15330ce6ab1a7e24f71feddf160e320da8b4c8d",
+        "capture": ".helpcat-heldout/clap/clap-sccache.txt",
+        "receipt": ".helpcat-heldout/clap/clap-sccache.receipt.json"
+      },
+      {
+        "id": "clap-genact",
+        "status": "ok",
+        "sha256": "caaa6560d89a4cdcf4b9103fc7b754081eb81e5aa4211a222f2433f553c169a4",
+        "capture": ".helpcat-heldout/clap/clap-genact.txt",
+        "receipt": ".helpcat-heldout/clap/clap-genact.receipt.json"
+      },
+      {
+        "id": "clap-miniserve",
+        "status": "ok",
+        "sha256": "fea94a32ead6c8932e4524a4b19b4a0cd19560def55159ce912df96b04dcfde3",
+        "capture": ".helpcat-heldout/clap/clap-miniserve.txt",
+        "receipt": ".helpcat-heldout/clap/clap-miniserve.receipt.json"
+      },
+      {
+        "id": "clap-mdbook",
+        "status": "ok",
+        "sha256": "05560c08a8febd7ed3e5b2aa75dd3ac141fd8365a6fc22e7b51db41dbf098cfb",
+        "capture": ".helpcat-heldout/clap/clap-mdbook.txt",
+        "receipt": ".helpcat-heldout/clap/clap-mdbook.receipt.json"
+      },
+      {
+        "id": "clap-just",
+        "status": "ok",
+        "sha256": "33a31a2c91523a44a1738f24e79a8663c282c5b95a6808d74bf7ba09b3a0172b",
+        "capture": ".helpcat-heldout/clap/clap-just.txt",
+        "receipt": ".helpcat-heldout/clap/clap-just.receipt.json"
+      }
+    ]
+  }
+}

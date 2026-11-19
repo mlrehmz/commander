@@ -1,0 +1,102 @@
+[
+  {
+    "id": "clap-mdbook",
+    "status": "ok",
+    "sha256": "05560c08a8febd7ed3e5b2aa75dd3ac141fd8365a6fc22e7b51db41dbf098cfb"
+  },
+  {
+    "id": "clap-just",
+    "status": "ok",
+    "sha256": "33a31a2c91523a44a1738f24e79a8663c282c5b95a6808d74bf7ba09b3a0172b"
+  },
+  {
+    "id": "clap-bat",
+    "status": "ok",
+    "sha256": "9210d6a1255ad90f88afa2d000c374b05d06b240dc2b63f1d8bb8b3673b3b4b1"
+  },
+  {
+    "id": "clap-fd",
+    "status": "ok",
+    "sha256": "df502f70e8e92818a4b0c66b7d3adeabd2f2889f906240d6fd25e85312b72db9"
+  },
+  {
+    "id": "clap-lsd",
+    "status": "ok",
+    "sha256": "f05c015ac07a1723b1dee388e3a41d4879e4eea6bdcd737a7d7bd9682859bf5b"
+  },
+  {
+    "id": "clap-hyperfine",
+    "status": "ok",
+    "sha256": "2fb4bab5ad409ccba616f61dba8061ef9a8f59c1a34c8c2f1cf4b2a9be3c26be"
+  },
+  {
+    "id": "clap-hexyl",
+    "status": "ok",
+    "sha256": "fc68e3dfd32dae052caac0f34c646860ad516c223caaaa7b4c50305ef09bbfde"
+  },
+  {
+    "id": "clap-dust",
+    "status": "ok",
+    "sha256": "6c88b2565f04f866df7dad7f8fa1b8c7b008eac7ee9fc4a67f9cc7cb679c1410"
+  },
+  {
+    "id": "clap-procs",
+    "status": "ok",
+    "sha256": "3bdf734b5a50c3a83f2b3b1555b389d5b86580396dde686ebc5e7bda77027ff9"
+  },
+  {
+    "id": "clap-bottom",
+    "status": "ok",
+    "sha256": "25fe8f45904f024f5a6bae541d319e23963f249365d2eacfb05ca44fb0b73705"
+  },
+  {
+    "id": "clap-starship",
+    "status": "ok",
+    "sha256": "780d756cf5cbf47e62ab2359e308bac831132f8ea754eeac2dbe017ce19358e5"
+  },
+  {
+    "id": "clap-atuin",
+    "status": "ok",
+    "sha256": "fe195372330d3ea036ca5cee82b7a41e0b809154397b974739938c15f21cd547"
+  },
+  {
+    "id": "clap-uv",
+    "status": "ok",
+    "sha256": "b88f7346ec1d8eade978220053b985a3308767809e01aafe147e2f0c0fb3fd45"
+  },
+  {
+    "id": "clap-ruff",
+    "status": "ok",
+    "sha256": "b0f186b69266d595149e311909dcbe1b77818452115edf1db2ca318fa035a746"
+  },
+  {
+    "id": "clap-gitui",
+    "status": "ok",
+    "sha256": "cdb378a3806d93a08c15b26babf692f857e11639e3df2d0d4de3d7c11d220553"
+  },
+  {
+    "id": "clap-zellij",
+    "status": "ok",
+    "sha256": "166308fb6df257210d5e9733da33280b2d1a2c5d783e637a6e19f4341c549161"
+  },
+  {
+    "id": "clap-zoxide",
+    "status": "ok",
+    "sha256": "1cde15a802c0df9484baffa59e756a12c4a1ba0d556ab01c6a75b8417c7086d3"
+  },
+  {
+    "id": "clap-sccache",
+    "status": "ok",
+    "sha256": "09d6afe4ee6f61906fe77522b15330ce6ab1a7e24f71feddf160e320da8b4c8d"
+  },
+  {
+    "id": "clap-genact",
+    "status": "ok",
+    "sha256": "caaa6560d89a4cdcf4b9103fc7b754081eb81e5aa4211a222f2433f553c169a4"
+  },
+  {
+    "id": "clap-miniserve",
+    "status": "ok",
+    "sha256": "fea94a32ead6c8932e4524a4b19b4a0cd19560def55159ce912df96b04dcfde3"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "cobra-helm-helm",
+    "status": "ok",
+    "sha256": "57288edcabe7d98ad31928f264e465e9086470bcb56190683e7803fdfdf7ca2b"
+  },
+  {
+    "id": "cobra-kubernetes-sigs-kind",
+    "status": "ok",
+    "sha256": "9d1b88dc8932d0a04beb460df0a66b77efa65356b6caf85725851769d1634858"
+  },
+  {
+    "id": "cobra-goreleaser-goreleaser",
+    "status": "ok",
+    "sha256": "e6807f3262e624c60f20334204f7d553dd3d30caca6e0cd194180a7632eb10c0"
+  },
+  {
+    "id": "cobra-cli-cli",
+    "status": "ok",
+    "sha256": "0fdc01fb81a226d1b11db05684b90b6622336b0d13366385af6ecb510cce670e"
+  },
+  {
+    "id": "cobra-docker-cli",
+    "status": "ok",
+    "sha256": "a4fb5ac13a90adce3b2a6b2111e69a2955bf1047654c165d452a64a63e4cf507"
+  },
+  {
+    "id": "cobra-containers-podman",
+    "status": "nonzero_exit",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "id": "cobra-containers-buildah",
+    "status": "nonzero_exit",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "id": "cobra-containers-skopeo",
+    "status": "nonzero_exit",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "id": "cobra-anchore-syft",
+    "status": "ok",
+    "sha256": "5e32885c7c00496041fe39ecfd3fa3fac72e2b48bc8d55265a6d634553d9003b"
+  },
+  {
+    "id": "cobra-anchore-grype",
+    "status": "ok",
+    "sha256": "bff9f91bff5d3b88c54e78f5d3fc8fcc6d6cbcae763327f36720ee04eeaf67ce"
+  },
+  {
+    "id": "cobra-fluxcd-flux2",
+    "status": "ok",
+    "sha256": "ac4f31b4de5bf2b97282cff573fbb1891e1328c453ea1b01706da278c1820120"
+  },
+  {
+    "id": "cobra-argoproj-argo-cd",
+    "status": "ok",
+    "sha256": "29ac104172ad36b0bba342aaa155bcd313c22f913752b27945eab6d0dee42850"
+  },
+  {
+    "id": "cobra-tektoncd-cli",
+    "status": "ok",
+    "sha256": "779d4e860b1cb5b3af25a462650de3e76a7b2046b789a62b3422320bd9dd291c"
+  },
+  {
+    "id": "cobra-loft-sh-vcluster",
+    "status": "ok",
+    "sha256": "7d4d0fc10dfbfb7d71796c8a0ce56b580f6ee9f4d1a14607a25f6ac91e8279b7"
+  },
+  {
+    "id": "cobra-restic-restic",
+    "status": "ok",
+    "sha256": "168f1292c138894b95ea819f612b77524462e2c836b2efbf8851f10573d5c5c5"
+  },
+  {
+    "id": "cobra-sigstore-cosign",
+    "status": "ok",
+    "sha256": "4e893a059d74fdede63523a8b3ca30c86452e0c99b2b253538e8029692f49c05"
+  },
+  {
+    "id": "cobra-sigstore-rekor",
+    "status": "ok",
+    "sha256": "8c1527276bb96e8efbd9e26e23f571dedd7826fd432be21b25af91286d862b99"
+  },
+  {
+    "id": "cobra-googlecontainertools-skaffold",
+    "status": "ok",
+    "sha256": "dc91c89047986fe2131c9a5c8c92a8b9beeb9fbed85c5d85d66519f1d674975a"
+  },
+  {
+    "id": "cobra-containerd-nerdctl",
+    "status": "ok",
+    "sha256": "98edaac4556b8417207f5a68bd03c0bafa715bf5181275bd9a02532b68f05b2a"
+  },
+  {
+    "id": "cobra-knative-client",
+    "status": "ok",
+    "sha256": "9ffcf536d02d6baa93b06aab49d6ea53d5944d2a993acd6e43d3e4950ec5a33e"
+  }
+]

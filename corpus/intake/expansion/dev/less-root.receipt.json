@@ -1,0 +1,11 @@
+{
+  "id": "less-root",
+  "status": "ok",
+  "sha256": "d5fcc0388a481756e30a7a2c3194592db703aace0d1a3ca991e65d95c080a2f1",
+  "normalization_version": "1.0",
+  "original_raw_sha256": "8f929f24047cda1776e8a44835106e26cd32e21d4fa6cb411b287fbf800aad88",
+  "original_receipt": "corpus/intake/expansion/dev/failures/less-root-9f6e4ea3b4d64f83a3108c3c613d9d42.json",
+  "capture_kind": "explicit_terminal_rendering",
+  "rendering_rule": "render underlined or repeated nroff glyph once",
+  "split": null
+}

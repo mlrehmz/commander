@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "image": "sha256:62d32153e3e2d481d3b24f464d3ec742145de4df293c352e8b50e3e5066aa07f",
+  "timeout_seconds": 20,
+  "output_limit_bytes": 1048576,
+  "captures": [
+    {
+      "id": "httpx-root",
+      "project": "httpx",
+      "package": "httpx",
+      "tool_version": "0.28.1",
+      "invocation": [
+        "/opt/tools/httpx/bin/httpx",
+        "--help"
+      ],
+      "command_path": [
+        "httpx"
+      ],
+      "family": "unknown",
+      "leakage_group": "httpx",
+      "source_url": "https://pypi.org/project/httpx/0.28.1/",
+      "license_evidence": "collection/expansion/python/environment-evidence.json",
+      "reserved_split": "familiar_test",
+      "split_status": "provisional_pending_grouping",
+      "synthetic": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "awscli-root",
+  "status": "ok",
+  "sha256": "44897ded5b596781a0a3aa6053a581e021b22b6214490c28c75eccc0eb74e3ff",
+  "normalization_version": "1.0",
+  "original_raw_sha256": "6be785ccd228bc55226b5334d8e6f75e5d42d7daa33e397c97cf610826edfbf7",
+  "original_receipt": "corpus/intake/expansion/dev/failures/awscli-root-d9877c722ea84edb919200ca907ffcfd.json",
+  "capture_kind": "explicit_terminal_rendering",
+  "rendering_rule": "render groff bullet overstrike as its last glyph",
+  "split": null
+}

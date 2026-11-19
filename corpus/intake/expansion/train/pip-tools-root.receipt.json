@@ -1,0 +1,11 @@
+{
+  "id": "pip-tools-root",
+  "status": "ok",
+  "sha256": "3d2858f649577a2972d89d58090d47a4b9f632e2c440e4070acb5f15843287d3",
+  "normalization_version": "1.0",
+  "original_raw_sha256": "676091ab063f8e7325c8789ffbf5889dc21428a69181b4e8e59a0ee871d63fcb",
+  "original_receipt": "corpus/intake/expansion/train/failures/pip-tools-root-0f89e5f0bba14fc3bcc05824a81d2339.json",
+  "capture_kind": "explicit_terminal_rendering",
+  "rendering_rule": "ignore cursor-left at start of line",
+  "split": null
+}

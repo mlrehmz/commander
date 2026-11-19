@@ -1,0 +1,305 @@
+{
+  "image": "sha256:9576f5606188f4512e66095671bacc98b1262ea6aec2d8785dca239d9903e8e5",
+  "captures": [
+    {
+      "id": "clap-bat",
+      "project": "bat",
+      "family": "clap",
+      "tool_version": "0.26.1",
+      "invocation": [
+        "/opt/helpcat-bin/clap-bat/bat",
+        "--help"
+      ],
+      "command_path": [
+        "bat"
+      ],
+      "binary_sha256": "753976acf8ce9b8bbb60c0304ab3a6b1cf63cbc7e009133a12dc8f5b47fcb4cc",
+      "source_url": "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-unknown-linux-gnu.tar.gz"
+    },
+    {
+      "id": "clap-fd",
+      "project": "fd",
+      "family": "clap",
+      "tool_version": "10.5.2",
+      "invocation": [
+        "/opt/helpcat-bin/clap-fd/fd",
+        "--help"
+      ],
+      "command_path": [
+        "fd"
+      ],
+      "binary_sha256": "072e10f9607ecb14abaad60e7f2947b8a87f876aedf4da999919e3960cd03865",
+      "source_url": "https://github.com/sharkdp/fd/releases/download/v10.5.2/fd-v10.5.2-x86_64-unknown-linux-gnu.tar.gz"
+    },
+    {
+      "id": "clap-lsd",
+      "project": "lsd",
+      "family": "clap",
+      "tool_version": "1.2.0",
+      "invocation": [
+        "/opt/helpcat-bin/clap-lsd/lsd",
+        "--help"
+      ],
+      "command_path": [
+        "lsd"
+      ],
+      "binary_sha256": "c9b42776d8e4b3b898252674a14c63af908e72cdaca6c121d6506dd8c606eac2",
+      "source_url": "https://github.com/lsd-rs/lsd/releases/download/v1.2.0/lsd-v1.2.0-x86_64-unknown-linux-gnu.tar.gz"
+    },
+    {
+      "id": "clap-hyperfine",
+      "project": "hyperfine",
+      "family": "clap",
+      "tool_version": "2.0.0",
+      "invocation": [
+        "/opt/helpcat-bin/clap-hyperfine/hyperfine",
+        "--help"
+      ],
+      "command_path": [
+        "hyperfine"
+      ],
+      "binary_sha256": "2f71a901d3f324c0f15b0fa726849f66db2a4931741bd6a5fcb3219fdf9f56dd",
+      "source_url": "https://github.com/sharkdp/hyperfine/releases/download/v2.0.0/hyperfine-v2.0.0-x86_64-unknown-linux-gnu.tar.gz"
+    },
+    {
+      "id": "clap-hexyl",
+      "project": "hexyl",
+      "family": "clap",
+      "tool_version": "0.17.0",
+      "invocation": [
+        "/opt/helpcat-bin/clap-hexyl/hexyl",
+        "--help"
+      ],
+      "command_path": [
+        "hexyl"
+      ],
+      "binary_sha256": "db25f5e0c15506b1d3ad8771ef37c2b39b286c1928504cf3c94fa8f3747a978d",
+      "source_url": "https://github.com/sharkdp/hexyl/releases/download/v0.17.0/hexyl-v0.17.0-x86_64-unknown-linux-gnu.tar.gz"
+    },
+    {
+      "id": "clap-dust",
+      "project": "dust",
+      "family": "clap",
+      "tool_version": "1.2.7",
+      "invocation": [
+        "/opt/helpcat-bin/clap-dust/dust",
+        "--help"
+      ],
+      "command_path": [
+        "dust"
+      ],
+      "binary_sha256": "c871e34ccdbf220de525af45b1b35b3feaa87a9fe2de5d71439df2b240a2e411",
+      "source_url": "https://github.com/bootandy/dust/releases/download/v1.2.7/dust-v1.2.7-x86_64-unknown-linux-gnu.tar.gz"
+    },
+    {
+      "id": "clap-procs",
+      "project": "procs",
+      "family": "clap",
+      "tool_version": "0.14.12",
+      "invocation": [
+        "/opt/helpcat-bin/clap-procs/procs",
+        "--help"
+      ],
+      "command_path": [
+        "procs"
+      ],
+      "binary_sha256": "9be54e40394bd35d7fb46d7f1069b71069c395953dcd10380cfe9f5657a1274a",
+      "source_url": "https://github.com/dalance/procs/releases/download/v0.14.12/procs-v0.14.12-x86_64-linux.zip"
+    },
+    {
+      "id": "clap-bottom",
+      "project": "bottom",
+      "family": "clap",
+      "tool_version": "0.15.0",
+      "invocation": [
+        "/opt/helpcat-bin/clap-bottom/btm",
+        "--help"
+      ],
+      "command_path": [
+        "btm"
+      ],
+      "binary_sha256": "977e369ff78e5214eb559d6116fdc4e0a73383e27959e3bf0a63c18d7db3533e",
+      "source_url": "https://github.com/ClementTsang/bottom/releases/download/0.15.0/bottom_x86_64-unknown-linux-gnu.tar.gz"
+    },
+    {
+      "id": "clap-starship",
+      "project": "starship",
+      "family": "clap",
+      "tool_version": "1.27.0",
+      "invocation": [
+        "/opt/helpcat-bin/clap-starship/starship",
+        "--help"
+      ],
+      "command_path": [
+        "starship"
+      ],
+      "binary_sha256": "3e59db8e139ef642b4061f8041356316dffd9f9c5bf190674906947a485af01e",
+      "source_url": "https://github.com/starship/starship/releases/download/v1.27.0/starship-x86_64-unknown-linux-gnu.tar.gz"
+    },
+    {
+      "id": "clap-atuin",
+      "project": "atuin",
+      "family": "clap",
+      "tool_version": "18.24.8",
+      "invocation": [
+        "/opt/helpcat-bin/clap-atuin/atuin",
+        "--help"
+      ],
+      "command_path": [
+        "atuin"
+      ],
+      "binary_sha256": "7e84e5aeaef994761b9f3e860bfb70f4ad9538a37144cda998e40a3f807f89ce",
+      "source_url": "https://github.com/atuinsh/atuin/releases/download/v18.24.8/atuin-x86_64-unknown-linux-gnu.tar.gz"
+    },
+    {
+      "id": "clap-uv",
+      "project": "uv",
+      "family": "clap",
+      "tool_version": "0.13.9",
+      "invocation": [
+        "/opt/helpcat-bin/clap-uv/uv",
+        "--help"
+      ],
+      "command_path": [
+        "uv"
+      ],
+      "binary_sha256": "b73acdf73b96c3ac9e56d2fa933427b3ee6a901e3cce6ba1e3ecb3f91ca0d86a",
+      "source_url": "https://github.com/astral-sh/uv/releases/download/0.13.9/uv-x86_64-unknown-linux-gnu.tar.gz"
+    },
+    {
+      "id": "clap-ruff",
+      "project": "ruff",
+      "family": "clap",
+      "tool_version": "0.17.5",
+      "invocation": [
+        "/opt/helpcat-bin/clap-ruff/ruff",
+        "--help"
+      ],
+      "command_path": [
+        "ruff"
+      ],
+      "binary_sha256": "fd6368438e0e10bb2c30a9a2782ddb7866de4828490e51d6f18808a2569dd6c2",
+      "source_url": "https://github.com/astral-sh/ruff/releases/download/0.17.5/ruff-x86_64-unknown-linux-gnu.tar.gz"
+    },
+    {
+      "id": "clap-gitui",
+      "project": "gitui",
+      "family": "clap",
+      "tool_version": "0.28.1",
+      "invocation": [
+        "/opt/helpcat-bin/clap-gitui/gitui",
+        "--help"
+      ],
+      "command_path": [
+        "gitui"
+      ],
+      "binary_sha256": "bebbfb2b178c007078cd3f0002209fbd773061cf3b5fc6d8f4ef0e7d46d22397",
+      "source_url": "https://github.com/gitui-org/gitui/releases/download/v0.28.1/gitui-linux-x86_64.tar.gz"
+    },
+    {
+      "id": "clap-zellij",
+      "project": "zellij",
+      "family": "clap",
+      "tool_version": "0.46.0",
+      "invocation": [
+        "/opt/helpcat-bin/clap-zellij/zellij",
+        "--help"
+      ],
+      "command_path": [
+        "zellij"
+      ],
+      "binary_sha256": "bdc9a33ca74ee627f1ce5e32855cc9c77e31297dae836788eb08ff21c5837012",
+      "source_url": "https://github.com/zellij-org/zellij/releases/download/v0.46.0/zellij-x86_64-unknown-linux-gnu.tar.gz"
+    },
+    {
+      "id": "clap-zoxide",
+      "project": "zoxide",
+      "family": "clap",
+      "tool_version": "0.10.0",
+      "invocation": [
+        "/opt/helpcat-bin/clap-zoxide/zoxide",
+        "--help"
+      ],
+      "command_path": [
+        "zoxide"
+      ],
+      "binary_sha256": "0959b169db9adac07187ab99b0d9806f616fbe7938cf84f9f4e2422d8de16e6c",
+      "source_url": "https://github.com/ajeetdsouza/zoxide/releases/download/v0.10.0/zoxide-0.10.0-x86_64-unknown-linux-musl.tar.gz"
+    },
+    {
+      "id": "clap-sccache",
+      "project": "sccache",
+      "family": "clap",
+      "tool_version": "0.19.0",
+      "invocation": [
+        "/opt/helpcat-bin/clap-sccache/sccache",
+        "--help"
+      ],
+      "command_path": [
+        "sccache"
+      ],
+      "binary_sha256": "0b44834be857e21b026f7db49a7762023fedb5eb5ed60725a66f698d8d79a34b",
+      "source_url": "https://github.com/mozilla/sccache/releases/download/v0.19.0/sccache-v0.19.0-x86_64-unknown-linux-musl.tar.gz"
+    },
+    {
+      "id": "clap-genact",
+      "project": "genact",
+      "family": "clap",
+      "tool_version": "1.6.0",
+      "invocation": [
+        "/opt/helpcat-bin/clap-genact/genact",
+        "--help"
+      ],
+      "command_path": [
+        "genact"
+      ],
+      "binary_sha256": "df45257b5c21256877abb2ad61c452beb9a3908bd6fbb34e10d49315fa357f79",
+      "source_url": "https://github.com/svenstaro/genact/releases/download/v1.6.0/genact-1.6.0-x86_64-unknown-linux-gnu"
+    },
+    {
+      "id": "clap-miniserve",
+      "project": "miniserve",
+      "family": "clap",
+      "tool_version": "0.35.0",
+      "invocation": [
+        "/opt/helpcat-bin/clap-miniserve/miniserve",
+        "--help"
+      ],
+      "command_path": [
+        "miniserve"
+      ],
+      "binary_sha256": "3b43ec6cb8ef5d5cc72a216b2309ef77c90952fd2c3e3c6eb9010dec39f3a086",
+      "source_url": "https://github.com/svenstaro/miniserve/releases/download/v0.35.0/miniserve-0.35.0-x86_64-unknown-linux-gnu"
+    },
+    {
+      "id": "clap-mdbook",
+      "project": "mdBook",
+      "family": "clap",
+      "tool_version": "0.5.4",
+      "invocation": [
+        "/opt/helpcat-bin/clap-mdBook/mdbook",
+        "--help"
+      ],
+      "command_path": [
+        "mdbook"
+      ],
+      "binary_sha256": "dc9020903f60cf632c0cc01bf8c12b57237649c2ab64c7a85a60e12103e356ce",
+      "source_url": "https://github.com/rust-lang/mdBook/releases/download/v0.5.4/mdbook-v0.5.4-x86_64-unknown-linux-gnu.tar.gz"
+    },
+    {
+      "id": "clap-just",
+      "project": "just",
+      "family": "clap",
+      "tool_version": "1.59.0",
+      "invocation": [
+        "/opt/helpcat-bin/clap-just/just",
+        "--help"
+      ],
+      "command_path": [
+        "just"
+      ],
+      "binary_sha256": "50cd9b4a47c26a2570a0cca1bf86a106290b1cd35b131630696f63b9fbd1400d",
+      "source_url": "https://github.com/casey/just/releases/download/1.59.0/just-1.59.0-x86_64-unknown-linux-musl.tar.gz"
+    }
+  ]
+}

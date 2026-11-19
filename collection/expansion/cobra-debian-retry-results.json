@@ -1,0 +1,17 @@
+[
+  {
+    "id": "cobra-containers-podman",
+    "status": "ok",
+    "sha256": "c94d41afc8d2177d91ca7b288c5c47115051815a09a27c15f6e20857f3b5dddc"
+  },
+  {
+    "id": "cobra-containers-buildah",
+    "status": "ok",
+    "sha256": "2a7a228c41f4ef6370e90bb59401083ccab78e216df2a1b2951f5860a1d4fe90"
+  },
+  {
+    "id": "cobra-containers-skopeo",
+    "status": "ok",
+    "sha256": "6410a793a1d06914e5f0ca1986e6b05578ec74c761080f65a7b7389bda1a112f"
+  }
+]

@@ -8,3 +8,5 @@ dist/
 artifacts/
 
 .helpcat-cache/
+# Local evaluation captures awaiting output redistribution review.
+.helpcat-heldout/

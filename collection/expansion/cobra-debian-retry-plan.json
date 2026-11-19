@@ -1,0 +1,50 @@
+{
+  "image": "sha256:8d306a1ed95809584566c5753a35d2e3da24b5eb814638fe2954ea90b4c78ef3",
+  "captures": [
+    {
+      "id": "cobra-containers-podman",
+      "project": "containers/podman",
+      "family": "cobra",
+      "tool_version": "5.4.2",
+      "invocation": [
+        "/opt/helpcat-bin/cobra-containers-podman/podman",
+        "--help"
+      ],
+      "command_path": [
+        "podman"
+      ],
+      "binary_sha256": "6e4993e061eb88205003892252e2e13bbf49c12a6f67f519881b9b3c94e980e6",
+      "source_url": "https://deb.debian.org/debian/pool/main/p/podman/podman_5.4.2+ds1-2+b2_amd64.deb"
+    },
+    {
+      "id": "cobra-containers-buildah",
+      "project": "containers/buildah",
+      "family": "cobra",
+      "tool_version": "1.39.3",
+      "invocation": [
+        "/opt/helpcat-bin/cobra-containers-buildah/buildah",
+        "--help"
+      ],
+      "command_path": [
+        "buildah"
+      ],
+      "binary_sha256": "17ce870d84b45de68416990a2515e0e0a42152524211c4bf315b379cf03d374a",
+      "source_url": "https://deb.debian.org/debian/pool/main/g/golang-github-containers-buildah/buildah_1.39.3+ds1-1+b7_amd64.deb"
+    },
+    {
+      "id": "cobra-containers-skopeo",
+      "project": "containers/skopeo",
+      "family": "cobra",
+      "tool_version": "1.18.0",
+      "invocation": [
+        "/opt/helpcat-bin/cobra-containers-skopeo/skopeo",
+        "--help"
+      ],
+      "command_path": [
+        "skopeo"
+      ],
+      "binary_sha256": "cd21ffca595f2cc926b7181249f8a08ca3d3f6b01242b1d520485cfafd5fed23",
+      "source_url": "https://deb.debian.org/debian/pool/main/s/skopeo/skopeo_1.18.0+ds1-1+b5_amd64.deb"
+    }
+  ]
+}

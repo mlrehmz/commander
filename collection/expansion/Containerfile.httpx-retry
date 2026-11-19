@@ -1,0 +1,3 @@
+FROM sha256:677773ee10313e9f3486b0eb729d13e27c2ca49f2b18ac6a72b7327867c2bbd3
+COPY requirements.lock /tmp/httpx.lock
+RUN /opt/tools/httpx/bin/python -m pip install --no-cache-dir --only-binary=:all: --require-hashes -r /tmp/httpx.lock

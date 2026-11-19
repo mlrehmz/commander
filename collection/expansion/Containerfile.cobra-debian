@@ -1,0 +1,3 @@
+FROM localhost/helpcat-resume:collection
+RUN python -c "from pathlib import Path; p=Path('/etc/apt/sources.list.d/debian.sources'); p.write_text(p.read_text().replace('http://','https://'))"
+RUN apt-get update && apt-get -y --download-only --no-install-recommends install podman=5.4.2+ds1-2+b2 buildah=1.39.3+ds1-1+b7 skopeo=1.18.0+ds1-1+b5 && sha256sum /var/cache/apt/archives/*.deb > /opt/helpcat-debian.sha256 && for deb in /var/cache/apt/archives/*.deb; do dpkg-deb -x "$deb" /; done && rm -rf /var/cache/apt/archives/*.deb /var/lib/apt/lists/*
