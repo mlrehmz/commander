@@ -1,6 +1,17 @@
-# Installed dependency metadata
+# Dependencies and reproducible setup
 
-Verified locally on Python 3.12.15; lockfile fixes versions and artifact hashes.
+Use Python 3.12 or 3.13 with [uv](https://docs.astral.sh/uv/). The committed `uv.lock` fixes resolved versions and artifact hashes. Runtime dependencies are deliberately separate from development and model dependencies.
+
+| Profile | Packages | Install/use |
+|---|---|---|
+| Runtime | `jsonschema` | `uv sync --locked` |
+| Development | `pytest`, `hypothesis`, `ruff` | `uv sync --locked --group dev` |
+| CRF research | `python-crfsuite` | `uv sync --locked --group research` |
+| Neural research | CPU-only `torch` | `uv sync --locked --group neural` |
+| Full checks | All of the above | `uv sync --locked --all-groups`, then `make check` |
+| Collection | Separately pinned binary wheels in `collection/requirements.lock` | Only needed to rebuild the constrained collection image; Podman is also required |
+
+The dependency metadata below is the lockfile inventory gathered during development. License labels are package metadata, not legal advice or a substitute for checking the upstream license.
 
 | Package | Version | License metadata |
 |---|---|---|
@@ -29,6 +40,4 @@ Verified locally on Python 3.12.15; lockfile fixes versions and artifact hashes.
 | torch | 2.9.0+cpu | BSD-3-Clause |
 | typing_extensions | 4.16.0 | PSF-2.0 |
 
-CPU-only Torch uses the explicit official CPU index; runtime dependencies remain separate.
-Collection dependencies have their own hash-locked file and exact primary-package notices.
-Installed compatibility is exercised by `make check`; metadata alone is not a legal review.
+CPU-only Torch uses the explicit PyTorch CPU package index; runtime dependencies remain separate. Collection dependencies have their own hash-locked file and exact primary-package notices. `make check` exercises the development environment; metadata alone is not a legal review.
