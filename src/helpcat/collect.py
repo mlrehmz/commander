@@ -130,6 +130,14 @@ def collect(plan, *, runtime="podman", output="corpus/intake"):
         identifier = item["id"]
         if not re.fullmatch("[a-z0-9][a-z0-9_-]*", identifier):
             raise ValueError("unsafe capture id")
+        stream_name = item.get("capture_stream", "stdout")
+        accepted_codes = item.get("accepted_exit_codes", [0])
+        if (
+            stream_name not in ("stdout", "stderr")
+            or not accepted_codes
+            or any(type(c) is not int or not 0 <= c <= 255 for c in accepted_codes)
+        ):
+            raise ValueError("invalid explicit capture stream or exit-code policy")
         name = "helpcat-" + uuid.uuid4().hex
         command = build_command(runtime, plan["image"], item["invocation"], name=name)
         try:
@@ -147,9 +155,17 @@ def collect(plan, *, runtime="podman", output="corpus/intake"):
                 stderr=subprocess.DEVNULL,
                 timeout=10,
             )
+        selected = result[stream_name]
+        result["stdout_sha256"] = hashlib.sha256(result["stdout"]).hexdigest()
+        result["stderr_sha256"] = hashlib.sha256(result["stderr"]).hexdigest()
+        result["sha256"] = hashlib.sha256(selected).hexdigest()
+        if result["status"] in ("ok", "nonzero_exit"):
+            result["status"] = "ok" if result["exit_code"] in accepted_codes else "nonzero_exit"
         if result["status"] == "ok":
             try:
-                canonicalize(result["stdout"].decode("utf-8"))
+                canonical = canonicalize(selected.decode("utf-8"))
+                if not canonical["canonical_text"].strip():
+                    result["status"] = "empty_output"
             except (ValueError, UnicodeError) as exc:
                 result["status"] = "invalid_text"
                 result["diagnostic"] = str(exc)
@@ -159,6 +175,13 @@ def collect(plan, *, runtime="podman", output="corpus/intake"):
             "image": plan["image"],
             "runtime_argv": command,
             "stderr": result["stderr"].decode("utf-8", errors="replace"),
+            "capture_stream": stream_name,
+            "accepted_exit_codes": accepted_codes,
+            **(
+                {"stdout": result["stdout"].decode("utf-8", errors="replace")}
+                if stream_name == "stderr"
+                else {}
+            ),
             "locale": "C.UTF-8",
             "terminal_width": 80,
             "normalization_version": "1.0",
@@ -167,7 +190,7 @@ def collect(plan, *, runtime="podman", output="corpus/intake"):
         }
         capture = root / (identifier + ".txt")
         if result["status"] == "ok":
-            atomic_write(capture, result["stdout"])
+            atomic_write(capture, selected)
         receipt_path = root / (identifier + ".receipt.json")
         if result["status"] != "ok":
             receipt_path = root / "failures" / (identifier + "-" + uuid.uuid4().hex + ".json")

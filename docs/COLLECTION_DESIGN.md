@@ -19,3 +19,11 @@ argv safety and receipt hashes. A locally authored fake runtime verifies process
 I/O failures without executing harvested code. A real Podman pilot separately
 checks the runtime boundary. Captures remain intake material until license review,
 family grouping, annotations, blind audit and split assignment are complete.
+
+Expansion needs explicitly reviewed capture streams and exit codes: some standard
+help printers use stderr or return 2 for help. The collector must not guess a stream
+or treat arbitrary nonzero exits as success. Plans may name stdout/stderr and exact
+accepted codes; time/output/resource failures remain failures. Record both stream
+hashes and the actual exit code, then normalize/hash only the selected text. Empty
+selected output is a failed capture. Tests use authored fake runtimes, including an
+unaccepted exit and empty output. Existing plans retain stdout/zero defaults.

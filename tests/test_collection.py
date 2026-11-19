@@ -87,3 +87,50 @@ def test_failed_attempt_does_not_block_successful_retry(tmp_path):
     write('print("Options:\\n  -v  Details")')
     assert collect(plan, runtime=str(runtime), output=output)[0]["status"] == "ok"
     assert (output / "demo.receipt.json").exists()
+
+
+def test_explicit_stderr_help_and_exit_policy(tmp_path):
+    import json
+    from helpcat.collect import collect
+
+    runtime = tmp_path / "runtime"
+    runtime.write_text(
+        "#!"
+        + sys.executable
+        + '\nimport sys\nif sys.argv[1]=="run":\n print("Usage: demo\\n  -h  Help",file=sys.stderr)\n sys.exit(2)\n'
+    )
+    runtime.chmod(0o755)
+    item = {
+        "id": "demo",
+        "invocation": ["demo", "-h"],
+        "capture_stream": "stderr",
+        "accepted_exit_codes": [0, 2],
+    }
+    plan = {"image": "sha256:" + "a" * 64, "captures": [item]}
+    output = tmp_path / "intake"
+    assert collect(plan, runtime=str(runtime), output=output)[0]["status"] == "ok"
+    raw = (output / "demo.txt").read_bytes()
+    assert raw.startswith(b"Usage: demo")
+    receipt = json.loads((output / "demo.receipt.json").read_text())
+    assert receipt["exit_code"] == 2
+    assert receipt["sha256"] == hashlib.sha256(raw).hexdigest()
+    assert receipt["stdout_sha256"] == hashlib.sha256(b"").hexdigest()
+    assert receipt["stderr_sha256"] == receipt["sha256"]
+    item["id"] = "unaccepted"
+    item["accepted_exit_codes"] = [0]
+    assert collect(plan, runtime=str(runtime), output=output)[0]["status"] == "nonzero_exit"
+
+
+def test_empty_capture_is_not_a_success(tmp_path):
+    from helpcat.collect import collect
+
+    runtime = tmp_path / "runtime"
+    runtime.write_text("#!" + sys.executable + "\n")
+    runtime.chmod(0o755)
+    plan = {
+        "image": "sha256:" + "a" * 64,
+        "captures": [{"id": "empty", "invocation": ["demo", "--help"]}],
+    }
+    output = tmp_path / "intake"
+    assert collect(plan, runtime=str(runtime), output=output)[0]["status"] == "empty_output"
+    assert not (output / "empty.txt").exists()
