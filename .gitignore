@@ -10,3 +10,7 @@ artifacts/
 .helpcat-cache/
 # Local evaluation captures awaiting output redistribution review.
 .helpcat-heldout/
+
+# Local working notes and restart artifacts; not part of the public project.
+/PROGRESS.md
+/collection/expansion/shutdown-checkpoint.json
