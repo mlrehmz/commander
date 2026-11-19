@@ -13,6 +13,23 @@ unusual command/positional layouts may be omitted. Unsupported sections may not
 always be recognized. Unknown optional semantics alone do not cause partial.
 
 CRF training/inference code has a real tiny-fixture integration test only. The
-CRF is not a selected or calibrated engine. No neural architecture, training run,
-overfit gate, feature cache, checkpoint recovery, or ablation is implemented yet.
-Those remain downstream of the unpassed assembler/data gates.
+CRF is not a selected or calibrated engine. A CPU-only neural implementation now
+combines a 16-dimensional byte embedding and parallel kernel-3/kernel-5 CNNs
+(32 channels each) with ten numeric features, followed by a two-layer bidirectional
+GRU (128 hidden units/direction, dropout .1) and linear head. Feature-only mode
+supports the planned no-CNN ablation. Only first 48 bytes enter the CNN; full
+source stays available to assembly. Packed sequences exclude line padding.
+
+Inference batches at most eight 256-line windows with 32 overlap, choosing each
+line's prediction from the window providing most context (earlier window wins
+ties). Features are keyed by text/config hashes; payload corruption rebuilds the
+cache. Atomic checkpoints save model/optimizer, Python/Torch RNG states, seed,
+step, elapsed budget, feature/model config, Torch version and code revision.
+A smoke test proves exact next-step recovery and revision mismatch rejection.
+
+No trained neural weights, overfit result, calibrated policy or seed comparison is
+available. Training orchestration, training gates, checkpoint scheduling and
+ablations remain unrun/unimplemented as described in COMPARISON.md. Neural line
+probabilities are not record confidence. `--engine neural` is experimental and
+requires a checkpoint plus an explicit uncalibrated policy. Runtime rules never
+import neural dependencies.

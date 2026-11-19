@@ -28,7 +28,7 @@ def main(argv=None):
     parse = sub.add_parser("parse")
     parse.add_argument("input")
     parse.add_argument("--command", action="append", required=True)
-    parse.add_argument("--engine", choices=["rules", "crf"], default="rules")
+    parse.add_argument("--engine", choices=["rules", "crf", "neural"], default="rules")
     parse.add_argument("--model")
     parse.add_argument("--policy")
     q = sub.add_parser("query")

@@ -84,7 +84,15 @@ def main(argv=None):
             )
         data, pages = load_manifest(args.manifest)
         if args.operation == "validate":
-            print(json.dumps({"entries": len(data["entries"]), "development_pages": len(pages)}))
+            print(
+                json.dumps(
+                    {
+                        "entries": len(data["entries"]),
+                        "training_pages": sum(entry["split"] == "train" for entry, _, _ in pages),
+                        "development_pages": sum(entry["split"] == "dev" for entry, _, _ in pages),
+                    }
+                )
+            )
             return 0
         dev = [p for p in pages if p[0]["split"] == "dev"]
         gate = assembler_gate(dev)

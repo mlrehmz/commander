@@ -15,6 +15,9 @@ This is an initial source check, not the project-family survey. No adapter is ap
 
 No claim is made that all proposed prior art is maintained or suitable. Complete
 behavior/license/maintenance verification and the ten-example adapter pilot are
-still required before framework-specific extraction. No harvested commands were
-executed. Search results are leads; observations above are limited to source text
+still required before framework-specific extraction. The subsequent collection pilot ran ten pinned tools only inside the specified
+offline container; see collection/survey.json, exact installed notices in
+collection/licenses.json and verified runtime limits in sandbox-verification.json.
+PyTorch 2.9.0+cpu was installed from its explicit official CPU wheel index; its
+architecture/checkpoint tests passed, without research training. Search results are leads; observations above are limited to source text
 and local tests, not performance comparisons.

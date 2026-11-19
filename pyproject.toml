@@ -15,9 +15,18 @@ helpcat = "helpcat.cli:main"
 [dependency-groups]
 dev = ["pytest==8.4.2", "hypothesis==6.140.3", "ruff==0.14.0"]
 research = ["python-crfsuite==0.9.12"]
+neural = ["torch==2.9.0"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 
 [tool.ruff]
 line-length = 100
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true

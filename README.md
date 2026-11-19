@@ -40,10 +40,16 @@ uv run --group research python -m helpcat.experiment train-crf
 ```
 
 The last command requires the complete manifest and a passed assembler gate.
-For exploratory CRF parsing, use `--engine crf --model PATH --policy POLICY.json`;
+For exploratory CRF or neural parsing, use `--engine crf` or `--engine neural` with
+`--model PATH --policy POLICY.json`;
 the policy must explicitly be experimental (`calibrated: false`) and name engine
-`crf`. No model weights are bundled. Runtime rules do not import CRF or neural
+`crf` or `neural` as selected. No trained weights are bundled. Runtime rules do not import CRF or neural
 libraries. Calibrated release artifacts will need a separate validated loader.
+
+The collection pilot now has ten offline captures and two independently
+annotated/adjudicated agent references in training. See [collection workflow](collection/README.md).
+The CPU neural implementation, cache and checkpoint recovery are smoke tested;
+substantial training and final evaluation remain gated on the full corpus.
 
 See [architecture](docs/ARCHITECTURE.md), [preregistration](docs/PREREGISTRATION.md),
 [annotation protocol](docs/ANNOTATION_GUIDELINES.md), [datasheet](docs/DATASHEET.md),

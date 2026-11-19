@@ -96,3 +96,10 @@ def test_identical_test_captures_need_same_leakage_group(tmp_path):
     manifest.write_text(json.dumps({"version": 1, "entries": [base, other]}))
     with pytest.raises(ValueError, match="duplicate content"):
         load_manifest(manifest)
+
+
+def test_pilot_validation_reports_training_separately_from_development(capsys):
+    assert main(["validate"]) == 0
+    report = json.loads(capsys.readouterr().out)
+    assert report["training_pages"] == 2
+    assert report["development_pages"] == 0

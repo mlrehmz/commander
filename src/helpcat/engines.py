@@ -15,6 +15,17 @@ def load_engine(name="rules", *, model=None, policy=None):
         if model is None:
             raise ValueError("CRF requires --model")
         tagger = CRFTagger(model)
+    elif name == "neural":
+        if model is None:
+            raise ValueError("neural engine requires --model")
+        import torch
+        from .neural import LineModel, NeuralTagger
+        from .training import restore_checkpoint
+
+        payload = torch.load(model, map_location="cpu", weights_only=True)
+        network = LineModel(use_cnn=payload["model_config"]["use_cnn"])
+        restore_checkpoint(model, network)
+        tagger = NeuralTagger(network)
     else:
         raise ValueError(f"unknown engine: {name}")
     config = json.loads(Path(policy).read_text()) if policy else {}

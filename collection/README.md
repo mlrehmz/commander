@@ -5,7 +5,7 @@ from the still-empty adjudicated corpus manifest. Unknown survey fields are null
 or explicitly unknown, not unsupported claims of absence. No family adapter is
 approved. Ten projects are not the target 100-project dataset.
 
-The container base is pinned by digest, all 89 dependency versions and wheel
+The container base is pinned by digest, all 88 dependency versions and wheel
 hashes are locked, and installation accepts binary wheels only. Downloads happen
 during environment preparation. Actual help calls run offline and non-root with
 a read-only root, temporary writable storage and CPU/memory/PID/time/output limits.
