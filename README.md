@@ -4,6 +4,8 @@
 
 Command-line help is a convenient interface for people, but its layouts vary across tools and versions. Downstream software often needs the same information in a consistent form—and a parser that guesses from prose or runs the documented program is hard to trust. HelpCat explores a safer, auditable path: extract a catalog from help text supplied by the caller, and retain the exact evidence behind each result.
 
+![HelpCat pipeline: supplied CLI help becomes evidence-backed structured data; parser approaches share one assembler while evaluation remains in progress.](docs/assets/helpcat-pipeline.png)
+
 ## Try it
 
 Requires Python 3.12 or 3.13 and [uv](https://docs.astral.sh/uv/).
