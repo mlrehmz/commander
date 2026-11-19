@@ -1,0 +1,334 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "command_path": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "raw_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "canonical_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "canonical_text": {
+          "type": "string"
+        },
+        "normalization_version": {
+          "const": "1.0"
+        },
+        "capture_metadata": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "raw_sha256",
+        "canonical_sha256",
+        "canonical_text",
+        "normalization_version",
+        "capture_metadata"
+      ],
+      "additionalProperties": false
+    },
+    "flags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "aliases": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "#/$defs/field"
+            }
+          },
+          "metavar": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/field"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "arity": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/field"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "required_presence": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/field"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "type": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/field"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "default": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/field"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "choices": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/field"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/field"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "takes_value": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "selection_score": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "required": [
+          "aliases",
+          "metavar",
+          "arity",
+          "required_presence",
+          "type",
+          "default",
+          "choices",
+          "description",
+          "takes_value",
+          "selection_score"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "subcommands": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "$ref": "#/$defs/field"
+          },
+          "description": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/field"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "selection_score": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "required": [
+          "name",
+          "description",
+          "selection_score"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "positionals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "$ref": "#/$defs/field"
+          },
+          "description": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/field"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "selection_score": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "required": [
+          "name",
+          "description",
+          "selection_score"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "status": {
+      "enum": [
+        "ok",
+        "partial",
+        "failed"
+      ]
+    },
+    "diagnostics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "engine": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "threshold": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "calibrated": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "name",
+        "version",
+        "threshold",
+        "calibrated"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "command_path",
+    "source",
+    "flags",
+    "subcommands",
+    "positionals",
+    "status",
+    "diagnostics",
+    "engine"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:helpcat:catalog:1.0",
+  "$defs": {
+    "field": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "literal": {
+          "type": "string"
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "line": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "start": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "end": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "required": [
+              "line",
+              "start",
+              "end"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        },
+        "rule": {
+          "enum": [
+            "identity",
+            "expand-negatable",
+            "declaration-value-notation",
+            "join-description-whitespace"
+          ]
+        },
+        "provenance": {
+          "enum": [
+            "direct",
+            "deterministic_inference"
+          ]
+        }
+      },
+      "required": [
+        "value",
+        "literal",
+        "evidence",
+        "rule",
+        "provenance"
+      ],
+      "additionalProperties": false
+    }
+  }
+}
