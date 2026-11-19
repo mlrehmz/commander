@@ -1,0 +1,1521 @@
+{
+  "version": 1,
+  "frozen": false,
+  "projects": [
+    {
+      "id": "black-root",
+      "project": "black",
+      "capture": "corpus/intake/black-root.txt",
+      "receipt": "corpus/intake/black-root.receipt.json",
+      "raw_sha256": "53c38abad5c39cde9986dfa0efe66b2bef572deefdf48f5d9e3fdaf00b23b970",
+      "command_path": [
+        "black"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "black",
+      "source_family": "click",
+      "annotation_status": "audited"
+    },
+    {
+      "id": "datasette-root",
+      "project": "datasette",
+      "capture": "corpus/intake/datasette-root.txt",
+      "receipt": "corpus/intake/datasette-root.receipt.json",
+      "raw_sha256": "ad072f620e653eea599586a07eb1d4d84db0f4cdb83f138cd823b3c9de1f74c9",
+      "command_path": [
+        "datasette"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "datasette",
+      "source_family": "click_default_group",
+      "annotation_status": "audited"
+    },
+    {
+      "id": "hatch-root",
+      "project": "hatch",
+      "capture": "corpus/intake/hatch-root.txt",
+      "receipt": "corpus/intake/hatch-root.receipt.json",
+      "raw_sha256": "794aff42717b5795f66a2aaf12e3ebb59dc36b40161fb1e1330745a15d2d3849",
+      "command_path": [
+        "hatch"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "hatch",
+      "source_family": "click",
+      "annotation_status": "audited"
+    },
+    {
+      "id": "httpie-root",
+      "project": "httpie",
+      "capture": "corpus/intake/httpie-root.txt",
+      "receipt": "corpus/intake/httpie-root.receipt.json",
+      "raw_sha256": "afe5f966d4fd89163d59cdec24c11d60b4d6026dc5c95c55528dca973cf69d1c",
+      "command_path": [
+        "http"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "httpie",
+      "source_family": "argparse_custom_formatter_rich_pager",
+      "annotation_status": "audited"
+    },
+    {
+      "id": "pipenv-root",
+      "project": "pipenv",
+      "capture": "corpus/intake/pipenv-root.txt",
+      "receipt": "corpus/intake/pipenv-root.receipt.json",
+      "raw_sha256": "b1d2c8c05c6ececcfa4593c3d7d6505413268f35784dc6fe6cffc43ed926415b",
+      "command_path": [
+        "pipenv"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "pip",
+      "source_family": "vendored_click_custom_help",
+      "annotation_status": "audited"
+    },
+    {
+      "id": "pipx-root",
+      "project": "pipx",
+      "capture": "corpus/intake/pipx-root.txt",
+      "receipt": "corpus/intake/pipx-root.receipt.json",
+      "raw_sha256": "208e393ce95f2c5da69bc3f10529319ca03a1581ac345920ef8bc74936cd00bf",
+      "command_path": [
+        "pipx"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "pipx",
+      "source_family": "argparse_custom_formatter",
+      "annotation_status": "audited"
+    },
+    {
+      "id": "rich-cli-root",
+      "project": "rich-cli",
+      "capture": "corpus/intake/rich-cli-root.txt",
+      "receipt": "corpus/intake/rich-cli-root.receipt.json",
+      "raw_sha256": "adeff8e0238d9e819b726b92f66bdf1dc8039fe683dca05179c179c36879e333",
+      "command_path": [
+        "rich"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "rich-cli",
+      "source_family": "click_custom_rich_formatter",
+      "annotation_status": "audited"
+    },
+    {
+      "id": "sqlfluff-root",
+      "project": "sqlfluff",
+      "capture": "corpus/intake/sqlfluff-root.txt",
+      "receipt": "corpus/intake/sqlfluff-root.receipt.json",
+      "raw_sha256": "a25526f4b18f911614ca5c3a124fdcbf95d0054667c2c3611a28c05880cf6dec",
+      "command_path": [
+        "sqlfluff"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "sqlfluff",
+      "source_family": "click",
+      "annotation_status": "audited"
+    },
+    {
+      "id": "tox-root",
+      "project": "tox",
+      "capture": "corpus/intake/tox-root.txt",
+      "receipt": "corpus/intake/tox-root.receipt.json",
+      "raw_sha256": "667da77ec4ae908b62e595c577f002118a134c2bdfd6d9653547c353f55b71e8",
+      "command_path": [
+        "tox"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "tox",
+      "source_family": "argparse_custom_parser",
+      "annotation_status": "audited"
+    },
+    {
+      "id": "virtualenv-root",
+      "project": "virtualenv",
+      "capture": "corpus/intake/virtualenv-root.txt",
+      "receipt": "corpus/intake/virtualenv-root.receipt.json",
+      "raw_sha256": "0dbcac85307251266ffc9a0ce6d6f6e84a539fd06c6096868348d099d22a2595",
+      "command_path": [
+        "virtualenv"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "virtualenv",
+      "source_family": "argparse_custom_formatter",
+      "annotation_status": "audited"
+    },
+    {
+      "id": "ansible-core-root",
+      "project": "ansible-core",
+      "capture": "corpus/intake/expansion/dev/ansible-core-root.txt",
+      "receipt": "corpus/intake/expansion/dev/ansible-core-root.receipt.json",
+      "raw_sha256": "e2dbee66e53b7414923166bcbeaade578b925ca03d2035430038bae54bf61f70",
+      "command_path": [
+        "ansible"
+      ],
+      "reserved_split": "dev",
+      "candidate_leakage_group": "ansible-core",
+      "source_family": "argparse_custom_formatter",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "awscli-root",
+      "project": "awscli",
+      "capture": "corpus/intake/expansion/dev/awscli-root.txt",
+      "receipt": "corpus/intake/expansion/dev/awscli-root.receipt.json",
+      "raw_sha256": "44897ded5b596781a0a3aa6053a581e021b22b6214490c28c75eccc0eb74e3ff",
+      "command_path": [
+        "aws"
+      ],
+      "reserved_split": "dev",
+      "candidate_leakage_group": "awscli",
+      "source_family": "custom_documentation_renderer",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "curl-root",
+      "project": "curl",
+      "capture": "corpus/intake/expansion/dev/curl-root.txt",
+      "receipt": "corpus/intake/expansion/dev/curl-root.receipt.json",
+      "raw_sha256": "6f4dd3652c09ed7b96071cd1e86da78d0d2985f7e28bf505bf8acdae3ed90923",
+      "command_path": [
+        "curl"
+      ],
+      "reserved_split": "dev",
+      "candidate_leakage_group": "curl",
+      "source_family": "gnu-style",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "gawk-root",
+      "project": "gawk",
+      "capture": "corpus/intake/expansion/dev/gawk-root.txt",
+      "receipt": "corpus/intake/expansion/dev/gawk-root.receipt.json",
+      "raw_sha256": "1aded61bfd11d247b9e17dc591ffc6ef69a98ab02936e7ca3d41433fde40fcaf",
+      "command_path": [
+        "gawk"
+      ],
+      "reserved_split": "dev",
+      "candidate_leakage_group": "gawk",
+      "source_family": "gnu-style",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "golang-root",
+      "project": "golang",
+      "capture": "corpus/intake/expansion/dev/golang-root.txt",
+      "receipt": "corpus/intake/expansion/dev/golang-root.receipt.json",
+      "raw_sha256": "15fc44afc5befa2b7221ec7e43462cf8f52843a7d43118527ca1c8531e68915c",
+      "command_path": [
+        "gofmt"
+      ],
+      "reserved_split": "dev",
+      "candidate_leakage_group": "golang",
+      "source_family": "go-flag",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "isort-root",
+      "project": "isort",
+      "capture": "corpus/intake/expansion/dev/isort-root.txt",
+      "receipt": "corpus/intake/expansion/dev/isort-root.receipt.json",
+      "raw_sha256": "5ee62dfb96c271b3a718f61f94e1cc4d9093d1812cc679846217aa19ff21819c",
+      "command_path": [
+        "isort"
+      ],
+      "reserved_split": "dev",
+      "candidate_leakage_group": "isort",
+      "source_family": "argparse",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "less-root",
+      "project": "less",
+      "capture": "corpus/intake/expansion/dev/less-root.txt",
+      "receipt": "corpus/intake/expansion/dev/less-root.receipt.json",
+      "raw_sha256": "d5fcc0388a481756e30a7a2c3194592db703aace0d1a3ca991e65d95c080a2f1",
+      "command_path": [
+        "less"
+      ],
+      "reserved_split": "dev",
+      "candidate_leakage_group": "less",
+      "source_family": "irregular",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "llm-root",
+      "project": "llm",
+      "capture": "corpus/intake/expansion/dev/llm-root.txt",
+      "receipt": "corpus/intake/expansion/dev/llm-root.receipt.json",
+      "raw_sha256": "c46a8b8050ce235d401386b2b64e4529c7fad76a191e7970935136e543939979",
+      "command_path": [
+        "llm"
+      ],
+      "reserved_split": "dev",
+      "candidate_leakage_group": "llm",
+      "source_family": "click_default_group_plugin_options",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "mypy-root",
+      "project": "mypy",
+      "capture": "corpus/intake/expansion/dev/mypy-root.txt",
+      "receipt": "corpus/intake/expansion/dev/mypy-root.receipt.json",
+      "raw_sha256": "afbf38c1fa23f467cd7460f13ff5e07c608ae1858441701dcdd1dff0842b9d4f",
+      "command_path": [
+        "mypy"
+      ],
+      "reserved_split": "dev",
+      "candidate_leakage_group": "mypy",
+      "source_family": "argparse_custom_formatter",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "poetry-root",
+      "project": "poetry",
+      "capture": "corpus/intake/expansion/dev/poetry-root.txt",
+      "receipt": "corpus/intake/expansion/dev/poetry-root.receipt.json",
+      "raw_sha256": "e9264e25a7d911f9203941b631821fb689c084cd9865d211768d54f7b5f83169",
+      "command_path": [
+        "poetry"
+      ],
+      "reserved_split": "dev",
+      "candidate_leakage_group": "poetry",
+      "source_family": "cleo_styled_formatter",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "pytest-root",
+      "project": "pytest",
+      "capture": "corpus/intake/expansion/dev/pytest-root.txt",
+      "receipt": "corpus/intake/expansion/dev/pytest-root.receipt.json",
+      "raw_sha256": "64f15a9364f99b3a7560bc74ec3e384c46f3a05f08d4f02e362fd0b331ec4027",
+      "command_path": [
+        "pytest"
+      ],
+      "reserved_split": "dev",
+      "candidate_leakage_group": "pytest",
+      "source_family": "argparse_custom_parser_plugin_options",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "tar-root",
+      "project": "tar",
+      "capture": "corpus/intake/expansion/dev/tar-root.txt",
+      "receipt": "corpus/intake/expansion/dev/tar-root.receipt.json",
+      "raw_sha256": "8f059f7ebc89167f0c36732831081e6b67fed7dd4218ac55ad046f281049cb60",
+      "command_path": [
+        "tar"
+      ],
+      "reserved_split": "dev",
+      "candidate_leakage_group": "tar",
+      "source_family": "gnu-style",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "bandit-root",
+      "project": "bandit",
+      "capture": "corpus/intake/expansion/familiar_test/bandit-root.txt",
+      "receipt": "corpus/intake/expansion/familiar_test/bandit-root.receipt.json",
+      "raw_sha256": "9e1c64bd3b53c0b7e6a43ae7d8f4b915102a2011e303b7f72f0762fdf916d406",
+      "command_path": [
+        "bandit"
+      ],
+      "reserved_split": "familiar_test",
+      "candidate_leakage_group": "bandit",
+      "source_family": "argparse_raw_description_formatter",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "coverage-root",
+      "project": "coverage",
+      "capture": "corpus/intake/expansion/familiar_test/coverage-root.txt",
+      "receipt": "corpus/intake/expansion/familiar_test/coverage-root.receipt.json",
+      "raw_sha256": "e1703b7501e29c0883ac8a1e1ced290285d6cce008397f920e062cdce09ffd74",
+      "command_path": [
+        "coverage"
+      ],
+      "reserved_split": "familiar_test",
+      "candidate_leakage_group": "coverage",
+      "source_family": "optparse_custom_formatter",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "docutils-root",
+      "project": "docutils",
+      "capture": "corpus/intake/expansion/familiar_test/docutils-root.txt",
+      "receipt": "corpus/intake/expansion/familiar_test/docutils-root.receipt.json",
+      "raw_sha256": "abd7bd5f074ca2921de5976e9003a9bcdc641cd086a8e946382453dee43fe98f",
+      "command_path": [
+        "docutils"
+      ],
+      "reserved_split": "familiar_test",
+      "candidate_leakage_group": "docutils",
+      "source_family": "layered_argparse_optparse",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "findutils-root",
+      "project": "findutils",
+      "capture": "corpus/intake/expansion/familiar_test/findutils-root.txt",
+      "receipt": "corpus/intake/expansion/familiar_test/findutils-root.receipt.json",
+      "raw_sha256": "a98114d8367c775904a6057e4d7f37e118ba61daaa6524d6a3ef9a730ec64dd3",
+      "command_path": [
+        "find"
+      ],
+      "reserved_split": "familiar_test",
+      "candidate_leakage_group": "findutils",
+      "source_family": "irregular",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "gzip-root",
+      "project": "gzip",
+      "capture": "corpus/intake/expansion/familiar_test/gzip-root.txt",
+      "receipt": "corpus/intake/expansion/familiar_test/gzip-root.receipt.json",
+      "raw_sha256": "8b08b5c4095d6c0968828d698873557602ba969a952860c0188b1ba2760b08e6",
+      "command_path": [
+        "gzip"
+      ],
+      "reserved_split": "familiar_test",
+      "candidate_leakage_group": "gzip",
+      "source_family": "gnu-style",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "httpx-root",
+      "project": "httpx",
+      "capture": "corpus/intake/expansion/familiar_test/httpx-root.txt",
+      "receipt": "corpus/intake/expansion/familiar_test/httpx-root.receipt.json",
+      "raw_sha256": "f81e242de5f7b5e6bbc75f49a429e045f79b5f62c2888605f4a033871e8d71ad",
+      "command_path": [
+        "httpx"
+      ],
+      "reserved_split": "familiar_test",
+      "candidate_leakage_group": "httpx",
+      "source_family": "click_custom_rich_formatter",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "m4-root",
+      "project": "m4",
+      "capture": "corpus/intake/expansion/familiar_test/m4-root.txt",
+      "receipt": "corpus/intake/expansion/familiar_test/m4-root.receipt.json",
+      "raw_sha256": "5de4d81f5cc89bb7fa3a7094faa0225b8557822435712fef50792564742352d5",
+      "command_path": [
+        "m4"
+      ],
+      "reserved_split": "familiar_test",
+      "candidate_leakage_group": "m4",
+      "source_family": "gnu-style",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "nano-root",
+      "project": "nano",
+      "capture": "corpus/intake/expansion/familiar_test/nano-root.txt",
+      "receipt": "corpus/intake/expansion/familiar_test/nano-root.receipt.json",
+      "raw_sha256": "98392a85f30f747e339d9a1c0756f7cd9d527833a50f50859e3127f6f98c8726",
+      "command_path": [
+        "nano"
+      ],
+      "reserved_split": "familiar_test",
+      "candidate_leakage_group": "nano",
+      "source_family": "gnu-style",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "pylint-root",
+      "project": "pylint",
+      "capture": "corpus/intake/expansion/familiar_test/pylint-root.txt",
+      "receipt": "corpus/intake/expansion/familiar_test/pylint-root.receipt.json",
+      "raw_sha256": "1a6f49647db0dc1a5d57ec84514b42dd2149101dbcaf6c5e3364c2d247fa95cb",
+      "command_path": [
+        "pylint"
+      ],
+      "reserved_split": "familiar_test",
+      "candidate_leakage_group": "pylint",
+      "source_family": "argparse_custom_formatter_plugin_options",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "rsync-root",
+      "project": "rsync",
+      "capture": "corpus/intake/expansion/familiar_test/rsync-root.txt",
+      "receipt": "corpus/intake/expansion/familiar_test/rsync-root.receipt.json",
+      "raw_sha256": "5fb5fabd139c7f3e2f951ea6b2c8e45ee6f390ebf02d224ab954391a9c2f86e7",
+      "command_path": [
+        "rsync"
+      ],
+      "reserved_split": "familiar_test",
+      "candidate_leakage_group": "rsync",
+      "source_family": "gnu-style",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "streamlink-root",
+      "project": "streamlink",
+      "capture": "corpus/intake/expansion/familiar_test/streamlink-root.txt",
+      "receipt": "corpus/intake/expansion/familiar_test/streamlink-root.receipt.json",
+      "raw_sha256": "58f6f796570d4e12ad4e463e0541537942d285ba27dc6b5745a89c1f775561e4",
+      "command_path": [
+        "streamlink"
+      ],
+      "reserved_split": "familiar_test",
+      "candidate_leakage_group": "streamlink",
+      "source_family": "argparse_custom_formatter",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "wget-root",
+      "project": "wget",
+      "capture": "corpus/intake/expansion/familiar_test/wget-root.txt",
+      "receipt": "corpus/intake/expansion/familiar_test/wget-root.receipt.json",
+      "raw_sha256": "32309a7719a558adbe28f38e37456b4a295c221992b27430b9b65c663170972b",
+      "command_path": [
+        "wget"
+      ],
+      "reserved_split": "familiar_test",
+      "candidate_leakage_group": "wget",
+      "source_family": "gnu-style",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "autopep8-root",
+      "project": "autopep8",
+      "capture": "corpus/intake/expansion/train/autopep8-root.txt",
+      "receipt": "corpus/intake/expansion/train/autopep8-root.receipt.json",
+      "raw_sha256": "1185ef173b62bb8ce00c1945121a518d39eaa17456e1bbcda58b032a9f148de5",
+      "command_path": [
+        "autopep8"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "autopep8",
+      "source_family": "argparse",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "build-root",
+      "project": "build",
+      "capture": "corpus/intake/expansion/train/build-root.txt",
+      "receipt": "corpus/intake/expansion/train/build-root.receipt.json",
+      "raw_sha256": "a9d598c67c9628caef3c34afb5a5456df7a9b6948f41585c425000af84439a5d",
+      "command_path": [
+        "pyproject-build"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "build",
+      "source_family": "argparse_raw_description_formatter",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "codespell-root",
+      "project": "codespell",
+      "capture": "corpus/intake/expansion/train/codespell-root.txt",
+      "receipt": "corpus/intake/expansion/train/codespell-root.receipt.json",
+      "raw_sha256": "a8fb5571bebce0f82e249daff05a66acbe13fb97c72a5ee54d4d92cced195182",
+      "command_path": [
+        "codespell"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "codespell",
+      "source_family": "argparse_custom_formatter",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "cookiecutter-root",
+      "project": "cookiecutter",
+      "capture": "corpus/intake/expansion/train/cookiecutter-root.txt",
+      "receipt": "corpus/intake/expansion/train/cookiecutter-root.receipt.json",
+      "raw_sha256": "14cd2ec42168f4f7f6283ce4c2648f9e0062ce382b0da6d2fc696d90e129b7a9",
+      "command_path": [
+        "cookiecutter"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "cookiecutter",
+      "source_family": "click",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "diffutils-root",
+      "project": "diffutils",
+      "capture": "corpus/intake/expansion/train/diffutils-root.txt",
+      "receipt": "corpus/intake/expansion/train/diffutils-root.receipt.json",
+      "raw_sha256": "6349899c5038b7633b2d15e61bcf82595386d3407d3b3f06567aa43e3fb8204b",
+      "command_path": [
+        "diff"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "diffutils",
+      "source_family": "gnu-style",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "fabric-root",
+      "project": "fabric",
+      "capture": "corpus/intake/expansion/train/fabric-root.txt",
+      "receipt": "corpus/intake/expansion/train/fabric-root.receipt.json",
+      "raw_sha256": "bf2eebb59e6555b1406e72213308a1cacdc44c0d651b60c51db25e2d48742201",
+      "command_path": [
+        "fab"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "fabric",
+      "source_family": "invoke_custom_parser",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "file-root",
+      "project": "file",
+      "capture": "corpus/intake/expansion/train/file-root.txt",
+      "receipt": "corpus/intake/expansion/train/file-root.receipt.json",
+      "raw_sha256": "84b342c43b9f38755a477919307552ed291880e9355216845edcee096e99bd1a",
+      "command_path": [
+        "file"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "file",
+      "source_family": "gnu-style",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "flake8-root",
+      "project": "flake8",
+      "capture": "corpus/intake/expansion/train/flake8-root.txt",
+      "receipt": "corpus/intake/expansion/train/flake8-root.receipt.json",
+      "raw_sha256": "c6ee86443c2a8c99a5ea3da5f0a20c8f620e66ea44a0f97474abaebf3ca8d408",
+      "command_path": [
+        "flake8"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "flake8",
+      "source_family": "argparse_plugin_options",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "grep-root",
+      "project": "grep",
+      "capture": "corpus/intake/expansion/train/grep-root.txt",
+      "receipt": "corpus/intake/expansion/train/grep-root.receipt.json",
+      "raw_sha256": "e5ab81dfe2b3bd7cd6369f5876289b4cc41f0b12fca9e6afb87026d787a483a4",
+      "command_path": [
+        "grep"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "grep",
+      "source_family": "gnu-style",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "htop-root",
+      "project": "htop",
+      "capture": "corpus/intake/expansion/train/htop-root.txt",
+      "receipt": "corpus/intake/expansion/train/htop-root.receipt.json",
+      "raw_sha256": "c972535450a070621304a71ceadaf96cd724fceb0d2bbe0a8888a7030b0fd035",
+      "command_path": [
+        "htop"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "htop",
+      "source_family": "gnu-style",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "invoke-root",
+      "project": "invoke",
+      "capture": "corpus/intake/expansion/train/invoke-root.txt",
+      "receipt": "corpus/intake/expansion/train/invoke-root.receipt.json",
+      "raw_sha256": "88b6f925a02c2cd53ab7e8998af274bc1639131af265dc6e4f2694773ae3bf01",
+      "command_path": [
+        "invoke"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "fabric",
+      "source_family": "invoke_custom_parser",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "make-root",
+      "project": "make",
+      "capture": "corpus/intake/expansion/train/make-root.txt",
+      "receipt": "corpus/intake/expansion/train/make-root.receipt.json",
+      "raw_sha256": "99126d7425ce92b37a662c2d03ed889532abcdc46bd4b7591b49c7bac01d0752",
+      "command_path": [
+        "make"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "make",
+      "source_family": "gnu-style",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "mkdocs-root",
+      "project": "mkdocs",
+      "capture": "corpus/intake/expansion/train/mkdocs-root.txt",
+      "receipt": "corpus/intake/expansion/train/mkdocs-root.receipt.json",
+      "raw_sha256": "7203763413d69c176cbf3c3f38831550ffb210903d41d4f2435100f17fac12a2",
+      "command_path": [
+        "mkdocs"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "mkdocs",
+      "source_family": "click",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "nox-root",
+      "project": "nox",
+      "capture": "corpus/intake/expansion/train/nox-root.txt",
+      "receipt": "corpus/intake/expansion/train/nox-root.receipt.json",
+      "raw_sha256": "d1d4813488c9fa55fb16442f7aecc6fa6aa583739df46c1827641ae02d506ea5",
+      "command_path": [
+        "nox"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "nox",
+      "source_family": "argparse_option_wrapper",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "patch-root",
+      "project": "patch",
+      "capture": "corpus/intake/expansion/train/patch-root.txt",
+      "receipt": "corpus/intake/expansion/train/patch-root.receipt.json",
+      "raw_sha256": "124d9f4e179200c0b02448a709b5a4791a49aee859a36ae6ae1e7f230f79ca16",
+      "command_path": [
+        "patch"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "patch",
+      "source_family": "gnu-style",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "pip-root",
+      "project": "pip",
+      "capture": "corpus/intake/expansion/train/pip-root.txt",
+      "receipt": "corpus/intake/expansion/train/pip-root.receipt.json",
+      "raw_sha256": "f496b63d04cded170f4aa077a1ae84a8c342b969ff97c5947726eec0d4f334aa",
+      "command_path": [
+        "pip"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "pip",
+      "source_family": "optparse_custom_formatter",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "pip-tools-root",
+      "project": "pip-tools",
+      "capture": "corpus/intake/expansion/train/pip-tools-root.txt",
+      "receipt": "corpus/intake/expansion/train/pip-tools-root.receipt.json",
+      "raw_sha256": "3d2858f649577a2972d89d58090d47a4b9f632e2c440e4070acb5f15843287d3",
+      "command_path": [
+        "pip-compile"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "pip",
+      "source_family": "click_custom_help",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "pre-commit-root",
+      "project": "pre-commit",
+      "capture": "corpus/intake/expansion/train/pre-commit-root.txt",
+      "receipt": "corpus/intake/expansion/train/pre-commit-root.receipt.json",
+      "raw_sha256": "1999256fdef45c79630c92e1a91f77976eacca0cfed9b1669784e06cf622742a",
+      "command_path": [
+        "pre-commit"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "pre-commit",
+      "source_family": "argparse",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "sed-root",
+      "project": "sed",
+      "capture": "corpus/intake/expansion/train/sed-root.txt",
+      "receipt": "corpus/intake/expansion/train/sed-root.receipt.json",
+      "raw_sha256": "e178547c504ae3d5354967ca7988fd13675b592dc142c1b6dc554e53a1508120",
+      "command_path": [
+        "sed"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "sed",
+      "source_family": "gnu-style",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "sphinx-root",
+      "project": "sphinx",
+      "capture": "corpus/intake/expansion/train/sphinx-root.txt",
+      "receipt": "corpus/intake/expansion/train/sphinx-root.receipt.json",
+      "raw_sha256": "34e9eb6b19b3b57c6cac8b0b3a99ab8a482a200323280abba391b4b0fb4e4cad",
+      "command_path": [
+        "sphinx-build"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "sphinx",
+      "source_family": "argparse",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "tmux-root",
+      "project": "tmux",
+      "capture": "corpus/intake/expansion/train/tmux-root.txt",
+      "receipt": "corpus/intake/expansion/train/tmux-root.receipt.json",
+      "raw_sha256": "3302cd54c7bdffa9fb8231c2e219939ba0c81e926676cb0edb82d4c7bca74cd3",
+      "command_path": [
+        "tmux"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "tmux",
+      "source_family": "irregular",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "twine-root",
+      "project": "twine",
+      "capture": "corpus/intake/expansion/train/twine-root.txt",
+      "receipt": "corpus/intake/expansion/train/twine-root.receipt.json",
+      "raw_sha256": "93e99f1767bbf994e4e0459f50c3d3f0f2c91ea0e8ed202db41e22bcd5737bce",
+      "command_path": [
+        "twine"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "twine",
+      "source_family": "argparse",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "wheel-root",
+      "project": "wheel",
+      "capture": "corpus/intake/expansion/train/wheel-root.txt",
+      "receipt": "corpus/intake/expansion/train/wheel-root.receipt.json",
+      "raw_sha256": "c40fcdab9c14a5ec6c62d101d0eefa221a9e761e39756e7ed35aaa590cc6e1c9",
+      "command_path": [
+        "wheel"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "wheel",
+      "source_family": "argparse",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "xz-root",
+      "project": "xz",
+      "capture": "corpus/intake/expansion/train/xz-root.txt",
+      "receipt": "corpus/intake/expansion/train/xz-root.receipt.json",
+      "raw_sha256": "b59d43f210e5047114003e918eca81066d3a08b2c0cd05faef56e6eebd62f6fe",
+      "command_path": [
+        "xz"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "xz",
+      "source_family": "gnu-style",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "yamllint-root",
+      "project": "yamllint",
+      "capture": "corpus/intake/expansion/train/yamllint-root.txt",
+      "receipt": "corpus/intake/expansion/train/yamllint-root.receipt.json",
+      "raw_sha256": "fbbfed1d4ca9dd88f498decd2486ce3ada6536e76f351697a953c395cae60bc4",
+      "command_path": [
+        "yamllint"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "yamllint",
+      "source_family": "argparse",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "yt-dlp-root",
+      "project": "yt-dlp",
+      "capture": "corpus/intake/expansion/train/yt-dlp-root.txt",
+      "receipt": "corpus/intake/expansion/train/yt-dlp-root.receipt.json",
+      "raw_sha256": "7758bd79e72274b1827a636075813cb0cf6129d089930f5d3cf53c3e9b16ccca",
+      "command_path": [
+        "yt-dlp"
+      ],
+      "reserved_split": "train",
+      "candidate_leakage_group": "yt-dlp",
+      "source_family": "optparse_custom_formatter",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "cobra-anchore-grype",
+      "project": "anchore/grype",
+      "capture": ".helpcat-heldout/cobra/cobra-anchore-grype.txt",
+      "receipt": ".helpcat-heldout/cobra/cobra-anchore-grype.receipt.json",
+      "raw_sha256": "bff9f91bff5d3b88c54e78f5d3fc8fcc6d6cbcae763327f36720ee04eeaf67ce",
+      "command_path": [
+        "grype"
+      ],
+      "reserved_split": "cobra_test",
+      "candidate_leakage_group": "anchore/grype",
+      "source_family": "cobra",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "cobra-anchore-syft",
+      "project": "anchore/syft",
+      "capture": ".helpcat-heldout/cobra/cobra-anchore-syft.txt",
+      "receipt": ".helpcat-heldout/cobra/cobra-anchore-syft.receipt.json",
+      "raw_sha256": "5e32885c7c00496041fe39ecfd3fa3fac72e2b48bc8d55265a6d634553d9003b",
+      "command_path": [
+        "syft"
+      ],
+      "reserved_split": "cobra_test",
+      "candidate_leakage_group": "anchore/grype",
+      "source_family": "cobra",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "cobra-argoproj-argo-cd",
+      "project": "argoproj/argo-cd",
+      "capture": ".helpcat-heldout/cobra/cobra-argoproj-argo-cd.txt",
+      "receipt": ".helpcat-heldout/cobra/cobra-argoproj-argo-cd.receipt.json",
+      "raw_sha256": "29ac104172ad36b0bba342aaa155bcd313c22f913752b27945eab6d0dee42850",
+      "command_path": [
+        "argocd"
+      ],
+      "reserved_split": "cobra_test",
+      "candidate_leakage_group": "argoproj/argo-cd",
+      "source_family": "cobra",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "cobra-cli-cli",
+      "project": "cli/cli",
+      "capture": ".helpcat-heldout/cobra/cobra-cli-cli.txt",
+      "receipt": ".helpcat-heldout/cobra/cobra-cli-cli.receipt.json",
+      "raw_sha256": "0fdc01fb81a226d1b11db05684b90b6622336b0d13366385af6ecb510cce670e",
+      "command_path": [
+        "gh"
+      ],
+      "reserved_split": "cobra_test",
+      "candidate_leakage_group": "cli/cli",
+      "source_family": "cobra",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "cobra-containerd-nerdctl",
+      "project": "containerd/nerdctl",
+      "capture": ".helpcat-heldout/cobra/cobra-containerd-nerdctl.txt",
+      "receipt": ".helpcat-heldout/cobra/cobra-containerd-nerdctl.receipt.json",
+      "raw_sha256": "98edaac4556b8417207f5a68bd03c0bafa715bf5181275bd9a02532b68f05b2a",
+      "command_path": [
+        "nerdctl"
+      ],
+      "reserved_split": "cobra_test",
+      "candidate_leakage_group": "containerd/nerdctl",
+      "source_family": "cobra",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "cobra-containers-buildah",
+      "project": "containers/buildah",
+      "capture": ".helpcat-heldout/cobra/cobra-containers-buildah.txt",
+      "receipt": ".helpcat-heldout/cobra/cobra-containers-buildah.receipt.json",
+      "raw_sha256": "2a7a228c41f4ef6370e90bb59401083ccab78e216df2a1b2951f5860a1d4fe90",
+      "command_path": [
+        "buildah"
+      ],
+      "reserved_split": "cobra_test",
+      "candidate_leakage_group": "containerd/nerdctl",
+      "source_family": "cobra",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "cobra-containers-podman",
+      "project": "containers/podman",
+      "capture": ".helpcat-heldout/cobra/cobra-containers-podman.txt",
+      "receipt": ".helpcat-heldout/cobra/cobra-containers-podman.receipt.json",
+      "raw_sha256": "c94d41afc8d2177d91ca7b288c5c47115051815a09a27c15f6e20857f3b5dddc",
+      "command_path": [
+        "podman"
+      ],
+      "reserved_split": "cobra_test",
+      "candidate_leakage_group": "containerd/nerdctl",
+      "source_family": "cobra",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "cobra-containers-skopeo",
+      "project": "containers/skopeo",
+      "capture": ".helpcat-heldout/cobra/cobra-containers-skopeo.txt",
+      "receipt": ".helpcat-heldout/cobra/cobra-containers-skopeo.receipt.json",
+      "raw_sha256": "6410a793a1d06914e5f0ca1986e6b05578ec74c761080f65a7b7389bda1a112f",
+      "command_path": [
+        "skopeo"
+      ],
+      "reserved_split": "cobra_test",
+      "candidate_leakage_group": "containerd/nerdctl",
+      "source_family": "cobra",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "cobra-docker-cli",
+      "project": "docker/cli",
+      "capture": ".helpcat-heldout/cobra/cobra-docker-cli.txt",
+      "receipt": ".helpcat-heldout/cobra/cobra-docker-cli.receipt.json",
+      "raw_sha256": "a4fb5ac13a90adce3b2a6b2111e69a2955bf1047654c165d452a64a63e4cf507",
+      "command_path": [
+        "docker"
+      ],
+      "reserved_split": "cobra_test",
+      "candidate_leakage_group": "containerd/nerdctl",
+      "source_family": "cobra",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "cobra-fluxcd-flux2",
+      "project": "fluxcd/flux2",
+      "capture": ".helpcat-heldout/cobra/cobra-fluxcd-flux2.txt",
+      "receipt": ".helpcat-heldout/cobra/cobra-fluxcd-flux2.receipt.json",
+      "raw_sha256": "ac4f31b4de5bf2b97282cff573fbb1891e1328c453ea1b01706da278c1820120",
+      "command_path": [
+        "flux"
+      ],
+      "reserved_split": "cobra_test",
+      "candidate_leakage_group": "fluxcd/flux2",
+      "source_family": "cobra",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "cobra-googlecontainertools-skaffold",
+      "project": "GoogleContainerTools/skaffold",
+      "capture": ".helpcat-heldout/cobra/cobra-googlecontainertools-skaffold.txt",
+      "receipt": ".helpcat-heldout/cobra/cobra-googlecontainertools-skaffold.receipt.json",
+      "raw_sha256": "dc91c89047986fe2131c9a5c8c92a8b9beeb9fbed85c5d85d66519f1d674975a",
+      "command_path": [
+        "skaffold"
+      ],
+      "reserved_split": "cobra_test",
+      "candidate_leakage_group": "GoogleContainerTools/skaffold",
+      "source_family": "cobra",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "cobra-goreleaser-goreleaser",
+      "project": "goreleaser/goreleaser",
+      "capture": ".helpcat-heldout/cobra/cobra-goreleaser-goreleaser.txt",
+      "receipt": ".helpcat-heldout/cobra/cobra-goreleaser-goreleaser.receipt.json",
+      "raw_sha256": "e6807f3262e624c60f20334204f7d553dd3d30caca6e0cd194180a7632eb10c0",
+      "command_path": [
+        "goreleaser"
+      ],
+      "reserved_split": "cobra_test",
+      "candidate_leakage_group": "goreleaser/goreleaser",
+      "source_family": "cobra",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "cobra-helm-helm",
+      "project": "helm/helm",
+      "capture": ".helpcat-heldout/cobra/cobra-helm-helm.txt",
+      "receipt": ".helpcat-heldout/cobra/cobra-helm-helm.receipt.json",
+      "raw_sha256": "57288edcabe7d98ad31928f264e465e9086470bcb56190683e7803fdfdf7ca2b",
+      "command_path": [
+        "helm"
+      ],
+      "reserved_split": "cobra_test",
+      "candidate_leakage_group": "helm/helm",
+      "source_family": "cobra",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "cobra-knative-client",
+      "project": "knative/client",
+      "capture": ".helpcat-heldout/cobra/cobra-knative-client.txt",
+      "receipt": ".helpcat-heldout/cobra/cobra-knative-client.receipt.json",
+      "raw_sha256": "9ffcf536d02d6baa93b06aab49d6ea53d5944d2a993acd6e43d3e4950ec5a33e",
+      "command_path": [
+        "kn"
+      ],
+      "reserved_split": "cobra_test",
+      "candidate_leakage_group": "knative/client",
+      "source_family": "cobra",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "cobra-kubernetes-sigs-kind",
+      "project": "kubernetes-sigs/kind",
+      "capture": ".helpcat-heldout/cobra/cobra-kubernetes-sigs-kind.txt",
+      "receipt": ".helpcat-heldout/cobra/cobra-kubernetes-sigs-kind.receipt.json",
+      "raw_sha256": "9d1b88dc8932d0a04beb460df0a66b77efa65356b6caf85725851769d1634858",
+      "command_path": [
+        "kind"
+      ],
+      "reserved_split": "cobra_test",
+      "candidate_leakage_group": "kubernetes-sigs/kind",
+      "source_family": "cobra",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "cobra-loft-sh-vcluster",
+      "project": "loft-sh/vcluster",
+      "capture": ".helpcat-heldout/cobra/cobra-loft-sh-vcluster.txt",
+      "receipt": ".helpcat-heldout/cobra/cobra-loft-sh-vcluster.receipt.json",
+      "raw_sha256": "7d4d0fc10dfbfb7d71796c8a0ce56b580f6ee9f4d1a14607a25f6ac91e8279b7",
+      "command_path": [
+        "vcluster"
+      ],
+      "reserved_split": "cobra_test",
+      "candidate_leakage_group": "loft-sh/vcluster",
+      "source_family": "cobra",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "cobra-restic-restic",
+      "project": "restic/restic",
+      "capture": ".helpcat-heldout/cobra/cobra-restic-restic.txt",
+      "receipt": ".helpcat-heldout/cobra/cobra-restic-restic.receipt.json",
+      "raw_sha256": "168f1292c138894b95ea819f612b77524462e2c836b2efbf8851f10573d5c5c5",
+      "command_path": [
+        "restic"
+      ],
+      "reserved_split": "cobra_test",
+      "candidate_leakage_group": "restic/restic",
+      "source_family": "cobra",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "cobra-sigstore-cosign",
+      "project": "sigstore/cosign",
+      "capture": ".helpcat-heldout/cobra/cobra-sigstore-cosign.txt",
+      "receipt": ".helpcat-heldout/cobra/cobra-sigstore-cosign.receipt.json",
+      "raw_sha256": "4e893a059d74fdede63523a8b3ca30c86452e0c99b2b253538e8029692f49c05",
+      "command_path": [
+        "cosign"
+      ],
+      "reserved_split": "cobra_test",
+      "candidate_leakage_group": "sigstore/cosign",
+      "source_family": "cobra",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "cobra-sigstore-rekor",
+      "project": "sigstore/rekor",
+      "capture": ".helpcat-heldout/cobra/cobra-sigstore-rekor.txt",
+      "receipt": ".helpcat-heldout/cobra/cobra-sigstore-rekor.receipt.json",
+      "raw_sha256": "8c1527276bb96e8efbd9e26e23f571dedd7826fd432be21b25af91286d862b99",
+      "command_path": [
+        "rekor-cli"
+      ],
+      "reserved_split": "cobra_test",
+      "candidate_leakage_group": "sigstore/cosign",
+      "source_family": "cobra",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "cobra-tektoncd-cli",
+      "project": "tektoncd/cli",
+      "capture": ".helpcat-heldout/cobra/cobra-tektoncd-cli.txt",
+      "receipt": ".helpcat-heldout/cobra/cobra-tektoncd-cli.receipt.json",
+      "raw_sha256": "779d4e860b1cb5b3af25a462650de3e76a7b2046b789a62b3422320bd9dd291c",
+      "command_path": [
+        "tkn"
+      ],
+      "reserved_split": "cobra_test",
+      "candidate_leakage_group": "tektoncd/cli",
+      "source_family": "cobra",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "clap-atuin",
+      "project": "atuin",
+      "capture": ".helpcat-heldout/clap/clap-atuin.txt",
+      "receipt": ".helpcat-heldout/clap/clap-atuin.receipt.json",
+      "raw_sha256": "fe195372330d3ea036ca5cee82b7a41e0b809154397b974739938c15f21cd547",
+      "command_path": [
+        "atuin"
+      ],
+      "reserved_split": "clap_test",
+      "candidate_leakage_group": "atuin",
+      "source_family": "clap",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "clap-bat",
+      "project": "bat",
+      "capture": ".helpcat-heldout/clap/clap-bat.txt",
+      "receipt": ".helpcat-heldout/clap/clap-bat.receipt.json",
+      "raw_sha256": "9210d6a1255ad90f88afa2d000c374b05d06b240dc2b63f1d8bb8b3673b3b4b1",
+      "command_path": [
+        "bat"
+      ],
+      "reserved_split": "clap_test",
+      "candidate_leakage_group": "bat",
+      "source_family": "clap",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "clap-bottom",
+      "project": "bottom",
+      "capture": ".helpcat-heldout/clap/clap-bottom.txt",
+      "receipt": ".helpcat-heldout/clap/clap-bottom.receipt.json",
+      "raw_sha256": "25fe8f45904f024f5a6bae541d319e23963f249365d2eacfb05ca44fb0b73705",
+      "command_path": [
+        "btm"
+      ],
+      "reserved_split": "clap_test",
+      "candidate_leakage_group": "bottom",
+      "source_family": "clap",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "clap-dust",
+      "project": "dust",
+      "capture": ".helpcat-heldout/clap/clap-dust.txt",
+      "receipt": ".helpcat-heldout/clap/clap-dust.receipt.json",
+      "raw_sha256": "6c88b2565f04f866df7dad7f8fa1b8c7b008eac7ee9fc4a67f9cc7cb679c1410",
+      "command_path": [
+        "dust"
+      ],
+      "reserved_split": "clap_test",
+      "candidate_leakage_group": "dust",
+      "source_family": "clap",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "clap-fd",
+      "project": "fd",
+      "capture": ".helpcat-heldout/clap/clap-fd.txt",
+      "receipt": ".helpcat-heldout/clap/clap-fd.receipt.json",
+      "raw_sha256": "df502f70e8e92818a4b0c66b7d3adeabd2f2889f906240d6fd25e85312b72db9",
+      "command_path": [
+        "fd"
+      ],
+      "reserved_split": "clap_test",
+      "candidate_leakage_group": "fd",
+      "source_family": "clap",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "clap-genact",
+      "project": "genact",
+      "capture": ".helpcat-heldout/clap/clap-genact.txt",
+      "receipt": ".helpcat-heldout/clap/clap-genact.receipt.json",
+      "raw_sha256": "caaa6560d89a4cdcf4b9103fc7b754081eb81e5aa4211a222f2433f553c169a4",
+      "command_path": [
+        "genact"
+      ],
+      "reserved_split": "clap_test",
+      "candidate_leakage_group": "genact",
+      "source_family": "clap",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "clap-gitui",
+      "project": "gitui",
+      "capture": ".helpcat-heldout/clap/clap-gitui.txt",
+      "receipt": ".helpcat-heldout/clap/clap-gitui.receipt.json",
+      "raw_sha256": "cdb378a3806d93a08c15b26babf692f857e11639e3df2d0d4de3d7c11d220553",
+      "command_path": [
+        "gitui"
+      ],
+      "reserved_split": "clap_test",
+      "candidate_leakage_group": "gitui",
+      "source_family": "clap",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "clap-hexyl",
+      "project": "hexyl",
+      "capture": ".helpcat-heldout/clap/clap-hexyl.txt",
+      "receipt": ".helpcat-heldout/clap/clap-hexyl.receipt.json",
+      "raw_sha256": "fc68e3dfd32dae052caac0f34c646860ad516c223caaaa7b4c50305ef09bbfde",
+      "command_path": [
+        "hexyl"
+      ],
+      "reserved_split": "clap_test",
+      "candidate_leakage_group": "hexyl",
+      "source_family": "clap",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "clap-hyperfine",
+      "project": "hyperfine",
+      "capture": ".helpcat-heldout/clap/clap-hyperfine.txt",
+      "receipt": ".helpcat-heldout/clap/clap-hyperfine.receipt.json",
+      "raw_sha256": "2fb4bab5ad409ccba616f61dba8061ef9a8f59c1a34c8c2f1cf4b2a9be3c26be",
+      "command_path": [
+        "hyperfine"
+      ],
+      "reserved_split": "clap_test",
+      "candidate_leakage_group": "hyperfine",
+      "source_family": "clap",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "clap-just",
+      "project": "just",
+      "capture": ".helpcat-heldout/clap/clap-just.txt",
+      "receipt": ".helpcat-heldout/clap/clap-just.receipt.json",
+      "raw_sha256": "33a31a2c91523a44a1738f24e79a8663c282c5b95a6808d74bf7ba09b3a0172b",
+      "command_path": [
+        "just"
+      ],
+      "reserved_split": "clap_test",
+      "candidate_leakage_group": "just",
+      "source_family": "clap",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "clap-lsd",
+      "project": "lsd",
+      "capture": ".helpcat-heldout/clap/clap-lsd.txt",
+      "receipt": ".helpcat-heldout/clap/clap-lsd.receipt.json",
+      "raw_sha256": "f05c015ac07a1723b1dee388e3a41d4879e4eea6bdcd737a7d7bd9682859bf5b",
+      "command_path": [
+        "lsd"
+      ],
+      "reserved_split": "clap_test",
+      "candidate_leakage_group": "lsd",
+      "source_family": "clap",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "clap-mdbook",
+      "project": "mdBook",
+      "capture": ".helpcat-heldout/clap/clap-mdbook.txt",
+      "receipt": ".helpcat-heldout/clap/clap-mdbook.receipt.json",
+      "raw_sha256": "05560c08a8febd7ed3e5b2aa75dd3ac141fd8365a6fc22e7b51db41dbf098cfb",
+      "command_path": [
+        "mdbook"
+      ],
+      "reserved_split": "clap_test",
+      "candidate_leakage_group": "mdBook",
+      "source_family": "clap",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "clap-miniserve",
+      "project": "miniserve",
+      "capture": ".helpcat-heldout/clap/clap-miniserve.txt",
+      "receipt": ".helpcat-heldout/clap/clap-miniserve.receipt.json",
+      "raw_sha256": "fea94a32ead6c8932e4524a4b19b4a0cd19560def55159ce912df96b04dcfde3",
+      "command_path": [
+        "miniserve"
+      ],
+      "reserved_split": "clap_test",
+      "candidate_leakage_group": "miniserve",
+      "source_family": "clap",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "clap-procs",
+      "project": "procs",
+      "capture": ".helpcat-heldout/clap/clap-procs.txt",
+      "receipt": ".helpcat-heldout/clap/clap-procs.receipt.json",
+      "raw_sha256": "3bdf734b5a50c3a83f2b3b1555b389d5b86580396dde686ebc5e7bda77027ff9",
+      "command_path": [
+        "procs"
+      ],
+      "reserved_split": "clap_test",
+      "candidate_leakage_group": "procs",
+      "source_family": "clap",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "clap-ruff",
+      "project": "ruff",
+      "capture": ".helpcat-heldout/clap/clap-ruff.txt",
+      "receipt": ".helpcat-heldout/clap/clap-ruff.receipt.json",
+      "raw_sha256": "b0f186b69266d595149e311909dcbe1b77818452115edf1db2ca318fa035a746",
+      "command_path": [
+        "ruff"
+      ],
+      "reserved_split": "clap_test",
+      "candidate_leakage_group": "ruff",
+      "source_family": "clap",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "clap-sccache",
+      "project": "sccache",
+      "capture": ".helpcat-heldout/clap/clap-sccache.txt",
+      "receipt": ".helpcat-heldout/clap/clap-sccache.receipt.json",
+      "raw_sha256": "09d6afe4ee6f61906fe77522b15330ce6ab1a7e24f71feddf160e320da8b4c8d",
+      "command_path": [
+        "sccache"
+      ],
+      "reserved_split": "clap_test",
+      "candidate_leakage_group": "sccache",
+      "source_family": "clap",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "clap-starship",
+      "project": "starship",
+      "capture": ".helpcat-heldout/clap/clap-starship.txt",
+      "receipt": ".helpcat-heldout/clap/clap-starship.receipt.json",
+      "raw_sha256": "780d756cf5cbf47e62ab2359e308bac831132f8ea754eeac2dbe017ce19358e5",
+      "command_path": [
+        "starship"
+      ],
+      "reserved_split": "clap_test",
+      "candidate_leakage_group": "starship",
+      "source_family": "clap",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "clap-uv",
+      "project": "uv",
+      "capture": ".helpcat-heldout/clap/clap-uv.txt",
+      "receipt": ".helpcat-heldout/clap/clap-uv.receipt.json",
+      "raw_sha256": "b88f7346ec1d8eade978220053b985a3308767809e01aafe147e2f0c0fb3fd45",
+      "command_path": [
+        "uv"
+      ],
+      "reserved_split": "clap_test",
+      "candidate_leakage_group": "uv",
+      "source_family": "clap",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "clap-zellij",
+      "project": "zellij",
+      "capture": ".helpcat-heldout/clap/clap-zellij.txt",
+      "receipt": ".helpcat-heldout/clap/clap-zellij.receipt.json",
+      "raw_sha256": "166308fb6df257210d5e9733da33280b2d1a2c5d783e637a6e19f4341c549161",
+      "command_path": [
+        "zellij"
+      ],
+      "reserved_split": "clap_test",
+      "candidate_leakage_group": "zellij",
+      "source_family": "clap",
+      "annotation_status": "pending"
+    },
+    {
+      "id": "clap-zoxide",
+      "project": "zoxide",
+      "capture": ".helpcat-heldout/clap/clap-zoxide.txt",
+      "receipt": ".helpcat-heldout/clap/clap-zoxide.receipt.json",
+      "raw_sha256": "1cde15a802c0df9484baffa59e756a12c4a1ba0d556ab01c6a75b8417c7086d3",
+      "command_path": [
+        "zoxide"
+      ],
+      "reserved_split": "clap_test",
+      "candidate_leakage_group": "zoxide",
+      "source_family": "clap",
+      "annotation_status": "pending"
+    }
+  ],
+  "cross_split_candidate_groups": {},
+  "exact_capture_duplicates": [],
+  "similarity_review_queue": [
+    {
+      "projects": [
+        "fabric",
+        "invoke"
+      ],
+      "jaccard": 0.6354,
+      "containment": 0.9059,
+      "cross_split": false
+    }
+  ],
+  "primary_annotation_queue": {
+    "dev": [
+      "ansible-core-root",
+      "awscli-root",
+      "curl-root",
+      "gawk-root",
+      "golang-root",
+      "isort-root",
+      "less-root",
+      "llm-root",
+      "mypy-root",
+      "poetry-root",
+      "pytest-root",
+      "tar-root"
+    ],
+    "train": [
+      "autopep8-root",
+      "build-root",
+      "codespell-root",
+      "cookiecutter-root",
+      "diffutils-root",
+      "fabric-root",
+      "file-root",
+      "flake8-root",
+      "grep-root",
+      "htop-root",
+      "invoke-root",
+      "make-root",
+      "mkdocs-root",
+      "nox-root",
+      "patch-root",
+      "pip-root",
+      "pip-tools-root",
+      "pre-commit-root",
+      "sed-root",
+      "sphinx-root",
+      "tmux-root",
+      "twine-root",
+      "wheel-root",
+      "xz-root",
+      "yamllint-root",
+      "yt-dlp-root"
+    ],
+    "familiar_test": [
+      "bandit-root",
+      "coverage-root",
+      "docutils-root",
+      "findutils-root",
+      "gzip-root",
+      "httpx-root",
+      "m4-root",
+      "nano-root",
+      "pylint-root",
+      "rsync-root",
+      "streamlink-root",
+      "wget-root"
+    ],
+    "cobra_test": [
+      "cobra-anchore-grype",
+      "cobra-anchore-syft",
+      "cobra-argoproj-argo-cd",
+      "cobra-cli-cli",
+      "cobra-containerd-nerdctl",
+      "cobra-containers-buildah",
+      "cobra-containers-podman",
+      "cobra-containers-skopeo",
+      "cobra-docker-cli",
+      "cobra-fluxcd-flux2",
+      "cobra-googlecontainertools-skaffold",
+      "cobra-goreleaser-goreleaser",
+      "cobra-helm-helm",
+      "cobra-knative-client",
+      "cobra-kubernetes-sigs-kind",
+      "cobra-loft-sh-vcluster",
+      "cobra-restic-restic",
+      "cobra-sigstore-cosign",
+      "cobra-sigstore-rekor",
+      "cobra-tektoncd-cli"
+    ],
+    "clap_test": [
+      "clap-atuin",
+      "clap-bat",
+      "clap-bottom",
+      "clap-dust",
+      "clap-fd",
+      "clap-genact",
+      "clap-gitui",
+      "clap-hexyl",
+      "clap-hyperfine",
+      "clap-just",
+      "clap-lsd",
+      "clap-mdbook",
+      "clap-miniserve",
+      "clap-procs",
+      "clap-ruff",
+      "clap-sccache",
+      "clap-starship",
+      "clap-uv",
+      "clap-zellij",
+      "clap-zoxide"
+    ]
+  }
+}
