@@ -1,0 +1,136 @@
+{
+  "status": "scheduled",
+  "primary_order": [
+    "dev",
+    "train",
+    "familiar_test",
+    "cobra_test",
+    "clap_test"
+  ],
+  "primary": {
+    "dev": [
+      "ansible-core-root",
+      "awscli-root",
+      "curl-root",
+      "gawk-root",
+      "golang-root",
+      "isort-root",
+      "less-root",
+      "llm-root",
+      "mypy-root",
+      "poetry-root",
+      "pytest-root",
+      "tar-root"
+    ],
+    "train": [
+      "autopep8-root",
+      "build-root",
+      "codespell-root",
+      "cookiecutter-root",
+      "diffutils-root",
+      "fabric-root",
+      "file-root",
+      "flake8-root",
+      "grep-root",
+      "htop-root",
+      "invoke-root",
+      "make-root",
+      "mkdocs-root",
+      "nox-root",
+      "patch-root",
+      "pip-root",
+      "pip-tools-root",
+      "pre-commit-root",
+      "sed-root",
+      "sphinx-root",
+      "tmux-root",
+      "twine-root",
+      "wheel-root",
+      "xz-root",
+      "yamllint-root",
+      "yt-dlp-root"
+    ],
+    "familiar_test": [
+      "bandit-root",
+      "coverage-root",
+      "docutils-root",
+      "findutils-root",
+      "gzip-root",
+      "httpx-root",
+      "m4-root",
+      "nano-root",
+      "pylint-root",
+      "rsync-root",
+      "streamlink-root",
+      "wget-root"
+    ],
+    "cobra_test": [
+      "cobra-anchore-grype",
+      "cobra-anchore-syft",
+      "cobra-argoproj-argo-cd",
+      "cobra-cli-cli",
+      "cobra-containerd-nerdctl",
+      "cobra-containers-buildah",
+      "cobra-containers-podman",
+      "cobra-containers-skopeo",
+      "cobra-docker-cli",
+      "cobra-fluxcd-flux2",
+      "cobra-googlecontainertools-skaffold",
+      "cobra-goreleaser-goreleaser",
+      "cobra-helm-helm",
+      "cobra-knative-client",
+      "cobra-kubernetes-sigs-kind",
+      "cobra-loft-sh-vcluster",
+      "cobra-restic-restic",
+      "cobra-sigstore-cosign",
+      "cobra-sigstore-rekor",
+      "cobra-tektoncd-cli"
+    ],
+    "clap_test": [
+      "clap-atuin",
+      "clap-bat",
+      "clap-bottom",
+      "clap-dust",
+      "clap-fd",
+      "clap-genact",
+      "clap-gitui",
+      "clap-hexyl",
+      "clap-hyperfine",
+      "clap-just",
+      "clap-lsd",
+      "clap-mdbook",
+      "clap-miniserve",
+      "clap-procs",
+      "clap-ruff",
+      "clap-sccache",
+      "clap-starship",
+      "clap-uv",
+      "clap-zellij",
+      "clap-zoxide"
+    ]
+  },
+  "additional_blind": {
+    "dev": [
+      "ansible-core-root",
+      "awscli-root"
+    ],
+    "train": [
+      "autopep8-root",
+      "build-root"
+    ],
+    "familiar_test": [
+      "bandit-root",
+      "coverage-root"
+    ],
+    "cobra_test": [
+      "cobra-anchore-grype",
+      "cobra-argoproj-argo-cd"
+    ],
+    "clap_test": [
+      "clap-atuin",
+      "clap-bat"
+    ]
+  },
+  "existing_double_annotated": 10,
+  "blind_selection": "First two sorted capture IDs from distinct candidate groups in each reserved split, chosen before new annotations."
+}
